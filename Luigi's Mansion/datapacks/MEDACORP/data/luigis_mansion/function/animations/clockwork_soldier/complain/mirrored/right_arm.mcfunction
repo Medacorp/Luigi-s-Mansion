@@ -19,12 +19,12 @@ execute if entity @s[scores={AnimationProgress=17}] positioned ^0.46 ^ ^ rotated
 execute if entity @s[scores={AnimationProgress=18}] positioned ^0.46 ^ ^ rotated ~-324 ~ run teleport @s ^-0.46 ^ ^ ~ ~
 execute if entity @s[scores={AnimationProgress=19}] positioned ^0.46 ^ ^ rotated ~-342 ~ run teleport @s ^-0.46 ^ ^ ~ ~
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -200
-execute if entity @s[scores={AnimationProgress=1..5}] run scoreboard players remove @s AnimationRotationX 280
-execute if entity @s[scores={AnimationProgress=6..10}] run scoreboard players add @s AnimationRotationX 280
-execute if entity @s[scores={AnimationProgress=11..15}] run scoreboard players remove @s AnimationRotationX 280
-execute if entity @s[scores={AnimationProgress=16..20}] run scoreboard players add @s AnimationRotationX 280
-execute if entity @s[scores={AnimationProgress=1..2}] run scoreboard players add @s AnimationRotationY 200
-execute if entity @s[scores={AnimationProgress=4..5}] run scoreboard players remove @s AnimationRotationY 200
-execute if entity @s[scores={AnimationProgress=11..12}] run scoreboard players add @s AnimationRotationY 200
-execute if entity @s[scores={AnimationProgress=14..15}] run scoreboard players remove @s AnimationRotationY 200
+scoreboard players remove @s[scores={AnimationProgress=1..5}] AnimationRotationX 280
+scoreboard players add @s[scores={AnimationProgress=6..10}] AnimationRotationX 280
+scoreboard players remove @s[scores={AnimationProgress=11..15}] AnimationRotationX 280
+scoreboard players add @s[scores={AnimationProgress=16..20}] AnimationRotationX 280
+scoreboard players add @s[scores={AnimationProgress=1..2}] AnimationRotationY 200
+scoreboard players remove @s[scores={AnimationProgress=4..5}] AnimationRotationY 200
+scoreboard players add @s[scores={AnimationProgress=11..12}] AnimationRotationY 200
+scoreboard players remove @s[scores={AnimationProgress=14..15}] AnimationRotationY 200
 scoreboard players set @s[scores={AnimationProgress=20..}] AnimationProgress 0

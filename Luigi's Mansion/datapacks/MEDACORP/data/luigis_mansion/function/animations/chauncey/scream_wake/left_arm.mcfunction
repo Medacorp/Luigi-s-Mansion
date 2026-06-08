@@ -25,12 +25,12 @@ execute at @s run teleport @s[scores={AnimationProgress=26..35}] ^ ^ ^0.01
 execute at @s run teleport @s[scores={AnimationProgress=36..40}] ^ ^ ^-0.01
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -1300
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationY 100
-execute if entity @s[scores={AnimationProgress=6..15}] run scoreboard players add @s AnimationRotationX 50
-execute if entity @s[scores={AnimationProgress=16..25}] run scoreboard players remove @s AnimationRotationX 50
-execute if entity @s[scores={AnimationProgress=26..35}] run scoreboard players add @s AnimationRotationX 70
-execute if entity @s[scores={AnimationProgress=36..40}] run scoreboard players remove @s AnimationRotationX 70
-execute if entity @s[scores={AnimationProgress=6..15}] run scoreboard players remove @s AnimationRotationY 20
-execute if entity @s[scores={AnimationProgress=36..40}] run scoreboard players add @s AnimationRotationY 20
+scoreboard players add @s[scores={AnimationProgress=6..15}] AnimationRotationX 50
+scoreboard players remove @s[scores={AnimationProgress=16..25}] AnimationRotationX 50
+scoreboard players add @s[scores={AnimationProgress=26..35}] AnimationRotationX 70
+scoreboard players remove @s[scores={AnimationProgress=36..40}] AnimationRotationX 70
+scoreboard players remove @s[scores={AnimationProgress=6..15}] AnimationRotationY 20
+scoreboard players add @s[scores={AnimationProgress=36..40}] AnimationRotationY 20
 scoreboard players set @s[scores={AnimationProgress=40..}] AnimationProgress 0
 execute if score #mirrored Selected matches 1 unless data storage luigis_mansion:data ghost{tags:["big"]} if data storage luigis_mansion:data ghost{tags:["has_equipment"]} run data modify entity @s[scores={AnimationProgress=1}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.equipment
 execute if score #mirrored Selected matches 1 if data storage luigis_mansion:data ghost{tags:["big","has_equipment"]} run data modify entity @s[scores={AnimationProgress=1}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.big_equipment

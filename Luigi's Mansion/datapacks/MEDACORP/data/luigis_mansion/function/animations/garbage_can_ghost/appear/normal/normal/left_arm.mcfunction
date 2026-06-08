@@ -15,8 +15,8 @@ teleport @s[scores={AnimationProgress=14}] ^ ^0.4 ^
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -400
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationY -200
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationZ -1760
-execute if entity @s[scores={AnimationProgress=1..11}] run scoreboard players add @s AnimationRotationZ 160
-execute if entity @s[scores={AnimationProgress=12..13}] run scoreboard players remove @s AnimationRotationZ 160
-execute if entity @s[scores={AnimationProgress=14..15}] run scoreboard players add @s AnimationRotationZ 160
+scoreboard players add @s[scores={AnimationProgress=1..11}] AnimationRotationZ 160
+scoreboard players remove @s[scores={AnimationProgress=12..13}] AnimationRotationZ 160
+scoreboard players add @s[scores={AnimationProgress=14..15}] AnimationRotationZ 160
 data modify entity @s[scores={AnimationProgress=1}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.banana_peel
 scoreboard players set @s[scores={AnimationProgress=20}] AnimationProgress 0

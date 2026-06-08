@@ -24,10 +24,10 @@ teleport @s[scores={AnimationProgress=35}] ~ ~0.01 ~
 execute at @s run teleport @s[scores={AnimationProgress=26..35}] ^ ^ ^0.01
 execute at @s run teleport @s[scores={AnimationProgress=36..40}] ^ ^ ^-0.01
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -900
-execute if entity @s[scores={AnimationProgress=6..15}] run scoreboard players add @s AnimationRotationX 50
-execute if entity @s[scores={AnimationProgress=16..25}] run scoreboard players remove @s AnimationRotationX 50
-execute if entity @s[scores={AnimationProgress=26..35}] run scoreboard players add @s AnimationRotationX 70
-execute if entity @s[scores={AnimationProgress=36..40}] run scoreboard players remove @s AnimationRotationX 70
+scoreboard players add @s[scores={AnimationProgress=6..15}] AnimationRotationX 50
+scoreboard players remove @s[scores={AnimationProgress=16..25}] AnimationRotationX 50
+scoreboard players add @s[scores={AnimationProgress=26..35}] AnimationRotationX 70
+scoreboard players remove @s[scores={AnimationProgress=36..40}] AnimationRotationX 70
 execute unless data storage luigis_mansion:data ghost{tags:["big"]} run data modify entity @s[scores={AnimationProgress=6}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.screaming
 execute unless data storage luigis_mansion:data ghost{tags:["big"]} run data modify entity @s[scores={AnimationProgress=20}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.default
 execute unless data storage luigis_mansion:data ghost{tags:["big"]} run data modify entity @s[scores={AnimationProgress=26}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.screaming

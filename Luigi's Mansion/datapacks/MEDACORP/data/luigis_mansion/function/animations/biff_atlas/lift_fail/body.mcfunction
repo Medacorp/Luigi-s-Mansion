@@ -38,8 +38,8 @@ teleport @s[scores={AnimationProgress=96}] ^ ^-0.12 ^0.08
 teleport @s[scores={AnimationProgress=97}] ^ ^-0.09 ^0.06
 teleport @s[scores={AnimationProgress=98}] ^ ^-0.06 ^0.04
 teleport @s[scores={AnimationProgress=99}] ^ ^-0.03 ^0.02
-execute if entity @s[scores={AnimationProgress=1..20}] run scoreboard players add @s AnimationRotationX 16
-execute if entity @s[scores={AnimationProgress=81..100}] run scoreboard players remove @s AnimationRotationX 16
+scoreboard players add @s[scores={AnimationProgress=1..20}] AnimationRotationX 16
+scoreboard players remove @s[scores={AnimationProgress=81..100}] AnimationRotationX 16
 scoreboard players set @s[scores={AnimationProgress=100..}] AnimationProgress 0
 execute if entity @s[scores={AnimationProgress=21}] run playsound luigis_mansion:entity.biff_atlas.lift_1 hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={AnimationProgress=31}] run playsound luigis_mansion:entity.biff_atlas.lift_2 hostile @a[tag=same_room] ~ ~ ~ 1

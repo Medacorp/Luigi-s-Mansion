@@ -39,6 +39,6 @@ execute if data storage luigis_mansion:data ghost{tags:["big"]} run teleport @s[
 execute if data storage luigis_mansion:data ghost{tags:["big"]} run teleport @s[scores={AnimationProgress=19}] ~ ~-0.05 ~
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -900
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationY 900
-execute if entity @s[scores={AnimationProgress=1..10}] run scoreboard players remove @s AnimationRotationY 20
-execute if entity @s[scores={AnimationProgress=11..20}] run scoreboard players add @s AnimationRotationY 20
+scoreboard players remove @s[scores={AnimationProgress=1..10}] AnimationRotationY 20
+scoreboard players add @s[scores={AnimationProgress=11..20}] AnimationRotationY 20
 scoreboard players set @s[scores={AnimationProgress=20..}] AnimationProgress 0

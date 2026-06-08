@@ -262,7 +262,7 @@ scoreboard players set #5 Constants 5
 scoreboard players set #6 Constants 6
 # Selection menu
 scoreboard players set #7 Constants 7
-# Cobweb, Meete E. Gadd camera stepping, swinging furniture
+# Cobweb, Meet E. Gadd camera stepping, swinging furniture
 scoreboard players set #8 Constants 8
 # Move decimal
 scoreboard players set #10 Constants 10
@@ -278,7 +278,7 @@ scoreboard players set #100 Constants 100
 scoreboard players set #256 Constants 256
 # Falling chandelier
 scoreboard players set #625 Constants 625
-# Localizing position, pearl dropping, falling chandelier
+# Localizing position, pearl dropping, falling chandelier, animation quaternions
 scoreboard players set #1000 Constants 1000
 # Rotate Luigi body, model display upside down
 scoreboard players set #10000 Constants 10000

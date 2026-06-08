@@ -60,10 +60,10 @@ execute at @s[scores={AnimationProgress=139..140}] positioned ^ ^0.667 ^0.667 ru
 scoreboard players operation #temp AnimationProgress = @s AnimationProgress
 scoreboard players operation #temp AnimationProgress %= #2 Constants
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX 100
-execute if entity @s[scores={AnimationProgress=1..20}] run scoreboard players add @s AnimationRotationX 35
+scoreboard players add @s[scores={AnimationProgress=1..20}] AnimationRotationX 35
 execute if entity @s[scores={AnimationProgress=21..121}] if score #temp AnimationProgress matches 0 run scoreboard players add @s AnimationRotationX 10
 execute if entity @s[scores={AnimationProgress=21..121}] if score #temp AnimationProgress matches 1 run scoreboard players remove @s AnimationRotationX 10
-execute if entity @s[scores={AnimationProgress=121..140}] run scoreboard players remove @s AnimationRotationX 35
+scoreboard players remove @s[scores={AnimationProgress=121..140}] AnimationRotationX 35
 scoreboard players reset #temp AnimationProgress
 execute if entity @s[scores={AnimationProgress=1}] run playsound luigis_mansion:entity.bowser.breathe_fire hostile @a[tag=same_room] ~ ~ ~ 3
 execute at @s[scores={AnimationProgress=21}] run playsound luigis_mansion:entity.bowser.fire hostile @a[tag=same_room] ~ ~ ~ 3

@@ -39,6 +39,6 @@ teleport @s[scores={AnimationProgress=7},tag=flipped_gravity,tag=shrunk] ~ ~0.21
 teleport @s[scores={AnimationProgress=8},tag=flipped_gravity,tag=shrunk] ~ ~0.24 ~ ~ ~
 teleport @s[scores={AnimationProgress=9},tag=flipped_gravity,tag=shrunk] ~ ~0.27 ~ ~ ~
 teleport @s[scores={AnimationProgress=10..},tag=flipped_gravity,tag=shrunk] ~ ~0.3 ~ ~ ~
-execute if entity @s[scores={AnimationProgress=1..10}] run scoreboard players remove @s AnimationRotationX 90
-execute if entity @s[scores={AnimationProgress=1..10}] run scoreboard players remove @s AnimationRotationY 5
+scoreboard players remove @s[scores={AnimationProgress=1..10}] AnimationRotationX 90
+scoreboard players remove @s[scores={AnimationProgress=1..10}] AnimationRotationY 5
 scoreboard players set @s[scores={AnimationProgress=60..}] AnimationProgress 0

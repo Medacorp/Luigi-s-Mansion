@@ -7,5 +7,5 @@ execute at @s[scores={DeathTime=31..40}] unless score #mirrored Selected matches
 execute at @s[scores={DeathTime=31..40}] unless score #mirrored Selected matches 1 run teleport @s[tag=flipped_gravity] ^-0.125 ^0.1 ^
 execute at @s[scores={DeathTime=31..40}] if score #mirrored Selected matches 1 run teleport @s[tag=!flipped_gravity] ^-0.125 ^-0.1 ^
 execute at @s[scores={DeathTime=31..40}] if score #mirrored Selected matches 1 run teleport @s[tag=flipped_gravity] ^0.125 ^0.1 ^
-execute if entity @s[scores={DeathTime=31..40}] unless score #mirrored Selected matches 1 run scoreboard players add @s AnimationRotationZ 110
-execute if entity @s[scores={DeathTime=31..40}] if score #mirrored Selected matches 1 run scoreboard players remove @s AnimationRotationZ 110
+execute unless score #mirrored Selected matches 1 run scoreboard players add @s[scores={DeathTime=31..40}] AnimationRotationZ 110
+execute if score #mirrored Selected matches 1 run scoreboard players remove @s[scores={DeathTime=31..40}] AnimationRotationZ 110

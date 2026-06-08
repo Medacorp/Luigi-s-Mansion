@@ -29,9 +29,9 @@ execute if entity @s[scores={AnimationProgress=37}] positioned ^-0.46 ^ ^ rotate
 execute if entity @s[scores={AnimationProgress=38}] positioned ^-0.46 ^ ^ rotated ~-20 ~ run teleport @s ^0.46 ^ ^ ~ ~
 execute if entity @s[scores={AnimationProgress=39}] positioned ^-0.46 ^ ^ rotated ~-10 ~ run teleport @s ^0.46 ^ ^ ~ ~
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -700
-execute if entity @s[scores={AnimationProgress=1..7}] run scoreboard players add @s AnimationRotationX 100
-execute if entity @s[scores={AnimationProgress=34..40}] run scoreboard players remove @s AnimationRotationX 100
-execute if entity @s[scores={AnimationProgress=1..10}] run scoreboard players remove @s AnimationRotationY 50
-execute if entity @s[scores={AnimationProgress=31..40}] run scoreboard players add @s AnimationRotationY 50
+scoreboard players add @s[scores={AnimationProgress=1..7}] AnimationRotationX 100
+scoreboard players remove @s[scores={AnimationProgress=34..40}] AnimationRotationX 100
+scoreboard players remove @s[scores={AnimationProgress=1..10}] AnimationRotationY 50
+scoreboard players add @s[scores={AnimationProgress=31..40}] AnimationRotationY 50
 data modify entity @s[scores={AnimationProgress=1}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.equipment
 scoreboard players set @s[scores={AnimationProgress=40}] AnimationProgress 0

@@ -44,8 +44,8 @@ scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationY 50
 execute unless data storage luigis_mansion:data luigi{tags:["moved"]} run scoreboard players set @s[scores={AnimationProgress=31..}] AnimationProgress 30
 scoreboard players set @s[scores={AnimationProgress=30}] AnimationRotationX -900
 execute unless score #mirrored Selected matches 1 run scoreboard players remove @s[scores={AnimationProgress=30}] AnimationRotationX 80
-execute if entity @s[scores={AnimationProgress=31..34}] unless score #mirrored Selected matches 1 run scoreboard players remove @s AnimationRotationX 20
-execute if entity @s[scores={AnimationProgress=35..38}] unless score #mirrored Selected matches 1 run scoreboard players add @s AnimationRotationX 20
-execute if entity @s[scores={AnimationProgress=31..34}] if score #mirrored Selected matches 1 run scoreboard players add @s AnimationRotationX 20
-execute if entity @s[scores={AnimationProgress=35..38}] if score #mirrored Selected matches 1 run scoreboard players remove @s AnimationRotationX 20
+execute unless score #mirrored Selected matches 1 run scoreboard players remove @s[scores={AnimationProgress=31..34}] AnimationRotationX 20
+execute unless score #mirrored Selected matches 1 run scoreboard players add @s[scores={AnimationProgress=35..38}] AnimationRotationX 20
+execute if score #mirrored Selected matches 1 run scoreboard players add @s[scores={AnimationProgress=31..34}] AnimationRotationX 20
+execute if score #mirrored Selected matches 1 run scoreboard players remove @s[scores={AnimationProgress=35..38}] AnimationRotationX 20
 scoreboard players set @s[scores={AnimationProgress=38..}] AnimationProgress 30

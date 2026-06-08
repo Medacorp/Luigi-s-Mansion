@@ -26,12 +26,12 @@ execute if entity @s[tag=shrunk,scores={AnimationProgress=60..63}] rotated ~-45 
 execute if entity @s[tag=!shrunk,scores={AnimationProgress=64..65}] rotated ~-22.5 ~ run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[tag=shrunk,scores={AnimationProgress=64..65}] rotated ~-22.5 ~ run teleport @s ~ ~ ~ ~ ~
 data modify entity @s[scores={AnimationProgress=1}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.happy
-execute if entity @s[scores={AnimationProgress=1}] run scoreboard players add @s AnimationRotationX 900
-execute if entity @s[scores={AnimationProgress=7..9}] run scoreboard players remove @s AnimationRotationX 300
-execute if entity @s[scores={AnimationProgress=21..22}] run scoreboard players add @s AnimationRotationX 50
-execute if entity @s[scores={AnimationProgress=23..24}] run scoreboard players remove @s AnimationRotationX 50
-execute if entity @s[scores={AnimationProgress=26..27}] run scoreboard players add @s AnimationRotationX 50
-execute if entity @s[scores={AnimationProgress=28..29}] run scoreboard players remove @s AnimationRotationX 50
-execute if entity @s[scores={AnimationProgress=46..50}] run scoreboard players add @s AnimationRotationX 90
-execute if entity @s[scores={AnimationProgress=61..65}] run scoreboard players remove @s AnimationRotationX 90
+scoreboard players add @s[scores={AnimationProgress=1}] AnimationRotationX 900
+scoreboard players remove @s[scores={AnimationProgress=7..9}] AnimationRotationX 300
+scoreboard players add @s[scores={AnimationProgress=21..22}] AnimationRotationX 50
+scoreboard players remove @s[scores={AnimationProgress=23..24}] AnimationRotationX 50
+scoreboard players add @s[scores={AnimationProgress=26..27}] AnimationRotationX 50
+scoreboard players remove @s[scores={AnimationProgress=28..29}] AnimationRotationX 50
+scoreboard players add @s[scores={AnimationProgress=46..50}] AnimationRotationX 90
+scoreboard players remove @s[scores={AnimationProgress=61..65}] AnimationRotationX 90
 scoreboard players set @s[scores={AnimationProgress=70}] AnimationProgress 0

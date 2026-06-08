@@ -10,6 +10,6 @@ execute if entity @s[scores={AnimationProgress=8}] positioned ^-0.3 ^ ^ rotated 
 execute if entity @s[scores={AnimationProgress=9}] positioned ^-0.3 ^ ^ rotated ~-324 ~ run teleport @s ^0.3 ^ ^ ~ ~
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -400
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationY 200
-execute if entity @s[scores={AnimationProgress=1..10}] run scoreboard players remove @s AnimationRotationY 20
-execute if entity @s[scores={AnimationProgress=1..10}] run scoreboard players remove @s AnimationRotationX 80
+scoreboard players remove @s[scores={AnimationProgress=1..10}] AnimationRotationY 20
+scoreboard players remove @s[scores={AnimationProgress=1..10}] AnimationRotationX 80
 scoreboard players set @s[scores={AnimationProgress=20}] AnimationProgress 0

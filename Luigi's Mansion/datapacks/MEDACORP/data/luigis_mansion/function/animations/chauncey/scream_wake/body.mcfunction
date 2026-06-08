@@ -24,6 +24,6 @@ teleport @s[scores={AnimationProgress=35}] ~ ~0.01 ~
 execute at @s run teleport @s[scores={AnimationProgress=26..35}] ^ ^0.01 ^0.01
 execute at @s run teleport @s[scores={AnimationProgress=36..40}] ^ ^0.01 ^-0.01
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -900
-execute if entity @s[scores={AnimationProgress=26..35}] run scoreboard players add @s AnimationRotationX 30
-execute if entity @s[scores={AnimationProgress=36..40}] run scoreboard players remove @s AnimationRotationX 30
+scoreboard players add @s[scores={AnimationProgress=26..35}] AnimationRotationX 30
+scoreboard players remove @s[scores={AnimationProgress=36..40}] AnimationRotationX 30
 scoreboard players set @s[scores={AnimationProgress=40..}] AnimationProgress 0

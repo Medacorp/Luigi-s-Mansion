@@ -20,11 +20,11 @@ teleport @s[scores={AnimationProgress=59}] ^ ^-1.2 ^0.6
 teleport @s[scores={AnimationProgress=60}] ^ ^-1.333 ^0.667
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -700
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationY 70
-execute if entity @s[scores={AnimationProgress=1..10}] run scoreboard players remove @s AnimationRotationX 50
-execute if entity @s[scores={AnimationProgress=21..30}] run scoreboard players add @s AnimationRotationX 30
-execute if entity @s[scores={AnimationProgress=31..40}] run scoreboard players remove @s AnimationRotationX 30
-execute if entity @s[scores={AnimationProgress=41..50}] run scoreboard players add @s AnimationRotationX 50
-execute if entity @s[scores={AnimationProgress=51..60}] run scoreboard players add @s AnimationRotationX 50
-execute if entity @s[scores={AnimationProgress=1..10}] run scoreboard players remove @s AnimationRotationY 14
-execute if entity @s[scores={AnimationProgress=51..60}] run scoreboard players add @s AnimationRotationY 14
+scoreboard players remove @s[scores={AnimationProgress=1..10}] AnimationRotationX 50
+scoreboard players add @s[scores={AnimationProgress=21..30}] AnimationRotationX 30
+scoreboard players remove @s[scores={AnimationProgress=31..40}] AnimationRotationX 30
+scoreboard players add @s[scores={AnimationProgress=41..50}] AnimationRotationX 50
+scoreboard players add @s[scores={AnimationProgress=51..60}] AnimationRotationX 50
+scoreboard players remove @s[scores={AnimationProgress=1..10}] AnimationRotationY 14
+scoreboard players add @s[scores={AnimationProgress=51..60}] AnimationRotationY 14
 scoreboard players set @s[scores={AnimationProgress=60}] AnimationProgress 0

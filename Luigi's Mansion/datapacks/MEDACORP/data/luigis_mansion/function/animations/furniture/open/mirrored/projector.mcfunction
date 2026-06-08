@@ -1,9 +1,9 @@
 scoreboard players add @s ActionTime 1
-execute if entity @s[scores={ActionTime=2..3}] run scoreboard players remove @s AnimationRotationZ 40
-execute if entity @s[scores={ActionTime=4..7}] run scoreboard players add @s AnimationRotationZ 40
-execute if entity @s[scores={ActionTime=8..11}] run scoreboard players remove @s AnimationRotationZ 40
-execute if entity @s[scores={ActionTime=12..15}] run scoreboard players add @s AnimationRotationZ 40
-execute if entity @s[scores={ActionTime=16..17}] run scoreboard players remove @s AnimationRotationZ 40
+scoreboard players remove @s[scores={ActionTime=2..3}] AnimationRotationZ 40
+scoreboard players add @s[scores={ActionTime=4..7}] AnimationRotationZ 40
+scoreboard players remove @s[scores={ActionTime=8..11}] AnimationRotationZ 40
+scoreboard players add @s[scores={ActionTime=12..15}] AnimationRotationZ 40
+scoreboard players remove @s[scores={ActionTime=16..17}] AnimationRotationZ 40
 execute if entity @s[scores={ActionTime=2}] run playsound luigis_mansion:furniture.projector block @a[tag=same_room] ~ ~1.4 ~
 execute if entity @s[scores={ActionTime=6}] run playsound luigis_mansion:furniture.projector block @a[tag=same_room] ~ ~1.4 ~
 execute if entity @s[scores={ActionTime=10}] run playsound luigis_mansion:furniture.projector block @a[tag=same_room] ~ ~1.4 ~

@@ -1,43 +1,43 @@
 scoreboard players add @s AnimationProgress 1
 scoreboard players set @s[scores={AnimationProgress=21}] AnimationRotationX 200
-execute if entity @s[scores={AnimationProgress=1}] run scoreboard players set @s AnimationRotationX 20
-execute if entity @s[scores={AnimationProgress=2}] run scoreboard players set @s AnimationRotationX 40
-execute if entity @s[scores={AnimationProgress=3}] run scoreboard players set @s AnimationRotationX 60
-execute if entity @s[scores={AnimationProgress=4}] run scoreboard players set @s AnimationRotationX 80
-execute if entity @s[scores={AnimationProgress=5}] run scoreboard players set @s AnimationRotationX 100
-execute if entity @s[scores={AnimationProgress=6}] run scoreboard players set @s AnimationRotationX 120
-execute if entity @s[scores={AnimationProgress=7}] run scoreboard players set @s AnimationRotationX 140
-execute if entity @s[scores={AnimationProgress=8}] run scoreboard players set @s AnimationRotationX 160
-execute if entity @s[scores={AnimationProgress=9}] run scoreboard players set @s AnimationRotationX 180
-execute if entity @s[scores={AnimationProgress=10}] run scoreboard players set @s AnimationRotationX 200
-execute if entity @s[scores={AnimationProgress=11}] run scoreboard players set @s AnimationRotationX 210
-execute if entity @s[scores={AnimationProgress=12}] run scoreboard players set @s AnimationRotationX 220
-execute if entity @s[scores={AnimationProgress=13}] run scoreboard players set @s AnimationRotationX 230
-execute if entity @s[scores={AnimationProgress=14}] run scoreboard players set @s AnimationRotationX 240
-execute if entity @s[scores={AnimationProgress=15}] run scoreboard players set @s AnimationRotationX 250
-execute if entity @s[scores={AnimationProgress=16}] run scoreboard players set @s AnimationRotationX 240
-execute if entity @s[scores={AnimationProgress=17}] run scoreboard players set @s AnimationRotationX 230
-execute if entity @s[scores={AnimationProgress=18}] run scoreboard players set @s AnimationRotationX 220
-execute if entity @s[scores={AnimationProgress=19}] run scoreboard players set @s AnimationRotationX 210
-execute if entity @s[scores={AnimationProgress=20}] run scoreboard players set @s AnimationRotationX 200
-execute if entity @s[scores={AnimationProgress=21}] run scoreboard players set @s AnimationRotationX 210
-execute if entity @s[scores={AnimationProgress=22}] run scoreboard players set @s AnimationRotationX 220
-execute if entity @s[scores={AnimationProgress=23}] run scoreboard players set @s AnimationRotationX 230
-execute if entity @s[scores={AnimationProgress=24}] run scoreboard players set @s AnimationRotationX 240
-execute if entity @s[scores={AnimationProgress=25}] run scoreboard players set @s AnimationRotationX 250
-execute if entity @s[scores={AnimationProgress=26}] run scoreboard players set @s AnimationRotationX 240
-execute if entity @s[scores={AnimationProgress=27}] run scoreboard players set @s AnimationRotationX 230
-execute if entity @s[scores={AnimationProgress=28}] run scoreboard players set @s AnimationRotationX 220
-execute if entity @s[scores={AnimationProgress=29}] run scoreboard players set @s AnimationRotationX 210
-execute if entity @s[scores={AnimationProgress=30}] run scoreboard players set @s AnimationRotationX 200
-execute if entity @s[scores={AnimationProgress=31}] run scoreboard players set @s AnimationRotationX 210
-execute if entity @s[scores={AnimationProgress=32}] run scoreboard players set @s AnimationRotationX 220
-execute if entity @s[scores={AnimationProgress=33}] run scoreboard players set @s AnimationRotationX 230
-execute if entity @s[scores={AnimationProgress=34}] run scoreboard players set @s AnimationRotationX 240
-execute if entity @s[scores={AnimationProgress=35}] run scoreboard players set @s AnimationRotationX 250
-execute if entity @s[scores={AnimationProgress=36}] run scoreboard players set @s AnimationRotationX 240
-execute if entity @s[scores={AnimationProgress=37}] run scoreboard players set @s AnimationRotationX 230
-execute if entity @s[scores={AnimationProgress=38}] run scoreboard players set @s AnimationRotationX 220
-execute if entity @s[scores={AnimationProgress=39}] run scoreboard players set @s AnimationRotationX 210
-execute if entity @s[scores={AnimationProgress=40}] run scoreboard players set @s AnimationRotationX 200
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX 20
+scoreboard players set @s[scores={AnimationProgress=2}] AnimationRotationX 40
+scoreboard players set @s[scores={AnimationProgress=3}] AnimationRotationX 60
+scoreboard players set @s[scores={AnimationProgress=4}] AnimationRotationX 80
+scoreboard players set @s[scores={AnimationProgress=5}] AnimationRotationX 100
+scoreboard players set @s[scores={AnimationProgress=6}] AnimationRotationX 120
+scoreboard players set @s[scores={AnimationProgress=7}] AnimationRotationX 140
+scoreboard players set @s[scores={AnimationProgress=8}] AnimationRotationX 160
+scoreboard players set @s[scores={AnimationProgress=9}] AnimationRotationX 180
+scoreboard players set @s[scores={AnimationProgress=10}] AnimationRotationX 200
+scoreboard players set @s[scores={AnimationProgress=11}] AnimationRotationX 210
+scoreboard players set @s[scores={AnimationProgress=12}] AnimationRotationX 220
+scoreboard players set @s[scores={AnimationProgress=13}] AnimationRotationX 230
+scoreboard players set @s[scores={AnimationProgress=14}] AnimationRotationX 240
+scoreboard players set @s[scores={AnimationProgress=15}] AnimationRotationX 250
+scoreboard players set @s[scores={AnimationProgress=16}] AnimationRotationX 240
+scoreboard players set @s[scores={AnimationProgress=17}] AnimationRotationX 230
+scoreboard players set @s[scores={AnimationProgress=18}] AnimationRotationX 220
+scoreboard players set @s[scores={AnimationProgress=19}] AnimationRotationX 210
+scoreboard players set @s[scores={AnimationProgress=20}] AnimationRotationX 200
+scoreboard players set @s[scores={AnimationProgress=21}] AnimationRotationX 210
+scoreboard players set @s[scores={AnimationProgress=22}] AnimationRotationX 220
+scoreboard players set @s[scores={AnimationProgress=23}] AnimationRotationX 230
+scoreboard players set @s[scores={AnimationProgress=24}] AnimationRotationX 240
+scoreboard players set @s[scores={AnimationProgress=25}] AnimationRotationX 250
+scoreboard players set @s[scores={AnimationProgress=26}] AnimationRotationX 240
+scoreboard players set @s[scores={AnimationProgress=27}] AnimationRotationX 230
+scoreboard players set @s[scores={AnimationProgress=28}] AnimationRotationX 220
+scoreboard players set @s[scores={AnimationProgress=29}] AnimationRotationX 210
+scoreboard players set @s[scores={AnimationProgress=30}] AnimationRotationX 200
+scoreboard players set @s[scores={AnimationProgress=31}] AnimationRotationX 210
+scoreboard players set @s[scores={AnimationProgress=32}] AnimationRotationX 220
+scoreboard players set @s[scores={AnimationProgress=33}] AnimationRotationX 230
+scoreboard players set @s[scores={AnimationProgress=34}] AnimationRotationX 240
+scoreboard players set @s[scores={AnimationProgress=35}] AnimationRotationX 250
+scoreboard players set @s[scores={AnimationProgress=36}] AnimationRotationX 240
+scoreboard players set @s[scores={AnimationProgress=37}] AnimationRotationX 230
+scoreboard players set @s[scores={AnimationProgress=38}] AnimationRotationX 220
+scoreboard players set @s[scores={AnimationProgress=39}] AnimationRotationX 210
+scoreboard players set @s[scores={AnimationProgress=40}] AnimationRotationX 200
 scoreboard players set @s[scores={AnimationProgress=40}] AnimationProgress 20

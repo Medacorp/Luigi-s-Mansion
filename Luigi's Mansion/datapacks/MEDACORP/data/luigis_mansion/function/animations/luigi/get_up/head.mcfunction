@@ -40,15 +40,15 @@ teleport @s[scores={AnimationProgress=18},tag=flipped_gravity,tag=shrunk] ~ ~0.0
 teleport @s[scores={AnimationProgress=19},tag=flipped_gravity,tag=shrunk] ~ ~0.06 ~ ~ ~
 teleport @s[scores={AnimationProgress=20},tag=flipped_gravity,tag=shrunk] ~ ~0.03 ~ ~ ~
 data modify entity @s[scores={AnimationProgress=1}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.scared
-execute if entity @s[scores={AnimationProgress=1..2}] unless score #mirrored Selected matches 1 run scoreboard players add @s AnimationRotationY 100
-execute if entity @s[scores={AnimationProgress=3..6}] unless score #mirrored Selected matches 1 run scoreboard players remove @s AnimationRotationY 100
-execute if entity @s[scores={AnimationProgress=7..10}] unless score #mirrored Selected matches 1 run scoreboard players add @s AnimationRotationY 100
-execute if entity @s[scores={AnimationProgress=11..14}] unless score #mirrored Selected matches 1 run scoreboard players remove @s AnimationRotationY 100
-execute if entity @s[scores={AnimationProgress=15..18}] unless score #mirrored Selected matches 1 run scoreboard players add @s AnimationRotationY 100
-execute if entity @s[scores={AnimationProgress=19..20}] unless score #mirrored Selected matches 1 run scoreboard players remove @s AnimationRotationY 100
-execute if entity @s[scores={AnimationProgress=1..2}] if score #mirrored Selected matches 1 run scoreboard players remove @s AnimationRotationY 100
-execute if entity @s[scores={AnimationProgress=3..6}] if score #mirrored Selected matches 1 run scoreboard players add @s AnimationRotationY 100
-execute if entity @s[scores={AnimationProgress=7..10}] if score #mirrored Selected matches 1 run scoreboard players remove @s AnimationRotationY 100
-execute if entity @s[scores={AnimationProgress=11..14}] if score #mirrored Selected matches 1 run scoreboard players add @s AnimationRotationY 100
-execute if entity @s[scores={AnimationProgress=15..18}] if score #mirrored Selected matches 1 run scoreboard players remove @s AnimationRotationY 100
-execute if entity @s[scores={AnimationProgress=19..20}] if score #mirrored Selected matches 1 run scoreboard players add @s AnimationRotationY 100
+execute unless score #mirrored Selected matches 1 run scoreboard players add @s[scores={AnimationProgress=1..2}] AnimationRotationY 100
+execute unless score #mirrored Selected matches 1 run scoreboard players remove @s[scores={AnimationProgress=3..6}] AnimationRotationY 100
+execute unless score #mirrored Selected matches 1 run scoreboard players add @s[scores={AnimationProgress=7..10}] AnimationRotationY 100
+execute unless score #mirrored Selected matches 1 run scoreboard players remove @s[scores={AnimationProgress=11..14}] AnimationRotationY 100
+execute unless score #mirrored Selected matches 1 run scoreboard players add @s[scores={AnimationProgress=15..18}] AnimationRotationY 100
+execute unless score #mirrored Selected matches 1 run scoreboard players remove @s[scores={AnimationProgress=19..20}] AnimationRotationY 100
+execute if score #mirrored Selected matches 1 run scoreboard players remove @s[scores={AnimationProgress=1..2}] AnimationRotationY 100
+execute if score #mirrored Selected matches 1 run scoreboard players add @s[scores={AnimationProgress=3..6}] AnimationRotationY 100
+execute if score #mirrored Selected matches 1 run scoreboard players remove @s[scores={AnimationProgress=7..10}] AnimationRotationY 100
+execute if score #mirrored Selected matches 1 run scoreboard players add @s[scores={AnimationProgress=11..14}] AnimationRotationY 100
+execute if score #mirrored Selected matches 1 run scoreboard players remove @s[scores={AnimationProgress=15..18}] AnimationRotationY 100
+execute if score #mirrored Selected matches 1 run scoreboard players add @s[scores={AnimationProgress=19..20}] AnimationRotationY 100

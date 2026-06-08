@@ -1,7 +1,7 @@
 scoreboard players add @s AnimationProgress 1
 teleport @s ^ ^0.1 ^
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationZ -1800
-execute if entity @s[scores={AnimationProgress=186..220}] run scoreboard players remove @s AnimationRotationZ 180
+scoreboard players remove @s[scores={AnimationProgress=186..220}] AnimationRotationZ 180
 data modify entity @s[scores={AnimationProgress=181..230}] Pos set from entity @s data.old_position.Pos
 data modify entity @s[scores={AnimationProgress=181..230}] Rotation set from entity @s data.old_position.Rotation
 execute at @s[scores={AnimationProgress=156}] run teleport @s ^ ^-0.1 ^-0.04

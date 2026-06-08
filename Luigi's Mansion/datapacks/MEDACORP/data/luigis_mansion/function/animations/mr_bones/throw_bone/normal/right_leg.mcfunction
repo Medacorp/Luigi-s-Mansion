@@ -1,6 +1,6 @@
 scoreboard players add @s AnimationProgress 1
-execute if entity @s[scores={AnimationProgress=1..30}] run scoreboard players remove @s AnimationRotationX 30
-execute if entity @s[scores={AnimationProgress=31..40}] run scoreboard players add @s AnimationRotationX 90
-execute if entity @s[scores={AnimationProgress=1..30}] run scoreboard players add @s AnimationRotationY 10
-execute if entity @s[scores={AnimationProgress=31..40}] run scoreboard players remove @s AnimationRotationY 30
+scoreboard players remove @s[scores={AnimationProgress=1..30}] AnimationRotationX 30
+scoreboard players add @s[scores={AnimationProgress=31..40}] AnimationRotationX 90
+scoreboard players add @s[scores={AnimationProgress=1..30}] AnimationRotationY 10
+scoreboard players remove @s[scores={AnimationProgress=31..40}] AnimationRotationY 30
 scoreboard players set @s[scores={AnimationProgress=60}] AnimationProgress 0

@@ -10,6 +10,6 @@ teleport @s[scores={AnimationProgress=8}] ^ ^-0.4 ^0.2
 teleport @s[scores={AnimationProgress=9}] ^ ^-0.267 ^0.133
 teleport @s[scores={AnimationProgress=10}] ^ ^-0.133 ^0.067
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX 200
-execute if entity @s[scores={AnimationProgress=1..10}] run scoreboard players remove @s AnimationRotationX 10
+scoreboard players remove @s[scores={AnimationProgress=1..10}] AnimationRotationX 10
 execute if entity @s[scores={AnimationProgress=11}] run playsound luigis_mansion:entity.bowser.grab_head hostile @a[tag=same_room] ~ ~ ~ 3
 scoreboard players set @s[scores={AnimationProgress=60}] AnimationProgress 0

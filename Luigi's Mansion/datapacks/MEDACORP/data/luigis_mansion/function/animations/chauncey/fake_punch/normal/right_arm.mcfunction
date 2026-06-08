@@ -10,8 +10,8 @@ execute if entity @s[scores={AnimationProgress=8}] positioned ^0.3 ^ ^ rotated ~
 execute if entity @s[scores={AnimationProgress=9}] positioned ^0.3 ^ ^ rotated ~-324 ~ run teleport @s ^-0.3 ^ ^ ~ ~
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -1600
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationY 700
-execute if entity @s[scores={AnimationProgress=1..10}] run scoreboard players remove @s AnimationRotationY 120
-execute if entity @s[scores={AnimationProgress=1..10}] run scoreboard players add @s AnimationRotationX 80
+scoreboard players remove @s[scores={AnimationProgress=1..10}] AnimationRotationY 120
+scoreboard players add @s[scores={AnimationProgress=1..10}] AnimationRotationX 80
 scoreboard players set @s[scores={AnimationProgress=20}] AnimationProgress 0
 execute unless data storage luigis_mansion:data ghost{tags:["big"]} if data storage luigis_mansion:data ghost{tags:["has_equipment"]} run data modify entity @s[scores={AnimationProgress=1}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.equipment
 execute if data storage luigis_mansion:data ghost{tags:["big","has_equipment"]} run data modify entity @s[scores={AnimationProgress=1}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.big_equipment

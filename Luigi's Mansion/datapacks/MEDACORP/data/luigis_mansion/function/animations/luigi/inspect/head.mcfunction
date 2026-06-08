@@ -8,4 +8,4 @@ execute if entity @s[scores={AnimationProgress=6}] run scoreboard players set @s
 execute if entity @s[scores={AnimationProgress=7}] run scoreboard players set @s AnimationRotationX 300
 execute if entity @s[scores={AnimationProgress=8}] run scoreboard players set @s AnimationRotationX 200
 execute if entity @s[scores={AnimationProgress=9}] run scoreboard players set @s AnimationRotationX 100
-execute if entity @s[scores={AnimationProgress=10}] run scoreboard players set @s[scores={AnimationProgress=20..}] AnimationProgress 0
+scoreboard players set @s[scores={AnimationProgress=20..}] AnimationProgress 0

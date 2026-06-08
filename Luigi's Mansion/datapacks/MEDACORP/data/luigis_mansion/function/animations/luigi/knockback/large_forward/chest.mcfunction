@@ -135,5 +135,5 @@ teleport @s[scores={AnimationProgress=32},tag=shrunk,tag=flipped_gravity] ^ ^0.1
 teleport @s[scores={AnimationProgress=33},tag=shrunk,tag=flipped_gravity] ^ ^0.1 ^
 teleport @s[scores={AnimationProgress=34},tag=shrunk,tag=flipped_gravity] ^ ^0.2 ^
 teleport @s[scores={AnimationProgress=35..},tag=shrunk,tag=flipped_gravity] ^ ^0.3 ^
-execute if entity @s[scores={AnimationProgress=..30}] run scoreboard players add @s AnimationRotationX 240
+scoreboard players add @s[scores={AnimationProgress=..30}] AnimationRotationX 240
 scoreboard players set @s[scores={AnimationProgress=50}] AnimationProgress 0

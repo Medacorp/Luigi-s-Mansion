@@ -4,7 +4,7 @@ execute unless score #mirrored Selected matches 1 run scoreboard players set @s[
 execute if score #mirrored Selected matches 1 run scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -1100
 execute if score #mirrored Selected matches 1 run scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationY 300
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationZ 100
-scoreboard players set @s[scores={AnimationProgress=1},tag=flipped_gravity] AnimationRotationZ -1700
+scoreboard players remove @s[scores={AnimationProgress=1},tag=flipped_gravity] AnimationRotationZ 1800
 scoreboard players operation #temp AnimationProgress = @s AnimationProgress
 scoreboard players operation #temp AnimationProgress %= #4 Constants
 execute if score #mirrored Selected matches 1 unless score #temp AnimationProgress matches 1..2 run scoreboard players add @s AnimationRotationX 2

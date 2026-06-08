@@ -16,9 +16,9 @@ teleport @s[scores={AnimationProgress=29}] ~ ~-0.4 ~
 teleport @s[scores={AnimationProgress=30}] ~ ~-0.2 ~
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -900
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationY -900
-execute if entity @s[scores={AnimationProgress=1..10}] run scoreboard players add @s AnimationRotationX 90
-execute if entity @s[scores={AnimationProgress=26..30}] run scoreboard players remove @s AnimationRotationX 180
-execute if entity @s[scores={AnimationProgress=1..10}] run scoreboard players add @s AnimationRotationY 90
-execute if entity @s[scores={AnimationProgress=26..30}] run scoreboard players remove @s AnimationRotationY 180
+scoreboard players add @s[scores={AnimationProgress=1..10}] AnimationRotationX 90
+scoreboard players remove @s[scores={AnimationProgress=26..30}] AnimationRotationX 180
+scoreboard players add @s[scores={AnimationProgress=1..10}] AnimationRotationY 90
+scoreboard players remove @s[scores={AnimationProgress=26..30}] AnimationRotationY 180
 execute if score #mirrored Selected matches 1 run data modify entity @s[scores={AnimationProgress=1}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.equipment
 scoreboard players set @s[scores={AnimationProgress=30}] AnimationProgress 0

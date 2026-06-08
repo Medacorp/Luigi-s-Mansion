@@ -14,7 +14,7 @@ teleport @s[scores={AnimationProgress=27}] ~ ~-0.8 ~
 teleport @s[scores={AnimationProgress=28}] ~ ~-0.6 ~
 teleport @s[scores={AnimationProgress=29}] ~ ~-0.4 ~
 teleport @s[scores={AnimationProgress=30}] ~ ~-0.2 ~
-execute if entity @s[scores={AnimationProgress=1..10}] run scoreboard players add @s AnimationRotationX 90
-execute if entity @s[scores={AnimationProgress=26..30}] run scoreboard players remove @s AnimationRotationX 180
+scoreboard players add @s[scores={AnimationProgress=1..10}] AnimationRotationX 90
+scoreboard players remove @s[scores={AnimationProgress=26..30}] AnimationRotationX 180
 execute unless data storage luigis_mansion:data ghost{tags:["maskless"]} run data modify entity @s[scores={AnimationProgress=1}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.equipment
 scoreboard players set @s[scores={AnimationProgress=30}] AnimationProgress 0

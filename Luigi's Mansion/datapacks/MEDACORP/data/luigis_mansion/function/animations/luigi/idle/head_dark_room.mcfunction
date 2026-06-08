@@ -1,24 +1,24 @@
-execute if entity @s[scores={Time=1}] run scoreboard players add @s AnimationRotationZ 2
-execute if entity @s[scores={Time=2..3}] run scoreboard players remove @s AnimationRotationZ 2
-execute if entity @s[scores={Time=4..5}] run scoreboard players add @s AnimationRotationZ 2
-execute if entity @s[scores={Time=6..7}] run scoreboard players remove @s AnimationRotationZ 2
-execute if entity @s[scores={Time=8..9}] run scoreboard players add @s AnimationRotationZ 2
-execute if entity @s[scores={Time=10..11}] run scoreboard players remove @s AnimationRotationZ 2
-execute if entity @s[scores={Time=12..13}] run scoreboard players add @s AnimationRotationZ 2
-execute if entity @s[scores={Time=14..15}] run scoreboard players remove @s AnimationRotationZ 2
-execute if entity @s[scores={Time=16..17}] run scoreboard players add @s AnimationRotationZ 2
-execute if entity @s[scores={Time=18..19}] run scoreboard players remove @s AnimationRotationZ 2
-execute if entity @s[scores={Time=20..21}] run scoreboard players add @s AnimationRotationZ 2
-execute if entity @s[scores={Time=22..23}] run scoreboard players remove @s AnimationRotationZ 2
-execute if entity @s[scores={Time=24..25}] run scoreboard players add @s AnimationRotationZ 2
-execute if entity @s[scores={Time=26..27}] run scoreboard players remove @s AnimationRotationZ 2
-execute if entity @s[scores={Time=28..29}] run scoreboard players add @s AnimationRotationZ 2
-execute if entity @s[scores={Time=30..31}] run scoreboard players remove @s AnimationRotationZ 2
-execute if entity @s[scores={Time=32..33}] run scoreboard players add @s AnimationRotationZ 2
-execute if entity @s[scores={Time=34..35}] run scoreboard players remove @s AnimationRotationZ 2
-execute if entity @s[scores={Time=36..37}] run scoreboard players add @s AnimationRotationZ 2
-execute if entity @s[scores={Time=38..39}] run scoreboard players remove @s AnimationRotationZ 2
-execute if entity @s[scores={Time=40}] run scoreboard players add @s AnimationRotationZ 2
+scoreboard players add @s[scores={Time=1}] AnimationRotationZ 2
+scoreboard players remove @s[scores={Time=2..3}] AnimationRotationZ 2
+scoreboard players add @s[scores={Time=4..5}] AnimationRotationZ 2
+scoreboard players remove @s[scores={Time=6..7}] AnimationRotationZ 2
+scoreboard players add @s[scores={Time=8..9}] AnimationRotationZ 2
+scoreboard players remove @s[scores={Time=10..11}] AnimationRotationZ 2
+scoreboard players add @s[scores={Time=12..13}] AnimationRotationZ 2
+scoreboard players remove @s[scores={Time=14..15}] AnimationRotationZ 2
+scoreboard players add @s[scores={Time=16..17}] AnimationRotationZ 2
+scoreboard players remove @s[scores={Time=18..19}] AnimationRotationZ 2
+scoreboard players add @s[scores={Time=20..21}] AnimationRotationZ 2
+scoreboard players remove @s[scores={Time=22..23}] AnimationRotationZ 2
+scoreboard players add @s[scores={Time=24..25}] AnimationRotationZ 2
+scoreboard players remove @s[scores={Time=26..27}] AnimationRotationZ 2
+scoreboard players add @s[scores={Time=28..29}] AnimationRotationZ 2
+scoreboard players remove @s[scores={Time=30..31}] AnimationRotationZ 2
+scoreboard players add @s[scores={Time=32..33}] AnimationRotationZ 2
+scoreboard players remove @s[scores={Time=34..35}] AnimationRotationZ 2
+scoreboard players add @s[scores={Time=36..37}] AnimationRotationZ 2
+scoreboard players remove @s[scores={Time=38..39}] AnimationRotationZ 2
+scoreboard players add @s[scores={Time=40}] AnimationRotationZ 2
 execute if entity @s[tag=!flipped_gravity] store result entity @s Rotation[1] float 0.1 run scoreboard players get @s AnimationRotationX
 execute if entity @s[tag=flipped_gravity] store result entity @s Rotation[1] float -0.1 run scoreboard players get @s AnimationRotationX
 execute store result score #head Time run data get entity @s Rotation[0]

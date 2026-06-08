@@ -41,6 +41,6 @@ execute if entity @s[scores={AnimationProgress=39}] positioned ^0.3 ^ ^ rotated 
 teleport @s[scores={AnimationProgress=40}] ^ ^2 ^
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -900
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationY 900
-execute if entity @s[scores={AnimationProgress=1..30}] run scoreboard players add @s AnimationRotationX 30
+scoreboard players add @s[scores={AnimationProgress=1..30}] AnimationRotationX 30
 execute unless data storage luigis_mansion:data ghost{tags:["dropped_off_food"]} run data modify entity @s[scores={AnimationProgress=1}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.food
 scoreboard players set @s[scores={AnimationProgress=40}] AnimationProgress 0

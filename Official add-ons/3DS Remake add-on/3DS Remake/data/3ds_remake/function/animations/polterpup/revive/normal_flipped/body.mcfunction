@@ -57,14 +57,14 @@ execute at @s[scores={AnimationProgress=307}] run teleport @s ^ ^-0.1 ^
 execute at @s[scores={AnimationProgress=308}] run teleport @s ^ ^-0.05 ^
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -900
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationZ -1800
-execute if entity @s[scores={AnimationProgress=1..10}] run scoreboard players add @s AnimationRotationX 90
-execute if entity @s[scores={AnimationProgress=21..30}] run scoreboard players remove @s AnimationRotationX 40
-execute if entity @s[scores={AnimationProgress=71..80}] run scoreboard players add @s AnimationRotationX 40
-execute if entity @s[scores={AnimationProgress=156..160}] run scoreboard players remove @s AnimationRotationX 80
-execute if entity @s[scores={AnimationProgress=181..185}] run scoreboard players add @s AnimationRotationX 80
-execute if entity @s[scores={AnimationProgress=196..200}] run scoreboard players remove @s AnimationRotationX 160
-execute if entity @s[scores={AnimationProgress=251..255}] run scoreboard players add @s AnimationRotationX 160
-execute if entity @s[scores={AnimationProgress=331..340}] run scoreboard players add @s AnimationRotationX 90
+scoreboard players add @s[scores={AnimationProgress=1..10}] AnimationRotationX 90
+scoreboard players remove @s[scores={AnimationProgress=21..30}] AnimationRotationX 40
+scoreboard players add @s[scores={AnimationProgress=71..80}] AnimationRotationX 40
+scoreboard players remove @s[scores={AnimationProgress=156..160}] AnimationRotationX 80
+scoreboard players add @s[scores={AnimationProgress=181..185}] AnimationRotationX 80
+scoreboard players remove @s[scores={AnimationProgress=196..200}] AnimationRotationX 160
+scoreboard players add @s[scores={AnimationProgress=251..255}] AnimationRotationX 160
+scoreboard players add @s[scores={AnimationProgress=331..340}] AnimationRotationX 90
 execute if entity @s[scores={AnimationProgress=40}] run playsound 3ds_remake:entity.polterpup.first_bark neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={AnimationProgress=60}] run playsound 3ds_remake:entity.polterpup.sniff neutral @a[tag=same_room] ~ ~ ~ 0.5
 execute if entity @s[scores={AnimationProgress=65}] run playsound 3ds_remake:entity.polterpup.sniff neutral @a[tag=same_room] ~ ~ ~ 0.5

@@ -57,32 +57,32 @@ execute at @s[scores={AnimationProgress=307}] run teleport @s ^ ^-0.1 ^
 execute at @s[scores={AnimationProgress=308}] run teleport @s ^ ^-0.05 ^
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -900
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationZ -1800
-execute if entity @s[scores={AnimationProgress=1..10}] run scoreboard players add @s AnimationRotationX 90
-execute if entity @s[scores={AnimationProgress=38..40}] run scoreboard players remove @s AnimationRotationX 50
-execute if entity @s[scores={AnimationProgress=41..43}] run scoreboard players add @s AnimationRotationX 50
-execute if entity @s[scores={AnimationProgress=55..60}] run scoreboard players remove @s AnimationRotationX 10
-execute if entity @s[scores={AnimationProgress=71..80}] run scoreboard players add @s AnimationRotationX 50
-execute if entity @s[scores={AnimationProgress=150..160}] run scoreboard players remove @s AnimationRotationX 40
-execute if entity @s[scores={AnimationProgress=176..180}] run scoreboard players remove @s AnimationRotationX 80
-execute if entity @s[scores={AnimationProgress=181..185}] run scoreboard players add @s AnimationRotationX 80
-execute if entity @s[scores={AnimationProgress=196..200}] run scoreboard players remove @s AnimationRotationX 120
-execute if entity @s[scores={AnimationProgress=221..225}] run scoreboard players add @s AnimationRotationX 120
-execute if entity @s[scores={AnimationProgress=240..245}] run scoreboard players remove @s AnimationRotationX 20
-execute if entity @s[scores={AnimationProgress=246..249}] run scoreboard players add @s AnimationRotationX 20
-execute if entity @s[scores={AnimationProgress=261..270}] run scoreboard players add @s AnimationRotationX 30
-execute if entity @s[scores={AnimationProgress=281..285}] run scoreboard players remove @s AnimationRotationX 50
-execute if entity @s[scores={AnimationProgress=286..290}] run scoreboard players add @s AnimationRotationX 50
-execute if entity @s[scores={AnimationProgress=291..295}] run scoreboard players remove @s AnimationRotationX 50
-execute if entity @s[scores={AnimationProgress=296..300}] run scoreboard players add @s AnimationRotationX 20
-execute if entity @s[scores={AnimationProgress=297..299}] run scoreboard players remove @s AnimationRotationX 50
-execute if entity @s[scores={AnimationProgress=300..302}] run scoreboard players add @s AnimationRotationX 50
-execute if entity @s[scores={AnimationProgress=305..307}] run scoreboard players remove @s AnimationRotationX 50
-execute if entity @s[scores={AnimationProgress=308..310}] run scoreboard players add @s AnimationRotationX 50
-execute if entity @s[scores={AnimationProgress=317..319}] run scoreboard players remove @s AnimationRotationX 50
-execute if entity @s[scores={AnimationProgress=320..322}] run scoreboard players add @s AnimationRotationX 50
-execute if entity @s[scores={AnimationProgress=325..327}] run scoreboard players remove @s AnimationRotationX 50
-execute if entity @s[scores={AnimationProgress=329..330}] run scoreboard players add @s AnimationRotationX 50
-execute if entity @s[scores={AnimationProgress=331..340}] run scoreboard players add @s AnimationRotationX 90
+scoreboard players add @s[scores={AnimationProgress=1..10}] AnimationRotationX 90
+scoreboard players remove @s[scores={AnimationProgress=38..40}] AnimationRotationX 50
+scoreboard players add @s[scores={AnimationProgress=41..43}] AnimationRotationX 50
+scoreboard players remove @s[scores={AnimationProgress=55..60}] AnimationRotationX 10
+scoreboard players add @s[scores={AnimationProgress=71..80}] AnimationRotationX 50
+scoreboard players remove @s[scores={AnimationProgress=150..160}] AnimationRotationX 40
+scoreboard players remove @s[scores={AnimationProgress=176..180}] AnimationRotationX 80
+scoreboard players add @s[scores={AnimationProgress=181..185}] AnimationRotationX 80
+scoreboard players remove @s[scores={AnimationProgress=196..200}] AnimationRotationX 120
+scoreboard players add @s[scores={AnimationProgress=221..225}] AnimationRotationX 120
+scoreboard players remove @s[scores={AnimationProgress=240..245}] AnimationRotationX 20
+scoreboard players add @s[scores={AnimationProgress=246..249}] AnimationRotationX 20
+scoreboard players add @s[scores={AnimationProgress=261..270}] AnimationRotationX 30
+scoreboard players remove @s[scores={AnimationProgress=281..285}] AnimationRotationX 50
+scoreboard players add @s[scores={AnimationProgress=286..290}] AnimationRotationX 50
+scoreboard players remove @s[scores={AnimationProgress=291..295}] AnimationRotationX 50
+scoreboard players add @s[scores={AnimationProgress=296..300}] AnimationRotationX 20
+scoreboard players remove @s[scores={AnimationProgress=297..299}] AnimationRotationX 50
+scoreboard players add @s[scores={AnimationProgress=300..302}] AnimationRotationX 50
+scoreboard players remove @s[scores={AnimationProgress=305..307}] AnimationRotationX 50
+scoreboard players add @s[scores={AnimationProgress=308..310}] AnimationRotationX 50
+scoreboard players remove @s[scores={AnimationProgress=317..319}] AnimationRotationX 50
+scoreboard players add @s[scores={AnimationProgress=320..322}] AnimationRotationX 50
+scoreboard players remove @s[scores={AnimationProgress=325..327}] AnimationRotationX 50
+scoreboard players add @s[scores={AnimationProgress=329..330}] AnimationRotationX 50
+scoreboard players add @s[scores={AnimationProgress=331..340}] AnimationRotationX 90
 data modify entity @s[scores={AnimationProgress=38}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.open_mouth
 data modify entity @s[scores={AnimationProgress=42}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.default
 data modify entity @s[scores={AnimationProgress=145}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.open_mouth

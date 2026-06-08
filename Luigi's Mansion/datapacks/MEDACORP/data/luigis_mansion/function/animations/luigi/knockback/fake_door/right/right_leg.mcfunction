@@ -12,5 +12,5 @@ execute at @s[scores={AnimationProgress=119}] rotated ~ 0 run teleport @s ^ ^-0.
 data modify entity @s[scores={AnimationProgress=15}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.squished
 scoreboard players set @s[scores={AnimationProgress=80}] AnimationRotationX 1125
 data modify entity @s[scores={AnimationProgress=110}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.default
-execute if entity @s[scores={AnimationProgress=111..120}] run scoreboard players remove @s AnimationRotationX 112
+scoreboard players remove @s[scores={AnimationProgress=111..120}] AnimationRotationX 112
 scoreboard players set @s[scores={AnimationProgress=140..}] AnimationProgress 0

@@ -17,6 +17,6 @@ execute if entity @s[tag=!shrunk,scores={AnimationProgress=47..63}] rotated ~45 
 execute if entity @s[tag=shrunk,scores={AnimationProgress=47..63}] rotated ~45 ~ run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[tag=!shrunk,scores={AnimationProgress=64..65}] rotated ~22.5 ~ run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[tag=shrunk,scores={AnimationProgress=64..65}] rotated ~22.5 ~ run teleport @s ~ ~ ~ ~ ~
-execute if entity @s[scores={AnimationProgress=1}] run scoreboard players add @s AnimationRotationX 900
-execute if entity @s[scores={AnimationProgress=7..9}] run scoreboard players remove @s AnimationRotationX 300
+scoreboard players add @s[scores={AnimationProgress=1}] AnimationRotationX 900
+scoreboard players remove @s[scores={AnimationProgress=7..9}] AnimationRotationX 300
 scoreboard players set @s[scores={AnimationProgress=70}] AnimationProgress 0

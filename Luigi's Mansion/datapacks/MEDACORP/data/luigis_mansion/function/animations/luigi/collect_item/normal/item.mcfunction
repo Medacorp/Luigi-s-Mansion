@@ -20,15 +20,15 @@ execute if entity @s[tag=shrunk,scores={AnimationProgress=64..65}] positioned ^0
 data modify entity @s[scores={AnimationProgress=1..60}] equipment.head set from storage luigis_mansion:data luigi.animation.item
 data remove entity @s[scores={AnimationProgress=61}] equipment.head
 execute store result score #item Time run data get storage luigis_mansion:data luigi.animation.item.components."minecraft:custom_data".held_pitch 10
-execute if entity @s[scores={AnimationProgress=1}] run scoreboard players operation @s AnimationRotationX += #item Time
-execute if entity @s[scores={AnimationProgress=1}] run scoreboard players add @s AnimationRotationX 900
-execute if entity @s[scores={AnimationProgress=7..9}] run scoreboard players remove @s AnimationRotationX 300
-execute if entity @s[scores={AnimationProgress=45..47}] run scoreboard players add @s AnimationRotationX 400
-execute if entity @s[scores={AnimationProgress=50..51}] run scoreboard players add @s AnimationRotationX 30
-execute if entity @s[scores={AnimationProgress=52..53}] run scoreboard players remove @s AnimationRotationX 30
-execute if entity @s[scores={AnimationProgress=57..58}] run scoreboard players add @s AnimationRotationX 30
-execute if entity @s[scores={AnimationProgress=59..60}] run scoreboard players remove @s AnimationRotationX 30
-execute if entity @s[scores={AnimationProgress=63..65}] run scoreboard players remove @s AnimationRotationX 100
+scoreboard players operation @s[scores={AnimationProgress=1}] AnimationRotationX += #item Time
+scoreboard players add @s[scores={AnimationProgress=1}] AnimationRotationX 900
+scoreboard players remove @s[scores={AnimationProgress=7..9}] AnimationRotationX 300
+scoreboard players add @s[scores={AnimationProgress=45..47}] AnimationRotationX 400
+scoreboard players add @s[scores={AnimationProgress=50..51}] AnimationRotationX 30
+scoreboard players remove @s[scores={AnimationProgress=52..53}] AnimationRotationX 30
+scoreboard players add @s[scores={AnimationProgress=57..58}] AnimationRotationX 30
+scoreboard players remove @s[scores={AnimationProgress=59..60}] AnimationRotationX 30
+scoreboard players remove @s[scores={AnimationProgress=63..65}] AnimationRotationX 100
 scoreboard players operation #head Time = @s AnimationRotationX
 scoreboard players operation #head Time -= #item Time
 execute store result entity @s Rotation[1] float 0.1 run scoreboard players remove #head Time 900

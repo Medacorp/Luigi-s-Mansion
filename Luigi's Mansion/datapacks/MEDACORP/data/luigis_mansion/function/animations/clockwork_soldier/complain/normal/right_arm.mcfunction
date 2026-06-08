@@ -19,13 +19,13 @@ execute if entity @s[scores={AnimationProgress=17}] positioned ^0.46 ^ ^ rotated
 execute if entity @s[scores={AnimationProgress=18}] positioned ^0.46 ^ ^ rotated ~324 ~ run teleport @s ^-0.46 ^ ^ ~ ~
 execute if entity @s[scores={AnimationProgress=19}] positioned ^0.46 ^ ^ rotated ~342 ~ run teleport @s ^-0.46 ^ ^ ~ ~
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -1600
-execute if entity @s[scores={AnimationProgress=1..5}] run scoreboard players add @s AnimationRotationX 280
-execute if entity @s[scores={AnimationProgress=6..10}] run scoreboard players remove @s AnimationRotationX 280
-execute if entity @s[scores={AnimationProgress=11..15}] run scoreboard players add @s AnimationRotationX 280
-execute if entity @s[scores={AnimationProgress=16..20}] run scoreboard players remove @s AnimationRotationX 280
-execute if entity @s[scores={AnimationProgress=6..7}] run scoreboard players add @s AnimationRotationY 200
-execute if entity @s[scores={AnimationProgress=9..10}] run scoreboard players remove @s AnimationRotationY 200
-execute if entity @s[scores={AnimationProgress=16..17}] run scoreboard players add @s AnimationRotationY 200
-execute if entity @s[scores={AnimationProgress=19..20}] run scoreboard players remove @s AnimationRotationY 200
+scoreboard players add @s[scores={AnimationProgress=1..5}] AnimationRotationX 280
+scoreboard players remove @s[scores={AnimationProgress=6..10}] AnimationRotationX 280
+scoreboard players add @s[scores={AnimationProgress=11..15}] AnimationRotationX 280
+scoreboard players remove @s[scores={AnimationProgress=16..20}] AnimationRotationX 280
+scoreboard players add @s[scores={AnimationProgress=6..7}] AnimationRotationY 200
+scoreboard players remove @s[scores={AnimationProgress=9..10}] AnimationRotationY 200
+scoreboard players add @s[scores={AnimationProgress=16..17}] AnimationRotationY 200
+scoreboard players remove @s[scores={AnimationProgress=19..20}] AnimationRotationY 200
 data modify entity @s[scores={AnimationProgress=1}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.equipment
 scoreboard players set @s[scores={AnimationProgress=20..}] AnimationProgress 0

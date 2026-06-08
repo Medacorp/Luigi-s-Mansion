@@ -20,7 +20,7 @@ teleport @s[scores={AnimationProgress=18}] ^ ^-0.6 ^0.4
 teleport @s[scores={AnimationProgress=49}] ^ ^-0.4 ^0.267
 teleport @s[scores={AnimationProgress=20}] ^ ^-0.2 ^0.133
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX 900
-execute if entity @s[scores={AnimationProgress=1..20}] run scoreboard players remove @s AnimationRotationX 55
-execute if entity @s[scores={AnimationProgress=51..60}] run scoreboard players add @s AnimationRotationX 20
+scoreboard players remove @s[scores={AnimationProgress=1..20}] AnimationRotationX 55
+scoreboard players add @s[scores={AnimationProgress=51..60}] AnimationRotationX 20
 execute if entity @s[scores={AnimationProgress=1}] run data modify entity @s equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.open_mouth
 scoreboard players set @s[scores={AnimationProgress=60}] AnimationProgress 0

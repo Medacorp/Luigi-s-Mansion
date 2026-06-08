@@ -6,7 +6,6 @@ execute if data storage luigis_mansion:data ghost.mirror{mirror_set_by_furniture
 #/todelete
 tag @s remove no_reflection
 tag @s remove visible
-tag @s remove flipped_gravity
 execute if data storage luigis_mansion:data ghost{tags:["hidden"]} run tag @s add no_reflection
 execute if data storage luigis_mansion:data ghost{tags:["visible"]} run tag @s add visible
 execute if data storage luigis_mansion:data ghost{tags:["flipped_gravity"]} run tag @s add flipped_gravity
@@ -17,6 +16,9 @@ execute if entity @s[tag=visible] unless data storage luigis_mansion:data ghost{
 execute if entity @s[tag=!visible] if data storage luigis_mansion:data ghost{tags:["visible"]} if data entity @s equipment.head.components."minecraft:custom_model_data".flags[0] run data modify entity @s equipment.head.components."minecraft:custom_model_data".flags[0] set value 0b
 teleport @s ~ ~ ~ ~ ~
 $function $(namespace):animations/$(id)/call_part_function
+tag @s[tag=flipped_gravity] add was_flipped
+tag @s[tag=!flipped_gravity] remove was_flipped
+tag @s[tag=flipped_gravity] remove flipped_gravity
 
 execute unless score @s AnimationOldRotationX = @s AnimationRotationX run function luigis_mansion:animations/generic/sync
 execute unless score @s AnimationOldRotationY = @s AnimationRotationY run function luigis_mansion:animations/generic/sync

@@ -11,14 +11,14 @@ teleport @s[scores={AnimationProgress=99}] ^ ^-3.6 ^6
 teleport @s[scores={AnimationProgress=100..}] ^ ^-4 ^7.333
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -700
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationY 70
-execute if entity @s[scores={AnimationProgress=1..10}] if score #mirrored Selected matches 1 run scoreboard players remove @s AnimationRotationX 40
-execute if entity @s[scores={AnimationProgress=91..100}] if score #mirrored Selected matches 1 run scoreboard players add @s AnimationRotationX 20
-execute if entity @s[scores={AnimationProgress=1..10}] unless score #mirrored Selected matches 1 run scoreboard players remove @s AnimationRotationX 50
-execute if entity @s[scores={AnimationProgress=21..30}] unless score #mirrored Selected matches 1 run scoreboard players add @s AnimationRotationX 50
-execute if entity @s[scores={AnimationProgress=41..50}] unless score #mirrored Selected matches 1 run scoreboard players remove @s AnimationRotationX 40
-execute if entity @s[scores={AnimationProgress=51..60}] unless score #mirrored Selected matches 1 run scoreboard players remove @s AnimationRotationX 10
-execute if entity @s[scores={AnimationProgress=91..100}] unless score #mirrored Selected matches 1 run scoreboard players add @s AnimationRotationX 30
-execute if entity @s[scores={AnimationProgress=1..10}] if score #mirrored Selected matches 1 run scoreboard players add @s AnimationRotationY 52
-execute if entity @s[scores={AnimationProgress=51..100}] if score #mirrored Selected matches 1 run scoreboard players remove @s AnimationRotationY 10
-execute if entity @s[scores={AnimationProgress=1..10}] unless score #mirrored Selected matches 1 run scoreboard players remove @s AnimationRotationY 14
-execute if entity @s[scores={AnimationProgress=91..100}] unless score #mirrored Selected matches 1 run scoreboard players add @s AnimationRotationY 14
+execute if score #mirrored Selected matches 1 run scoreboard players remove @s[scores={AnimationProgress=1..10}] AnimationRotationX 40
+execute if score #mirrored Selected matches 1 run scoreboard players add @s[scores={AnimationProgress=91..100}] AnimationRotationX 20
+execute unless score #mirrored Selected matches 1 run scoreboard players remove @s[scores={AnimationProgress=1..10}] AnimationRotationX 50
+execute unless score #mirrored Selected matches 1 run scoreboard players add @s[scores={AnimationProgress=21..30}] AnimationRotationX 50
+execute unless score #mirrored Selected matches 1 run scoreboard players remove @s[scores={AnimationProgress=41..50}] AnimationRotationX 40
+execute unless score #mirrored Selected matches 1 run scoreboard players remove @s[scores={AnimationProgress=51..60}] AnimationRotationX 10
+execute unless score #mirrored Selected matches 1 run scoreboard players add @s[scores={AnimationProgress=91..100}] AnimationRotationX 30
+execute if score #mirrored Selected matches 1 run scoreboard players add @s[scores={AnimationProgress=1..10}] AnimationRotationY 52
+execute if score #mirrored Selected matches 1 run scoreboard players remove @s[scores={AnimationProgress=51..100}] AnimationRotationY 10
+execute unless score #mirrored Selected matches 1 run scoreboard players remove @s[scores={AnimationProgress=1..10}] AnimationRotationY 14
+execute unless score #mirrored Selected matches 1 run scoreboard players add @s[scores={AnimationProgress=91..100}] AnimationRotationY 14

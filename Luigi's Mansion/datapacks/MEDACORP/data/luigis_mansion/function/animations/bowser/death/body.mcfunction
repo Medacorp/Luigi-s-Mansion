@@ -10,5 +10,5 @@ teleport @s[scores={AnimationProgress=98}] ^ ^-3.2 ^5.333
 teleport @s[scores={AnimationProgress=99}] ^ ^-3.6 ^6
 teleport @s[scores={AnimationProgress=100..}] ^ ^-4 ^7.333
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX 100
-execute if entity @s[scores={AnimationProgress=91..100}] run scoreboard players add @s AnimationRotationX 70
+scoreboard players add @s[scores={AnimationProgress=91..100}] AnimationRotationX 70
 execute if entity @s[scores={AnimationProgress=100}] run playsound luigis_mansion:entity.bowser.land hostile @a[tag=same_room] ~ ~ ~ 3

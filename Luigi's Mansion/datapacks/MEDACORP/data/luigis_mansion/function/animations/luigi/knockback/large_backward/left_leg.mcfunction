@@ -135,7 +135,7 @@ teleport @s[scores={AnimationProgress=32},tag=shrunk,tag=flipped_gravity] ^ ^0.1
 teleport @s[scores={AnimationProgress=33},tag=shrunk,tag=flipped_gravity] ^ ^0.1 ^
 teleport @s[scores={AnimationProgress=34},tag=shrunk,tag=flipped_gravity] ^ ^0.2 ^
 teleport @s[scores={AnimationProgress=35..},tag=shrunk,tag=flipped_gravity] ^ ^0.3 ^
-execute if entity @s[scores={AnimationProgress=21..30}] run scoreboard players remove @s AnimationRotationX 90
-execute if entity @s[scores={AnimationProgress=..30}] run scoreboard players remove @s AnimationRotationX 240
-execute if entity @s[scores={AnimationProgress=31..40}] run scoreboard players remove @s AnimationRotationY 5
+scoreboard players remove @s[scores={AnimationProgress=21..30}] AnimationRotationX 90
+scoreboard players remove @s[scores={AnimationProgress=..30}] AnimationRotationX 240
+scoreboard players remove @s[scores={AnimationProgress=31..40}] AnimationRotationY 5
 scoreboard players set @s[scores={AnimationProgress=50}] AnimationProgress 0
