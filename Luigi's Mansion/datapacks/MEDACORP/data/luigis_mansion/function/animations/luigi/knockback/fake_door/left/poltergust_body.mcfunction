@@ -34,7 +34,7 @@ execute at @s[scores={AnimationProgress=116}] rotated ~ 0 run teleport @s ^ ^-0.
 execute at @s[scores={AnimationProgress=117}] rotated ~ 0 run teleport @s ^ ^-0.39 ^
 execute at @s[scores={AnimationProgress=118}] rotated ~ 0 run teleport @s ^ ^-0.26 ^
 execute at @s[scores={AnimationProgress=119}] rotated ~ 0 run teleport @s ^ ^-0.13 ^
-data modify entity @s[scores={AnimationProgress=15..109}] equipment.head.id set value "minecraft:stone_button"
+data modify entity @s[scores={AnimationProgress=15..109}] item.id set value "minecraft:stone_button"
 scoreboard players add @s[scores={AnimationProgress=63..92}] AnimationRotationX 30
 scoreboard players remove @s[scores={AnimationProgress=111..120}] AnimationRotationX 90
 scoreboard players add @s[scores={AnimationProgress=91..92}] AnimationRotationZ 20

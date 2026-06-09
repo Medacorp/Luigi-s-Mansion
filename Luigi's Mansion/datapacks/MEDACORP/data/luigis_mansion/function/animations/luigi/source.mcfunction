@@ -31,13 +31,9 @@ execute if data storage luigis_mansion:data luigi{alive:0b} run teleport @s ~ ~ 
 tag @s remove moving_backwards
 
 # Move with
-execute rotated as @s run teleport @s[tag=!flipped_gravity,tag=!low_health,tag=!shrunk] ^ ^1.65 ^-0.25
-execute rotated as @s run teleport @s[tag=!flipped_gravity,tag=low_health,tag=!shrunk] ^ ^1.4 ^-0.25
-execute rotated as @s run teleport @s[tag=!flipped_gravity,tag=!low_health,tag=shrunk] ^ ^0.87 ^-0.125
-execute rotated as @s run teleport @s[tag=!flipped_gravity,tag=low_health,tag=shrunk] ^ ^0.78 ^-0.125
-execute rotated as @s run teleport @s[tag=flipped_gravity,tag=!low_health,tag=!shrunk] ^ ^-0.6 ^-0.25
-execute rotated as @s run teleport @s[tag=flipped_gravity,tag=low_health,tag=!shrunk] ^ ^-0.65 ^-0.25
-execute rotated as @s run teleport @s[tag=flipped_gravity,tag=!low_health,tag=shrunk] ^ ^-0.92 ^-0.125
-execute rotated as @s run teleport @s[tag=flipped_gravity,tag=low_health,tag=shrunk] ^ ^-0.945 ^-0.125
+execute rotated as @s run teleport @s[tag=!flipped_gravity,tag=!shrunk] ^ ^2 ^-0.25
+execute rotated as @s run teleport @s[tag=!flipped_gravity,tag=shrunk] ^ ^0.99 ^-0.125
+execute rotated as @s run teleport @s[tag=flipped_gravity,tag=!shrunk] ^ ^-0.4 ^-0.25
+execute rotated as @s run teleport @s[tag=flipped_gravity,tag=shrunk] ^ ^-0.17 ^-0.125
 
 data modify entity @s Rotation[1] set value 0.0f

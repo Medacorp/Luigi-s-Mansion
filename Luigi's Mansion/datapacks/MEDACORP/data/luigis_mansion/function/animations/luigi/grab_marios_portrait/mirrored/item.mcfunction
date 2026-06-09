@@ -145,5 +145,5 @@ execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=79
 execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=80..}] positioned ^0.1825 ^ ^ rotated ~ ~75 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationY -1800
 scoreboard players set @s[scores={AnimationProgress=41}] AnimationRotationY 0
-data modify entity @s[scores={AnimationProgress=1..}] equipment.head set value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:furniture/marios_portrait","minecraft:custom_model_data":{flags:[1b,1b]}}}
+data modify entity @s[scores={AnimationProgress=1..}] item set value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:furniture/marios_portrait","minecraft:custom_model_data":{flags:[1b,1b]}}}
 scoreboard players set @s[scores={AnimationProgress=120}] AnimationProgress 0

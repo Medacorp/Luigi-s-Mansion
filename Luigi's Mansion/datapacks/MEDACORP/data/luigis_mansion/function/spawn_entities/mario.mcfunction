@@ -1,0 +1,20 @@
+summon minecraft:marker ~ ~ ~ {CustomName:{type:"translatable",translate:"luigis_mansion:entity.mario"},Tags:["mario","same_room_players_only","this_entity"],data:{entity:{namespace:"luigis_mansion",id:"mario"}}}
+summon minecraft:item_display ~ ~ ~ {CustomName:{type:"translatable",translate:"luigis_mansion:entity.mario"},item:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:entity/mario","minecraft:custom_model_data":{floats:[0f]}}},item_display:"head",Tags:["model_piece","mario_model","found_owner","head","this_entity"]}
+summon minecraft:item_display ~ ~ ~ {CustomName:{type:"translatable",translate:"luigis_mansion:entity.mario"},item:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:entity/mario","minecraft:custom_model_data":{floats:[1f]},"minecraft:custom_data":{mirror:{components:{"minecraft:custom_model_data":{floats:[2f]}}}}}},item_display:"head",Tags:["model_piece","mario_model","found_owner","right_arm","this_entity"]}
+summon minecraft:item_display ~ ~ ~ {CustomName:{type:"translatable",translate:"luigis_mansion:entity.mario"},item:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:entity/mario","minecraft:custom_model_data":{floats:[2f]},"minecraft:custom_data":{mirror:{components:{"minecraft:custom_model_data":{floats:[1f]}}}}}},item_display:"head",Tags:["model_piece","mario_model","found_owner","left_arm","this_entity"]}
+summon minecraft:item_display ~ ~ ~ {CustomName:{type:"translatable",translate:"luigis_mansion:entity.mario"},item:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:entity/mario","minecraft:custom_model_data":{floats:[3f]}}},item_display:"head",Tags:["model_piece","mario_model","found_owner","body","this_entity"]}
+summon minecraft:item_display ~ ~ ~ {CustomName:{type:"translatable",translate:"luigis_mansion:entity.mario"},item:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:entity/mario","minecraft:custom_model_data":{floats:[4f]},"minecraft:custom_data":{mirror:{components:{"minecraft:custom_model_data":{floats:[5f]}}}}}},item_display:"head",Tags:["model_piece","mario_model","found_owner","right_leg","this_entity"]}
+summon minecraft:item_display ~ ~ ~ {CustomName:{type:"translatable",translate:"luigis_mansion:entity.mario"},item:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:entity/mario","minecraft:custom_model_data":{floats:[5f]},"minecraft:custom_data":{mirror:{components:{"minecraft:custom_model_data":{floats:[4f]}}}}}},item_display:"head",Tags:["model_piece","mario_model","found_owner","left_leg","this_entity"]}
+teleport @e[tag=this_entity,tag=!model_piece,limit=1] ~ ~ ~ ~ ~
+execute as @e[tag=this_entity,tag=!model_piece,limit=1] store result score @s PassiveNr run data get storage luigis_mansion:data unique_id.passive
+execute as @e[tag=this_entity,tag=!model_piece,limit=1] store result storage luigis_mansion:data unique_id.passive int 1 run scoreboard players add @s PassiveNr 1
+scoreboard players operation @e[tag=this_entity,tag=model_piece] PassiveNr = @e[tag=this_entity,tag=!model_piece,limit=1] PassiveNr
+tag @e[tag=this_entity,tag=model_piece] remove this_entity
+execute as @e[tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
+scoreboard players set @e[tag=this_entity,limit=1] EntitySizeWidth 8
+scoreboard players set @e[tag=this_entity,limit=1] EntitySizeHeight 20
+scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 10
+function luigis_mansion:spawn_entities/setup/mansion_behavior
+function luigis_mansion:spawn_entities/setup/default
+tag @e[tag=this_entity,limit=1] remove this_entity
+data remove storage luigis_mansion:data entity

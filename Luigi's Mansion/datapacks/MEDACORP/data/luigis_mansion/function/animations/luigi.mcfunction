@@ -21,9 +21,9 @@ data modify storage luigis_mansion:data luigi.inventory set from entity @s data.
 execute if entity @s[tag=riding_poltergust] run data modify storage luigis_mansion:data luigi.selected_item set from storage luigis_mansion:data luigi.inventory[{components:{"minecraft:custom_data":{is_poltergust:1b}}}]
 execute if entity @s[tag=poltergust_grabbed,tag=dark_room] run data modify storage luigis_mansion:data luigi.selected_item set from storage luigis_mansion:data luigi.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"flashlight"}}}]
 data modify storage luigis_mansion:data luigi.selected_item set from entity @s[tag=!game_boy_horror_selected,nbt=!{data:{selected_item:{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"interact"}}}}}] data.selected_item
-$execute if entity @s[tag=freeze_animation] as @e[type=minecraft:armor_stand,tag=luigi_model,scores={ID=$(id)}] run function luigis_mansion:animations/luigi/frozen
-$execute if entity @s[tag=!freeze_animation] as @e[type=minecraft:armor_stand,tag=luigi_model,tag=source,scores={ID=$(id)},limit=1] run function luigis_mansion:animations/luigi/main
-$execute if entity @s[tag=!freeze_animation] as @e[type=minecraft:armor_stand,tag=luigi_model,tag=!source,scores={ID=$(id)}] at @e[tag=luigi_model,tag=source,scores={ID=$(id)},limit=1] run function luigis_mansion:animations/luigi/main
+$execute if entity @s[tag=freeze_animation] as @e[tag=luigi_model,scores={ID=$(id)}] run function luigis_mansion:animations/luigi/frozen
+$execute if entity @s[tag=!freeze_animation] as @e[type=minecraft:text_display,tag=luigi_model,tag=source,scores={ID=$(id)},limit=1] run function luigis_mansion:animations/luigi/main
+$execute if entity @s[tag=!freeze_animation] as @e[type=minecraft:item_display,tag=luigi_model,tag=!source,scores={ID=$(id)}] at @e[tag=luigi_model,tag=source,scores={ID=$(id)},limit=1] run function luigis_mansion:animations/luigi/main
 data modify entity @s[tag=!freeze_animation] data.head_rotation set from storage luigis_mansion:data luigi.head_rotation
 tag @s remove this_luigi
 execute store result score #temp Time if entity @e[tag=this_luigi]

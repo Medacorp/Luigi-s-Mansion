@@ -136,7 +136,7 @@ teleport @s[scores={AnimationProgress=33},tag=shrunk,tag=flipped_gravity] ^ ^0.1
 teleport @s[scores={AnimationProgress=34},tag=shrunk,tag=flipped_gravity] ^ ^0.2 ^
 teleport @s[scores={AnimationProgress=35..},tag=shrunk,tag=flipped_gravity] ^ ^0.3 ^
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX 200
-data modify entity @s[scores={AnimationProgress=1}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.scared
+data modify entity @s[scores={AnimationProgress=1}] item merge from entity @s item.components."minecraft:custom_data".model_data.scared
 scoreboard players remove @s[scores={AnimationProgress=31..40}] AnimationRotationX 40
 scoreboard players add @s[scores={AnimationProgress=..30}] AnimationRotationX 240
 scoreboard players set @s[scores={AnimationProgress=50}] AnimationProgress 0

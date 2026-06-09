@@ -1,12 +1,12 @@
 # Move with
-teleport @s[tag=!low_health,tag=!shrunk,tag=!flipped_gravity] ^ ^-1.67 ^
-teleport @s[tag=low_health,tag=!shrunk,tag=!flipped_gravity] ^ ^-1.73 ^
-teleport @s[tag=!low_health,tag=shrunk,tag=!flipped_gravity] ^ ^-0.88 ^
-teleport @s[tag=low_health,tag=shrunk,tag=!flipped_gravity] ^ ^-0.94 ^
-teleport @s[tag=!low_health,tag=!shrunk,tag=flipped_gravity] ^ ^-0.42 ^
-teleport @s[tag=low_health,tag=!shrunk,tag=flipped_gravity] ^ ^-0.36 ^
-teleport @s[tag=!low_health,tag=shrunk,tag=flipped_gravity] ^ ^0.39 ^
-teleport @s[tag=low_health,tag=shrunk,tag=flipped_gravity] ^ ^0.45 ^
+teleport @s[tag=!low_health,tag=!shrunk,tag=!flipped_gravity] ^ ^-0.57 ^
+teleport @s[tag=low_health,tag=!shrunk,tag=!flipped_gravity] ^ ^-0.63 ^
+teleport @s[tag=!low_health,tag=shrunk,tag=!flipped_gravity] ^ ^-0.27 ^
+teleport @s[tag=low_health,tag=shrunk,tag=!flipped_gravity] ^ ^-0.33 ^
+teleport @s[tag=!low_health,tag=!shrunk,tag=flipped_gravity] ^ ^0.83 ^
+teleport @s[tag=low_health,tag=!shrunk,tag=flipped_gravity] ^ ^0.89 ^
+teleport @s[tag=!low_health,tag=shrunk,tag=flipped_gravity] ^ ^-0.99 ^
+teleport @s[tag=low_health,tag=shrunk,tag=flipped_gravity] ^ ^-0.93 ^
 
 scoreboard players add @s[tag=was_flipped,tag=!flipped_gravity] AnimationRotationZ 1800
 scoreboard players remove @s[tag=!was_flipped,tag=flipped_gravity] AnimationRotationZ 1800

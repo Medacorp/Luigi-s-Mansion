@@ -51,7 +51,7 @@ execute if score #mirrored Selected matches 1 run scoreboard players add @s[scor
 execute if score #mirrored Selected matches 1 run scoreboard players remove @s[scores={AnimationProgress=91..94}] AnimationRotationZ 5
 execute if score #mirrored Selected matches 1 run scoreboard players add @s[scores={AnimationProgress=95..98}] AnimationRotationZ 5
 execute if score #mirrored Selected matches 1 run scoreboard players remove @s[scores={AnimationProgress=99..100}] AnimationRotationZ 5
-data modify entity @s[scores={AnimationProgress=1}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.scared
+data modify entity @s[scores={AnimationProgress=1}] item merge from entity @s item.components."minecraft:custom_data".model_data.scared
 execute if entity @s[tag=!gooigi_model] run function luigis_mansion:animations/luigi/sync_head
 execute if entity @s[tag=gooigi_model] run function 3ds_remake:animations/gooigi/sync_head
 scoreboard players set @s[scores={AnimationProgress=100..}] AnimationProgress 0

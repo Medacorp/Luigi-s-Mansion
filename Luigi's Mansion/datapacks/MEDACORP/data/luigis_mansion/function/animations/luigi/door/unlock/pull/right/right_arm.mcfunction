@@ -1,7 +1,7 @@
 scoreboard players add @s AnimationProgress 1
-data modify entity @s[tag=held_item] equipment.head.id set value "minecraft:diamond_pickaxe"
-data modify entity @s[scores={AnimationProgress=1..119},tag=held_item] equipment.head.components set from storage luigis_mansion:data luigi.animation.key_model
-data remove entity @s[scores={AnimationProgress=120..},tag=held_item] equipment.head
+data modify entity @s[tag=held_item] item.id set value "minecraft:diamond_pickaxe"
+data modify entity @s[scores={AnimationProgress=1..119},tag=held_item] item.components set from storage luigis_mansion:data luigi.animation.key_model
+data remove entity @s[scores={AnimationProgress=120..},tag=held_item] item
 execute if entity @s[tag=held_item,scores={AnimationProgress=1}] rotated ~ ~-2 run teleport @s ^ ^-0.74 ^
 execute if entity @s[tag=held_item,scores={AnimationProgress=2}] rotated ~ ~-4 run teleport @s ^ ^-0.74 ^
 execute if entity @s[tag=held_item,scores={AnimationProgress=3}] rotated ~ ~-6 run teleport @s ^ ^-0.74 ^

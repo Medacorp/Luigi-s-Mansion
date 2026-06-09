@@ -1,8 +1,8 @@
 scoreboard players add @s AnimationProgress 1
-execute unless score #mirrored Selected matches 1 run data modify entity @s[tag=held_item,scores={AnimationProgress=40..55}] equipment.head set value {id:"minecraft:leather_chestplate",count:1,components:{"minecraft:item_model":"luigis_mansion:entity/luigi","minecraft:custom_model_data":{flags:[0b,0b],floats:[0f],strings:["hat"],colors:[37129]}}}
-execute unless score #mirrored Selected matches 1 run data modify entity @s[tag=held_item,scores={AnimationProgress=40..55}] equipment.head.components."minecraft:custom_model_data".colors[0] set from storage luigis_mansion:data luigi.animation.hat_model.color
-execute unless score #mirrored Selected matches 1 if data storage luigis_mansion:data luigi.animation.hat_model{variant:1b} run data modify entity @s[tag=held_item,scores={AnimationProgress=40..55}] equipment.head.components."minecraft:custom_model_data".flags[1] set value 1b
-execute unless score #mirrored Selected matches 1 run data remove entity @s[tag=held_item,scores={AnimationProgress=56..}] equipment.head
+execute unless score #mirrored Selected matches 1 run data modify entity @s[tag=held_item,scores={AnimationProgress=40..55}] item set value {id:"minecraft:leather_chestplate",count:1,components:{"minecraft:item_model":"luigis_mansion:entity/luigi","minecraft:custom_model_data":{flags:[0b,0b],floats:[0f],strings:["hat"],colors:[37129]}}}
+execute unless score #mirrored Selected matches 1 run data modify entity @s[tag=held_item,scores={AnimationProgress=40..55}] item.components."minecraft:custom_model_data".colors[0] set from storage luigis_mansion:data luigi.animation.hat_model.color
+execute unless score #mirrored Selected matches 1 if data storage luigis_mansion:data luigi.animation.hat_model{variant:1b} run data modify entity @s[tag=held_item,scores={AnimationProgress=40..55}] item.components."minecraft:custom_model_data".flags[1] set value 1b
+execute unless score #mirrored Selected matches 1 run data remove entity @s[tag=held_item,scores={AnimationProgress=56..}] item
 execute unless score #mirrored Selected matches 1 if entity @s[tag=held_item,scores={AnimationProgress=1}] run scoreboard players add @s AnimationRotationX 1800
 scoreboard players remove @s[scores={AnimationProgress=1..5}] AnimationRotationX 400
 scoreboard players add @s[scores={AnimationProgress=6..10}] AnimationRotationX 100

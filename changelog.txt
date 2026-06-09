@@ -38,7 +38,10 @@ v?:
 ** changed to not modify data as often within a tick anymore
 ** fixed floating point precision loss
 ** The following animation groups now support flipped gravity:
+*** Crow
 *** E. Gadd
+*** Mario
+*** Toad
 * Changed how loot is handled and stored; loot now supports all entities
 ** Moved speedy spirit and gold mice money to be stored in mansion data rather than given via a function
 ** Furniture money now selects from a predefined list, like speedy spirits and gold mice
@@ -59,7 +62,12 @@ v?:
 ** Sitting Room
 ** Guest Room
 * Fixed the following entities from disappearing near the bottom of the screen:
+** Crow
 ** E. Gadd
+** Gooigi
+** Luigi
+** Mario
+** Toad
 * Fixed ceiling ghosts' none attack didn't cancel after a certain distance; I didn't know about this behavior until now
 ** Rather than using their broken "wait" animation like in the original, I opted for the finished-but-unused "idle" one
 * Fixed bowling ghosts' idling used the wrong animation; the wait animation has been removed

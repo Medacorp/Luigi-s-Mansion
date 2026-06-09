@@ -1,5 +1,5 @@
 scoreboard players add @s AnimationProgress 1
-execute if score #mirrored Selected matches 1 run data modify entity @s[scores={AnimationProgress=1..},tag=held_item] equipment.head set value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:furniture/marios_portrait","minecraft:custom_model_data":{flags:[1b,1b]}}}
+execute if score #mirrored Selected matches 1 run data modify entity @s[scores={AnimationProgress=1..},tag=held_item] item set value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:furniture/marios_portrait","minecraft:custom_model_data":{flags:[1b,1b]}}}
 execute if score #mirrored Selected matches 1 run scoreboard players set @s[scores={AnimationProgress=1},tag=held_item] AnimationRotationX -75
 execute if score #mirrored Selected matches 1 run scoreboard players set @s[scores={AnimationProgress=1},tag=held_item] AnimationRotationZ 1000
 execute if score #mirrored Selected matches 1 run scoreboard players set @s[scores={AnimationProgress=1},tag=held_item,tag=flipped_gravity] AnimationRotationZ -800

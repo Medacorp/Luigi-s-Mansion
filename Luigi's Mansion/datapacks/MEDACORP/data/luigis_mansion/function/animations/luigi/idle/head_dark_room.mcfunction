@@ -25,10 +25,10 @@ execute store result score #head Time run data get entity @s Rotation[0]
 scoreboard players operation #head2 Time = @s AnimationRotationY
 execute if entity @s[tag=flipped_gravity] run scoreboard players operation #head2 Time *= #-1 Constants
 execute store result entity @s Rotation[0] float 1 run scoreboard players operation #head2 Time += #head Time
-execute at @s[scores={Time=40},tag=!shrunk] positioned ~ ~1.45 ~ positioned ^ ^ ^0.3 run particle minecraft:dust{color:16777215,scale:0.75f} ~ ~ ~ 0 0 0 0 1 normal @a[tag=same_room]
-execute at @s[scores={Time=40},tag=shrunk] positioned ~ ~0.725 ~ positioned ^ ^ ^0.15 run particle minecraft:dust{color:16777215,scale:0.375f} ~ ~ ~ 0 0 0 0 1 normal @a[tag=same_room]
+execute at @s[scores={Time=40},tag=!shrunk] positioned ^ ^ ^0.3 run particle minecraft:dust{color:16777215,scale:0.75f} ~ ~ ~ 0 0 0 0 1 normal @a[tag=same_room]
+execute at @s[scores={Time=40},tag=shrunk] positioned ^ ^ ^0.15 run particle minecraft:dust{color:16777215,scale:0.375f} ~ ~ ~ 0 0 0 0 1 normal @a[tag=same_room]
 data modify entity @s Rotation[1] set value 0.0f
 execute store result entity @s Rotation[0] float 1 run scoreboard players get #head Time
 scoreboard players reset #head Time
 scoreboard players reset #head2 Time
-data modify entity @s equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.scared
+data modify entity @s item merge from entity @s item.components."minecraft:custom_data".model_data.scared

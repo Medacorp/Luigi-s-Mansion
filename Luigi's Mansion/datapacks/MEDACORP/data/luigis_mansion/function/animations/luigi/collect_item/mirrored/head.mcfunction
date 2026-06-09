@@ -25,7 +25,7 @@ execute if entity @s[tag=!shrunk,scores={AnimationProgress=60..63}] rotated ~-45
 execute if entity @s[tag=shrunk,scores={AnimationProgress=60..63}] rotated ~-45 ~ run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[tag=!shrunk,scores={AnimationProgress=64..65}] rotated ~-22.5 ~ run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[tag=shrunk,scores={AnimationProgress=64..65}] rotated ~-22.5 ~ run teleport @s ~ ~ ~ ~ ~
-data modify entity @s[scores={AnimationProgress=1}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.happy
+data modify entity @s[scores={AnimationProgress=1}] item merge from entity @s item.components."minecraft:custom_data".model_data.happy
 scoreboard players add @s[scores={AnimationProgress=1}] AnimationRotationX 900
 scoreboard players remove @s[scores={AnimationProgress=7..9}] AnimationRotationX 300
 scoreboard players add @s[scores={AnimationProgress=21..22}] AnimationRotationX 50

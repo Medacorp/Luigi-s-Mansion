@@ -1,5 +1,5 @@
 scoreboard players add @s AnimationProgress 1
-data remove entity @s[tag=held_item] equipment.head
+data remove entity @s[tag=held_item] item
 scoreboard players add @s[scores={AnimationProgress=1..235}] Time 2
 scoreboard players add @s[scores={Time=1..20}] AnimationRotationX 30
 scoreboard players remove @s[scores={Time=21..60}] AnimationRotationX 30

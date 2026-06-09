@@ -13,9 +13,10 @@ execute if data storage luigis_mansion:data luigi{tags:["running"]} run tag @s a
 execute if data storage luigis_mansion:data luigi{tags:["poltergust_grabbed"]} run tag @s add poltergust_grabbed
 execute if data storage luigis_mansion:data luigi{tags:["flipped_gravity"]} run tag @s add flipped_gravity
 execute if data storage luigis_mansion:data luigi{alive:0b} run tag @s add death_animation
-execute if data storage luigis_mansion:data luigi{shrunk:1b} run attribute @s minecraft:scale base set 0.5
+execute if data storage luigis_mansion:data luigi{shrunk:1b} run data modify entity @s[tag=!shrunk] transformation.scale set value [0.5f,0.5f,0.5f]
 execute if data storage luigis_mansion:data luigi{shrunk:1b} run tag @s add shrunk
-execute if data storage luigis_mansion:data luigi{shrunk:0b} run attribute @s minecraft:scale base set 1
+execute if data storage luigis_mansion:data luigi{shrunk:0b} run data modify entity @s[tag=shrunk] transformation.scale set value [1.0f,1.0f,1.0f]
+execute if data storage luigis_mansion:data luigi{shrunk:0b} run tag @s remove shrunk
 execute if data storage luigis_mansion:data luigi{alive:1b} if entity @s[tag=was_sneaking,tag=!riding_poltergust] unless entity @s[scores={AnimationProgress=1..}] unless data storage luigis_mansion:data luigi{tags:["sneaking"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if data storage luigis_mansion:data luigi{alive:1b} if entity @s[tag=was_walking,tag=!riding_poltergust] unless entity @s[scores={AnimationProgress=1..}] unless data storage luigis_mansion:data luigi{tags:["walking"]} run function luigis_mansion:animations/luigi/reset_pose
 execute if data storage luigis_mansion:data luigi{alive:1b} if entity @s[tag=was_running,tag=!riding_poltergust] unless entity @s[scores={AnimationProgress=1..}] unless data storage luigis_mansion:data luigi{tags:["running"]} run function luigis_mansion:animations/luigi/reset_pose
@@ -48,7 +49,6 @@ tag @s[tag=flipped_gravity] add was_flipped
 tag @s[tag=!flipped_gravity] remove was_flipped
 tag @s[tag=flipped_gravity] remove flipped_gravity
 tag @s remove poltergust_grabbed
-tag @s remove shrunk
 
 execute unless score @s AnimationOldRotationX = @s AnimationRotationX run function luigis_mansion:animations/generic/sync
 execute unless score @s AnimationOldRotationY = @s AnimationRotationY run function luigis_mansion:animations/generic/sync

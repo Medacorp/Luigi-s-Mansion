@@ -21,9 +21,9 @@ data modify storage luigis_mansion:data luigi.inventory set from entity @s data.
 execute if entity @s[tag=riding_poltergust] run data modify storage luigis_mansion:data luigi.selected_item set from storage luigis_mansion:data luigi.inventory[{components:{"minecraft:custom_data":{is_poltergust:1b}}}]
 execute if entity @s[tag=poltergust_grabbed,tag=dark_room] run data modify storage luigis_mansion:data luigi.selected_item set from storage luigis_mansion:data luigi.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"flashlight"}}}]
 data modify storage luigis_mansion:data luigi.selected_item set from entity @s[tag=!game_boy_horror_selected,nbt=!{data:{selected_item:{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"interact"}}}}}] data.selected_item
-execute if entity @s[tag=freeze_animation] as @e[type=minecraft:armor_stand,tag=gooigi_model] run function 3ds_remake:animations/gooigi/frozen
-execute if entity @s[tag=!freeze_animation] as @e[type=minecraft:armor_stand,tag=gooigi_model,tag=source,limit=1] run function 3ds_remake:animations/gooigi/main
-execute if entity @s[tag=!freeze_animation] as @e[type=minecraft:armor_stand,tag=gooigi_model,tag=!source] at @e[tag=this_gooigi,tag=source,limit=1] run function 3ds_remake:animations/gooigi/main
+execute if entity @s[tag=freeze_animation] as @e[tag=gooigi_model] run function 3ds_remake:animations/gooigi/frozen
+execute if entity @s[tag=!freeze_animation] as @e[type=minecraft:text_display,tag=gooigi_model,tag=source,limit=1] run function 3ds_remake:animations/gooigi/main
+execute if entity @s[tag=!freeze_animation] as @e[type=minecraft:item_display,tag=gooigi_model,tag=!source] at @e[tag=this_gooigi,tag=source,limit=1] run function 3ds_remake:animations/gooigi/main
 data modify entity @s[tag=!freeze_animation] data.head_rotation set from storage luigis_mansion:data luigi.head_rotation
 tag @s remove this_luigi
 execute store result score #temp Time if entity @e[tag=this_gooigi]

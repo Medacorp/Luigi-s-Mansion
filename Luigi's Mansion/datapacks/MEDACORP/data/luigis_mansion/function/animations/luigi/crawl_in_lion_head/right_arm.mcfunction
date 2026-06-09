@@ -1,5 +1,5 @@
 scoreboard players add @s AnimationProgress 1
-data remove entity @s[scores={AnimationProgress=1..},tag=held_item] equipment.head
+data remove entity @s[scores={AnimationProgress=1..},tag=held_item] item
 execute if score #mirrored Selected matches 1 run teleport @s[scores={AnimationProgress=25..35}] ^ ^ ^0.2
 execute unless score #mirrored Selected matches 1 run teleport @s[scores={AnimationProgress=45..55}] ^ ^ ^0.2
 scoreboard players remove @s[scores={AnimationProgress=1..20}] AnimationRotationX 40

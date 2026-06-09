@@ -9,11 +9,11 @@ execute at @s[scores={AnimationProgress=116}] rotated ~ 0 run teleport @s ^ ^-0.
 execute at @s[scores={AnimationProgress=117}] rotated ~ 0 run teleport @s ^ ^-0.39 ^
 execute at @s[scores={AnimationProgress=118}] rotated ~ 0 run teleport @s ^ ^-0.26 ^
 execute at @s[scores={AnimationProgress=119}] rotated ~ 0 run teleport @s ^ ^-0.13 ^
-data modify entity @s[scores={AnimationProgress=15}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.squished
-data remove entity @s[scores={AnimationProgress=15..109},tag=held_item] equipment.head
+data modify entity @s[scores={AnimationProgress=15}] item merge from entity @s item.components."minecraft:custom_data".model_data.squished
+data remove entity @s[scores={AnimationProgress=15..109},tag=held_item] item
 scoreboard players set @s[scores={AnimationProgress=80}] AnimationRotationX 900
 scoreboard players set @s[scores={AnimationProgress=80}] AnimationRotationY -450
-data modify entity @s[scores={AnimationProgress=110}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.default
+data modify entity @s[scores={AnimationProgress=110}] item merge from entity @s item.components."minecraft:custom_data".model_data.default
 scoreboard players remove @s[scores={AnimationProgress=1..5}] AnimationRotationX 120
 scoreboard players remove @s[scores={AnimationProgress=111..120}] AnimationRotationX 90
 scoreboard players add @s[scores={AnimationProgress=6..15}] AnimationRotationY 40

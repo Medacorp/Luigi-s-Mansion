@@ -17,7 +17,7 @@ execute if score #dialog Dialog matches 1 store result score @e[tag=same_room,ta
 execute if score #dialog Dialog matches 31 as @a[tag=same_room] run function luigis_mansion:other/music/set/unportrificationizing
 execute if score #dialog Dialog matches 723 run data modify storage luigis_mansion:data entity set value {room:-3,no_ai:1b,tags:["done_portrificationizing","cannot_be_removed"]}
 execute if score #dialog Dialog matches 723 run data modify storage luigis_mansion:data entity.room set from storage luigis_mansion:data dialogs[0].room
-execute if score #dialog Dialog matches 723 positioned 774 77 20 rotated -180 0 run function luigis_mansion:spawn_entities/mario/normal
+execute if score #dialog Dialog matches 723 positioned 774 77 20 rotated -180 0 run function luigis_mansion:spawn_entities/mario
 execute if score #dialog Dialog matches 723 as @a[tag=same_room] run function luigis_mansion:other/music/set/non_overwritten_silence
 
 execute if score #dialog Dialog matches 725.. run tag @e[tag=mario,tag=done_portrificationizing,tag=same_room,limit=1] remove no_ai

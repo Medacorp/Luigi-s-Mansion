@@ -39,8 +39,8 @@ teleport @s[scores={AnimationProgress=27},tag=flipped_gravity,tag=shrunk] ~ ~0.2
 teleport @s[scores={AnimationProgress=28},tag=flipped_gravity,tag=shrunk] ~ ~0.24 ~ ~ ~
 teleport @s[scores={AnimationProgress=29},tag=flipped_gravity,tag=shrunk] ~ ~0.27 ~ ~ ~
 teleport @s[scores={AnimationProgress=30..},tag=flipped_gravity,tag=shrunk] ~ ~0.3 ~ ~ ~
-data modify entity @s[scores={AnimationProgress=1}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.bash
-data modify entity @s[scores={AnimationProgress=20}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.scared
+data modify entity @s[scores={AnimationProgress=1}] item merge from entity @s item.components."minecraft:custom_data".model_data.bash
+data modify entity @s[scores={AnimationProgress=20}] item merge from entity @s item.components."minecraft:custom_data".model_data.scared
 execute if entity @s[scores={AnimationProgress=31..32}] unless data storage luigis_mansion:data luigi{tags:["moved"]} unless score #mirrored Selected matches 1 run scoreboard players remove @s AnimationRotationY 30
 execute if entity @s[scores={AnimationProgress=33..36}] unless data storage luigis_mansion:data luigi{tags:["moved"]} unless score #mirrored Selected matches 1 run scoreboard players add @s AnimationRotationY 30
 execute if entity @s[scores={AnimationProgress=37..38}] unless data storage luigis_mansion:data luigi{tags:["moved"]} unless score #mirrored Selected matches 1 run scoreboard players remove @s AnimationRotationY 30
