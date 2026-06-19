@@ -12,8 +12,8 @@ execute if data storage luigis_mansion:data ghost{tags:["flipped_gravity"]} run 
 execute store success score #temp Time run data modify entity @s data.animation set from storage luigis_mansion:data ghost.animation
 execute if score #temp Time matches 1 run function luigis_mansion:animations/ghost/reset_pose
 scoreboard players reset #temp Time
-execute if entity @s[tag=visible] unless data storage luigis_mansion:data ghost{tags:["visible"]} if data entity @s equipment.head.components."minecraft:custom_model_data".flags[0] run data modify entity @s equipment.head.components."minecraft:custom_model_data".flags[0] set value 1b
-execute if entity @s[tag=!visible] if data storage luigis_mansion:data ghost{tags:["visible"]} if data entity @s equipment.head.components."minecraft:custom_model_data".flags[0] run data modify entity @s equipment.head.components."minecraft:custom_model_data".flags[0] set value 0b
+execute if entity @s[tag=visible] unless data storage luigis_mansion:data ghost{tags:["visible"]} if data entity @s item.components."minecraft:custom_model_data".flags[0] run data modify entity @s item.components."minecraft:custom_model_data".flags[0] set value 1b
+execute if entity @s[tag=!visible] if data storage luigis_mansion:data ghost{tags:["visible"]} if data entity @s item.components."minecraft:custom_model_data".flags[0] run data modify entity @s item.components."minecraft:custom_model_data".flags[0] set value 0b
 teleport @s ~ ~ ~ ~ ~
 $function $(namespace):animations/$(id)/call_part_function
 tag @s[tag=flipped_gravity] add was_flipped

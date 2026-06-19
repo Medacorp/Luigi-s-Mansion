@@ -1,10 +1,10 @@
 scoreboard players add @s[scores={Dialog=42..},tag=!vanish] Dialog 1
-execute positioned ~-0.5 ~-1.1875 ~-0.5 if entity @e[type=minecraft:armor_stand,tag=billiards_ball,dx=0,dy=3,dz=0] run scoreboard players add @s[scores={Dialog=41}] Dialog 1
+execute positioned ~-0.5 ~ ~-0.5 if entity @e[type=minecraft:item_display,tag=billiards_ball,dx=0,dy=3,dz=0] run scoreboard players add @s[scores={Dialog=41}] Dialog 1
 scoreboard players add @s[scores={Dialog=22..40}] Dialog 1
-execute positioned ~-0.5 ~-1.1875 ~-0.5 if entity @e[type=minecraft:armor_stand,tag=billiards_ball,dx=0,dy=3,dz=0] run scoreboard players add @s[scores={Dialog=21}] Dialog 1
+execute positioned ~-0.5 ~ ~-0.5 if entity @e[type=minecraft:item_display,tag=billiards_ball,dx=0,dy=3,dz=0] run scoreboard players add @s[scores={Dialog=21}] Dialog 1
 scoreboard players add @s[scores={Dialog=2..20}] Dialog 1
-execute positioned ~-0.5 ~-1.1875 ~-0.5 if entity @e[type=minecraft:armor_stand,tag=billiards_ball,dx=0,dy=3,dz=0] run scoreboard players add @s[scores={Dialog=1}] Dialog 1
-execute positioned ~-0.5 ~-1.1875 ~-0.5 run tag @e[type=minecraft:armor_stand,tag=billiards_ball,dx=0,dy=3,dz=0] add collision
+execute positioned ~-0.5 ~ ~-0.5 if entity @e[type=minecraft:item_display,tag=billiards_ball,dx=0,dy=3,dz=0] run scoreboard players add @s[scores={Dialog=1}] Dialog 1
+execute positioned ~-0.5 ~ ~-0.5 run tag @e[type=minecraft:item_display,tag=billiards_ball,dx=0,dy=3,dz=0] add collision
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
 tag @s add visible
 tag @s[scores={Dialog=1},tag=portrait_ghost_hide] remove visible

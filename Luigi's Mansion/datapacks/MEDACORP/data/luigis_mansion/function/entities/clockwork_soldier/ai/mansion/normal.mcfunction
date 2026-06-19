@@ -24,11 +24,6 @@ scoreboard players set @s[scores={ActionTime=3},tag=complain] VulnerableTime 60
 tag @s[scores={VulnerableTime=1}] add vanish
 scoreboard players remove @s[tag=activated] WaitTime 1
 
-execute at @s[tag=!no_wind] rotated ~ 0 positioned ^ ^ ^-0.5 run teleport @e[tag=this_wind,limit=1] ~ ~0.1 ~ ~ ~
-execute store result score #temp Time run data get entity @e[tag=this_wind,limit=1] Pose.Head[2]
-execute if entity @s[tag=activated,tag=!in_vacuum] unless score #mirrored Selected matches 1 store result entity @e[tag=this_wind,limit=1] Pose.Head[2] float 1 run scoreboard players add #temp Time 10
-execute if entity @s[tag=activated,tag=!in_vacuum] if score #mirrored Selected matches 1 store result entity @e[tag=this_wind,limit=1] Pose.Head[2] float 1 run scoreboard players remove #temp Time 10
-execute if entity @s[tag=activated,tag=in_vacuum] unless score #mirrored Selected matches 1 store result entity @e[tag=this_wind,limit=1] Pose.Head[2] float 1 run scoreboard players remove #temp Time 40
-execute if entity @s[tag=activated,tag=in_vacuum] if score #mirrored Selected matches 1 store result entity @e[tag=this_wind,limit=1] Pose.Head[2] float 1 run scoreboard players add #temp Time 40
-scoreboard players reset #temp Time
+execute at @s[tag=!no_wind] rotated ~ 0 positioned ^ ^ ^-0.5 run teleport @e[tag=this_wind,limit=1] ~ ~1.55 ~ ~ ~
+execute if entity @s[tag=activated] run function luigis_mansion:entities/clockwork_soldier/ai/mansion/normal/turn_wind
 tag @e[tag=this_wind,limit=1] remove this_wind

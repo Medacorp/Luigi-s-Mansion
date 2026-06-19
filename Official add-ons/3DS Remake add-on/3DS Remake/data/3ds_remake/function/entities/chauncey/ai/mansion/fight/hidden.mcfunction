@@ -2,8 +2,8 @@ tag @s remove owner_complain
 function luigis_mansion:entities/ghost/owner_effects
 scoreboard players add @s[scores={Dialog=946..}] Dialog 1
 scoreboard players add @s[scores={Dialog=582..944}] Dialog 1
-execute positioned ~-1 ~ ~-1 if entity @e[type=minecraft:armor_stand,tag=ball,tag=same_room,tag=spit,dx=1,dy=2,dz=1] run scoreboard players set @s[scores={Dialog=381..581}] Dialog 582
-execute unless entity @e[type=minecraft:armor_stand,tag=ball,tag=same_room] run scoreboard players set @s[scores={Dialog=381..581}] Dialog 0
+execute positioned ~-1 ~ ~-1 if entity @e[type=minecraft:item_display,tag=ball,tag=same_room,tag=spit,dx=1,dy=2,dz=1] run scoreboard players set @s[scores={Dialog=381..581}] Dialog 582
+execute unless entity @e[type=minecraft:item_display,tag=ball,tag=same_room] run scoreboard players set @s[scores={Dialog=381..581}] Dialog 0
 scoreboard players add @s[scores={Dialog=83,Health=5001..}] Dialog 100
 scoreboard players add @s[scores={Dialog=240..580}] Dialog 1
 scoreboard players set @s[scores={Dialog=240..380},tag=laugh] Dialog 380
@@ -87,7 +87,7 @@ tag @s[scores={Dialog=540}] remove laugh
 scoreboard players set @s[scores={Dialog=540}] ActionTime 0
 data modify entity @s[scores={Dialog=540}] data.animation set value {namespace:"luigis_mansion",id:"ramble"}
 data modify entity @s[scores={Dialog=560}] data.animation set value {namespace:"luigis_mansion",id:"grab_rambler"}
-execute if entity @s[scores={Dialog=581}] run tag @e[type=minecraft:armor_stand,tag=ball,tag=same_room] add dead
+execute if entity @s[scores={Dialog=581}] run tag @e[type=minecraft:item_display,tag=ball,tag=same_room] add dead
 
 scoreboard players set @s[scores={Dialog=582}] VulnerableTime 180
 data modify entity @s[scores={Dialog=582}] data.animation set value {namespace:"luigis_mansion",id:"dizzy"}

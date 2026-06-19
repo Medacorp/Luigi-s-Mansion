@@ -1,3 +1,3 @@
 scoreboard players add @s AnimationProgress 1
-data modify entity @s equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.no_legs
+data modify entity @s item merge from entity @s item.components."minecraft:custom_data".model_data.no_legs
 scoreboard players set @s[scores={AnimationProgress=8..}] AnimationProgress 0

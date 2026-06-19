@@ -1,5 +1,4 @@
 scoreboard players add @s AnimationProgress 1
-teleport @s ^0.4 ^0.2 ^
 execute at @s[scores={AnimationProgress=21}] run teleport @s ^ ^-0.05 ^-0.02
 execute at @s[scores={AnimationProgress=22}] run teleport @s ^ ^-0.1 ^-0.04
 execute at @s[scores={AnimationProgress=23}] run teleport @s ^ ^-0.15 ^-0.06

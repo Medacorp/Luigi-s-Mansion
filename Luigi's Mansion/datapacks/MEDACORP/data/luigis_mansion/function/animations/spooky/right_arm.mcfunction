@@ -1,3 +1,4 @@
-teleport @s ^-0.46 ^-0.9 ^
+teleport @s[tag=!flipped_gravity] ^-0.46 ^0.55 ^
+teleport @s[tag=flipped_gravity] ^0.46 ^0.85 ^
 
 $execute at @s run function $(namespace):animations/spooky/$(id)/right_arm

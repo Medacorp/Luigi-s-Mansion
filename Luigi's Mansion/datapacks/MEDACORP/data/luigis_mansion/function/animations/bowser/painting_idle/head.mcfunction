@@ -1,1 +1,0 @@
-scoreboard players set @s AnimationRotationX 500

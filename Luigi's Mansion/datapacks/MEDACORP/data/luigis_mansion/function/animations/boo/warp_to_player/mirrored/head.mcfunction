@@ -53,7 +53,7 @@ teleport @s[scores={AnimationProgress=116}] ~ ~ ~ ~-216 ~
 teleport @s[scores={AnimationProgress=117}] ~ ~ ~ ~-252 ~
 teleport @s[scores={AnimationProgress=118}] ~ ~ ~ ~-288 ~
 teleport @s[scores={AnimationProgress=119}] ~ ~ ~ ~-324 ~
-data modify entity @s[scores={AnimationProgress=40}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.invisible
-data modify entity @s[scores={AnimationProgress=80}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.default
+data modify entity @s[scores={AnimationProgress=40}] item merge from entity @s item.components."minecraft:custom_data".model_data.invisible
+data modify entity @s[scores={AnimationProgress=80}] item merge from entity @s item.components."minecraft:custom_data".model_data.default
 scoreboard players set @s[scores={AnimationProgress=200}] AnimationProgress 0
 execute store result score @s AnimationRotationX run data get entity @e[tag=this_entity,limit=1] Rotation[1] 10

@@ -11,9 +11,8 @@ tag @s[scores={SpawnTime=..20}] remove in_ice
 execute if entity @s[scores={SpawnTime=1},tag=vacuumable] run function luigis_mansion:entities/billiards_ball/rotate
 execute if entity @s[tag=!in_vacuum,tag=vacuumable,tag=!move] run function luigis_mansion:entities/billiards_ball/move_forward
 execute if entity @s[tag=move] run function luigis_mansion:entities/billiards_ball/move
-execute store result score @s HomeRotation run data get entity @s Pose.Head[0]
-execute if entity @s[tag=!can_spit_2,tag=vacuumable] store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRotation 10
-execute if entity @s[tag=move] store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRotation 20
+execute if entity @s[tag=!can_spit_2,tag=vacuumable] run function luigis_mansion:entities/billiards_ball/roll
+execute if entity @s[tag=move] run function luigis_mansion:entities/billiards_ball/roll
 
 execute at @s[tag=vacuumable,tag=!in_vacuum,tag=!can_spit_2,tag=!spit,tag=!dead] if entity @e[tag=same_room,tag=luigi,distance=..0.7,limit=1] run function luigis_mansion:entities/billiards_ball/hit_player
 

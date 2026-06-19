@@ -1,1 +1,1 @@
-attribute @s minecraft:scale base set 0.5
+data modify entity @s transformation.scale set value [0.625f,0.625f,0.625f]

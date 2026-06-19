@@ -1,2 +1,2 @@
-data modify entity @s[tag=!left_hinge] equipment.head merge value {components:{"minecraft:item_model":"3ds_remake:furniture/door_frame/double/reinforced_planks","minecraft:custom_model_data":{flags:[0b]}}}
-data modify entity @s[tag=left_hinge] equipment.head merge value {components:{"minecraft:item_model":"3ds_remake:furniture/door_frame/double/reinforced_planks","minecraft:custom_model_data":{flags:[1b]}}}
+data modify entity @s[tag=!left_hinge] item merge value {components:{"minecraft:item_model":"3ds_remake:furniture/door_frame/double/reinforced_planks","minecraft:custom_model_data":{flags:[0b]}}}
+data modify entity @s[tag=left_hinge] item merge value {components:{"minecraft:item_model":"3ds_remake:furniture/door_frame/double/reinforced_planks","minecraft:custom_model_data":{flags:[1b]}}}

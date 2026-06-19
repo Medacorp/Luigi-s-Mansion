@@ -2,6 +2,7 @@ scoreboard players add @s AnimationProgress 1
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -700
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationY -500
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationZ 600
+scoreboard players remove @s[scores={AnimationProgress=1},tag=flipped_gravity] AnimationRotationZ 1800
 scoreboard players add @s[scores={AnimationProgress=1..10}] AnimationRotationY 90
 scoreboard players remove @s[scores={AnimationProgress=21..25}] AnimationRotationY 20
 scoreboard players add @s[scores={AnimationProgress=26..30}] AnimationRotationY 20

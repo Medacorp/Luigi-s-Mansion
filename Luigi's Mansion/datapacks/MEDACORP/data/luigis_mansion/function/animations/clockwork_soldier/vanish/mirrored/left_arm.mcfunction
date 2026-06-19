@@ -40,6 +40,7 @@ execute if entity @s[scores={AnimationProgress=38}] positioned ^-0.46 ^ ^ rotate
 execute if entity @s[scores={AnimationProgress=39}] positioned ^-0.46 ^ ^ rotated ~-324 ~ run teleport @s ^0.46 ^1.95 ^ ~ ~
 teleport @s[scores={AnimationProgress=40..}] ^ ^2 ^
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationZ -900
+scoreboard players remove @s[scores={AnimationProgress=1},tag=flipped_gravity] AnimationRotationZ 1800
 scoreboard players add @s[scores={AnimationProgress=1..30}] AnimationRotationZ 30
-data modify entity @s[scores={AnimationProgress=1}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.equipment
+data modify entity @s[scores={AnimationProgress=1}] item merge from entity @s item.components."minecraft:custom_data".model_data.equipment
 scoreboard players set @s[scores={AnimationProgress=120}] AnimationProgress 0

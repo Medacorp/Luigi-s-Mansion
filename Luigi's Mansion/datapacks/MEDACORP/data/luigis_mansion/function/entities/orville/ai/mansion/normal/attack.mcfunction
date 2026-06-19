@@ -23,5 +23,5 @@ execute if entity @s[scores={VulnerableTime=0},tag=!grab_vehicle] if entity @e[t
 scoreboard players set @s TargetTask 0
 execute if entity @s[tag=!laugh,tag=!no_vehicle,tag=!grab_vehicle] run function luigis_mansion:entities/orville/ai/mansion/normal/attack_pattern
 
-execute at @s[tag=!no_vehicle] rotated ~ 0 run teleport @e[tag=this_vehicle,limit=1] ^ ^-1.2 ^0.4 ~ ~
+execute at @s[tag=!no_vehicle] rotated ~ 0 run teleport @e[tag=this_vehicle,limit=1] ^ ^0.25 ^0.4 ~ ~
 tag @e[tag=this_vehicle,limit=1] remove this_vehicle

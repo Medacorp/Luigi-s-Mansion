@@ -1,1 +1,1 @@
-{"parent":"luigis_mansion:entity/bogmire/left_arm","textures":{"0":"luigis_mansion:entity/black_bogmire"},"display":{"head":{"translation":[5,-9,0],"scale":[2.56,2.56,2.56]}}}
+{"parent":"luigis_mansion:entity/bogmire/left_arm","textures":{"0":"luigis_mansion:entity/black_bogmire"},"display":{"head":{"translation":[3.125,-1.625,0],"scale":[1.6,1.6,1.6]}}}

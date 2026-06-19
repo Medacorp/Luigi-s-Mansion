@@ -7,4 +7,5 @@ scoreboard players set @s Pull 0
 scoreboard players set @s ActionTime 0
 scoreboard players set @s Time 0
 tag @s remove was_low_health
+data modify entity @s transformation.scale set value [1.0f,1.0f,1.0f]
 data modify entity @s item merge from entity @s item.components."minecraft:custom_data".model_data.default

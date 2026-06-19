@@ -1,3 +1,4 @@
-teleport @s ^0.23 ^-0.45 ^
+teleport @s[tag=!flipped_gravity] ^0.23 ^1 ^
+teleport @s[tag=flipped_gravity] ^-0.23 ^1.8 ^
 
 $execute at @s run function $(namespace):animations/clockwork_soldier/$(id)/left_leg

@@ -12,10 +12,11 @@ $execute if data storage luigis_mansion:data dialogs[0].portraits.new[{namespace
 scoreboard players operation @e[tag=this_area,limit=1] Dialog = #area Time
 scoreboard players set @e[tag=this_area,limit=1] Room -3
 tag @e[tag=this_area,limit=1] remove this_area
-$execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.$(namespace).$(id){rank:-1b} as @e[tag=this_portrait,limit=1] run data modify entity @s equipment.head.components."minecraft:custom_model_data".strings[0] set value "portrificationizing_bronze"
-$execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.$(namespace).$(id){rank:0b} as @e[tag=this_portrait,limit=1] run data modify entity @s equipment.head.components."minecraft:custom_model_data".strings[0] set value "portrificationizing_bronze"
-$execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.$(namespace).$(id){rank:1b} as @e[tag=this_portrait,limit=1] run data modify entity @s equipment.head.components."minecraft:custom_model_data".strings[0] set value "portrificationizing_silver"
-$execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.$(namespace).$(id){rank:2b} as @e[tag=this_portrait,limit=1] run data modify entity @s equipment.head.components."minecraft:custom_model_data".strings[0] set value "portrificationizing_gold"
+$execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts[{name:{namespace:"$(namespace)",id:"$(id)"},rank:-1b}] as @e[tag=this_portrait,limit=1] run data modify entity @s item.components."minecraft:custom_model_data".strings[0] set value "portrificationizing_bronze"
+$execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts[{name:{namespace:"$(namespace)",id:"$(id)"},rank:0b}] as @e[tag=this_portrait,limit=1] run data modify entity @s item.components."minecraft:custom_model_data".strings[0] set value "portrificationizing_bronze"
+$execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts[{name:{namespace:"$(namespace)",id:"$(id)"},rank:1b}] as @e[tag=this_portrait,limit=1] run data modify entity @s item.components."minecraft:custom_model_data".strings[0] set value "portrificationizing_silver"
+$execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts[{name:{namespace:"$(namespace)",id:"$(id)"},rank:2b}] as @e[tag=this_portrait,limit=1] run data modify entity @s item.components."minecraft:custom_model_data".strings[0] set value "portrificationizing_gold"
+$execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts[{name:{namespace:"$(namespace)",id:"$(id)"},rank:3b}] as @e[tag=this_portrait,limit=1] run data modify entity @s item.components."minecraft:custom_model_data".strings[0] set value "portrificationizing_gold"
 scoreboard players operation @e[tag=this_portrait,limit=1] Dialog = #area Time
 tag @e[tag=this_portrait,limit=1] remove furniture
 tag @e[tag=this_portrait,limit=1] remove this_portrait

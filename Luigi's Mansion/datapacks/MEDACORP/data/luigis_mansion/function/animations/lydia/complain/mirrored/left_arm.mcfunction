@@ -9,6 +9,6 @@ scoreboard players remove @s[scores={AnimationProgress=41..45}] AnimationRotatio
 scoreboard players add @s[scores={AnimationProgress=46..50}] AnimationRotationY 10
 scoreboard players remove @s[scores={AnimationProgress=51..55}] AnimationRotationY 10
 scoreboard players add @s[scores={AnimationProgress=56..60}] AnimationRotationY 10
-data modify entity @s[scores={AnimationProgress=1}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.equipment
-data modify entity @s[scores={AnimationProgress=20}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.default
+data modify entity @s[scores={AnimationProgress=1}] item merge from entity @s item.components."minecraft:custom_data".model_data.equipment
+data modify entity @s[scores={AnimationProgress=20}] item merge from entity @s item.components."minecraft:custom_data".model_data.default
 scoreboard players set @s[scores={AnimationProgress=60}] AnimationProgress 0

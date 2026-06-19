@@ -1,1 +1,1 @@
-teleport @e[tag=this_bowling_ball,limit=1] ^0.3 ^0.2 ^0.4 ~ ~
+teleport @e[tag=this_bowling_ball,limit=1] ^0.3 ^1.65 ^0.4 ~ ~

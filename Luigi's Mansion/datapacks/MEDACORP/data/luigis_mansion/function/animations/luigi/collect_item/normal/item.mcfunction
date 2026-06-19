@@ -17,8 +17,6 @@ execute if entity @s[tag=!shrunk,scores={AnimationProgress=47..63}] positioned ^
 execute if entity @s[tag=shrunk,scores={AnimationProgress=47..63}] positioned ^0.1825 ^ ^ rotated ~90 ~ positioned ^-0.1825 ^ ^ run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[tag=!shrunk,scores={AnimationProgress=64..65}] positioned ^0.375 ^ ^ rotated ~45 ~ positioned ^-0.375 ^ ^ run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[tag=shrunk,scores={AnimationProgress=64..65}] positioned ^0.1825 ^ ^ rotated ~45 ~ positioned ^-0.1825 ^ ^ run teleport @s ~ ~ ~ ~ ~
-data modify entity @s[scores={AnimationProgress=1},tag=!shrunk] transformation.scale set value [0.625f,0.625f,0.625f]
-data modify entity @s[scores={AnimationProgress=1},tag=shrunk] transformation.scale set value [0.3125f,0.3125f,0.3125f]
 data modify entity @s[scores={AnimationProgress=1..60}] item set from storage luigis_mansion:data luigi.animation.item
 data remove entity @s[scores={AnimationProgress=61}] item
 execute store result score #item Time run data get storage luigis_mansion:data luigi.animation.item.components."minecraft:custom_data".held_pitch 10
@@ -40,6 +38,4 @@ execute at @s[tag=!shrunk,scores={AnimationProgress=..47}] positioned ^ ^-0.74 ^
 execute at @s[tag=shrunk,scores={AnimationProgress=..47}] positioned ^ ^-0.37 ^ run teleport @s ~ ~0.25 ~ ~ ~
 execute at @s[tag=!shrunk,scores={AnimationProgress=48..}] positioned ^ ^-0.4 ^ run teleport @s ~ ~0.25 ~ ~ ~
 execute at @s[tag=shrunk,scores={AnimationProgress=48..}] positioned ^ ^-0.2 ^ run teleport @s ~ ~0.25 ~ ~ ~
-data modify entity @s[scores={AnimationProgress=69},tag=!shrunk] transformation.scale set value [1.0f,1.0f,1.0f]
-data modify entity @s[scores={AnimationProgress=69},tag=shrunk] transformation.scale set value [0.5f,0.5f,0.5f]
 scoreboard players set @s[scores={AnimationProgress=70}] AnimationProgress 0

@@ -1,1 +1,1 @@
-{"textures":{"0":"luigis_mansion:entity/bogmire","particle":"#0"},"elements":[{"from":[-2,-10,-2],"to":[18,-10,18],"faces":{"up":{"uv":[0,9.375,2.5,11.875],"rotation":180,"texture":"#0"}}}],"display":{"head":{"translation":[0,-7.25,0],"scale":[1.2,1.2,1.2]}}}
+{"textures":{"0":"luigis_mansion:entity/bogmire","particle":"#0"},"elements":[{"from":[-2,-10,-2],"to":[18,-10,18],"faces":{"up":{"uv":[0,9.375,2.5,11.875],"rotation":180,"texture":"#0"}}}],"display":{"head":{"translation":[0,-0.53125,0],"scale":[0.75,0.75,0.75]}}}

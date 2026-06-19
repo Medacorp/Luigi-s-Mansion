@@ -1,7 +1,5 @@
-execute unless entity @s[nbt={Pose:{Head:[0.01f]}}] run data merge entity @s {Pose:{Head:[0.0f,0.0f,0.01f]}}
-execute store result score @s HomeRotation run data get entity @s Pose.Head[1]
-execute if entity @s[tag=!was_in_vacuum] if block ~ ~-0.01 ~ #luigis_mansion:items_ignore store result entity @s Pose.Head[1] float 1 run scoreboard players add @s HomeRotation 10
-execute if entity @s[tag=was_in_vacuum] run data modify entity @s Pose.Head set value [90.0f,0.0f,0.01f]
+execute if entity @s[tag=!was_in_vacuum] if block ~ ~-0.01 ~ #luigis_mansion:items_ignore run function luigis_mansion:entities/banana_peel/spin
+execute if entity @s[tag=was_in_vacuum] run data modify entity @s transformation.left_rotation set value [0.7071067811865476f,0.0f,0.0f,0.7071067811865476f]
 scoreboard players add @s SpawnTime 1
 tag @s[tag=!vacuumable] remove in_vacuum
 tag @s[scores={SpawnTime=90}] add vacuumable

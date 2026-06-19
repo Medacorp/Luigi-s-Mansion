@@ -1,3 +1,4 @@
-teleport @s ^ ^0.2 ^
+teleport @s[tag=!flipped_gravity] ^ ^1.65 ^
+teleport @s[tag=flipped_gravity] ^ ^0.95 ^
 
 $execute at @s run function $(namespace):animations/mr_bones/$(id)/head

@@ -5,13 +5,13 @@ data modify entity @s[scores={ActionTime=1}] data.animation set value {namespace
 data modify entity @s[scores={ActionTime=10}] data.animation set value {namespace:"luigis_mansion",id:"look"}
 
 execute if entity @s[scores={ActionTime=1}] facing entity @e[tag=same_room,tag=target,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
-execute if entity @s[scores={ActionTime=1}] unless score #mirrored Selected matches 1 run teleport @e[tag=this_bowling_ball,limit=1] ^-0.3 ^0.2 ^0.4 ~ ~
-execute if entity @s[scores={ActionTime=1}] if score #mirrored Selected matches 1 run teleport @e[tag=this_bowling_ball,limit=1] ^0.3 ^0.2 ^0.4 ~ ~
-execute if entity @s[scores={ActionTime=2}] unless score #mirrored Selected matches 1 run teleport @e[tag=this_bowling_ball,limit=1] ^-0.3 ^-0.4 ^0.2 ~ ~
-execute if entity @s[scores={ActionTime=2}] if score #mirrored Selected matches 1 run teleport @e[tag=this_bowling_ball,limit=1] ^0.3 ^-0.4 ^0.2 ~ ~
-execute if entity @s[scores={ActionTime=3}] unless score #mirrored Selected matches 1 run teleport @e[tag=this_bowling_ball,limit=1] ^-0.3 ^-0.4 ^-0.2 ~ ~
-execute if entity @s[scores={ActionTime=3}] if score #mirrored Selected matches 1 run teleport @e[tag=this_bowling_ball,limit=1] ^0.3 ^-0.4 ^-0.2 ~ ~
-execute if entity @s[scores={ActionTime=4}] run teleport @e[tag=this_bowling_ball,limit=1] ^ ^-1 ^0.5 ~ ~
+execute if entity @s[scores={ActionTime=1}] unless score #mirrored Selected matches 1 run teleport @e[tag=this_bowling_ball,limit=1] ^-0.3 ^1.65 ^0.4 ~ ~
+execute if entity @s[scores={ActionTime=1}] if score #mirrored Selected matches 1 run teleport @e[tag=this_bowling_ball,limit=1] ^0.3 ^1.65 ^0.4 ~ ~
+execute if entity @s[scores={ActionTime=2}] unless score #mirrored Selected matches 1 run teleport @e[tag=this_bowling_ball,limit=1] ^-0.3 ^1.05 ^0.2 ~ ~
+execute if entity @s[scores={ActionTime=2}] if score #mirrored Selected matches 1 run teleport @e[tag=this_bowling_ball,limit=1] ^0.3 ^1.05 ^0.2 ~ ~
+execute if entity @s[scores={ActionTime=3}] unless score #mirrored Selected matches 1 run teleport @e[tag=this_bowling_ball,limit=1] ^-0.3 ^1.05 ^-0.2 ~ ~
+execute if entity @s[scores={ActionTime=3}] if score #mirrored Selected matches 1 run teleport @e[tag=this_bowling_ball,limit=1] ^0.3 ^1.05 ^-0.2 ~ ~
+execute if entity @s[scores={ActionTime=4}] run teleport @e[tag=this_bowling_ball,limit=1] ^ ^0.45 ^0.5 ~ ~
 execute if entity @s[scores={ActionTime=5}] run tag @e[tag=this_bowling_ball,limit=1] remove no_ai
 $execute if entity @s[scores={ActionTime=5}] run playsound $(namespace):entity.$(id).attack hostile @a[tag=same_room] ~ ~ ~ 1
 

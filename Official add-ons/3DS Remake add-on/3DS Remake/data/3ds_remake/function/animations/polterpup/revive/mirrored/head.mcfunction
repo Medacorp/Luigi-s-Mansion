@@ -82,21 +82,21 @@ scoreboard players add @s[scores={AnimationProgress=320..322}] AnimationRotation
 scoreboard players remove @s[scores={AnimationProgress=325..327}] AnimationRotationX 50
 scoreboard players add @s[scores={AnimationProgress=329..330}] AnimationRotationX 50
 scoreboard players add @s[scores={AnimationProgress=331..340}] AnimationRotationX 90
-data modify entity @s[scores={AnimationProgress=38}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.open_mouth
-data modify entity @s[scores={AnimationProgress=42}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.default
-data modify entity @s[scores={AnimationProgress=145}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.open_mouth
-data modify entity @s[scores={AnimationProgress=185}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.default
-data modify entity @s[scores={AnimationProgress=200}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.open_mouth
-data modify entity @s[scores={AnimationProgress=220}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.default
-data modify entity @s[scores={AnimationProgress=240}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.tongue_out_left
-data modify entity @s[scores={AnimationProgress=250}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.default
-data modify entity @s[scores={AnimationProgress=278}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.open_mouth_tongue
-data modify entity @s[scores={AnimationProgress=297}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.open_mouth
-data modify entity @s[scores={AnimationProgress=302}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.default
-data modify entity @s[scores={AnimationProgress=305}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.open_mouth
-data modify entity @s[scores={AnimationProgress=310}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.default
-data modify entity @s[scores={AnimationProgress=317}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.open_mouth
-data modify entity @s[scores={AnimationProgress=322}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.default
-data modify entity @s[scores={AnimationProgress=325}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.open_mouth
-data modify entity @s[scores={AnimationProgress=330}] equipment.head merge from entity @s equipment.head.components."minecraft:custom_data".model_data.default
+data modify entity @s[scores={AnimationProgress=38}] item merge from entity @s item.components."minecraft:custom_data".model_data.open_mouth
+data modify entity @s[scores={AnimationProgress=42}] item merge from entity @s item.components."minecraft:custom_data".model_data.default
+data modify entity @s[scores={AnimationProgress=145}] item merge from entity @s item.components."minecraft:custom_data".model_data.open_mouth
+data modify entity @s[scores={AnimationProgress=185}] item merge from entity @s item.components."minecraft:custom_data".model_data.default
+data modify entity @s[scores={AnimationProgress=200}] item merge from entity @s item.components."minecraft:custom_data".model_data.open_mouth
+data modify entity @s[scores={AnimationProgress=220}] item merge from entity @s item.components."minecraft:custom_data".model_data.default
+data modify entity @s[scores={AnimationProgress=240}] item merge from entity @s item.components."minecraft:custom_data".model_data.tongue_out_left
+data modify entity @s[scores={AnimationProgress=250}] item merge from entity @s item.components."minecraft:custom_data".model_data.default
+data modify entity @s[scores={AnimationProgress=278}] item merge from entity @s item.components."minecraft:custom_data".model_data.open_mouth_tongue
+data modify entity @s[scores={AnimationProgress=297}] item merge from entity @s item.components."minecraft:custom_data".model_data.open_mouth
+data modify entity @s[scores={AnimationProgress=302}] item merge from entity @s item.components."minecraft:custom_data".model_data.default
+data modify entity @s[scores={AnimationProgress=305}] item merge from entity @s item.components."minecraft:custom_data".model_data.open_mouth
+data modify entity @s[scores={AnimationProgress=310}] item merge from entity @s item.components."minecraft:custom_data".model_data.default
+data modify entity @s[scores={AnimationProgress=317}] item merge from entity @s item.components."minecraft:custom_data".model_data.open_mouth
+data modify entity @s[scores={AnimationProgress=322}] item merge from entity @s item.components."minecraft:custom_data".model_data.default
+data modify entity @s[scores={AnimationProgress=325}] item merge from entity @s item.components."minecraft:custom_data".model_data.open_mouth
+data modify entity @s[scores={AnimationProgress=330}] item merge from entity @s item.components."minecraft:custom_data".model_data.default
 scoreboard players set @s[scores={AnimationProgress=340..}] AnimationProgress 0

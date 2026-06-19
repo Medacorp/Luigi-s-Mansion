@@ -1,3 +1,4 @@
-teleport @s ^ ^-0.1 ^
+teleport @s[tag=!flipped_gravity] ^ ^-0.1 ^
+teleport @s[tag=flipped_gravity] ^ ^0.1 ^
 scoreboard players set @s AnimationRotationY -100
-attribute @s minecraft:scale base set 0.5
+data modify entity @s transformation.scale set value [0.5f,0.5f,0.5f]

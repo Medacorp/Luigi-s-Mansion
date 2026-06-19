@@ -24,8 +24,8 @@ execute at @s[scores={Move=1..}] run function luigis_mansion:entities/ball/move
 # bounce against other balls
 tag @s add me
 tag @e[tag=ball,tag=!me,sort=nearest,distance=..5,limit=1] add target
-execute at @s[tag=big] positioned ~ ~-0.4 ~ facing entity @e[tag=target,limit=1] feet positioned ^ ^ ^2 if entity @e[tag=target,distance=..2,limit=1] run function luigis_mansion:entities/ball/bounce_against_ball
-execute at @s[tag=!big] positioned ~ ~-1 ~ facing entity @e[tag=target,limit=1] feet positioned ^ ^ ^1 if entity @e[tag=target,distance=..1,limit=1] run function luigis_mansion:entities/ball/bounce_against_ball
+execute at @s[tag=big] facing entity @e[tag=target,limit=1] feet positioned ^ ^ ^2 if entity @e[tag=target,distance=..2,limit=1] run function luigis_mansion:entities/ball/bounce_against_ball
+execute at @s[tag=!big] facing entity @e[tag=target,limit=1] feet positioned ^ ^ ^1 if entity @e[tag=target,distance=..1,limit=1] run function luigis_mansion:entities/ball/bounce_against_ball
 tag @e[tag=target,limit=1] remove target
 tag @s remove me
 
@@ -34,11 +34,10 @@ execute at @s[tag=!spit] unless entity @s[tag=chauncey,tag=!vacuumable] unless e
 execute at @s[tag=!spit] unless entity @s[tag=chauncey,tag=!vacuumable] unless entity @s[scores={Move=1..}] unless block ~ ~-0.3 ~ #luigis_mansion:all_ignore align y run teleport @s ~ ~ ~
 
 # roll animation
-execute store result score @s HomeRotation run data get entity @s Pose.Head[0]
-execute if entity @s[tag=in_vacuum,tag=!can_spit_2] store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRotation 10
-execute if entity @s[tag=spit] store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRotation 10
-execute if entity @s[tag=chauncey,tag=!vacuumable] store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRotation 10
-execute if entity @s[tag=spike_ball,scores={Move=1..}] store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRotation 10
+execute if entity @s[tag=in_vacuum,tag=!can_spit_2,tag=vacuumable] run function luigis_mansion:entities/ball/roll
+execute if entity @s[tag=spit] run function luigis_mansion:entities/ball/roll
+execute if entity @s[tag=chauncey,tag=!vacuumable] run function luigis_mansion:entities/ball/roll
+execute if entity @s[scores={Move=1..}] run function luigis_mansion:entities/ball/roll
 
 # reset
 execute if entity @s[tag=collision] run function luigis_mansion:entities/ball/collision

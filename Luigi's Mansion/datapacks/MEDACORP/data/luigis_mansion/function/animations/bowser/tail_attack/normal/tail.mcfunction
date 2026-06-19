@@ -1,5 +1,6 @@
 scoreboard players add @s AnimationProgress 1
-teleport @s[scores={AnimationProgress=11..30}] ^ ^-0.333 ^
+teleport @s[tag=!flipped_gravity,scores={AnimationProgress=11..30}] ^ ^-0.333 ^
+teleport @s[tag=flipped_gravity,scores={AnimationProgress=11..30}] ^ ^0.333 ^
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -200
 scoreboard players add @s[scores={AnimationProgress=1..10}] AnimationRotationX 10
 scoreboard players remove @s[scores={AnimationProgress=31..40}] AnimationRotationX 10

@@ -6,4 +6,4 @@ execute as @e[tag=luigi,distance=..3,scores={Invulnerable=0}] run function luigi
 data remove storage luigis_mansion:data damage
 particle minecraft:explosion ~ ~ ~ 0.2 0.2 0.2 1 4 force @a[tag=same_room]
 playsound luigis_mansion:entity.ghost.explosion hostile @a[tag=same_room] ~ ~ ~ 1
-data modify entity @s equipment.head.components."minecraft:item_model" set value "luigis_mansion:empty"
+data modify entity @s item.components."minecraft:item_model" set value "luigis_mansion:empty"
