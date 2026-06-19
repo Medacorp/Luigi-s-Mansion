@@ -1,0 +1,3 @@
+execute if data storage luigis_mansion:data luigi.selected_item.components."minecraft:custom_data".is_nozzle run tag @s add holding_poltergust
+execute if entity @s[tag=!poltergust_grabbed,tag=held_item] unless data storage luigis_mansion:data luigi.selected_item.components."minecraft:custom_data".is_nozzle if data storage luigis_mansion:data luigi.selected_item.id run data modify entity @s item set from storage luigis_mansion:data luigi.selected_item
+execute if entity @s[tag=poltergust_grabbed,tag=held_item] if data storage luigis_mansion:data luigi.selected_item.components."minecraft:custom_data".is_nozzle run data modify entity @s item set from storage luigis_mansion:data luigi.selected_item

@@ -1,0 +1,31 @@
+scoreboard players add @s AnimationProgress 1
+data modify entity @s[scores={AnimationProgress=1}] item merge from entity @s item.components."minecraft:custom_data".model_data.scared
+scoreboard players remove @s[scores={AnimationProgress=1..2}] AnimationRotationZ 5
+scoreboard players add @s[scores={AnimationProgress=3..6}] AnimationRotationZ 5
+scoreboard players remove @s[scores={AnimationProgress=7..10}] AnimationRotationZ 5
+scoreboard players add @s[scores={AnimationProgress=11..14}] AnimationRotationZ 5
+scoreboard players remove @s[scores={AnimationProgress=15..18}] AnimationRotationZ 5
+scoreboard players add @s[scores={AnimationProgress=19..22}] AnimationRotationZ 5
+scoreboard players remove @s[scores={AnimationProgress=23..26}] AnimationRotationZ 5
+scoreboard players add @s[scores={AnimationProgress=27..30}] AnimationRotationZ 5
+scoreboard players remove @s[scores={AnimationProgress=31..34}] AnimationRotationZ 5
+scoreboard players add @s[scores={AnimationProgress=35..38}] AnimationRotationZ 5
+scoreboard players remove @s[scores={AnimationProgress=39..42}] AnimationRotationZ 5
+scoreboard players add @s[scores={AnimationProgress=43..46}] AnimationRotationZ 5
+scoreboard players remove @s[scores={AnimationProgress=47..50}] AnimationRotationZ 5
+scoreboard players add @s[scores={AnimationProgress=51..54}] AnimationRotationZ 5
+scoreboard players remove @s[scores={AnimationProgress=55..58}] AnimationRotationZ 5
+scoreboard players add @s[scores={AnimationProgress=59..62}] AnimationRotationZ 5
+scoreboard players remove @s[scores={AnimationProgress=63..66}] AnimationRotationZ 5
+scoreboard players add @s[scores={AnimationProgress=67..70}] AnimationRotationZ 5
+scoreboard players remove @s[scores={AnimationProgress=71..74}] AnimationRotationZ 5
+scoreboard players add @s[scores={AnimationProgress=75..78}] AnimationRotationZ 5
+scoreboard players remove @s[scores={AnimationProgress=79..82}] AnimationRotationZ 5
+scoreboard players add @s[scores={AnimationProgress=83..86}] AnimationRotationZ 5
+scoreboard players remove @s[scores={AnimationProgress=87..90}] AnimationRotationZ 5
+scoreboard players add @s[scores={AnimationProgress=91..94}] AnimationRotationZ 5
+scoreboard players remove @s[scores={AnimationProgress=95..98}] AnimationRotationZ 5
+scoreboard players add @s[scores={AnimationProgress=99..100}] AnimationRotationZ 5
+scoreboard players set @s[scores={AnimationProgress=100..}] AnimationProgress 0
+execute if entity @s[tag=!gooigi_model] run function luigis_mansion:animations/luigi/sync_head
+execute if entity @s[tag=gooigi_model] run function 3ds_remake:animations/gooigi/sync_head

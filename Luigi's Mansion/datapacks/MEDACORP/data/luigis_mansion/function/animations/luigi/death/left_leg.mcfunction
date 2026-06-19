@@ -1,12 +1,4 @@
-scoreboard players add @s[scores={DeathTime=..59}] DeathTime 1
-execute unless entity @s[scores={DeathTime=1..}] run scoreboard players add @s DeathTime 1
-execute if entity @s[scores={DeathTime=1..30}] run teleport @s[tag=!flipped_gravity] ^0.125 ^-2.34 ^ ~ ~
-execute if entity @s[scores={DeathTime=1..30}] run teleport @s[tag=flipped_gravity] ^-0.125 ^0.21 ^ ~ ~
-execute at @s[scores={DeathTime=31..40}] unless score #mirrored Selected matches 1 run teleport @s[tag=!flipped_gravity] ^0.05 ^-0.05 ^
-execute at @s[scores={DeathTime=31..40}] unless score #mirrored Selected matches 1 run teleport @s[tag=flipped_gravity] ^-0.05 ^0.05 ^
-execute at @s[scores={DeathTime=31..40}] if score #mirrored Selected matches 1 run teleport @s[tag=!flipped_gravity] ^-0.072 ^-0.028 ^
-execute at @s[scores={DeathTime=31..40}] if score #mirrored Selected matches 1 run teleport @s[tag=flipped_gravity] ^0.072 ^0.028 ^
-execute unless score #mirrored Selected matches 1 run scoreboard players add @s[scores={DeathTime=31..40}] AnimationRotationZ 80
-execute if score #mirrored Selected matches 1 run scoreboard players remove @s[scores={DeathTime=31..40}] AnimationRotationZ 50
-execute unless score #mirrored Selected matches 1 run scoreboard players add @s[scores={DeathTime=31..40}] AnimationRotationX 20
-execute if score #mirrored Selected matches 1 run scoreboard players remove @s[scores={DeathTime=31..40}] AnimationRotationX 40
+execute unless score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/luigi/death/normal/left_leg
+execute unless score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/luigi/death/normal_flipped/left_leg
+execute if score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/luigi/death/mirrored/left_leg
+execute if score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/luigi/death/mirrored_flipped/left_leg

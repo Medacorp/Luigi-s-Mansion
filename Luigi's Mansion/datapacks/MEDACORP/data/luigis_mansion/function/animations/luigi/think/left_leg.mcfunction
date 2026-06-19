@@ -1,12 +1,2 @@
-scoreboard players add @s AnimationProgress 1
-execute unless score #mirrored Selected matches 1 run scoreboard players remove @s[scores={AnimationProgress=1..4}] AnimationRotationX 10
-execute unless score #mirrored Selected matches 1 run scoreboard players add @s[scores={AnimationProgress=5..8}] AnimationRotationX 10
-execute unless score #mirrored Selected matches 1 run scoreboard players remove @s[scores={AnimationProgress=9..12}] AnimationRotationX 10
-execute unless score #mirrored Selected matches 1 run scoreboard players add @s[scores={AnimationProgress=13..16}] AnimationRotationX 10
-execute unless score #mirrored Selected matches 1 run scoreboard players remove @s[scores={AnimationProgress=17..20}] AnimationRotationX 10
-execute unless score #mirrored Selected matches 1 run scoreboard players add @s[scores={AnimationProgress=21..24}] AnimationRotationX 10
-execute unless score #mirrored Selected matches 1 run scoreboard players remove @s[scores={AnimationProgress=25..28}] AnimationRotationX 10
-execute unless score #mirrored Selected matches 1 run scoreboard players add @s[scores={AnimationProgress=29..32}] AnimationRotationX 10
-execute unless score #mirrored Selected matches 1 run scoreboard players remove @s[scores={AnimationProgress=33..36}] AnimationRotationX 10
-execute unless score #mirrored Selected matches 1 run scoreboard players add @s[scores={AnimationProgress=37..40}] AnimationRotationX 10
-scoreboard players set @s[scores={AnimationProgress=60}] AnimationProgress 0
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/luigi/think/normal/left_leg
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/luigi/think/mirrored/left_leg

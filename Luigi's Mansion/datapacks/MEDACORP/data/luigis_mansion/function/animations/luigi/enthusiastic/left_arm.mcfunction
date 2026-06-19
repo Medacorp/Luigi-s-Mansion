@@ -1,5 +1,2 @@
-scoreboard players add @s AnimationProgress 1
-execute unless score #mirrored Selected matches 1 run scoreboard players remove @s[scores={AnimationProgress=1..10}] AnimationRotationX 130
-execute if score #mirrored Selected matches 1 run scoreboard players add @s[scores={AnimationProgress=1..10}] AnimationRotationX 10
-execute unless score #mirrored Selected matches 1 run scoreboard players add @s[scores={AnimationProgress=1..10}] AnimationRotationY 20
-scoreboard players set @s[scores={AnimationProgress=15}] AnimationProgress 0
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/luigi/enthusiastic/normal/left_arm
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/luigi/enthusiastic/mirrored/left_arm

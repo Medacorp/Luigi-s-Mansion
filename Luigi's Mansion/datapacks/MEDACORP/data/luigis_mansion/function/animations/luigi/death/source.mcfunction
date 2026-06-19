@@ -1,13 +1,4 @@
-scoreboard players add @s[scores={DeathTime=..59}] DeathTime 1
-execute unless entity @s[scores={DeathTime=1..}] run scoreboard players add @s DeathTime 1
-execute if entity @s[scores={DeathTime=1}] run function luigis_mansion:animations/luigi/source
-execute if entity @s[scores={DeathTime=1}] rotated as @s run teleport @s[tag=!flipped_gravity] ^ ^1.65 ^-.25
-execute if entity @s[scores={DeathTime=1}] rotated as @s run teleport @s[tag=flipped_gravity] ^ ^-0.6 ^-.25
-execute at @s[scores={DeathTime=1..20}] unless score #mirrored Selected matches 1 run teleport @s[tag=!flipped_gravity] ~ ~ ~ ~-18 ~
-execute at @s[scores={DeathTime=1..20}] unless score #mirrored Selected matches 1 run teleport @s[tag=flipped_gravity] ~ ~ ~ ~18 ~
-execute at @s[scores={DeathTime=1..20}] if score #mirrored Selected matches 1 run teleport @s[tag=!flipped_gravity] ~ ~ ~ ~-18 ~
-execute at @s[scores={DeathTime=1..20}] if score #mirrored Selected matches 1 run teleport @s[tag=flipped_gravity] ~ ~ ~ ~18 ~
-execute at @s[scores={DeathTime=31..40}] unless score #mirrored Selected matches 1 run teleport @s[tag=!flipped_gravity] ^0.125 ^-0.07 ^
-execute at @s[scores={DeathTime=31..40}] unless score #mirrored Selected matches 1 run teleport @s[tag=flipped_gravity] ^-0.125 ^0.07 ^
-execute at @s[scores={DeathTime=31..40}] if score #mirrored Selected matches 1 run teleport @s[tag=!flipped_gravity] ^-0.125 ^-0.07 ^
-execute at @s[scores={DeathTime=31..40}] if score #mirrored Selected matches 1 run teleport @s[tag=flipped_gravity] ^0.125 ^0.07 ^
+execute unless score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/luigi/death/normal/source
+execute unless score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/luigi/death/normal_flipped/source
+execute if score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/luigi/death/mirrored/source
+execute if score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/luigi/death/mirrored_flipped/source

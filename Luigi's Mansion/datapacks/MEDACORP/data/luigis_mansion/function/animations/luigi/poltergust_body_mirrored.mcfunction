@@ -1,0 +1,3 @@
+data modify entity @s[tag=!riding_poltergust,tag=!poltergust_grabbed] item merge from storage luigis_mansion:data luigi.inventory[{components:{"minecraft:custom_data":{is_poltergust:1b}}}].components."minecraft:custom_data".model_data.body_idle_left
+data modify entity @s[tag=!riding_poltergust,tag=poltergust_grabbed] item merge from storage luigis_mansion:data luigi.inventory[{components:{"minecraft:custom_data":{is_poltergust:1b}}}].components."minecraft:custom_data".model_data.body_left
+data modify entity @s[tag=riding_poltergust] item merge from storage luigis_mansion:data luigi.inventory[{components:{"minecraft:custom_data":{is_poltergust:1b}}}].components."minecraft:custom_data".model_data.body_sat_on_left

@@ -1,20 +1,2 @@
-scoreboard players add @s AnimationProgress 1
-execute unless score #mirrored Selected matches 1 run scoreboard players add @s[scores={AnimationProgress=11..13}] AnimationRotationX 90
-execute unless score #mirrored Selected matches 1 run scoreboard players remove @s[scores={AnimationProgress=14..19}] AnimationRotationX 90
-execute unless score #mirrored Selected matches 1 run scoreboard players add @s[scores={AnimationProgress=20..25}] AnimationRotationX 90
-execute unless score #mirrored Selected matches 1 run scoreboard players remove @s[scores={AnimationProgress=26..31}] AnimationRotationX 90
-execute unless score #mirrored Selected matches 1 run scoreboard players add @s[scores={AnimationProgress=32..37}] AnimationRotationX 90
-execute unless score #mirrored Selected matches 1 run scoreboard players remove @s[scores={AnimationProgress=38..43}] AnimationRotationX 90
-execute unless score #mirrored Selected matches 1 run scoreboard players add @s[scores={AnimationProgress=44..49}] AnimationRotationX 90
-execute unless score #mirrored Selected matches 1 run scoreboard players remove @s[scores={AnimationProgress=50..55}] AnimationRotationX 90
-execute unless score #mirrored Selected matches 1 run scoreboard players add @s[scores={AnimationProgress=56..58}] AnimationRotationX 90
-execute if score #mirrored Selected matches 1 run scoreboard players remove @s[scores={AnimationProgress=11..13}] AnimationRotationX 90
-execute if score #mirrored Selected matches 1 run scoreboard players add @s[scores={AnimationProgress=14..19}] AnimationRotationX 90
-execute if score #mirrored Selected matches 1 run scoreboard players remove @s[scores={AnimationProgress=20..25}] AnimationRotationX 90
-execute if score #mirrored Selected matches 1 run scoreboard players add @s[scores={AnimationProgress=26..31}] AnimationRotationX 90
-execute if score #mirrored Selected matches 1 run scoreboard players remove @s[scores={AnimationProgress=32..37}] AnimationRotationX 90
-execute if score #mirrored Selected matches 1 run scoreboard players add @s[scores={AnimationProgress=38..43}] AnimationRotationX 90
-execute if score #mirrored Selected matches 1 run scoreboard players remove @s[scores={AnimationProgress=44..49}] AnimationRotationX 90
-execute if score #mirrored Selected matches 1 run scoreboard players add @s[scores={AnimationProgress=50..55}] AnimationRotationX 90
-execute if score #mirrored Selected matches 1 run scoreboard players remove @s[scores={AnimationProgress=56..58}] AnimationRotationX 90
-scoreboard players set @s[scores={AnimationProgress=60..}] AnimationProgress 0
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/luigi/knockback/flee/normal/right_leg
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/luigi/knockback/flee/mirrored/right_leg

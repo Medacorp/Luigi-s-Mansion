@@ -4,6 +4,7 @@ scoreboard players add @s[scores={AnimationProgress=6..7}] AnimationRotationX 10
 scoreboard players remove @s[scores={AnimationProgress=8..9}] AnimationRotationX 10
 scoreboard players add @s[scores={AnimationProgress=11..12}] AnimationRotationX 10
 scoreboard players remove @s[scores={AnimationProgress=13..14}] AnimationRotationX 10
-teleport @s[scores={AnimationProgress=5..}] ^ ^-0.1 ^0.05
+teleport @s[scores={AnimationProgress=5..},tag=!flipped_gravity] ^ ^-0.1 ^0.05
+teleport @s[scores={AnimationProgress=5..},tag=flipped_gravity] ^ ^0.1 ^0.05
 scoreboard players set @s[scores={AnimationProgress=6}] AnimationRotationX 400
 scoreboard players set @s[scores={AnimationProgress=15..}] AnimationProgress 5

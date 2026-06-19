@@ -1,0 +1,12 @@
+scoreboard players add @s AnimationProgress 1
+scoreboard players remove @s[scores={AnimationProgress=1..4}] AnimationRotationX 10
+scoreboard players add @s[scores={AnimationProgress=5..8}] AnimationRotationX 10
+scoreboard players remove @s[scores={AnimationProgress=9..12}] AnimationRotationX 10
+scoreboard players add @s[scores={AnimationProgress=13..16}] AnimationRotationX 10
+scoreboard players remove @s[scores={AnimationProgress=17..20}] AnimationRotationX 10
+scoreboard players add @s[scores={AnimationProgress=21..24}] AnimationRotationX 10
+scoreboard players remove @s[scores={AnimationProgress=25..28}] AnimationRotationX 10
+scoreboard players add @s[scores={AnimationProgress=29..32}] AnimationRotationX 10
+scoreboard players remove @s[scores={AnimationProgress=33..36}] AnimationRotationX 10
+scoreboard players add @s[scores={AnimationProgress=37..40}] AnimationRotationX 10
+scoreboard players set @s[scores={AnimationProgress=60}] AnimationProgress 0

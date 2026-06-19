@@ -31,11 +31,7 @@ execute at @s[tag=shrunk] if data storage luigis_mansion:data luigi{tags:["explo
 execute at @s[tag=shrunk] if data storage luigis_mansion:data luigi{tags:["exploding_poltergust_effect"]} run particle minecraft:flame ~ ~0.025 ~ 0.3 0.3 0.3 0 10 normal @a[tag=same_room]
 
 data modify entity @s item set from storage luigis_mansion:data luigi.inventory[{components:{"minecraft:custom_data":{is_poltergust:1b}}}]
-execute unless score #mirrored Selected matches 1 run data modify entity @s[tag=!riding_poltergust,tag=!poltergust_grabbed] item merge from storage luigis_mansion:data luigi.inventory[{components:{"minecraft:custom_data":{is_poltergust:1b}}}].components."minecraft:custom_data".model_data.body_idle_right
-execute unless score #mirrored Selected matches 1 run data modify entity @s[tag=!riding_poltergust,tag=poltergust_grabbed] item merge from storage luigis_mansion:data luigi.inventory[{components:{"minecraft:custom_data":{is_poltergust:1b}}}].components."minecraft:custom_data".model_data.body_right
-execute unless score #mirrored Selected matches 1 run data modify entity @s[tag=riding_poltergust] item merge from storage luigis_mansion:data luigi.inventory[{components:{"minecraft:custom_data":{is_poltergust:1b}}}].components."minecraft:custom_data".model_data.body_sat_on_right
-execute if score #mirrored Selected matches 1 run data modify entity @s[tag=!riding_poltergust,tag=!poltergust_grabbed] item merge from storage luigis_mansion:data luigi.inventory[{components:{"minecraft:custom_data":{is_poltergust:1b}}}].components."minecraft:custom_data".model_data.body_idle_left
-execute if score #mirrored Selected matches 1 run data modify entity @s[tag=!riding_poltergust,tag=poltergust_grabbed] item merge from storage luigis_mansion:data luigi.inventory[{components:{"minecraft:custom_data":{is_poltergust:1b}}}].components."minecraft:custom_data".model_data.body_left
-execute if score #mirrored Selected matches 1 run data modify entity @s[tag=riding_poltergust] item merge from storage luigis_mansion:data luigi.inventory[{components:{"minecraft:custom_data":{is_poltergust:1b}}}].components."minecraft:custom_data".model_data.body_sat_on_left
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/luigi/poltergust_body_normal
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/luigi/poltergust_body_mirrored
 
 $execute at @s run function $(namespace):animations/luigi/$(id)/poltergust_body
