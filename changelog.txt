@@ -21,6 +21,7 @@ v?:
 * Changed Training Room door in 3DS Remake to reflect changes made to it
 * Changed Chauncey in the Nursery in 3DS Remake to not count progress back down when stopping the rocking horse, matching the remake
 * Changed score display to not list unobtained money types at all in 3DS Remake, matching the remake
+* Changed a bunch of furniture variation names from left and right to be more clear which is which
 * Changed how talking with entities is handled
 ** Ghosts must now not be vulnerable, in addition to being visible, in order to be talked to
 ** Entity variable can_talk_to bool has been replaced with talk_dialog dialog ID

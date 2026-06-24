@@ -1,2 +1,2 @@
 data modify storage luigis_mansion:data furniture set value {room:25,searchable:["interact"],shake_animation:["interact"],sound:{namespace:"luigis_mansion",id:"harp"},can_hide_boo:1b,scan_result:{namespace:"luigis_mansion",id:"scan/scanner/44"},instrument:{track:"harp"}}
-execute positioned 656.0 11 -6.0 rotated -67.5 0 run function luigis_mansion:spawn_furniture/harp/left
+execute positioned 656.0 11 -6.0 rotated -67.5 0 run function luigis_mansion:spawn_furniture/harp/left_foot

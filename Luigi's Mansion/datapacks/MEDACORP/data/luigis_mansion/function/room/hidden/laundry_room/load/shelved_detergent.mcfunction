@@ -1,2 +1,2 @@
 data modify storage luigis_mansion:data furniture set value {room:22,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/15"}}
-execute positioned 714 16 -57.0 rotated -90 0 run function luigis_mansion:spawn_furniture/shelved_detergent/left
+execute positioned 714 16 -57.0 rotated -90 0 run function luigis_mansion:spawn_furniture/shelved_detergent/blue_red

@@ -1,4 +1,4 @@
 data modify storage luigis_mansion:data furniture set value {room:27,searchable:["interact","vacuum","fire"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"stove"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/97"}}
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["kitchen_stove"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"kitchen_stove"}
 execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["kitchen_stove"]} run data modify storage luigis_mansion:data furniture.loot.contents set from storage luigis_mansion:data current_state.current_data.loot_collections.furniture.red_ruby
-execute positioned 700 11 75.0 rotated -75 0 run function luigis_mansion:spawn_furniture/stove/left
+execute positioned 700 11 75.0 rotated -75 0 run function luigis_mansion:spawn_furniture/stove/left_kettle

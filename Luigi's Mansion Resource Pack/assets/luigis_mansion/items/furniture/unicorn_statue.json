@@ -1,1 +1,1 @@
-{"model":{"type":"minecraft:condition","property":"minecraft:custom_model_data","index":0,"on_false":{"type":"minecraft:model","model":"luigis_mansion:furniture/unicorn_statue/left"},"on_true":{"type":"minecraft:model","model":"luigis_mansion:furniture/unicorn_statue/right"}}}
+{"model":{"type":"minecraft:condition","property":"minecraft:custom_model_data","index":0,"on_false":{"type":"minecraft:model","model":"luigis_mansion:furniture/unicorn_statue/left_leg_lifted"},"on_true":{"type":"minecraft:model","model":"luigis_mansion:furniture/unicorn_statue/right_leg_lifted"}}}

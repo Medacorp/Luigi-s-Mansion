@@ -1,2 +1,2 @@
 data modify storage luigis_mansion:data furniture set value {room:27,no_ai:1b,animation:{frozen:1b}}
-execute positioned 709 15 -68.0 rotated 90 0 run function luigis_mansion:spawn_furniture/shelved_food_and_vase/left
+execute positioned 709 15 -68.0 rotated 90 0 run function luigis_mansion:spawn_furniture/shelved_food_and_vase/red_pink_vase

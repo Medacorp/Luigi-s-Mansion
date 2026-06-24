@@ -1,2 +1,2 @@
 data modify storage luigis_mansion:data furniture set value {room:47,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/16"}}
-execute positioned 683 12.313 -73 rotated 90 0 run function luigis_mansion:spawn_furniture/wine_glasses/left
+execute positioned 683 12.313 -73 rotated 90 0 run function luigis_mansion:spawn_furniture/wine_glasses/left_glass_furthest

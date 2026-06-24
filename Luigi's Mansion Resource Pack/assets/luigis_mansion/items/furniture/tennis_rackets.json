@@ -1,1 +1,1 @@
-{"model":{"type":"minecraft:condition","property":"minecraft:custom_model_data","index":0,"on_false":{"type":"minecraft:model","model":"luigis_mansion:furniture/tennis_rackets/right"},"on_true":{"type":"minecraft:model","model":"luigis_mansion:furniture/tennis_rackets/left"}}}
+{"model":{"type":"minecraft:condition","property":"minecraft:custom_model_data","index":0,"on_false":{"type":"minecraft:model","model":"luigis_mansion:furniture/tennis_rackets/right_front"},"on_true":{"type":"minecraft:model","model":"luigis_mansion:furniture/tennis_rackets/left_front"}}}

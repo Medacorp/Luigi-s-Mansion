@@ -1,2 +1,2 @@
 data modify storage luigis_mansion:data furniture set value {room:15,no_dust:1b,shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"stove"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/97"}}
-execute positioned 700 11 75.0 rotated -75 0 run function luigis_mansion:spawn_furniture/stove/left
+execute positioned 700 11 75.0 rotated -75 0 run function luigis_mansion:spawn_furniture/stove/left_kettle

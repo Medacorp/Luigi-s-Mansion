@@ -1,2 +1,2 @@
 data modify storage luigis_mansion:data furniture set value {room:23,candle_flames:[{lit:1b,cannot_extinguish:1b,fire_elemental_source:{timer:1b}}],searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/55"}}
-execute positioned 749.3 11 68 rotated 70 0 run function luigis_mansion:spawn_furniture/wooden_stool_mounted_candelabra/left
+execute positioned 749.3 11 68 rotated 70 0 run function luigis_mansion:spawn_furniture/wooden_stool_mounted_candelabra/left_candle
