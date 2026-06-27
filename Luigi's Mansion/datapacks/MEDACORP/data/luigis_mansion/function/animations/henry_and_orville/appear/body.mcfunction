@@ -1,2 +1,4 @@
-execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/henry_and_orville/appear/normal/body
-execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/henry_and_orville/appear/mirrored/body
+execute unless score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/henry_and_orville/appear/normal/body
+execute unless score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/henry_and_orville/appear/normal_flipped/body
+execute if score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/henry_and_orville/appear/mirrored/body
+execute if score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/henry_and_orville/appear/mirrored_flipped/body

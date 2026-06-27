@@ -1,12 +1,2 @@
-scoreboard players add @s AnimationProgress 1
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=3}] ~ ~0.0167 ~
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=4}] ~ ~0.0333 ~
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=5}] ~ ~0.05 ~
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=6}] ~ ~0.0333 ~
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=7}] ~ ~0.0167 ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=3}] ~ ~-0.0167 ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=4}] ~ ~-0.0333 ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=5}] ~ ~-0.05 ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=6}] ~ ~-0.0333 ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=7}] ~ ~-0.0167 ~
-scoreboard players set @s[scores={AnimationProgress=10..}] AnimationProgress 0
+execute if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/toad/idle/normal/body
+execute if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/toad/idle/normal_flipped/body

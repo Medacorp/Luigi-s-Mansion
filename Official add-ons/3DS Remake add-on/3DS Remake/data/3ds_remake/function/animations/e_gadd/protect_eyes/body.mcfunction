@@ -1,8 +1,2 @@
-scoreboard players add @s AnimationProgress 1
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=3..6}] ~ ~-0.01 ~
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=7..14}] ~ ~-0.02 ~
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=15..18}] ~ ~-0.01 ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=3..6}] ~ ~0.01 ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=7..14}] ~ ~0.02 ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=15..18}] ~ ~0.01 ~
-scoreboard players set @s[scores={AnimationProgress=24}] AnimationProgress 0
+execute if entity @s[tag=!flipped_gravity] run function 3ds_remake:animations/e_gadd/protect_eyes/normal/body
+execute if entity @s[tag=flipped_gravity] run function 3ds_remake:animations/e_gadd/protect_eyes/normal_flipped/body

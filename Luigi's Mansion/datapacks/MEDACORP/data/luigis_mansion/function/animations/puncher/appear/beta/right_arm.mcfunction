@@ -1,2 +1,4 @@
-execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/puncher/appear/beta/normal/right_arm
-execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/puncher/appear/beta/mirrored/right_arm
+execute unless score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/puncher/appear/beta/normal/right_arm
+execute unless score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/puncher/appear/beta/normal_flipped/right_arm
+execute if score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/puncher/appear/beta/mirrored/right_arm
+execute if score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/puncher/appear/beta/mirrored_flipped/right_arm

@@ -8,9 +8,6 @@ teleport @s[tag=low_health,tag=!shrunk,tag=flipped_gravity] ^ ^0.89 ^
 teleport @s[tag=!low_health,tag=shrunk,tag=flipped_gravity] ^ ^-0.99 ^
 teleport @s[tag=low_health,tag=shrunk,tag=flipped_gravity] ^ ^-0.93 ^
 
-scoreboard players add @s[tag=was_flipped,tag=!flipped_gravity] AnimationRotationZ 1800
-scoreboard players remove @s[tag=!was_flipped,tag=flipped_gravity] AnimationRotationZ 1800
-
 execute at @s if data storage luigis_mansion:data luigi.animation{namespace:"luigis_mansion",id:"idle"} run function 3ds_remake:animations/gooigi/sync_head
 execute positioned as @s unless data storage luigis_mansion:data luigi.animation{namespace:"luigis_mansion",id:"idle"} run teleport @s ~ ~ ~ ~ ~
 

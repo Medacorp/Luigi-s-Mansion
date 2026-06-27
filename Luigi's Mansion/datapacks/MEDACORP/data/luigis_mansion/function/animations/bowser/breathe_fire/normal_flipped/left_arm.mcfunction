@@ -1,0 +1,67 @@
+scoreboard players add @s AnimationProgress 1
+teleport @s[scores={AnimationProgress=1}] ^ ^0.2 ^0.133
+teleport @s[scores={AnimationProgress=2}] ^ ^0.4 ^0.267
+teleport @s[scores={AnimationProgress=3}] ^ ^0.6 ^0.4
+teleport @s[scores={AnimationProgress=4}] ^ ^0.8 ^0.533
+teleport @s[scores={AnimationProgress=5}] ^ ^1 ^0.667
+teleport @s[scores={AnimationProgress=6}] ^ ^1.2 ^0.8
+teleport @s[scores={AnimationProgress=7}] ^ ^1.4 ^0.933
+teleport @s[scores={AnimationProgress=8}] ^ ^1.6 ^1.067
+teleport @s[scores={AnimationProgress=9}] ^ ^1.8 ^1.2
+teleport @s[scores={AnimationProgress=10}] ^ ^2 ^1.333
+teleport @s[scores={AnimationProgress=11}] ^ ^2.2 ^1.467
+teleport @s[scores={AnimationProgress=12}] ^ ^2.4 ^1.6
+teleport @s[scores={AnimationProgress=13}] ^ ^2.6 ^1.733
+teleport @s[scores={AnimationProgress=14}] ^ ^2.8 ^1.867
+teleport @s[scores={AnimationProgress=15}] ^ ^3 ^2
+teleport @s[scores={AnimationProgress=16}] ^ ^3.067 ^2.133
+teleport @s[scores={AnimationProgress=17}] ^ ^3.267 ^2.267
+teleport @s[scores={AnimationProgress=18}] ^ ^3.467 ^2.4
+teleport @s[scores={AnimationProgress=19}] ^ ^3.667 ^2.533
+teleport @s[scores={AnimationProgress=20..121}] ^ ^4 ^2.667
+teleport @s[scores={AnimationProgress=122}] ^ ^3.667 ^2.533
+teleport @s[scores={AnimationProgress=123}] ^ ^3.467 ^2.4
+teleport @s[scores={AnimationProgress=124}] ^ ^3.267 ^2.267
+teleport @s[scores={AnimationProgress=125}] ^ ^3.067 ^2.133
+teleport @s[scores={AnimationProgress=126}] ^ ^3 ^2
+teleport @s[scores={AnimationProgress=127}] ^ ^2.8 ^1.867
+teleport @s[scores={AnimationProgress=128}] ^ ^2.6 ^1.733
+teleport @s[scores={AnimationProgress=129}] ^ ^2.4 ^1.6
+teleport @s[scores={AnimationProgress=130}] ^ ^2.2 ^1.467
+teleport @s[scores={AnimationProgress=131}] ^ ^2 ^1.333
+teleport @s[scores={AnimationProgress=132}] ^ ^1.8 ^1.2
+teleport @s[scores={AnimationProgress=133}] ^ ^1.6 ^1.067
+teleport @s[scores={AnimationProgress=134}] ^ ^1.4 ^0.933
+teleport @s[scores={AnimationProgress=135}] ^ ^1.2 ^0.8
+teleport @s[scores={AnimationProgress=136}] ^ ^1 ^0.667
+teleport @s[scores={AnimationProgress=137}] ^ ^0.8 ^0.533
+teleport @s[scores={AnimationProgress=138}] ^ ^0.6 ^0.4
+teleport @s[scores={AnimationProgress=139}] ^ ^0.4 ^0.267
+teleport @s[scores={AnimationProgress=140}] ^ ^0.2 ^0.133
+execute at @s[scores={AnimationProgress=3..4}] positioned ^ ^-0.667 ^0.667 run teleport @s ^ ^0.507 ^-0.68
+execute at @s[scores={AnimationProgress=5..6}] positioned ^ ^-0.667 ^0.667 run teleport @s ^ ^0.347 ^-0.693
+execute at @s[scores={AnimationProgress=7..8}] positioned ^ ^-0.667 ^0.667 run teleport @s ^ ^0.187 ^-0.707
+execute at @s[scores={AnimationProgress=9..10}] positioned ^ ^-0.667 ^0.667 run teleport @s ^ ^0.027 ^-0.72
+execute at @s[scores={AnimationProgress=11..12}] positioned ^ ^-0.667 ^0.667 run teleport @s ^ ^-0.133 ^-0.733
+execute at @s[scores={AnimationProgress=13..14}] positioned ^ ^-0.667 ^0.667 run teleport @s ^ ^-0.293 ^-0.747
+execute at @s[scores={AnimationProgress=15..16}] positioned ^ ^-0.667 ^0.667 run teleport @s ^ ^-0.453 ^-0.76
+execute at @s[scores={AnimationProgress=17..18}] positioned ^ ^-0.667 ^0.667 run teleport @s ^ ^-0.613 ^-0.773
+execute at @s[scores={AnimationProgress=19..20}] positioned ^ ^-0.667 ^0.667 run teleport @s ^ ^-0.773 ^-0.787
+execute at @s[scores={AnimationProgress=21..122}] positioned ^ ^-0.667 ^0.667 run teleport @s ^ ^-0.933 ^-0.8
+execute at @s[scores={AnimationProgress=123..124}] positioned ^ ^-0.667 ^0.667 run teleport @s ^ ^-0.773 ^-0.787
+execute at @s[scores={AnimationProgress=125..126}] positioned ^ ^-0.667 ^0.667 run teleport @s ^ ^-0.613 ^-0.773
+execute at @s[scores={AnimationProgress=127..128}] positioned ^ ^-0.667 ^0.667 run teleport @s ^ ^-0.453 ^-0.76
+execute at @s[scores={AnimationProgress=129..130}] positioned ^ ^-0.667 ^0.667 run teleport @s ^ ^-0.293 ^-0.747
+execute at @s[scores={AnimationProgress=131..132}] positioned ^ ^-0.667 ^0.667 run teleport @s ^ ^-0.133 ^-0.733
+execute at @s[scores={AnimationProgress=133..134}] positioned ^ ^-0.667 ^0.667 run teleport @s ^ ^0.027 ^-0.72
+execute at @s[scores={AnimationProgress=135..136}] positioned ^ ^-0.667 ^0.667 run teleport @s ^ ^0.187 ^-0.707
+execute at @s[scores={AnimationProgress=137..138}] positioned ^ ^-0.667 ^0.667 run teleport @s ^ ^0.347 ^-0.693
+execute at @s[scores={AnimationProgress=139..140}] positioned ^ ^-0.667 ^0.667 run teleport @s ^ ^0.507 ^-0.68
+scoreboard players operation #temp AnimationProgress = @s AnimationProgress
+scoreboard players operation #temp AnimationProgress %= #2 Constants
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -700
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationY -70
+execute if entity @s[scores={AnimationProgress=21..121}] if score #temp AnimationProgress matches 0 run scoreboard players add @s AnimationRotationX 10
+execute if entity @s[scores={AnimationProgress=21..121}] if score #temp AnimationProgress matches 1 run scoreboard players remove @s AnimationRotationX 10
+scoreboard players reset #temp AnimationProgress
+scoreboard players set @s[scores={AnimationProgress=140}] AnimationProgress 0

@@ -1,2 +1,4 @@
-execute unless score #mirrored Selected matches 1 run function 3ds_remake:animations/e_gadd/protect_eyes/normal/right_arm
-execute if score #mirrored Selected matches 1 run function 3ds_remake:animations/e_gadd/protect_eyes/mirrored/right_arm
+execute unless score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function 3ds_remake:animations/e_gadd/protect_eyes/normal/right_arm
+execute unless score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function 3ds_remake:animations/e_gadd/protect_eyes/normal_flipped/right_arm
+execute if score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function 3ds_remake:animations/e_gadd/protect_eyes/mirrored/right_arm
+execute if score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function 3ds_remake:animations/e_gadd/protect_eyes/mirrored_flipped/right_arm

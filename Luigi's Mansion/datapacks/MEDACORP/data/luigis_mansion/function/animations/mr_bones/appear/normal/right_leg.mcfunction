@@ -1,2 +1,4 @@
-execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/mr_bones/appear/normal/normal/right_leg
-execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/mr_bones/appear/normal/mirrored/right_leg
+execute unless score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/mr_bones/appear/normal/normal/right_leg
+execute unless score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/mr_bones/appear/normal/normal_flipped/right_leg
+execute if score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/mr_bones/appear/normal/mirrored/right_leg
+execute if score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/mr_bones/appear/normal/mirrored_flipped/right_leg

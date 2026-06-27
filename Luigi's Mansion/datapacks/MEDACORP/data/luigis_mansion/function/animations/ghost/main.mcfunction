@@ -16,6 +16,8 @@ execute if entity @s[tag=visible] unless data storage luigis_mansion:data ghost{
 execute if entity @s[tag=!visible] if data storage luigis_mansion:data ghost{tags:["visible"]} if data entity @s item.components."minecraft:custom_model_data".flags[0] run data modify entity @s item.components."minecraft:custom_model_data".flags[0] set value 0b
 teleport @s ~ ~ ~ ~ ~
 $function $(namespace):animations/$(id)/call_part_function
+scoreboard players add @s[tag=was_flipped,tag=!flipped_gravity] AnimationRotationZ 1800
+scoreboard players remove @s[tag=!was_flipped,tag=flipped_gravity] AnimationRotationZ 1800
 tag @s[tag=flipped_gravity] add was_flipped
 tag @s[tag=!flipped_gravity] remove was_flipped
 tag @s[tag=flipped_gravity] remove flipped_gravity

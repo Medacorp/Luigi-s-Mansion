@@ -1,2 +1,4 @@
-execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/biff_atlas/knocked_out/normal/head
-execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/biff_atlas/knocked_out/mirrored/head
+execute unless score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/biff_atlas/knocked_out/normal/head
+execute unless score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/biff_atlas/knocked_out/normal_flipped/head
+execute if score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/biff_atlas/knocked_out/mirrored/head
+execute if score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/biff_atlas/knocked_out/mirrored_flipped/head

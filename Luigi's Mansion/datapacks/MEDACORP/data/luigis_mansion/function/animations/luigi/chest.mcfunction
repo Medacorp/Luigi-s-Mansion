@@ -10,7 +10,5 @@ teleport @s[tag=low_health,tag=shrunk,tag=flipped_gravity] ^ ^-0.92 ^ ~ ~
 
 scoreboard players remove @s[tag=was_low_health,tag=!low_health] AnimationRotationX 200
 scoreboard players add @s[tag=!was_low_health,tag=low_health] AnimationRotationX 200
-scoreboard players add @s[tag=was_flipped,tag=!flipped_gravity] AnimationRotationZ 1800
-scoreboard players remove @s[tag=!was_flipped,tag=flipped_gravity] AnimationRotationZ 1800
 
 $execute at @s run function $(namespace):animations/luigi/$(id)/chest

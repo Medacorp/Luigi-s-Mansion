@@ -1,2 +1,4 @@
-execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/jarvis/vanish/normal/model
-execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/jarvis/vanish/mirrored/model
+execute unless score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/jarvis/vanish/normal/model
+execute unless score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/jarvis/vanish/normal_flipped/model
+execute if score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/jarvis/vanish/mirrored/model
+execute if score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/jarvis/vanish/mirrored_flipped/model

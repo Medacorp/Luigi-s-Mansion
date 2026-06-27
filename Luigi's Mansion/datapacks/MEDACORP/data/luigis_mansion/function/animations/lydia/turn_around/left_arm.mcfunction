@@ -1,2 +1,4 @@
-execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/lydia/turn_around/normal/left_arm
-execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/lydia/turn_around/mirrored/left_arm
+execute unless score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/lydia/turn_around/normal/left_arm
+execute unless score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/lydia/turn_around/normal_flipped/left_arm
+execute if score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/lydia/turn_around/mirrored/left_arm
+execute if score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/lydia/turn_around/mirrored_flipped/left_arm

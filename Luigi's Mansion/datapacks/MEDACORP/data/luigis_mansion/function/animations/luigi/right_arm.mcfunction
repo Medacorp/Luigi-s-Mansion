@@ -8,9 +8,6 @@ teleport @s[tag=low_health,tag=!shrunk,tag=flipped_gravity] ^0.375 ^0.91 ^ ~ ~
 teleport @s[tag=!low_health,tag=shrunk,tag=flipped_gravity] ^0.1825 ^-0.98 ^ ~ ~
 teleport @s[tag=low_health,tag=shrunk,tag=flipped_gravity] ^0.1825 ^-0.92 ^ ~ ~
 
-scoreboard players add @s[tag=was_flipped,tag=!flipped_gravity] AnimationRotationZ 1800
-scoreboard players remove @s[tag=!was_flipped,tag=flipped_gravity] AnimationRotationZ 1800
-
 data remove entity @s[tag=held_item] item
 execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/luigi/nozzle
 execute if score #mirrored Selected matches 1 if data storage luigis_mansion:data luigi.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].id run data modify entity @s[tag=held_item] item set from storage luigis_mansion:data luigi.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}]

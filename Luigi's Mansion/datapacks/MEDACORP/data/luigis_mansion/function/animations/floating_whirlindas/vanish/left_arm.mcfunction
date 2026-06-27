@@ -1,2 +1,4 @@
-execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/floating_whirlindas/vanish/normal/left_arm
-execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/floating_whirlindas/vanish/mirrored/left_arm
+execute unless score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/floating_whirlindas/vanish/normal/left_arm
+execute unless score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/floating_whirlindas/vanish/normal_flipped/left_arm
+execute if score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/floating_whirlindas/vanish/mirrored/left_arm
+execute if score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/floating_whirlindas/vanish/mirrored_flipped/left_arm

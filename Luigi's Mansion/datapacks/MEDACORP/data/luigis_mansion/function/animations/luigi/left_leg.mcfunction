@@ -6,8 +6,6 @@ teleport @s[tag=shrunk,tag=flipped_gravity] ^-0.0625 ^-0.65 ^ ~ ~
 
 execute at @s run teleport @s[tag=low_health,tag=!shrunk] ^ ^ ^-0.2 ~ ~
 execute at @s run teleport @s[tag=low_health,tag=shrunk] ^ ^ ^-0.15 ~ ~
-scoreboard players add @s[tag=was_flipped,tag=!flipped_gravity] AnimationRotationZ 1800
-scoreboard players remove @s[tag=!was_flipped,tag=flipped_gravity] AnimationRotationZ 1800
 
 # Move animations
 scoreboard players set @s[tag=riding_poltergust] AnimationRotationX -300

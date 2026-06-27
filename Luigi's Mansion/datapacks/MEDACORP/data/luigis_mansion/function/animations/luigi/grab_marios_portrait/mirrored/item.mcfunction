@@ -1,148 +1,76 @@
 scoreboard players add @s AnimationProgress 1
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=1..25}] positioned ^-0.375 ^ ^ positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=26}] positioned ^-0.375 ^ ^ rotated ~ ~-5 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=27}] positioned ^-0.375 ^ ^ rotated ~ ~-10 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=28}] positioned ^-0.375 ^ ^ rotated ~ ~-15 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=29}] positioned ^-0.375 ^ ^ rotated ~ ~-20 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=30..40}] positioned ^-0.375 ^ ^ rotated ~ ~-25 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=41}] positioned ^-0.375 ^ ^ rotated ~ ~-20 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=42}] positioned ^-0.375 ^ ^ rotated ~ ~-15 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=43}] positioned ^-0.375 ^ ^ rotated ~ ~-10 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=44}] positioned ^-0.375 ^ ^ rotated ~ ~-5 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=45}] positioned ^-0.375 ^ ^ positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=46}] positioned ^-0.375 ^ ^ rotated ~ ~5 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=47}] positioned ^-0.375 ^ ^ rotated ~ ~10 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=48}] positioned ^-0.375 ^ ^ rotated ~ ~15 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=49}] positioned ^-0.375 ^ ^ rotated ~ ~20 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=50..60}] positioned ^-0.375 ^ ^ rotated ~ ~25 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=61}] positioned ^-0.375 ^ ^ rotated ~ ~20 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=62}] positioned ^-0.375 ^ ^ rotated ~ ~15 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=63}] positioned ^-0.375 ^ ^ rotated ~ ~10 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=64}] positioned ^-0.375 ^ ^ rotated ~ ~5 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=65}] positioned ^-0.375 ^ ^ positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=66}] positioned ^-0.375 ^ ^ rotated ~ ~-5 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=67}] positioned ^-0.375 ^ ^ rotated ~ ~-10 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=68}] positioned ^-0.375 ^ ^ rotated ~ ~-15 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=69}] positioned ^-0.375 ^ ^ rotated ~ ~-20 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=70}] positioned ^-0.375 ^ ^ rotated ~ ~-25 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=71}] positioned ^-0.375 ^ ^ rotated ~ ~-30 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=72}] positioned ^-0.375 ^ ^ rotated ~ ~-35 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=73}] positioned ^-0.375 ^ ^ rotated ~ ~-40 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=74}] positioned ^-0.375 ^ ^ rotated ~ ~-45 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=75}] positioned ^-0.375 ^ ^ rotated ~ ~-50 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=76}] positioned ^-0.375 ^ ^ rotated ~ ~-55 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=77}] positioned ^-0.375 ^ ^ rotated ~ ~-60 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=78}] positioned ^-0.375 ^ ^ rotated ~ ~-65 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=79}] positioned ^-0.375 ^ ^ rotated ~ ~-70 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=!flipped_gravity,scores={AnimationProgress=80..}] positioned ^-0.375 ^ ^ rotated ~ ~-75 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=1..25}] positioned ^0.375 ^ ^ positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=26}] positioned ^0.375 ^ ^ rotated ~ ~5 positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=27}] positioned ^0.375 ^ ^ rotated ~ ~10 positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=28}] positioned ^0.375 ^ ^ rotated ~ ~15 positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=29}] positioned ^0.375 ^ ^ rotated ~ ~20 positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=30..40}] positioned ^0.375 ^ ^ rotated ~ ~25 positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=41}] positioned ^0.375 ^ ^ rotated ~ ~20 positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=42}] positioned ^0.375 ^ ^ rotated ~ ~15 positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=43}] positioned ^0.375 ^ ^ rotated ~ ~10 positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=44}] positioned ^0.375 ^ ^ rotated ~ ~5 positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=45}] positioned ^0.375 ^ ^ positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=46}] positioned ^0.375 ^ ^ rotated ~ ~-5 positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=47}] positioned ^0.375 ^ ^ rotated ~ ~-10 positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=48}] positioned ^0.375 ^ ^ rotated ~ ~-15 positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=49}] positioned ^0.375 ^ ^ rotated ~ ~-20 positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=50..60}] positioned ^0.375 ^ ^ rotated ~ ~-25 positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=61}] positioned ^0.375 ^ ^ rotated ~ ~-20 positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=62}] positioned ^0.375 ^ ^ rotated ~ ~-15 positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=63}] positioned ^0.375 ^ ^ rotated ~ ~-10 positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=64}] positioned ^0.375 ^ ^ rotated ~ ~-5 positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=65}] positioned ^0.375 ^ ^ positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=66}] positioned ^0.375 ^ ^ rotated ~ ~5 positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=67}] positioned ^0.375 ^ ^ rotated ~ ~10 positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=68}] positioned ^0.375 ^ ^ rotated ~ ~15 positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=69}] positioned ^0.375 ^ ^ rotated ~ ~20 positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=70}] positioned ^0.375 ^ ^ rotated ~ ~25 positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=71}] positioned ^0.375 ^ ^ rotated ~ ~30 positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=72}] positioned ^0.375 ^ ^ rotated ~ ~35 positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=73}] positioned ^0.375 ^ ^ rotated ~ ~40 positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=74}] positioned ^0.375 ^ ^ rotated ~ ~45 positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=75}] positioned ^0.375 ^ ^ rotated ~ ~50 positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=76}] positioned ^0.375 ^ ^ rotated ~ ~55 positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=77}] positioned ^0.375 ^ ^ rotated ~ ~60 positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=78}] positioned ^0.375 ^ ^ rotated ~ ~65 positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=79}] positioned ^0.375 ^ ^ rotated ~ ~70 positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=!shrunk,tag=flipped_gravity,scores={AnimationProgress=80..}] positioned ^0.375 ^ ^ rotated ~ ~75 positioned ^ ^ ^0.74 run teleport @s ~ ~-0.6 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=1..25}] positioned ^-0.1825 ^ ^ positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=26}] positioned ^-0.1825 ^ ^ rotated ~ ~-5 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=27}] positioned ^-0.1825 ^ ^ rotated ~ ~-10 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=28}] positioned ^-0.1825 ^ ^ rotated ~ ~-15 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=29}] positioned ^-0.1825 ^ ^ rotated ~ ~-20 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=30..40}] positioned ^-0.1825 ^ ^ rotated ~ ~-25 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=41}] positioned ^-0.1825 ^ ^ rotated ~ ~-20 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=42}] positioned ^-0.1825 ^ ^ rotated ~ ~-15 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=43}] positioned ^-0.1825 ^ ^ rotated ~ ~-10 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=44}] positioned ^-0.1825 ^ ^ rotated ~ ~-5 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=45}] positioned ^-0.1825 ^ ^ positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=46}] positioned ^-0.1825 ^ ^ rotated ~ ~5 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=47}] positioned ^-0.1825 ^ ^ rotated ~ ~10 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=48}] positioned ^-0.1825 ^ ^ rotated ~ ~15 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=49}] positioned ^-0.1825 ^ ^ rotated ~ ~20 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=50..60}] positioned ^-0.1825 ^ ^ rotated ~ ~25 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=61}] positioned ^-0.1825 ^ ^ rotated ~ ~20 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=62}] positioned ^-0.1825 ^ ^ rotated ~ ~15 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=63}] positioned ^-0.1825 ^ ^ rotated ~ ~10 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=64}] positioned ^-0.1825 ^ ^ rotated ~ ~5 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=65}] positioned ^-0.1825 ^ ^ positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=66}] positioned ^-0.1825 ^ ^ rotated ~ ~-5 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=67}] positioned ^-0.1825 ^ ^ rotated ~ ~-10 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=68}] positioned ^-0.1825 ^ ^ rotated ~ ~-15 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=69}] positioned ^-0.1825 ^ ^ rotated ~ ~-20 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=70}] positioned ^-0.1825 ^ ^ rotated ~ ~-25 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=71}] positioned ^-0.1825 ^ ^ rotated ~ ~-30 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=72}] positioned ^-0.1825 ^ ^ rotated ~ ~-35 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=73}] positioned ^-0.1825 ^ ^ rotated ~ ~-40 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=74}] positioned ^-0.1825 ^ ^ rotated ~ ~-45 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=75}] positioned ^-0.1825 ^ ^ rotated ~ ~-50 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=76}] positioned ^-0.1825 ^ ^ rotated ~ ~-55 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=77}] positioned ^-0.1825 ^ ^ rotated ~ ~-60 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=78}] positioned ^-0.1825 ^ ^ rotated ~ ~-65 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=79}] positioned ^-0.1825 ^ ^ rotated ~ ~-70 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=!flipped_gravity,scores={AnimationProgress=80..}] positioned ^-0.1825 ^ ^ rotated ~ ~-75 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=1..25}] positioned ^0.1825 ^ ^ positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=26}] positioned ^0.1825 ^ ^ rotated ~ ~5 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=27}] positioned ^0.1825 ^ ^ rotated ~ ~10 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=28}] positioned ^0.1825 ^ ^ rotated ~ ~15 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=29}] positioned ^0.1825 ^ ^ rotated ~ ~20 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=30..40}] positioned ^0.1825 ^ ^ rotated ~ ~25 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=41}] positioned ^0.1825 ^ ^ rotated ~ ~20 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=42}] positioned ^0.1825 ^ ^ rotated ~ ~15 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=43}] positioned ^0.1825 ^ ^ rotated ~ ~10 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=44}] positioned ^0.1825 ^ ^ rotated ~ ~5 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=45}] positioned ^0.1825 ^ ^ positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=46}] positioned ^0.1825 ^ ^ rotated ~ ~-5 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=47}] positioned ^0.1825 ^ ^ rotated ~ ~-10 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=48}] positioned ^0.1825 ^ ^ rotated ~ ~-15 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=49}] positioned ^0.1825 ^ ^ rotated ~ ~-20 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=50..60}] positioned ^0.1825 ^ ^ rotated ~ ~-25 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=61}] positioned ^0.1825 ^ ^ rotated ~ ~-20 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=62}] positioned ^0.1825 ^ ^ rotated ~ ~-15 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=63}] positioned ^0.1825 ^ ^ rotated ~ ~-10 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=64}] positioned ^0.1825 ^ ^ rotated ~ ~-5 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=65}] positioned ^0.1825 ^ ^ positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=66}] positioned ^0.1825 ^ ^ rotated ~ ~5 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=67}] positioned ^0.1825 ^ ^ rotated ~ ~10 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=68}] positioned ^0.1825 ^ ^ rotated ~ ~15 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=69}] positioned ^0.1825 ^ ^ rotated ~ ~20 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=70}] positioned ^0.1825 ^ ^ rotated ~ ~25 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=71}] positioned ^0.1825 ^ ^ rotated ~ ~30 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=72}] positioned ^0.1825 ^ ^ rotated ~ ~35 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=73}] positioned ^0.1825 ^ ^ rotated ~ ~40 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=74}] positioned ^0.1825 ^ ^ rotated ~ ~45 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=75}] positioned ^0.1825 ^ ^ rotated ~ ~50 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=76}] positioned ^0.1825 ^ ^ rotated ~ ~55 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=77}] positioned ^0.1825 ^ ^ rotated ~ ~60 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=78}] positioned ^0.1825 ^ ^ rotated ~ ~65 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=79}] positioned ^0.1825 ^ ^ rotated ~ ~70 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
-execute if entity @s[tag=shrunk,tag=flipped_gravity,scores={AnimationProgress=80..}] positioned ^0.1825 ^ ^ rotated ~ ~75 positioned ^ ^ ^0.37 run teleport @s ~ ~-0.3 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=1..25}] positioned ^-0.375 ^ ^ positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=26}] positioned ^-0.375 ^ ^ rotated ~ ~-5 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=27}] positioned ^-0.375 ^ ^ rotated ~ ~-10 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=28}] positioned ^-0.375 ^ ^ rotated ~ ~-15 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=29}] positioned ^-0.375 ^ ^ rotated ~ ~-20 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=30..40}] positioned ^-0.375 ^ ^ rotated ~ ~-25 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=41}] positioned ^-0.375 ^ ^ rotated ~ ~-20 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=42}] positioned ^-0.375 ^ ^ rotated ~ ~-15 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=43}] positioned ^-0.375 ^ ^ rotated ~ ~-10 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=44}] positioned ^-0.375 ^ ^ rotated ~ ~-5 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=45}] positioned ^-0.375 ^ ^ positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=46}] positioned ^-0.375 ^ ^ rotated ~ ~5 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=47}] positioned ^-0.375 ^ ^ rotated ~ ~10 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=48}] positioned ^-0.375 ^ ^ rotated ~ ~15 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=49}] positioned ^-0.375 ^ ^ rotated ~ ~20 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=50..60}] positioned ^-0.375 ^ ^ rotated ~ ~25 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=61}] positioned ^-0.375 ^ ^ rotated ~ ~20 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=62}] positioned ^-0.375 ^ ^ rotated ~ ~15 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=63}] positioned ^-0.375 ^ ^ rotated ~ ~10 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=64}] positioned ^-0.375 ^ ^ rotated ~ ~5 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=65}] positioned ^-0.375 ^ ^ positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=66}] positioned ^-0.375 ^ ^ rotated ~ ~-5 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=67}] positioned ^-0.375 ^ ^ rotated ~ ~-10 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=68}] positioned ^-0.375 ^ ^ rotated ~ ~-15 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=69}] positioned ^-0.375 ^ ^ rotated ~ ~-20 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=70}] positioned ^-0.375 ^ ^ rotated ~ ~-25 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=71}] positioned ^-0.375 ^ ^ rotated ~ ~-30 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=72}] positioned ^-0.375 ^ ^ rotated ~ ~-35 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=73}] positioned ^-0.375 ^ ^ rotated ~ ~-40 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=74}] positioned ^-0.375 ^ ^ rotated ~ ~-45 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=75}] positioned ^-0.375 ^ ^ rotated ~ ~-50 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=76}] positioned ^-0.375 ^ ^ rotated ~ ~-55 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=77}] positioned ^-0.375 ^ ^ rotated ~ ~-60 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=78}] positioned ^-0.375 ^ ^ rotated ~ ~-65 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=79}] positioned ^-0.375 ^ ^ rotated ~ ~-70 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=80..}] positioned ^-0.375 ^ ^ rotated ~ ~-75 positioned ^ ^ ^0.74 run teleport @s ~ ~0.6 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=1..25}] positioned ^-0.1825 ^ ^ positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=26}] positioned ^-0.1825 ^ ^ rotated ~ ~-5 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=27}] positioned ^-0.1825 ^ ^ rotated ~ ~-10 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=28}] positioned ^-0.1825 ^ ^ rotated ~ ~-15 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=29}] positioned ^-0.1825 ^ ^ rotated ~ ~-20 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=30..40}] positioned ^-0.1825 ^ ^ rotated ~ ~-25 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=41}] positioned ^-0.1825 ^ ^ rotated ~ ~-20 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=42}] positioned ^-0.1825 ^ ^ rotated ~ ~-15 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=43}] positioned ^-0.1825 ^ ^ rotated ~ ~-10 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=44}] positioned ^-0.1825 ^ ^ rotated ~ ~-5 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=45}] positioned ^-0.1825 ^ ^ positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=46}] positioned ^-0.1825 ^ ^ rotated ~ ~5 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=47}] positioned ^-0.1825 ^ ^ rotated ~ ~10 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=48}] positioned ^-0.1825 ^ ^ rotated ~ ~15 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=49}] positioned ^-0.1825 ^ ^ rotated ~ ~20 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=50..60}] positioned ^-0.1825 ^ ^ rotated ~ ~25 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=61}] positioned ^-0.1825 ^ ^ rotated ~ ~20 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=62}] positioned ^-0.1825 ^ ^ rotated ~ ~15 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=63}] positioned ^-0.1825 ^ ^ rotated ~ ~10 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=64}] positioned ^-0.1825 ^ ^ rotated ~ ~5 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=65}] positioned ^-0.1825 ^ ^ positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=66}] positioned ^-0.1825 ^ ^ rotated ~ ~-5 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=67}] positioned ^-0.1825 ^ ^ rotated ~ ~-10 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=68}] positioned ^-0.1825 ^ ^ rotated ~ ~-15 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=69}] positioned ^-0.1825 ^ ^ rotated ~ ~-20 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=70}] positioned ^-0.1825 ^ ^ rotated ~ ~-25 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=71}] positioned ^-0.1825 ^ ^ rotated ~ ~-30 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=72}] positioned ^-0.1825 ^ ^ rotated ~ ~-35 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=73}] positioned ^-0.1825 ^ ^ rotated ~ ~-40 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=74}] positioned ^-0.1825 ^ ^ rotated ~ ~-45 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=75}] positioned ^-0.1825 ^ ^ rotated ~ ~-50 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=76}] positioned ^-0.1825 ^ ^ rotated ~ ~-55 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=77}] positioned ^-0.1825 ^ ^ rotated ~ ~-60 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=78}] positioned ^-0.1825 ^ ^ rotated ~ ~-65 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=79}] positioned ^-0.1825 ^ ^ rotated ~ ~-70 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=80..}] positioned ^-0.1825 ^ ^ rotated ~ ~-75 positioned ^ ^ ^0.37 run teleport @s ~ ~0.3 ~ ~ ~
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationY -1800
 scoreboard players set @s[scores={AnimationProgress=41}] AnimationRotationY 0
 data modify entity @s[scores={AnimationProgress=1..}] item set value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:furniture/marios_portrait","minecraft:custom_model_data":{flags:[1b,1b]}}}

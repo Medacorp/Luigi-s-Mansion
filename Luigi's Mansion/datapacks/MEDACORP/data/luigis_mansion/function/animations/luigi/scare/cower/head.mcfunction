@@ -1,2 +1,4 @@
-execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/luigi/scare/cower/normal/head
-execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/luigi/scare/cower/mirrored/head
+execute unless score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/luigi/scare/cower/normal/head
+execute unless score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/luigi/scare/cower/normal_flipped/head
+execute if score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/luigi/scare/cower/mirrored/head
+execute if score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/luigi/scare/cower/mirrored_flipped/head

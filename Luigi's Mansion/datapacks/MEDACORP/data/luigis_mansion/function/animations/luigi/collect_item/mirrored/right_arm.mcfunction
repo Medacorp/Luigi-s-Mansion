@@ -1,12 +1,8 @@
 scoreboard players add @s AnimationProgress 1
-execute if entity @s[tag=!shrunk,scores={AnimationProgress=1..6},tag=!flipped_gravity] positioned ^0.375 ^-0.64 ^ rotated ~-180 ~ positioned ^-0.375 ^ ^0.64 run teleport @s ~ ~ ~ ~ ~
-execute if entity @s[tag=shrunk,scores={AnimationProgress=1..6},tag=!flipped_gravity] positioned ^0.1825 ^-0.32 ^ rotated ~-180 ~ positioned ^-0.1825 ^ ^0.32 run teleport @s ~ ~ ~ ~ ~
-execute if entity @s[tag=!shrunk,scores={AnimationProgress=1..6},tag=flipped_gravity] positioned ^0.375 ^0.64 ^ rotated ~-180 ~ positioned ^-0.375 ^ ^0.64 run teleport @s ~ ~ ~ ~ ~
-execute if entity @s[tag=shrunk,scores={AnimationProgress=1..6},tag=flipped_gravity] positioned ^0.1825 ^0.32 ^ rotated ~-180 ~ positioned ^-0.1825 ^ ^0.32 run teleport @s ~ ~ ~ ~ ~
-execute if entity @s[tag=!shrunk,scores={AnimationProgress=7},tag=!flipped_gravity] positioned ^0.375 ^-0.64 ^ rotated ~-135 ~-45 positioned ^-0.375 ^ ^0.64 run teleport @s ~ ~ ~ ~ ~45
-execute if entity @s[tag=shrunk,scores={AnimationProgress=7},tag=!flipped_gravity] positioned ^0.1825 ^-0.32 ^ rotated ~-135 ~-45 positioned ^-0.1825 ^ ^0.32 run teleport @s ~ ~ ~ ~ ~45
-execute if entity @s[tag=!shrunk,scores={AnimationProgress=7},tag=flipped_gravity] positioned ^0.375 ^0.64 ^ rotated ~-135 ~45 positioned ^-0.375 ^ ^0.64 run teleport @s ~ ~ ~ ~ ~-45
-execute if entity @s[tag=shrunk,scores={AnimationProgress=7},tag=flipped_gravity] positioned ^0.1825 ^0.32 ^ rotated ~-135 ~45 positioned ^-0.1825 ^ ^0.32 run teleport @s ~ ~ ~ ~ ~-45
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=1..6}] positioned ^0.375 ^-0.64 ^ rotated ~-180 ~ positioned ^-0.375 ^ ^0.64 run teleport @s ~ ~ ~ ~ ~
+execute if entity @s[tag=shrunk,scores={AnimationProgress=1..6}] positioned ^0.1825 ^-0.32 ^ rotated ~-180 ~ positioned ^-0.1825 ^ ^0.32 run teleport @s ~ ~ ~ ~ ~
+execute if entity @s[tag=!shrunk,scores={AnimationProgress=7}] positioned ^0.375 ^-0.64 ^ rotated ~-135 ~-45 positioned ^-0.375 ^ ^0.64 run teleport @s ~ ~ ~ ~ ~45
+execute if entity @s[tag=shrunk,scores={AnimationProgress=7}] positioned ^0.1825 ^-0.32 ^ rotated ~-135 ~-45 positioned ^-0.1825 ^ ^0.32 run teleport @s ~ ~ ~ ~ ~45
 execute if entity @s[tag=!shrunk,scores={AnimationProgress=8}] positioned ^0.375 ^ ^ rotated ~-90 ~ positioned ^-0.375 ^ ^ run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[tag=shrunk,scores={AnimationProgress=8}] positioned ^0.1825 ^ ^ rotated ~-90 ~ positioned ^-0.1825 ^ ^ run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[tag=!shrunk,scores={AnimationProgress=9}] positioned ^0.375 ^ ^ rotated ~-45 ~ positioned ^-0.375 ^ ^ run teleport @s ~ ~ ~ ~ ~

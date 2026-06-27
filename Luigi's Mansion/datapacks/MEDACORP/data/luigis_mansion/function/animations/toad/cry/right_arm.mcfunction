@@ -1,10 +1,2 @@
-scoreboard players add @s AnimationProgress 1
-teleport @s[tag=!flipped_gravity] ^0.02 ^-0.25 ^0.09
-teleport @s[tag=flipped_gravity] ^-0.02 ^0.25 ^0.09
-scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -800
-scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationY -320
-scoreboard players remove @s[scores={AnimationProgress=1..5}] AnimationRotationX 5
-scoreboard players add @s[scores={AnimationProgress=6..10}] AnimationRotationX 5
-scoreboard players remove @s[scores={AnimationProgress=11..15}] AnimationRotationX 5
-scoreboard players add @s[scores={AnimationProgress=16..20}] AnimationRotationX 5
-scoreboard players set @s[scores={AnimationProgress=20}] AnimationProgress 0
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/toad/cry/normal/right_arm
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/toad/cry/mirrored/right_arm

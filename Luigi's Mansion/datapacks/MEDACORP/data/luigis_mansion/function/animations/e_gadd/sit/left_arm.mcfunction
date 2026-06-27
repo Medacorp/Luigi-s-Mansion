@@ -1,12 +1,2 @@
-teleport @s ~ ~-0.35 ~ ~ ~
-scoreboard players add @s AnimationProgress 1
-scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -200
-scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationZ -300
-scoreboard players set @s[scores={AnimationProgress=1},tag=held_item] AnimationRotationX -250
-scoreboard players set @s[scores={AnimationProgress=1},tag=held_item] AnimationRotationZ -100
-scoreboard players remove @s[scores={AnimationProgress=1},tag=flipped_gravity] AnimationRotationZ 1800
-teleport @s[tag=held_item] ^ ^-0.15 ^-0.25
-execute if entity @s[scores={AnimationProgress=1..5},tag=!held_item] run scoreboard players remove @s AnimationRotationX 2
-execute if entity @s[scores={AnimationProgress=6..15},tag=!held_item] run scoreboard players add @s AnimationRotationX 2
-execute if entity @s[scores={AnimationProgress=16..20},tag=!held_item] run scoreboard players remove @s AnimationRotationX 2
-scoreboard players set @s[scores={AnimationProgress=20}] AnimationProgress 0
+execute if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/e_gadd/sit/normal/left_arm
+execute if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/e_gadd/sit/normal_flipped/left_arm

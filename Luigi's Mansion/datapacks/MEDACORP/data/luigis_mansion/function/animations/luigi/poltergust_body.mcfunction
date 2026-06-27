@@ -19,8 +19,6 @@ teleport @s[tag=riding_poltergust,tag=flipped_gravity,tag=low_health,tag=shrunk]
 
 scoreboard players remove @s[tag=!riding_poltergust,tag=was_low_health,tag=!low_health] AnimationRotationX 200
 scoreboard players add @s[tag=!riding_poltergust,tag=!was_low_health,tag=low_health] AnimationRotationX 200
-scoreboard players add @s[tag=was_flipped,tag=!flipped_gravity] AnimationRotationZ 1800
-scoreboard players remove @s[tag=!was_flipped,tag=flipped_gravity] AnimationRotationZ 1800
 scoreboard players set @s[tag=riding_poltergust] AnimationRotationX -900
 
 execute if entity @s[tag=riding_poltergust,tag=!was_riding_poltergust] run tag @e[tag=this_luigi,tag=!model_piece,limit=1] add poltergust_floor_sound

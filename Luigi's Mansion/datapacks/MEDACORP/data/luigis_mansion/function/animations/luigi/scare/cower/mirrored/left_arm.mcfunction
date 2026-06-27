@@ -1,8 +1,6 @@
 scoreboard players add @s AnimationProgress 1
-teleport @s[tag=!flipped_gravity,tag=!shrunk] ~ ~-0.6 ~ ~ ~
-teleport @s[tag=flipped_gravity,tag=!shrunk] ~ ~0.6 ~ ~ ~
-teleport @s[tag=!flipped_gravity,tag=shrunk] ~ ~-0.3 ~ ~ ~
-teleport @s[tag=flipped_gravity,tag=shrunk] ~ ~0.3 ~ ~ ~
+teleport @s[tag=!shrunk] ~ ~-0.6 ~ ~ ~
+teleport @s[tag=shrunk] ~ ~-0.3 ~ ~ ~
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -700
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationY 200
 scoreboard players remove @s[scores={AnimationProgress=1}] AnimationRotationY 30

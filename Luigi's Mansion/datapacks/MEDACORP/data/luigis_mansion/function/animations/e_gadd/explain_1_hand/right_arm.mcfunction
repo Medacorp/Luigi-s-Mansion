@@ -1,2 +1,4 @@
-execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/e_gadd/explain_1_hand/normal/right_arm
-execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/e_gadd/explain_1_hand/mirrored/right_arm
+execute unless score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/e_gadd/explain_1_hand/normal/right_arm
+execute unless score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/e_gadd/explain_1_hand/normal_flipped/right_arm
+execute if score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/e_gadd/explain_1_hand/mirrored/right_arm
+execute if score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/e_gadd/explain_1_hand/mirrored_flipped/right_arm

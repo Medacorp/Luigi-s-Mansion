@@ -1,2 +1,4 @@
-execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/mr_luggs/vanish/normal/body
-execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/mr_luggs/vanish/mirrored/body
+execute unless score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/mr_luggs/vanish/normal/body
+execute unless score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/mr_luggs/vanish/normal_flipped/body
+execute if score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/mr_luggs/vanish/mirrored/body
+execute if score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/mr_luggs/vanish/mirrored_flipped/body

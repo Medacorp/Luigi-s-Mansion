@@ -1,20 +1,2 @@
-scoreboard players add @s AnimationProgress 1
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=1}] ~ ~0.016 ~
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=2}] ~ ~0.032 ~
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=3}] ~ ~0.048 ~
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=4}] ~ ~0.064 ~
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=5..10}] ~ ~0.08 ~
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=11}] ~ ~0.064 ~
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=12}] ~ ~0.048 ~
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=13}] ~ ~0.032 ~
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=14}] ~ ~0.016 ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=1}] ~ ~-0.016 ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=2}] ~ ~-0.032 ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=3}] ~ ~-0.048 ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=4}] ~ ~-0.064 ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=5..10}] ~ ~-0.08 ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=11}] ~ ~-0.064 ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=12}] ~ ~-0.048 ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=13}] ~ ~-0.032 ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=14}] ~ ~-0.016 ~
-scoreboard players set @s[scores={AnimationProgress=16}] AnimationProgress 0
+execute if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/e_gadd/flutter/normal/poltergust
+execute if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/e_gadd/flutter/normal_flipped/poltergust

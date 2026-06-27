@@ -28,6 +28,8 @@ execute if data storage luigis_mansion:data luigi{alive:1b} store success score 
 execute if score #temp Time matches 1 run function luigis_mansion:animations/luigi/reset_pose
 scoreboard players reset #temp Time
 function 3ds_remake:animations/gooigi/call_part_function
+scoreboard players add @s[tag=was_flipped,tag=!flipped_gravity] AnimationRotationZ 1800
+scoreboard players remove @s[tag=!was_flipped,tag=flipped_gravity] AnimationRotationZ 1800
 execute if data storage luigis_mansion:data luigi{invulnerable:1b} if entity @s[tag=!source,tag=!held_item,tag=!poltergust_body] run function luigis_mansion:animations/luigi/invulnerability_blink
 execute if data storage luigis_mansion:data luigi{invulnerable:0b} if entity @s[tag=!source,tag=!held_item,tag=!poltergust_body,tag=was_invisible] run function luigis_mansion:animations/luigi/invulnerability_blink
 tag @s[tag=low_health] add was_low_health

@@ -1,33 +1,18 @@
 scoreboard players add @s AnimationProgress 1
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=1}] ~ ~-2.8 ~
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=2}] ~ ~-2.6 ~
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=3}] ~ ~-2.3 ~
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=4}] ~ ~-2.1 ~
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=5}] ~ ~-1.8 ~
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=6}] ~ ~-1.6 ~
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=7}] ~ ~-1.3 ~
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=8}] ~ ~-1.1 ~
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=9}] ~ ~-0.8 ~
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=10}] ~ ~-0.6 ~
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=11}] ~ ~-0.3 ~
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=12}] ~ ~-0.1 ~
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=13}] ~ ~0.2 ~
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=15..16}] ~ ~0.1 ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=1}] ~ ~2.8 ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=2}] ~ ~2.6 ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=3}] ~ ~2.3 ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=4}] ~ ~2.1 ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=5}] ~ ~1.8 ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=6}] ~ ~1.6 ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=7}] ~ ~1.3 ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=8}] ~ ~1.1 ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=9}] ~ ~0.8 ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=10}] ~ ~0.6 ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=11}] ~ ~0.3 ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=12}] ~ ~0.1 ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=13}] ~ ~-0.2 ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=15..16}] ~ ~-0.1 ~
+teleport @s[scores={AnimationProgress=1}] ~ ~-2.8 ~
+teleport @s[scores={AnimationProgress=2}] ~ ~-2.6 ~
+teleport @s[scores={AnimationProgress=3}] ~ ~-2.3 ~
+teleport @s[scores={AnimationProgress=4}] ~ ~-2.1 ~
+teleport @s[scores={AnimationProgress=5}] ~ ~-1.8 ~
+teleport @s[scores={AnimationProgress=6}] ~ ~-1.6 ~
+teleport @s[scores={AnimationProgress=7}] ~ ~-1.3 ~
+teleport @s[scores={AnimationProgress=8}] ~ ~-1.1 ~
+teleport @s[scores={AnimationProgress=9}] ~ ~-0.8 ~
+teleport @s[scores={AnimationProgress=10}] ~ ~-0.6 ~
+teleport @s[scores={AnimationProgress=11}] ~ ~-0.3 ~
+teleport @s[scores={AnimationProgress=12}] ~ ~-0.1 ~
+teleport @s[scores={AnimationProgress=13}] ~ ~0.2 ~
+teleport @s[scores={AnimationProgress=15..16}] ~ ~0.1 ~
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX -200
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationZ 1000
-scoreboard players remove @s[scores={AnimationProgress=1}] AnimationRotationZ 1800
 scoreboard players set @s[scores={AnimationProgress=20}] AnimationProgress 0

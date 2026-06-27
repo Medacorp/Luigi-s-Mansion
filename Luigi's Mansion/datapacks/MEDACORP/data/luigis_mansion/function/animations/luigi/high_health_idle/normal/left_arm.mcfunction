@@ -48,8 +48,8 @@ scoreboard players add @s[scores={AnimationProgress=79..80}] AnimationRotationY 
 scoreboard players set @s[scores={AnimationProgress=101}] AnimationRotationY 45
 scoreboard players set @s[scores={AnimationProgress=102}] AnimationRotationY 27
 scoreboard players set @s[scores={AnimationProgress=103}] AnimationRotationY 0
-scoreboard players remove @s[scores={AnimationProgress=104}] AnimationRotationY -37
-scoreboard players add @s[scores={AnimationProgress=105..106}] AnimationRotationY 50
+scoreboard players set @s[scores={AnimationProgress=104}] AnimationRotationY -37
+scoreboard players remove @s[scores={AnimationProgress=105..106}] AnimationRotationY 50
 scoreboard players set @s[scores={AnimationProgress=107}] AnimationRotationY -165
 scoreboard players set @s[scores={AnimationProgress=108}] AnimationRotationY -202
 scoreboard players set @s[scores={AnimationProgress=109}] AnimationRotationY -220

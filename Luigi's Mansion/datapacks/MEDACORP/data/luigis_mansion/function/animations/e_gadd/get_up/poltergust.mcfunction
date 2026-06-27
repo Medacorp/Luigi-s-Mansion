@@ -1,10 +1,2 @@
-scoreboard players add @s AnimationProgress 1
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=1..12}] ~ ~-0.2 ~ ~ ~
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=13}] ~ ~-0.15 ~ ~ ~
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=14}] ~ ~-0.1 ~ ~ ~
-teleport @s[tag=!flipped_gravity,scores={AnimationProgress=15}] ~ ~-0.05 ~ ~ ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=1..12}] ~ ~0.2 ~ ~ ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=13}] ~ ~0.15 ~ ~ ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=14}] ~ ~0.1 ~ ~ ~
-teleport @s[tag=flipped_gravity,scores={AnimationProgress=15}] ~ ~0.05 ~ ~ ~
-scoreboard players set @s[scores={AnimationProgress=20}] AnimationProgress 0
+execute if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/e_gadd/get_up/normal/poltergust
+execute if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/e_gadd/get_up/normal_flipped/poltergust

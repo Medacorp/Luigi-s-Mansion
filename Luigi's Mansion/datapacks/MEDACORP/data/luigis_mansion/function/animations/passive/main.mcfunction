@@ -10,6 +10,8 @@ execute if score #temp Time matches 1 run function luigis_mansion:animations/pas
 scoreboard players reset #temp Time
 teleport @s ~ ~ ~ ~ ~
 $function $(namespace):animations/$(id)/call_part_function
+scoreboard players add @s[tag=was_flipped,tag=!flipped_gravity] AnimationRotationZ 1800
+scoreboard players remove @s[tag=!was_flipped,tag=flipped_gravity] AnimationRotationZ 1800
 tag @s[tag=flipped_gravity] add was_flipped
 tag @s[tag=!flipped_gravity] remove was_flipped
 tag @s[tag=flipped_gravity] remove flipped_gravity
