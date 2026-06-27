@@ -1,2 +1,4 @@
-execute if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/luigi/knockback/fall_forward/normal/right_arm
-execute if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/luigi/knockback/fall_forward/normal_flipped/right_arm
+execute if entity @s[tag=!flipped_gravity,tag=!shrunk] run function luigis_mansion:animations/luigi/knockback/fall_forward/normal/right_arm
+execute if entity @s[tag=!flipped_gravity,tag=shrunk] run function luigis_mansion:animations/luigi/knockback/fall_forward/normal_shrunk/right_arm
+execute if entity @s[tag=flipped_gravity,tag=!shrunk] run function luigis_mansion:animations/luigi/knockback/fall_forward/normal_flipped/right_arm
+execute if entity @s[tag=flipped_gravity,tag=shrunk] run function luigis_mansion:animations/luigi/knockback/fall_forward/normal_flipped_shrunk/right_arm

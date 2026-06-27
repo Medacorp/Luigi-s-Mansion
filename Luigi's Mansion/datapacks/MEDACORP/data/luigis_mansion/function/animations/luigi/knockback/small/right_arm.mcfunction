@@ -1,2 +1,4 @@
-execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/luigi/knockback/small/normal/right_arm
-execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/luigi/knockback/small/mirrored/right_arm
+execute unless score #mirrored Selected matches 1 if entity @s[tag=!shrunk] run function luigis_mansion:animations/luigi/knockback/small/normal/right_arm
+execute unless score #mirrored Selected matches 1 if entity @s[tag=shrunk] run function luigis_mansion:animations/luigi/knockback/small/normal_shrunk/right_arm
+execute if score #mirrored Selected matches 1 if entity @s[tag=!shrunk] run function luigis_mansion:animations/luigi/knockback/small/mirrored/right_arm
+execute if score #mirrored Selected matches 1 if entity @s[tag=shrunk] run function luigis_mansion:animations/luigi/knockback/small/mirrored_shrunk/right_arm

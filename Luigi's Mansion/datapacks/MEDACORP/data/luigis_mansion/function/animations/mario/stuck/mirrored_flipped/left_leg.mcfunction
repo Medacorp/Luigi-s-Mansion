@@ -15,7 +15,7 @@ execute if entity @s[scores={AnimationProgress=133}] rotated ~ -54 positioned ^ 
 execute if entity @s[scores={AnimationProgress=134}] rotated ~ -58.5 positioned ^ ^ ^0.55 run teleport @s ~ ~.15 ~
 execute if entity @s[scores={AnimationProgress=135}] rotated ~ -63 positioned ^ ^ ^0.55 run teleport @s ~ ~.1 ~
 execute if entity @s[scores={AnimationProgress=136}] rotated ~ -67.5 positioned ^ ^ ^0.55 run teleport @s ~ ~.05 ~
-execute if entity @s[scores={AnimationProgress=137}] rotated ~ -72 positioned ^ ^ ^0.55 run teleport @s ~ ~~
+execute if entity @s[scores={AnimationProgress=137}] rotated ~ -72 positioned ^ ^ ^0.55 run teleport @s ~ ~ ~
 execute if entity @s[scores={AnimationProgress=138}] rotated ~ -76.5 positioned ^ ^ ^0.55 run teleport @s ~ ~0.05 ~
 execute if entity @s[scores={AnimationProgress=139}] rotated ~ -90 positioned ^ ^ ^0.55 run teleport @s ~ ~0.1 ~
 execute if entity @s[scores={AnimationProgress=140}] rotated ~ -90 positioned ^ ^ ^0.55 run teleport @s ~ ~0.15 ~

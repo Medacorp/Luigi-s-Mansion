@@ -1,2 +1,4 @@
-execute if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/luigi/get_up/normal/right_leg
-execute if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/luigi/get_up/normal_flipped/right_leg
+execute if entity @s[tag=!flipped_gravity,tag=!shrunk] run function luigis_mansion:animations/luigi/get_up/normal/right_leg
+execute if entity @s[tag=!flipped_gravity,tag=shrunk] run function luigis_mansion:animations/luigi/get_up/normal_shrunk/right_leg
+execute if entity @s[tag=flipped_gravity,tag=!shrunk] run function luigis_mansion:animations/luigi/get_up/normal_flipped/right_leg
+execute if entity @s[tag=flipped_gravity,tag=shrunk] run function luigis_mansion:animations/luigi/get_up/normal_flipped_shrunk/right_leg

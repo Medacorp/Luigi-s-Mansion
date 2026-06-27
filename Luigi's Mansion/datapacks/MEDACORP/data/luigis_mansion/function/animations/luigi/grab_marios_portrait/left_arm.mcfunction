@@ -1,4 +1,6 @@
 execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/luigi/grab_marios_portrait/normal/left_arm
 execute if score #mirrored Selected matches 1 if entity @s[tag=!held_item] run function luigis_mansion:animations/luigi/grab_marios_portrait/mirrored/left_arm
-execute if score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity,tag=held_item] run function luigis_mansion:animations/luigi/grab_marios_portrait/mirrored/item
-execute if score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity,tag=held_item] run function luigis_mansion:animations/luigi/grab_marios_portrait/mirrored_flipped/item
+execute if score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity,tag=held_item,tag=!shrunk] run function luigis_mansion:animations/luigi/grab_marios_portrait/mirrored/item
+execute if score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity,tag=held_item,tag=shrunk] run function luigis_mansion:animations/luigi/grab_marios_portrait/mirrored_shrunk/item
+execute if score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity,tag=held_item,tag=!shrunk] run function luigis_mansion:animations/luigi/grab_marios_portrait/mirrored_flipped/item
+execute if score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity,tag=held_item,tag=shrunk] run function luigis_mansion:animations/luigi/grab_marios_portrait/mirrored_flipped_shrunk/item
