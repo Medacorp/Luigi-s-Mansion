@@ -15,7 +15,6 @@ execute at @s[tag=!in_block] unless block ~ ~-0.1 ~ #luigis_mansion:items_ignore
 execute at @s[tag=!in_block] run teleport @s ~ ~ ~ ~ ~1
 tag @s remove in_block
 
-execute store result score @s HomeRotation run data get entity @s Pose.Head[0]
-execute if block ^ ^ ^0.3 #luigis_mansion:items_ignore unless block ^ ^ ^0.3 #minecraft:slabs store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRotation 10
+execute if block ^ ^ ^0.3 #luigis_mansion:items_ignore unless block ^ ^ ^0.3 #minecraft:slabs run scoreboard players add @s AnimationRotationX 100
 
 $execute at @s if entity @e[tag=same_room,tag=luigi,distance=..$(pick_up_range),limit=1] run function luigis_mansion:entities/item/physics/step/collect {pick_up_range:$(pick_up_range)}

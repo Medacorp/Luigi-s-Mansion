@@ -1,4 +1,4 @@
-data modify entity @s Pose.Head[0] set value 0.0f
+data modify entity @s transformation.left_rotation set value [0.0f,0.0f,0.0f,1.0f]
 scoreboard players add @s ActionTime 1
 scoreboard players set @s[scores={ActionTime=18}] ActionTime 2
 teleport @s[tag=zigzag_right,scores={ActionTime=2..5}] ~ ~ ~ ~10 ~

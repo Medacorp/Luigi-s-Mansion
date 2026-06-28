@@ -1,4 +1,6 @@
-$teleport @s ~ ~$(physics_offset) ~
+$execute positioned ~ ~-1.45 ~ run teleport @s ~ ~$(physics_offset) ~
+execute store result entity @s Rotation[1] float 1 run scoreboard players get @s HomeRotationX
+
 scoreboard players add @s Move 0
 scoreboard players add @s SpawnTime 1
 tag @s[scores={SpawnTime=40}] add affected_by_vacuum
@@ -14,7 +16,13 @@ execute if data entity @s data.particle_trail at @s run function luigis_mansion:
 scoreboard players reset #temp MirrorX
 scoreboard players reset #temp MirrorZ
 
+execute unless score @s AnimationOldRotationX = @s AnimationRotationX run function luigis_mansion:animations/generic/sync
+execute unless score @s AnimationOldRotationY = @s AnimationRotationY run function luigis_mansion:animations/generic/sync
+execute unless score @s AnimationOldRotationZ = @s AnimationRotationZ run function luigis_mansion:animations/generic/sync
+
 execute at @s[tag=picked_up,tag=!dead] run function luigis_mansion:entities/item/picked_up with entity @s data.item
 tag @s[tag=picked_up,tag=!captured] add dead
 tag @e[tag=collector] remove collector
-$execute at @s run teleport @s ~ ~-$(physics_offset) ~
+$execute at @s positioned ~ ~1.45 ~ run teleport @s ~ ~-$(physics_offset) ~
+execute store result score @s HomeRotationX run data get entity @s Rotation[1]
+data modify entity @s Rotation[1] set value 0.0f

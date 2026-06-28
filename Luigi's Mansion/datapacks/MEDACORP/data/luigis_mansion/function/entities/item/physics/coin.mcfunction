@@ -12,9 +12,8 @@ execute at @s[scores={Move=0},tag=!falling] align y if block ~ ~ ~ #luigis_mansi
 execute at @s[scores={Move=0},tag=!falling] align y if block ~ ~ ~ #minecraft:slabs[type=bottom] positioned ~ ~0.5 ~ run teleport @s ~ ~ ~
 execute at @s[tag=!wall_bounce] positioned ~ ~0.1 ~ run function luigis_mansion:entities/item/physics/step/prevent_collision
 
-execute store result score @s HomeRotation run data get entity @s Pose.Head[0]
-data modify entity @s[scores={Move=0,HomeRotation=0..},tag=!falling] Pose.Head[0] set value 90.0f
-data modify entity @s[scores={Move=0,HomeRotation=..-1},tag=!falling] Pose.Head[0] set value -90.0f
-execute unless entity @s[scores={Move=0},tag=!falling] store result entity @s Pose.Head[0] float 1 run scoreboard players add @s HomeRotation 10
+scoreboard players set @s[scores={Move=0,AnimationRotationX=0..},tag=!falling] AnimationRotationX 900
+scoreboard players set @s[scores={Move=0,AnimationRotationX=..-1},tag=!falling] AnimationRotationX -900
+execute unless entity @s[scores={Move=0},tag=!falling] run scoreboard players add @s AnimationRotationX 100
 
 $execute at @s if entity @e[tag=same_room,tag=luigi,distance=..$(pick_up_range),limit=1] run function luigis_mansion:entities/item/physics/step/collect {pick_up_range:$(pick_up_range)}

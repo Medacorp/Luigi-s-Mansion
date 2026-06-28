@@ -13,10 +13,9 @@ scoreboard players operation #temp2 PositionY *= #temp2 PositionY
 scoreboard players operation #temp2 PositionZ *= #temp2 PositionZ
 scoreboard players operation #temp2 PositionX += #temp2 PositionY
 scoreboard players operation #temp2 PositionX += #temp2 PositionZ
-execute unless score #temp FurnitureSizeRadius matches 1.. run scoreboard players add #temp EntitySizeRadius 5
-execute if score #temp FurnitureSizeRadius matches 1.. run scoreboard players operation #temp EntitySizeRadius += #temp FurnitureSizeRadius
+scoreboard players operation #temp EntitySizeRadius += #size Steps
 scoreboard players operation #temp EntitySizeRadius *= #temp EntitySizeRadius
-execute if score #temp2 PositionX <= #temp EntitySizeRadius run tag @s add hit_by_swinging_furniture
+execute if score #temp2 PositionX <= #temp EntitySizeRadius run tag @s add hit_by_swing
 scoreboard players reset #temp PositionX
 scoreboard players reset #temp PositionY
 scoreboard players reset #temp PositionZ

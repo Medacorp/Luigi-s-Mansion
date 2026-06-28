@@ -4,7 +4,7 @@ scoreboard players reset #temp Move
 scoreboard players add @s ActionTime 1
 tag @s[scores={ActionTime=200}] add dead
 execute if data entity @s[tag=dead] data.owner run function luigis_mansion:entities/ghost/owner_complain with entity @s data
-execute unless entity @s[scores={ID=-2147483648..}] at @s positioned ~-0.5 ~-1 ~-0.5 if entity @e[dx=0,dy=1,dz=0,tag=luigi,limit=1] run function luigis_mansion:entities/shot_water/hit_player
+execute unless entity @s[scores={ID=-2147483648..}] at @s positioned ~-0.5 ~-1.45 ~-0.5 if entity @e[dx=0,dy=1,dz=0,tag=luigi,limit=1] run function luigis_mansion:entities/shot_water/hit_player
 execute at @s[tag=dead] run playsound luigis_mansion:item.poltergust_3000.shoot.water.hit hostile @a[tag=same_room] ~ ~ ~ 1
 tag @s add me
 execute store result score #temp ID run scoreboard players get @s ID

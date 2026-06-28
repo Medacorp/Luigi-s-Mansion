@@ -1,8 +1,8 @@
-summon minecraft:armor_stand ~ ~-1.4 ~ {CustomName:{type:"translatable",translate:"3ds_remake:item.super_mushroom"},Pose:{Head:[0.0f,0.0f,0.01f]},Invisible:1b,Silent:1b,NoGravity:1b,Marker:1b,data:{entity:{namespace:"luigis_mansion",id:"item"},physics:{namespace:"luigis_mansion",id:"generic"},item:{namespace:"3ds_remake",id:"super_mushroom"},physics_offset:1.4d,pick_up_range:0.7f,particle_trail:"minecraft:dust 0.9 0.2 0.2 1"},equipment:{head:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"3ds_remake:entity/super_mushroom","minecraft:custom_model_data":{flags:[0b]}}}},Tags:["item","wall_bounce","keep_bouncing","random_turn_on_bounce","affected_by_vacuum","no_capture_sound","same_room_players_only","this_entity"],DisabledSlots:2039583}
+summon minecraft:item_display ~ ~0.05 ~ {CustomName:{type:"translatable",translate:"3ds_remake:item.super_mushroom"},data:{entity:{namespace:"luigis_mansion",id:"item"},physics:{namespace:"luigis_mansion",id:"generic"},item:{namespace:"3ds_remake",id:"super_mushroom"},physics_offset:1.4d,pick_up_range:0.7f,particle_trail:"minecraft:dust 0.9 0.2 0.2 1"},item_display:"head",item:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"3ds_remake:entity/super_mushroom","minecraft:custom_model_data":{flags:[0b]}}},Tags:["item","wall_bounce","keep_bouncing","random_turn_on_bounce","affected_by_vacuum","no_capture_sound","same_room_players_only","this_entity"]}
 execute store result entity @e[tag=this_entity,limit=1] Rotation[0] float 1 run random value -180..179
 execute store result entity @e[tag=this_entity,limit=1] Rotation[1] float 1 run random value -90..0
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 2
-scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 15
+scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 0
 execute unless data storage luigis_mansion:data entity{silent:1b} run playsound 3ds_remake:item.super_mushroom.spawn player @a[tag=same_room] ~ ~ ~ 1
 function luigis_mansion:spawn_entities/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity
