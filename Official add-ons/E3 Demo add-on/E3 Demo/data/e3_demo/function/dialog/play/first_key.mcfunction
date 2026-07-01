@@ -8,7 +8,7 @@ execute if score #dialog Dialog matches 1 run tag @e[tag=furniture,tag=same_room
 execute if score #dialog Dialog matches 1.. run scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute if score #dialog Dialog matches 1.. as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 execute if score #dialog Dialog matches 1.. run tag @e[tag=candle_flame,tag=same_room] remove no_ai
-execute if score #dialog Dialog matches 1 run summon minecraft:armor_stand 751.0 12.1 9.0 {Rotation:[-90.0f,0.0f],CustomName:{type:"translatable",translate:"e3_demo:entity.ghost"},Tags:["first_key","same_room"],equipment:{head:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:custom_model_data":{strings:["cutscene"]},"minecraft:item_model":"luigis_mansion:key"}}},NoGravity:1b,Invulnerable:1b,Silent:1b,Invisible:1b,DisabledSlots:2039583}
+execute if score #dialog Dialog matches 1 run summon minecraft:item_display 751.0 13.55 9.0 {Rotation:[-90.0f,0.0f],CustomName:{type:"translatable",translate:"e3_demo:entity.ghost"},Tags:["first_key","same_room"],item_display:"head",item:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:custom_model_data":{strings:["cutscene"]},"minecraft:item_model":"luigis_mansion:key"}}}
 execute if score #dialog Dialog matches 1 store result score @e[tag=first_key,tag=same_room] Room run data get storage luigis_mansion:data dialogs[0].room
 execute if score #dialog Dialog matches 1 as @a[tag=same_room] run function e3_demo:other/music/set/first_key
 execute if score #dialog Dialog matches 1 as @e[tag=same_room,tag=luigi,x=751.0,y=11,z=9.0,distance=..7] run function luigis_mansion:entities/luigi/move/teleport {teleport:"753 11 9 110 0"}
@@ -39,13 +39,13 @@ execute if score #dialog Dialog matches 1..40 as @e[tag=same_room,tag=first_key]
 execute if score #dialog Dialog matches 41..100 as @e[tag=same_room,tag=first_key] at @s run teleport @s ~ ~ ~0.025
 execute if score #dialog Dialog matches 101..120 as @e[tag=same_room,tag=first_key] at @s run teleport @s ~ ~0.001 ~-0.025
 execute if score #dialog Dialog matches 121..122 as @e[tag=same_room,tag=first_key] at @s run teleport @s ~ ~-0.22 ~
-execute if score #dialog Dialog matches 216 at @e[tag=same_room,tag=first_key] run summon minecraft:armor_stand ~ ~ ~ {Rotation:[-90.0f,0.0f],CustomName:{type:"translatable",translate:"luigis_mansion:item.key"},Pose:{Head:[0.0f,0.0f,0.01f]},Marker:1b,Invisible:1b,Silent:1b,equipment:{head:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:custom_model_data":{strings:["cutscene"]},"minecraft:item_model":"luigis_mansion:key"}}},Tags:["key_model","same_room"],DisabledSlots:2039583}
+execute if score #dialog Dialog matches 216 at @e[tag=same_room,tag=first_key] run summon minecraft:item_display ~ ~ ~ {Rotation:[-90.0f,0.0f],CustomName:{type:"translatable",translate:"luigis_mansion:item.key"},item_display:"head",item:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:custom_model_data":{strings:["cutscene"]},"minecraft:item_model":"luigis_mansion:key"}},Tags:["key_model","same_room"]}
 execute if score #dialog Dialog matches 216 store result score @e[tag=key_model,tag=same_room] Room run data get storage luigis_mansion:data dialogs[0].room
-execute if score #dialog Dialog matches 216 run item replace entity @e[tag=same_room,tag=first_key] armor.head with minecraft:air
+execute if score #dialog Dialog matches 216 run data remove entity @e[tag=same_room,tag=first_key,limit=1] item
 execute if score #dialog Dialog matches 216..220 as @e[tag=same_room,tag=key_model,limit=1] at @s run teleport @s ~ ~0.1 ~
 execute if score #dialog Dialog matches 221..228 as @e[tag=same_room,tag=key_model,limit=1] at @s run teleport @s ~ ~-0.3 ~
 execute if score #dialog Dialog matches 229 as @e[tag=same_room,tag=key_model,limit=1] at @s run teleport @s ~ ~-0.2 ~
-execute if score #dialog Dialog matches 230 run data merge entity @e[tag=same_room,tag=key_model,limit=1] {Pose:{Head:[0.0f,0.0f,-90.0f]},Rotation:[30.0f,0.0f]}
+execute if score #dialog Dialog matches 230 run data merge entity @e[tag=same_room,tag=key_model,limit=1] {transformation:{left_rotation:[0.0f,0.0f,-0.7071067811865476f,0.7071067811865476f]},Rotation:[30.0f,0.0f]}
 execute if score #dialog Dialog matches 216..235 as @e[tag=same_room,tag=first_key] at @s run teleport @s ~ ~ ~0.2
 execute if score #dialog Dialog matches 256..275 as @e[tag=same_room,tag=first_key] at @s run teleport @s ~ ~ ~0.2
 execute if score #dialog Dialog matches 252..272 at @e[tag=same_room,tag=first_key] run tag @e[tag=same_room,tag=candle_flame,distance=..1.5] add extinguish

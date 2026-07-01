@@ -5,25 +5,25 @@ scoreboard players add @s[scores={VulnerableTime=0,Dialog=..309}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
 tag @s[scores={Dialog=20}] add visible
 execute if entity @s[scores={Dialog=20}] run summon minecraft:lightning_bolt ~ 40 ~
-execute if entity @s[scores={Dialog=21}] positioned ^ ^-1.43 ^0.7 run function luigis_mansion:entities/bogmire/create_shadow/intro
-execute if entity @s[scores={Dialog=22}] positioned ^ ^-1.43 ^1.4 run function luigis_mansion:entities/bogmire/create_shadow/intro
-execute if entity @s[scores={Dialog=23}] positioned ^ ^-1.43 ^2.1 run function luigis_mansion:entities/bogmire/create_shadow/intro
-execute if entity @s[scores={Dialog=24}] positioned ^ ^-1.43 ^2.8 run function luigis_mansion:entities/bogmire/create_shadow/intro
-execute if entity @s[scores={Dialog=25}] positioned ^ ^-1.43 ^3.5 run function luigis_mansion:entities/bogmire/create_shadow/intro
-execute if entity @s[scores={Dialog=26}] positioned ^ ^-1.43 ^4.2 run function luigis_mansion:entities/bogmire/create_shadow/intro
-execute if entity @s[scores={Dialog=27}] positioned ^ ^-1.43 ^4.9 run function luigis_mansion:entities/bogmire/create_shadow/intro
-execute if entity @s[scores={Dialog=28}] positioned ^ ^-1.43 ^5.6 run function luigis_mansion:entities/bogmire/create_shadow/intro
-execute if entity @s[scores={Dialog=29}] positioned ^ ^-1.43 ^6.3 run function luigis_mansion:entities/bogmire/create_shadow/intro
-execute if entity @s[scores={Dialog=30}] positioned ^ ^-1.43 ^7 run function luigis_mansion:entities/bogmire/create_shadow/intro
-execute if entity @s[scores={Dialog=31}] positioned ^ ^-1.43 ^7.7 run function luigis_mansion:entities/bogmire/create_shadow/intro
-execute if entity @s[scores={Dialog=32}] positioned ^ ^-1.43 ^8.4 run function luigis_mansion:entities/bogmire/create_shadow/intro
-execute if entity @s[scores={Dialog=33}] positioned ^ ^-1.43 ^9.1 run function luigis_mansion:entities/bogmire/create_shadow/intro
-execute if entity @s[scores={Dialog=34}] positioned ^ ^-1.43 ^9.8 run function luigis_mansion:entities/bogmire/create_shadow/intro
-execute if entity @s[scores={Dialog=35}] positioned ^ ^-1.43 ^10.5 run function luigis_mansion:entities/bogmire/create_shadow/intro
-execute if entity @s[scores={Dialog=36}] positioned ^ ^-1.43 ^11.2 run function luigis_mansion:entities/bogmire/create_shadow/intro
-execute if entity @s[scores={Dialog=37}] positioned ^ ^-1.43 ^11.9 run function luigis_mansion:entities/bogmire/create_shadow/intro
-execute if entity @s[scores={Dialog=38}] positioned ^ ^-1.43 ^12.6 run function luigis_mansion:entities/bogmire/create_shadow/intro
-execute if entity @s[scores={Dialog=39}] positioned ^ ^-1.43 ^13.3 run function luigis_mansion:entities/bogmire/create_shadow/intro
+execute if entity @s[scores={Dialog=21}] positioned ^ ^ ^0.7 run function luigis_mansion:entities/bogmire/create_shadow/intro
+execute if entity @s[scores={Dialog=22}] positioned ^ ^ ^1.4 run function luigis_mansion:entities/bogmire/create_shadow/intro
+execute if entity @s[scores={Dialog=23}] positioned ^ ^ ^2.1 run function luigis_mansion:entities/bogmire/create_shadow/intro
+execute if entity @s[scores={Dialog=24}] positioned ^ ^ ^2.8 run function luigis_mansion:entities/bogmire/create_shadow/intro
+execute if entity @s[scores={Dialog=25}] positioned ^ ^ ^3.5 run function luigis_mansion:entities/bogmire/create_shadow/intro
+execute if entity @s[scores={Dialog=26}] positioned ^ ^ ^4.2 run function luigis_mansion:entities/bogmire/create_shadow/intro
+execute if entity @s[scores={Dialog=27}] positioned ^ ^ ^4.9 run function luigis_mansion:entities/bogmire/create_shadow/intro
+execute if entity @s[scores={Dialog=28}] positioned ^ ^ ^5.6 run function luigis_mansion:entities/bogmire/create_shadow/intro
+execute if entity @s[scores={Dialog=29}] positioned ^ ^ ^6.3 run function luigis_mansion:entities/bogmire/create_shadow/intro
+execute if entity @s[scores={Dialog=30}] positioned ^ ^ ^7 run function luigis_mansion:entities/bogmire/create_shadow/intro
+execute if entity @s[scores={Dialog=31}] positioned ^ ^ ^7.7 run function luigis_mansion:entities/bogmire/create_shadow/intro
+execute if entity @s[scores={Dialog=32}] positioned ^ ^ ^8.4 run function luigis_mansion:entities/bogmire/create_shadow/intro
+execute if entity @s[scores={Dialog=33}] positioned ^ ^ ^9.1 run function luigis_mansion:entities/bogmire/create_shadow/intro
+execute if entity @s[scores={Dialog=34}] positioned ^ ^ ^9.8 run function luigis_mansion:entities/bogmire/create_shadow/intro
+execute if entity @s[scores={Dialog=35}] positioned ^ ^ ^10.5 run function luigis_mansion:entities/bogmire/create_shadow/intro
+execute if entity @s[scores={Dialog=36}] positioned ^ ^ ^11.2 run function luigis_mansion:entities/bogmire/create_shadow/intro
+execute if entity @s[scores={Dialog=37}] positioned ^ ^ ^11.9 run function luigis_mansion:entities/bogmire/create_shadow/intro
+execute if entity @s[scores={Dialog=38}] positioned ^ ^ ^12.6 run function luigis_mansion:entities/bogmire/create_shadow/intro
+execute if entity @s[scores={Dialog=39}] positioned ^ ^ ^13.3 run function luigis_mansion:entities/bogmire/create_shadow/intro
 execute if entity @s[scores={Dialog=40}] run data modify storage luigis_mansion:data entity set value {tags:["no_dialog_freeze","not_this_ghost"]}
 execute if entity @s[scores={Dialog=40}] positioned ^ ^ ^14 run function luigis_mansion:spawn_entities/ghost/black_bogmire/big
 execute if entity @s[scores={Dialog=40}] run tag @e[tag=bogmires_shadow] add vanish

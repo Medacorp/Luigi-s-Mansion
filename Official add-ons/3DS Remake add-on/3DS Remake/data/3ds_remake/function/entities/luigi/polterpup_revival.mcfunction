@@ -4,10 +4,10 @@ execute if entity @s[scores={Dialog=100..140}] run stopsound @a[tag=same_room] m
 execute if entity @s[scores={Dialog=100..140}] run scoreboard players set @a[tag=same_room] Music 320
 execute if entity @s[scores={Dialog=120}] run scoreboard players operation #temp ID = @s ID
 execute if entity @s[scores={Dialog=120},tag=flipped_gravity] run data modify storage luigis_mansion:data entity set value {tags:["flipped_gravity"]}
-execute at @s[scores={Dialog=120},tag=!flipped_gravity] unless score #mirrored Selected matches 1 as @e[type=minecraft:armor_stand,tag=luigi_model,tag=head] if score @s ID = #temp ID rotated as @s run function 3ds_remake:spawn_entities/ghost/polterpup
-execute at @s[scores={Dialog=120},tag=flipped_gravity] unless score #mirrored Selected matches 1 as @e[type=minecraft:armor_stand,tag=luigi_model,tag=head] if score @s ID = #temp ID rotated as @s run function 3ds_remake:spawn_entities/ghost/polterpup
-execute at @s[scores={Dialog=120},tag=!flipped_gravity] if score #mirrored Selected matches 1 as @e[type=minecraft:armor_stand,tag=luigi_model,tag=head] if score @s ID = #temp ID rotated as @s run function 3ds_remake:spawn_entities/ghost/polterpup
-execute at @s[scores={Dialog=120},tag=flipped_gravity] if score #mirrored Selected matches 1 as @e[type=minecraft:armor_stand,tag=luigi_model,tag=head] if score @s ID = #temp ID rotated as @s run function 3ds_remake:spawn_entities/ghost/polterpup
+execute at @s[scores={Dialog=120},tag=!flipped_gravity] unless score #mirrored Selected matches 1 as @e[type=minecraft:item_display,tag=luigi_model,tag=head] if score @s ID = #temp ID rotated as @s run function 3ds_remake:spawn_entities/ghost/polterpup
+execute at @s[scores={Dialog=120},tag=flipped_gravity] unless score #mirrored Selected matches 1 as @e[type=minecraft:item_display,tag=luigi_model,tag=head] if score @s ID = #temp ID rotated as @s run function 3ds_remake:spawn_entities/ghost/polterpup
+execute at @s[scores={Dialog=120},tag=!flipped_gravity] if score #mirrored Selected matches 1 as @e[type=minecraft:item_display,tag=luigi_model,tag=head] if score @s ID = #temp ID rotated as @s run function 3ds_remake:spawn_entities/ghost/polterpup
+execute at @s[scores={Dialog=120},tag=flipped_gravity] if score #mirrored Selected matches 1 as @e[type=minecraft:item_display,tag=luigi_model,tag=head] if score @s ID = #temp ID rotated as @s run function 3ds_remake:spawn_entities/ghost/polterpup
 execute if entity @s[scores={Dialog=120}] run scoreboard players reset #temp ID
 execute if entity @s[scores={Dialog=140}] as @a[tag=same_room] run function 3ds_remake:other/music/set/polterpup
 execute if entity @s[scores={Dialog=150}] run scoreboard players add @a[tag=same_room] Music 62

@@ -4,7 +4,6 @@ scoreboard players operation #temp PositionZ = @s FurnitureElementForward
 function luigis_mansion:items/poltergust_3000/effect_on_furniture/move
 execute store result score #temp PositionX run data get entity @s Pos[0] 10
 execute store result score #temp PositionY run data get entity @s Pos[1] 10
-execute if entity @s[type=minecraft:armor_stand] run scoreboard players add #temp PositionY 14
 execute store result score #temp PositionZ run data get entity @s Pos[2] 10
 teleport @s ~ ~ ~
 scoreboard players operation #temp2 PositionX = #interact PositionX
