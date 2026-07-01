@@ -1,5 +1,5 @@
-summon minecraft:armor_stand ~ ~-1.43875 ~ {CustomName:{type:"translatable",translate:"luigis_mansion:furniture.particle_spawner"},Marker:1b,Tags:["furniture","static","this_entity"],data:{entity:{namespace:"luigis_mansion",id:"furniture"},furniture_type:"empty"},NoGravity:1b,Invisible:1b,DisabledSlots:2039583}
-teleport @e[tag=this_entity,limit=1] ~ ~-1.43875 ~ ~ 0
+summon minecraft:marker ~ ~ ~ {CustomName:{type:"translatable",translate:"luigis_mansion:furniture.particle_spawner"},Tags:["furniture","static","this_entity"],data:{entity:{namespace:"luigis_mansion",id:"furniture"},furniture_type:"empty"}}
+teleport @e[tag=this_entity,limit=1] ~ ~ ~ ~ ~
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeRadius 1
 function luigis_mansion:spawn_furniture/setup/particles
 function luigis_mansion:spawn_furniture/setup/room

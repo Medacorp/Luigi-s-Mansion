@@ -1,5 +1,5 @@
-summon minecraft:armor_stand ~ ~-1.43875 ~ {CustomName:{type:"translatable",translate:"luigis_mansion:furniture.wooden_stool_mounted_orange_stained_vase"},Marker:1b,NoGravity:1b,Invisible:1b,data:{entity:{namespace:"luigis_mansion",id:"furniture"},furniture_type:"generic"},equipment:{head:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:furniture/wooden_stool_mounted_orange_stained_vase"}}},Tags:["furniture","immobile","standing_furniture","this_entity"],DisabledSlots:2039583}
-teleport @e[tag=this_entity,limit=1] ~ ~-1.43875 ~ ~ 0
+summon minecraft:item_display ~ ~ ~ {CustomName:{type:"translatable",translate:"luigis_mansion:furniture.wooden_stool_mounted_orange_stained_vase"},data:{entity:{namespace:"luigis_mansion",id:"furniture"},furniture_type:"generic"},item_display:"head",item:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:furniture/wooden_stool_mounted_orange_stained_vase"}},Tags:["furniture","immobile","standing_furniture","this_entity"]}
+teleport @e[tag=this_entity,limit=1] ~ ~ ~ ~ ~
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeWidth 12
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeHeight 25
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentUp 25

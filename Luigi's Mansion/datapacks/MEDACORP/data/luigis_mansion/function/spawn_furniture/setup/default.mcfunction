@@ -5,8 +5,7 @@ kill @e[tag=candle_angle]
 execute if entity @e[tag=this_entity,tag=requires_hitbox,limit=1] run function luigis_mansion:spawn_furniture/setup/hitbox
 function luigis_mansion:spawn_furniture/setup/fix_hitbox
 # Display and sound
-execute if entity @e[tag=this_entity,tag=!candelabra,type=minecraft:armor_stand,limit=1] run function luigis_mansion:spawn_furniture/setup/pose
-execute if entity @e[tag=this_entity,type=minecraft:item_display,limit=1] run function luigis_mansion:spawn_furniture/setup/transformation
+execute if entity @e[tag=this_entity,tag=!candelabra,limit=1] run function luigis_mansion:spawn_furniture/setup/transformation
 function luigis_mansion:spawn_furniture/setup/search_animations
 function luigis_mansion:spawn_furniture/setup/sound
 

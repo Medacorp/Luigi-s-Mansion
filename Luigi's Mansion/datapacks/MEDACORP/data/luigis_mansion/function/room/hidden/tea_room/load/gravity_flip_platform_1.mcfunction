@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {room:34,pose:[0.0f,0.0f,-180.0f],shake_animation:["interact"],interact_animation:{namespace:"luigis_mansion",id:"search/hump"},no_visual_shake:1b,scan_result:{namespace:"luigis_mansion",id:"scan/scanner/51"}}
+data modify storage luigis_mansion:data furniture set value {room:34,roll:-1800,shake_animation:["interact"],interact_animation:{namespace:"luigis_mansion",id:"search/hump"},no_visual_shake:1b,scan_result:{namespace:"luigis_mansion",id:"scan/scanner/51"}}
 execute positioned 643 26.99 57 rotated -90 0 run function luigis_mansion:spawn_furniture/gravity_flip_platform

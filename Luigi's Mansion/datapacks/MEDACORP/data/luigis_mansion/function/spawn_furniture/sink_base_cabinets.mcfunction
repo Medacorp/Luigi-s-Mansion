@@ -1,5 +1,5 @@
-summon minecraft:armor_stand ~ ~-1.43875 ~ {CustomName:{type:"translatable",translate:"luigis_mansion:furniture.sink_base_cabinets"},Tags:["furniture","standing_furniture","can_be_water_elemental_source","immobile","this_entity"],NoGravity:1b,Marker:1b,data:{entity:{namespace:"luigis_mansion",id:"furniture"},furniture_type:"generic"},equipment:{head:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:furniture/sink_base_cabinets"}}},Invisible:1b,DisabledSlots:2039583}
-teleport @e[tag=this_entity,limit=1] ~ ~-1.43875 ~ ~ 0
+summon minecraft:item_display ~ ~ ~ {CustomName:{type:"translatable",translate:"luigis_mansion:furniture.sink_base_cabinets"},Tags:["furniture","standing_furniture","can_be_water_elemental_source","immobile","this_entity"],data:{entity:{namespace:"luigis_mansion",id:"furniture"},furniture_type:"generic"},item_display:"head",item:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:furniture/sink_base_cabinets"}}}
+teleport @e[tag=this_entity,limit=1] ~ ~ ~ ~ ~
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeLeft 60
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeUp 28
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeForward 20

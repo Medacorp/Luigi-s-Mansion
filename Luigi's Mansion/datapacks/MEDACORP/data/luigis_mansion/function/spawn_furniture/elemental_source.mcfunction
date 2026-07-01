@@ -1,5 +1,5 @@
-summon minecraft:armor_stand ~ ~-1.43875 ~ {CustomName:{type:"translatable",translate:"luigis_mansion:furniture.elemental_source"},Marker:1b,Tags:["furniture","elemental_source","can_be_fire_elemental_source","can_be_water_elemental_source","can_be_ice_elemental_source","static","this_entity"],data:{entity:{namespace:"luigis_mansion",id:"furniture"},furniture_type:"empty"},NoGravity:1b,Invisible:1b,DisabledSlots:2039583}
-teleport @e[tag=this_entity,limit=1] ~ ~-1.43875 ~ ~ 0
+summon minecraft:marker ~ ~ ~ {CustomName:{type:"translatable",translate:"luigis_mansion:furniture.elemental_source"},Tags:["furniture","elemental_source","can_be_fire_elemental_source","can_be_water_elemental_source","can_be_ice_elemental_source","static","this_entity"],data:{entity:{namespace:"luigis_mansion",id:"furniture"},furniture_type:"empty"}}
+teleport @e[tag=this_entity,limit=1] ~ ~ ~ ~ ~
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeRadius 1
 function luigis_mansion:spawn_furniture/setup/fire_elemental_source
 function luigis_mansion:spawn_furniture/setup/water_elemental_source

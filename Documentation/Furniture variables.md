@@ -3,9 +3,7 @@ Furniture spawning takes certain variables, they are classified and listed below
 ```
 furniture:{
     // Display and sound
-    pose: [...f] //The furniture's positioning data, depends on entity type.
-        //Armor stand's head Pose. The jaw is ignored, and the pitch is clamped to -90..90, execution rotation pitch is ignored. Default = defined by furniture, generally [0.0f,0.01f,0.0f]
-        //Item display's transformation matrix. Matrix format required. Default = defined by furniture, generally [XScalef,0f,0f,Xtranslationf,0f,YScalef,0f,Ytranslationf,0f,0f,ZScalef,Ztranslationf,0f,0f,0f,1f]
+    roll: -1800 //The furniture's default roll in degrees*10.
     no_long_shake:1b, //When set disables the long shaking animation from manual search. Default = 0b.
     no_short_shake:1b, //When set disables the short shaking animation from manual search. Default = 0b.
     no_visual_shake:1b, //When set disables the shaking animations visually; sound will still play. Default = 0b.

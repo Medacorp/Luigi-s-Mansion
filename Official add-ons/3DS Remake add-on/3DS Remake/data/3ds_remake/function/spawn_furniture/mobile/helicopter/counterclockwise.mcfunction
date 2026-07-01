@@ -1,5 +1,5 @@
-summon minecraft:armor_stand ~ ~-1.43875 ~ {CustomName:{type:"translatable",translate:"luigis_mansion:furniture.helicopter_mobile"},Marker:1b,NoGravity:1b,Invisible:1b,data:{entity:{namespace:"luigis_mansion",id:"furniture"},furniture_type:"fan"},equipment:{head:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"3ds_remake:furniture/helicopter_mobile","minecraft:custom_model_data":{flags:[1b]},"minecraft:custom_data":{mirror:{components:{"minecraft:custom_model_data":{flags:[1b]}}}}}}},Tags:["furniture","hanging_furniture","this_entity","turn_left"],DisabledSlots:2039583}
-teleport @e[tag=this_entity,limit=1] ~ ~-1.43875 ~ ~ 0
+summon minecraft:item_display ~ ~ ~ {CustomName:{type:"translatable",translate:"luigis_mansion:furniture.helicopter_mobile"},data:{entity:{namespace:"luigis_mansion",id:"furniture"},furniture_type:"fan"},item_display:"head",item:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"3ds_remake:furniture/helicopter_mobile","minecraft:custom_model_data":{flags:[1b]},"minecraft:custom_data":{mirror:{components:{"minecraft:custom_model_data":{flags:[1b]}}}}}},Tags:["furniture","hanging_furniture","this_entity","turn_left"]}
+teleport @e[tag=this_entity,limit=1] ~ ~ ~ ~ ~
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeWidth 30
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeHeight 20
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustUp -6

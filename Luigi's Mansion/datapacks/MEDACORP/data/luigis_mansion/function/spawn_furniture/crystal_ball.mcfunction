@@ -1,5 +1,5 @@
-summon minecraft:armor_stand ~ ~-1.2 ~ {CustomName:{type:"translatable",translate:"luigis_mansion:furniture.crystal_ball"},Tags:["furniture","immobile","this_entity"],NoGravity:1b,Marker:1b,data:{entity:{namespace:"luigis_mansion",id:"furniture"},furniture_type:"generic"},equipment:{head:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:furniture/crystal_ball"}}},Invisible:1b,DisabledSlots:2039583}
-teleport @e[tag=this_entity,limit=1] ~ ~-1.2 ~ ~ 0
+summon minecraft:item_display ~ ~0.25 ~ {CustomName:{type:"translatable",translate:"luigis_mansion:furniture.crystal_ball"},Tags:["furniture","immobile","this_entity"],data:{entity:{namespace:"luigis_mansion",id:"furniture"},furniture_type:"generic"},item_display:"head",item:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:furniture/crystal_ball"}}}
+teleport @e[tag=this_entity,limit=1] ~ ~0.25 ~ ~ ~
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeRadius 4
 function luigis_mansion:spawn_furniture/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity

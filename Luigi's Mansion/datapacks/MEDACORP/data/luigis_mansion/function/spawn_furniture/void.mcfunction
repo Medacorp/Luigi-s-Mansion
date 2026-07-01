@@ -1,4 +1,4 @@
-execute summon minecraft:item_display run data merge entity @s {CustomName:{type:"translatable",translate:"luigis_mansion:furniture.void"},item:{id:"minecraft:diamond_pickaxe",components:{"minecraft:item_model":"luigis_mansion:furniture/void"}},Tags:["static","immobile","no_ai","freeze_animation","requires_hitbox","this_entity"]}
+summon minecraft:item_display ~ ~ ~ {CustomName:{type:"translatable",translate:"luigis_mansion:furniture.void"},item:{id:"minecraft:diamond_pickaxe",components:{"minecraft:item_model":"luigis_mansion:furniture/void"}},Tags:["static","immobile","no_ai","freeze_animation","requires_hitbox","this_entity"]}
 teleport @e[tag=this_entity,limit=1] ~ ~ ~ ~ ~
 function luigis_mansion:spawn_furniture/setup/hitbox
 function luigis_mansion:spawn_furniture/setup/transformation

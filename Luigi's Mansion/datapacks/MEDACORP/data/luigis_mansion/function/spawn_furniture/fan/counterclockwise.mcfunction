@@ -1,5 +1,5 @@
-summon minecraft:armor_stand ~ ~-1.43875 ~ {CustomName:{type:"translatable",translate:"luigis_mansion:furniture.fan"},Marker:1b,NoGravity:1b,Invisible:1b,data:{entity:{namespace:"luigis_mansion",id:"furniture"},furniture_type:"empty"},equipment:{head:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:furniture/fan_lamp","minecraft:custom_model_data":{flags:[0b]},"minecraft:custom_data":{model_data:{off:{components:{"minecraft:custom_model_data":{flags:[0b]}}},on:{components:{"minecraft:custom_model_data":{flags:[1b]}}}}}}}},Tags:["furniture","lamp","hanging_furniture","this_entity"],DisabledSlots:2039583}
-teleport @e[tag=this_entity,limit=1] ~ ~-1.43875 ~ ~ 0
+summon minecraft:item_display ~ ~ ~ {CustomName:{type:"translatable",translate:"luigis_mansion:furniture.fan"},data:{entity:{namespace:"luigis_mansion",id:"furniture"},furniture_type:"empty"},item_display:"head",item:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:furniture/fan_lamp","minecraft:custom_model_data":{flags:[0b]},"minecraft:custom_data":{model_data:{off:{components:{"minecraft:custom_model_data":{flags:[0b]}}},on:{components:{"minecraft:custom_model_data":{flags:[1b]}}}}}}},Tags:["furniture","lamp","hanging_furniture","this_entity"]}
+teleport @e[tag=this_entity,limit=1] ~ ~ ~ ~ ~
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeWidth 12
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeHeight 10
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustUp -10
@@ -20,8 +20,8 @@ function luigis_mansion:spawn_furniture/setup/optimize_entity_search
 function luigis_mansion:spawn_furniture/setup/static
 tag @e[tag=this_entity,limit=1] remove this_entity
 
-summon minecraft:armor_stand ~ ~-1.75875 ~ {CustomName:{type:"translatable",translate:"luigis_mansion:furniture.fan"},Marker:1b,NoGravity:1b,Invisible:1b,data:{entity:{namespace:"luigis_mansion",id:"furniture"},furniture_type:"fan"},equipment:{head:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:furniture/fan","minecraft:custom_model_data":{flags:[1b]},"minecraft:custom_data":{mirror:{components:{"minecraft:custom_model_data":{flags:[0b]}}}}}}},Tags:["furniture","this_entity","turn_left"],DisabledSlots:2039583}
-teleport @e[tag=this_entity,limit=1] ~ ~-1.75875 ~ ~ 0
+summon minecraft:item_display ~ ~-0.32 ~ {CustomName:{type:"translatable",translate:"luigis_mansion:furniture.fan"},data:{entity:{namespace:"luigis_mansion",id:"furniture"},furniture_type:"fan"},item_display:"head",item:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:furniture/fan","minecraft:custom_model_data":{flags:[1b]},"minecraft:custom_data":{mirror:{components:{"minecraft:custom_model_data":{flags:[0b]}}}}}},Tags:["furniture","this_entity","turn_left"]}
+teleport @e[tag=this_entity,limit=1] ~ ~-0.32 ~ ~ ~
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureRotationSpeed 9
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeWidth 56
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeHeight 6
