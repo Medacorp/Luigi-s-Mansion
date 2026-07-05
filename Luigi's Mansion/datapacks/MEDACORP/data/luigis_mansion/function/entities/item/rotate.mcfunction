@@ -1,2 +1,2 @@
-execute unless score #mirrored Selected matches 1 run scoreboard players add @s AnimationRotationX 30
-execute if score #mirrored Selected matches 1 run scoreboard players remove @s AnimationRotationX 30
+execute unless score #mirrored Selected matches 1 run scoreboard players add @s AnimationRotationY 30
+execute if score #mirrored Selected matches 1 run scoreboard players remove @s AnimationRotationY 30

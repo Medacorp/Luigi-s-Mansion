@@ -3,7 +3,7 @@ teleport @e[tag=this_entity,limit=1] ~ ~ ~ ~ ~
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeWidth 50
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeHeight 24
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustUp -20
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureChandelier 10
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureChandelier 24
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentUp -20
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostUp -20
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureLightLeft 0

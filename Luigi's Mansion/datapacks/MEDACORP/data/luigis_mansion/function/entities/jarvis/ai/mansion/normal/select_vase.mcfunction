@@ -1,4 +1,4 @@
-teleport @s ~ ~1.4 ~
+teleport @s ~ ~ ~
 execute store result score #temp Time run data get entity @s Pos[1] 10
 execute as @e[distance=..0.1,tag=furniture,limit=1,scores={FurnitureSizeRadius=1..}] run scoreboard players operation #temp2 Time = @s FurnitureSizeRadius
 execute as @e[distance=..0.1,tag=furniture,limit=1,scores={FurnitureSizeHeight=1..}] run scoreboard players operation #temp2 Time = @s FurnitureSizeHeight

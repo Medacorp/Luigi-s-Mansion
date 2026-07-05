@@ -5,7 +5,7 @@ execute at @s if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore unless block ~ 
 execute at @s if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore unless block ~ ~2 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^1.5 ^0.5 {Tags:["interact","manual","check","2","down"]}
 execute at @s if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore unless block ~ ~2 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^-0.5 ^0.5 {Tags:["interact","manual","check","3"]}
 scoreboard players set @e[tag=interact,tag=manual] FurnitureSize 2147483647
-execute at @e[tag=interact,tag=manual] as @e[tag=furniture,tag=!door,tag=same_room,tag=affected_by_interact,tag=!no_ai] run function luigis_mansion:items/interact/target_furniture/find
+execute at @e[tag=interact,tag=manual] as @e[tag=furniture,tag=!door,tag=same_room,tag=affected_by_interact,tag=!no_ai] unless entity @s[tag=searched,nbt={data:{furniture_type:"swinging",interact_animation:{namespace:"luigis_mansion",id:"enthusiastic"}}}] run function luigis_mansion:items/interact/target_furniture/find
 execute as @e[tag=interact,tag=manual] positioned as @s rotated ~ 0 run teleport @s ^ ^ ^0.5
 #todelete - old furniture
 execute as @e[tag=interact,tag=manual] at @s unless block ~ ~ ~ minecraft:air unless block ~ ~ ~ minecraft:barrier unless block ~ ~ ~ minecraft:light run function luigis_mansion:room/interactions

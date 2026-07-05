@@ -9,7 +9,7 @@ data modify entity @s[scores={ActionTime=4}] transformation.scale[1] set value 1
 data modify entity @s[scores={ActionTime=5}] transformation.scale[1] set value 1.01625
 data modify entity @s[scores={ActionTime=6}] transformation.scale[1] set value 1
 scoreboard players reset @s[scores={ActionTime=6..},tag=stop_music] FurnitureNoteTime
-execute if entity @s[scores={FurnitureNoteTime=1}] run summon minecraft:marker ^ ^1.75 ^ {Tags:["random_note"]}
+execute if entity @s[scores={FurnitureNoteTime=1}] run summon minecraft:marker ^ ^0.35 ^ {Tags:["random_note"]}
 execute if entity @s[scores={FurnitureNoteTime=1}] run summon minecraft:marker ^0.125 ^1.75 ^0.125 {Tags:["random_note"]}
 execute if entity @s[scores={FurnitureNoteTime=1}] run summon minecraft:marker ^-0.125 ^1.75 ^-0.125 {Tags:["random_note"]}
 execute if entity @s[scores={FurnitureNoteTime=1}] run summon minecraft:marker ^-0.125 ^1.75 ^0.125 {Tags:["random_note"]}

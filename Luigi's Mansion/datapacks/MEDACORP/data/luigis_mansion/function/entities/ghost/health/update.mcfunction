@@ -5,7 +5,7 @@ execute if entity @s[tag=!infinite_health] run tag @e[tag=this_health_display,li
 execute unless score @s Health = #temp Health run data modify entity @s text set value {type:"score",score:{objective:"Health",name:"#temp"},color:"light_purple"}
 execute if entity @s[tag=was_infinite_health,tag=!infinite_health] run data modify entity @s text set value {type:"score",score:{objective:"Health",name:"#temp"},color:"light_purple"}
 tag @s[tag=was_infinite_health,tag=!infinite_health] remove was_infinite_health
-$execute positioned ~ ~0.2 ~ run teleport @s ~ ~$(up) ~ ~ ~
+$execute positioned ~ ~-0.6 ~ run teleport @s ~ ~$(up) ~ ~ ~
 scoreboard players operation @s Health = #temp Health
 scoreboard players operation @s Room = #temp Room
 scoreboard players reset #temp Time

@@ -2,8 +2,6 @@ summon minecraft:item_display ~ ~ ~ {CustomName:{type:"translatable",translate:"
 teleport @e[tag=this_entity,limit=1] ~ ~ ~ ~ ~
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeWidth 10
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeHeight 60
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureXOrigin 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureZOrigin 0
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureDustUp -10
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureContentUp -10
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureGhostUp -10

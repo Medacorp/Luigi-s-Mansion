@@ -1,6 +1,7 @@
 scoreboard players add @s FurnitureZProgress 12
 scoreboard players set @s[scores={FurnitureZProgress=180}] FurnitureZProgress 0
 execute if entity @s[scores={FurnitureZProgress=0}] run function luigis_mansion:entities/furniture/type/swinging/reached/z
+execute if score @s FurnitureZOrigin = @s FurnitureZTarget run function luigis_mansion:entities/furniture/type/swinging/reached/z
 
 execute if entity @s[tag=!clothes,scores={FurnitureZProgress=84,FurnitureZTarget=-100..100}] unless entity @s[scores={FurnitureZTarget=-50..50}] run playsound luigis_mansion:furniture.search.swing block @a[tag=same_room] ~ ~ ~ 1 0.4
 execute if entity @s[tag=!clothes,scores={FurnitureZProgress=84,FurnitureZTarget=-200..200}] unless entity @s[scores={FurnitureZTarget=-100..100}] run playsound luigis_mansion:furniture.search.swing block @a[tag=same_room] ~ ~ ~ 1 0.6

@@ -1,10 +1,9 @@
 {
-    "condition": "minecraft:inverted",
-    "term": {
-		"condition": "minecraft:entity_properties",
-		"entity": "this",
-		"predicate": {
-			"nbt": "{Tags:[\"modifying_inventory\"]}"
+	"condition": "minecraft:entity_properties",
+	"entity": "this",
+	"predicate": {
+		"minecraft:entity_tags": {
+			"none_of": ["modifying_inventory"]
 		}
 	}
 }

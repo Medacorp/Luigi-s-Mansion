@@ -8,11 +8,6 @@ execute as @e[tag=temp,limit=1] at @s positioned 0.0 0.0 0.0 run teleport @s ^ ^
 execute store result score #cosx Time run data get entity @e[tag=temp,limit=1] Pos[2] 1000
 execute as @e[tag=temp,limit=1] at @s positioned 0.001 0.0 0.0 run teleport @s ^ ^ ^-1
 execute store result score #sinx Time run data get entity @e[tag=temp,limit=1] Pos[0] 1000
-data modify entity @e[tag=temp,limit=1] Rotation[0] set from entity @e[tag=this_entity,limit=1] Rotation[0]
-execute as @e[tag=temp,limit=1] at @s positioned 0.0 0.0 0.0 run teleport @s ^ ^ ^1
-execute store result score #cosy Time run data get entity @e[tag=temp,limit=1] Pos[2] 1000
-execute as @e[tag=temp,limit=1] at @s positioned 0.001 0.0 0.0 run teleport @s ^ ^ ^-1
-execute store result score #siny Time run data get entity @e[tag=temp,limit=1] Pos[0] 1000
 execute store result entity @e[tag=temp,limit=1] Rotation[0] float 0.1 run scoreboard players get @e[tag=this_entity,limit=1] FurniturePoseZ
 execute as @e[tag=temp,limit=1] at @s positioned 0.0 0.0 0.0 run teleport @s ^ ^ ^1
 execute store result score #cosz Time run data get entity @e[tag=temp,limit=1] Pos[2] 1000
@@ -27,11 +22,8 @@ execute as @e[tag=forward_angle,tag=candle_angle,limit=1] run function luigis_ma
 execute as @e[tag=up_angle,tag=candle_angle,limit=1] run function luigis_mansion:spawn_furniture/setup/candle_flame/up
 execute as @e[tag=left_angle,tag=candle_angle,limit=1] run function luigis_mansion:spawn_furniture/setup/candle_flame/left
 scoreboard players reset #cosx
-scoreboard players reset #cosy
 scoreboard players reset #cosz
 scoreboard players reset #sinx
-scoreboard players reset #siny
 scoreboard players reset #sinz
 scoreboard players reset #furniture Time
 scoreboard players reset #furniture2 Time
-scoreboard players reset #furniture3 Time

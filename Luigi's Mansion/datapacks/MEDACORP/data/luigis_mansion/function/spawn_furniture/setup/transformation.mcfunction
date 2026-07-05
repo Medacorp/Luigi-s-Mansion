@@ -19,7 +19,7 @@ execute as @e[tag=this_entity,limit=1] run data modify entity @s data.default_tr
 scoreboard players set @e[tag=this_entity,limit=1] FurniturePoseX 0
 scoreboard players set @e[tag=this_entity,limit=1] FurniturePoseY 0
 scoreboard players set @e[tag=this_entity,limit=1] FurniturePoseZ 0
-execute if data storage luigis_mansion:data furniture.roll store result score @e[tag=this_entity,limit=1] FurniturePoseZ run data get storage luigis_mansion:data furniture.pose 10
+execute if data storage luigis_mansion:data furniture.roll store result score @e[tag=this_entity,limit=1] FurniturePoseZ run data get storage luigis_mansion:data furniture.roll
 
 execute as @e[tag=this_entity,tag=requires_hitbox,scores={FurnitureSizeRadius=1..},limit=1] run scoreboard players operation #furniture FurnitureSizeRadius = @s FurnitureSizeRadius
 execute as @e[tag=this_entity,tag=requires_hitbox,scores={FurnitureSizeRadius=1..},limit=1] run scoreboard players operation #furniture FurnitureSizeRadius *= #2 Constants

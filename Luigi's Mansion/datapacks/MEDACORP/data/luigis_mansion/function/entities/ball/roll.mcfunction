@@ -1,4 +1,4 @@
-scoreboard players add @s AnimationRotationX 10
+scoreboard players add @s AnimationRotationX 100
 data modify storage luigis_mansion:data rotation set value [0.0f,0.0f,0.0f,1.0f]
 execute in minecraft:overworld run summon minecraft:marker 0.0 0.0 0.0 {Tags:["temp","remove_from_existence"]}
 execute store result entity @e[tag=temp,limit=1] Rotation[0] float 0.05 run scoreboard players get @s AnimationRotationX

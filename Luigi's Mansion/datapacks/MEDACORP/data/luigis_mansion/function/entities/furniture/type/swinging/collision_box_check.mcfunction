@@ -38,7 +38,7 @@ scoreboard players operation #temp PositionX += #temp PositionY
 scoreboard players operation #temp PositionX += #temp PositionZ
 scoreboard players operation #temp PositionY = #size Steps
 scoreboard players operation #temp PositionY *= #size Steps
-scoreboard players operation #temp PositionX = #temp PositionY
+scoreboard players operation #temp PositionX -= #temp PositionY
 execute if score #temp PositionX matches ..1 run tag @s add hit_by_swing
 
 scoreboard players reset #temp PositionX

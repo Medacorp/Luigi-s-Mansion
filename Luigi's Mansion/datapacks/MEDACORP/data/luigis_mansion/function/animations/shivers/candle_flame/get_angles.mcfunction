@@ -4,19 +4,16 @@ execute in minecraft:overworld run summon minecraft:marker 0.0 0.0 0.0 {Tags:["t
 execute store result entity @e[tag=temp,limit=1] Rotation[0] float 0.1 run scoreboard players get @s AnimationRotationX
 execute as @e[tag=temp,limit=1] at @s positioned 0.0 0.0 0.0 run teleport @s ^ ^ ^1
 execute store result score #cosx Time run data get entity @e[tag=temp,limit=1] Pos[2] 1000
-execute store result entity @e[tag=temp,limit=1] Rotation[0] float 0.1 run scoreboard players get @s AnimationRotationY
-execute as @e[tag=temp,limit=1] at @s positioned 0.0 0.0 0.0 run teleport @s ^ ^ ^1
-execute store result score #cosy Time run data get entity @e[tag=temp,limit=1] Pos[2] 1000
-execute store result entity @e[tag=temp,limit=1] Rotation[0] float 0.1 run scoreboard players get @s AnimationRotationZ
-execute as @e[tag=temp,limit=1] at @s positioned 0.0 0.0 0.0 run teleport @s ^ ^ ^1
-execute store result score #cosz Time run data get entity @e[tag=temp,limit=1] Pos[2] 1000
-execute store result entity @e[tag=temp,limit=1] Rotation[0] float 0.1 run scoreboard players get @s AnimationRotationX
 execute as @e[tag=temp,limit=1] at @s positioned 0.001 0.0 0.0 run teleport @s ^ ^ ^-1
 execute store result score #sinx Time run data get entity @e[tag=temp,limit=1] Pos[0] 1000
 execute store result entity @e[tag=temp,limit=1] Rotation[0] float 0.1 run scoreboard players get @s AnimationRotationY
+execute as @e[tag=temp,limit=1] at @s positioned 0.0 0.0 0.0 run teleport @s ^ ^ ^1
+execute store result score #cosy Time run data get entity @e[tag=temp,limit=1] Pos[2] 1000
 execute as @e[tag=temp,limit=1] at @s positioned 0.001 0.0 0.0 run teleport @s ^ ^ ^-1
 execute store result score #siny Time run data get entity @e[tag=temp,limit=1] Pos[0] 1000
 execute store result entity @e[tag=temp,limit=1] Rotation[0] float 0.1 run scoreboard players get @s AnimationRotationZ
+execute as @e[tag=temp,limit=1] at @s positioned 0.0 0.0 0.0 run teleport @s ^ ^ ^1
+execute store result score #cosz Time run data get entity @e[tag=temp,limit=1] Pos[2] 1000
 execute as @e[tag=temp,limit=1] at @s positioned 0.001 0.0 0.0 run teleport @s ^ ^ ^-1
 execute store result score #sinz Time run data get entity @e[tag=temp,limit=1] Pos[0] 1000
 kill @e[tag=temp]

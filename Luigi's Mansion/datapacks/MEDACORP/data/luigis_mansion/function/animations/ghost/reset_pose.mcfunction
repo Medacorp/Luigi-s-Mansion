@@ -3,6 +3,7 @@ scoreboard players set @s AnimationRotationX 0
 scoreboard players set @s AnimationRotationY 0
 scoreboard players set @s AnimationRotationZ 0
 scoreboard players set @s[tag=flipped_gravity] AnimationRotationZ -1800
+tag @s[tag=flipped_gravity] add was_flipped
 data modify entity @s transformation.scale set value [1.0f,1.0f,1.0f]
 data modify entity @s item merge from entity @s item.components."minecraft:custom_data".model_data.default
 execute if data storage luigis_mansion:data ghost{tags:["big"]} run data modify entity @s item merge from entity @s item.components."minecraft:custom_data".model_data.big

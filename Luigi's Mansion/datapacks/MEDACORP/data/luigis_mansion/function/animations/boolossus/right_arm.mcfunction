@@ -1,5 +1,33 @@
-teleport @s[tag=!flipped_gravity] ^-0.3 ^1.45 ^
-teleport @s[tag=flipped_gravity] ^0.3 ^1.35 ^
+teleport @s[tag=!flipped_gravity] ^-1.92 ^1.45 ^
+teleport @s[tag=flipped_gravity] ^1.92 ^1.35 ^
+execute if data storage luigis_mansion:data ghost{size:1} run teleport @s[tag=!flipped_gravity] ^-0.3 ^1.45 ^
+execute if data storage luigis_mansion:data ghost{size:1} run teleport @s[tag=flipped_gravity] ^0.3 ^1.35 ^
+execute if data storage luigis_mansion:data ghost{size:2} run teleport @s[tag=!flipped_gravity] ^-0.582864 ^1.45 ^
+execute if data storage luigis_mansion:data ghost{size:2} run teleport @s[tag=flipped_gravity] ^0.582864 ^1.35 ^
+execute if data storage luigis_mansion:data ghost{size:3} run teleport @s[tag=!flipped_gravity] ^-0.685728 ^1.45 ^
+execute if data storage luigis_mansion:data ghost{size:3} run teleport @s[tag=flipped_gravity] ^0.685728 ^1.35 ^
+execute if data storage luigis_mansion:data ghost{size:4} run teleport @s[tag=!flipped_gravity] ^-0.788592 ^1.45 ^
+execute if data storage luigis_mansion:data ghost{size:4} run teleport @s[tag=flipped_gravity] ^0.788592 ^1.35 ^
+execute if data storage luigis_mansion:data ghost{size:5} run teleport @s[tag=!flipped_gravity] ^-0.891408 ^1.45 ^
+execute if data storage luigis_mansion:data ghost{size:5} run teleport @s[tag=flipped_gravity] ^0.891408 ^1.35 ^
+execute if data storage luigis_mansion:data ghost{size:6} run teleport @s[tag=!flipped_gravity] ^-0.994272 ^1.45 ^
+execute if data storage luigis_mansion:data ghost{size:6} run teleport @s[tag=flipped_gravity] ^0.994272 ^1.35 ^
+execute if data storage luigis_mansion:data ghost{size:7} run teleport @s[tag=!flipped_gravity] ^-1.097136 ^1.45 ^
+execute if data storage luigis_mansion:data ghost{size:7} run teleport @s[tag=flipped_gravity] ^1.097136 ^1.35 ^
+execute if data storage luigis_mansion:data ghost{size:8} run teleport @s[tag=!flipped_gravity] ^-1.2 ^1.45 ^
+execute if data storage luigis_mansion:data ghost{size:8} run teleport @s[tag=flipped_gravity] ^1.2 ^1.35 ^
+execute if data storage luigis_mansion:data ghost{size:9} run teleport @s[tag=!flipped_gravity] ^-1.302864 ^1.45 ^
+execute if data storage luigis_mansion:data ghost{size:9} run teleport @s[tag=flipped_gravity] ^1.302864 ^1.35 ^
+execute if data storage luigis_mansion:data ghost{size:10} run teleport @s[tag=!flipped_gravity] ^-1.405728 ^1.45 ^
+execute if data storage luigis_mansion:data ghost{size:10} run teleport @s[tag=flipped_gravity] ^1.405728 ^1.35 ^
+execute if data storage luigis_mansion:data ghost{size:11} run teleport @s[tag=!flipped_gravity] ^-1.508592 ^1.45 ^
+execute if data storage luigis_mansion:data ghost{size:11} run teleport @s[tag=flipped_gravity] ^1.508592 ^1.35 ^
+execute if data storage luigis_mansion:data ghost{size:12} run teleport @s[tag=!flipped_gravity] ^-1.611408 ^1.45 ^
+execute if data storage luigis_mansion:data ghost{size:12} run teleport @s[tag=flipped_gravity] ^1.611408 ^1.35 ^
+execute if data storage luigis_mansion:data ghost{size:13} run teleport @s[tag=!flipped_gravity] ^-1.714272 ^1.45 ^
+execute if data storage luigis_mansion:data ghost{size:13} run teleport @s[tag=flipped_gravity] ^1.714272 ^1.35 ^
+execute if data storage luigis_mansion:data ghost{size:14} run teleport @s[tag=!flipped_gravity] ^-1.817136 ^1.45 ^
+execute if data storage luigis_mansion:data ghost{size:14} run teleport @s[tag=flipped_gravity] ^1.817136 ^1.35 ^
 
 data modify entity @s[scores={AnimationProgress=0}] transformation.scale set value [6.4f,6.4f,6.4f]
 execute if data storage luigis_mansion:data ghost{size:1} run data modify entity @s[scores={AnimationProgress=0}] transformation.scale set value [1.0f,1.0f,1.0f]

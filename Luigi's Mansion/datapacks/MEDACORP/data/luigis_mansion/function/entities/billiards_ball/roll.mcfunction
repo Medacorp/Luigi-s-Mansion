@@ -1,5 +1,5 @@
-scoreboard players add @s[tag=!can_spit_2,tag=vacuumable] AnimationRotationX 10
-scoreboard players add @s[tag=move] AnimationRotationX 20
+scoreboard players add @s[tag=!can_spit_2,tag=vacuumable] AnimationRotationX 100
+scoreboard players add @s[tag=move] AnimationRotationX 200
 data modify storage luigis_mansion:data rotation set value [0.0f,0.0f,0.0f,1.0f]
 execute in minecraft:overworld run summon minecraft:marker 0.0 0.0 0.0 {Tags:["temp","remove_from_existence"]}
 execute store result entity @e[tag=temp,limit=1] Rotation[0] float 0.05 run scoreboard players get @s AnimationRotationX

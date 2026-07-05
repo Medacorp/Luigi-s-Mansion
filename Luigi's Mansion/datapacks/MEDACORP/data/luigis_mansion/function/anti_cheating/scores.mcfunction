@@ -268,12 +268,16 @@ scoreboard players set #8 Constants 8
 scoreboard players set #10 Constants 10
 # Tick count to time
 scoreboard players set #20 Constants 20
-# Ghost angle
+# Table mounted clock, table mounted clock and music box
+scoreboard players set #30 Constants 30
+# Ghost angle, table mounted clocks
 scoreboard players set #50 Constants 50
 # Tick count to time
 scoreboard players set #60 Constants 60
 # Reflections, damage multipliers, ghost HP, 3rd person movement
 scoreboard players set #100 Constants 100
+# table mounted clock and music box
+scoreboard players set #200 Constants 200
 # Color generation
 scoreboard players set #256 Constants 256
 # Falling chandelier

@@ -1,1 +1,1 @@
-{"model":{"type":"minecraft:condition","property":"minecraft:custom_model_data","index":0,"on_false":{"type":"minecraft:model","model":"luigis_mansion:furniture/harp/right_played"},"on_true":{"type":"minecraft:model","model":"luigis_mansion:furniture/harp/left_played"}}}
+{"model":{"type":"minecraft:condition","property":"minecraft:custom_model_data","index":0,"on_false":{"type":"minecraft:model","model":"luigis_mansion:furniture/xylophone/right_played"},"on_true":{"type":"minecraft:model","model":"luigis_mansion:furniture/xylophone/left_played"}}}

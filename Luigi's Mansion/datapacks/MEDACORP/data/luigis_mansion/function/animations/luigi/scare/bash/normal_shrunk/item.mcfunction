@@ -2,6 +2,7 @@ data modify entity @s item set value {id:"minecraft:leather_chestplate",count:1,
 data modify entity @s item.components."minecraft:custom_model_data".colors[0] set from storage luigis_mansion:data luigi.animation.hat_model.color
 execute if data storage luigis_mansion:data luigi.animation.hat_model{variant:1b} run data modify entity @s item.components."minecraft:custom_model_data".flags[1] set value 1b
 data remove entity @s[scores={AnimationProgress=20..}] item
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX 0
 teleport @s[scores={AnimationProgress=1}] ~ ~0.1 ~ ~ ~
 teleport @s[scores={AnimationProgress=2}] ~ ~0.2 ~ ~ ~
 teleport @s[scores={AnimationProgress=3}] ~ ~0.3 ~ ~ ~

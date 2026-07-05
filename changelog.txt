@@ -1,4 +1,5 @@
 v?:
+* Updated to 26.2
 * Added Skipable Dialogs add-on, it grants the skip option on all dialogs; that's it
 * Added proper training door, one without the sign is now named green_planks
 * Added Luigi animations:
@@ -61,14 +62,21 @@ v?:
 ** Sitting Room
 ** Guest Room
 * Fixed entities disappeared near the bottom of the screen
+* Fixed catching multiple ghosts at once was impossible due to oversight of v3.5 changes
 * Fixed ceiling ghosts' none attack didn't cancel after a certain distance; I didn't know about this behavior until now
 ** Rather than using their broken "wait" animation like in the original, I opted for the finished-but-unused "idle" one
 * Fixed bowling ghosts' idling used the wrong animation; the wait animation has been removed
 * Fixed bowling ghosts and ceiling ghosts' didn't move at all when idle; again, didn't know about this behavior until now, they creep up or away every so slowly
+* Fixed Shivers didn't react to fire if turned visible with commands; his reaction is now triggered on being in fire and having no timer progress yet
 * Fixed a shelf in the kitchen failed to spawn if the 3DS Remake add-on was installed
 * Fixed some spawned entities were spawned belonging to the exterior, not the room they were in, causing no interactions
 * Fixed Nana's longer wool paths were a little broken
+* Fixed Boolossus' collision hitbox was the same regardless of their size
+* Fixed Boolossus' bouncing height now matches visuals
 * Fixed breaker room reflection showed some incorrect blocks
+* Fixed clockwork room clocks barely made sounds
+* Fixed Clockwork Soldiers were forever stuck in complain animation until vacuumed
+* Fixed Clockwork Soldiers were unable to actually hit you
 * Fixed Bowser and Mario had no hitbox
 * Fixed installing the 3DS Remake didn't grant the water plant task if you had obtained money from watering a plant
 * Removed underground lab's "Sorry to bother you" and "The Ghost Portrificationizer Room" options

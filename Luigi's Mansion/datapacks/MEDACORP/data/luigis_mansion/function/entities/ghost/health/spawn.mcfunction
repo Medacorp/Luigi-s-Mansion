@@ -1,4 +1,4 @@
-$execute positioned ~ ~0.2 ~ run summon minecraft:text_display ~ ~$(up) ~ {CustomName:{type:"translatable",translate:"luigis_mansion:entity.ghost_heart"},text:{type:"text",text:"\u221d",color:"light_purple"},brightness:{block:15,sky:15},Tags:["health_display","this_health_display"]}
+$execute positioned ~ ~-0.6 ~ run summon minecraft:text_display ~ ~$(up) ~ {CustomName:{type:"translatable",translate:"luigis_mansion:entity.ghost_heart"},text:{type:"text",text:"\u221d",color:"light_purple"},brightness:{block:15,sky:15},billboard:"center",Tags:["health_display","this_health_display"]}
 scoreboard players operation @e[tag=this_health_display,limit=1] Room = #temp Room
 scoreboard players operation @e[tag=this_health_display,limit=1] GhostNr = @s GhostNr
 scoreboard players add #temp Health 98

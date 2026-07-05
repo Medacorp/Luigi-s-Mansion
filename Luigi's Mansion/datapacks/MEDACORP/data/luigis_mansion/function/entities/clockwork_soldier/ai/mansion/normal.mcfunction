@@ -20,8 +20,9 @@ tag @s remove reached_target
 data modify entity @s[tag=was_activated,tag=!attack,tag=!complain,scores={WaitTime=0,TargetTask=0}] data.target_pos set from entity @e[tag=target,sort=nearest,limit=1] Pos
 data modify entity @s[tag=was_activated,tag=!attack,tag=!complain,scores={WaitTime=0,TargetTask=0}] data.target_pos[1] set from entity @s Pos[1]
 scoreboard players set @s[tag=was_activated,tag=!attack,tag=!complain,scores={WaitTime=0}] TargetTask 3
-scoreboard players set @s[scores={ActionTime=3},tag=complain] VulnerableTime 60
+scoreboard players set @s[scores={VulnerableTime=0},tag=complain] VulnerableTime 60
 tag @s[scores={VulnerableTime=1}] add vanish
+scoreboard players set @s[scores={VulnerableTime=1}] ActionTime 0
 scoreboard players remove @s[tag=activated] WaitTime 1
 
 execute at @s[tag=!no_wind] rotated ~ 0 positioned ^ ^ ^-0.5 run teleport @e[tag=this_wind,limit=1] ~ ~1.55 ~ ~ ~

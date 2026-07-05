@@ -9,8 +9,8 @@ execute as @e[scores={Room=32},tag=!model_piece,tag=!no_reflection,tag=!reflecti
 
 execute as @a[scores={Room=32}] run function luigis_mansion:room/hidden/rec_room/tick_per_player
 
-execute at @e[tag=swinging_harms,scores={Room=32,FurnitureVacuum=0}] align y run fill ~ ~-4 ~ ~ ~-2 ~ minecraft:light_gray_stained_glass
-execute as @e[tag=swinging_harms,scores={Room=32}] unless entity @s[scores={FurnitureVacuum=0}] at @s align y run fill ~ ~-4 ~ ~ ~-2 ~ minecraft:air
+execute at @e[tag=swinging_harms,scores={Room=32,FurnitureVacuum=0}] align y run fill ~ ~-6 ~ ~ ~-4 ~ minecraft:light_gray_stained_glass
+execute as @e[tag=swinging_harms,scores={Room=32}] unless entity @s[scores={FurnitureVacuum=0}] at @s align y run fill ~ ~-6 ~ ~ ~-4 ~ minecraft:air
 
 #todelete - old furniture
 function #luigis_mansion:room/hidden/rec_room/interactions/room

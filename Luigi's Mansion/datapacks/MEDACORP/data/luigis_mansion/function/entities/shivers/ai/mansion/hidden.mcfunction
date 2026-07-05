@@ -7,9 +7,8 @@ scoreboard players set @s[x=737,y=8,z=-58,dx=14,dy=9,dz=20] Room 23
 execute if entity @s[tag=!visible,nbt=!{data:{path:{}}},tag=!reached_target] run function luigis_mansion:entities/ghost/set_specific_path {index:0}
 execute if entity @s[tag=visible,nbt=!{data:{path:{}}},tag=!reached_target] unless entity @s[scores={ActionTime=1..}] run function luigis_mansion:entities/ghost/set_specific_path {index:2}
 scoreboard players add @s[scores={ActionTime=1..}] ActionTime 1
-scoreboard players set @s[tag=in_fire,tag=!visible] ActionTime 1
-tag @s[tag=in_fire] add visible
-tag @s[tag=visible] add burning
+execute unless entity @s[scores={ActionTime=1..}] run scoreboard players set @s[tag=in_fire] ActionTime 1
+tag @s[scores={ActionTime=1}] add visible
 scoreboard players set @s[scores={ActionTime=1}] TargetTask 0
 execute if entity @s[scores={ActionTime=1}] as @a[tag=same_room] run function luigis_mansion:other/music/set/secret_revealed
 execute if entity @s[scores={ActionTime=1}] unless data storage luigis_mansion:data current_state.current_data.technical_data{shivers_spoke:1b} run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.shivers",color:"green"},{type:"translatable",translate:"luigis_mansion:message.shivers.fire"}]}
@@ -46,4 +45,5 @@ scoreboard players set @s[scores={Sound=0},nbt={data:{animation:{namespace:"luig
 execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} run tag @s add remove_from_existence
 execute if data storage luigis_mansion:data current_state.current_data.rooms.butlers_room{cleared:1b} run tag @s add remove_from_existence
 
+tag @s[scores={ActionTime=1..}] add burning
 execute at @s[tag=visible] if entity @e[tag=same_room,tag=luigi,distance=..1.6,limit=1] run function luigis_mansion:entities/shivers/collide

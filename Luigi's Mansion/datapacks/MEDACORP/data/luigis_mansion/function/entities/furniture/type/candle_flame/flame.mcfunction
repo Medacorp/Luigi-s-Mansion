@@ -14,11 +14,11 @@ tag @s[tag=lit,tag=in_water] remove large_flame
 scoreboard players reset @s[tag=lit,tag=in_water] ActionTime
 execute if entity @s[tag=in_water] run function luigis_mansion:entities/furntiure/type/candle_flame/extinguish
 
-execute if entity @s[tag=!lit,tag=was_lit] run data modify entity @s equipment.head.components."minecraft:custom_model_data".floats[0] set value 0f
-execute if entity @s[tag=lit,tag=!purple,tag=!large_flame] unless entity @s[tag=was_lit,tag=!was_purple,tag=!was_large] run data modify entity @s equipment.head.components."minecraft:custom_model_data".floats[0] set value 1f
-execute if entity @s[tag=lit,tag=purple,tag=!large_flame] unless entity @s[tag=was_lit,tag=was_purple,tag=!was_large] run data modify entity @s equipment.head.components."minecraft:custom_model_data".floats[0] set value 2f
-execute if entity @s[tag=!purple,tag=large_flame] run data modify entity @s equipment.head.components."minecraft:custom_model_data".floats[0] set value 3f
-execute if entity @s[tag=purple,tag=large_flame] run data modify entity @s equipment.head.components."minecraft:custom_model_data".floats[0] set value 4f
+execute if entity @s[tag=!lit,tag=was_lit] run data modify entity @s item.components."minecraft:custom_model_data".floats[0] set value 0f
+execute if entity @s[tag=lit,tag=!purple,tag=!large_flame] unless entity @s[tag=was_lit,tag=!was_purple,tag=!was_large] run data modify entity @s item.components."minecraft:custom_model_data".floats[0] set value 1f
+execute if entity @s[tag=lit,tag=purple,tag=!large_flame] unless entity @s[tag=was_lit,tag=was_purple,tag=!was_large] run data modify entity @s item.components."minecraft:custom_model_data".floats[0] set value 2f
+execute if entity @s[tag=!purple,tag=large_flame] run data modify entity @s item.components."minecraft:custom_model_data".floats[0] set value 3f
+execute if entity @s[tag=purple,tag=large_flame] run data modify entity @s item.components."minecraft:custom_model_data".floats[0] set value 4f
 tag @s remove was_lit
 tag @s remove was_purple
 tag @s[tag=lit] add was_lit
