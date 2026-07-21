@@ -53,7 +53,9 @@ scoreboard players operation #temp Time /= #1000 Constants
 scoreboard players operation #temp Time *= @s AnimationRotationSinZ
 scoreboard players operation #temp Time /= #1000 Constants
 execute store result storage luigis_mansion:data rotation[3] float 0.001 run scoreboard players operation #w Time += #temp Time
-data modify entity @s transformation.left_rotation set from storage luigis_mansion:data rotation
+data modify entity @s[tag=!2d] transformation.left_rotation set from storage luigis_mansion:data rotation
+data modify entity @s[tag=2d] transformation.right_rotation set from storage luigis_mansion:data rotation
+data modify entity @s[tag=2d] transformation.scale[2] set value 0.01f
 data remove storage luigis_mansion:data rotation
 scoreboard players reset #temp Time
 scoreboard players reset #w Time

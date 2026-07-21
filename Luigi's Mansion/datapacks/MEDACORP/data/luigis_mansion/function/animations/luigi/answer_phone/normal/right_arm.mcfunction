@@ -1,4 +1,5 @@
 scoreboard players add @s AnimationProgress 1
+data modify entity @s[tag=held_item,scores={AnimationProgress=11..}] item set value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:furniture/table_mounted_telephone","minecraft:custom_model_data":{flags:[0b],floats:[5f]},"minecraft:custom_data":{mirror:{components:{"minecraft:custom_model_data":{flags:[1b]}}}}}}
 scoreboard players set @s[scores={AnimationProgress=21}] AnimationRotationX -1500
 scoreboard players set @s[scores={AnimationProgress=21}] AnimationRotationY 100
 execute at @s rotated ~ 0 run teleport @s[scores={AnimationProgress=17..},tag=!shrunk] ^ ^-0.2 ^-0.2

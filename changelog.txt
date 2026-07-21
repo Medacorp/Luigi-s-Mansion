@@ -7,11 +7,17 @@ v?:
 ** Knockback/fall
 ** Knockback/large wall
 ** Scanning
+* Added approach furniture type, it requires interacting when the 3DS Remake is installed
 * Added the following furniture model:
+** Breaker switches
+** Dust
 ** Plaques
 ** RIP signs
 ** (E3 Demo) Saxophone (unused; can be seen in a prerelease conservatory screenshot)
+** Telescope
 ** Table mounted knitting bowls
+** Table mounted telephones
+*** Luigi's answer phone animation now holds the horn
 * Added 3DS Remake task clear sound
 * Added bowser's damage and loot to mansion data's ghost list
 * Changed luigi's knockback/large and game boy horror animations to more accurately reflect how it looks in the original
@@ -21,6 +27,7 @@ v?:
 * Changed Boo pathfinding to be less cardinal direction-based
 * Changed Mr. Luggs to behave more accurately to the original game
 * Changed Graveyard Mr. Bones' spawning logic to match original game
+* Changed painting Mario and Bowser to be 2D
 * Changed Chauncey in the Nursery in 3DS Remake to not count progress back down when stopping the rocking horse, matching the remake
 * Changed score display to not list unobtained money types at all in 3DS Remake, matching the remake
 * Changed a bunch of furniture variation names from left and right to be more clear which is which
@@ -63,6 +70,7 @@ v?:
 ** Guest Room
 * Fixed entities disappeared near the bottom of the screen
 * Fixed catching multiple ghosts at once was impossible due to oversight of v3.5 changes
+* Fixed interacting with an exactly 1 block tall furniture would not force the low-furniture search behavior
 * Fixed ceiling ghosts' none attack didn't cancel after a certain distance; I didn't know about this behavior until now
 ** Rather than using their broken "wait" animation like in the original, I opted for the finished-but-unused "idle" one
 * Fixed bowling ghosts' idling used the wrong animation; the wait animation has been removed
@@ -71,6 +79,10 @@ v?:
 * Fixed a shelf in the kitchen failed to spawn if the 3DS Remake add-on was installed
 * Fixed some spawned entities were spawned belonging to the exterior, not the room they were in, causing no interactions
 * Fixed Nana's longer wool paths were a little broken
+* Fixed the twins didn't face the player during the dialog
+* Fixed Henry repeated appear animation if you got the wrong box
+* Fixed the twins didn't blockade the door
+* Fixed Henry's drifting now works properly
 * Fixed Boolossus' collision hitbox was the same regardless of their size
 * Fixed Boolossus' bouncing height now matches visuals
 * Fixed breaker room reflection showed some incorrect blocks

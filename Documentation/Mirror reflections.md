@@ -11,9 +11,7 @@ reflections:[
             value:X, //The coordinate value of the mirror.
             set_by_furniture_entity:0b //Temporary addition until all mirrors are converted the entities; whether this mirror is a furniture entity; changes the calculation slightly. #todelete - old mirror reflections
         },
-        entity_id:"<id>", //The Minecraft entity ID used to spawn the correct entity type. Only allows armor stand or item display.
         data:{ //The entity's data, this will be directly merged onto the reflection entity.
-            Pose:{}, //Armor stand pose data, head's jaw and roll will be inverted.
             transformation:{} //Item display transformation, translation x, and left/right rotation y and z will be inverted.
         },
         no_sync:{} //Field relevant to the reflection that's not directly applied to the entity.

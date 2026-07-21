@@ -109,6 +109,7 @@ scoreboard players operation #temp PositionZ *= #temp PositionZ
 scoreboard players operation #temp PositionX += #temp PositionY
 scoreboard players operation #temp PositionX += #temp PositionZ
 execute if score #temp PositionX matches ..25 run tag @s add hit
+execute if score #temp PositionX matches 17..25 run tag @s add hit_edge
 
 scoreboard players reset #cosx
 scoreboard players reset #cosy

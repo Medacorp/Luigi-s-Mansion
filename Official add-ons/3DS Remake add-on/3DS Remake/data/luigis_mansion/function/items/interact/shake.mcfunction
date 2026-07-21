@@ -28,12 +28,12 @@ tag @e[tag=hit,limit=1] remove hit
 execute as @e[tag=interact,tag=manual] positioned as @s rotated ~ 0 run teleport @s ^ ^ ^0.5
 scoreboard players operation #temp Room = @s Room
 execute if entity @s[scores={InteractionTime=..16}] run tag @e[tag=interact,tag=manual,limit=1] add sound
-execute if entity @s[scores={InteractionTime=2}] as @e[tag=interact,tag=manual,limit=1] at @s run function luigis_mansion:room/interactions
-execute if entity @s[scores={InteractionTime=7}] if data entity @s data.animation{namespace:"luigis_mansion",id:"search/hump"} as @e[tag=interact,tag=manual,limit=1] at @s run function luigis_mansion:room/interactions
-execute if entity @s[scores={InteractionTime=9}] if data entity @s data.animation{namespace:"luigis_mansion",id:"search/knock"} as @e[tag=interact,tag=manual,limit=1] at @s run function luigis_mansion:room/interactions
-execute if entity @s[scores={InteractionTime=9}] if data entity @s data.animation{namespace:"luigis_mansion",id:"search/bash"} as @e[tag=interact,tag=manual,limit=1] at @s run function luigis_mansion:room/interactions
-execute if entity @s[scores={InteractionTime=12}] if data entity @s data.animation{namespace:"luigis_mansion",id:"search/hump"} as @e[tag=interact,tag=manual,limit=1] at @s run function luigis_mansion:room/interactions
-execute if entity @s[scores={InteractionTime=17}] as @e[tag=interact,tag=manual,limit=1] at @s run function luigis_mansion:room/interactions
+execute if entity @s[scores={InteractionTime=2}] unless data entity @s data.search_furniture as @e[tag=interact,tag=manual,limit=1] at @s run function luigis_mansion:room/interactions
+execute if entity @s[scores={InteractionTime=7}] unless data entity @s data.search_furniture if data entity @s data.animation{namespace:"luigis_mansion",id:"search/hump"} as @e[tag=interact,tag=manual,limit=1] at @s run function luigis_mansion:room/interactions
+execute if entity @s[scores={InteractionTime=9}] unless data entity @s data.search_furniture if data entity @s data.animation{namespace:"luigis_mansion",id:"search/knock"} as @e[tag=interact,tag=manual,limit=1] at @s run function luigis_mansion:room/interactions
+execute if entity @s[scores={InteractionTime=9}] unless data entity @s data.search_furniture if data entity @s data.animation{namespace:"luigis_mansion",id:"search/bash"} as @e[tag=interact,tag=manual,limit=1] at @s run function luigis_mansion:room/interactions
+execute if entity @s[scores={InteractionTime=12}] unless data entity @s data.search_furniture if data entity @s data.animation{namespace:"luigis_mansion",id:"search/hump"} as @e[tag=interact,tag=manual,limit=1] at @s run function luigis_mansion:room/interactions
+execute if entity @s[scores={InteractionTime=17}] unless data entity @s data.search_furniture as @e[tag=interact,tag=manual,limit=1] at @s run function luigis_mansion:room/interactions
 scoreboard players reset #temp Room
 #/todelete
 scoreboard players reset #temp ID

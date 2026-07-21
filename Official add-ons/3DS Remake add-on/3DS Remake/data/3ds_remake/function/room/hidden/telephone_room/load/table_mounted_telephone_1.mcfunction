@@ -1,0 +1,3 @@
+data modify storage luigis_mansion:data furniture set value {room:56,tags:["telephone_2"],no_dust:1b,search_command:"execute as @e[tag=searcher,tag=luigi,limit=1] run function 3ds_remake:room/hidden/telephone_room/answer_phone_1"}
+execute if data storage luigis_mansion:data current_state.current_data{blackout:1b,technical_data:{telephone_1:1b}} unless data storage luigis_mansion:data current_state.current_data.technical_data{telephone_2:1b} run data modify storage luigis_mansion:data furniture.tags append value "can_approach"
+execute positioned 750 29 27 rotated -90 0 run function luigis_mansion:spawn_furniture/table_mounted_telephone

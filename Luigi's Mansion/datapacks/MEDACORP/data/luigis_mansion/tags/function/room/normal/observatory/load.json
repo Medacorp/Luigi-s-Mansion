@@ -5,6 +5,7 @@
         "luigis_mansion:room/normal/observatory/load/path",
         "luigis_mansion:room/normal/observatory/load/lights",
         "luigis_mansion:room/normal/observatory/load/astral_hall_door",
-        "luigis_mansion:room/normal/observatory/load/room_clear_loot_dropper"
+        "luigis_mansion:room/normal/observatory/load/room_clear_loot_dropper",
+        "luigis_mansion:room/normal/observatory/load/telescope"
     ]
 }

@@ -8,7 +8,6 @@ execute as @e[tag=hide_option] at @s run function luigis_mansion:entities/hidden
 tag @s remove me
 execute if entity @s[tag=!trap_swap] at @e[tag=hide_option,limit=1,sort=random] run teleport @s ~ ~ ~
 execute at @s if entity @e[distance=..0.1,tag=hide_option,limit=1] run tag @s add caught_by_boo_radar
-execute at @s if entity @e[tag=hide_option,tag=furniture,distance=..0.1,limit=1] run teleport @s ~ ~1.4 ~
 execute at @s[tag=caught_by_boo_radar,tag=can_play_sound] run playsound luigis_mansion:entity.boo.hide hostile @a[tag=same_room] ~ ~ ~ 1
 scoreboard players set @s[tag=caught_by_boo_radar] SpawnTime 600
 #todelete - old furniture

@@ -10,8 +10,11 @@ execute if score #dialog Dialog matches 30.. as @a[tag=same_room,tag=dialog_menu
 
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
+tag @e[tag=telephone_3,tag=same_room,limit=1] remove freeze_animation
+tag @e[tag=telephone_3,tag=same_room,limit=1] remove no_ai
 execute if score #dialog Dialog matches 1..29 as @e[tag=luigi,tag=same_room,tag=!phone_caller] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 1..29 as @e[tag=phone_caller,limit=1] run function luigis_mansion:entities/luigi/animation/set/answer_phone
+execute if score #dialog Dialog matches 1..29 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @e[tag=phone_caller,limit=1]",teleport:"^ ^0.5 ^-3"}
 execute if score #dialog Dialog matches 20 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.unknown",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.uncle_grimmly.1"}]}
 
 execute if score #dialog Dialog matches 22 if entity @a[tag=next_dialog_line,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.oydohroh
@@ -55,5 +58,6 @@ execute if score #dialog Dialog matches 29 if entity @a[tag=same_room,tag=next_d
 execute if score #dialog Dialog matches 30 as @a[tag=same_room] at @s run playsound luigis_mansion:entity.ghost.laugh hostile @s ~ ~ ~ 3
 execute if score #dialog Dialog matches 30 run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {telephone_3:1b}
 execute if score #dialog Dialog matches 30 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
+execute if score #dialog Dialog matches 30 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
 execute if score #dialog Dialog matches 30 run scoreboard players set #dialog Dialog -1
 tag @e[tag=phone_caller,limit=1] remove phone_caller

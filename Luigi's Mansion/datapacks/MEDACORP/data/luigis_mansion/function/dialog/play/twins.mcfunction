@@ -17,6 +17,9 @@ tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"henry"}}}
 tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"orville"}}},limit=1] remove freeze_animation
 tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"henry"}}},limit=1] add visible
 tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"orville"}}},limit=1] add visible
+execute if score #dialog Dialog matches 1 as @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"henry"}}},tag=same_room,limit=1] at @s facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute if score #dialog Dialog matches 1 as @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"orville"}}},tag=same_room,limit=1] at @s facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute if score #dialog Dialog matches 1 as @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] run function luigis_mansion:entities/luigi/move/execute {execute:"at @s facing entity @e[nbt={data:{entity:{namespace:'luigis_mansion',id:'orville'}}},tag=same_room,limit=1] feet",teleport:"~ ~ ~ ~ 0"}
 execute if score #dialog Dialog matches 1 run data modify entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"henry"}}},limit=1] data.animation set value {namespace:"luigis_mansion",id:"appear"}
 execute if score #dialog Dialog matches 1 run data modify entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"orville"}}},limit=1] data.animation set value {namespace:"luigis_mansion",id:"appear"}
 execute if score #dialog Dialog matches 1 at @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"henry"}}},limit=1] run playsound luigis_mansion:entity.henry.spawn hostile @a[tag=same_room] ~ ~ ~ 1
@@ -24,8 +27,8 @@ execute if score #dialog Dialog matches 1 at @e[tag=same_room,nbt={data:{entity:
 execute if score #dialog Dialog matches 1..67 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 31 as @a[tag=same_room] run function luigis_mansion:other/music/set/secret_revealed
 execute if score #dialog Dialog matches 61.. as @a[tag=same_room] run function luigis_mansion:other/music/set/talking_ghosts
-execute if score #dialog Dialog matches 61..67 run data remove entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"henry"}}},limit=1] data.animation
-execute if score #dialog Dialog matches 61..67 run data remove entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"orville"}}},limit=1] data.animation
+execute if score #dialog Dialog matches 61.. run data remove entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"henry"}}},limit=1] data.animation
+execute if score #dialog Dialog matches 61.. run data remove entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"orville"}}},limit=1] data.animation
 execute if score #dialog Dialog matches 61 if score #players Totals matches 1 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.orville",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.twins.1"}]}
 execute if score #dialog Dialog matches 61 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.orville",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.twins.1.more"}]}
 

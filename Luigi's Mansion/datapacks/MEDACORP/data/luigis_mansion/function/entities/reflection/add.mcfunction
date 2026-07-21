@@ -11,6 +11,7 @@ tag @s remove mirror_set_by_furniture_entity
 data modify storage luigis_mansion:data reflections[-1].no_sync.Pos set from entity @s Pos
 data modify storage luigis_mansion:data reflections[-1].no_sync.Rotation set from entity @s Rotation
 data modify storage luigis_mansion:data reflections[-1].no_sync.tags set from entity @s Tags
+data modify storage luigis_mansion:data reflections[-1].data.item_display set from entity @s item_display
 data modify storage luigis_mansion:data reflections[-1].data.item set from entity @s item
 data modify storage luigis_mansion:data reflections[-1].data.item merge from storage luigis_mansion:data reflections[-1].data.item.components."minecraft:custom_data".mirror
 data modify storage luigis_mansion:data reflections[-1].data.transformation set from entity @s transformation

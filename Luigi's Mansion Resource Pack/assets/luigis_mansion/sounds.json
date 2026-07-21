@@ -8978,6 +8978,15 @@
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.boo_hatch"
     },
+    "furniture.breaker_switch": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/breaker_switch",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.ambience.room_shake"
+    },
     "furniture.button.press": {
         "sounds": [
             {
@@ -9253,14 +9262,68 @@
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.search.open"
     },
-    "furniture.dust": {
+    "furniture.dust.fly": {
         "sounds": [
             {
-                "name": "luigis_mansion:furniture/dust",
+                "name": "luigis_mansion:furniture/dust/fly",
                 "stream": false
             }
         ],
-        "subtitle": "luigis_mansion:subtitles.furniture.dust"
+        "subtitle": "luigis_mansion:subtitles.furniture.dust.fly"
+    },
+    "furniture.dust.lower_1": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/dust/lower_1",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.dust.lower"
+    },
+    "furniture.dust.lower_2": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/dust/lower_2",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.dust.lower"
+    },
+    "furniture.dust.lower_3": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/dust/lower_3",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.dust.lower"
+    },
+    "furniture.dust.lower_4": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/dust/lower_4",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.dust.lower"
+    },
+    "furniture.dust.lower_5": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/dust/lower_5",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.dust.lower"
+    },
+    "furniture.dust.lower_6": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/dust/lower_6",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.dust.lower"
     },
     "furniture.fan": {
         "sounds": [
@@ -9683,6 +9746,24 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.search.open"
+    },
+    "furniture.telephone.pick_up": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/telephone/pick_up",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.telephone.pick_up"
+    },
+    "furniture.telephone.put_down": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/telephone/put_down",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.telephone.put_down"
     },
     "furniture.telephone.ring": {
         "sounds": [

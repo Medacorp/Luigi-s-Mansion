@@ -1,4 +1,5 @@
 scoreboard players add @s AnimationProgress 1
+tag @s add 2d
 scoreboard players add @s[scores={AnimationProgress=1..5}] AnimationRotationX 10
 scoreboard players remove @s[scores={AnimationProgress=6..10}] AnimationRotationX 10
 scoreboard players set @s[scores={AnimationProgress=10}] AnimationProgress 0

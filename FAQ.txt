@@ -20,7 +20,8 @@ A. Those will be converted eventually, but it takes time to model all those. The
    3. It has candle flames or incense flames
    4. It is a curtain or elemental source
    5. It contains a Mario item
-   6. A very similar piece of furniture was converted, and it was not much work to make the model for this as well.
+   6. Searching this furniture triggers non-ghost spawning events required to progress in the room
+   7. A very similar piece of furniture was converted, and it was not much work to make the model for this as well.
 
 Q. How do I scan furniture?
 A. 1. Use the Game Boy Horror, and choose the Scan Furniture option.
@@ -51,6 +52,9 @@ A. Go past every room and see if the Game Boy Horror reacts (remember, Boos can 
 
 Q. Why doesn't the option to select a choice in a dialog work?
 A. Gooigi cannot speak, other players will have to react instead. If you're not using gooigi, make a bug report and provide the world folder (as a zip).
+
+Q. Why doesn't anything happen when I approach the telephone/breaker switch/valve?
+A. If you got the 3DS Remake installed, interacting is required while bing in front of the approach furniture types.
 
 Q. Can I turn off the opening of the Game Boy Horror map when collecting a key?
 A. Yes, go to the map settings (via Game Boy Horror) and use the option to change it.

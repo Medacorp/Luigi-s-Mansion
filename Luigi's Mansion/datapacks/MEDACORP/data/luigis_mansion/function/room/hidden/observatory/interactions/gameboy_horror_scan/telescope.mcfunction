@@ -1,1 +1,0 @@
-execute if entity @s[x=643.5,y=21,z=96.5,distance=..1.5] if block 645 24 93 minecraft:redstone_lamp run function luigis_mansion:selection_menu/game_boy_horror/scan/dialog {namespace:"luigis_mansion",id:"scan/scanner/103"}

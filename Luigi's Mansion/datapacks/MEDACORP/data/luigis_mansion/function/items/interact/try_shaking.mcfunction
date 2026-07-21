@@ -12,12 +12,18 @@ execute as @e[tag=interact,tag=manual] at @s unless block ~ ~ ~ minecraft:air un
 #/todelete
 scoreboard players reset #interact
 execute if entity @e[tag=interact,tag=manual,tag=can_interact,limit=1] run scoreboard players set @s InteractionTime 1
-execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=can_search,tag=2,limit=1] run tag @s add 2
-execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=can_search,tag=1,limit=1] run tag @s[tag=!2] add 1
-execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=can_search,tag=3,limit=1] run tag @s[tag=!1,tag=!2] add 3
-execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=2,limit=1] run tag @s[tag=!1,tag=!3] add 2
-execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=1,limit=1] run tag @s[tag=!2,tag=!3] add 1
-execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=3,limit=1] run tag @s[tag=!1,tag=!2] add 3
+execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=can_search,tag=!low_priority,tag=2,limit=1] run tag @s add 2
+execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=can_search,tag=!low_priority,tag=1,limit=1] run tag @s[tag=!2] add 1
+execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=can_search,tag=!low_priority,tag=3,limit=1] run tag @s[tag=!1,tag=!2] add 3
+execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=can_search,tag=low_priority,tag=2,limit=1] run tag @s[tag=!1,tag=!3] add 2
+execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=can_search,tag=low_priority,tag=1,limit=1] run tag @s[tag=!2,tag=!3] add 1
+execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=can_search,tag=low_priority,tag=3,limit=1] run tag @s[tag=!1,tag=!2] add 3
+execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=2,tag=!low_priority,limit=1] run tag @s[tag=!1,tag=!3] add 2
+execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=1,tag=!low_priority,limit=1] run tag @s[tag=!2,tag=!3] add 1
+execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=3,tag=!low_priority,limit=1] run tag @s[tag=!1,tag=!2] add 3
+execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=2,tag=low_priority,limit=1] run tag @s[tag=!1,tag=!3] add 2
+execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=1,tag=low_priority,limit=1] run tag @s[tag=!2,tag=!3] add 1
+execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=3,tag=low_priority,limit=1] run tag @s[tag=!1,tag=!2] add 3
 execute if entity @s[tag=1] run data modify entity @s data.search_furniture set from entity @e[tag=interact,tag=manual,tag=1,limit=1] data.search_furniture
 execute if entity @s[tag=2] run data modify entity @s data.search_furniture set from entity @e[tag=interact,tag=manual,tag=2,limit=1] data.search_furniture
 execute if entity @s[tag=3] run data modify entity @s data.search_furniture set from entity @e[tag=interact,tag=manual,tag=3,limit=1] data.search_furniture

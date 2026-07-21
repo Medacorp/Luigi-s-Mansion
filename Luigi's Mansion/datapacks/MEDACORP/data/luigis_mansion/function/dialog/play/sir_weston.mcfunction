@@ -10,7 +10,7 @@ execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run functio
 tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"sir_weston"}}},tag=same_room,limit=1] remove freeze_animation
 execute if score #dialog Dialog matches 1..6 as @a[tag=same_room] run function luigis_mansion:other/music/set/talking_ghosts
 execute if score #dialog Dialog matches 1..3 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/high_health_idle_no_sound
-execute if score #dialog Dialog matches 1 facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute if score #dialog Dialog matches 1 as @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"sir_weston"}}},tag=same_room,limit=1] at @s facing entity @e[tag=same_room,tag=!spectator,tag=player,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if score #dialog Dialog matches 1 at @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"sir_weston"}}},tag=same_room,limit=1] run playsound luigis_mansion:entity.sir_weston.talk hostile @a[tag=same_room] ~ ~ ~ 1
 execute if score #dialog Dialog matches 1 if score #players Totals matches 1 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.sir_weston",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.sir_weston.1"}]}
 execute if score #dialog Dialog matches 1 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.sir_weston",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.sir_weston.1.more"}]}

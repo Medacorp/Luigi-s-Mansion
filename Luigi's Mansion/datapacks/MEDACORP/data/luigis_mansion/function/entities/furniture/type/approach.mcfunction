@@ -1,0 +1,1 @@
+execute if entity @s[tag=can_approach] run function luigis_mansion:entities/furniture/type/approach/can

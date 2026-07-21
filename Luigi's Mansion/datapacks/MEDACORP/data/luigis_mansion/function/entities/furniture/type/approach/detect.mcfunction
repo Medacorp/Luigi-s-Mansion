@@ -1,0 +1,3 @@
+$execute positioned ^ ^ ^$(forward) unless entity @e[tag=luigi,distance=..1,nbt={data:{animation:{namespace:"luigis_mansion",id:"idle"}}},limit=1] run tag @e[tag=luigi,distance=..1,limit=1] add searcher
+$execute positioned ^ ^ ^$(forward) run tag @e[tag=luigi,distance=..1,nbt={data:{animation:{namespace:"luigis_mansion",id:"idle"}}},limit=1] add searcher
+$execute positioned ^ ^ ^$(forward) if entity @e[tag=searcher,limit=1] run function luigis_mansion:entities/furniture/type/approach/search

@@ -56,6 +56,8 @@ luigis_mansion:hidden/blackout_lightning/particles    | No          |           
 luigis_mansion:hidden/blackout_lightning/reset        | No          |                                                 | Mansion cleanup                             | Resets all rooms
 luigis_mansion:hidden/blackout_lightning/sound        | No          |                                                 | Lamp sounds                                 | Plays sounds at lights
 luigis_mansion:hidden/blow_up_moon                    | Yes         |                                                 | You shot the moon in the Observatory        | Clear Observatory
+luigis_mansion:hidden/end_blackout_clear              | No          |                                                 | Turns lights back on                        | Clears all lit rooms and breaker room
+luigis_mansion:hidden/end_blackout                    | Yes         |                                                 | Flipping the breaker switch                 | End blackout
 luigis_mansion:hidden/first_entrance                  | Yes         | Field player                                    | Look around the foyer                       | Tag first_entrance removed
 luigis_mansion:hidden/move_storage_room_wall          | Yes         |                                                 | Moving the fake wall                        | Technical flag moved_wall set
 luigis_mansion:hidden/release_boos                    | Yes         |                                                 | Pressed the Boo hatch button                | Warp to Undergound Lab + luigis_mansion:released_boos_call + technical flag released_boos set
@@ -101,6 +103,8 @@ luigis_mansion:normal/blackout_lightning/particles    | No          |           
 luigis_mansion:normal/blackout_lightning/reset        | No          |                                                 | Mansion cleanup                             | Resets all rooms
 luigis_mansion:normal/blackout_lightning/sound        | No          |                                                 | Lamp sounds                                 | Plays sounds at lights
 luigis_mansion:normal/blow_up_moon                    | Yes         |                                                 | You shot the moon in the Observatory        | Clear Observatory
+luigis_mansion:normal/end_blackout_clear              | No          |                                                 | Turns lights back on                        | Clears all lit rooms and breaker room
+luigis_mansion:normal/end_blackout                    | Yes         |                                                 | Flipping the breaker switch                 | End blackout
 luigis_mansion:normal/first_entrance                  | Yes         | Field player                                    | Look around the foyer                       | Tag first_entrance removed
 luigis_mansion:normal/move_storage_room_wall          | Yes         |                                                 | Moving the fake wall                        | Technical flag moved_wall set
 luigis_mansion:normal/release_boos                    | Yes         |                                                 | Pressed the Boo hatch button                | luigis_mansion:released_boos_call + technical flag released_boos set
@@ -285,7 +289,7 @@ luigis_mansion:toad_3_repeat                          | Yes         |           
 luigis_mansion:toad_4                                 | Yes         |                                                 | Toad in Courtyard                           | Technical flag toad_4_happy set (choice)
 luigis_mansion:toad_4_look                            | Yes         |                                                 | Something terrible is in that well...       | 
 luigis_mansion:toad_4_repeat                          | Yes         |                                                 | Talking with Toad in Courtyard again        | Save progress (choice) + 3ds_remake:toad_heal
-luigis_mansion:toad_5                                 | Yes         |                                                 | Toad on the phone                           | Technical flag telephone_1 and telephone_2 (choice) set
+luigis_mansion:toad_5                                 | Yes         |                                                 | Toad on the phone                           | Technical flag telephone_1 and telephone_2 (choice) set, enables approaching furniture tagged telephone_2 or telephone_3 based on choice
 luigis_mansion:training_room/option                   | Yes         |                                                 | Multiple programs available, choose         | Any valid training room dialog
 luigis_mansion:training_room/program                  | Yes         |                                                 | Vanilla training room program               | Warp to Underground lab or Gallery (conditional choice) + clear Training Room
 luigis_mansion:twins                                  | Yes         |                                                 | The twins appear                            | The Twins' Room wave + 1 (choice)
@@ -308,6 +312,8 @@ luigis_mansion:water_element_medal                    | Yes         |           
 3ds_remake:hidden/blackout_lightning/reset            | No          |                                                 | Mansion cleanup                             | Resets all rooms
 3ds_remake:hidden/blackout_lightning/sound            | No          |                                                 | Lamp sounds                                 | Plays sounds at lights
 3ds_remake:hidden/blow_up_moon                        | Yes         |                                                 | You shot the moon in the Observatory        | Clear Observatory
+3ds_remake:hidden/end_blackout_clear                  | No          |                                                 | Turns lights back on                        | Clears all lit rooms and breaker room
+3ds_remake:hidden/end_blackout                        | Yes         |                                                 | Flipping the breaker switch                 | End blackout
 3ds_remake:hidden/first_entrance                      | Yes         | Field player                                    | Look around the foyer                       | 
 3ds_remake:hidden/move_storage_room_wall              | Yes         |                                                 | Moving the fake wall                        | Technical flag moved_wall set
 3ds_remake:hidden/release_boos                        | Yes         |                                                 | Pressed the Boo hatch button                | luigis_mansion:released_boos_call + technical flag released_boos set

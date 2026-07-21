@@ -18,8 +18,11 @@ execute if score #dialog Dialog matches 31.. as @a[tag=same_room,tag=dialog_menu
 
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
+execute as @e[tag=furniture,tag=same_room] unless entity @s[tag=!telephone_1,tag=!telephone_2] run tag @s remove freeze_animation
+execute as @e[tag=furniture,tag=same_room] unless entity @s[tag=!telephone_1,tag=!telephone_2] run tag @s remove no_ai
 execute if score #dialog Dialog matches 1..28 as @e[tag=luigi,tag=same_room,tag=!phone_caller] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 1..28 as @e[tag=phone_caller,limit=1] run function luigis_mansion:entities/luigi/animation/set/answer_phone
+execute if score #dialog Dialog matches 1..28 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @e[tag=phone_caller,limit=1]",teleport:"^ ^0.5 ^-3"}
 execute if score #dialog Dialog matches 20 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.unknown",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.toad_5.1"}]}
 
 execute if score #dialog Dialog matches 22 if data storage luigis_mansion:data current_state.current_data.technical_data{telephone_1:1b} run tag @a[tag=same_room,limit=1] add select_dialog_branch_yes
@@ -49,13 +52,17 @@ execute if score #dialog Dialog matches 29 run scoreboard players set #dialog Di
 #Branch: No
 execute if score #dialog Dialog matches 30 as @e[tag=luigi,tag=same_room,tag=!phone_caller] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 30 as @e[tag=phone_caller,limit=1] run function luigis_mansion:entities/luigi/animation/set/answer_phone
+execute if score #dialog Dialog matches 30 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @e[tag=phone_caller,limit=1]",teleport:"^ ^0.5 ^-3"}
 execute if score #dialog Dialog matches 30 run advancement grant @a[tag=same_room] only luigis_mansion:vanilla/go_help_yourself telephone_room
 execute if score #dialog Dialog matches 30 if entity @a[tag=same_room,tag=select_dialog_branch_no,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.unknown",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.toad_5.no.1"}]}
 
 execute if score #dialog Dialog matches 31 run scoreboard players set #dialog Dialog -1
 
 execute if score #dialog Dialog matches -1 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
+execute if score #dialog Dialog matches -1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
 execute if score #dialog Dialog matches -1 run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {telephone_1:1b}
+execute if score #dialog Dialog matches -1 unless data storage luigis_mansion:data current_state.current_data.technical_data{telephone_2:1b} run tag @e[tag=telephone_2,tag=same_room,limit=1] add can_approach
+execute if score #dialog Dialog matches -1 if data storage luigis_mansion:data current_state.current_data.technical_data{telephone_2:1b} run tag @e[tag=telephone_3,tag=same_room,limit=1] add can_approach
 tag @a[tag=same_room] remove select_dialog_branch_yes
 tag @a[tag=same_room] remove select_dialog_branch_no
 tag @e[tag=phone_caller,limit=1] remove phone_caller

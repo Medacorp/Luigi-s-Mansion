@@ -6,7 +6,6 @@
         "luigis_mansion:room/hidden/observatory/reset/chair",
         "luigis_mansion:room/hidden/observatory/reset/lamp_1",
         "luigis_mansion:room/hidden/observatory/reset/lamp_2",
-        "luigis_mansion:room/hidden/observatory/reset/table",
-        "luigis_mansion:room/hidden/observatory/reset/telescope"
+        "luigis_mansion:room/hidden/observatory/reset/table"
     ]
 }
