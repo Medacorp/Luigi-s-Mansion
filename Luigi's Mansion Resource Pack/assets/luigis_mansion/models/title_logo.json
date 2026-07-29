@@ -1,0 +1,1 @@
+{"textures":{"0":"luigis_mansion:item/title_logo","particle":"#0"},"elements":[{"from":[0,8,8],"to":[16,16,8],"faces":{"north":{"uv":[0,0,16,8],"texture":"#0"}}}],"display":{"head":{"scale":[3,3,3]}}}

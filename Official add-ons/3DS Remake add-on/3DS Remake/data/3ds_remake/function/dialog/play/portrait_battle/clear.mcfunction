@@ -18,5 +18,5 @@ execute if score #dialog Dialog matches 130..132 as @a[tag=same_room] run functi
 
 execute if score #dialog Dialog matches 133 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 133 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
-execute if score #dialog Dialog matches 133 run function 3ds_remake:selection_menu/gallery_portrait/end_portrait_battle with storage luigis_mansion:data current_state.current_data.portrait_battle.position
+execute if score #dialog Dialog matches 133 run function 3ds_remake:selection_menu/gallery_portrait/end_portrait_battle with storage luigis_mansion:data current_state.luigis_mansion.current_data.portrait_battle.position
 execute if score #dialog Dialog matches 133 run scoreboard players set #dialog Dialog -1

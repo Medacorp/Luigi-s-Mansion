@@ -5,8 +5,8 @@ execute as @e[tag=this_entity,tag=!model_piece,limit=1] store result storage lui
 scoreboard players operation @e[tag=this_entity,tag=model_piece] PassiveNr = @e[tag=this_entity,tag=!model_piece,limit=1] PassiveNr
 tag @e[tag=this_entity,tag=model_piece] remove this_entity
 teleport @e[tag=this_entity,limit=1] ~ ~ ~ ~ ~
-data modify entity @e[tag=this_entity,limit=1] data.loot_storage set from storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.bowser.loot
-data modify entity @e[tag=this_entity,limit=1] data.damage set from storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.bowser.damage
+data modify entity @e[tag=this_entity,limit=1] data.loot_storage set from storage luigis_mansion:data current_state.luigis_mansion.current_data.ghosts.luigis_mansion.bowser.loot
+data modify entity @e[tag=this_entity,limit=1] data.damage set from storage luigis_mansion:data current_state.luigis_mansion.current_data.ghosts.luigis_mansion.bowser.damage
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 20
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 9

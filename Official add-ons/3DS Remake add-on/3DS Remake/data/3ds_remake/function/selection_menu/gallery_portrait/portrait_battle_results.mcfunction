@@ -1,23 +1,23 @@
 tag @s add gallery_portrait_menu
 
 data modify storage luigis_mansion:data menu_options set value {no_exit:1b,options:[]}
-function 3ds_remake:selection_menu/gallery_portrait/get_portrait_battle_title with storage luigis_mansion:data current_state.current_data.portrait_battle
+function 3ds_remake:selection_menu/gallery_portrait/get_portrait_battle_title with storage luigis_mansion:data current_state.luigis_mansion.current_data.portrait_battle
 
-execute store result score #temp Time run data get storage luigis_mansion:data current_state.current_data.in_mansion_time
-execute store result score #temp Health run data get storage luigis_mansion:data current_state.current_data.lowest_health_moment
+execute store result score #temp Time run data get storage luigis_mansion:data current_state.luigis_mansion.current_data.in_mansion_time
+execute store result score #temp Health run data get storage luigis_mansion:data current_state.luigis_mansion.current_data.lowest_health_moment
 
-execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:0} store result score #temp2 Health run data get storage 3ds_remake:data loaded_mansion.high_scores.peaceful.health
-execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:0} store result score #temp2 Time run data get storage 3ds_remake:data loaded_mansion.high_scores.peaceful.speed
-execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:0} unless data storage 3ds_remake:data loaded_mansion.high_scores.peaceful run scoreboard players set #temp9 Time -1
-execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:1} store result score #temp2 Health run data get storage 3ds_remake:data loaded_mansion.high_scores.easy.health
-execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:1} store result score #temp2 Time run data get storage 3ds_remake:data loaded_mansion.high_scores.easy.speed
-execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:1} unless data storage 3ds_remake:data loaded_mansion.high_scores.easy run scoreboard players set #temp9 Time -1
-execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:2} store result score #temp2 Health run data get storage 3ds_remake:data loaded_mansion.high_scores.normal.health
-execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:2} store result score #temp2 Time run data get storage 3ds_remake:data loaded_mansion.high_scores.normal.speed
-execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:2} unless data storage 3ds_remake:data loaded_mansion.high_scores.normal run scoreboard players set #temp9 Time -1
-execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:3} store result score #temp2 Health run data get storage 3ds_remake:data loaded_mansion.high_scores.hard.health
-execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:3} store result score #temp2 Time run data get storage 3ds_remake:data loaded_mansion.high_scores.hard.speed
-execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:3} unless data storage 3ds_remake:data loaded_mansion.high_scores.hard run scoreboard players set #temp9 Time -1
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data{lowest_difficulty:0} store result score #temp2 Health run data get storage luigis_mansion:data current_state.3ds_remake.loaded_mansion.high_scores.peaceful.health
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data{lowest_difficulty:0} store result score #temp2 Time run data get storage luigis_mansion:data current_state.3ds_remake.loaded_mansion.high_scores.peaceful.speed
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data{lowest_difficulty:0} unless data storage luigis_mansion:data current_state.3ds_remake.loaded_mansion.high_scores.peaceful run scoreboard players set #temp9 Time -1
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data{lowest_difficulty:1} store result score #temp2 Health run data get storage luigis_mansion:data current_state.3ds_remake.loaded_mansion.high_scores.easy.health
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data{lowest_difficulty:1} store result score #temp2 Time run data get storage luigis_mansion:data current_state.3ds_remake.loaded_mansion.high_scores.easy.speed
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data{lowest_difficulty:1} unless data storage luigis_mansion:data current_state.3ds_remake.loaded_mansion.high_scores.easy run scoreboard players set #temp9 Time -1
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data{lowest_difficulty:2} store result score #temp2 Health run data get storage luigis_mansion:data current_state.3ds_remake.loaded_mansion.high_scores.normal.health
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data{lowest_difficulty:2} store result score #temp2 Time run data get storage luigis_mansion:data current_state.3ds_remake.loaded_mansion.high_scores.normal.speed
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data{lowest_difficulty:2} unless data storage luigis_mansion:data current_state.3ds_remake.loaded_mansion.high_scores.normal run scoreboard players set #temp9 Time -1
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data{lowest_difficulty:3} store result score #temp2 Health run data get storage luigis_mansion:data current_state.3ds_remake.loaded_mansion.high_scores.hard.health
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data{lowest_difficulty:3} store result score #temp2 Time run data get storage luigis_mansion:data current_state.3ds_remake.loaded_mansion.high_scores.hard.speed
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data{lowest_difficulty:3} unless data storage luigis_mansion:data current_state.3ds_remake.loaded_mansion.high_scores.hard run scoreboard players set #temp9 Time -1
 execute if score #temp Time < #temp2 Time unless score #temp9 Time matches -1 run scoreboard players set #temp0 Time 1
 execute if score #temp Health > #temp2 Health unless score #temp9 Time matches -1 run scoreboard players set #temp0 Health 1
 execute if score #temp0 Time matches 1 run data modify storage luigis_mansion:data menu_options.options append value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"3ds_remake:menu/gallery_portrait/new_record","minecraft:unbreakable":{},"minecraft:tooltip_display":{hidden_components:["minecraft:unbreakable"]},"minecraft:attribute_modifiers":[],"minecraft:item_name":{type:"translatable",translate:"3ds_remake:item.menu.gallery_portrait.portrait_battle.results.new_high_score"},"minecraft:custom_data":{option:{id:"reload"}}}}
@@ -41,14 +41,14 @@ scoreboard players reset #temp4 Time
 scoreboard players reset #temp5 Time
 scoreboard players reset #temp6 Time
 
-execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:0} store result score #temp Health run data get storage 3ds_remake:data loaded_mansion.high_scores.peaceful.health
-execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:0} store result score #temp Time run data get storage 3ds_remake:data loaded_mansion.high_scores.peaceful.speed
-execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:1} store result score #temp Health run data get storage 3ds_remake:data loaded_mansion.high_scores.easy.health
-execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:1} store result score #temp Time run data get storage 3ds_remake:data loaded_mansion.high_scores.easy.speed
-execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:2} store result score #temp Health run data get storage 3ds_remake:data loaded_mansion.high_scores.normal.health
-execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:2} store result score #temp Time run data get storage 3ds_remake:data loaded_mansion.high_scores.normal.speed
-execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:3} store result score #temp Health run data get storage 3ds_remake:data loaded_mansion.high_scores.hard.health
-execute if data storage luigis_mansion:data current_state.current_data{lowest_difficulty:3} store result score #temp Time run data get storage 3ds_remake:data loaded_mansion.high_scores.hard.speed
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data{lowest_difficulty:0} store result score #temp Health run data get storage luigis_mansion:data current_state.3ds_remake.loaded_mansion.high_scores.peaceful.health
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data{lowest_difficulty:0} store result score #temp Time run data get storage luigis_mansion:data current_state.3ds_remake.loaded_mansion.high_scores.peaceful.speed
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data{lowest_difficulty:1} store result score #temp Health run data get storage luigis_mansion:data current_state.3ds_remake.loaded_mansion.high_scores.easy.health
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data{lowest_difficulty:1} store result score #temp Time run data get storage luigis_mansion:data current_state.3ds_remake.loaded_mansion.high_scores.easy.speed
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data{lowest_difficulty:2} store result score #temp Health run data get storage luigis_mansion:data current_state.3ds_remake.loaded_mansion.high_scores.normal.health
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data{lowest_difficulty:2} store result score #temp Time run data get storage luigis_mansion:data current_state.3ds_remake.loaded_mansion.high_scores.normal.speed
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data{lowest_difficulty:3} store result score #temp Health run data get storage luigis_mansion:data current_state.3ds_remake.loaded_mansion.high_scores.hard.health
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data{lowest_difficulty:3} store result score #temp Time run data get storage luigis_mansion:data current_state.3ds_remake.loaded_mansion.high_scores.hard.speed
 
 execute unless score #temp9 Time matches -1 run data modify storage luigis_mansion:data menu_options.options append value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:menu/game_boy_horror/show_settings","minecraft:unbreakable":{},"minecraft:tooltip_display":{hidden_components:["minecraft:unbreakable"]},"minecraft:attribute_modifiers":[],"minecraft:item_name":{type:"translatable",translate:"3ds_remake:item.menu.gallery_portrait.portrait_battle.results.high_score"},"minecraft:lore":[],"minecraft:custom_data":{option:{id:"reload"}}}}
 execute unless score #temp9 Time matches -1 run function 3ds_remake:room/portrait_battle/convert_time
@@ -64,7 +64,7 @@ scoreboard players reset #temp4 Time
 scoreboard players reset #temp5 Time
 scoreboard players reset #temp6 Time
 
-function 3ds_remake:room/portrait_battle/save_results with storage luigis_mansion:data current_state.current_data.portrait_battle
+function 3ds_remake:room/portrait_battle/save_results with storage luigis_mansion:data current_state.luigis_mansion.current_data.portrait_battle
 scoreboard players reset #temp9 Time
 
 data modify storage luigis_mansion:data menu_options.options append value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:menu/dialog/progress","minecraft:unbreakable":{},"minecraft:tooltip_display":{hidden_components:["minecraft:unbreakable"]},"minecraft:attribute_modifiers":[],"minecraft:item_name":{type:"translatable",translate:"luigis_mansion:item.menu.dialog.progress"},"minecraft:custom_data":{option:{id:"portrait_battle_results_retry"}}}}

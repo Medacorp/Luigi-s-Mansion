@@ -8,7 +8,7 @@ scoreboard players set #temp Room 2
 execute as @a[scores={Room=2}] run function 3ds_remake:room/hidden/hallway_1/tick_per_player
 
 execute as @e[tag=eternal_gold_coin,scores={Room=2}] run scoreboard players add #temp Wave 1
-execute if score #temp Wave matches ..7 unless data storage luigis_mansion:data current_state.current_data{money_spawned:["hallway_1_money"]} run data modify storage luigis_mansion:data current_state.current_data.money_spawned append value "hallway_1_money"
+execute if score #temp Wave matches ..7 unless data storage luigis_mansion:data current_state.luigis_mansion.current_data{money_spawned:["hallway_1_money"]} run data modify storage luigis_mansion:data current_state.luigis_mansion.current_data.money_spawned append value "hallway_1_money"
 scoreboard players reset #temp Wave
 
 scoreboard players set #temp Room 2

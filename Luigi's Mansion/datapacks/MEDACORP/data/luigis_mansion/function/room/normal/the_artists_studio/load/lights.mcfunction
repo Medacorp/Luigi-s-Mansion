@@ -1,1 +1,1 @@
-execute if data storage luigis_mansion:data current_state.current_data.rooms.the_artists_studio{cleared:1b} if data storage luigis_mansion:data current_state.current_data{blackout:0b} run function luigis_mansion:room/normal/the_artists_studio/turn_on_lights
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data.rooms.the_artists_studio{cleared:1b} if data storage luigis_mansion:data current_state.luigis_mansion.current_data{blackout:0b} run function luigis_mansion:room/normal/the_artists_studio/turn_on_lights

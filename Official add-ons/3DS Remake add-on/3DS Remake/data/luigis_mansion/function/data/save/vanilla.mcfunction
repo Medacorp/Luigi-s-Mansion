@@ -1,4 +1,0 @@
-data modify storage luigis_mansion:data saved_state set from storage luigis_mansion:data current_state
-execute unless data storage luigis_mansion:data current_state.current_data.portrait_battle unless data storage luigis_mansion:data saved_state.current_data{nothing_loaded:1b} run data modify storage luigis_mansion:data saved_state.mansion_data append from storage luigis_mansion:data saved_state.current_data
-execute if data storage luigis_mansion:data current_state.current_data.portrait_battle run data modify storage luigis_mansion:data saved_state.mansion_data append from storage 3ds_remake:data loaded_mansion.data
-data remove storage luigis_mansion:data saved_state.current_data

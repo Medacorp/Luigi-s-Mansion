@@ -4,7 +4,7 @@ scoreboard players set @s Sound 0
 execute if entity @s[tag=using_selection_menu] run function luigis_mansion:selection_menu/tick
 execute if entity @s[scores={AnimationProgress=1..}] run function luigis_mansion:entities/player/clear_animation
 
-execute unless data storage luigis_mansion:data current_state.current_data.portrait_battle unless entity @s[scores={Offline=0}] if entity @s[tag=!using_selection_menu,tag=dead_player,tag=!gooigi] run function luigis_mansion:selection_menu/mansion_reset/original_menu
+execute unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.portrait_battle unless entity @s[scores={Offline=0}] if entity @s[tag=!using_selection_menu,tag=dead_player,tag=!gooigi] run function luigis_mansion:selection_menu/mansion_reset/original_menu
 scoreboard players set @s[scores={Offline=-1}] Offline 0
 
 scoreboard players operation #temp ID = @s ID
@@ -29,4 +29,4 @@ tag @s add spectator
 tag @s remove has_luigi
 
 scoreboard players add @s[tag=gooigi,scores={RespawnTimer=..99}] RespawnTimer 1
-execute unless data storage luigis_mansion:data current_state.current_data.portrait_battle if entity @s[tag=gooigi,scores={RespawnTimer=100}] at @a[tag=same_room,distance=..2,tag=luigi,tag=!gooigi] run function 3ds_remake:entities/gooigi/respawn
+execute unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.portrait_battle if entity @s[tag=gooigi,scores={RespawnTimer=100}] at @a[tag=same_room,distance=..2,tag=luigi,tag=!gooigi] run function 3ds_remake:entities/gooigi/respawn

@@ -1,3 +1,4 @@
+data modify entity @s brightness set from storage luigis_mansion:data passive.brightness
 execute store result score @s Room run data get storage luigis_mansion:data passive.room
 execute if data storage luigis_mansion:data passive.mirror.x store result score @s MirrorX run data get storage luigis_mansion:data passive.mirror.x
 execute if data storage luigis_mansion:data passive.mirror.z store result score @s MirrorZ run data get storage luigis_mansion:data passive.mirror.z

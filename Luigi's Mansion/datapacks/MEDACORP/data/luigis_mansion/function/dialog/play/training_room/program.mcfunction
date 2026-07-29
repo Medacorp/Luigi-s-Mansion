@@ -55,8 +55,8 @@ execute if score #dialog Dialog matches 1..3 run scoreboard players reset @a[tag
 execute if score #dialog Dialog matches 1..3 as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 execute if score #dialog Dialog matches 1..3 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/game_boy_horror
 execute if score #dialog Dialog matches 1 run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.oui_oydohroh_tahmentahkeh2
-execute if score #dialog Dialog matches 1 if data storage luigis_mansion:data rooms.training_room{cleared:1b} run tag @a[tag=same_room,limit=1] add next_dialog_line
-execute if score #dialog Dialog matches 1 if data storage luigis_mansion:data rooms.training_room{cleared:1b} run scoreboard players set #dialog Dialog 109
+execute if score #dialog Dialog matches 1 if data storage luigis_mansion:data current_state.luigis_mansion.rooms.training_room{cleared:1b} run tag @a[tag=same_room,limit=1] add next_dialog_line
+execute if score #dialog Dialog matches 1 if data storage luigis_mansion:data current_state.luigis_mansion.rooms.training_room{cleared:1b} run scoreboard players set #dialog Dialog 109
 execute if score #dialog Dialog matches 1 if score #players Totals matches 1 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.training_room.1"}]}
 execute if score #dialog Dialog matches 1 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.training_room.1.more"}]}
 execute if score #dialog Dialog matches 1 as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.mee_oomahkah_suku_suku_yahboh_yahboh neutral @s ~ ~ ~ 1
@@ -270,12 +270,12 @@ execute if score #dialog Dialog matches 390.. run scoreboard players reset @a[ta
 execute if score #dialog Dialog matches 390.. as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 execute if score #dialog Dialog matches 390 run scoreboard players set @a[tag=same_room] Health 100
 execute if score #dialog Dialog matches 390 as @a[tag=same_room,tag=looking_at_map] at @s run function luigis_mansion:selection_menu/game_boy_horror/map/exit
-execute if score #dialog Dialog matches 390 if data storage luigis_mansion:data rooms.training_room{cleared:1b} as @a[tag=same_room] run function luigis_mansion:room/underground_lab/warp_to
-execute if score #dialog Dialog matches 390 if data storage luigis_mansion:data rooms.training_room{cleared:1b} run scoreboard players set #dialog Dialog -1
-execute if score #dialog Dialog matches 390 if data storage luigis_mansion:data rooms.training_room{cleared:0b} if score #players Totals matches 1 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.training_room.25"}]}
-execute if score #dialog Dialog matches 390 if data storage luigis_mansion:data rooms.training_room{cleared:0b} if score #players Totals matches 2.. run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.training_room.25.more"}]}
-execute if score #dialog Dialog matches 390 if data storage luigis_mansion:data rooms.training_room{cleared:0b} as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.gay_roon_ehdeedee_odoh neutral @s ~ ~ ~ 1
-execute if score #dialog Dialog matches 390..392 if data storage luigis_mansion:data rooms.training_room{cleared:0b} as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
+execute if score #dialog Dialog matches 390 if data storage luigis_mansion:data current_state.luigis_mansion.rooms.training_room{cleared:1b} as @a[tag=same_room] run function luigis_mansion:room/underground_lab/warp_to
+execute if score #dialog Dialog matches 390 if data storage luigis_mansion:data current_state.luigis_mansion.rooms.training_room{cleared:1b} run scoreboard players set #dialog Dialog -1
+execute if score #dialog Dialog matches 390 if data storage luigis_mansion:data current_state.luigis_mansion.rooms.training_room{cleared:0b} if score #players Totals matches 1 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.training_room.25"}]}
+execute if score #dialog Dialog matches 390 if data storage luigis_mansion:data current_state.luigis_mansion.rooms.training_room{cleared:0b} if score #players Totals matches 2.. run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.training_room.25.more"}]}
+execute if score #dialog Dialog matches 390 if data storage luigis_mansion:data current_state.luigis_mansion.rooms.training_room{cleared:0b} as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.gay_roon_ehdeedee_odoh neutral @s ~ ~ ~ 1
+execute if score #dialog Dialog matches 390..392 if data storage luigis_mansion:data current_state.luigis_mansion.rooms.training_room{cleared:0b} as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
 
 execute if score #dialog Dialog matches 392 if entity @a[tag=next_dialog_line,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.gay_roon_ehdeedee_odoh
 execute if score #dialog Dialog matches 392 if score #players Totals matches 1 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.training_room.26"}]}
@@ -293,7 +293,7 @@ execute if score #dialog Dialog matches 414 as @e[tag=luigi,tag=same_room] run f
 
 execute if score #dialog Dialog matches 415 as @a[tag=same_room,tag=looking_at_map] at @s run function luigis_mansion:selection_menu/game_boy_horror/map/exit
 execute if score #dialog Dialog matches 415 as @a[tag=same_room] run function luigis_mansion:room/gallery/warp_to
-execute if score #dialog Dialog matches 415 run data modify storage luigis_mansion:data rooms.training_room merge value {cleared:1b}
+execute if score #dialog Dialog matches 415 run data modify storage luigis_mansion:data current_state.luigis_mansion.rooms.training_room merge value {cleared:1b}
 execute if score #dialog Dialog matches 415 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 415 run tag @a[tag=looking_at_map,nbt={Dimension:"minecraft:overworld"},limit=1] add regenerate_map
 execute if score #dialog Dialog matches 415 run scoreboard players set #dialog Dialog -1
@@ -307,7 +307,7 @@ execute if score #dialog Dialog matches 416 as @a[tag=same_room] at @s run plays
 execute if score #dialog Dialog matches 436 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
 
 execute if score #dialog Dialog matches 437 as @a[tag=same_room] run function luigis_mansion:room/underground_lab/warp_to
-execute if score #dialog Dialog matches 437 run data modify storage luigis_mansion:data rooms.training_room merge value {cleared:1b}
+execute if score #dialog Dialog matches 437 run data modify storage luigis_mansion:data current_state.luigis_mansion.rooms.training_room merge value {cleared:1b}
 execute if score #dialog Dialog matches 437 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 437 run tag @a[tag=looking_at_map,nbt={Dimension:"minecraft:overworld"},limit=1] add regenerate_map
 execute if score #dialog Dialog matches 437 run scoreboard players set #dialog Dialog -1

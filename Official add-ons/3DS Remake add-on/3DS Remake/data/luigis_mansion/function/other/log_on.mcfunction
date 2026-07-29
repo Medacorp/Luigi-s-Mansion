@@ -6,6 +6,8 @@ tag @s[scores={Room=0}] add skip_dialog
 execute unless entity @s[scores={Shrunk=0..}] run function luigis_mansion:other/initial_scores
 function luigis_mansion:other/music/set/silence
 execute unless entity @s[scores={Jukebox=0}] run function luigis_mansion:selection_menu/game_boy_horror/jukebox/stop
+execute if entity @s[tag=using_selection_menu] run data modify storage luigis_mansion:data selected_option set value {id:"exit"}
+execute if entity @s[tag=using_selection_menu] run function luigis_mansion:selection_menu/tick
 scoreboard players set @s Offline 0
 scoreboard players set @s RoomNoise 0
 scoreboard players set @s LoadedChunks 0
@@ -27,4 +29,4 @@ function #luigis_mansion:upgrade_path
 
 tellraw @s {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.hover_event",with:[{type:"translatable",translate:"luigis_mansion:message.format_explanation.hover",hover_event:{action:"show_text",value:{type:"translatable",translate:"luigis_mansion:message.format_explanation.check"}}}]}]}
 
-execute if data storage luigis_mansion:data current_state.current_data.portrait_battle run gamemode spectator @s
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data.portrait_battle run gamemode spectator @s

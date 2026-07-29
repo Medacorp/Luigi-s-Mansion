@@ -1,1 +1,1 @@
-$execute unless data storage luigis_mansion:data current_state.current_data.obtained_items{marios_$(variant):1b} run function luigis_mansion:items/mario_item/normal/$(variant)
+$execute unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.obtained_items{marios_$(variant):1b} run function luigis_mansion:items/mario_item/normal/$(variant)

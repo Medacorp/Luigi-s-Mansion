@@ -1,0 +1,1 @@
+data remove storage luigis_mansion:data no_return_to_title_screen

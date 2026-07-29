@@ -1,1 +1,1 @@
-execute store result storage 3ds_remake:data loaded_mansion.settings.gbh_clock_increase int 1 run scoreboard players get #gbh_clock_increase Selected
+execute store result storage luigis_mansion:data current_state.3ds_remake.loaded_mansion.settings.gbh_clock_increase int 1 run scoreboard players get #gbh_clock_increase Selected

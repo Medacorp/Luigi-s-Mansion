@@ -1,0 +1,1 @@
+#execute if data storage luigis_mansion:data update_data.e3_demo.data_version unless data storage luigis_mansion:data update_data.e3_demo{data_version:1} run function e3_demo:other/upgrade_path/data/v?.?

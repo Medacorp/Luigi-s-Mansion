@@ -13,4 +13,4 @@ function #luigis_mansion:room/hidden/observatory/interactions/room
 
 execute if entity @e[tag=luigi,tag=!door_animation,scores={Room=46},limit=1] run function luigis_mansion:room/hidden/observatory/ghosts
 
-execute as @e[tag=player,x=648.0,y=20,z=102.5,distance=..1,limit=1] if data storage luigis_mansion:data current_state.current_data.rooms.observatory{cleared:1b} unless data storage luigis_mansion:data current_state.current_data.technical_data{observatory_path:1b} unless data storage luigis_mansion:data dialogs[{room:46}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"observatory_path"},room:46,progress:0}
+execute as @e[tag=player,x=648.0,y=20,z=102.5,distance=..1,limit=1] if data storage luigis_mansion:data current_state.luigis_mansion.current_data.rooms.observatory{cleared:1b} unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.technical_data{observatory_path:1b} unless data storage luigis_mansion:data dialogs[{room:46}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"observatory_path"},room:46,progress:0}

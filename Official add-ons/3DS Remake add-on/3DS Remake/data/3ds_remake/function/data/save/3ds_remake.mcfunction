@@ -1,1 +1,3 @@
-data modify storage 3ds_remake:data saved_state set from storage 3ds_remake:data current_state
+$execute if data storage luigis_mansion:data saved_state[$(save_index)].3ds_remake.loaded_mansion run data modify storage luigis_mansion:data saved_state[$(save_index)].luigis_mansion.mansion_data append from storage luigis_mansion:data saved_state[$(save_index)].3ds_remake.loaded_mansion.data
+$execute if data storage luigis_mansion:data saved_state[$(save_index)].3ds_remake.loaded_mansion run data remove storage luigis_mansion:data saved_state[$(save_index)].luigis_mansion.mansion_data[{portrait_battle:{}}]
+$data remove storage luigis_mansion:data saved_state[$(save_index)].3ds_remake.loaded_mansion

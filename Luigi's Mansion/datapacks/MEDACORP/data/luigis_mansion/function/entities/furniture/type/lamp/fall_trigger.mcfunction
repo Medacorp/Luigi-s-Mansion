@@ -1,1 +1,1 @@
-$execute if data storage luigis_mansion:data rooms.underground_lab{cleared:1b} run function $(falling_chandelier)
+$execute if data storage luigis_mansion:data current_state.luigis_mansion.rooms.underground_lab{cleared:1b} run function $(falling_chandelier)

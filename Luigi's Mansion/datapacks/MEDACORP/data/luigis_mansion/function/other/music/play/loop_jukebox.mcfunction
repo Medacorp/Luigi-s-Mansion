@@ -64,3 +64,5 @@ playsound luigis_mansion:music.staff_credits music @s[scores={Jukebox=40}] ~ ~ ~
 scoreboard players set @s[scores={Jukebox=40}] Music 2820
 execute if entity @s[scores={Jukebox=41}] run function luigis_mansion:other/music/play/loop_jukebox/dark_stairwell
 execute if entity @s[scores={Jukebox=42}] run function luigis_mansion:other/music/play/loop_jukebox/super_mario_bros
+playsound luigis_mansion:music.title_menu music @s[scores={Jukebox=43}] ~ ~ ~ 1000
+scoreboard players set @s[scores={Jukebox=43}] Music 168

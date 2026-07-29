@@ -1,3 +1,3 @@
 data modify storage luigis_mansion:data furniture set value {room:-7,searchable:["interact"],no_dust:1b,interact_animation:{namespace:"luigis_mansion",id:"inspect"},tags:["king_boo_portrait"]}
 execute positioned 729.0 81.1 -28.0 rotated -90 0 run function luigis_mansion:spawn_furniture/gallery_portrait/king_boo
-execute if data storage luigis_mansion:data current_state.portrait_ghost_ranks{king_boo:-1b} run data modify entity @e[tag=king_boo_portrait,limit=1] item.components."minecraft:item_model" set value "luigis_mansion:empty"
+execute if data storage luigis_mansion:data current_state.luigis_mansion.portrait_ghost_ranks{king_boo:-1b} run data modify entity @e[tag=king_boo_portrait,limit=1] item.components."minecraft:item_model" set value "luigis_mansion:empty"

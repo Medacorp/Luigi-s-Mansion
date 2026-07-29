@@ -30,7 +30,7 @@ execute if score #dialog Dialog matches 123 if score #players Totals matches 1 r
 execute if score #dialog Dialog matches 123 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"3ds_remake:dialog.gallery.repeat.after.2.more"}]}
 execute if score #dialog Dialog matches 123 at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.hey_hey_suu_dehkooroo_hah neutral @a[tag=same_room] ~ ~ ~ 1
 
-execute if score #dialog Dialog matches 125 run data merge storage 3ds_remake:data {shown_gameboy_horror_part:1b}
+execute if score #dialog Dialog matches 125 run data modify storage luigis_mansion:data current_state.3ds_remake.shown_game_boy_horror_part set value 1b
 execute if score #dialog Dialog matches 125 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 125 run data remove entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation
 execute if score #dialog Dialog matches 125 run scoreboard players set #dialog Dialog -1

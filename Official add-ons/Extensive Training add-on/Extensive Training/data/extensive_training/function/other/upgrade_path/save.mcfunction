@@ -1,0 +1,1 @@
+#execute if data storage luigis_mansion:data update_data.extensive_training.data_version unless data storage luigis_mansion:data update_data.extensive_training{data_version:1} run function extensive_training:other/upgrade_path/data/v?.?

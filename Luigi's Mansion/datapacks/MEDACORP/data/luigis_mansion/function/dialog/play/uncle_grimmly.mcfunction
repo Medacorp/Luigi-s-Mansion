@@ -56,7 +56,7 @@ execute if score #dialog Dialog matches 29 if score #players Totals matches 2.. 
 execute if score #dialog Dialog matches 29 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.luigi_oui neutral @s ~ ~ ~ 1
 
 execute if score #dialog Dialog matches 30 as @a[tag=same_room] at @s run playsound luigis_mansion:entity.ghost.laugh hostile @s ~ ~ ~ 3
-execute if score #dialog Dialog matches 30 run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {telephone_3:1b}
+execute if score #dialog Dialog matches 30 run data modify storage luigis_mansion:data current_state.luigis_mansion.current_data.technical_data merge value {telephone_3:1b}
 execute if score #dialog Dialog matches 30 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 30 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
 execute if score #dialog Dialog matches 30 run scoreboard players set #dialog Dialog -1

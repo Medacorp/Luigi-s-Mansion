@@ -4,7 +4,7 @@ scoreboard players add @s[scores={Dialog=1..3}] Dialog 1
 execute if entity @e[tag=same_room,tag=luigi,limit=1] unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
 tag @s add visible
 tag @s[scores={Dialog=4},tag=portrait_ghost_hide] remove visible
-execute if entity @s[scores={Dialog=1}] if data storage luigis_mansion:data current_state.current_data.technical_data{vincent_van_gore_spoke:1b} run scoreboard players set @s Dialog 3
+execute if entity @s[scores={Dialog=1}] if data storage luigis_mansion:data current_state.luigis_mansion.current_data.technical_data{vincent_van_gore_spoke:1b} run scoreboard players set @s Dialog 3
 execute if entity @s[scores={Dialog=2}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"ghost_gauntlet"},progress:0}
 execute if entity @s[scores={Dialog=2}] store result storage luigis_mansion:data dialogs[-1].room int 1 run scoreboard players get @s Room
 execute if entity @s[scores={Dialog=3}] run function luigis_mansion:room/hidden/the_artists_studio/wave_2

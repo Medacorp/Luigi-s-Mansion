@@ -1,1 +1,1 @@
-$execute unless data storage luigis_mansion:data current_state.current_data.obtained_items{$(variant)_element_medal:1b} run function luigis_mansion:items/element_medal/hidden/$(variant)
+$execute unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.obtained_items{$(variant)_element_medal:1b} run function luigis_mansion:items/element_medal/hidden/$(variant)

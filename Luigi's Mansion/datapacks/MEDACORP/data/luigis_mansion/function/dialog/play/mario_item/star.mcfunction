@@ -25,7 +25,7 @@ execute if score #dialog Dialog matches 23 if entity @a[tag=same_room,tag=next_d
 
 execute if score #dialog Dialog matches 24 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
 execute if score #dialog Dialog matches 24 run data remove entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"madame_clairvoya"}}},limit=1] data.animation
-execute if score #dialog Dialog matches 24 run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {shown_marios_star:1b}
+execute if score #dialog Dialog matches 24 run data modify storage luigis_mansion:data current_state.luigis_mansion.current_data.technical_data merge value {shown_marios_star:1b}
 execute if score #dialog Dialog matches 24 store result score #temp Time run data get storage luigis_mansion:data dialogs[0].variant
 execute if score #dialog Dialog matches 24 if score #temp Time matches 1 run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"mario_item/item_1"},progress:0}
 execute if score #dialog Dialog matches 24 if score #temp Time matches 2 run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"mario_item/item_2"},progress:0}

@@ -22,10 +22,10 @@ tag @e[tag=toad,tag=same_room,limit=1] remove no_ai
 execute if score #dialog Dialog matches 1..3 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 1.. as @a[tag=same_room] run function luigis_mansion:other/music/set/toad
 execute if score #dialog Dialog matches 1 run data modify entity @e[tag=toad,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"explain"}
-execute if score #dialog Dialog matches 1 unless data storage luigis_mansion:data current_state.current_data.rooms.fortune_tellers_room{cleared:1b} run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.toad",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.toad_4.repeat.1"}]}
-execute if score #dialog Dialog matches 1 if data storage luigis_mansion:data current_state.current_data.rooms.fortune_tellers_room{cleared:1b} run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.toad",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.toad_4.repeat.1.alt"}]}
+execute if score #dialog Dialog matches 1 unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.rooms.fortune_tellers_room{cleared:1b} run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.toad",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.toad_4.repeat.1"}]}
+execute if score #dialog Dialog matches 1 if data storage luigis_mansion:data current_state.luigis_mansion.current_data.rooms.fortune_tellers_room{cleared:1b} run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.toad",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.toad_4.repeat.1.alt"}]}
 
-execute if score #dialog Dialog matches 3 if data storage luigis_mansion:data current_state.current_data.rooms.fortune_tellers_room{cleared:1b} run scoreboard players set #dialog Dialog 50
+execute if score #dialog Dialog matches 3 if data storage luigis_mansion:data current_state.luigis_mansion.current_data.rooms.fortune_tellers_room{cleared:1b} run scoreboard players set #dialog Dialog 50
 execute if score #dialog Dialog matches 3 run data remove entity @e[tag=toad,tag=same_room,limit=1] data.animation
 
 #Branch: Yes

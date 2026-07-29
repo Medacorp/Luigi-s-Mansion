@@ -1,7 +1,7 @@
 scoreboard players add @s WarpTime 1
 execute if entity @s[scores={WarpTime=10}] run playsound luigis_mansion:item.game_boy_horror.warp player @a[tag=same_room] ~ ~ ~ 1000
 tag @s[scores={WarpTime=50..}] remove grabbed
-execute if entity @s[scores={WarpTime=95..129}] run function luigis_mansion:room/default_position_in_mansion with storage luigis_mansion:data current_state.current_data.mansion_id
+execute if entity @s[scores={WarpTime=95..129}] run function luigis_mansion:room/default_position_in_mansion with storage luigis_mansion:data current_state.luigis_mansion.current_data.mansion_id
 execute if entity @s[scores={WarpTime=95..129}] run function luigis_mansion:main/update_last_position
 execute at @s[scores={WarpTime=50..130}] run particle minecraft:dust{color:8355839,scale:1.5f} ~ ~1.2 ~ 0.5 0.6 0.5 0 10
 execute unless score #mirrored Selected matches 1 at @s[scores={WarpTime=70..129}] run teleport @s ~ ~ ~ ~54 ~

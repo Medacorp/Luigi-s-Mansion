@@ -41,7 +41,7 @@ execute if score #dialog Dialog matches 440 if score #players Totals matches 2..
 execute if score #dialog Dialog matches 440 run data modify entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"vincent_van_gore"}}},tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"magic"}
 execute if score #dialog Dialog matches 460 at @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"vincent_van_gore"}}},tag=same_room,limit=1] run playsound luigis_mansion:entity.vincent_van_gore.awake hostile @a[tag=same_room] ~ ~ ~ 1
 
-execute if score #dialog Dialog matches 500 run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {vincent_van_gore_spoke:1b}
+execute if score #dialog Dialog matches 500 run data modify storage luigis_mansion:data current_state.luigis_mansion.current_data.technical_data merge value {vincent_van_gore_spoke:1b}
 execute if score #dialog Dialog matches 500 run data remove entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"vincent_van_gore"}}},tag=same_room,limit=1] data.animation
 execute if score #dialog Dialog matches 500 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 500 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence

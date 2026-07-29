@@ -1,0 +1,3 @@
+$execute if data storage luigis_mansion:data current_state.luigis_mansion{joined_save:[$(UUID)]} unless data storage luigis_mansion:data {no_return_to_title_screen:1b} run function luigis_mansion:room/exterior/enter_lab
+$execute unless data storage luigis_mansion:data current_state.luigis_mansion{joined_save:[$(UUID)]} run function luigis_mansion:room/exterior/warp with storage luigis_mansion:data loaded_exterior
+$execute unless data storage luigis_mansion:data current_state.luigis_mansion{joined_save:[$(UUID)]} run function luigis_mansion:room/exterior/opening with storage luigis_mansion:data loaded_exterior

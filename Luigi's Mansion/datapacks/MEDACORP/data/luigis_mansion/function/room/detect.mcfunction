@@ -17,6 +17,6 @@ execute if score #gallery_hallway_2 Ticking matches 1 unless entity @e[tag=playe
 execute if entity @e[tag=player,distance=0..,scores={PositionIntX=727..743,PositionIntY=74..87,PositionIntZ=-38..-19}] run function luigis_mansion:room/gallery_back_room/tick
 execute if score #gallery_back_room Ticking matches 1 unless entity @e[tag=player,distance=0..,scores={PositionIntX=727..743,PositionIntY=74..87,PositionIntZ=-42..-15}] unless entity @e[tag=player,scores={Room=-7}] run function luigis_mansion:room/gallery_back_room/not_ticking
 function #luigis_mansion:extra_detect
-function luigis_mansion:room/detect_mansion with storage luigis_mansion:data current_state.current_data.mansion_id
+function luigis_mansion:room/detect_mansion with storage luigis_mansion:data current_state.luigis_mansion.current_data.mansion_id
 scoreboard players reset #temp Room
-execute if data storage luigis_mansion:data rooms.underground_lab{cleared:1b} if entity @e[tag=player,scores={Room=1..},tag=!spectator] run function luigis_mansion:room/update_stats
+execute if data storage luigis_mansion:data current_state.luigis_mansion.rooms.underground_lab{cleared:1b} if entity @e[tag=player,scores={Room=1..},tag=!spectator] run function luigis_mansion:room/update_stats

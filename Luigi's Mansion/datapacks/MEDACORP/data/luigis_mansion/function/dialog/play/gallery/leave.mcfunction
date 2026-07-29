@@ -14,7 +14,7 @@ execute if score #dialog Dialog matches 1 run tellraw @a[tag=same_room] {type:"t
 execute if score #dialog Dialog matches 1 at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.yahboh_yahboh neutral @a[tag=same_room] ~ ~ ~ 1
 
 execute if score #dialog Dialog matches 3 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/nod
-execute if score #dialog Dialog matches 23 as @a[tag=same_room] run function luigis_mansion:room/underground_lab/warp_to
+execute if score #dialog Dialog matches 23 as @a[tag=same_room,tag=!show_credits] run function luigis_mansion:room/underground_lab/warp_to
 execute if score #dialog Dialog matches 23 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 23 run data remove entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation
 execute if score #dialog Dialog matches 23 run scoreboard players set #dialog Dialog -1

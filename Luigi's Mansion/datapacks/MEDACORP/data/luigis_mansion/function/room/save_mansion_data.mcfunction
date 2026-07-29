@@ -1,2 +1,2 @@
-$execute unless data storage luigis_mansion:data current_state.current_data{nothing_loaded:1b} run data remove storage luigis_mansion:data current_state.mansion_data[{data_index:$(data_index)}]
-execute unless data storage luigis_mansion:data current_state.current_data{nothing_loaded:1b} run data modify storage luigis_mansion:data current_state.mansion_data append from storage luigis_mansion:data current_state.current_data
+$execute unless data storage luigis_mansion:data current_state.luigis_mansion.current_data{nothing_loaded:1b} run data remove storage luigis_mansion:data current_state.luigis_mansion.mansion_data[{data_index:$(data_index)}]
+execute unless data storage luigis_mansion:data current_state.luigis_mansion.current_data{nothing_loaded:1b} run data modify storage luigis_mansion:data current_state.luigis_mansion.mansion_data append from storage luigis_mansion:data current_state.luigis_mansion.current_data

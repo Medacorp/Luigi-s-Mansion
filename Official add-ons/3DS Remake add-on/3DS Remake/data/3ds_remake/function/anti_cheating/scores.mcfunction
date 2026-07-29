@@ -14,13 +14,14 @@ execute unless score #toad_amiibo Selected matches 0..1 run scoreboard players s
 execute unless score #mario_amiibo Selected matches 0..1 run scoreboard players set #mario_amiibo Selected 0
 execute unless score #boo_amiibo Selected matches 0..1 run scoreboard players set #boo_amiibo Selected 0
 execute unless score #luigi_amiibo Selected matches 0..1 run scoreboard players set #luigi_amiibo Selected 0
-execute if data storage 3ds_remake:data current_state.trophy.beginner{done:0b} run scoreboard players set #toad_amiibo Selected 0
-execute if data storage 3ds_remake:data current_state.trophy.easy{done:0b} run scoreboard players set #mario_amiibo Selected 0
-execute if data storage 3ds_remake:data current_state.trophy.normal{done:0b} run scoreboard players set #boo_amiibo Selected 0
-execute if data storage 3ds_remake:data current_state.trophy.hard{done:0b} run scoreboard players set #luigi_amiibo Selected 0
+execute if data storage luigis_mansion:data current_state.3ds_remake{shown_game_boy_horror_part:0b} run scoreboard players set #global_3ds_remake_gallery Selected 0
+execute if data storage luigis_mansion:data current_state.3ds_remake.trophy.beginner{done:0b} run scoreboard players set #toad_amiibo Selected 0
+execute if data storage luigis_mansion:data current_state.3ds_remake.trophy.easy{done:0b} run scoreboard players set #mario_amiibo Selected 0
+execute if data storage luigis_mansion:data current_state.3ds_remake.trophy.normal{done:0b} run scoreboard players set #boo_amiibo Selected 0
+execute if data storage luigis_mansion:data current_state.3ds_remake.trophy.hard{done:0b} run scoreboard players set #luigi_amiibo Selected 0
 
-execute if data storage luigis_mansion:data current_state unless data storage 3ds_remake:data current_state if entity @a[limit=1] run function 3ds_remake:other/upgrade_path/newly_installed
-execute if data storage luigis_mansion:data current_state.current_data unless data storage luigis_mansion:data current_state.current_data{nothing_loaded:1b} unless data storage luigis_mansion:data current_state.current_data.tracking_boos run data modify storage luigis_mansion:data current_state.current_data.tracking_boos set value []
-execute if data storage luigis_mansion:data current_state.current_data{data_index:0} unless data storage luigis_mansion:data current_state.current_data{no_collect_animation:["3ds_remake:super_mushroom"]} run data modify storage luigis_mansion:data current_state.current_data.no_collect_animation append value "3ds_remake:super_mushroom"
-execute if data storage luigis_mansion:data current_state.current_data{area:0} run data modify storage luigis_mansion:data current_state.current_data.last_area_portrificationized set value 0
-execute if data storage luigis_mansion:data current_state.current_data{area:1} run data modify storage luigis_mansion:data current_state.current_data.last_area_portrificationized set value 1
+execute if data storage luigis_mansion:data current_state.luigis_mansion unless data storage luigis_mansion:data current_state.3ds_remake run function 3ds_remake:other/upgrade_path/newly_installed
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data unless data storage luigis_mansion:data current_state.luigis_mansion.current_data{nothing_loaded:1b} unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.tracking_boos run data modify storage luigis_mansion:data current_state.luigis_mansion.current_data.tracking_boos set value []
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data{data_index:0} unless data storage luigis_mansion:data current_state.luigis_mansion.current_data{no_collect_animation:["3ds_remake:super_mushroom"]} run data modify storage luigis_mansion:data current_state.luigis_mansion.current_data.no_collect_animation append value "3ds_remake:super_mushroom"
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data{area:0} run data modify storage luigis_mansion:data current_state.luigis_mansion.current_data.last_area_portrificationized set value 0
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data{area:1} run data modify storage luigis_mansion:data current_state.luigis_mansion.current_data.last_area_portrificationized set value 1

@@ -21947,6 +21947,14 @@
             }
         ]
     },
+    "music.menu": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/menu/menu",
+                "stream": true
+            }
+        ]
+    },
     "music.mini_game": {
         "sounds": [
             {
@@ -26711,6 +26719,22 @@
         "sounds": [
             {
                 "name": "luigis_mansion:music/talking_ghosts_intro",
+                "stream": true
+            }
+        ]
+    },
+    "music.title_menu": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/title_menu",
+                "stream": true
+            }
+        ]
+    },
+    "music.title_screen": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:music/title_screen",
                 "stream": true
             }
         ]

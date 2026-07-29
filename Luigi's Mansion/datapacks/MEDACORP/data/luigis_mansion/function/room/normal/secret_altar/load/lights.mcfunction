@@ -1,1 +1,1 @@
-execute if data storage luigis_mansion:data current_state.current_data{blackout:0b} run function luigis_mansion:room/normal/secret_altar/turn_on_lights
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data{blackout:0b} run function luigis_mansion:room/normal/secret_altar/turn_on_lights

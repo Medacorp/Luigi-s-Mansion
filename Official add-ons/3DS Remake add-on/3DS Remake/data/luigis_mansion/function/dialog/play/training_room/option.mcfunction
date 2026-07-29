@@ -1,7 +1,7 @@
 execute if score #dialog Dialog matches ..1 run scoreboard players add #dialog Dialog 1
 execute if entity @a[tag=same_room,scores={Offline=1..}] run scoreboard players set #dialog Dialog 1
 execute if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog -1
-execute if data storage luigis_mansion:data rooms.training_room{cleared:0b} run scoreboard players set #dialog Dialog -2
+execute if data storage luigis_mansion:data current_state.luigis_mansion.rooms.training_room{cleared:0b} run scoreboard players set #dialog Dialog -2
 execute if score #dialog Dialog matches 0.. as @a[tag=same_room,tag=!spectator,tag=!dialog_choice_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/choice/training_room
 
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime

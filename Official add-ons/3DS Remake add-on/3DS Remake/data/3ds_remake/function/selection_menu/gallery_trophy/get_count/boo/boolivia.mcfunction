@@ -1,1 +1,1 @@
-execute if data storage luigis_mansion:data current_state.ghosts_caught.boos.luigis_mansion{boolivia:1b} run scoreboard players add #temp Time 1
+execute if data storage luigis_mansion:data current_state.luigis_mansion.ghosts_caught.boos.luigis_mansion{boolivia:1b} run scoreboard players add #temp Time 1

@@ -10,8 +10,8 @@ scoreboard players set @s LastRoom -4
 function luigis_mansion:items/poltergust_3000/reset_element
 bossbar set 3ds_remake:portrait_battle players
 
-function luigis_mansion:room/reset_mansion with storage luigis_mansion:data current_state.current_data.mansion_id
-data modify storage luigis_mansion:data current_state.current_data set from storage 3ds_remake:data loaded_mansion.data
+function luigis_mansion:room/reset_mansion with storage luigis_mansion:data current_state.luigis_mansion.current_data.mansion_id
+data modify storage luigis_mansion:data current_state.luigis_mansion.current_data set from storage luigis_mansion:data current_state.3ds_remake.loaded_mansion.data
 function #3ds_remake:room/portrait_battle/load_current_data
-data modify storage 3ds_remake:data loaded_mansion set value {settings:{},data:{},high_scores:{}}
-function luigis_mansion:room/forceload_mansion with storage luigis_mansion:data current_state.current_data.mansion_id
+data remove storage luigis_mansion:data current_state.3ds_remake.loaded_mansion
+function luigis_mansion:room/forceload_mansion with storage luigis_mansion:data current_state.luigis_mansion.current_data.mansion_id

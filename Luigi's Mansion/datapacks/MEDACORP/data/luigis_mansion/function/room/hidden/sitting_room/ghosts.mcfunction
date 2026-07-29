@@ -1,4 +1,4 @@
 execute if score #sitting_room Wave matches 2 unless entity @e[tag=ghost,tag=!optional_ghost,scores={Room=69},limit=1] run function luigis_mansion:room/hidden/sitting_room/clear
 execute if score #sitting_room Wave matches 1 unless entity @e[tag=light_me,tag=!lit,scores={Room=69},limit=1] run function luigis_mansion:room/hidden/sitting_room/wave_2
-execute unless data storage luigis_mansion:data current_state.current_data.rooms.sitting_room{cleared:1b} if data storage luigis_mansion:data current_state.current_data{blackout:0b} unless score #sitting_room Wave matches -1.. run function luigis_mansion:room/hidden/sitting_room/wave_1
-execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} unless score #sitting_room Wave matches -1.. run function luigis_mansion:room/hidden/sitting_room/blackout
+execute unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.rooms.sitting_room{cleared:1b} if data storage luigis_mansion:data current_state.luigis_mansion.current_data{blackout:0b} unless score #sitting_room Wave matches -1.. run function luigis_mansion:room/hidden/sitting_room/wave_1
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data{blackout:1b} unless score #sitting_room Wave matches -1.. run function luigis_mansion:room/hidden/sitting_room/blackout

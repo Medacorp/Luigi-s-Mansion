@@ -8,7 +8,7 @@ scoreboard players set #temp Room 3
 execute as @a[scores={Room=3}] run function luigis_mansion:room/normal/parlor/tick_per_player
 
 execute as @e[tag=eternal_gold_coin,scores={Room=3}] run scoreboard players add #temp Wave 1
-execute if score #temp Wave matches ..14 if data storage luigis_mansion:data rooms.underground_lab{cleared:1b} unless data storage luigis_mansion:data current_state.current_data{money_spawned:["parlor_money"]} run data modify storage luigis_mansion:data current_state.current_data.money_spawned append value "parlor_money"
+execute if score #temp Wave matches ..14 if data storage luigis_mansion:data current_state.luigis_mansion.rooms.underground_lab{cleared:1b} unless data storage luigis_mansion:data current_state.luigis_mansion.current_data{money_spawned:["parlor_money"]} run data modify storage luigis_mansion:data current_state.luigis_mansion.current_data.money_spawned append value "parlor_money"
 scoreboard players reset #temp Wave
 
 #todelete - old furniture

@@ -1,6 +1,8 @@
 $teleport @s ~ ~-$(physics_offset) ~
 execute store result entity @s Rotation[1] float 1 run scoreboard players get @s HomeRotationX
 
+tag @s[tag=picked_up,tag=captured] remove captured
+tag @s[tag=picked_up,tag=!captured] add dead
 scoreboard players add @s Move 0
 scoreboard players add @s SpawnTime 1
 tag @s[scores={SpawnTime=40}] add affected_by_vacuum

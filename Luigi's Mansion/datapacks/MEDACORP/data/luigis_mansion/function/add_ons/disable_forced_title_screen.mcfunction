@@ -1,0 +1,1 @@
+data modify storage luigis_mansion:data no_return_to_title_screen set value 1b

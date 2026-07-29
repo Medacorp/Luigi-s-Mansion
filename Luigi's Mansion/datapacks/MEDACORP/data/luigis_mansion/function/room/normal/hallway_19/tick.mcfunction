@@ -5,8 +5,8 @@ scoreboard players set @e[tag=player,x=740,y=28,z=40,dx=23,dy=7,dz=8] Room 55
 execute as @a[scores={Room=55}] run function luigis_mansion:room/normal/hallway_19/tick_per_player
 
 stopsound @a[scores={Room=55,RoomNoise=0}] ambient luigis_mansion:block.telephone.ring
-execute unless data storage luigis_mansion:data dialogs[{room:56}] if data storage luigis_mansion:data current_state.current_data{blackout:1b} unless data storage luigis_mansion:data current_state.current_data.technical_data{telephone_3:1b} run playsound luigis_mansion:furniture.telephone.ring ambient @a[scores={Room=55,RoomNoise=0}] 752 29 41 1
-execute unless data storage luigis_mansion:data dialogs[{room:56}] if data storage luigis_mansion:data current_state.current_data{blackout:1b} unless data storage luigis_mansion:data current_state.current_data.technical_data{telephone_3:1b} run scoreboard players set @a[scores={Room=55,RoomNoise=0}] RoomNoise 40
+execute unless data storage luigis_mansion:data dialogs[{room:56}] if data storage luigis_mansion:data current_state.luigis_mansion.current_data{blackout:1b} unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.technical_data{telephone_3:1b} run playsound luigis_mansion:furniture.telephone.ring ambient @a[scores={Room=55,RoomNoise=0}] 752 29 41 1
+execute unless data storage luigis_mansion:data dialogs[{room:56}] if data storage luigis_mansion:data current_state.luigis_mansion.current_data{blackout:1b} unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.technical_data{telephone_3:1b} run scoreboard players set @a[scores={Room=55,RoomNoise=0}] RoomNoise 40
 
 scoreboard players set #temp Room 55
 execute as @e[tag=luigi,tag=!door_animation] run function luigis_mansion:main/get_same_room

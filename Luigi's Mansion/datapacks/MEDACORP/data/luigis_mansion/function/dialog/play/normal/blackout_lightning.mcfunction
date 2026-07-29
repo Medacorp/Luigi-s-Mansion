@@ -30,7 +30,7 @@ execute if score #dialog Dialog matches 110 run function luigis_mansion:dialog/p
 execute if score #dialog Dialog matches 150 run function luigis_mansion:dialog/play/normal/blackout_lightning/sound
 execute if score #dialog Dialog matches 160 run function luigis_mansion:dialog/play/normal/blackout_lightning/sound
 execute if score #dialog Dialog matches 130 run function luigis_mansion:dialog/play/normal/blackout_lightning/reset
-execute if score #dialog Dialog matches 130 run data modify storage luigis_mansion:data current_state.current_data.blackout set value 1b
+execute if score #dialog Dialog matches 130 run data modify storage luigis_mansion:data current_state.luigis_mansion.current_data.blackout set value 1b
 execute if score #dialog Dialog matches 130..240 run scoreboard players set @e[tag=same_room,tag=ghost,tag=hidden,tag=can_spawn] SpawnTime 102
 execute if score #dialog Dialog matches 130..240 run tag @e[tag=same_room,tag=ghost,tag=hidden,tag=can_spawn] remove can_spawn
 execute if score #dialog Dialog matches 220 as @e[tag=luigi,tag=same_room] at @s positioned ^ ^ ^1 run function luigis_mansion:entities/luigi/animation/set/get_up

@@ -6,5 +6,7 @@ execute as @e[distance=..0.1,tag=furniture,limit=1,scores={FurnitureSizeUp=1..}]
 execute if entity @e[distance=..0.1,tag=furniture,limit=1,scores={FurnitureSizeRadius=1..}] run scoreboard players operation #temp2 Time *= #2 Constants
 execute if entity @e[distance=..0.1,tag=furniture,limit=1,tag=!standing_furniture] run scoreboard players operation #temp2 Time /= #2 Constants
 execute if entity @e[distance=..0.1,tag=furniture,limit=1,tag=!hanging_furniture] store result entity @s Pos[1] double 0.1 run scoreboard players operation #temp Time += #temp2 Time
+execute at @s run tp @s[tag=!flipped_gravity] ~ ~-0.13 ~
+execute at @s run tp @s[tag=flipped_gravity] ~ ~0.13 ~
 scoreboard players reset #temp Time
 scoreboard players reset #temp2 Time

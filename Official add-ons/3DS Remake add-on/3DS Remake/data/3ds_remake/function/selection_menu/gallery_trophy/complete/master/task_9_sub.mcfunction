@@ -1,2 +1,2 @@
-$data modify storage 3ds_remake:data current_state.trophy.master.found_posters.$(flag) set value 1b
-execute if data storage 3ds_remake:data current_state.trophy.master.found_posters{washroom_2:1b,projection_room:1b} run function 3ds_remake:selection_menu/gallery_trophy/complete/master/task_9
+$data modify storage luigis_mansion:data current_state.3ds_remake.trophy.master.found_posters.$(flag) set value 1b
+execute if data storage luigis_mansion:data current_state.3ds_remake.trophy.master.found_posters{washroom_2:1b,projection_room:1b} run function 3ds_remake:selection_menu/gallery_trophy/complete/master/task_9

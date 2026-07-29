@@ -16,7 +16,7 @@ execute if score #dialog Dialog matches 251 as @a[tag=same_room,tag=!spectator,t
 execute if score #dialog Dialog matches 252 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 execute if score #dialog Dialog matches ..147 store result score #temp Time run data get storage luigis_mansion:data dialogs[0].counter
 
-execute if score #dialog Dialog matches 1 run function luigis_mansion:dialog/play/score_results/get_data with storage luigis_mansion:data current_state.current_data.mansion_id
+execute if score #dialog Dialog matches 1 run function luigis_mansion:dialog/play/score_results/get_data with storage luigis_mansion:data current_state.luigis_mansion.current_data.mansion_id
 execute if score #dialog Dialog matches 1..22 as @a[tag=same_room] run function luigis_mansion:other/music/set/non_overwritten_silence
 execute if score #dialog Dialog matches 1 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/make_sound/force {high:"luigis_mansion:entity.player.show_item.high_health",medium:"luigis_mansion:entity.player.show_item.high_health",low:"luigis_mansion:entity.player.show_item.low_health",duration:20}
 execute if score #dialog Dialog matches 1 as @a[tag=same_room] run playsound luigis_mansion:ambience.spotlight ambient @s ~ ~ ~ 1

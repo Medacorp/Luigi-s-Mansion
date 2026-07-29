@@ -1,3 +1,3 @@
 tag @e[scores={Room=53},tag=furniture,tag=door] remove area_blockade
-execute unless data storage luigis_mansion:data current_state.current_data.technical_data{cleared_area_4_blockade:1b} run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"normal/blackout_lightning"},progress:0}
-data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {cleared_area_4_blockade:1b}
+execute unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.technical_data{cleared_area_4_blockade:1b} run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"normal/blackout_lightning"},progress:0}
+data modify storage luigis_mansion:data current_state.luigis_mansion.current_data.technical_data merge value {cleared_area_4_blockade:1b}

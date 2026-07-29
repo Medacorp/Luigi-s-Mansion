@@ -1,1 +1,1 @@
-$execute unless data storage luigis_mansion:data current_state.current_data{obtained_keys:["$(variant)"]} run function e3_demo:items/key/original/$(variant)
+$execute unless data storage luigis_mansion:data current_state.luigis_mansion.current_data{obtained_keys:["$(variant)"]} run function e3_demo:items/key/original/$(variant)

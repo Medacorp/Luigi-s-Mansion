@@ -1,3 +1,5 @@
+playsound luigis_mansion:music.title_screen music @s[scores={MusicType=-32}] ~ ~ ~ 1000
+scoreboard players set @s[scores={MusicType=-32}] Music 480
 playsound luigis_mansion:music.trick_door music @s[scores={MusicType=-31}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=-31}] Music 40
 playsound luigis_mansion:music.mansion.rank.high music @s[scores={MusicType=-30}] ~ ~ ~ 1000

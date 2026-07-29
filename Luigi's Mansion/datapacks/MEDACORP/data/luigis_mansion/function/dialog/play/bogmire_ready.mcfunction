@@ -13,5 +13,5 @@ execute if score #dialog Dialog matches 2..59 as @a[tag=same_room] run function 
 execute if score #dialog Dialog matches 10 as @a[tag=same_room] at @s run playsound luigis_mansion:ambience.bogmires_gravestone ambient @s ~ ~ ~ 1
 execute if score #dialog Dialog matches 60.. as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @e[tag=bogmires_gravestone,tag=same_room,limit=1] positioned ^ ^ ^7 facing entity @e[tag=bogmires_gravestone,tag=same_room,limit=1] feet",teleport:"~ ~ ~ ~ ~"}
 execute if score #dialog Dialog matches 80 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
-execute if score #dialog Dialog matches 80 run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {bogmire_ready:1b}
+execute if score #dialog Dialog matches 80 run data modify storage luigis_mansion:data current_state.luigis_mansion.current_data.technical_data merge value {bogmire_ready:1b}
 execute if score #dialog Dialog matches 80 run scoreboard players set #dialog Dialog -1

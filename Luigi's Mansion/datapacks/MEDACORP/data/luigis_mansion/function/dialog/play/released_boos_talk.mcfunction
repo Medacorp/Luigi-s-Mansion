@@ -75,7 +75,7 @@ execute if score #dialog Dialog matches 52 at @e[tag=e_gadd,tag=same_room,limit=
 
 execute if score #dialog Dialog matches 54 run data remove entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation
 execute if score #dialog Dialog matches 54 run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.oui_soh_suu_suhm_ck_ck_yuuohh
-execute if score #dialog Dialog matches 54 run data modify storage luigis_mansion:data current_state.current_data.obtained_items merge value {boo_radar:1b}
+execute if score #dialog Dialog matches 54 run data modify storage luigis_mansion:data current_state.luigis_mansion.current_data.obtained_items merge value {boo_radar:1b}
 execute if score #dialog Dialog matches 54 run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"underground_lab"},room:-1,progress:0}
 execute if score #dialog Dialog matches 54 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 54 run scoreboard players set #dialog Dialog -1

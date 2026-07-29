@@ -1,0 +1,1 @@
+execute if entity @s[tag=title_menu] run function luigis_mansion:selection_menu/title_menu/tick_process

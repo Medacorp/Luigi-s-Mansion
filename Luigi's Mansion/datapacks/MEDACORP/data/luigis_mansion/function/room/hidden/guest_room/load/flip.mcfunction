@@ -1,1 +1,1 @@
-execute if data storage luigis_mansion:data current_state.current_data.rooms.guest_room{cleared:1b} run place template luigis_mansion:guest_room/straight_up 723 19 77 none left_right
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data.rooms.guest_room{cleared:1b} run place template luigis_mansion:guest_room/straight_up 723 19 77 none left_right

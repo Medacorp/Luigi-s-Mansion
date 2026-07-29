@@ -1,1 +1,0 @@
-data modify storage 3ds_remake:data current_state set from storage 3ds_remake:data saved_state

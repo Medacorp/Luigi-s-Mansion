@@ -1,0 +1,4 @@
+execute unless score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/luigi/flip_breaker_switch/normal/right_arm
+execute unless score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/luigi/flip_breaker_switch/normal_flipped/right_arm
+execute if score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/luigi/flip_breaker_switch/mirrored/right_arm
+execute if score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/luigi/flip_breaker_switch/mirrored_flipped/right_arm

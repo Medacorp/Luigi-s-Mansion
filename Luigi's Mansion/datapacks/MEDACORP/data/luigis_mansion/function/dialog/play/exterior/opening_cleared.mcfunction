@@ -19,33 +19,37 @@ execute as @a[tag=this_player,limit=1,tag=game_boy_horror_menu] run function lui
 
 execute if score #dialog Dialog matches 1 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"870 89.9375 -4 160 0"}
 execute if score #dialog Dialog matches 2 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/animation/set/opening
+execute if score #dialog Dialog matches 2 run tag @e[tag=luigi,tag=this_player,limit=1] add reset_rotation
 execute if score #dialog Dialog matches 1 as @a[tag=same_room] run function luigis_mansion:other/music/set/opening
 execute if score #dialog Dialog matches 2..230 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"^ ^ ^0.1"}
 execute if score #dialog Dialog matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"852.0 92.5 -6.0 -68 -35"}
 execute if score #dialog Dialog matches 2..60 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"~ ~-0.04 ~-0.016 ~-0.3 ~0.5"}
 execute if score #dialog Dialog matches 61..230 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"~0.005 ~ ~-0.07 ~0.04 ~0.029"}
 execute if score #dialog Dialog matches 231 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"829.8 90 10 90 0"}
-execute if score #dialog Dialog matches 231..240 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"829 89.9375 10 75 40"}
+execute if score #dialog Dialog matches 231..240 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"829 90 10 75 40"}
 execute if score #dialog Dialog matches 241..250 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"~ ~ ~ ~ ~4"}
-execute if score #dialog Dialog matches 251..300 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"829 89.9375 10 75 80"}
+execute if score #dialog Dialog matches 251..300 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"829 90 10 75 80"}
 execute if score #dialog Dialog matches 301..310 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"~ ~ ~ ~1.5 ~"}
 execute if score #dialog Dialog matches 311 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/make_sound/force {high:"luigis_mansion:entity.player.inspect.high_health",medium:"luigis_mansion:entity.player.inspect.high_health",low:"luigis_mansion:entity.player.inspect.low_health",duration:20}
-execute if score #dialog Dialog matches 311..330 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"829 89.9375 10 90 80"}
+execute if score #dialog Dialog matches 311..330 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"829 90 10 90 80"}
 execute if score #dialog Dialog matches 320 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/make_sound/simple {sound:"luigis_mansion:item.map_tap"}
 execute if score #dialog Dialog matches 331..355 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"~ ~ ~ ~ ~-4"}
 execute if score #dialog Dialog matches 356..360 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"~ ~ ~ ~ ~2"}
 execute if score #dialog Dialog matches 361..365 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"~ ~ ~ ~ ~-1"}
-execute if score #dialog Dialog matches 366..380 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"829 89.9375 10 90 -15"}
+execute if score #dialog Dialog matches 366..380 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"829 90 10 90 -15"}
 execute if score #dialog Dialog matches 381..458 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @s facing 720 102 8.0",teleport:"^ ^ ^0.03 90 -15"}
 execute if score #dialog Dialog matches 459 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"750.0 101 8.0 90 -35"}
 execute if score #dialog Dialog matches 459..604 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"~0.211 ~-0.013 ~ ~ ~0.137"}
 execute if score #dialog Dialog matches 352 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
 execute if score #dialog Dialog matches 352 run function luigis_mansion:dialog/play/mansion_rank/music
 execute if score #dialog Dialog matches 356 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/animation/set/none
-execute if score #dialog Dialog matches 605 run tag @a[tag=this_player,limit=1] add first_entrance
+execute if score #dialog Dialog matches 605 if data storage luigis_mansion:data current_state run tag @a[tag=this_player,limit=1] add first_entrance
 execute if score #dialog Dialog matches 605 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
-execute if score #dialog Dialog matches 605 as @a[tag=this_player,limit=1] run function luigis_mansion:room/exterior/enter_lab
-execute if score #dialog Dialog matches 605 as @a[tag=same_room,tag=spectator] run function luigis_mansion:room/exterior/enter_lab
+execute if score #dialog Dialog matches 605 as @a[tag=this_player,limit=1] if data storage luigis_mansion:data current_state run function luigis_mansion:data/joined_save with entity @s
+execute if score #dialog Dialog matches 605 as @a[tag=this_player,limit=1] if data storage luigis_mansion:data current_state run function luigis_mansion:room/exterior/enter_lab
+execute if score #dialog Dialog matches 605 as @a[tag=same_room,tag=spectator] if data storage luigis_mansion:data current_state run function luigis_mansion:room/exterior/enter_lab
+execute if score #dialog Dialog matches 605 unless data storage luigis_mansion:data current_state run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"title_screen"},room:0}
+execute if score #dialog Dialog matches 605 run tag @e[tag=luigi,tag=this_player,limit=1] add reset_rotation
 execute if score #dialog Dialog matches 605 run scoreboard players set #dialog Dialog -1
 
 tag @e[tag=this_player] remove this_player

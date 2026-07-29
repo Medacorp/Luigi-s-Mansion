@@ -1,3 +1,3 @@
-execute if data storage 3ds_remake:data current_state.selected_portraits{neville:-1b} run data modify storage 3ds_remake:data current_state.selected_portraits.neville set from storage luigis_mansion:data current_state.portrait_ghost_ranks.neville
+execute if data storage luigis_mansion:data current_state.3ds_remake.selected_portraits{neville:-1b} run data modify storage luigis_mansion:data current_state.3ds_remake.selected_portraits.neville set from storage luigis_mansion:data current_state.luigis_mansion.portrait_ghost_ranks.neville
 data modify storage luigis_mansion:data furniture set value {room:-4,searchable:["interact"],no_dust:1b,interact_animation:{namespace:"luigis_mansion",id:"inspect"},search_command:"function 3ds_remake:selection_menu/gallery_portrait/open_menu/portrait_ghost",gallery_portrait:{x:765,y:77,z:-19,x_rotation:0,y_rotation:-90}}
 execute positioned 765.0 79.5 -19 rotated -90 0 run function luigis_mansion:spawn_furniture/gallery_portrait/neville

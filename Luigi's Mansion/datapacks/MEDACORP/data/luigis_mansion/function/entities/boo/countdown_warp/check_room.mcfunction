@@ -7,7 +7,7 @@ $scoreboard players set #temp Time $(old_slots)
 $execute as @e[scores={Room=$(room)},tag=can_hide_boo] run scoreboard players add #temp Time 1
 $execute as @e[scores={Room=$(room)},tag=hidden_boo] run scoreboard players remove #temp Time 1
 execute if score #temp Time matches 1.. run tag @s add can_hide
-$execute if data storage luigis_mansion:data current_state.current_data.rooms.$(name){cleared:1b} run tag @s[tag=can_hide] add transform_to_hidden_boo
+$execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data.rooms.$(name){cleared:1b} run tag @s[tag=can_hide] add transform_to_hidden_boo
 $function $(namespace):entities/boo/direction/mansion/$(id)
 data modify storage luigis_mansion:data temp set from entity @s data.warp_options
 data modify entity @s data.warp_options set value []

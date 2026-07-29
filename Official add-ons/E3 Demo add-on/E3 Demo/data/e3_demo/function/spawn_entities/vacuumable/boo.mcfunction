@@ -6,9 +6,9 @@ execute as @e[tag=this_entity,tag=!model_piece,limit=1] store result score @s Gh
 execute as @e[tag=this_entity,tag=!model_piece,limit=1] store result storage luigis_mansion:data unique_id.ghost int 1 run scoreboard players add @s GhostNr 1
 scoreboard players operation @e[tag=this_entity,tag=model_piece] GhostNr = @e[tag=this_entity,tag=!model_piece,limit=1] GhostNr
 tag @e[tag=this_entity,tag=model_piece] remove this_entity
-execute as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.ghosts.e3_demo.boo.speed
-data modify entity @e[tag=this_entity,limit=1] data.loot_storage set from storage luigis_mansion:data current_state.current_data.ghosts.e3_demo.boo.loot
-data modify entity @e[tag=this_entity,limit=1] data.damage set from storage luigis_mansion:data current_state.current_data.ghosts.e3_demo.boo.damage
+execute as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.luigis_mansion.current_data.ghosts.e3_demo.boo.speed
+data modify entity @e[tag=this_entity,limit=1] data.loot_storage set from storage luigis_mansion:data current_state.luigis_mansion.current_data.ghosts.e3_demo.boo.loot
+data modify entity @e[tag=this_entity,limit=1] data.damage set from storage luigis_mansion:data current_state.luigis_mansion.current_data.ghosts.e3_demo.boo.damage
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 5
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 14
 function luigis_mansion:spawn_entities/setup/default

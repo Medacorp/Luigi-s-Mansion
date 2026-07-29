@@ -1,9 +1,9 @@
 place template luigis_mansion:boneyard/plant_5 676 102 -26 none left_right
 data modify storage luigis_mansion:data furniture set value {room:28,tags:["drop_loot"]}
-execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["boneyard_giant_flower"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"boneyard_giant_flower"}
-execute unless data storage luigis_mansion:data current_state.current_data{money_spawned:["boneyard_giant_flower"]} run data modify storage luigis_mansion:data furniture.loot.contents set from storage luigis_mansion:data current_state.current_data.loot_collections.furniture.gold_diamond
+execute unless data storage luigis_mansion:data current_state.luigis_mansion.current_data{money_spawned:["boneyard_giant_flower"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"boneyard_giant_flower"}
+execute unless data storage luigis_mansion:data current_state.luigis_mansion.current_data{money_spawned:["boneyard_giant_flower"]} run data modify storage luigis_mansion:data furniture.loot.contents set from storage luigis_mansion:data current_state.luigis_mansion.current_data.loot_collections.furniture.gold_diamond
 execute unless data storage luigis_mansion:data furniture.loot positioned 678 105 -28 run function luigis_mansion:blocks/dust
 execute if data storage luigis_mansion:data furniture.loot positioned 678 105 -28 run function luigis_mansion:spawn_furniture/room_clear_loot_dropper
 data remove storage luigis_mansion:data furniture
 execute as @a[scores={Room=28}] run function luigis_mansion:other/music/set/secret_revealed
-data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {watered_boneyard_plant_3:1b}
+data modify storage luigis_mansion:data current_state.luigis_mansion.current_data.technical_data merge value {watered_boneyard_plant_3:1b}

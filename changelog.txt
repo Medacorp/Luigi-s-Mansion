@@ -1,8 +1,16 @@
 v?:
 * Updated to 26.2
+* Added title menu, you now have 3 save games in 1 map, just like you get 3 games on the original
+** previous unsaved state will be saved to slot 1 upon upgrading
+** previous saved state will be saved to slot 2 upon upgrading
+** all players leaving the world now discards unsaved data
+** You can show the settings in this menu too
+*** (Global) 3DS Remake gallery is excluded here since it only appears when you've shown E. Gadd the Game Boy Horror part
+*** Debugging single entity/furniture hitbox is excluded here since you cannot face one here
 * Added Skipable Dialogs add-on, it grants the skip option on all dialogs; that's it
 * Added proper training door, one without the sign is now named green_planks
 * Added Luigi animations:
+** Flip breaker switch
 ** Ghost escape
 ** Knockback/fall
 ** Knockback/large wall
@@ -18,16 +26,18 @@ v?:
 ** Table mounted knitting bowls
 ** Table mounted telephones
 *** Luigi's answer phone animation now holds the horn
+* Added "Back to Title" option to both the underground lab dialog, and the Game Boy Horror menu; this will ask for confirmation since it discards unsaved data
 * Added 3DS Remake task clear sound
 * Added bowser's damage and loot to mansion data's ghost list
-* Changed luigi's knockback/large and game boy horror animations to more accurately reflect how it looks in the original
 * Changed Underground Lab to always trigger the dialog if no dialog is active
 * Changed Training Room door spawn function to match how it actually spawns in game (GCN and 3DS)
+* Changed luigi's knockback/large and game boy horror animations to more accurately reflect how it looks in the original
 * Changed Ghost Portrificationizer Room's E. Gadd to not be able to be talked to, forcing portrificationizing
 * Changed Boo pathfinding to be less cardinal direction-based
 * Changed Mr. Luggs to behave more accurately to the original game
 * Changed Graveyard Mr. Bones' spawning logic to match original game
 * Changed painting Mario and Bowser to be 2D
+* Changed Jarvis to shrink down in width when entering a vase
 * Changed Chauncey in the Nursery in 3DS Remake to not count progress back down when stopping the rocking horse, matching the remake
 * Changed score display to not list unobtained money types at all in 3DS Remake, matching the remake
 * Changed a bunch of furniture variation names from left and right to be more clear which is which
@@ -59,6 +69,9 @@ v?:
 * Changed how owners' attacks hits are handled; owners can now ignore them, rather than always laughing or complaining
 ** Alongside this, more entities now tell their owner if they hit or missed
 * Fixed entering the world in singleplayer displayed "reloaded" message
+* Fixed entities disappeared near the bottom of the screen
+* Fixed rotating without moving would not reset your idle time (upon body turning), causing idle animations to start and get canceled as you were rotating
+* Fixed catching multiple ghosts at once was impossible due to oversight of v3.5 changes
 * Fixed interact didn't work on portaits in:
 ** Study
 ** Nursery
@@ -68,8 +81,6 @@ v?:
 ** Billiards Room
 ** Sitting Room
 ** Guest Room
-* Fixed entities disappeared near the bottom of the screen
-* Fixed catching multiple ghosts at once was impossible due to oversight of v3.5 changes
 * Fixed interacting with an exactly 1 block tall furniture would not force the low-furniture search behavior
 * Fixed ceiling ghosts' none attack didn't cancel after a certain distance; I didn't know about this behavior until now
 ** Rather than using their broken "wait" animation like in the original, I opted for the finished-but-unused "idle" one
@@ -82,16 +93,19 @@ v?:
 * Fixed the twins didn't face the player during the dialog
 * Fixed Henry repeated appear animation if you got the wrong box
 * Fixed the twins didn't blockade the door
-* Fixed Henry's drifting now works properly
+* Fixed Henry's drifting worked improperly
 * Fixed Boolossus' collision hitbox was the same regardless of their size
 * Fixed Boolossus' bouncing height now matches visuals
 * Fixed breaker room reflection showed some incorrect blocks
 * Fixed clockwork room clocks barely made sounds
 * Fixed Clockwork Soldiers were forever stuck in complain animation until vacuumed
 * Fixed Clockwork Soldiers were unable to actually hit you
+* Fixed Bowser's re-attach backwards would sometimes get stuck
+* Fixed catching King Boo and vacuuming up the crown didn't work properly at times
+* Fixed Bowser death animation camera movement didn't work properly on non-every-tick teleport frequencies
 * Fixed Bowser and Mario had no hitbox
 * Fixed installing the 3DS Remake didn't grant the water plant task if you had obtained money from watering a plant
-* Removed underground lab's "Sorry to bother you" and "The Ghost Portrificationizer Room" options
+* Removed underground lab's "Sorry to bother you", "Load old data", and "The Ghost Portrificationizer Room" options
 * Removed ghost potrificationizer room repeat dialog
 * Removed "Full to Bursting You Say?" advancement, as it's now impossible to achieve
 

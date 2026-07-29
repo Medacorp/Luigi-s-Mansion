@@ -6,7 +6,7 @@ execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run functio
 tag @e[tag=mouse,tag=same_room] remove freeze_animation
 tag @e[tag=mouse,tag=same_room] remove no_ai
 execute if score #dialog Dialog matches 1..140 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
-execute if score #dialog Dialog matches 1 run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {chauncey_cried:1b}
+execute if score #dialog Dialog matches 1 run data modify storage luigis_mansion:data current_state.luigis_mansion.current_data.technical_data merge value {chauncey_cried:1b}
 execute if score #dialog Dialog matches 1 at @e[tag=same_room,tag=chaunceys_door,limit=1] run playsound luigis_mansion:entity.chauncey.cutscene_scream hostile @a[tag=same_room] ~ ~ ~ 3
 execute if score #dialog Dialog matches 1..59 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @e[tag=chaunceys_door,tag=same_room,limit=1] positioned ^ ^ ^2 facing entity @s feet rotated ~-180 ~ positioned as @s[distance=..3] positioned ^ ^ ^0.01 facing entity @e[tag=chaunceys_door,tag=same_room,limit=1] feet",teleport:"~ ~ ~ ~ ~"}
 execute if score #dialog Dialog matches 1..59 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @e[tag=chaunceys_door,tag=same_room,limit=1] positioned ^ ^ ^2 facing entity @s feet rotated ~-180 ~ positioned as @s[distance=3..6] positioned ^ ^ ^0.05 facing entity @e[tag=chaunceys_door,tag=same_room,limit=1] feet",teleport:"~ ~ ~ ~ ~"}

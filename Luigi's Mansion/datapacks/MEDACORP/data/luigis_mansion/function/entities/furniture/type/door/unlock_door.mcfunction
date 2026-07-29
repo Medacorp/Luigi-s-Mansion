@@ -1,5 +1,5 @@
 scoreboard players add @s AnimationProgress 1
-execute if entity @s[scores={AnimationProgress=80}] run data modify storage luigis_mansion:data current_state.current_data.used_keys append from entity @s data.key
+execute if entity @s[scores={AnimationProgress=80}] run data modify storage luigis_mansion:data current_state.luigis_mansion.current_data.used_keys append from entity @s data.key
 execute if entity @s[scores={AnimationProgress=80}] run data remove entity @s data.key
 execute if entity @s[scores={AnimationProgress=80}] run tag @a[tag=looking_at_map,limit=1] add regenerate_map
 execute if entity @s[scores={AnimationProgress=180}] run playsound luigis_mansion:furniture.door.grab_knob block @a[tag=same_room] ~ ~ ~ 1

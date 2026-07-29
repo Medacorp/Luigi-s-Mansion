@@ -1,0 +1,1 @@
+$execute unless data storage luigis_mansion:data current_state.luigis_mansion{joined_save:[$(UUID)]} run data modify storage luigis_mansion:data current_state.luigis_mansion.joined_save append from entity @s UUID

@@ -1,5 +1,5 @@
 execute positioned ~-0.5 ~ ~-0.5 if entity @e[type=minecraft:item_display,tag=ball,tag=spit,dx=0,dy=1,dz=0] run scoreboard players add @s[scores={Dialog=131}] Dialog 1
-execute if data storage luigis_mansion:data current_state.current_data.technical_data{chauncey_spoke:1b} run scoreboard players add @s[scores={Dialog=130}] Dialog 1
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data.technical_data{chauncey_spoke:1b} run scoreboard players add @s[scores={Dialog=130}] Dialog 1
 scoreboard players add @s[scores={Dialog=50..129}] Dialog 1
 execute if entity @e[tag=rocking_horse,tag=same_room,tag=was_shaking,limit=1] run scoreboard players add @s[scores={Dialog=1..49}] Dialog 1
 execute unless entity @e[tag=rocking_horse,tag=same_room,tag=was_shaking,limit=1] if entity @s[scores={Dialog=2..49}] run return 0
@@ -14,8 +14,8 @@ execute if entity @s[scores={Dialog=30},nbt={data:{animation:{namespace:"luigis_
 execute if entity @s[scores={Dialog=10},nbt={data:{animation:{namespace:"luigis_mansion",id:"scream_wake"}}}] run playsound luigis_mansion:entity.chauncey.scream_wake hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=30},nbt={data:{animation:{namespace:"luigis_mansion",id:"scream_wake"}}}] run playsound luigis_mansion:entity.chauncey.scream_wake hostile @a[tag=same_room] ~ ~ ~ 1
 teleport @s[scores={Dialog=51}] 748 21 -55
-execute if entity @s[scores={Dialog=51}] unless data storage luigis_mansion:data current_state.current_data.technical_data{chauncey_spoke:1b} run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"chauncey_lets_play"},progress:0}
-execute if entity @s[scores={Dialog=51}] unless data storage luigis_mansion:data current_state.current_data.technical_data{chauncey_spoke:1b} store result storage luigis_mansion:data dialogs[-1].room int 1 run scoreboard players get @s Room
+execute if entity @s[scores={Dialog=51}] unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.technical_data{chauncey_spoke:1b} run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"chauncey_lets_play"},progress:0}
+execute if entity @s[scores={Dialog=51}] unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.technical_data{chauncey_spoke:1b} store result storage luigis_mansion:data dialogs[-1].room int 1 run scoreboard players get @s Room
 execute if entity @s[scores={Dialog=51}] run tag @e[tag=same_room,tag=furniture,tag=door] add blockade
 data modify entity @s[scores={Dialog=51}] data.animation set value {namespace:"luigis_mansion",id:"yawn"}
 execute if entity @s[scores={Dialog=52..},tag=!attack,tag=!vanish] facing entity @e[tag=same_room,tag=luigi,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~

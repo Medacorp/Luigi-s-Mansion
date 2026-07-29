@@ -11,6 +11,6 @@ execute if entity @e[tag=luigi,tag=same_room,limit=1] run function e3_demo:room/
 tag @e[tag=luigi,tag=same_room] remove same_room
 tag @e[tag=luigi,tag=exact_same_room] remove exact_same_room
 
-execute store result score #temp Time run data get storage luigis_mansion:data current_state.current_data.rooms.hallway_4.time_spent_in
-execute if entity @a[tag=!door_animation,scores={Room=9},limit=1] if data storage luigis_mansion:data current_state.current_data.rooms.hallway_4{cleared:0b} store result storage luigis_mansion:data current_state.current_data.rooms.hallway_4.time_spent_in int 1 run scoreboard players add #temp Time 1
+execute store result score #temp Time run data get storage luigis_mansion:data current_state.luigis_mansion.current_data.rooms.hallway_4.time_spent_in
+execute if entity @a[tag=!door_animation,scores={Room=9},limit=1] if data storage luigis_mansion:data current_state.luigis_mansion.current_data.rooms.hallway_4{cleared:0b} store result storage luigis_mansion:data current_state.luigis_mansion.current_data.rooms.hallway_4.time_spent_in int 1 run scoreboard players add #temp Time 1
 scoreboard players reset #temp Time

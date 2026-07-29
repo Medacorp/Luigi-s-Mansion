@@ -1,1 +1,1 @@
-$execute if data storage luigis_mansion:data current_state.mansion_data[{data_index:$(index)}] run function luigis_mansion:room/load_mansion_data {index:$(index)}
+$execute if data storage luigis_mansion:data current_state.luigis_mansion.mansion_data[{data_index:$(index)}] run function luigis_mansion:room/load_mansion_data {index:$(index)}

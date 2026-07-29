@@ -279,6 +279,7 @@ luigis_mansion:sir_weston                             | Yes         |           
 luigis_mansion:sue_pea                                | Yes         | Luigi                                           | Don't try to wake me...                     | Technical flag sue_pea_spoke set
 luigis_mansion:the_book_of_pericles                   | Yes         |                                                 | Book in the Study                           | 
 luigis_mansion:the_mansion                            | Yes         |                                                 | So you believe the mansion exists...        | Warp to Training Room + clear Underground Lab
+luigis_mansion:title_screen                           | Yes         |                                                 | The title screen                            | Open title menu, or trigger opening dialog if ignored
 luigis_mansion:toad_1                                 | Yes         |                                                 | Toad in the Foyer                           | Clear room 1 and 2 (choice) + technical flag toad_1_spoke set + Save progress (choice)
 luigis_mansion:toad_1_repeat                          | Yes         |                                                 | Talking with Toad in Foyer again            | Save progress (choice) + 3ds_remake:toad_heal
 luigis_mansion:toad_2                                 | Yes         |                                                 | Toad on Balcony                             | Clear room 6

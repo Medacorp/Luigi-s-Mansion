@@ -1,3 +1,3 @@
 $function $(namespace):selection_menu/gallery_portrait/get_portrait_battle_title/$(id)
 execute unless data storage luigis_mansion:data menu_options.options[-1].components."minecraft:lore" run data modify storage luigis_mansion:data menu_options.options[-1].components."minecraft:lore" set value []
-data modify storage luigis_mansion:data menu_options.options[-1].components."minecraft:lore" append from storage luigis_mansion:data current_state.current_data.portrait_battle.mode
+data modify storage luigis_mansion:data menu_options.options[-1].components."minecraft:lore" append from storage luigis_mansion:data current_state.luigis_mansion.current_data.portrait_battle.mode

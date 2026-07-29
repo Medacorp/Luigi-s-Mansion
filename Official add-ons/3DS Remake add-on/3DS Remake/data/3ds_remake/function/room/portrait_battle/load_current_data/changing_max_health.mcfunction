@@ -1,1 +1,1 @@
-execute store result score #changing_max_health Selected run data get storage 3ds_remake:data loaded_mansion.settings.changing_max_health
+execute store result score #changing_max_health Selected run data get storage luigis_mansion:data current_state.3ds_remake.loaded_mansion.settings.changing_max_health

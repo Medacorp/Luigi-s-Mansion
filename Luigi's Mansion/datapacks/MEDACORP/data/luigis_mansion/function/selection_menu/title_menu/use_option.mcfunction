@@ -1,0 +1,1 @@
+$execute if entity @s[tag=title_menu] run function $(namespace):selection_menu/title_menu/$(id)

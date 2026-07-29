@@ -1,0 +1,1 @@
+execute if data storage extensive_training:data current_state unless data storage extensive_training:data {data_version:2} run function extensive_training:other/upgrade_path/move_to_save

@@ -1,2 +1,2 @@
 execute as @a run function luigis_mansion:entities/luigi/move/execute {execute:"in luigis_mansion:normal",teleport:"705 11 -40 -180 0"}
-data modify storage luigis_mansion:data current_state.current_data.money_spawned set value ["ball_room_bejeweled_chandelier_1","ball_room_bejeweled_chandelier_2"]
+data modify storage luigis_mansion:data current_state.luigis_mansion.current_data.money_spawned set value ["ball_room_bejeweled_chandelier_1","ball_room_bejeweled_chandelier_2"]

@@ -7,5 +7,5 @@ execute unless entity @s[scores={MapZoomTime=1..}] unless entity @s[tag=!walking
 execute as @e[tag=luigi,distance=0..] at @s run function luigis_mansion:selection_menu/game_boy_horror/map/ensure_marker_shows
 execute unless entity @a[tag=!looking_at_map,scores={Room=1..}] run scoreboard players set #freeze_timer Selected 1
 execute if entity @s[tag=regenerate_map,scores={Room=..-1}] run function #luigis_mansion:selection_menu/game_boy_horror/map/display/lab
-execute if entity @s[tag=regenerate_map,scores={Room=1..}] run function luigis_mansion:selection_menu/game_boy_horror/map/display/mansion with storage luigis_mansion:data current_state.current_data.mansion_id
+execute if entity @s[tag=regenerate_map,scores={Room=1..}] run function luigis_mansion:selection_menu/game_boy_horror/map/display/mansion with storage luigis_mansion:data current_state.luigis_mansion.current_data.mansion_id
 tag @a[distance=0..] remove regenerate_map

@@ -30,7 +30,7 @@ execute if score #dialog Dialog matches 5 if score #players Totals matches 1 if 
 execute if score #dialog Dialog matches 5 if score #players Totals matches 2.. if entity @a[tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.ghost_portrificationizer_room.3.more"}]}
 execute if score #dialog Dialog matches 5 if entity @a[tag=next_dialog_line,limit=1] at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.mm_poheh_oyahmah_oydohroh neutral @a[tag=same_room] ~ ~ ~ 1
 
-execute if score #dialog Dialog matches 6 run data modify storage luigis_mansion:data rooms.ghost_portrificationizer_room merge value {cleared:1b}
+execute if score #dialog Dialog matches 6 run data modify storage luigis_mansion:data current_state.luigis_mansion.rooms.ghost_portrificationizer_room merge value {cleared:1b}
 execute if score #dialog Dialog matches 6 run tag @a[tag=looking_at_map,nbt={Dimension:"minecraft:overworld"},limit=1] add regenerate_map
 execute if score #dialog Dialog matches 6 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 6 run scoreboard players set #dialog Dialog -1

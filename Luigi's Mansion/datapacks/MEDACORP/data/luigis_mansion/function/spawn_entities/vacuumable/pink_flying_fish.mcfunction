@@ -5,9 +5,9 @@ execute as @e[tag=this_entity,tag=!model_piece,limit=1] store result storage lui
 scoreboard players operation @e[tag=this_entity,tag=model_piece] GhostNr = @e[tag=this_entity,tag=!model_piece,limit=1] GhostNr
 tag @e[tag=this_entity,tag=model_piece] remove this_entity
 execute as @e[tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
-execute as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.pink_flying_fish.speed
-data modify entity @e[tag=this_entity,limit=1] data.loot_storage set from storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.pink_flying_fish.loot
-data modify entity @e[tag=this_entity,limit=1] data.damage set from storage luigis_mansion:data current_state.current_data.ghosts.luigis_mansion.pink_flying_fish.damage
+execute as @e[tag=this_entity,limit=1] store result score @s Move run data get storage luigis_mansion:data current_state.luigis_mansion.current_data.ghosts.luigis_mansion.pink_flying_fish.speed
+data modify entity @e[tag=this_entity,limit=1] data.loot_storage set from storage luigis_mansion:data current_state.luigis_mansion.current_data.ghosts.luigis_mansion.pink_flying_fish.loot
+data modify entity @e[tag=this_entity,limit=1] data.damage set from storage luigis_mansion:data current_state.luigis_mansion.current_data.ghosts.luigis_mansion.pink_flying_fish.damage
 scoreboard players set @e[tag=this_entity,limit=1] EntitySizeRadius 4
 scoreboard players set @e[tag=this_entity,limit=1] EntityYOffset 0
 function luigis_mansion:spawn_entities/setup/default

@@ -1,1 +1,1 @@
-execute store result score #poltergust_500 Selected run data get storage 3ds_remake:data loaded_mansion.settings.poltergust_500
+execute store result score #poltergust_500 Selected run data get storage luigis_mansion:data current_state.3ds_remake.loaded_mansion.settings.poltergust_500

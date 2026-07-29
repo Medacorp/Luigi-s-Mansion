@@ -1,0 +1,2 @@
+function luigis_mansion:selection_menu/game_boy_horror/exit
+function luigis_mansion:data/back_to_title

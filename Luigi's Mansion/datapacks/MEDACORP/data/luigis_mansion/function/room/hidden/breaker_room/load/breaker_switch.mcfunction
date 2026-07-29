@@ -1,5 +1,5 @@
 data modify storage luigis_mansion:data furniture set value {room:57,shake_animation:["interact"],no_dust:1b,no_long_shake:1b,no_visual_shake:1b,sound:{namespace:"luigis_mansion",id:"stove"},search_command:"execute as @e[tag=searcher,tag=luigi,limit=1] run function luigis_mansion:room/hidden/breaker_room/end_blackout"}
-execute if data storage luigis_mansion:data current_state.current_data{blackout:0b} run data modify storage luigis_mansion:data furniture merge value {searched:1b,no_search_animation:1b}
-execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} run data modify storage luigis_mansion:data furniture.tags set value ["can_approach","breaker_switch"]
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data{blackout:0b} run data modify storage luigis_mansion:data furniture merge value {searched:1b,no_search_animation:1b}
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data{blackout:1b} run data modify storage luigis_mansion:data furniture.tags set value ["can_approach","breaker_switch"]
 execute positioned 688 2 67 rotated -90 0 run function luigis_mansion:spawn_furniture/breaker_switch/counterclockwise_indicators
 data remove storage luigis_mansion:data furniture

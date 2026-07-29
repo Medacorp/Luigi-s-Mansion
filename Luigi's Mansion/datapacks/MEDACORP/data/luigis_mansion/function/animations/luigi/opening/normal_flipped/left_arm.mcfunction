@@ -22,4 +22,5 @@ scoreboard players remove @s[scores={AnimationProgress=879..898}] AnimationRotat
 execute if entity @s[scores={AnimationProgress=231..235},tag=!held_item] run scoreboard players add @s AnimationRotationY 60
 scoreboard players remove @s[scores={AnimationProgress=321..325}] AnimationRotationY 30
 scoreboard players remove @s[scores={AnimationProgress=331..335}] AnimationRotationY 30
-execute if entity @s[scores={AnimationProgress=335}] run scoreboard players add @s[scores={AnimationProgress=879..898}] AnimationRotationZ 10
+scoreboard players set @s[scores={AnimationProgress=335}] AnimationRotationY 0
+scoreboard players add @s[scores={AnimationProgress=879..898}] AnimationRotationZ 10

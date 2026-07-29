@@ -54,7 +54,7 @@ Q. Why doesn't the option to select a choice in a dialog work?
 A. Gooigi cannot speak, other players will have to react instead. If you're not using gooigi, make a bug report and provide the world folder (as a zip).
 
 Q. Why doesn't anything happen when I approach the telephone/breaker switch/valve?
-A. If you got the 3DS Remake installed, interacting is required while bing in front of the approach furniture types.
+A. If you got the 3DS Remake installed, interacting is required while being in front of the approach furniture types.
 
 Q. Can I turn off the opening of the Game Boy Horror map when collecting a key?
 A. Yes, go to the map settings (via Game Boy Horror) and use the option to change it.

@@ -1,5 +1,5 @@
-$execute if data storage luigis_mansion:data current_state.current_data{data_index:$(data_index)} run data modify storage luigis_mansion:data temp set from storage luigis_mansion:data current_state.current_data
-$execute if data storage luigis_mansion:data current_state.mansion_data[{data_index:$(data_index)}] run data modify storage luigis_mansion:data temp set from storage luigis_mansion:data current_state.mansion_data[{data_index:$(data_index)}]
+$execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data{data_index:$(data_index)} run data modify storage luigis_mansion:data temp set from storage luigis_mansion:data current_state.luigis_mansion.current_data
+$execute if data storage luigis_mansion:data current_state.luigis_mansion.mansion_data[{data_index:$(data_index)}] run data modify storage luigis_mansion:data temp set from storage luigis_mansion:data current_state.luigis_mansion.mansion_data[{data_index:$(data_index)}]
 data modify storage luigis_mansion:data menu_options.options[-1].components."minecraft:lore" set value []
 $execute unless data storage luigis_mansion:data temp run function 3ds_remake:room/generate_mansion_data {namespace:"$(namespace)",id:"$(id)"}
 execute store result score #area Time run data get storage luigis_mansion:data temp.area

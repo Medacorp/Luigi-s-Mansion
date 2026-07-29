@@ -7,6 +7,6 @@ scoreboard players set #temp Room 74
 
 execute as @a[scores={Room=74}] run function 3ds_remake:room/hidden/bogmire_battle/tick_per_player
 
-execute if data storage luigis_mansion:data current_state.current_data.rooms.graveyard{cleared:0b} as @a unless entity @s[scores={Room=74}] run function 3ds_remake:room/hidden/bogmire_battle/warp_to
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data.rooms.graveyard{cleared:0b} as @a unless entity @s[scores={Room=74}] run function 3ds_remake:room/hidden/bogmire_battle/warp_to
 
 execute if entity @e[tag=luigi,tag=!door_animation,scores={Room=74},limit=1] run function 3ds_remake:room/hidden/bogmire_battle/ghosts

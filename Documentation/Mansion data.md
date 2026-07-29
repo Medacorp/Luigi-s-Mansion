@@ -2,7 +2,6 @@ Mansion data is a massive collection of info storing everything the map needs to
 
 ```
 {
-    data_version:X, //Used by upgrade paths to convert old save-data to the newer format.
     data_index:X, //The mansion save data index. Mansions with the same index share data.
     mansion_id:{ //Used to run functions, unlike all other data, this is set every time a mansion is selected, and is as such not shared between save data index mansions.
         namespace:"luigis_mansion", //The mansion namespace.
@@ -191,7 +190,7 @@ Mansion data is a massive collection of info storing everything the map needs to
             id:"boo_b_hatch" //The ID of the boo.
         }
     ],
-    last_area_portrificationized:X, //Value of "area" the last time the portrificationizer was triggered. Used to not overwrite previous area score is portrificationizing before area increases. If absent area scores are skipped.
+    last_area_portrificationized:X, //Value of "area" the last time the portrificationizer was triggered. Used to not overwrite previous area score if portrificationizing before area increases. If absent area scores are skipped.
     previous_area_score:{ //Memory for score results
         time:X, //Time spent up until previous area.
         ghosts:X, //Ghosts defeated up until previous area.

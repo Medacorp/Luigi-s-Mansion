@@ -1,1 +1,1 @@
-$execute if data storage luigis_mansion:data current_state.current_data{money_spawned:["$(name)"]} run data remove storage luigis_mansion:data drop_loot
+$execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data{money_spawned:["$(name)"]} run data remove storage luigis_mansion:data drop_loot

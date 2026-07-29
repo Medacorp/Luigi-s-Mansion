@@ -1,1 +1,1 @@
-execute store result storage 3ds_remake:data loaded_mansion.settings.can_warp int 1 run scoreboard players get #can_warp Selected
+execute store result storage luigis_mansion:data current_state.3ds_remake.loaded_mansion.settings.can_warp int 1 run scoreboard players get #can_warp Selected

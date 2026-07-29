@@ -25,6 +25,6 @@ execute if score #dialog Dialog matches 1 as @a[tag=same_room] run function luig
 execute if score #dialog Dialog matches 253 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
 execute if score #dialog Dialog matches 253 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
 execute if score #dialog Dialog matches 253 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
-execute if score #dialog Dialog matches 253 run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {saw_mario_again:1b}
+execute if score #dialog Dialog matches 253 run data modify storage luigis_mansion:data current_state.luigis_mansion.current_data.technical_data merge value {saw_mario_again:1b}
 execute if score #dialog Dialog matches 253 run scoreboard players set #dialog Dialog -1
 tag @e[tag=observing_player,limit=1] remove observing_player

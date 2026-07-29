@@ -1,7 +1,7 @@
 scoreboard players set #temp Move 20
 execute unless entity @s[scores={Sound=0..}] run scoreboard players set @s Sound 4
 execute if entity @s[tag=!spooky_bone] rotated ~ 0 run function luigis_mansion:entities/bone/move_forward
-execute if entity @s[tag=spooky_bone] run function luigis_mansion:entities/bone/spooky with storage luigis_mansion:data current_state.current_data.mansion_id
+execute if entity @s[tag=spooky_bone] run function luigis_mansion:entities/bone/spooky with storage luigis_mansion:data current_state.luigis_mansion.current_data.mansion_id
 data modify storage luigis_mansion:data rotation set value [0.0f,0.0f,0.0f,1.0f]
 execute in minecraft:overworld run summon minecraft:marker 0.0 0.0 0.0 {Tags:["temp","remove_from_existence"]}
 execute store result entity @e[tag=temp,limit=1] Rotation[0] float 0.05 run scoreboard players get @s AnimationRotationX

@@ -21,7 +21,7 @@ execute if score #dialog Dialog matches 22 as @e[tag=luigi,tag=same_room] run fu
 execute if score #dialog Dialog matches 42..124 as @a[tag=same_room] run function luigis_mansion:other/music/set/e_gadd_call
 execute if score #dialog Dialog matches 42..124 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/game_boy_horror
 execute if score #dialog Dialog matches 42..124 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[2f,0f,0f,0f],tracker:[]}
-execute if score #dialog Dialog matches 42 store result score #temp Boos run data get storage luigis_mansion:data current_state.current_data.boo_counter
+execute if score #dialog Dialog matches 42 store result score #temp Boos run data get storage luigis_mansion:data current_state.luigis_mansion.current_data.boo_counter
 execute if score #dialog Dialog matches 42 store result score #temp Variant run random value 1..27
 execute if score #dialog Dialog matches 42 run tag @a[tag=same_room,limit=1] add next_dialog_line
 execute if score #dialog Dialog matches 42 if score #temp Boos matches 1 run scoreboard players set #dialog Dialog 109
@@ -342,7 +342,7 @@ execute if score #dialog Dialog matches 118 if entity @a[tag=next_dialog_line,li
 #119 save?
 
 execute if score #dialog Dialog matches 120 if entity @a[tag=next_dialog_line,limit=1] run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.hey_hey_suu_dehkooroo_hah
-execute if score #dialog Dialog matches 120 store result score #temp Boos run data get storage luigis_mansion:data current_state.current_data.boo_counter
+execute if score #dialog Dialog matches 120 store result score #temp Boos run data get storage luigis_mansion:data current_state.luigis_mansion.current_data.boo_counter
 execute if score #dialog Dialog matches 120 if score #temp Boos matches 5 run scoreboard players set #dialog Dialog 122
 execute if score #dialog Dialog matches 120 if score #players Totals matches 1 if entity @a[tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.caught_boo.end.2",with:[{type:"selector",selector:"@p[tag=!spectator]"}]}]}
 execute if score #dialog Dialog matches 120 if score #players Totals matches 2.. if entity @a[tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.caught_boo.end.2.more"}]}

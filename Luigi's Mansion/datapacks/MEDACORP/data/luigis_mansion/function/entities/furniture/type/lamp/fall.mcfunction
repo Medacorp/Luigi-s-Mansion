@@ -7,8 +7,10 @@ execute if entity @s[scores={ActionTime=1}] store result storage luigis_mansion:
 execute if entity @s[scores={ActionTime=21}] run summon minecraft:item_display ~ ~ ~ {CustomName:{type:"translatable",translate:"luigis_mansion:furniture.lamp"},Tags:["no_ai","freeze_animation","falling_chandelier_end","this_entity"],item_display:"head"}
 execute if entity @s[scores={ActionTime=21}] run summon minecraft:item_display ~ ~ ~ {CustomName:{type:"translatable",translate:"luigis_mansion:furniture.lamp"},Tags:["no_ai","freeze_animation","falling_chandelier_rod","this_entity"],item_display:"head"}
 execute if entity @s[scores={ActionTime=21}] run data modify entity @s data.rod set from entity @e[distance=..0.1,tag=falling_chandelier_rod,limit=1] UUID
+execute if entity @s[scores={ActionTime=21}] run data modify entity @e[distance=..0.1,tag=falling_chandelier_end,limit=1] brightness set from entity @s brightness
 execute if entity @s[scores={ActionTime=21}] run data modify entity @e[distance=..0.1,tag=falling_chandelier_end,limit=1] item set from entity @s item
 execute if entity @s[scores={ActionTime=21}] run data modify entity @e[distance=..0.1,tag=falling_chandelier_end,limit=1] item merge from entity @s item.components."minecraft:custom_data".model_data.end
+execute if entity @s[scores={ActionTime=21}] run data modify entity @e[distance=..0.1,tag=falling_chandelier_rod,limit=1] brightness set from entity @s brightness
 execute if entity @s[scores={ActionTime=21}] run data modify entity @e[distance=..0.1,tag=falling_chandelier_rod,limit=1] item set from entity @s item
 execute if entity @s[scores={ActionTime=21}] run data modify entity @e[distance=..0.1,tag=falling_chandelier_rod,limit=1] item merge from entity @s item.components."minecraft:custom_data".model_data.rod
 execute if entity @s[scores={ActionTime=21}] as @e[tag=this_entity] positioned as @s run teleport @s ~ ~ ~ ~ 0

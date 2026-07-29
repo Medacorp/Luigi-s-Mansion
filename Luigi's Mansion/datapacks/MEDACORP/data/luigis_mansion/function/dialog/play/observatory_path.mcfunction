@@ -24,5 +24,5 @@ execute if score #dialog Dialog matches 121..240 if score #mirrored Selected mat
 execute if score #dialog Dialog matches 241..260 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"~ ~ ~ ~ ~"}
 execute if score #dialog Dialog matches 260 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
 execute if score #dialog Dialog matches 260 run tag @e[tag=luigi,tag=same_room] add idle
-execute if score #dialog Dialog matches 260 run data modify storage luigis_mansion:data current_state.current_data.technical_data.observatory_path set value 1b
+execute if score #dialog Dialog matches 260 run data modify storage luigis_mansion:data current_state.luigis_mansion.current_data.technical_data.observatory_path set value 1b
 execute if score #dialog Dialog matches 260 run scoreboard players set #dialog Dialog -1

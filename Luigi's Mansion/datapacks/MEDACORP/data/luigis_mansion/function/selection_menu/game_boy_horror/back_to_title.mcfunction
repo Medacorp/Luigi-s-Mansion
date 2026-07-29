@@ -1,0 +1,5 @@
+tag @s add game_boy_horror_menu
+
+data modify storage luigis_mansion:data menu_options set value {back:{id:"original_menu",to:{type:"translatable",translate:"luigis_mansion:item.menu.original_menu"}},options:[{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:menu/dialog/choice/question","minecraft:unbreakable":{},"minecraft:tooltip_display":{hidden_components:["minecraft:unbreakable"]},"minecraft:attribute_modifiers":[],"minecraft:item_name":{type:"translatable",translate:"luigis_mansion:item.menu.game_boy_horror.back_to_title"},"minecraft:custom_data":{option:{id:"reload"}}}},{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:menu/dialog/choice/yes","minecraft:unbreakable":{},"minecraft:tooltip_display":{hidden_components:["minecraft:unbreakable"]},"minecraft:attribute_modifiers":[],"minecraft:item_name":{type:"translatable",translate:"luigis_mansion:item.menu.dialog.yes"},"minecraft:custom_data":{option:{id:"back_to_title_confirm"}}}}]}
+
+function luigis_mansion:entities/player/selection_menu/load

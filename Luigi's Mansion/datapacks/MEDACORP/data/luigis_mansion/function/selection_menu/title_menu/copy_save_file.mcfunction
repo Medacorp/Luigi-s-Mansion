@@ -1,0 +1,7 @@
+execute if data storage luigis_mansion:data selected_option{slot:0,to_slot:1} run data modify storage luigis_mansion:data saved_state[1] set from storage luigis_mansion:data saved_state[0]
+execute if data storage luigis_mansion:data selected_option{slot:0,to_slot:2} run data modify storage luigis_mansion:data saved_state[2] set from storage luigis_mansion:data saved_state[0]
+execute if data storage luigis_mansion:data selected_option{slot:1,to_slot:0} run data modify storage luigis_mansion:data saved_state[0] set from storage luigis_mansion:data saved_state[1]
+execute if data storage luigis_mansion:data selected_option{slot:1,to_slot:2} run data modify storage luigis_mansion:data saved_state[2] set from storage luigis_mansion:data saved_state[1]
+execute if data storage luigis_mansion:data selected_option{slot:2,to_slot:0} run data modify storage luigis_mansion:data saved_state[0] set from storage luigis_mansion:data saved_state[2]
+execute if data storage luigis_mansion:data selected_option{slot:2,to_slot:1} run data modify storage luigis_mansion:data saved_state[1] set from storage luigis_mansion:data saved_state[2]
+execute as @a[tag=title_menu] run function luigis_mansion:selection_menu/title_menu/original_menu

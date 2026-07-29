@@ -1,1 +1,1 @@
-#execute if data storage luigis_mansion:data current_state.current_data.portrait_battle{namespace:"",id:""} run function e3_demo:room/portrait_battle/tick/original/
+#execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data.portrait_battle{namespace:"",id:""} run function e3_demo:room/portrait_battle/tick/original/

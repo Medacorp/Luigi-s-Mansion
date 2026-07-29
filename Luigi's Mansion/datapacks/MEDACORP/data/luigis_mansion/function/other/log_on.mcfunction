@@ -6,12 +6,15 @@ tag @s[scores={Room=0}] add skip_dialog
 execute unless entity @s[scores={Shrunk=0..}] run function luigis_mansion:other/initial_scores
 function luigis_mansion:other/music/set/force/silence
 execute unless entity @s[scores={Jukebox=0}] run function luigis_mansion:selection_menu/game_boy_horror/jukebox/stop
+execute if entity @s[tag=using_selection_menu] run data modify storage luigis_mansion:data selected_option set value {id:"exit"}
+execute if entity @s[tag=using_selection_menu] run function luigis_mansion:selection_menu/tick
 scoreboard players set @s Offline 0
 scoreboard players set @s RoomNoise 0
 scoreboard players set @s LoadedChunks 0
 scoreboard players set @s CreditsTime 0
 execute unless entity @s[scores={FlashlightType=0..2}] run scoreboard players set @s FlashlightType 0
 function luigis_mansion:entities/player/clear_animation
+execute if data storage luigis_mansion:data current_state.luigis_mansion run function luigis_mansion:selection_menu/title_menu/join_save with entity @s
 execute if entity @s[tag=!dead_player] run function luigis_mansion:entities/player/camera/reset
 execute if entity @s[scores={Room=-2}] unless data storage luigis_mansion:data dialogs[{room:-2}] run function luigis_mansion:room/underground_lab/warp_to
 tag @s remove loaded_chunks

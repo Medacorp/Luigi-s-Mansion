@@ -1,4 +1,4 @@
-data modify storage 3ds_remake:data current_state.selected_portraits.mansion_rank set from storage luigis_mansion:data selected_option.value
+data modify storage luigis_mansion:data current_state.3ds_remake.selected_portraits.mansion_rank set from storage luigis_mansion:data selected_option.value
 execute if data storage luigis_mansion:data selected_option{value:-1b} run data modify storage luigis_mansion:data selected_option.value set value "empty"
 execute if data storage luigis_mansion:data selected_option{value:0b} run data modify storage luigis_mansion:data selected_option.value set value "h_rank"
 execute if data storage luigis_mansion:data selected_option{value:1b} run data modify storage luigis_mansion:data selected_option.value set value "g_rank"

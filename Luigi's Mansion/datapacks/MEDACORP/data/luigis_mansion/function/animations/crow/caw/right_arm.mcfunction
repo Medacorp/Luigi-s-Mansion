@@ -1,4 +1,5 @@
 scoreboard players add @s AnimationProgress 1
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX 0
 teleport @s[scores={AnimationProgress=11..}] ^ ^ ^0.1
 scoreboard players add @s[scores={AnimationProgress=11..15}] AnimationRotationX 20
 scoreboard players add @s[scores={AnimationProgress=41..45}] AnimationRotationZ 20

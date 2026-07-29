@@ -38,7 +38,7 @@ execute if score #dialog Dialog matches 99..158 as @e[tag=luigi,tag=same_room] r
 execute if score #dialog Dialog matches 158 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 158 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
 execute if score #dialog Dialog matches 158 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
-execute if score #dialog Dialog matches 158 as @e[tag=luigi,tag=same_room] run function luigis_mansion:room/default_position_in_mansion with storage luigis_mansion:data current_state.current_data.mansion_id
+execute if score #dialog Dialog matches 158 as @e[tag=luigi,tag=same_room] run function luigis_mansion:room/default_position_in_mansion with storage luigis_mansion:data current_state.luigis_mansion.current_data.mansion_id
 execute if score #dialog Dialog matches 158 run tag @e[tag=same_room,tag=mysterious_power,limit=1] add remove_from_existence
 execute if score #dialog Dialog matches 158 run scoreboard players set #dialog Dialog -1
 

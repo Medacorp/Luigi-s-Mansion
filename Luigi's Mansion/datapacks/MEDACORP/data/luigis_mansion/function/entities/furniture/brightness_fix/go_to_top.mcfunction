@@ -1,0 +1,1 @@
+$execute positioned ~ ~$(offset) ~ run function luigis_mansion:entities/furniture/brightness_fix/check_height

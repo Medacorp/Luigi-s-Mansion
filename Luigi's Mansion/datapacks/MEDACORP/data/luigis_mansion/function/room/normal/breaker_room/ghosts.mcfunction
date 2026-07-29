@@ -1,3 +1,3 @@
-execute unless data storage luigis_mansion:data current_state.current_data.rooms.breaker_room{cleared:1b} if data storage luigis_mansion:data current_state.current_data{blackout:0b} unless score #breaker_room Wave matches 1..99 run function luigis_mansion:room/normal/breaker_room/wave_1
-execute if data storage luigis_mansion:data current_state.current_data{blackout:1b} unless score #breaker_room Wave matches 1.. run function luigis_mansion:room/normal/breaker_room/blackout
+execute unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.rooms.breaker_room{cleared:1b} if data storage luigis_mansion:data current_state.luigis_mansion.current_data{blackout:0b} unless score #breaker_room Wave matches 1..99 run function luigis_mansion:room/normal/breaker_room/wave_1
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data{blackout:1b} unless score #breaker_room Wave matches 1.. run function luigis_mansion:room/normal/breaker_room/blackout
 function luigis_mansion:room/normal/breaker_room/load_vacuumable_ghosts

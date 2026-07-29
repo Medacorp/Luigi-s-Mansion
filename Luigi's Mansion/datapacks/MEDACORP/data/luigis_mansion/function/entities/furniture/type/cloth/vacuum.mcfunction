@@ -145,7 +145,6 @@ execute if score #temp FurnitureSizeForward matches ..-3 if score #temp Furnitur
 execute if score #temp FurnitureSizeLeft matches ..-3 unless score #temp FurnitureSizeForward = #temp Time run tag @s[scores={SearcherID=-2147483648..},tag=left,tag=!pulled_left,tag=!pulled_right,tag=!pulled_front,tag=!pulled_back] add pulled_left
 execute if score #temp FurnitureSizeLeft matches 3.. unless score #temp FurnitureSizeForward = #temp Time run tag @s[scores={SearcherID=-2147483648..},tag=right,tag=!pulled_left,tag=!pulled_right,tag=!pulled_front,tag=!pulled_back] add pulled_right
 data modify entity @s transformation set from storage luigis_mansion:data transformation
-data modify storage luigis_mansion:data temp_transformation set from storage luigis_mansion:data transformation
 data remove storage luigis_mansion:data transformation
 tag @s add transformed
 

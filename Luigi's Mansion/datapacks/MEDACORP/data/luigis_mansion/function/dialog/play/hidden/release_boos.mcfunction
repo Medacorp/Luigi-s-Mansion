@@ -41,6 +41,6 @@ execute if score #dialog Dialog matches 340 run tellraw @a[tag=same_room] {type:
 execute if score #dialog Dialog matches 460 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
 execute if score #dialog Dialog matches 460 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/sigh
 execute if score #dialog Dialog matches 480 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
-execute if score #dialog Dialog matches 480 run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {released_boos:1b}
+execute if score #dialog Dialog matches 480 run data modify storage luigis_mansion:data current_state.luigis_mansion.current_data.technical_data merge value {released_boos:1b}
 execute if score #dialog Dialog matches 480 run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"released_boos_call"},progress:0}
 execute if score #dialog Dialog matches 480 run scoreboard players set #dialog Dialog -1

@@ -22,7 +22,7 @@ execute if score #dialog Dialog matches 1300 as @e[tag=luigi,tag=walking_player,
 execute if score #dialog Dialog matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"724 20 28.0 -85 0"}
 execute if score #dialog Dialog matches 2..80 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"724.65 20 ~0.00625 ~0.25 0"}
 execute if score #dialog Dialog matches 81..105 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"724.65 20 28 -65 0"}
-execute if score #dialog Dialog matches 80 run data modify storage luigis_mansion:data entity set value {room:3,can_talk_to:0b,tags:["same_room","no_dialog_freeze","remove_after_dialog"]}
+execute if score #dialog Dialog matches 80 run data modify storage luigis_mansion:data entity set value {room:3,tags:["same_room","no_dialog_freeze","remove_after_dialog"]}
 execute if score #dialog Dialog matches 80 positioned 718 20 35 run function luigis_mansion:spawn_entities/e_gadd
 execute if score #dialog Dialog matches 80 run data modify storage luigis_mansion:data entity set value {room:3,no_ai:1b,rotation:[-155f,0f],tags:["same_room","visible","no_dialog_freeze","remove_after_dialog"],animation:{namespace:"luigis_mansion",id:"appear/normal"}}
 execute if score #dialog Dialog matches 80 positioned 725 20.2 30 run function luigis_mansion:spawn_entities/ghost/gold_ghost

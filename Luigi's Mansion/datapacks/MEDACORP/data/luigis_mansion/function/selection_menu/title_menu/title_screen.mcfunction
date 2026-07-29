@@ -1,0 +1,2 @@
+execute as @a[tag=title_menu] run function luigis_mansion:selection_menu/title_menu/exit
+data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"title_screen"}}

@@ -1,1 +1,1 @@
-$execute unless data storage luigis_mansion:data current_state.current_data{used_keys:["$(key)"]} run data modify entity @s data.key set value "$(key)"
+$execute unless data storage luigis_mansion:data current_state.luigis_mansion.current_data{used_keys:["$(key)"]} run data modify entity @s data.key set value "$(key)"

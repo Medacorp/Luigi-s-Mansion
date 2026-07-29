@@ -28,9 +28,9 @@ execute if score #dialog Dialog matches 1..23 as @a[tag=same_room,tag=!fully_sep
 execute if score #dialog Dialog matches 2..23 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"~ ~ ~ ~ ~"}
 execute if score #dialog Dialog matches 24..38 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @e[tag=portrait_grabbing_player,limit=1]",teleport:"^ ^ ^3 ~-180 0"}
 execute if score #dialog Dialog matches 39..103 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @e[tag=portrait_grabbing_player,limit=1]",teleport:"^ ^ ^-3 ~ 0"}
-execute if score #dialog Dialog matches 104 as @a[tag=same_room] unless score #mirrored Selected matches 1 run function luigis_mansion:entities/player/camera/execute {execute:"at @e[tag=portrait_grabbing_player,limit=1] positioned ~ ~1 ~ facing entity @e[tag=same_room,tag=marios_portrait,limit=1] feet positioned ~ ~-1 ~",teleport:"^1 ^ ^-1 ~ ~"}
-execute if score #dialog Dialog matches 104 as @a[tag=same_room] if score #mirrored Selected matches 1 run function luigis_mansion:entities/player/camera/execute {execute:"at @e[tag=portrait_grabbing_player,limit=1] positioned ~ ~1 ~ facing entity @e[tag=same_room,tag=marios_portrait,limit=1] feet positioned ~ ~-1 ~",teleport:"^-1 ^ ^-1 ~ ~"}
-execute if score #dialog Dialog matches 105..144 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"^ ^ ^0.05 ~ ~"}
+execute if score #dialog Dialog matches 104 as @a[tag=same_room] unless score #mirrored Selected matches 1 run function luigis_mansion:entities/player/camera/execute {execute:"at @e[tag=portrait_grabbing_player,limit=1] positioned ~ ~0.8 ~ facing entity @e[tag=same_room,tag=marios_portrait,limit=1] feet positioned ~ ~-0.8 ~",teleport:"^1 ^ ^-1 ~ ~"}
+execute if score #dialog Dialog matches 104 as @a[tag=same_room] if score #mirrored Selected matches 1 run function luigis_mansion:entities/player/camera/execute {execute:"at @e[tag=portrait_grabbing_player,limit=1] positioned ~ ~0.8 ~ facing entity @e[tag=same_room,tag=marios_portrait,limit=1] feet positioned ~ ~-0.8 ~",teleport:"^-1 ^ ^-1 ~ ~"}
+execute if score #dialog Dialog matches 105..144 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"^ ^ ^0.03 ~ ~"}
 execute if score #dialog Dialog matches 145..164 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"~ ~ ~ ~ ~"}
 execute if score #dialog Dialog matches 165..224 as @a[tag=same_room] unless score #mirrored Selected matches 1 run function luigis_mansion:entities/player/camera/execute {execute:"at @e[tag=portrait_grabbing_player,limit=1]",teleport:"^-0.4 ^ ^-0.25 ~ ~"}
 execute if score #dialog Dialog matches 165..224 as @a[tag=same_room] if score #mirrored Selected matches 1 run function luigis_mansion:entities/player/camera/execute {execute:"at @e[tag=portrait_grabbing_player,limit=1]",teleport:"^0.4 ^ ^-0.25 ~ ~"}
@@ -94,8 +94,8 @@ execute if score #dialog Dialog matches 37 if score #players Totals matches 2.. 
 execute if score #dialog Dialog matches 37 if entity @a[tag=next_dialog_line,limit=1] as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.oh_tohmah_poheh_jeemee_jeemee neutral @s ~ ~ ~ 1
 
 execute if score #dialog Dialog matches 38 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
-execute if score #dialog Dialog matches 38..57 at @e[tag=same_room,tag=marios_portrait,limit=1] positioned ^ ^-0.62 ^2.5 run tag @e[tag=portrait_grabbing_player,limit=1,distance=0.2..] add dialog_walking
-execute if score #dialog Dialog matches 38..57 as @e[tag=portrait_grabbing_player,limit=1] run function luigis_mansion:entities/luigi/move/execute {execute:"at @e[tag=same_room,tag=marios_portrait,limit=1] positioned ^ ^-0.62 ^2.5 facing entity @s[distance=0.2..] feet positioned as @s rotated ~-180 0",teleport:"^ ^ ^0.1 ~ ~"}
+execute if score #dialog Dialog matches 38..57 at @e[tag=same_room,tag=marios_portrait,limit=1] positioned ^ ^-2.02 ^2.5 run tag @e[tag=portrait_grabbing_player,limit=1,distance=0.2..] add dialog_walking
+execute if score #dialog Dialog matches 38..57 as @e[tag=portrait_grabbing_player,limit=1] run function luigis_mansion:entities/luigi/move/execute {execute:"at @e[tag=same_room,tag=marios_portrait,limit=1] positioned ^ ^-2.02 ^2.5 facing entity @s[distance=0.2..] feet positioned as @s rotated ~-180 0",teleport:"^ ^ ^0.1 ~ ~"}
 
 execute if score #dialog Dialog matches 58..62 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/think
 execute if score #dialog Dialog matches 58 run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.oh_tohmah_poheh_jeemee_jeemee
@@ -121,9 +121,9 @@ execute if score #dialog Dialog matches 63 as @a[tag=same_room] run function lui
 execute if score #dialog Dialog matches 83 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/nod
 
 execute if score #dialog Dialog matches 83 as @a[tag=same_room] run function luigis_mansion:other/music/set/collect_marios_portrait
-execute if score #dialog Dialog matches 103..144 at @e[tag=same_room,tag=marios_portrait,limit=1] positioned ^ ^-0.62 ^0.5 run tag @e[tag=luigi,tag=same_room,distance=0.2..] add dialog_walking
-execute if score #dialog Dialog matches 103..144 as @e[tag=portrait_grabbing_player,limit=1] run function luigis_mansion:entities/luigi/move/execute {execute:"at @e[tag=same_room,tag=marios_portrait,limit=1] positioned ^ ^-0.62 ^0.5 facing entity @s[distance=0.2..] feet positioned as @s rotated ~-180 0",teleport:"^ ^ ^0.1 ~ ~"}
-execute if score #dialog Dialog matches 164 as @e[tag=portrait_grabbing_player,limit=1] run function luigis_mansion:entities/luigi/move/execute {execute:"at @e[tag=same_room,tag=marios_portrait,limit=1]",teleport:"^ ^-0.62 ^0.5 ~-180 0"}
+execute if score #dialog Dialog matches 103..144 at @e[tag=same_room,tag=marios_portrait,limit=1] positioned ^ ^-2.02 ^0.5 run tag @e[tag=luigi,tag=same_room,distance=0.2..] add dialog_walking
+execute if score #dialog Dialog matches 103..144 as @e[tag=portrait_grabbing_player,limit=1] run function luigis_mansion:entities/luigi/move/execute {execute:"at @e[tag=same_room,tag=marios_portrait,limit=1] positioned ^ ^-2.02 ^0.5 facing entity @s[distance=0.2..] feet positioned as @s rotated ~-180 0",teleport:"^ ^ ^0.1 ~ ~"}
+execute if score #dialog Dialog matches 164 as @e[tag=portrait_grabbing_player,limit=1] run function luigis_mansion:entities/luigi/move/execute {execute:"at @e[tag=same_room,tag=marios_portrait,limit=1]",teleport:"^ ^-2.02 ^0.5 ~-180 0"}
 execute if score #dialog Dialog matches 164 as @e[tag=portrait_grabbing_player,limit=1] run function luigis_mansion:entities/luigi/animation/set/grab_marios_portrait
 execute if score #dialog Dialog matches 164 run tag @e[tag=same_room,tag=marios_portrait,limit=1] add remove_from_existence
 execute if score #dialog Dialog matches 284..362 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/move/execute {execute:"at @s facing entity @e[tag=same_room,tag=exit_door,limit=1] feet rotated ~ 0",teleport:"~ ~ ~ ~ ~"}
@@ -132,7 +132,7 @@ execute if score #dialog Dialog matches 285..344 at @e[tag=same_room,tag=exit_do
 execute if score #dialog Dialog matches 285..344 as @e[tag=luigi,tag=same_room,tag=!portrait_grabbing_player] run function luigis_mansion:entities/luigi/move/execute {execute:"at @e[tag=same_room,tag=exit_door,limit=1] positioned ^ ^ ^0.5 facing entity @s[distance=0.2..] feet positioned as @s rotated ~-180 0",teleport:"^ ^ ^0.2 ~ ~"}
 execute if score #dialog Dialog matches 344 run function luigis_mansion:room/in_new_area {area:5}
 execute if score #dialog Dialog matches 344 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
-execute if score #dialog Dialog matches 344 run function luigis_mansion:room/end_mansion with storage luigis_mansion:data current_state.current_data.mansion_id
+execute if score #dialog Dialog matches 344 run function luigis_mansion:room/end_mansion with storage luigis_mansion:data current_state.luigis_mansion.current_data.mansion_id
 execute if score #dialog Dialog matches 344 run scoreboard players set #dialog Dialog -1
 
 tag @e[tag=portrait_grabbing_player,limit=1] remove portrait_grabbing_player

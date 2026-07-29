@@ -1,4 +1,4 @@
-$execute if data storage luigis_mansion:data current_state.current_data.dead_players[{uuid:$(UUID)}] run tag @s add killed
+$execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data.dead_players[{uuid:$(UUID)}] run tag @s add killed
 tag @s[tag=!killed] add revived
 
 scoreboard players set @s[tag=revived] Health 100

@@ -8,10 +8,10 @@ execute if score #dialog Dialog matches 4 as @a[tag=same_room,tag=dialog_menu] r
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 tag @e[tag=e_gadd,tag=same_room,limit=1] remove freeze_animation
-execute if score #dialog Dialog matches 1 if data storage 3ds_remake:data {obtained_gameboy_horror_part:0b,shown_gameboy_horror_part:0b} run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"3ds_remake",id:"gallery/not_found"},room:-4,progress:0}
-execute if score #dialog Dialog matches 1 if data storage 3ds_remake:data {obtained_gameboy_horror_part:1b,shown_gameboy_horror_part:0b} run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"3ds_remake",id:"gallery/found"},room:-4,progress:0}
-execute if score #dialog Dialog matches 1 if data storage 3ds_remake:data {shown_gameboy_horror_part:0b} run data modify storage luigis_mansion:data dialogs[-1].room set from storage luigis_mansion:data dialogs[0].room
-execute if score #dialog Dialog matches 1 if data storage 3ds_remake:data {shown_gameboy_horror_part:0b} run scoreboard players set #dialog Dialog -1
+execute if score #dialog Dialog matches 1 if data storage luigis_mansion:data current_state.3ds_remake{obtained_game_boy_horror_part:0b,shown_game_boy_horror_part:0b} run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"3ds_remake",id:"gallery/not_found"},room:-4,progress:0}
+execute if score #dialog Dialog matches 1 if data storage luigis_mansion:data current_state.3ds_remake{obtained_game_boy_horror_part:1b,shown_game_boy_horror_part:0b} run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"3ds_remake",id:"gallery/found"},room:-4,progress:0}
+execute if score #dialog Dialog matches 1 if data storage luigis_mansion:data current_state.3ds_remake{shown_game_boy_horror_part:0b} run data modify storage luigis_mansion:data dialogs[-1].room set from storage luigis_mansion:data dialogs[0].room
+execute if score #dialog Dialog matches 1 if data storage luigis_mansion:data current_state.3ds_remake{shown_game_boy_horror_part:0b} run scoreboard players set #dialog Dialog -1
 execute if score #dialog Dialog matches 1 as @e[tag=e_gadd,tag=same_room,limit=1] at @s facing entity @e[tag=luigi,tag=same_room,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if score #dialog Dialog matches 1 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"nod"}
 execute if score #dialog Dialog matches 1 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
