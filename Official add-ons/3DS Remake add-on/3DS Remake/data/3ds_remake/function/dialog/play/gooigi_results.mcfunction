@@ -5,8 +5,7 @@ execute if score #dialog Dialog matches ..6 run scoreboard players add #dialog D
 execute if score #dialog Dialog matches ..10 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 11
 execute if score #dialog Dialog matches 12 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 13
 execute if score #dialog Dialog matches 6..11 as @a[tag=same_room,tag=!spectator] unless entity @s[tag=dialog_menu,tag=!dialog_choice_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/original_menu
-execute if score #dialog Dialog matches 12 as @a[tag=same_room,tag=!spectator,tag=!dialog_choice_menu] unless entity @s[tag=using_selection_menu,tag=!dialog_menu] run function luigis_mansion:selection_menu/dialog/choice/save
-execute if score #dialog Dialog matches 13.. as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
+execute if score #dialog Dialog matches 12.. as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
@@ -53,9 +52,7 @@ execute if score #dialog Dialog matches 10 if entity @a[tag=same_room,tag=next_d
 
 execute if score #dialog Dialog matches 11..12 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 11 run function luigis_mansion:dialog/play/mansion_rank/clear_mansion
-execute if score #dialog Dialog matches 11 as @a[tag=same_room] run function luigis_mansion:other/music/set/non_overwritten_silence
-#save?
-execute if score #dialog Dialog matches 13 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
-execute if score #dialog Dialog matches 13 run tag @a add show_credits
-execute if score #dialog Dialog matches 13 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
-execute if score #dialog Dialog matches 13 run scoreboard players set #dialog Dialog -1
+execute if score #dialog Dialog matches 12 if data storage luigis_mansion:data dialogs[0].save run function #luigis_mansion:save_data with storage luigis_mansion:data current_state
+execute if score #dialog Dialog matches 12 run tag @a add show_credits
+execute if score #dialog Dialog matches 12 run function luigis_mansion:data/back_to_title
+execute if score #dialog Dialog matches 12 run scoreboard players set #dialog Dialog -1

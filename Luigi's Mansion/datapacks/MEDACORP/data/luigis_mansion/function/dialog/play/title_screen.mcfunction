@@ -1,11 +1,13 @@
 scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 41..499 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 520
 execute if score #dialog Dialog matches 21..40 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 501
-execute if score #dialog Dialog matches 21..499 as @a[tag=same_room,gamemode=!spectator,tag=!dialog_menu,tag=!using_selection_menu] run function luigis_mansion:selection_menu/dialog/original_menu_skip_only
+execute if score #dialog Dialog matches 499.. if entity @a[tag=same_room,tag=show_credits,limit=1] run scoreboard players set #dialog Dialog 499
+execute if score #dialog Dialog matches 21..499 unless entity @a[tag=same_room,tag=show_credits,limit=1] as @a[tag=same_room,gamemode=!spectator,tag=!dialog_menu,tag=!using_selection_menu] run function luigis_mansion:selection_menu/dialog/original_menu_skip_only
 execute if score #dialog Dialog matches 500..520 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
-execute as @s[tag=same_room] at @s run function luigis_mansion:room/exterior/warp with storage luigis_mansion:data loaded_exterior
+execute if entity @a[tag=same_room,tag=show_credits,limit=1] as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
+execute as @s[tag=same_room,scores={Room=1..}] at @s run function luigis_mansion:room/exterior/warp with storage luigis_mansion:data loaded_exterior
+execute as @s[tag=same_room,scores={Room=..-1}] at @s run function luigis_mansion:room/exterior/warp with storage luigis_mansion:data loaded_exterior
 tag @a[tag=same_room] add camera
-scoreboard players set @a[tag=same_room] Room 0
 clear @a[tag=same_room,tag=!using_selection_menu]
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=title_menu] run function luigis_mansion:selection_menu/title_menu/exit

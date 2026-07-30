@@ -73,4 +73,5 @@ execute if score #dialog Dialog matches 10..2610 run scoreboard players set @a[t
 execute if score #dialog Dialog matches 2610 run tag @e[tag=credits_line] add dead
 execute if score #dialog Dialog matches 2610 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
 execute if score #dialog Dialog matches 2610 run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"mansion_rank"},progress:0,room:0,rank:"",total:0}
+execute if score #dialog Dialog matches 2610 if data storage luigis_mansion:data dialogs[0].save run data modify storage luigis_mansion:data dialogs[-1].save set value 1b
 execute if score #dialog Dialog matches 2610 run scoreboard players set #dialog Dialog -1

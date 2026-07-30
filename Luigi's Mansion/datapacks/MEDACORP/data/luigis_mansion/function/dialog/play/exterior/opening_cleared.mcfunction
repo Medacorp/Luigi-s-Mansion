@@ -46,8 +46,10 @@ execute if score #dialog Dialog matches 356 as @e[tag=luigi,tag=this_player,limi
 execute if score #dialog Dialog matches 605 if data storage luigis_mansion:data current_state run tag @a[tag=this_player,limit=1] add first_entrance
 execute if score #dialog Dialog matches 605 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
 execute if score #dialog Dialog matches 605 as @a[tag=this_player,limit=1] if data storage luigis_mansion:data current_state run function luigis_mansion:data/joined_save with entity @s
-execute if score #dialog Dialog matches 605 as @a[tag=this_player,limit=1] if data storage luigis_mansion:data current_state run function luigis_mansion:room/exterior/enter_lab
-execute if score #dialog Dialog matches 605 as @a[tag=same_room,tag=spectator] if data storage luigis_mansion:data current_state run function luigis_mansion:room/exterior/enter_lab
+execute if score #dialog Dialog matches 605 as @a[tag=this_player,limit=1] if data storage luigis_mansion:data current_state unless data storage luigis_mansion:data current_state.luigis_mansion.current_data run function luigis_mansion:room/exterior/enter_lab
+execute if score #dialog Dialog matches 605 as @a[tag=same_room,tag=spectator] if data storage luigis_mansion:data current_state unless data storage luigis_mansion:data current_state.luigis_mansion.current_data run function luigis_mansion:room/exterior/enter_lab
+execute if score #dialog Dialog matches 605 as @a[tag=this_player,limit=1] if data storage luigis_mansion:data current_state.luigis_mansion.current_data run function luigis_mansion:room/exterior/enter_mansion with storage luigis_mansion:data current_state.luigis_mansion.current_data.mansion_id
+execute if score #dialog Dialog matches 605 as @a[tag=same_room,tag=spectator] if data storage luigis_mansion:data current_state.luigis_mansion.current_data run function luigis_mansion:room/exterior/enter_mansion with storage luigis_mansion:data current_state.luigis_mansion.current_data.mansion_id
 execute if score #dialog Dialog matches 605 unless data storage luigis_mansion:data current_state run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"title_screen"},room:0}
 execute if score #dialog Dialog matches 605 run tag @e[tag=luigi,tag=this_player,limit=1] add reset_rotation
 execute if score #dialog Dialog matches 605 run scoreboard players set #dialog Dialog -1

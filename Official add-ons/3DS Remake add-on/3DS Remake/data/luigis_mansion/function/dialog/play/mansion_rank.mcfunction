@@ -43,5 +43,7 @@ execute if score #dialog Dialog matches 880 run tag @e[tag=mansion_rank_end,limi
 execute if score #dialog Dialog matches 880 as @a[tag=same_room] run function luigis_mansion:room/underground_lab/warp_to
 execute if score #dialog Dialog matches 880 run data modify storage luigis_mansion:data dialogs[0].room set value -1
 execute if score #dialog Dialog matches 881 run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"3ds_remake",id:"gooigi_results"},progress:0,room:-1}
+execute if score #dialog Dialog matches 881 if data storage luigis_mansion:data dialogs[0].save run data modify storage luigis_mansion:data dialogs[-1].save set value 1b
+execute if score #dialog Dialog matches 881 run function luigis_mansion:room/load_exterior {namespace:"luigis_mansion",id:"mansion"}
 execute if score #dialog Dialog matches 881 run scoreboard players set #dialog Dialog -1
 scoreboard players reset #temp Time

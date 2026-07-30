@@ -43,8 +43,9 @@ execute if score #dialog Dialog matches ..850 run scoreboard players set @a[tag=
 execute if score #dialog Dialog matches 860 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
 execute if score #dialog Dialog matches 860 run tag @e[tag=mansion_rank_end,limit=1] add dead
 execute if score #dialog Dialog matches 860 run function luigis_mansion:dialog/play/mansion_rank/clear_mansion
+execute if score #dialog Dialog matches 860 if data storage luigis_mansion:data dialogs[0].save run function #luigis_mansion:save_data with storage luigis_mansion:data current_state
+execute if score #dialog Dialog matches 860 run function luigis_mansion:room/load_exterior {namespace:"luigis_mansion",id:"mansion"}
 execute if score #dialog Dialog matches 860 run tag @a add show_credits
-execute if score #dialog Dialog matches 860 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
-execute if score #dialog Dialog matches 860 as @a[tag=same_room] run function luigis_mansion:room/underground_lab/warp_to
+execute if score #dialog Dialog matches 860 run function luigis_mansion:data/back_to_title
 execute if score #dialog Dialog matches 860 run scoreboard players set #dialog Dialog -1
 scoreboard players reset #temp Time

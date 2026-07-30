@@ -1,5 +1,5 @@
 tellraw @a[scores={Offline=0}] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.reloaded"}]}
-execute unless entity @a[scores={Offline=0}] if data storage luigis_mansion:data saved_state unless data storage luigis_mansion:data {no_return_to_title_screen:1b} run function luigis_mansion:data/back_to_title
+execute unless entity @a[scores={Offline=0}] if data storage luigis_mansion:data saved_state unless data storage luigis_mansion:data {no_return_to_title_screen:1b} unless data storage luigis_mansion:data dialogs[{save:1b}] run function luigis_mansion:data/back_to_title
 
 function #luigis_mansion:anti_cheating/scores
 scoreboard players reset * Loaded

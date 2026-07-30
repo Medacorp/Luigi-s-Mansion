@@ -25,8 +25,9 @@ execute if score #dialog Dialog matches 803 as @a[tag=same_room] run function lu
 execute if score #dialog Dialog matches 803 as @a[tag=same_room] run function luigis_mansion:other/music/set/saved_mario
 execute if score #dialog Dialog matches 1363 run tag @e[tag=mario,tag=same_room,limit=1] remove cannot_be_removed
 execute if score #dialog Dialog matches 1363 run tag @e[tag=e_gadd,tag=same_room,limit=1] remove cannot_be_removed
-execute if score #dialog Dialog matches 1363 run scoreboard players set @a[tag=same_room] Room 0
+execute if score #dialog Dialog matches 1363 as @a[tag=same_room] run function luigis_mansion:room/exterior/warp with storage luigis_mansion:data loaded_exterior
 execute if score #dialog Dialog matches 1363 run data modify storage luigis_mansion:data dialogs[0].room set value 0
 execute if score #dialog Dialog matches 1363 run tag @e[tag=luigi,tag=same_room] add dead
 execute if score #dialog Dialog matches 1364 run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"credits"},progress:0,room:0}
+execute if score #dialog Dialog matches 1364 if data storage luigis_mansion:data dialogs[0].save run data modify storage luigis_mansion:data dialogs[-1].save set value 1b
 execute if score #dialog Dialog matches 1364 run scoreboard players set #dialog Dialog -1
