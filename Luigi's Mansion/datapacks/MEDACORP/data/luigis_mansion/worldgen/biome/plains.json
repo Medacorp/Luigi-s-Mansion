@@ -7,7 +7,6 @@
 	"has_precipitation": false,
 	"temperature": 0.7,
 	"downfall": 0,
-	"creature_spawn_probability": 0,
 	"effects": {
 		"foliage_color": 5877296,
 		"grass_color": 5271602,
@@ -26,7 +25,5 @@
 		[],
 		[],
 		[]
-	],
-	"spawners": {},
-    "spawn_costs": {}
+	]
 }

@@ -27,7 +27,7 @@ execute if score #dialog Dialog matches 1 as @a[tag=same_room] run function luig
 execute if score #dialog Dialog matches 1 run function luigis_mansion:room/exterior/open_gate
 execute if score #dialog Dialog matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"826 90 9.0 90 0"}
 execute if score #dialog Dialog matches 1..16 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @s rotated 90 0",teleport:"^ ^ ^0.05 ~ ~"}
-execute if score #dialog Dialog matches 1..16 as @a[tag=same_room] at @s run particle minecraft:block{block_state:{Name:"oak_leaves"}} ^ ^1.4 ^0.75 0.2 0.2 0.2 0 30 normal @s
+execute if score #dialog Dialog matches 1..16 as @a[tag=same_room] at @s run particle minecraft:block{block_state:{id:"oak_leaves"}} ^ ^1.4 ^0.75 0.2 0.2 0.2 0 30 normal @s
 execute if score #dialog Dialog matches 17..116 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @s rotated 90 0",teleport:"^-0.01 ^ ^ ~ ~"}
 execute if score #dialog Dialog matches 17..125 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @s rotated 90 0",teleport:"^ ^ ^0.44 ~ ~"}
 execute if score #dialog Dialog matches 81..125 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @s rotated 90 0",teleport:"^ ^0.12 ^ ~ ~"}

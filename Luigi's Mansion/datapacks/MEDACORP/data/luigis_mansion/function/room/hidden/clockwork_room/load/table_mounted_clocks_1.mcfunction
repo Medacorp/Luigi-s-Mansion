@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:62,searchable:["interact"],shake_animation:["interact"],can_hide_boo:1b,sound:{namespace:"luigis_mansion",id:"clock"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/20"},tags:["clock"]}
+execute positioned 684 120 -6.3 rotated -90 0 run function luigis_mansion:spawn_furniture/table_mounted_clocks/right_soldiers

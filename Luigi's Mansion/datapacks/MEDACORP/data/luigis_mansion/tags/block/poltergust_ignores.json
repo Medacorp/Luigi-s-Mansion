@@ -8,9 +8,6 @@
         "minecraft:light_gray_stained_glass",
         "minecraft:water",
         "minecraft:lava",
-        "minecraft:stone_button",
-        "minecraft:ladder",
-        "#minecraft:slabs",
-        "#minecraft:fences"
+        "minecraft:ladder"
     ]
 }

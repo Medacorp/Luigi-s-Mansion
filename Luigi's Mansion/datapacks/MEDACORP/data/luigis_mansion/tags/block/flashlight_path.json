@@ -6,7 +6,6 @@
         "minecraft:light",
         "minecraft:barrier",
         "minecraft:water",
-        "minecraft:stone_button",
         "minecraft:ladder"
     ]
 }

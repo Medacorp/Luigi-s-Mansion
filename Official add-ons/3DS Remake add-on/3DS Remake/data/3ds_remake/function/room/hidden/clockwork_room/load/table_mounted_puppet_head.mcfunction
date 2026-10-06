@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:62,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],can_hide_boo:1b,sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/20"}}
+execute positioned 694 120 -2.0 rotated -90 0 run function luigis_mansion:spawn_furniture/table_mounted_puppet_head/left_tilt

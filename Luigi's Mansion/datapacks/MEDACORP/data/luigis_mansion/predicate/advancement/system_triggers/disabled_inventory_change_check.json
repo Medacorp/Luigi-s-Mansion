@@ -1,9 +1,0 @@
-{
-	"condition": "minecraft:entity_properties",
-	"entity": "this",
-	"predicate": {
-		"minecraft:entity_tags": {
-			"none_of": ["modifying_inventory"]
-		}
-	}
-}

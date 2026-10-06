@@ -9082,6 +9082,24 @@
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.clock"
     },
+    "furniture.clock.music_box_short": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/clock/music_box_short",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.clock"
+    },
+    "furniture.clock.piston": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/clock/piston",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.clock"
+    },
     "furniture.clock.whistle_down": {
         "sounds": [
             {

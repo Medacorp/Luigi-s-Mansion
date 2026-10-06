@@ -1,18 +1,29 @@
 v???:
+* Updated to 26.3
 * Fixed typo'd Add-on name
 * Added the luigi animation (3DS remake) "shake"
 * Added missing 3DS Remake dialogs:
 ** Blockade despawns
 ** Front door
 ** Locked area door
+* Added furniture models:
+** (E3 Demo) Elder portraits (unused; seen in early parlor/living room screenshots)
+** (E3 Demo) Inside lantern chandeliers (same as final, but have no rod)
+** Table mounted clocks
+** Table mounted puppet heads
+* Added all future furniture name translation strings
 * Changed element meter to decrease smoothly when the 3DS Remake is installed
+* Changed 3 loot IDs to be less generic with their furniture names
 * Fixed typo in title screen track name
 * Fixed missing word in title menu's copy menu
 * Fixed the flashlight item sometimes didn't match whether it was actually on or off
 * Fixed R.I.P. signs were called RIP signs
 * Fixed (3DS Remake) gallery portrait menus always listed the ghost, even if it hadn't been caught
 * Fixed 3DS hidden mansion pipe room was missing Pink Flying Fish
+* Fixed (E3 Demo) living room portraits wheren't altered to what they were in the actual demo
+* Fixed (E3 Demo) Chain suspended ovoid lamps were missing a chain
 * Fixed Extensive Training low results lines used an incorrect word
+* Fixed order of translation strings to properly count from 1-10; this is only noticable on Crowdin
 * Removed ability to leave the mansion without the 3DS Remake being installed
 ** Even with the 3DS Remake installed, you can no longer leave the E3 Demo's original mansion
 
@@ -25,7 +36,7 @@ v3.8:
 ** You can show the settings in this menu too
 *** (Global) 3DS Remake gallery is excluded here since it only appears when you've shown E. Gadd the Game Boy Horror part
 *** Debugging single entity/furniture hitbox is excluded here since you cannot face one here
-* Added Skipable Dialogs add-on, it grants the skip option on all dialogs; that's it
+* Added Skippable Dialogs add-on, it grants the skip option on all dialogs; that's it
 * Added proper training door, one without the sign is now named green_planks
 * Added Luigi animations:
 ** Flip breaker switch
@@ -34,7 +45,7 @@ v3.8:
 ** Knockback/large wall
 ** Scanning
 * Added approach furniture type, it requires interacting when the 3DS Remake is installed
-* Added the following furniture model:
+* Added the following furniture models:
 ** Breaker switches
 ** Dust
 ** Plaques

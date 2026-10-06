@@ -2,6 +2,7 @@
     "values": [
         "3ds_remake:room/hidden/butlers_room/load/set_loaded",
         "3ds_remake:room/hidden/butlers_room/load/lights",
+        "3ds_remake:room/hidden/butlers_room/load/butlers_table",
         "3ds_remake:room/hidden/butlers_room/load/cloth_1",
         "3ds_remake:room/hidden/butlers_room/load/cloth_2",
         "3ds_remake:room/hidden/butlers_room/load/hole",

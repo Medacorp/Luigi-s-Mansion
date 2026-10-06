@@ -1,1 +1,0 @@
-execute if entity @s[x=744.0,y=11,z=63.0,distance=..1] run function luigis_mansion:selection_menu/game_boy_horror/scan/dialog {namespace:"luigis_mansion",id:"scan/scanner/16"}

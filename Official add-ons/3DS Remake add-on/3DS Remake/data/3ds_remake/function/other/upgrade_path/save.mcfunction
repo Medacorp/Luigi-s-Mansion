@@ -1,1 +1,1 @@
-#execute if data storage luigis_mansion:data update_data.3ds_remake.data_version unless data storage luigis_mansion:data update_data.3ds_remake{data_version:1} run function 3ds_remake:other/upgrade_path/data/v?.?
+execute if data storage luigis_mansion:data update_data.3ds_remake.data_version unless data storage luigis_mansion:data update_data.3ds_remake{data_version:2} run function 3ds_remake:other/upgrade_path/data/v3.9

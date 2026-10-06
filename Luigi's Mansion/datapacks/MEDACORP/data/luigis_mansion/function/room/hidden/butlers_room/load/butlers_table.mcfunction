@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:23,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],can_hide_boo:1b,loot_chance:{namespace:"luigis_mansion",id:"m20_p15"},sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/16"}}
+execute positioned 744.0 11 -47.0 rotated -90 0 run function luigis_mansion:spawn_furniture/butlers_table/left_cups

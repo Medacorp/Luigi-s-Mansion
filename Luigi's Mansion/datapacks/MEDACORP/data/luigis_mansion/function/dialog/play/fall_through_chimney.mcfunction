@@ -27,7 +27,7 @@ execute if score #dialog Dialog matches 70..71 as @a[tag=this_player,limit=1] ru
 execute if score #dialog Dialog matches 72..73 as @a[tag=this_player,limit=1] run function luigis_mansion:entities/player/camera/teleport {teleport:"~ ~-0.1 ~"}
 execute if score #dialog Dialog matches 74..75 as @a[tag=this_player,limit=1] run function luigis_mansion:entities/player/camera/teleport {teleport:"~ ~0.1 ~"}
 execute if score #dialog Dialog matches 76..77 as @a[tag=this_player,limit=1] run function luigis_mansion:entities/player/camera/teleport {teleport:"~ ~-0.1 ~"}
-execute if score #dialog Dialog matches 1 as @a[tag=this_player,limit=1] at @s run particle minecraft:block_marker{block_state:{Name:"minecraft:black_concrete"}} ^ ^1.4 ^0.1 0 0 0 0 1 normal
+execute if score #dialog Dialog matches 1 as @a[tag=this_player,limit=1] at @s run particle minecraft:block_marker{block_state:{id:"minecraft:black_concrete"}} ^ ^1.4 ^0.1 0 0 0 0 1 normal
 execute if score #dialog Dialog matches 1 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/animation/set/idle
 execute if score #dialog Dialog matches 40 as @e[tag=luigi,tag=this_player,limit=1] at @s positioned ^ ^ ^1 run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 40 as @e[tag=luigi,tag=this_player,limit=1] at @s positioned ^ ^ ^1 run function luigis_mansion:entities/luigi/animation/set/scare/bash_no_move

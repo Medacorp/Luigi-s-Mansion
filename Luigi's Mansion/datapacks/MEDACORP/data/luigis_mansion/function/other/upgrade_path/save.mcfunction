@@ -1,1 +1,1 @@
-#execute if data storage luigis_mansion:data update_data.luigis_mansion.data_version unless data storage luigis_mansion:data update_data.luigis_mansion{data_version:1} run function luigis_mansion:other/upgrade_path/data/v?.?
+execute if data storage luigis_mansion:data update_data.luigis_mansion.data_version unless data storage luigis_mansion:data update_data.luigis_mansion{data_version:2} run function luigis_mansion:other/upgrade_path/data/v3.9

@@ -2,9 +2,6 @@
     "values": [
         "luigis_mansion:room/hidden/clockwork_room/load/set_loaded",
         "luigis_mansion:room/hidden/clockwork_room/load/lights",
-        "luigis_mansion:room/hidden/clockwork_room/load/clock_1",
-        "luigis_mansion:room/hidden/clockwork_room/load/clock_2",
-        "luigis_mansion:room/hidden/clockwork_room/load/clock_3",
         "luigis_mansion:room/hidden/clockwork_room/load/cobweb_1",
         "luigis_mansion:room/hidden/clockwork_room/load/cobweb_2",
         "luigis_mansion:room/hidden/clockwork_room/load/small_door_1",
@@ -13,6 +10,10 @@
         "luigis_mansion:room/hidden/clockwork_room/load/small_door_4",
         "luigis_mansion:room/hidden/clockwork_room/load/small_door_5",
         "luigis_mansion:room/hidden/clockwork_room/load/small_door_6",
+        "luigis_mansion:room/hidden/clockwork_room/load/table_mounted_clock",
+        "luigis_mansion:room/hidden/clockwork_room/load/table_mounted_clocks_1",
+        "luigis_mansion:room/hidden/clockwork_room/load/table_mounted_clocks_2",
+        "luigis_mansion:room/hidden/clockwork_room/load/table_mounted_puppet_head",
         "luigis_mansion:room/hidden/clockwork_room/load/telephone_room_door",
         "luigis_mansion:room/hidden/clockwork_room/load/wooden_stool_mounted_tools_1",
         "luigis_mansion:room/hidden/clockwork_room/load/wooden_stool_mounted_tools_2"

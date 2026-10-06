@@ -1,6 +1,7 @@
 execute unless entity @s[scores={WaitTime=-80..}] run scoreboard players set @s WaitTime 0
 execute if entity @s[tag=!no_wind] run function luigis_mansion:entities/clockwork_soldier/ai/mansion/normal/find_wind with entity @s
 
+execute if score #clockwork_room Wave matches 2 run tag @s add activated
 execute if entity @s[tag=activated,tag=!was_activated,scores={WaitTime=0}] run function luigis_mansion:entities/clockwork_soldier/ai/mansion/normal/activate
 tag @s[tag=activated,tag=!was_activated,scores={WaitTime=1}] add was_activated
 

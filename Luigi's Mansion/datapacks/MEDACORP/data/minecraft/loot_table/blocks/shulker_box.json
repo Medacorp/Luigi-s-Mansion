@@ -10,20 +10,20 @@
             {
               "type": "minecraft:dynamic",
               "name": "minecraft:contents",
-              "conditions": [
-                {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "custom_data": "{drop_contents:1b}"
+              "condition": {
+                "type": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:custom_data": "{drop_contents:1b}"
                   }
                 }
-              ]
+              }
             },
             {
               "type": "minecraft:item",
-              "functions": [
+              "modifier": [
                 {
-                  "function": "minecraft:copy_components",
+                  "type": "minecraft:copy_components",
                   "include": [
                     "minecraft:custom_name",
                     "minecraft:container",
