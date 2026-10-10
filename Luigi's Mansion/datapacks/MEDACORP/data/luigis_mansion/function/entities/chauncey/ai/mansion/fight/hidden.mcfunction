@@ -13,12 +13,12 @@ scoreboard players add @s[scores={Dialog=120},tag=!laugh] Dialog 1
 scoreboard players add @s[scores={Dialog=82..119}] Dialog 1
 execute as @e[tag=rocking_horse,tag=same_room] at @s positioned ~-0.5 ~-0.5 ~-0.5 run tag @s[z=-54,dz=13] add can_attack
 execute unless entity @e[tag=rocking_horse,tag=same_room] run scoreboard players add @s[scores={Dialog=81}] Dialog 1
-execute at @e[tag=rocking_horse,tag=same_room,tag=can_attack] positioned ~ ~-4 ~-1 if entity @e[tag=same_room,tag=luigi,limit=1,dx=20,dy=3,dz=1] run scoreboard players add @s[scores={Dialog=81}] Dialog 1
+execute at @e[tag=rocking_horse,tag=same_room,tag=can_attack] positioned ~ ~-5 ~-1 if entity @e[tag=same_room,tag=luigi,limit=1,dx=20,dy=3,dz=1] run scoreboard players add @s[scores={Dialog=81}] Dialog 1
 scoreboard players add @s[scores={Dialog=61..80}] Dialog 1
 scoreboard players add @s[scores={Dialog=60},tag=!laugh] Dialog 1
 scoreboard players add @s[scores={Dialog=22..59}] Dialog 1
 execute unless entity @e[tag=rocking_horse,tag=same_room] run scoreboard players add @s[scores={Dialog=21}] Dialog 1
-execute at @e[tag=rocking_horse,tag=same_room,tag=can_attack] positioned ~ ~-4 ~-1 if entity @e[tag=same_room,tag=luigi,limit=1,dx=20,dy=3,dz=1] run scoreboard players add @s[scores={Dialog=21}] Dialog 1
+execute at @e[tag=rocking_horse,tag=same_room,tag=can_attack] positioned ~ ~-5 ~-1 if entity @e[tag=same_room,tag=luigi,limit=1,dx=20,dy=3,dz=1] run scoreboard players add @s[scores={Dialog=21}] Dialog 1
 scoreboard players add @s[scores={Dialog=..20}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
 
@@ -94,7 +94,8 @@ data modify entity @s[scores={Dialog=582}] data.animation set value {namespace:"
 tag @s[scores={Dialog=582}] remove laugh
 scoreboard players set @s[scores={Dialog=582}] ActionTime 0
 execute if entity @s[scores={Dialog=582}] run playsound luigis_mansion:entity.chauncey.hit_by_ball hostile @a[tag=same_room] ~ ~ ~ 1
-execute at @s[scores={Dialog=582..602}] run teleport @s ~ ~0.1 ~
+execute at @s[scores={Dialog=582..591}] run teleport @s ~ ~0.1 ~
+execute at @s[scores={Dialog=592..601}] run teleport @s ~ ~-0.15 ~
 execute if entity @s[scores={Dialog=742}] run playsound luigis_mansion:entity.chauncey.recover hostile @a[tag=same_room] ~ ~ ~ 1
 teleport @s[scores={Dialog=762}] 796.0 20 64.0
 scoreboard players set @s[scores={Dialog=762}] Dialog 0

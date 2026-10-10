@@ -100,6 +100,7 @@ scoreboard objectives add FurnitureZProgress dummy
 scoreboard objectives add FurnitureZOrigin dummy
 scoreboard objectives add FurnitureZTarget dummy
 scoreboard objectives add GBHRadar dummy
+scoreboard objectives add GBHScreenTime dummy
 scoreboard objectives add GhostCount dummy
 scoreboard objectives add GhostNr dummy
 scoreboard objectives add GhostGuyCouple dummy
@@ -177,8 +178,11 @@ scoreboard objectives add OtherZ dummy
 scoreboard objectives add PassiveNr dummy
 scoreboard objectives add PathStep dummy
 scoreboard objectives add PlayerRotation dummy
+scoreboard objectives add PoltergustCounter dummy
+scoreboard objectives add PoltergustEscapes dummy
 scoreboard objectives add PoltergustRange dummy
 scoreboard objectives add PoltergustSound dummy
+scoreboard objectives add PoltergustTimer dummy
 scoreboard objectives add PositionIntX dummy
 scoreboard objectives add PositionIntY dummy
 scoreboard objectives add PositionIntZ dummy
@@ -293,6 +297,10 @@ execute store result score #players Totals if entity @a[tag=!spectator]
 execute store result score #all_players Totals if entity @a
 
 scoreboard objectives setdisplay list Health
+team add Players
+team join Players @a
+team modify Players collisionRule never
+team modify Players seeFriendlyInvisibles false
 
 execute store result score #global_difficulty Selected run difficulty
 execute unless score #global_mirror_reflections Selected matches 0..1 run scoreboard players set #global_mirror_reflections Selected 1
@@ -305,6 +313,7 @@ execute unless score #debug_entities Selected matches 0..1 run scoreboard player
 bossbar add luigis_mansion:boo_counter {type:"translatable",translate:"luigis_mansion:message.boo_counter",color:"white",with:["0","0"]}
 bossbar set luigis_mansion:boo_counter color white
 
+execute unless score #money_screen Selected matches 0..1 run scoreboard players set #money_screen Selected 0
 execute unless score #mirrored Selected matches 0..1 run scoreboard players set #mirrored Selected 0
 execute unless score #can_warp Selected matches 0..1 run scoreboard players set #can_warp Selected 1
 execute unless score #can_revive Selected matches 0..1 run scoreboard players set #can_revive Selected 0

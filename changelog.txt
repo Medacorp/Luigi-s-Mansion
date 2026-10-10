@@ -1,27 +1,54 @@
-v???:
+v3.9:
 * Updated to 26.3
 * Fixed typo'd Add-on name
-* Added the luigi animation (3DS remake) "shake"
-* Added missing 3DS Remake dialogs:
-** Blockade despawns
-** Front door
-** Locked area door
+* Added notice messages about common mistakes made with the poltergust
+* Added money/gem/pearl counter to the GBH screen
 * Added furniture models:
+** Butler's tables
 ** (E3 Demo) Elder portraits (unused; seen in early parlor/living room screenshots)
 ** (E3 Demo) Inside lantern chandeliers (same as final, but have no rod)
 ** Table mounted clocks
 ** Table mounted puppet heads
+* Added the luigi animation (3DS remake) "shake"
+* Added missing 3DS Remake exclusive scan area on balcony 1
+* Added missing 3DS Remake dialogs:
+** Blockade despawns
+** Front door
+** Locked area door
 * Added all future furniture name translation strings
+* Changed Boos to go back to their original room upon leaving the mansion, like the original
 * Changed element meter to decrease smoothly when the 3DS Remake is installed
 * Changed 3 loot IDs to be less generic with their furniture names
 * Fixed typo in title screen track name
 * Fixed missing word in title menu's copy menu
 * Fixed the flashlight item sometimes didn't match whether it was actually on or off
+* Fixed toggling (Global) player names off did not hide already spawned players' names
+* Fixed increasing jukebox music speed used decrease result strings
+* Fixed hearts didn't get random rotation
+* Fixed taking damage or shrinking didn't drop coins anymore
+* Fixed searching prioritized face height
+* Fixed ghosts sometimes spawned in front of the player, rather than behind
+* Fixed balcony and washroom toads used wrong repeat dialogs
+* Fixed fake doors' frames were fully dark
+* Fixed chauncey's door dialog didn't wait for the open door animation to finish
+* Fixed balls flew upwards when expel-shooting them
+* Fixed chauncey could not be scanned while in the crib
+* Fixed chauncey didn't launch the solo rocking horses at players
+* Fixed chauncey flew far up without coming back down when hit by the ball
+* Fixed portrificationizing didn't work
+* Fixed collecting pearls didn't assigned ranks
+* Fixed after beating chauncey all hallways are lit up
+* Fixed hallway lamps didn't emit light if room was lit
+* Fixed grabbing ghosts grabbed too high
+* Fixed lighting unlit candles was impossible
+* Fixed cutscenes in multiplayer were shaky due to players colliding
+* Fixed opening a door to a room where another player is made you face south/destroyed your Luigi model for a bit
 * Fixed R.I.P. signs were called RIP signs
 * Fixed (3DS Remake) gallery portrait menus always listed the ghost, even if it hadn't been caught
 * Fixed 3DS hidden mansion pipe room was missing Pink Flying Fish
 * Fixed (E3 Demo) living room portraits wheren't altered to what they were in the actual demo
 * Fixed (E3 Demo) Chain suspended ovoid lamps were missing a chain
+* Fixed (E3 Demo) E. Gadd call screen settings didn't include the start of the animation; different screens are not added yet, but triggers have been implemented
 * Fixed Extensive Training low results lines used an incorrect word
 * Fixed order of translation strings to properly count from 1-10; this is only noticable on Crowdin
 * Removed ability to leave the mansion without the 3DS Remake being installed

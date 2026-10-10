@@ -5,6 +5,6 @@ scoreboard players set @e[tag=player,x=746,y=-1,z=-31,dx=17,dy=5,dz=5] Room -10
 
 execute as @a[scores={Room=-10}] run function 3ds_remake:room/gallery_hallway/tick_per_player
 
-execute unless block 736 2 -24 minecraft:barrier run function 3ds_remake:room/gallery/generate
+execute unless block 738 2 -29 minecraft:red_wool_stairs run function 3ds_remake:room/gallery/generate
 
 execute if score #mirrored Selected matches 2 run scoreboard players set #mirrored Selected 1

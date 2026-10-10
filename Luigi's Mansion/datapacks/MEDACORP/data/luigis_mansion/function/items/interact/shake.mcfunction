@@ -1,7 +1,7 @@
 execute at @s[tag=1] unless block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^0.5 ^0.5 {Tags:["interact","manual","feet"]}
-execute at @s[tag=1] if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^0.5 ^0.5 {Tags:["interact","manual"]}
+execute at @s[tag=1] if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^1.5 ^0.5 {Tags:["interact","manual","feet"]}
 execute at @s[tag=2] unless block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^1.5 ^0.5 {Tags:["interact","manual"]}
-execute at @s[tag=2] if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^1.5 ^0.5 {Tags:["interact","manual","feet"]}
+execute at @s[tag=2] if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^0.5 ^0.5 {Tags:["interact","manual"]}
 execute at @s[tag=3] unless block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^2.5 ^0.5 {Tags:["interact","manual"]}
 execute at @s[tag=3] if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^-0.5 ^0.5 {Tags:["interact","manual"]}
 tag @s add searcher

@@ -13,6 +13,6 @@ execute positioned as @s unless data storage luigis_mansion:data luigi.animation
 
 $execute at @s run function $(namespace):animations/luigi/$(id)/head
 
-execute store result score #head Time run data get entity @s Rotation[0] 10
+execute store result score #head Time run data get entity @s Rotation[0]
 execute store result storage luigis_mansion:data luigi.head_rotation float 1 run scoreboard players operation #head Time += @s AnimationRotationY
 scoreboard players reset #head Time

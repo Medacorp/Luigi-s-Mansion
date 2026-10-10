@@ -1,0 +1,58 @@
+tag @s remove update_money_screen_pearls
+scoreboard players set @s[scores={GBHScreenTime=..0}] GBHScreenTime 0
+scoreboard players add @s GBHScreenTime 1
+execute if entity @s[scores={GBHScreenTime=1},tag=update_money_screen_gold_diamond] run data modify entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:custom_model_data".floats[1] set value 5f
+execute if entity @s[scores={GBHScreenTime=1},tag=update_money_screen_silver_diamond] run data modify entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:custom_model_data".floats[1] set value 4f
+execute if entity @s[scores={GBHScreenTime=1},tag=update_money_screen_red_diamond] run data modify entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:custom_model_data".floats[1] set value 3f
+execute if entity @s[scores={GBHScreenTime=1},tag=update_money_screen_red_ruby] run data modify entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:custom_model_data".floats[1] set value 2f
+execute if entity @s[scores={GBHScreenTime=1},tag=update_money_screen_green_emerald] run data modify entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:custom_model_data".floats[1] set value 1f
+execute if entity @s[scores={GBHScreenTime=1},tag=update_money_screen_blue_sapphire] run data modify entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:custom_model_data".floats[1] set value 0f
+execute if entity @s[scores={GBHScreenTime=1},tag=update_money_screen_gold_diamond] run function luigis_mansion:items/money/get_count/select {namespace:"luigis_mansion",id:"gold_diamond"}
+execute if entity @s[scores={GBHScreenTime=1},tag=update_money_screen_silver_diamond] run function luigis_mansion:items/money/get_count/select {namespace:"luigis_mansion",id:"silver_diamond"}
+execute if entity @s[scores={GBHScreenTime=1},tag=update_money_screen_red_diamond] run function luigis_mansion:items/money/get_count/select {namespace:"luigis_mansion",id:"red_diamond"}
+execute if entity @s[scores={GBHScreenTime=1},tag=update_money_screen_red_ruby] run function luigis_mansion:items/money/get_count/select {namespace:"luigis_mansion",id:"red_ruby"}
+execute if entity @s[scores={GBHScreenTime=1},tag=update_money_screen_green_emerald] run function luigis_mansion:items/money/get_count/select {namespace:"luigis_mansion",id:"green_emerald"}
+execute if entity @s[scores={GBHScreenTime=1},tag=update_money_screen_blue_sapphire] run function luigis_mansion:items/money/get_count/select {namespace:"luigis_mansion",id:"blue_sapphire"}
+execute if entity @s[scores={GBHScreenTime=1}] run scoreboard players remove #temp Money 1
+execute if entity @s[scores={GBHScreenTime=1}] run scoreboard players operation #temp2 Money = #temp Money
+execute if entity @s[scores={GBHScreenTime=1}] run scoreboard players operation #temp2 Money /= #10 Constants
+execute if entity @s[scores={GBHScreenTime=1}] run scoreboard players operation #temp Money %= #10 Constants
+execute if entity @s[scores={GBHScreenTime=1}] unless score #temp2 Money matches 10.. store result entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:custom_model_data".floats[2] float 1 run scoreboard players get #temp Money
+execute if entity @s[scores={GBHScreenTime=1}] unless score #temp2 Money matches 10.. store result entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:custom_model_data".floats[3] float 1 run scoreboard players get #temp2 Money
+execute if entity @s[scores={GBHScreenTime=1}] if score #temp2 Money matches 10.. run data modify entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:custom_model_data".floats[2] set value -1f
+execute if entity @s[scores={GBHScreenTime=1}] if score #temp2 Money matches 10.. run data modify entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:custom_model_data".floats[3] set value -1f
+execute if entity @s[scores={GBHScreenTime=1}] run data modify entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:custom_model_data".floats[0] set value 6f
+execute if entity @s[scores={GBHScreenTime=2}] run data modify entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:custom_model_data".floats[0] set value 7f
+execute if entity @s[scores={GBHScreenTime=3}] run data modify entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:custom_model_data".floats[0] set value 8f
+execute if entity @s[scores={GBHScreenTime=4}] run data modify entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:custom_model_data".floats[0] set value 9f
+execute if entity @s[scores={GBHScreenTime=5}] run data modify entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:custom_model_data".floats[0] set value 10f
+execute if entity @s[scores={GBHScreenTime=16}] run data modify entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:custom_model_data".floats[0] set value 11f
+execute if entity @s[scores={GBHScreenTime=17}] run data modify entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:custom_model_data".floats[0] set value 12f
+execute if entity @s[scores={GBHScreenTime=18}] store result score #temp Time run data get entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:custom_model_data".floats[1]
+execute if entity @s[scores={GBHScreenTime=18}] if score #temp Time matches 5 run tag @s remove update_money_screen_gold_diamond
+execute if entity @s[scores={GBHScreenTime=18}] if score #temp Time matches 4 run tag @s remove update_money_screen_silver_diamond
+execute if entity @s[scores={GBHScreenTime=18}] if score #temp Time matches 3 run tag @s remove update_money_screen_red_diamond
+execute if entity @s[scores={GBHScreenTime=18}] if score #temp Time matches 2 run tag @s remove update_money_screen_red_ruby
+execute if entity @s[scores={GBHScreenTime=18}] if score #temp Time matches 1 run tag @s remove update_money_screen_green_emerald
+execute if entity @s[scores={GBHScreenTime=18}] if score #temp Time matches 0 run tag @s remove update_money_screen_blue_sapphire
+execute if entity @s[scores={GBHScreenTime=18}] if score #temp Time matches 5 run function luigis_mansion:items/money/get_count/select {namespace:"luigis_mansion",id:"gold_diamond"}
+execute if entity @s[scores={GBHScreenTime=18}] if score #temp Time matches 4 run function luigis_mansion:items/money/get_count/select {namespace:"luigis_mansion",id:"silver_diamond"}
+execute if entity @s[scores={GBHScreenTime=18}] if score #temp Time matches 3 run function luigis_mansion:items/money/get_count/select {namespace:"luigis_mansion",id:"red_diamond"}
+execute if entity @s[scores={GBHScreenTime=18}] if score #temp Time matches 2 run function luigis_mansion:items/money/get_count/select {namespace:"luigis_mansion",id:"red_ruby"}
+execute if entity @s[scores={GBHScreenTime=18}] if score #temp Time matches 1 run function luigis_mansion:items/money/get_count/select {namespace:"luigis_mansion",id:"green_emerald"}
+execute if entity @s[scores={GBHScreenTime=18}] if score #temp Time matches 0 run function luigis_mansion:items/money/get_count/select {namespace:"luigis_mansion",id:"blue_sapphire"}
+execute if entity @s[scores={GBHScreenTime=18}] run scoreboard players operation #temp2 Money = #temp Money
+execute if entity @s[scores={GBHScreenTime=18}] run scoreboard players operation #temp2 Money /= #10 Constants
+execute if entity @s[scores={GBHScreenTime=18}] run scoreboard players operation #temp Money %= #10 Constants
+execute if entity @s[scores={GBHScreenTime=18}] unless score #temp2 Money matches 10.. store result entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:custom_model_data".floats[2] float 1 run scoreboard players get #temp Money
+execute if entity @s[scores={GBHScreenTime=18}] unless score #temp2 Money matches 10.. store result entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:custom_model_data".floats[3] float 1 run scoreboard players get #temp2 Money
+execute if entity @s[scores={GBHScreenTime=18}] if score #temp2 Money matches 10.. run data modify entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:custom_model_data".floats[2] set value -1f
+execute if entity @s[scores={GBHScreenTime=18}] if score #temp2 Money matches 10.. run data modify entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:custom_model_data".floats[3] set value -1f
+execute if entity @s[scores={GBHScreenTime=18}] run data modify entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:custom_model_data".floats[0] set value 13f
+execute if entity @s[scores={GBHScreenTime=19}] run data modify entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:custom_model_data".floats[0] set value 14f
+execute if entity @s[scores={GBHScreenTime=20}] run data modify entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:custom_model_data".floats[0] set value 15f
+execute if entity @s[scores={GBHScreenTime=70}] run data modify entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:custom_model_data".floats[0] set value 16f
+execute if entity @s[scores={GBHScreenTime=71}] run data modify entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components."minecraft:custom_model_data".floats[0] set value 0f
+tag @s[scores={GBHScreenTime=71},tag=!update_money_screen_blue_sapphire,tag=!update_money_screen_green_emerald,tag=!update_money_screen_red_ruby,tag=!update_money_screen_red_diamond,tag=!update_money_screen_silver_diamond,tag=!update_money_screen_gold_diamond] remove update_money_screen_gem
+tag @s[scores={GBHScreenTime=71}] add update_money_screen
+scoreboard players set @s[scores={GBHScreenTime=71}] GBHScreenTime 0

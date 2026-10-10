@@ -12,6 +12,7 @@ scoreboard players set @s Offline 0
 scoreboard players set @s RoomNoise 0
 scoreboard players set @s LoadedChunks 0
 scoreboard players set @s CreditsTime 0
+execute if score #money_screen Selected matches 1 run tag @s add update_money_screen
 execute unless entity @s[scores={FlashlightType=0..2}] run scoreboard players set @s FlashlightType 0
 function luigis_mansion:entities/player/clear_animation
 execute if data storage luigis_mansion:data current_state.luigis_mansion run function luigis_mansion:selection_menu/title_menu/join_save with entity @s

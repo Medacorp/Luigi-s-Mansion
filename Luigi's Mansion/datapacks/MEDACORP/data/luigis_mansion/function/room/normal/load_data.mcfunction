@@ -5,7 +5,9 @@ execute unless data storage luigis_mansion:data current_state.luigis_mansion.cur
 execute unless data storage luigis_mansion:data current_state.luigis_mansion.current_data{data_index:0} if data storage luigis_mansion:data current_state.luigis_mansion.mansion_data[{data_index:0}] run function luigis_mansion:room/load_mansion_data {index:0}
 execute unless data storage luigis_mansion:data current_state.luigis_mansion.current_data{data_index:0} run function luigis_mansion:room/normal/default_data
 execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data{data_index:0,area:-1} run function luigis_mansion:room/normal/default_data
+function luigis_mansion:room/normal/return_boos
 function #luigis_mansion:room/reset_variable_to_default
+scoreboard players set #money_screen Selected 1
 scoreboard players set #can_warp Selected 1
 scoreboard players set #heart_money_count Selected 200
 scoreboard players reset * Ticking

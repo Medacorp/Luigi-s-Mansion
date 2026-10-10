@@ -25,6 +25,7 @@ tag @s[tag=toggle_expelling] remove toggle_expelling
 scoreboard players set @s[scores={UseItem=1..},tag=poltergust_selected] UseItem 0
 tag @s remove vacuuming_ghost
 execute if entity @s[tag=idle,tag=poltergust_selected,tag=poltergust_grabbed,tag=!disable_poltergust] run function luigis_mansion:entities/luigi/animation/set/none
+execute if entity @s[tag=poltergust_selected,tag=poltergust_grabbed,tag=!disable_poltergust] run function e3_demo:items/poltergust_500/warn_timer
 execute if entity @s[tag=!expelling,tag=poltergust_selected,tag=poltergust_grabbed,tag=!disable_poltergust] positioned ~ ~0.5 ~ run function e3_demo:items/poltergust_500/vacuuming
 execute if entity @s[tag=expelling,tag=poltergust_selected,tag=poltergust_grabbed,tag=!disable_poltergust] positioned ~ ~0.5 ~ run function e3_demo:items/poltergust_500/expelling
 execute if entity @s[tag=vaporizing_ghost] as @e[tag=captured,tag=element_death,tag=same_room] at @s run function e3_demo:items/poltergust_500/vaporize

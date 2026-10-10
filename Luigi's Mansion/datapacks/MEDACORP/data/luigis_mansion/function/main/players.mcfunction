@@ -88,7 +88,7 @@ tag @s remove in_dialog
 tag @s remove wall_warp_teleported
 
 tag @s add me
-execute as @a[distance=..0.4,tag=!me,tag=!spectator,tag=!door_animation,limit=1] run function luigis_mansion:entities/player/collide
+execute as @a[distance=..0,tag=!me,tag=!spectator,tag=!door_animation,tag=!separated_camera,limit=1] run function luigis_mansion:entities/player/collide
 tag @s remove me
 #todelete - old mirror reflections
 tag @s remove mirror_set_by_furniture_entity

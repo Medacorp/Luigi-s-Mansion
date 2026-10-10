@@ -14,7 +14,7 @@ execute if entity @s[scores={GrabbedID=-2147483648..,ActionTime=1..20}] as @e[ta
 execute if entity @s[scores={GrabbedID=-2147483648..,ActionTime=21..}] as @e[tag=luigi,tag=grabbed] if score @s ID = #temp ID run tag @s add still_grabbed
 execute if entity @s[scores={GrabbedID=-2147483648..,ActionTime=1..20}] if entity @e[tag=still_grabbed,tag=flipped_gravity,limit=1] run tag @s add flipped_gravity
 execute if entity @s[scores={GrabbedID=-2147483648..,ActionTime=1..20}] if entity @e[tag=still_grabbed,tag=!flipped_gravity,limit=1] run tag @s remove flipped_gravity
-execute if entity @s[scores={GrabbedID=-2147483648..}] if entity @e[tag=still_grabbed,limit=1] as @e[tag=chest] if score @s ID = #temp ID run tag @s add grabbed_model
+execute if entity @s[scores={GrabbedID=-2147483648..}] if entity @e[tag=still_grabbed,limit=1] as @e[tag=luigi] if score @s ID = #temp ID run tag @s add grabbed_luigi
 execute if entity @s[scores={ActionTime=20}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"grabbed"},animation:{namespace:"luigis_mansion",id:"knockback/harmless_grab"}}
 execute if entity @s[scores={ActionTime=20,AttackType=1}] run data modify storage luigis_mansion:data damage.animation set value {namespace:"luigis_mansion",id:"knockback/harmfull_grab"}
 execute if entity @s[scores={ActionTime=20,AttackType=1}] run data modify storage luigis_mansion:data damage.amount set from entity @s data.damage.attack
@@ -22,11 +22,16 @@ execute if entity @s[scores={ActionTime=20}] run data modify storage luigis_mans
 execute if entity @s[scores={ActionTime=20}] as @e[tag=luigi,tag=still_grabbed,limit=1] run function luigis_mansion:entities/luigi/damage
 execute if entity @s[scores={ActionTime=20}] run tag @e[tag=still_grabbed,limit=1] add grabbed
 execute if entity @s[scores={ActionTime=20..40}] unless entity @e[tag=still_grabbed,limit=1] run scoreboard players set @s ActionTime 41
-execute if entity @s[scores={ActionTime=1..40}] at @e[tag=grabbed_model,limit=1] run teleport @s ^ ^ ^-0.65 ~ ~
+execute if entity @s[scores={ActionTime=1..40}] as @e[tag=grabbed_luigi,limit=1] store result score #temp Time run data get entity @s Rotation[0]
+execute if entity @s[scores={ActionTime=1..40}] as @e[tag=grabbed_luigi,limit=1] run data modify entity @s Rotation[0] set from entity @s data.head_rotation
+execute if entity @s[scores={ActionTime=1..40}] at @e[tag=grabbed_luigi,limit=1] rotated ~ 0 run teleport @s ^ ^ ^-0.65 ~ ~
+execute at @s[scores={ActionTime=1..40},tag=flipped_gravity] if entity @e[tag=grabbed_luigi,limit=1] run teleport @s ^ ^-0.75 ^
+execute if entity @s[scores={ActionTime=1..40}] as @e[tag=grabbed_luigi,limit=1] store result entity @s Rotation[0] float 1 run scoreboard players get #temp Time
 execute if entity @s[scores={ActionTime=40,AttackType=1}] run scoreboard players add @e[tag=still_grabbed,limit=1] GrabbedShake 1
 tag @e[tag=still_grabbed,limit=1] remove still_grabbed
-tag @e[tag=grabbed_model,limit=1] remove grabbed_model
+tag @e[tag=grabbed_luigi,limit=1] remove grabbed_luigi
 scoreboard players reset #temp ID
+scoreboard players reset #temp Time
 tag @s[scores={ActionTime=40}] add laugh
 tag @s[scores={ActionTime=41}] add stunable
 data modify entity @s[scores={ActionTime=41}] data.animation set value {namespace:"luigis_mansion",id:"let_go"}

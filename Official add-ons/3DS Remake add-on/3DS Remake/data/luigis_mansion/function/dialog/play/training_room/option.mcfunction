@@ -1,4 +1,4 @@
-execute if score #dialog Dialog matches ..1 run scoreboard players add #dialog Dialog 1
+execute if score #dialog Dialog matches ..5 run scoreboard players add #dialog Dialog 1
 execute if entity @a[tag=same_room,scores={Offline=1..}] run scoreboard players set #dialog Dialog 1
 execute if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog -1
 execute if data storage luigis_mansion:data current_state.luigis_mansion.rooms.training_room{cleared:0b} run scoreboard players set #dialog Dialog -2
@@ -6,7 +6,8 @@ execute if score #dialog Dialog matches 0.. as @a[tag=same_room,tag=!spectator,t
 
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
-scoreboard players set @a[tag=same_room] ForceScreen 1
+execute if score #dialog Dialog matches 1..5 as @e[tag=luigi,tag=same_room] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[5f,0f,0f,0f],tracker:[]}
+execute if score #dialog Dialog matches 6.. as @e[tag=luigi,tag=same_room] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[0f,0f,0f,0f],tracker:[]}
 execute as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/game_boy_horror
 execute if score #dialog Dialog matches 1 run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.oui_oydohroh_tahmentahkeh2
 execute if score #dialog Dialog matches 1 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"luigis_mansion:message.training_type"}]}

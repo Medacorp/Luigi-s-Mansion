@@ -1,4 +1,4 @@
-$execute unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.portrait_ghosts.$(namespace).$(id){portrificationized:1b} run return 0
+$execute unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.portrait_ghosts[{name:{namespace:"$(namespace)",id:"$(id)"},portrificationized:2b}] run return 0
 data modify storage luigis_mansion:data furniture set value {room:-3,tags:["this_portrait","portrificationized_portrait","move_with_area","applied_dialog_effects"],animation:{namespace:"luigis_mansion",id:"fall",frozen:1b},gallery_portrait:{x:0,y:0,z:0,x_rotation:0,y_rotation:0}}
 $execute if data storage luigis_mansion:data dialogs[0].portraits.new[{namespace:"$(namespace)",id:"$(id)"}] run data modify storage luigis_mansion:data furniture.tags append value "suspended"
 $execute unless data storage luigis_mansion:data dialogs[0].portraits.new[{namespace:"$(namespace)",id:"$(id)"}] run data modify storage luigis_mansion:data furniture.tags append value "done_animating"

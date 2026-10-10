@@ -28,6 +28,7 @@ execute if entity @a[tag=this_player,tag=disable_game_boy_horror,limit=1] run ta
 
 # Animation
 data remove entity @s data.animation
+tag @s remove scanning
 tag @s remove sneak_pos
 tag @s remove sneaking
 tag @s[tag=!third_person_movement_walking,tag=!dialog_walking] remove walking
@@ -39,13 +40,12 @@ tag @a[tag=this_player,limit=1] remove door_animation
 tag @a[tag=this_player,limit=1] remove flipped_gravity
 tag @a[tag=this_player,limit=1] remove vacuuming_ghost
 tag @a[tag=this_player,limit=1] remove animation_free_rotation
-scoreboard players operation @s ForceScreen = @a[tag=this_player,limit=1] ForceScreen
-scoreboard players operation @s ForceRadar = @a[tag=this_player,limit=1] ForceRadar
-scoreboard players reset @a[tag=this_player,limit=1] ForceScreen
-scoreboard players reset @a[tag=this_player,limit=1] ForceRadar
 scoreboard players operation @a[tag=this_player,limit=1] Shrunk = @s Shrunk
+scoreboard players operation @a[tag=this_player,limit=1] ForceScreen = @s ForceScreen
+scoreboard players operation @a[tag=this_player,limit=1] ForceRadar = @s ForceRadar
 scoreboard players operation @s SneakTime = @a[tag=this_player,limit=1] SneakTime
 data modify entity @s data.animation set from storage luigis_mansion:data my_memory.animation
+execute if entity @a[tag=this_player,tag=scanning,tag=!separated_camera,limit=1] run tag @s add scanning
 execute if entity @a[tag=this_player,tag=sneak_pos,tag=!separated_camera,limit=1] run tag @s add sneak_pos
 execute if entity @a[tag=this_player,tag=sneaking,tag=!separated_camera,limit=1] run tag @s add sneaking
 execute if entity @a[tag=this_player,tag=walking,tag=!separated_camera,limit=1] run tag @s add walking
@@ -58,6 +58,7 @@ execute if entity @s[tag=animation_free_rotation] run tag @a[tag=this_player,lim
 # Inventory
 tag @a[tag=this_player,limit=1] remove flashlight
 execute if entity @s[tag=had_flashlight_on] run tag @a[tag=this_player,limit=1] add flashlight
+execute unless entity @s[scores={ForceScreen=0,ForceRadar=0}] run data modify storage luigis_mansion:data temp set from entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}]
 data remove entity @s data.selected_item
 data modify entity @s data.inventory set value []
 data modify entity @s data.selected_item set from entity @a[tag=this_player,limit=1] SelectedItem
@@ -70,8 +71,10 @@ execute if entity @a[tag=this_player,limit=1,scores={Shrunk=1..}] run data modif
 execute if entity @a[tag=this_player,limit=1,scores={Shrunk=1..}] run data remove entity @s data.inventory[{components:{"minecraft:custom_data":{keep_when_shrunk:1b}}}]
 execute if entity @a[tag=this_player,limit=1,scores={Shrunk=1..}] run data modify entity @s data.inventory append from entity @a[tag=this_player,limit=1] Inventory[{components:{"minecraft:custom_data":{keep_when_shrunk:1b}}}]
 execute if entity @a[tag=this_player,limit=1,scores={Shrunk=1..}] run data modify entity @s data.inventory append from entity @a[tag=this_player,limit=1] equipment.offhand{components:{"minecraft:custom_data":{keep_when_shrunk:1b}}}
-execute if entity @a[tag=this_player,limit=1,tag=using_selection_menu,nbt={Inventory:[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}]}] if data entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}] run data modify entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components set from entity @a[tag=this_player,limit=1] Inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components
 execute unless data entity @s data.inventory[-1].Slot run data modify entity @s data.inventory[-1].Slot set value -106b
+execute unless entity @s[scores={ForceScreen=0,ForceRadar=0}] run data modify entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"game_boy_horror"}}}].components set from storage luigis_mansion:data temp.components
+data remove storage luigis_mansion:data temp
+
 # Settings
 tag @s remove stop_map_on_key_collect
 tag @s remove separated_camera

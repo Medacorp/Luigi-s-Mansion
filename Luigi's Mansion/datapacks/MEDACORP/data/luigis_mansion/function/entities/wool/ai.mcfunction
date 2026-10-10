@@ -13,11 +13,13 @@ teleport @s[tag=!in_vacuum,tag=!can_spit_2,tag=vacuumable,tag=!spit] ~ ~-0.2 ~
 execute at @s[tag=!in_vacuum,tag=!can_spit_2,tag=vacuumable,tag=!spit] run function luigis_mansion:entities/wool/follow_path
 execute at @s[tag=!in_vacuum,tag=!can_spit_2,tag=vacuumable,tag=!spit] run teleport @s ~ ~0.2 ~
 execute at @s[tag=!in_vacuum,tag=!can_spit_2,tag=vacuumable,tag=!spit] as @e[tag=luigi,scores={Invulnerable=0},distance=..0.7] run function luigis_mansion:entities/luigi/animation/set/knockback/medium
-execute if entity @s[tag=!can_spit_2,tag=vacuumable] run function luigis_mansion:entities/billiards_ball/roll
-execute at @s[tag=in_vacuum,tag=!spit,tag=vacuumable] run function luigis_mansion:entities/billiards_ball/roll_to_player
-execute at @s[tag=!spit,tag=vacuumable] unless entity @s[tag=!in_dust,tag=!in_fire,tag=!in_water,tag=!in_ice] run function luigis_mansion:entities/billiards_ball/roll_away_from_player
+
 execute at @s[tag=in_vacuum,tag=!spit,tag=vacuumable] if entity @e[distance=..1.5,tag=luigi,tag=vacuuming_me,sort=nearest,limit=1] run tag @s add can_spit
 tag @s[tag=can_spit] add can_spit_2
 tag @s[tag=!can_spit] remove can_spit_2
 tag @s[tag=!in_vacuum,tag=can_spit_2] add spit
 tag @s[tag=!in_vacuum] remove can_spit
+
+execute if entity @s[tag=!can_spit_2,tag=vacuumable] run function luigis_mansion:entities/billiards_ball/roll
+execute at @s[tag=in_vacuum,tag=!spit,tag=vacuumable] run function luigis_mansion:entities/billiards_ball/roll_to_player
+execute at @s[tag=!spit,tag=vacuumable] unless entity @s[tag=!in_dust,tag=!in_fire,tag=!in_water,tag=!in_ice] run function luigis_mansion:entities/billiards_ball/roll_away_from_player

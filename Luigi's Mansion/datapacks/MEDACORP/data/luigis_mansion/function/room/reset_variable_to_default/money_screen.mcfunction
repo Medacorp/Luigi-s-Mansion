@@ -1,0 +1,1 @@
+scoreboard players set #money_screen Selected 0

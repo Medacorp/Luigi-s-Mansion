@@ -1,0 +1,1 @@
+{"parent":"luigis_mansion:item/game_boy_horror/display","textures":{"particle":"#digit"},"elements":[{"from":[5.15,11.375,7.09],"to":[6.65,13.375,7.09],"light_emission":15,"faces":{"north":{"uv":[0,0,12,16],"texture":"#digit"}}}]}

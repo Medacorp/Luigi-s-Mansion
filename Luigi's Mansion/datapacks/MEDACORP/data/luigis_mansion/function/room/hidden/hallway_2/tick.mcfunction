@@ -8,11 +8,10 @@ execute as @e[tag=eternal_gold_coin,scores={Room=7}] run scoreboard players add 
 execute if score #temp Wave matches ..10 unless data storage luigis_mansion:data current_state.luigis_mansion.current_data{money_spawned:["hallway_2_money"]} run data modify storage luigis_mansion:data current_state.luigis_mansion.current_data.money_spawned append value "hallway_2_money"
 scoreboard players reset #temp Wave
 
-execute unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.technical_data{chauncey_cried:1b} if data storage luigis_mansion:data current_state.luigis_mansion.current_data{obtained_keys:["nursery"]} unless data storage luigis_mansion:data dialogs[{room:7}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"chaunceys_door"},room:7,progress:0}
-
 scoreboard players set #temp Room 7
 execute as @e[tag=luigi,tag=!door_animation] run function luigis_mansion:main/get_same_room
 scoreboard players reset #temp Room
 execute if entity @e[tag=luigi,tag=same_room,limit=1] run function luigis_mansion:room/hidden/hallway_2/ghosts
+execute unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.technical_data{chauncey_cried:1b} if data storage luigis_mansion:data current_state.luigis_mansion.current_data{obtained_keys:["nursery"]} unless data storage luigis_mansion:data dialogs[{room:7}] unless entity @e[tag=luigi,tag=door_animation,tag=same_room] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"chaunceys_door"},room:7,progress:0}
 tag @e[tag=luigi,tag=same_room] remove same_room
 tag @e[tag=luigi,tag=exact_same_room] remove exact_same_room

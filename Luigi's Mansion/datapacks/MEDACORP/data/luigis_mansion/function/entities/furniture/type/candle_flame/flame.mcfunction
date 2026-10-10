@@ -1,18 +1,18 @@
-execute if entity @s[tag=lit,tag=affected_by_fire] run function luigis_mansion:entities/furntiure/type/candle_flame/light
-execute if entity @s[tag=!lit,tag=!affected_by_fire] run function luigis_mansion:entities/furntiure/type/candle_flame/extinguish
-execute if entity @s[tag=in_fire] run function luigis_mansion:entities/furntiure/type/candle_flame/light
+execute if entity @s[tag=lit,tag=affected_by_fire] run function luigis_mansion:entities/furniture/type/candle_flame/light
+execute if entity @s[tag=!lit,tag=!affected_by_fire] run function luigis_mansion:entities/furniture/type/candle_flame/extinguish
+execute if entity @s[tag=in_fire] run function luigis_mansion:entities/furniture/type/candle_flame/light
 tag @s[tag=in_vacuum] add extinguish
 tag @s[tag=in_dust] add extinguish
 tag @s[tag=in_ice] add extinguish
 tag @s[tag=extinguish] remove lit
-execute if entity @s[tag=extinguish] run function luigis_mansion:entities/furntiure/type/candle_flame/extinguish
+execute if entity @s[tag=extinguish] run function luigis_mansion:entities/furniture/type/candle_flame/extinguish
 tag @s[tag=extinguish,tag=cannot_extinguish] add large_flame
 tag @s remove extinguish
 tag @s[tag=!lit,tag=always_burn] add large_flame
-execute if entity @s[tag=large_flame,tag=!lit] run function luigis_mansion:entities/furntiure/type/candle_flame/light
+execute if entity @s[tag=large_flame,tag=!lit] run function luigis_mansion:entities/furniture/type/candle_flame/light
 tag @s[tag=lit,tag=in_water] remove large_flame
 scoreboard players reset @s[tag=lit,tag=in_water] ActionTime
-execute if entity @s[tag=in_water] run function luigis_mansion:entities/furntiure/type/candle_flame/extinguish
+execute if entity @s[tag=in_water] run function luigis_mansion:entities/furniture/type/candle_flame/extinguish
 
 execute if entity @s[tag=!lit,tag=was_lit] run data modify entity @s item.components."minecraft:custom_model_data".floats[0] set value 0f
 execute if entity @s[tag=lit,tag=!purple,tag=!large_flame] unless entity @s[tag=was_lit,tag=!was_purple,tag=!was_large] run data modify entity @s item.components."minecraft:custom_model_data".floats[0] set value 1f

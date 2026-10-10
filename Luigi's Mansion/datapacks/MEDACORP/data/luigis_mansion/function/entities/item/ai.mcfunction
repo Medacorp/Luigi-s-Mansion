@@ -1,6 +1,7 @@
 $teleport @s ~ ~-$(physics_offset) ~
 execute store result entity @s Rotation[1] float 1 run scoreboard players get @s HomeRotationX
 
+execute if entity @s[tag=pearls_screen] if score #money_screen Selected matches 1 run tag @e[tag=luigi,tag=same_room,tag=!update_money_screen_gem] add update_money_screen_pearls
 tag @s[tag=picked_up,tag=captured] remove captured
 tag @s[tag=picked_up,tag=!captured] add dead
 scoreboard players add @s Move 0

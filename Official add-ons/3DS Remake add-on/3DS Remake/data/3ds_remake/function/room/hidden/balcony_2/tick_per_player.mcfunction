@@ -10,4 +10,4 @@ tag @s add already_ticked
 
 function luigis_mansion:entities/player/run_command_as_model {command:'execute if entity @s[x=681.5,y=120,z=28.0,distance=..4] if data storage luigis_mansion:data current_state.luigis_mansion.current_data{obtained_keys:["hallway_18"]} run function 3ds_remake:room/hidden/balcony_2/clear_blockade'}
 
-execute if entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}},limit=1] run function luigis_mansion:items/game_boy_horror/turn_radar_to_forced_value {value:"on_top"}
+execute if entity @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}},limit=1] run function luigis_mansion:entities/player/run_command_as_model {command:'function luigis_mansion:items/game_boy_horror/turn_radar_to_forced_value {value:"on_top"}'}

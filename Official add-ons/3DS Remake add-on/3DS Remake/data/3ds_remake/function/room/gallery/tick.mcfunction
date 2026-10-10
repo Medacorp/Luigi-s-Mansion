@@ -8,7 +8,7 @@ scoreboard players set #temp Room -8
 
 execute as @a[scores={Room=-8}] run function 3ds_remake:room/gallery/tick_per_player
 
-execute unless block 767 2 -36 minecraft:barrier run function 3ds_remake:room/gallery/generate
+execute unless block 738 2 -29 minecraft:red_wool_stairs run function 3ds_remake:room/gallery/generate
 
 #todelete - old furniture
 function #3ds_remake:room/gallery/interactions/room

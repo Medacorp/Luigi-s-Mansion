@@ -23,7 +23,6 @@ execute in minecraft:overworld run loot spawn 27 0 0 loot luigis_mansion:gamepla
 execute in minecraft:overworld run data modify entity @e[tag=!model_piece,tag=this_entity,limit=1] data.player_name set from entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:player_head"}},limit=1] Item.components."minecraft:profile".name
 data modify entity @e[tag=model_piece,tag=source,tag=this_entity,limit=1] data.player_name set from entity @e[tag=!model_piece,tag=this_entity,limit=1] data.player_name
 execute if score #global_player_names Selected matches 1 as @e[tag=model_piece,tag=source,tag=this_entity,limit=1] run data modify entity @s text set from entity @s data.player_name
-execute in minecraft:overworld run setblock 27 0 0 minecraft:bedrock
 execute in minecraft:overworld run kill @e[x=27.5,y=0.0,z=0.5,distance=..0.7,type=minecraft:item,limit=1]
 function luigis_mansion:entities/player/memory/color/get
 execute as @e[tag=model_piece,tag=this_entity,tag=!held_item,tag=!poltergust_body,tag=!source] store result entity @s item.components."minecraft:custom_model_data".colors[0] int 1 run scoreboard players get #temp Time

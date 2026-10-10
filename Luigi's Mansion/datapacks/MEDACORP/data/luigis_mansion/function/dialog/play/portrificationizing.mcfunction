@@ -12,9 +12,8 @@ scoreboard players reset #temp ID
 
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
-tag @e[tag=e_gadd,tag=same_room,limit=1] remove freeze_animation
-tag @e[tag=e_gadd,tag=same_room,limit=1] remove no_ai
-tag @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"portrificationizing_ghost"}}}] remove no_ai
+tag @e[tag=same_room] remove freeze_animation
+tag @e[tag=same_room] remove no_ai
 execute if score #dialog Dialog matches 1 as @e[tag=calls_portrificationizing,limit=1] run function luigis_mansion:entities/luigi/make_sound/force {high:"luigis_mansion:entity.player.enthusiastic.high_health",medium:"luigis_mansion:entity.player.enthusiastic.high_health",low:"luigis_mansion:entity.player.enthusiastic.low_health",duration:20}
 execute if score #dialog Dialog matches 1 unless data storage luigis_mansion:data dialogs[0].portraits run data modify storage luigis_mansion:data dialogs[0].portraits set value {}
 execute if score #dialog Dialog matches 1 as @a[tag=same_room] run function luigis_mansion:other/music/set/portrificationizing

@@ -12,8 +12,8 @@ execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run functio
 tag @e[tag=e_gadd,tag=same_room,limit=1] remove freeze_animation
 tag @e[tag=gooigi,tag=same_room,limit=1] remove no_ai
 tag @e[tag=gooigi,tag=same_room,limit=1] remove freeze_animation
-execute if score #dialog Dialog matches 1..5 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[5f,0f,0f,0f],tracker:[]}
-execute if score #dialog Dialog matches 6.. as @a[tag=same_room,tag=!spectator] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[0f,0f,0f,0f],tracker:[]}
+execute if score #dialog Dialog matches 1..5 as @e[tag=luigi,tag=same_room] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[5f,0f,0f,0f],tracker:[]}
+execute if score #dialog Dialog matches 6.. as @e[tag=luigi,tag=same_room] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[0f,0f,0f,0f],tracker:[]}
 execute if score #dialog Dialog matches 1..10 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/game_boy_horror
 execute if score #dialog Dialog matches 1..10 as @a[tag=same_room] run function 3ds_remake:other/music/set/future_e_gadd
 execute if score #dialog Dialog matches 6 if score #players Totals matches 1 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"3ds_remake:entity.future_e_gadd",color:"green"},{type:"translatable",translate:"3ds_remake:dialog.gooigi_results.1",with:[{type:"selector",selector:"@a[tag=!spectator]"}]}]}

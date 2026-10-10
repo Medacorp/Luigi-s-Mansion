@@ -12,7 +12,7 @@ execute if entity @s[scores={Dialog=140..180}] run teleport @s ~ ~ ~ ~5 ~
 execute if entity @s[scores={Dialog=181..220}] run teleport @s ~ ~ ~ ~10 ~
 execute if entity @s[scores={Dialog=221..299}] run teleport @s ~ ~ ~ ~20 ~
 execute if entity @s[scores={Dialog=201..280}] run scoreboard players operation #temp Time = @s Dialog
-execute if entity @s[scores={Dialog=201..280}] store result entity @s transformation.scale[2] float -0.0125 run scoreboard players remove #temp Time 280
+execute if entity @s[scores={Dialog=201..280}] store result entity @s transformation.scale[1] float -0.0125 run scoreboard players remove #temp Time 280
 scoreboard players reset #temp Time
 data modify entity @s[scores={Dialog=300}] transformation.left_rotation set value [0.0f,0.0f,0.0f,1.0f]
 teleport @s[scores={Dialog=300}] 770 81.45 12 0 0

@@ -1,5 +1,5 @@
 execute if score #dialog Dialog matches ..209 run scoreboard players add #dialog Dialog 1
-execute if score #dialog Dialog matches ..209 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 210
+execute if score #dialog Dialog matches ..209 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 276
 
 tag @e[tag=ghost,tag=!hidden,tag=!normal_death,tag=!element_death,tag=same_room] add vanish
 tag @e[tag=ghost,tag=!hidden,tag=!normal_death,tag=!element_death,tag=same_room] remove no_ai
@@ -11,24 +11,26 @@ tag @a[tag=same_room] add disable_poltergust
 
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
-execute if score #dialog Dialog matches 1..5 as @a[tag=same_room,tag=!spectator] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[5f,0f,0f,0f],tracker:[]}
-execute if score #dialog Dialog matches 6.. as @a[tag=same_room,tag=!spectator] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[2f,0f,0f,0f],tracker:[]}
-execute if score #dialog Dialog matches 1 run scoreboard players set #gbh_clock Selected 108001
-execute if score #dialog Dialog matches 1 if score #players Totals matches 1 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"e3_demo:dialog.e_gadd_call.1",with:[{type:"selector",selector:"@p[tag=!spectator]"}]}]}
-execute if score #dialog Dialog matches 1 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"e3_demo:dialog.e_gadd_call.1.more"}]}
-execute if score #dialog Dialog matches 1 as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.luigi neutral @s ~ ~ ~ 1
-execute if score #dialog Dialog matches 60 if score #players Totals matches 1 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"e3_demo:dialog.e_gadd_call.2"}]}
-execute if score #dialog Dialog matches 60 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"e3_demo:dialog.e_gadd_call.2.more"}]}
-execute if score #dialog Dialog matches 60 as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.oomahkah_oui_soy_soh_ooh_ck_ck neutral @s ~ ~ ~ 1
-execute if score #dialog Dialog matches 120 if score #players Totals matches 1 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"e3_demo:dialog.e_gadd_call.3",with:[{type:"selector",selector:"@p[tag=!spectator]"}]}]}
-execute if score #dialog Dialog matches 120 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"e3_demo:dialog.e_gadd_call.3.more"}]}
-execute if score #dialog Dialog matches 120 as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.luigi3 neutral @s ~ ~ ~ 1
-execute if score #dialog Dialog matches 180 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"e3_demo:dialog.e_gadd_call.4"}]}
-execute if score #dialog Dialog matches 180 as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.ohyah_squirtbottlelaugh_bohh neutral @s ~ ~ ~ 1
-
-execute if score #dialog Dialog matches 210 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
-execute if score #dialog Dialog matches 210 unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.portrait_battle as @a[tag=same_room] run function luigis_mansion:room/ghost_portrificationizer_room/warp_to
-execute if score #dialog Dialog matches 210 unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.portrait_battle if data storage luigis_mansion:data current_state.luigis_mansion.current_data.portrait_ghosts[{portrificationized:1b}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"e3_demo",id:"portrait_ghosts"},room:-3,progress:-1}
-execute if score #dialog Dialog matches 210 unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.portrait_battle unless data storage luigis_mansion:data dialogs[{room:-3}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"e3_demo",id:"just_money"},room:-3,progress:-1}
-execute if score #dialog Dialog matches 210 run tag @a[tag=portrait_battle,limit=1] add failed_portrait_battle
-execute if score #dialog Dialog matches 210 run scoreboard players set #dialog Dialog -1
+execute if score #dialog Dialog matches 1..5 as @e[tag=luigi,tag=same_room] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[5f,0f,0f,0f],tracker:[]}
+execute if score #dialog Dialog matches 6..65 as @e[tag=luigi,tag=same_room] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[4f,0f,0f,0f],tracker:[]}
+execute if score #dialog Dialog matches 66..105 as @e[tag=luigi,tag=same_room] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[3f,0f,0f,0f],tracker:[]}
+execute if score #dialog Dialog matches 106..125 as @e[tag=luigi,tag=same_room] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[5f,0f,0f,0f],tracker:[]}
+execute if score #dialog Dialog matches 126.. as @e[tag=luigi,tag=same_room] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[2f,0f,0f,0f],tracker:[]}
+execute if score #dialog Dialog matches 6 run scoreboard players set #gbh_clock Selected 108001
+execute if score #dialog Dialog matches 6 if score #players Totals matches 1 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"e3_demo:dialog.e_gadd_call.1",with:[{type:"selector",selector:"@p[tag=!spectator]"}]}]}
+execute if score #dialog Dialog matches 6 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"e3_demo:dialog.e_gadd_call.1.more"}]}
+execute if score #dialog Dialog matches 6 as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.luigi neutral @s ~ ~ ~ 1
+execute if score #dialog Dialog matches 126 if score #players Totals matches 1 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"e3_demo:dialog.e_gadd_call.2"}]}
+execute if score #dialog Dialog matches 126 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"e3_demo:dialog.e_gadd_call.2.more"}]}
+execute if score #dialog Dialog matches 126 as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.oomahkah_oui_soy_soh_ooh_ck_ck neutral @s ~ ~ ~ 1
+execute if score #dialog Dialog matches 186 if score #players Totals matches 1 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"e3_demo:dialog.e_gadd_call.3",with:[{type:"selector",selector:"@p[tag=!spectator]"}]}]}
+execute if score #dialog Dialog matches 186 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"e3_demo:dialog.e_gadd_call.3.more"}]}
+execute if score #dialog Dialog matches 186 as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.luigi3 neutral @s ~ ~ ~ 1
+execute if score #dialog Dialog matches 246 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"e3_demo:dialog.e_gadd_call.4"}]}
+execute if score #dialog Dialog matches 246 as @a[tag=same_room] at @s run playsound luigis_mansion:entity.e_gadd.talk.ohyah_squirtbottlelaugh_bohh neutral @s ~ ~ ~ 1
+execute if score #dialog Dialog matches 276 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
+execute if score #dialog Dialog matches 276 unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.portrait_battle as @a[tag=same_room] run function luigis_mansion:room/ghost_portrificationizer_room/warp_to
+execute if score #dialog Dialog matches 276 unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.portrait_battle if data storage luigis_mansion:data current_state.luigis_mansion.current_data.portrait_ghosts[{portrificationized:1b}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"e3_demo",id:"portrait_ghosts"},room:-3,progress:-1}
+execute if score #dialog Dialog matches 276 unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.portrait_battle unless data storage luigis_mansion:data dialogs[{room:-3}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"e3_demo",id:"just_money"},room:-3,progress:-1}
+execute if score #dialog Dialog matches 276 run tag @a[tag=portrait_battle,limit=1] add failed_portrait_battle
+execute if score #dialog Dialog matches 276 run scoreboard players set #dialog Dialog -1

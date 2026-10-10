@@ -29,4 +29,5 @@ tag @s remove vanish
 tag @s remove vanish_from_vacuum
 tag @s remove second_flee_state
 tag @s remove visible
+tag @s remove flipped_gravity
 tag @s add hidden

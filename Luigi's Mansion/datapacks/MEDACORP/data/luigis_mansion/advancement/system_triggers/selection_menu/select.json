@@ -8,8 +8,7 @@
                     "entity": "this",
                     "predicate": {
                         "minecraft:entity_tags": {
-                            "all_of": ["using_selection_menu"],
-                            "none_of": ["modifying_inventory"]
+                            "all_of": ["using_selection_menu"]
                         }
                     }
                 }

@@ -1,0 +1,1 @@
+execute store result storage luigis_mansion:data current_state.3ds_remake.loaded_mansion.settings.money_screen int 1 run scoreboard players get #money_screen Selected

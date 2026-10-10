@@ -144,7 +144,7 @@ execute at @s[scores={Dialog=330..370}] run teleport @s ~ ~ ~ ~5 ~
 execute at @s[scores={Dialog=371..410}] run teleport @s ~ ~ ~ ~10 ~
 execute at @s[scores={Dialog=411..529}] run teleport @s ~ ~ ~ ~20 ~
 execute if entity @s[scores={Dialog=431..510}] run scoreboard players operation #temp Time = @s Dialog
-execute if entity @s[scores={Dialog=431..510}] store result entity @s transformation.scale[2] float 0.0125 run scoreboard players remove #temp Time 430
+execute if entity @s[scores={Dialog=431..510}] store result entity @s transformation.scale[1] float 0.0125 run scoreboard players remove #temp Time 430
 scoreboard players reset #temp Time
 teleport @s[scores={Dialog=530}] 770 82.45 15
 execute if entity @s[scores={Dialog=620}] run playsound luigis_mansion:entity.mario.wohh_hoo_hoo neutral @a[tag=same_room] ~ ~ ~ 1

@@ -1,10 +1,11 @@
 execute at @s unless block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^0.5 ^0.5 {Tags:["interact","manual","check","1","down"]}
 execute at @s unless block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^1.5 ^0.5 {Tags:["interact","manual","check","2","up"]}
 execute at @s unless block ~ ~-0.1 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^2.5 ^0.5 {Tags:["interact","manual","check","3"]}
-execute at @s if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore unless block ~ ~2 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^0.5 ^0.5 {Tags:["interact","manual","check","1","up"]}
-execute at @s if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore unless block ~ ~2 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^1.5 ^0.5 {Tags:["interact","manual","check","2","down"]}
+execute at @s if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore unless block ~ ~2 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^0.5 ^0.5 {Tags:["interact","manual","check","1","down"]}
+execute at @s if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore unless block ~ ~2 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^1.5 ^0.5 {Tags:["interact","manual","check","2","up"]}
 execute at @s if block ~ ~-0.1 ~ #luigis_mansion:interact_ignore unless block ~ ~2 ~ #luigis_mansion:interact_ignore rotated ~ 0 run summon minecraft:marker ^ ^-0.5 ^0.5 {Tags:["interact","manual","check","3"]}
 scoreboard players set @e[tag=interact,tag=manual] FurnitureSize 2147483647
+execute as @e[tag=interact,tag=manual] run data modify entity @s data set value {search_furnitures:[]}
 execute at @e[tag=interact,tag=manual] as @e[tag=furniture,tag=!door,tag=same_room,tag=affected_by_interact,tag=!no_ai] unless entity @s[tag=searched,nbt={data:{furniture_type:"swinging",interact_animation:{namespace:"luigis_mansion",id:"enthusiastic"}}}] run function luigis_mansion:items/interact/target_furniture/find
 execute as @e[tag=interact,tag=manual] positioned as @s rotated ~ 0 run teleport @s ^ ^ ^0.5
 #todelete - old furniture
@@ -12,20 +13,21 @@ execute as @e[tag=interact,tag=manual] at @s unless block ~ ~ ~ minecraft:air un
 #/todelete
 scoreboard players reset #interact
 execute if entity @e[tag=interact,tag=manual,tag=can_interact,limit=1] run scoreboard players set @s InteractionTime 1
-execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=can_search,tag=!low_priority,tag=2,limit=1] run tag @s add 2
-execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=can_search,tag=!low_priority,tag=1,limit=1] run tag @s[tag=!2] add 1
+execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=can_search,tag=!low_priority,tag=1,limit=1] run tag @s add 1
+execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=can_search,tag=!low_priority,tag=2,limit=1] run tag @s[tag=!1] add 2
 execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=can_search,tag=!low_priority,tag=3,limit=1] run tag @s[tag=!1,tag=!2] add 3
-execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=can_search,tag=low_priority,tag=2,limit=1] run tag @s[tag=!1,tag=!3] add 2
 execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=can_search,tag=low_priority,tag=1,limit=1] run tag @s[tag=!2,tag=!3] add 1
+execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=can_search,tag=low_priority,tag=2,limit=1] run tag @s[tag=!1,tag=!3] add 2
 execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=can_search,tag=low_priority,tag=3,limit=1] run tag @s[tag=!1,tag=!2] add 3
-execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=2,tag=!low_priority,limit=1] run tag @s[tag=!1,tag=!3] add 2
 execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=1,tag=!low_priority,limit=1] run tag @s[tag=!2,tag=!3] add 1
+execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=2,tag=!low_priority,limit=1] run tag @s[tag=!1,tag=!3] add 2
 execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=3,tag=!low_priority,limit=1] run tag @s[tag=!1,tag=!2] add 3
-execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=2,tag=low_priority,limit=1] run tag @s[tag=!1,tag=!3] add 2
 execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=1,tag=low_priority,limit=1] run tag @s[tag=!2,tag=!3] add 1
+execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=2,tag=low_priority,limit=1] run tag @s[tag=!1,tag=!3] add 2
 execute if entity @e[tag=interact,tag=manual,tag=can_interact,tag=3,tag=low_priority,limit=1] run tag @s[tag=!1,tag=!2] add 3
 execute if entity @s[tag=1] run data modify entity @s data.search_furniture set from entity @e[tag=interact,tag=manual,tag=1,limit=1] data.search_furniture
 execute if entity @s[tag=2] run data modify entity @s data.search_furniture set from entity @e[tag=interact,tag=manual,tag=2,limit=1] data.search_furniture
 execute if entity @s[tag=3] run data modify entity @s data.search_furniture set from entity @e[tag=interact,tag=manual,tag=3,limit=1] data.search_furniture
+execute if entity @s[tag=1] run function luigis_mansion:items/interact/tall_feet_furniture with entity @s data
 execute unless entity @s[scores={InteractionTime=1..}] at @e[tag=interact,tag=manual,tag=up,limit=1] unless block ~ ~ ~ #luigis_mansion:interact_ignore run function luigis_mansion:items/interact/wall
 kill @e[tag=interact,tag=manual]
