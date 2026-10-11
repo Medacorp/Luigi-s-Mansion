@@ -1,6 +1,4 @@
 tag @s remove flashlight
-tag @s remove flashlight_selected
-tag @s[tag=!poltergust_selected,nbt={data:{selected_item:{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"flashlight"}}}}}] add flashlight_selected
 tag @s[tag=!flashlight_selected] remove flashlight_off
 tag @s[tag=flashlight_selected,scores={UseItem=1..},tag=!flashlight_off] add toggle_flashlight_off
 tag @s[tag=flashlight_selected,tag=toggle_flashlight_off] add flashlight_off
@@ -9,3 +7,5 @@ tag @s[tag=flashlight_selected,tag=toggle_flashlight_off] remove toggle_flashlig
 scoreboard players set @s[tag=flashlight_selected,scores={UseItem=1..}] UseItem 0
 tag @s[tag=flashlight_selected,tag=!flashlight_off,tag=dark_room] add flashlight
 function luigis_mansion:items/flashlight/shine_direction
+tag @s remove flashlight_selected
+tag @s[tag=!poltergust_selected,nbt={data:{selected_item:{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"flashlight"}}}}}] add flashlight_selected

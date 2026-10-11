@@ -3,9 +3,9 @@ execute if entity @s[scores={AnimationProgress=1..6}] positioned ^-0.375 ^0.64 ^
 execute if entity @s[scores={AnimationProgress=7}] positioned ^-0.375 ^0.64 ^ rotated ~135 ~45 positioned ^0.375 ^ ^0.64 run teleport @s ~ ~ ~ ~ ~-45
 execute if entity @s[scores={AnimationProgress=8}] positioned ^-0.375 ^ ^ rotated ~90 ~ positioned ^0.375 ^ ^ run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[scores={AnimationProgress=9}] positioned ^-0.375 ^ ^ rotated ~45 ~ positioned ^0.375 ^ ^ run teleport @s ~ ~ ~ ~ ~
-execute if entity @s[scores={AnimationProgress=45..46}] positioned ^-0.375 ^ ^ rotated ~45 ~ positioned ^0.375 ^ ^ run teleport @s ~ ~ ~ ~ ~
-execute if entity @s[scores={AnimationProgress=47..63}] positioned ^-0.375 ^ ^ rotated ~90 ~ positioned ^0.375 ^ ^ run teleport @s ~ ~ ~ ~ ~
-execute if entity @s[scores={AnimationProgress=64..65}] positioned ^-0.375 ^ ^ rotated ~45 ~ positioned ^0.375 ^ ^ run teleport @s ~ ~ ~ ~ ~
+execute if entity @s[scores={AnimationProgress=45..46}] positioned ^-0.375 ^ ^ rotated ~22.5 ~ positioned ^0.375 ^ ^ run teleport @s ~ ~ ~ ~22.5 ~
+execute if entity @s[scores={AnimationProgress=47..63}] positioned ^-0.375 ^ ^ rotated ~45 ~ positioned ^0.375 ^ ^ run teleport @s ~ ~ ~ ~45 ~
+execute if entity @s[scores={AnimationProgress=64..65}] positioned ^-0.375 ^ ^ rotated ~22.5 ~ positioned ^0.375 ^ ^ run teleport @s ~ ~ ~ ~22.5 ~
 data modify entity @s[scores={AnimationProgress=1..60}] item set from storage luigis_mansion:data luigi.animation.item
 data remove entity @s[scores={AnimationProgress=61}] item
 execute store result score #item Time run data get storage luigis_mansion:data luigi.animation.item.components."minecraft:custom_data".held_pitch 10

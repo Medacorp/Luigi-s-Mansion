@@ -5,20 +5,26 @@ execute store result score #temp ID run data get storage luigis_mansion:data dia
 execute as @e[tag=player,tag=same_room] if score @s ID = #temp ID run tag @s add this_player
 scoreboard players reset #temp ID
 
-tag @a[tag=!this_player,tag=!spectator,limit=1] remove same_room
+execute if data storage luigis_mansion:data current_state run tag @a[tag=!this_player,tag=!spectator,limit=1] remove same_room
 
-execute unless entity @e[tag=this_player,limit=1] run tag @e[tag=same_room] add abort_dialog_tick
-execute unless entity @e[tag=this_player,limit=1] run return 0
+execute unless entity @e[tag=this_player,limit=1] run scoreboard players set #dialog Dialog 979
 execute if entity @a[tag=this_player,limit=1] run scoreboard players add #dialog Dialog 1
 execute if entity @a[tag=this_player,limit=1,tag=skip_dialog] run scoreboard players set #dialog Dialog 979
-execute if score #dialog Dialog matches ..978 as @a[tag=this_player,limit=1,tag=!spectator,tag=!dialog_menu,tag=!using_selection_menu] run function luigis_mansion:selection_menu/dialog/original_menu_skip_only
-execute if score #dialog Dialog matches 979 as @a[tag=this_player,limit=1,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
+execute if score #dialog Dialog matches ..978 as @a[tag=same_room,tag=!spectator,tag=!dialog_menu,tag=!using_selection_menu] run function luigis_mansion:selection_menu/dialog/original_menu_skip_only
+execute if score #dialog Dialog matches 979 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 
 scoreboard players reset @a[tag=this_player,limit=1] WarpTime
 execute as @a[tag=this_player,limit=1,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 tag @e[tag=door,tag=same_room] remove freeze_animation
 tag @e[tag=crow,tag=same_room] remove freeze_animation
 
+tag @e[tag=luigi,tag=this_player,limit=1] add flashlight_selected
+tag @e[tag=luigi,tag=this_player,limit=1] remove flashlight_off
+execute if score #dialog Dialog matches 230..458 run tag @e[tag=luigi,tag=this_player,limit=1] remove flashlight_selected
+execute if score #dialog Dialog matches 230..458 run tag @e[tag=luigi,tag=this_player,limit=1] add flashlight_off
+execute if score #dialog Dialog matches 730..927 run tag @e[tag=luigi,tag=this_player,limit=1] remove flashlight_selected
+execute if score #dialog Dialog matches 730..927 run tag @e[tag=luigi,tag=this_player,limit=1] add flashlight_off
+execute if score #dialog Dialog matches 1 run tag @a[tag=same_room,tag=!this_player] add camera
 execute if score #dialog Dialog matches 1 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"870 89.9375 -4 160 0"}
 execute if score #dialog Dialog matches 1 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 2 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/animation/set/opening
@@ -71,6 +77,8 @@ execute if score #dialog Dialog matches 891 as @e[tag=luigi,tag=this_player,limi
 execute if score #dialog Dialog matches 928 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/make_sound/simple {sound:"luigis_mansion:item.flashlight.on"}
 execute if score #dialog Dialog matches 979 if data storage luigis_mansion:data current_state run tag @a[tag=this_player,limit=1] add first_entrance
 execute if score #dialog Dialog matches 979 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
+execute if score #dialog Dialog matches 979 run tag @a[tag=same_room] remove camera
+execute if score #dialog Dialog matches 979 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 979 as @a[tag=this_player,limit=1] if data storage luigis_mansion:data current_state run function luigis_mansion:data/joined_save with entity @s
 execute if score #dialog Dialog matches 979 as @a[tag=this_player,limit=1] if data storage luigis_mansion:data current_state unless data storage luigis_mansion:data current_state.luigis_mansion.current_data run function luigis_mansion:room/exterior/enter_lab
 execute if score #dialog Dialog matches 979 as @a[tag=same_room,tag=spectator] if data storage luigis_mansion:data current_state unless data storage luigis_mansion:data current_state.luigis_mansion.current_data run function luigis_mansion:room/exterior/enter_lab

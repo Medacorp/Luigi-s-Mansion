@@ -24,4 +24,3 @@ scoreboard players reset #temp2 Time
 tag @s[tag=!open,tag=!trigger] add idle_furniture
 tag @s[tag=!trigger] add reset_sound
 tag @s[tag=trigger] remove trigger
-say end

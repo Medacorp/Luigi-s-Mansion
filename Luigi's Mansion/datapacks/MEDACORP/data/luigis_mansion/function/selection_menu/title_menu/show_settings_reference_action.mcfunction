@@ -1,0 +1,1 @@
+$function $(settings_namespace):selection_menu/game_boy_horror/$(settings_action)

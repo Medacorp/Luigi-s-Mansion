@@ -27,10 +27,9 @@ execute if score #dialog Dialog matches 80 positioned 718 20 35 run function lui
 execute if score #dialog Dialog matches 80 run data modify storage luigis_mansion:data entity set value {room:3,no_ai:1b,rotation:[-155f,0f],tags:["same_room","visible","no_dialog_freeze","remove_after_dialog"],animation:{namespace:"luigis_mansion",id:"appear/normal"}}
 execute if score #dialog Dialog matches 80 positioned 725 20.2 30 run function luigis_mansion:spawn_entities/ghost/gold_ghost
 execute if score #dialog Dialog matches 80 run playsound luigis_mansion:entity.gold_ghost.spawn hostile @a[tag=same_room] 725 20.2 30 1
-execute if score #dialog Dialog matches 90 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
-execute if score #dialog Dialog matches 90 as @e[tag=luigi,tag=same_room] at @e[tag=ghost,tag=same_room,limit=1] run function luigis_mansion:entities/luigi/animation/set/scare/bash
-execute if score #dialog Dialog matches 90 run tag @e[tag=luigi,tag=walking_player,limit=1] add bash_no_move
-execute if score #dialog Dialog matches 90..190 run scoreboard players set @e[tag=luigi,tag=same_room,scores={AnimationProgress=30..}] AnimationProgress 29
+execute if score #dialog Dialog matches 90 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/animation/set/none
+execute if score #dialog Dialog matches 90 as @e[tag=luigi,tag=walking_player,limit=1] at @e[tag=ghost,tag=same_room,limit=1] run function luigis_mansion:entities/luigi/animation/set/scare/bash_no_move
+execute if score #dialog Dialog matches 90..190 run scoreboard players set @e[tag=luigi,tag=walking_player,limit=1,scores={AnimationProgress=30..}] AnimationProgress 29
 execute if score #dialog Dialog matches 100 run data modify entity @e[tag=ghost,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"haunt"}
 execute if score #dialog Dialog matches 106 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"726.8 19.4 26.8 12 -12"}
 execute if score #dialog Dialog matches 106..150 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"~0.0066 19.4 ~-0.0266 ~-0.188 ~0.222"}
@@ -110,7 +109,7 @@ execute if score #dialog Dialog matches 460 at @e[tag=ghost,tag=same_room,limit=
 execute if score #dialog Dialog matches 500 run data modify entity @e[tag=ghost,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"vanish"}
 execute if score #dialog Dialog matches 500 at @e[tag=ghost,tag=same_room,limit=1] run playsound luigis_mansion:entity.gold_ghost.disappear hostile @a[tag=same_room] ~ ~ ~ 1
 execute if score #dialog Dialog matches 540 run tag @e[tag=ghost,tag=same_room,limit=1] add remove_from_existence
-execute if score #dialog Dialog matches 540 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/cold_room_idle
+execute if score #dialog Dialog matches 540 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/animation/set/cold_room_idle
 execute if score #dialog Dialog matches 278 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"walk_backwards"}
 execute if score #dialog Dialog matches 251..266 as @e[tag=e_gadd,tag=same_room,limit=1] at @s facing 722 20 27 rotated ~ 0 run teleport @s ^ ^ ^0.22
 execute if score #dialog Dialog matches 266..285 as @e[tag=e_gadd,tag=same_room,limit=1] at @s facing 718 20 26 rotated ~ 0 run teleport @s ^ ^ ^0.21
@@ -134,7 +133,7 @@ execute if score #dialog Dialog matches 620 at @e[tag=e_gadd,tag=same_room,limit
 execute if score #dialog Dialog matches 650 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"sit_look_up"}
 execute if score #dialog Dialog matches 650 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.meet_e_gadd.2"}]}
 execute if score #dialog Dialog matches 650 at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.hoo_hoo_jeemee_jeemee_kehkeh neutral @a[tag=same_room] ~ ~ ~ 1
-execute if score #dialog Dialog matches 740 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
+execute if score #dialog Dialog matches 740 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 740 as @e[tag=e_gadd,tag=same_room,limit=1] at @s run teleport @s ~ ~ ~ 170 0
 execute if score #dialog Dialog matches 740 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"get_up"}
 execute if score #dialog Dialog matches 760 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"explain_1_hand"}
@@ -187,7 +186,7 @@ execute if score #dialog Dialog matches 1360 run tag @e[tag=same_room,tag=remove
 execute if score #dialog Dialog matches 1400 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
 execute if score #dialog Dialog matches 1400 run tag @e[tag=same_room,tag=remove_after_dialog] add remove_from_existence
 execute if score #dialog Dialog matches 1400 as @a[scores={MusicType=-1}] run function luigis_mansion:other/music/set/silence
-execute if score #dialog Dialog matches 1400 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
+execute if score #dialog Dialog matches 1400 as @e[tag=luigi,tag=walking_player,limit=1] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 1400 run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"the_mansion"},room:-1,progress:-1}
 execute if score #dialog Dialog matches 1400 as @a[tag=same_room] run function luigis_mansion:room/underground_lab/warp_to
 execute if score #dialog Dialog matches 1400 run scoreboard players set #dialog Dialog -1

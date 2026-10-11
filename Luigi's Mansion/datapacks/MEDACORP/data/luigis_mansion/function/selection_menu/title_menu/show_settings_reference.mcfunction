@@ -1,1 +1,1 @@
-$function $(namespace):selection_menu/game_boy_horror/$(settings_id)
+$function $(settings_namespace):selection_menu/game_boy_horror/$(settings_id)

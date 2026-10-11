@@ -33,10 +33,10 @@ execute if data storage luigis_mansion:data luigi{alive:0b} run teleport @s ~ ~ 
 tag @s remove moving_backwards
 
 # Move with
-execute rotated as @s run teleport @s[tag=!flipped_gravity,tag=!shrunk] ^ ^2 ^
-execute rotated as @s run teleport @s[tag=!flipped_gravity,tag=shrunk] ^ ^0.99 ^
-execute rotated as @s run teleport @s[tag=flipped_gravity,tag=!shrunk] ^ ^-0.4 ^
-execute rotated as @s run teleport @s[tag=flipped_gravity,tag=shrunk] ^ ^-0.17 ^
+execute rotated as @s run teleport @s[tag=!flipped_gravity,tag=!shrunk] ^ ^2.06 ^
+execute rotated as @s run teleport @s[tag=!flipped_gravity,tag=shrunk] ^ ^1.02 ^
+execute rotated as @s run teleport @s[tag=flipped_gravity,tag=!shrunk] ^ ^-0.501 ^
+execute rotated as @s run teleport @s[tag=flipped_gravity,tag=shrunk] ^ ^-0.335 ^
 execute at @s if entity @a[tag=gooigi,limit=1] run teleport @s[tag=!shrunk] ^ ^ ^-0.25
 execute at @s if entity @a[tag=gooigi,limit=1] run teleport @s[tag=shrunk] ^ ^ ^-0.125
 

@@ -13,7 +13,7 @@ attribute @s[tag=!flipped_gravity,tag=!separated_camera] minecraft:gravity base 
 execute if entity @s[scores={UseItem=1..}] run function luigis_mansion:entities/player/run_command_at_model {command:"scoreboard players operation @e[tag=this_luigi,limit=1] UseItem = @s UseItem"}
 scoreboard players set @s UseItem 0
 
-function luigis_mansion:entities/player/health_display
+execute if data storage luigis_mansion:data current_state if entity @s[gamemode=!creative] run function luigis_mansion:entities/player/health_display
 
 execute if entity @s[scores={Health=1..}] store result score @s Damage run data get entity @s Health
 execute if entity @s[scores={Damage=..99}] run function luigis_mansion:entities/player/heal

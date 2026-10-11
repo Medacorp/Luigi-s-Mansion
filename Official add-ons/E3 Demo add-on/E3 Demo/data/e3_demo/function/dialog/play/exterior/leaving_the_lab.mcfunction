@@ -7,19 +7,23 @@ execute store result score #temp ID run data get storage luigis_mansion:data dia
 execute as @e[tag=player,tag=same_room] if score @s ID = #temp ID run tag @s add this_player
 scoreboard players reset #temp ID
 
-execute unless entity @e[tag=this_player,limit=1] run tag @e[tag=same_room] add abort_dialog_tick
-execute unless entity @e[tag=this_player,limit=1] run return 0
+execute unless entity @e[tag=this_player,limit=1] run scoreboard players set #dialog Dialog 361
 
-tag @a[tag=!this_player,tag=!spectator,limit=1] remove same_room
+execute if data storage luigis_mansion:data current_state run tag @a[tag=!this_player,tag=!spectator,limit=1] remove same_room
 execute if entity @a[tag=this_player,limit=1] run scoreboard players add #dialog Dialog 1
 execute if entity @a[tag=this_player,limit=1,tag=skip_dialog] run scoreboard players set #dialog Dialog 361
-execute if score #dialog Dialog matches ..360 as @a[tag=this_player,limit=1,tag=!spectator,tag=!dialog_menu,tag=!using_selection_menu] run function luigis_mansion:selection_menu/dialog/original_menu_skip_only
-execute if score #dialog Dialog matches 361 as @a[tag=this_player,limit=1,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
+execute if score #dialog Dialog matches ..360 as @a[tag=same_room,tag=!spectator,tag=!dialog_menu,tag=!using_selection_menu] run function luigis_mansion:selection_menu/dialog/original_menu_skip_only
+execute if score #dialog Dialog matches 361 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 
 scoreboard players reset @a[tag=this_player,limit=1] WarpTime
 execute as @a[tag=this_player,limit=1,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 tag @e[tag=door,tag=same_room] remove freeze_animation
 
+tag @e[tag=luigi,tag=this_player,limit=1] add flashlight_selected
+tag @e[tag=luigi,tag=this_player,limit=1] remove flashlight_off
+execute if score #dialog Dialog matches 236..316 run tag @e[tag=luigi,tag=this_player,limit=1] remove flashlight_selected
+execute if score #dialog Dialog matches 236..316 run tag @e[tag=luigi,tag=this_player,limit=1] add flashlight_off
+execute if score #dialog Dialog matches 1 run tag @a[tag=same_room,tag=!this_player] add camera
 execute if score #dialog Dialog matches 1 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"755 89.9375 8.0 90 0"}
 execute if score #dialog Dialog matches 1 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 2 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/animation/set/leaving_the_lab
@@ -54,6 +58,8 @@ execute if score #dialog Dialog matches 250 run data modify entity @e[tag=door,t
 execute if score #dialog Dialog matches 255..274 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"~ ~ ~-0.025"}
 execute if score #dialog Dialog matches 318 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/make_sound/simple {sound:"luigis_mansion:item.flashlight.on"}
 execute if score #dialog Dialog matches 361 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
+execute if score #dialog Dialog matches 361 run tag @a[tag=same_room] remove camera
+execute if score #dialog Dialog matches 361 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 361 as @a[tag=this_player,limit=1] run function luigis_mansion:room/exterior/enter_mansion with storage luigis_mansion:data current_state.luigis_mansion.current_data.mansion_id
 execute if score #dialog Dialog matches 361 as @a[tag=same_room,tag=spectator] run function luigis_mansion:room/exterior/enter_mansion with storage luigis_mansion:data current_state.luigis_mansion.current_data.mansion_id
 execute if score #dialog Dialog matches 361 run scoreboard players set #dialog Dialog -1

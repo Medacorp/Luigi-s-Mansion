@@ -1,24 +1,6 @@
 scoreboard players add @s AnimationProgress 1
 scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX 500
 data modify entity @s[scores={AnimationProgress=1}] item merge from entity @s item.components."minecraft:custom_data".model_data.scared
-scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX 500
-scoreboard players set @s[scores={AnimationProgress=2}] AnimationRotationX 490
-scoreboard players set @s[scores={AnimationProgress=3}] AnimationRotationX 480
-scoreboard players set @s[scores={AnimationProgress=4}] AnimationRotationX 470
-scoreboard players set @s[scores={AnimationProgress=5}] AnimationRotationX 460
-scoreboard players set @s[scores={AnimationProgress=6}] AnimationRotationX 450
-scoreboard players set @s[scores={AnimationProgress=7}] AnimationRotationX 440
-scoreboard players set @s[scores={AnimationProgress=8}] AnimationRotationX 430
-scoreboard players set @s[scores={AnimationProgress=9}] AnimationRotationX 420
-scoreboard players set @s[scores={AnimationProgress=10}] AnimationRotationX 410
-scoreboard players set @s[scores={AnimationProgress=11}] AnimationRotationX 400
-scoreboard players set @s[scores={AnimationProgress=12}] AnimationRotationX 410
-scoreboard players set @s[scores={AnimationProgress=13}] AnimationRotationX 420
-scoreboard players set @s[scores={AnimationProgress=14}] AnimationRotationX 430
-scoreboard players set @s[scores={AnimationProgress=15}] AnimationRotationX 440
-scoreboard players set @s[scores={AnimationProgress=16}] AnimationRotationX 450
-scoreboard players set @s[scores={AnimationProgress=17}] AnimationRotationX 460
-scoreboard players set @s[scores={AnimationProgress=18}] AnimationRotationX 470
-scoreboard players set @s[scores={AnimationProgress=19}] AnimationRotationX 480
-scoreboard players set @s[scores={AnimationProgress=20}] AnimationRotationX 490
+scoreboard players remove @s[scores={AnimationProgress=1..10}] AnimationRotationX 10
+scoreboard players add @s[scores={AnimationProgress=11..20}] AnimationRotationX 10
 scoreboard players set @s[scores={AnimationProgress=20}] AnimationProgress 0

@@ -1,11 +1,4 @@
 scoreboard players add @s AnimationProgress 1
-scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX 50
-scoreboard players set @s[scores={AnimationProgress=2}] AnimationRotationX 100
-scoreboard players set @s[scores={AnimationProgress=3}] AnimationRotationX 150
-scoreboard players set @s[scores={AnimationProgress=4}] AnimationRotationX 200
-scoreboard players set @s[scores={AnimationProgress=5}] AnimationRotationX 250
-scoreboard players set @s[scores={AnimationProgress=6}] AnimationRotationX 200
-scoreboard players set @s[scores={AnimationProgress=7}] AnimationRotationX 150
-scoreboard players set @s[scores={AnimationProgress=8}] AnimationRotationX 100
-scoreboard players set @s[scores={AnimationProgress=9}] AnimationRotationX 50
+scoreboard players add @s[scores={AnimationProgress=1..5}] AnimationRotationX 50
+scoreboard players remove @s[scores={AnimationProgress=6..10}] AnimationRotationX 50
 scoreboard players set @s[scores={AnimationProgress=20..}] AnimationProgress 0

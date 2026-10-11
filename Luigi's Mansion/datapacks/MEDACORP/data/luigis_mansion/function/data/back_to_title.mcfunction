@@ -1,4 +1,5 @@
 function luigis_mansion:room/reset
+function #luigis_mansion:room/reset_variable_to_default
 data remove storage luigis_mansion:data current_state
 data modify storage luigis_mansion:data dialogs set value [{name:{namespace:"luigis_mansion",id:"dummy"},progress:-1},{name:{namespace:"luigis_mansion",id:"title_screen"}}]
 execute if data storage luigis_mansion:data memory[0] run data modify storage luigis_mansion:data memory[].poltergust_element set value "none"

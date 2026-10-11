@@ -5,8 +5,8 @@ teleport @s[tag=!low_health,tag=shrunk,tag=!flipped_gravity] ^-0.1825 ^-0.29 ^ ~
 teleport @s[tag=low_health,tag=shrunk,tag=!flipped_gravity] ^-0.1825 ^-0.35 ^ ~ ~
 teleport @s[tag=!low_health,tag=!shrunk,tag=flipped_gravity] ^0.375 ^0.85 ^ ~ ~
 teleport @s[tag=low_health,tag=!shrunk,tag=flipped_gravity] ^0.375 ^0.91 ^ ~ ~
-teleport @s[tag=!low_health,tag=shrunk,tag=flipped_gravity] ^0.1825 ^-0.98 ^ ~ ~
-teleport @s[tag=low_health,tag=shrunk,tag=flipped_gravity] ^0.1825 ^-0.92 ^ ~ ~
+teleport @s[tag=!low_health,tag=shrunk,tag=flipped_gravity] ^0.1825 ^0.52 ^ ~ ~
+teleport @s[tag=low_health,tag=shrunk,tag=flipped_gravity] ^0.1825 ^0.58 ^ ~ ~
 
 data remove entity @s[tag=held_item] item
 execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/luigi/nozzle

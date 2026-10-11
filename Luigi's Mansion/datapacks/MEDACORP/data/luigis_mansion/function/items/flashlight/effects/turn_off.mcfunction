@@ -1,3 +1,3 @@
-function luigis_mansion:entities/luigi/make_sound/simple {sound:"luigis_mansion:item.flashlight.off"}
+execute unless score @s Room matches 0 run function luigis_mansion:entities/luigi/make_sound/simple {sound:"luigis_mansion:item.flashlight.off"}
 data modify entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"flashlight"}}}] merge from entity @s data.inventory[{components:{"minecraft:custom_data":{namespace:"luigis_mansion",id:"flashlight"}}}].components."minecraft:custom_data".model_data.off
 tag @s remove had_flashlight_on

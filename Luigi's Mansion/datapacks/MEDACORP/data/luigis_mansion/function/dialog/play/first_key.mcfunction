@@ -63,5 +63,5 @@ execute if score #dialog Dialog matches 500 run data modify storage luigis_mansi
 execute if score #dialog Dialog matches 500 positioned 751.0 11 9.0 rotated -90 90 run function luigis_mansion:spawn_entities/item/key {door:"parlor"}
 execute if score #dialog Dialog matches 500 run tag @e[tag=same_room,tag=key_model,limit=1] add remove_from_existence
 execute if score #dialog Dialog matches 500 as @e[tag=same_room,tag=luigi,x=751.0,y=11,z=9.0,distance=..7] run function luigis_mansion:entities/luigi/move/teleport {teleport:"752 11 9 110 0"}
-execute if score #dialog Dialog matches 500 as @e[tag=same_room,tag=luigi,limit=1] run function luigis_mansion:entities/luigi/animation/set/none
+execute if score #dialog Dialog matches 500 as @e[tag=same_room,tag=luigi] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 500 run scoreboard players set #dialog Dialog -1

@@ -54,8 +54,8 @@ execute if score #dialog Dialog matches 160 if score #mirrored Selected matches 
 execute if score #dialog Dialog matches 160 if score #mirrored Selected matches 1 at @e[tag=ghost,tag=same_room,limit=1] positioned ^1.5 ^12 ^-34.5 run function luigis_mansion:dialog/play/chauncey_rocking_horse
 execute if score #dialog Dialog matches 160 if score #mirrored Selected matches 1 at @e[tag=ghost,tag=same_room,limit=1] positioned ^-1.5 ^10 ^-30.5 run function luigis_mansion:dialog/play/chauncey_rocking_horse
 execute if score #dialog Dialog matches 160 if score #mirrored Selected matches 1 at @e[tag=ghost,tag=same_room,limit=1] positioned ^3.5 ^10 ^-30.5 run function luigis_mansion:dialog/play/chauncey_rocking_horse
-execute if score #dialog Dialog matches 179 as @e[tag=luigi,tag=same_room,limit=1] run function luigis_mansion:entities/luigi/animation/set/none
-execute if score #dialog Dialog matches 180 as @e[tag=luigi,tag=same_room,limit=1] at @e[tag=ghost,tag=same_room,limit=1] run function luigis_mansion:entities/luigi/animation/set/scare/bash_no_move
+execute if score #dialog Dialog matches 179 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
+execute if score #dialog Dialog matches 180 as @e[tag=luigi,tag=same_room] at @e[tag=ghost,tag=same_room,limit=1] run function luigis_mansion:entities/luigi/animation/set/scare/bash_no_move
 execute if score #dialog Dialog matches 180..669 run scoreboard players set @e[tag=luigi,tag=same_room,scores={AnimationProgress=30..}] AnimationProgress 29
 execute if score #dialog Dialog matches 340 run tag @e[tag=ghost,tag=same_room,limit=1] add visible
 execute if score #dialog Dialog matches 341..440 as @e[tag=ghost,tag=same_room,limit=1] at @s run teleport @s ^ ^0.1 ^

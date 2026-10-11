@@ -2,7 +2,8 @@ scoreboard players add @s AnimationProgress 1
 data modify entity @s[scores={AnimationProgress=1}] item merge from entity @s item.components."minecraft:custom_data".model_data.scared
 data modify entity @s[scores={AnimationProgress=41}] item merge from entity @s item.components."minecraft:custom_data".model_data.hatless
 data modify entity @s[scores={AnimationProgress=55}] item merge from entity @s item.components."minecraft:custom_data".model_data.scared
-scoreboard players set @s[scores={AnimationProgress=1..55}] AnimationRotationX 200
+scoreboard players set @s[scores={AnimationProgress=1}] AnimationRotationX 200
+scoreboard players set @s[scores={AnimationProgress=56}] AnimationRotationX 0
 execute at @s[scores={AnimationProgress=1..45},tag=!shrunk] run particle minecraft:smoke ~ ~1.8 ~ 0.2 0.2 0.2 0 3 normal @a[tag=same_room]
 execute at @s[scores={AnimationProgress=1..45},tag=shrunk] run particle minecraft:smoke ~ ~0.9 ~ 0.2 0.2 0.2 0 3 normal @a[tag=same_room]
 scoreboard players set @s[scores={AnimationProgress=60..}] AnimationProgress 0

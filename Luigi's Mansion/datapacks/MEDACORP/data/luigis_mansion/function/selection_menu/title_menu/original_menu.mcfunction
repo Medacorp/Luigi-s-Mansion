@@ -17,4 +17,5 @@ execute if entity @s[tag=!show_credits] unless data storage luigis_mansion:data 
 execute if entity @s[tag=!show_credits] run data modify storage luigis_mansion:data menu_options.options append value {id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:menu/game_boy_horror/show_settings","minecraft:unbreakable":{},"minecraft:tooltip_display":{hidden_components:["minecraft:unbreakable"]},"minecraft:attribute_modifiers":[],"minecraft:item_name":{type:"translatable",translate:"luigis_mansion:item.menu.game_boy_horror.show_settings"},"minecraft:custom_data":{option:{id:"show_settings"}}}}
 
 execute if entity @s[tag=!show_credits] run function luigis_mansion:entities/player/selection_menu/load
-execute if entity @s[tag=show_credits] run function luigis_mansion:selection_menu/game_boy_horror/scan_furniture
+tellraw @s[tag=show_credits] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.mansion",color:"green"},{type:"translatable",translate:"luigis_mansion:message.use_title_menu_during_credits"}]}
+execute if entity @s[tag=show_credits] run function luigis_mansion:selection_menu/game_boy_horror/show_settings

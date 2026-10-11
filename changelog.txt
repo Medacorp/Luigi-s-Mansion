@@ -1,3 +1,31 @@
+v3.9.1:
+* Changed Meet E. Gadd dialog to be global, all players see it now
+* Changed enthusiastic animation to move faster
+* Fixed health was displayed before loading a save
+* Fixed show credits option didn't work in the title menu
+* Fixed the flashlight was off during the exterior cutscenes if not set to always shine
+* Fixed luigi's legs were slightly into the body
+* Fixed luigi's arms disconnected during collect item animation
+* Fixed back to title confirmation menu showed missing translation string
+* Fixed show credits option in the game boy horror didn't prevent going to the original menu; closing and settings is still allowed
+* Fixed show credits option in the game boy horror prevented going to the settings menu; opening game boy horror while they show now brings you there directly
+* Fixed scan result dialogs didn't show the scanning game boy horror screen
+* Fixed shrunk luigi model pieces scaled back up upon changing animation
+* Fixed player names were upside down when gravity is flipped
+* Fixed flipped gravity small luigi was incorrectly offset
+* Fixed dust piles sended debug messages
+* Fixed multiple players on the title screen messes up the dialog tracker
+* Fixed first key cutscene only unfroze 1 player
+* Fixed leaving and re-entering in multiplayer during the opening warped you to the lab, rather than into the opening sequence
+** Before the Meet E. Gadd dialog, the player is launched into the opening as usual
+** During the Meet E. Gadd dialog, the player skips the opening and goes instantly to the mansion
+** Before the first training room session, the player goes into the underground lab
+** During the first training room session, the player goes into the training room
+** (3DS Remake) Before the the future E. Gadd dialog, the player goes into the gallery
+** (3DS Remake) During the the future E. Gadd dialog, the player goes into the underground lab
+** After this all new players will see the opening, and all old players warp to the lab
+* Fixed game boy horror markers didn't copy the color of other players than the first
+
 v3.9:
 * Updated to 26.3
 * Fixed typo'd Add-on name

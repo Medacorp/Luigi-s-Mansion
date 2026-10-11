@@ -36,7 +36,7 @@ execute if score #dialog Dialog matches 37 run data modify entity @e[tag=title_s
 execute if score #dialog Dialog matches 38 run data modify entity @e[tag=title_screen_logo,limit=1] transformation.scale[1] set value 0.9f
 execute if score #dialog Dialog matches 39 run data modify entity @e[tag=title_screen_logo,limit=1] transformation.scale[1] set value 0.95f
 execute if score #dialog Dialog matches 40 run data modify entity @e[tag=title_screen_logo,limit=1] transformation.scale[1] set value 1.0f
-execute if score #dialog Dialog matches 500 as @a[tag=same_room] run function luigis_mansion:room/exterior/opening with storage luigis_mansion:data loaded_exterior
+execute if score #dialog Dialog matches 500 as @a[tag=same_room,sort=random,limit=1] run function luigis_mansion:room/exterior/opening with storage luigis_mansion:data loaded_exterior
 execute if score #dialog Dialog matches 500 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
 execute if score #dialog Dialog matches 500 as @a[tag=same_room] run function luigis_mansion:other/music/set/force/silence
 execute if score #dialog Dialog matches 500 run tag @a[tag=same_room] remove camera

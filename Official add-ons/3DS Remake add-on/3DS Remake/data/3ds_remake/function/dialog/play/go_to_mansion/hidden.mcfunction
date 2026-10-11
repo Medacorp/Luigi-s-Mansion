@@ -16,6 +16,6 @@ execute if score #dialog Dialog matches 1 if score #players Totals matches 2.. r
 execute if score #dialog Dialog matches 1 at @e[tag=e_gadd,tag=same_room,limit=1] run playsound luigis_mansion:entity.e_gadd.talk.yahboh_yahboh neutral @a[tag=same_room] ~ ~ ~ 1
 execute if score #dialog Dialog matches 21 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 
-execute if score #dialog Dialog matches 22 as @a[tag=same_room] run function 3ds_remake:room/hidden/load
+execute if score #dialog Dialog matches 22 as @a[tag=same_room,sort=random] run function 3ds_remake:room/hidden/load
 execute if score #dialog Dialog matches 22 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 22 run scoreboard players set #dialog Dialog -1

@@ -1,4 +1,3 @@
-$say fill ^ ^ ^$(distance) ^ ^ ^$(distance) minecraft:air replace minecraft:light_gray_stained_glass
 $execute rotated 135 0 run fill ^ ^ ^$(distance) ^ ^ ^$(distance) minecraft:air replace minecraft:light_gray_stained_glass
 $execute rotated 90 0 run fill ^ ^ ^$(distance) ^ ^ ^$(distance) minecraft:air replace minecraft:light_gray_stained_glass
 $execute rotated 45 0 run fill ^ ^ ^$(distance) ^ ^ ^$(distance) minecraft:air replace minecraft:light_gray_stained_glass

@@ -5,8 +5,8 @@ teleport @s[tag=!low_health,tag=shrunk,tag=!flipped_gravity] ^ ^-0.27 ^
 teleport @s[tag=low_health,tag=shrunk,tag=!flipped_gravity] ^ ^-0.33 ^
 teleport @s[tag=!low_health,tag=!shrunk,tag=flipped_gravity] ^ ^0.83 ^
 teleport @s[tag=low_health,tag=!shrunk,tag=flipped_gravity] ^ ^0.89 ^
-teleport @s[tag=!low_health,tag=shrunk,tag=flipped_gravity] ^ ^-0.99 ^
-teleport @s[tag=low_health,tag=shrunk,tag=flipped_gravity] ^ ^-0.93 ^
+teleport @s[tag=!low_health,tag=shrunk,tag=flipped_gravity] ^ ^0.51 ^
+teleport @s[tag=low_health,tag=shrunk,tag=flipped_gravity] ^ ^0.57 ^
 
 execute at @s if data storage luigis_mansion:data luigi.animation{namespace:"luigis_mansion",id:"idle"} run function luigis_mansion:animations/luigi/sync_head
 execute positioned as @s unless data storage luigis_mansion:data luigi.animation{namespace:"luigis_mansion",id:"idle"} run teleport @s ~ ~ ~ ~ ~
