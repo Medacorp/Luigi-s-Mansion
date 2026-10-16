@@ -12,4 +12,4 @@ execute positioned as @s[y_rotation=-180..0] unless block ~1 ~ ~ #luigis_mansion
 execute positioned as @s[y_rotation=0..180] unless block ~-1 ~ ~ #luigis_mansion:all_ignore if block ~-0.9 ~ ~ #luigis_mansion:all_ignore run function luigis_mansion:entities/ball/bounce/nx
 execute positioned as @s[y_rotation=-90..90] unless block ~ ~ ~1 #luigis_mansion:all_ignore if block ~ ~ ~0.9 #luigis_mansion:all_ignore run function luigis_mansion:entities/ball/bounce/pz
 execute positioned as @s[y_rotation=90..-90] unless block ~ ~ ~-1 #luigis_mansion:all_ignore if block ~ ~ ~-0.9 #luigis_mansion:all_ignore run function luigis_mansion:entities/ball/bounce/nz
-execute if score #temp Move matches 1.. at @s[tag=!collision] run function luigis_mansion:entities/ball/move_forward
+execute if score #temp Move matches 1.. positioned as @s[tag=!collision] run function luigis_mansion:entities/ball/move_forward

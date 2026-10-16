@@ -17,7 +17,6 @@ execute unless entity @s[scores={FlashlightType=0..2}] run scoreboard players se
 function luigis_mansion:entities/player/clear_animation
 execute if data storage luigis_mansion:data current_state.luigis_mansion run function luigis_mansion:selection_menu/title_menu/join_save with entity @s
 execute if entity @s[tag=!dead_player] run function luigis_mansion:entities/player/camera/reset
-execute if entity @s[scores={Room=-2}] unless data storage luigis_mansion:data dialogs[{room:-2}] run function luigis_mansion:room/underground_lab/warp_to
 tag @s remove loaded_chunks
 tag @s remove seen_room_name
 tag @s remove got_selection_menu_how_to

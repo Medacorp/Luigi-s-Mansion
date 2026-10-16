@@ -1,0 +1,1 @@
+function 3ds_remake:selection_menu/game_boy_horror/gallery_trophy_reference with storage luigis_mansion:data macro

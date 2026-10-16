@@ -1,7 +1,7 @@
 scoreboard players add @s AnimationProgress 1
-scoreboard players add @s[scores={AnimationProgress=1..10}] AnimationRotationX 2
-scoreboard players remove @s[scores={AnimationProgress=11..30}] AnimationRotationX 2
-scoreboard players add @s[scores={AnimationProgress=31..40}] AnimationRotationX 2
+scoreboard players add @s[scores={AnimationProgress=1..10}] AnimationRotationX 20
+scoreboard players remove @s[scores={AnimationProgress=11..30}] AnimationRotationX 20
+scoreboard players add @s[scores={AnimationProgress=31..40}] AnimationRotationX 20
 data modify storage luigis_mansion:data rotation set value [0.0f,0.0f,0.0f,1.0f]
 execute in minecraft:overworld run summon minecraft:marker 0.0 0.0 0.0 {Tags:["temp","remove_from_existence"]}
 execute store result entity @e[tag=temp,limit=1] Rotation[0] float 0.05 run scoreboard players get @s AnimationRotationX

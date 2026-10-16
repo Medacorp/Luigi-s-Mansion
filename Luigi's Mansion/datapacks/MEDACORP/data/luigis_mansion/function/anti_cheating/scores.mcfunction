@@ -39,6 +39,7 @@ scoreboard objectives add EntitySizeRadius dummy
 scoreboard objectives add EntitySizeWidth dummy
 scoreboard objectives add EntityYOffset dummy
 scoreboard objectives add ErrorTime dummy
+scoreboard objectives add FallTime dummy
 scoreboard objectives add FlashlightType dummy
 scoreboard objectives add FleeTask dummy
 scoreboard objectives add FleeTime dummy
@@ -260,7 +261,7 @@ scoreboard players set #2 Constants 2
 scoreboard players set #3 Constants 3
 # Many animations getting remainder, boolossus rubberbanding, item despawning, gameboy horror player hitbox fetching, score multiplier for peaceful
 scoreboard players set #4 Constants 4
-# Selection menu, Boo harm reduction, fan furniture type overwriting, lydia curtain speed
+# Selection menu, Boo harm reduction, fan furniture type overwriting, lydia curtain speed, rolling furniture animation
 scoreboard players set #5 Constants 5
 # Selection menu, gameboy horror settings menu
 scoreboard players set #6 Constants 6

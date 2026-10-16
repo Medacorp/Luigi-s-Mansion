@@ -1,0 +1,1 @@
+$function $(trophy_namespace):selection_menu/gallery_trophy/$(trophy_action)

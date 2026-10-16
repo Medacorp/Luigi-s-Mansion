@@ -1389,6 +1389,7 @@
     "luigis_mansion:furniture.painting": "ᵷuᴉʇuᴉɐԀ",
     "luigis_mansion:furniture.particle_spawner": "ɹǝuʍɐdS ǝꞁɔᴉʇɹɐԀ",
     "luigis_mansion:furniture.pc": "ƆԀ",
+    "luigis_mansion:furniture.perfume": "ǝɯnɟɹǝԀ",
     "luigis_mansion:furniture.piano": "ouɐᴉԀ",
     "luigis_mansion:furniture.pink_flowers_portrait": "ʇᴉɐɹʇɹoԀ sɹǝʍoꞁℲ ʞuᴉԀ",
     "luigis_mansion:furniture.pink_padded_stool": "ꞁooʇS pǝppɐԀ ʞuᴉԀ",
@@ -1664,6 +1665,7 @@
     "luigis_mansion:item.menu.exit": "ʇᴉxƎ",
     "luigis_mansion:item.menu.extra_gallery_door.nowhere": "ǝɹǝH ʎɐʇS",
     "luigis_mansion:item.menu.game_boy_horror.back_to_title": "˙ʇsoꞁ ǝq ꞁꞁᴉʍ sǝᵷuɐɥɔ pǝʌɐsun ʎuⱯ ¿ǝɹns noʎ ǝɹⱯ",
+    "luigis_mansion:item.menu.game_boy_horror.back_to_title.yes": "sǝ⅄",
     "luigis_mansion:item.menu.game_boy_horror.jukebox": "xoqǝʞnՐ",
     "luigis_mansion:item.menu.game_boy_horror.jukebox.stop": "ᵷuᴉʎɐꞁԀ doʇS",
     "luigis_mansion:item.menu.game_boy_horror.jukebox.track": "ʞɔɐɹ⟘ ɐꞁꞁᴉuɐɅ",
@@ -2448,8 +2450,9 @@
     "luigis_mansion:message.underboo.3": "˙˙˙,uᴉdǝǝɹɔ ɯ,I",
     "luigis_mansion:message.underboo.4": "¡noʎ puᴉɥǝq ɯ,I",
     "luigis_mansion:message.underboo.4.more": "¡noʎ puᴉɥǝq ɯ,I",
-    "luigis_mansion:message.use_game_boy_horror_during_credits": "˙ʇsɹᴉɟ ɥsᴉuᴉɟ oʇ ɯǝɥʇ ɹoɟ ʇᴉɐʍ ǝsɐǝꞁd ‘ᵷuᴉʍoɥs ǝɹɐ sʇᴉpǝɹɔ ǝꞁᴉɥʍ pǝꞁqɐsᴉp sᴉ ɹoɹɹoH ʎoᗺ ǝɯɐ⅁ ǝɥʇ ᵷuᴉuǝdO",
+    "luigis_mansion:message.use_game_boy_horror_during_credits": "˙ʇsɹᴉɟ ɥsᴉuᴉɟ oʇ ɯǝɥʇ ɹoɟ ʇᴉɐʍ ǝsɐǝꞁd ‘ᵷuᴉʍoɥs ǝɹɐ sʇᴉpǝɹɔ ǝꞁᴉɥʍ pǝꞁqɐsᴉp sᴉ nuǝɯ ɹoɹɹoH ʎoᗺ ǝɯɐ⅁ ǝɥ⟘",
     "luigis_mansion:message.use_interact_during_credits": "˙ʇsɹᴉɟ ɥsᴉuᴉɟ oʇ ɯǝɥʇ ɹoɟ ʇᴉɐʍ ǝsɐǝꞁd ‘ᵷuᴉʍoɥs ǝɹɐ sʇᴉpǝɹɔ ǝꞁᴉɥʍ pǝꞁqɐsᴉp sᴉ ǝᵷɐsn ʇɔɐɹǝʇuI",
+    "luigis_mansion:message.use_title_menu_during_credits": "˙ʇsɹᴉɟ ɥsᴉuᴉɟ oʇ ɯǝɥʇ ɹoɟ ʇᴉɐʍ ǝsɐǝꞁd ‘ᵷuᴉʍoɥs ǝɹɐ sʇᴉpǝɹɔ ǝꞁᴉɥʍ pǝꞁqɐsᴉp sᴉ ǝᵷɐsn nuǝɯ ǝꞁʇᴉ⟘",
     "luigis_mansion:message.vincent_van_gore.scan": "(¿suoᴉʇɐǝɹɔ ʎɯ ɟo ɹǝʍod ǝǝz dsɐɹᵷ ǝɥ sǝop ʍoN)",
     "luigis_mansion:message.vincent_van_gore.scan.more": "(¿suoᴉʇɐǝɹɔ ʎɯ ɟo ɹǝʍod ǝǝz dsɐɹᵷ noʎ op ʍoN)",
     "luigis_mansion:message.warn.poltergust_range": "˙sǝdɐɔsǝ ʇᴉ puɐ ʇsoɥᵷ ɐ ɯoɹɟ ɹɐɟ ooʇ ʇǝᵷ ‘ǝᵷuɐɹ pǝʇᴉɯᴉꞁ ɐ sɐɥ ʇsnᵷɹǝʇꞁod ǝɥ⟘",
@@ -3013,6 +3016,5 @@
     "luigis_mansion:subtitles.item.silver_diamond.spawn": "suʍɐds puoɯɐᴉᗡ ɹǝʌꞁᴉS",
     "luigis_mansion:subtitles.item.small_pearl.bounce": "sǝɔunoq ꞁɹɐǝԀ ꞁꞁɐɯS",
     "luigis_mansion:subtitles.item.small_pearl.obtain": "pǝuᴉɐʇqo ꞁɹɐǝԀ ꞁꞁɐɯS",
-    "luigis_mansion:subtitles.item.small_pearl.spawn": "suʍɐds ꞁɹɐǝԀ ꞁꞁɐɯS",
-    "luigis_mansion:furniture.perfume": "ǝɯnɟɹǝԀ"
+    "luigis_mansion:subtitles.item.small_pearl.spawn": "suʍɐds ꞁɹɐǝԀ ꞁꞁɐɯS"
 }

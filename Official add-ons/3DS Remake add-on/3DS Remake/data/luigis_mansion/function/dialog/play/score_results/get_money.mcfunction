@@ -9,6 +9,6 @@ scoreboard players set @e[tag=money_counter,tag=new,limit=1] Room -3
 execute as @e[tag=money_counter,tag=new,limit=1] run function luigis_mansion:dialog/play/score_results/move_down with storage luigis_mansion:data dialogs[0]
 tag @e[tag=money_counter,tag=new,limit=1] remove new
 execute if score #temp Money matches 0 run data remove storage luigis_mansion:data dialogs[0].money[0]
-execute if score #temp Money matches 0 unless data storage luigis_mansion:data dialogs[0].money[0] run function luigis_mansion:dialog/play/score_results/get_money with storage luigis_mansion:data dialogs[0].money[0]
-execute if score #temp Money matches 0 if data storage luigis_mansion:data dialogs[0].money[0] run scoreboard players add #dialog Dialog 35
+execute if score #temp Money matches 0 if data storage luigis_mansion:data dialogs[0].money[0] run function luigis_mansion:dialog/play/score_results/get_money with storage luigis_mansion:data dialogs[0].money[0]
+execute if score #temp Money matches 0 unless data storage luigis_mansion:data dialogs[0].money[0] run scoreboard players add #dialog Dialog 35
 scoreboard players reset #temp Money

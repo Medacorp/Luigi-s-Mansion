@@ -4,7 +4,7 @@ scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 1..20 as @a[tag=same_room] run function luigis_mansion:other/music/set/non_overwritten_silence
 execute if score #dialog Dialog matches 21 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
 execute if score #dialog Dialog matches 21.. as @a[tag=same_room] run function luigis_mansion:other/music/set/chauncey_battle
-execute if score #dialog Dialog matches 1..139 as @e[tag=luigi,tag=same_room,limit=1] run function luigis_mansion:entities/luigi/animation/set/high_health_idle_no_sound
+execute if score #dialog Dialog matches 1..139 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/high_health_idle_no_sound
 execute if score #dialog Dialog matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @e[tag=ghost,tag=same_room,limit=1] rotated ~ 0",teleport:"^ ^6.75 ^11 ~ -45"}
 execute if score #dialog Dialog matches 1..20 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @s rotated ~ 0 positioned ^ ^-0.0125 ^-0.0125 rotated as @s",teleport:"^ ^ ^ ~ ~2.25"}
 execute if score #dialog Dialog matches 21..40 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @s rotated ~ 0 positioned ^ ^ ^-0.2 rotated as @s",teleport:"^ ^ ^ ~ ~"}

@@ -11,6 +11,9 @@ execute if score #dialog Dialog matches 34.. as @a[tag=same_room,tag=dialog_menu
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 tag @e[tag=e_gadd,tag=same_room,limit=1] remove freeze_animation
+execute if score #dialog Dialog matches 3.. run tag @e[tag=same_room,tag=camera_position,limit=1] add zoomed_in
+execute if score #dialog Dialog matches 1.. as @a[tag=same_room] at @e[tag=same_room,tag=camera_position,tag=!zoomed_in,limit=1] run function luigis_mansion:entities/player/camera/execute {execute:"positioned ~ ~ ~",teleport:"^ ^0.5 ^-1 ~ ~22.5"}
+execute if score #dialog Dialog matches 1.. as @a[tag=same_room] at @e[tag=same_room,tag=camera_position,tag=zoomed_in,limit=1] run function luigis_mansion:entities/player/camera/execute {execute:"positioned ~ ~ ~",teleport:"^ ^ ^ ~ ~"}
 execute if score #dialog Dialog matches 1 as @e[tag=e_gadd,tag=same_room,limit=1] at @s facing entity @e[tag=luigi,tag=same_room,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if score #dialog Dialog matches 1 run data modify entity @e[tag=e_gadd,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"nod"}
 execute if score #dialog Dialog matches 1..2 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
@@ -88,4 +91,5 @@ execute if score #dialog Dialog matches 53 run data modify storage luigis_mansio
 execute if score #dialog Dialog matches 53 run tag @a[tag=looking_at_map,nbt={Dimension:"minecraft:overworld"},limit=1] add regenerate_map
 execute if score #dialog Dialog matches 54 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 54 as @a run function luigis_mansion:room/training_room/warp_to
+execute if score #dialog Dialog matches 54 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
 execute if score #dialog Dialog matches 54 run scoreboard players set #dialog Dialog -1

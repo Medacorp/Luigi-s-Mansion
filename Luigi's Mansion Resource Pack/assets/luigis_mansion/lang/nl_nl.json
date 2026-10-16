@@ -1389,6 +1389,7 @@
     "luigis_mansion:furniture.painting": "Schilderij",
     "luigis_mansion:furniture.particle_spawner": "Deeltjesgenerator",
     "luigis_mansion:furniture.pc": "PC",
+    "luigis_mansion:furniture.perfume": "Parfum",
     "luigis_mansion:furniture.piano": "Piano",
     "luigis_mansion:furniture.pink_flowers_portrait": "Roze-bloemenportret",
     "luigis_mansion:furniture.pink_padded_stool": "Rozegestoffeerde kruk",
@@ -1664,6 +1665,7 @@
     "luigis_mansion:item.menu.exit": "Afsluiten",
     "luigis_mansion:item.menu.extra_gallery_door.nowhere": "Hier blijven",
     "luigis_mansion:item.menu.game_boy_horror.back_to_title": "Weet je het zeker? Alle niet opgeslagen veranderingen gaan verloren.",
+    "luigis_mansion:item.menu.game_boy_horror.back_to_title.yes": "Ja",
     "luigis_mansion:item.menu.game_boy_horror.jukebox": "Jukebox",
     "luigis_mansion:item.menu.game_boy_horror.jukebox.stop": "Afspelen stoppen",
     "luigis_mansion:item.menu.game_boy_horror.jukebox.track": "Onbewerkte plaat",
@@ -2448,8 +2450,9 @@
     "luigis_mansion:message.underboo.3": "Ik ben aan het sluipen...",
     "luigis_mansion:message.underboo.4": "Ik ben achter je!",
     "luigis_mansion:message.underboo.4.more": "Ik ben achter jullie!",
-    "luigis_mansion:message.use_game_boy_horror_during_credits": "Openen van de Game Boy Horror is uitgeschakeld terwijl de credits worden getoond, wacht alstublieft eerst totdat ze klaar zijn",
+    "luigis_mansion:message.use_game_boy_horror_during_credits": "Het Game Boy Horror menu is uitgeschakeld terwijl de credits worden getoond, wacht alstublieft eerst totdat ze klaar zijn",
     "luigis_mansion:message.use_interact_during_credits": "Interactie gebruik is uitgeschakeld terwijl de credits worden getoond, wacht alstublieft eerst totdat ze klaar zijn",
+    "luigis_mansion:message.use_title_menu_during_credits": "Titelmenu gebruik is uitgeschakeld terwijl de credits worden getoond, wacht alstublieft eerst totdat ze klaar zijn",
     "luigis_mansion:message.vincent_van_gore.scan": "(Heeft hij nou grip of ze kracht van mijn creaties?)",
     "luigis_mansion:message.vincent_van_gore.scan.more": "(Hebben jullie nou grip of ze kracht van mijn creaties?)",
     "luigis_mansion:message.warn.poltergust_range": "De spookzuiger heeft een beperkt bereik, ga te ver weg van een spook en het ontsnapt.",
@@ -3013,6 +3016,5 @@
     "luigis_mansion:subtitles.item.silver_diamond.spawn": "Zilvere diamant spawnt",
     "luigis_mansion:subtitles.item.small_pearl.bounce": "Kleine parel stuitert",
     "luigis_mansion:subtitles.item.small_pearl.obtain": "Kleine parel verkregen",
-    "luigis_mansion:subtitles.item.small_pearl.spawn": "Kleine parel spawnt",
-    "luigis_mansion:furniture.perfume": "Parfum"
+    "luigis_mansion:subtitles.item.small_pearl.spawn": "Kleine parel spawnt"
 }

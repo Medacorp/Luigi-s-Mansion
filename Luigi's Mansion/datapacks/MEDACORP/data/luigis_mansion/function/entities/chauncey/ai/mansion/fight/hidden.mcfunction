@@ -13,12 +13,12 @@ scoreboard players add @s[scores={Dialog=120},tag=!laugh] Dialog 1
 scoreboard players add @s[scores={Dialog=82..119}] Dialog 1
 execute as @e[tag=rocking_horse,tag=same_room] at @s positioned ~-0.5 ~-0.5 ~-0.5 run tag @s[z=-54,dz=13] add can_attack
 execute unless entity @e[tag=rocking_horse,tag=same_room] run scoreboard players add @s[scores={Dialog=81}] Dialog 1
-execute at @e[tag=rocking_horse,tag=same_room,tag=can_attack] positioned ~ ~-5 ~-1 if entity @e[tag=same_room,tag=luigi,limit=1,dx=20,dy=3,dz=1] run scoreboard players add @s[scores={Dialog=81}] Dialog 1
+execute at @e[tag=rocking_horse,tag=same_room,tag=can_attack] positioned ~ ~-5 ~-1 if entity @e[tag=same_room,tag=luigi,limit=1,dx=22,dy=3,dz=1] run scoreboard players add @s[scores={Dialog=81}] Dialog 1
 scoreboard players add @s[scores={Dialog=61..80}] Dialog 1
 scoreboard players add @s[scores={Dialog=60},tag=!laugh] Dialog 1
 scoreboard players add @s[scores={Dialog=22..59}] Dialog 1
 execute unless entity @e[tag=rocking_horse,tag=same_room] run scoreboard players add @s[scores={Dialog=21}] Dialog 1
-execute at @e[tag=rocking_horse,tag=same_room,tag=can_attack] positioned ~ ~-5 ~-1 if entity @e[tag=same_room,tag=luigi,limit=1,dx=20,dy=3,dz=1] run scoreboard players add @s[scores={Dialog=21}] Dialog 1
+execute at @e[tag=rocking_horse,tag=same_room,tag=can_attack] positioned ~ ~-5 ~-1 if entity @e[tag=same_room,tag=luigi,limit=1,dx=22,dy=3,dz=1] run scoreboard players add @s[scores={Dialog=21}] Dialog 1
 scoreboard players add @s[scores={Dialog=..20}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
 

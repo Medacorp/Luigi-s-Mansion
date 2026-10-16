@@ -25,6 +25,7 @@ execute unless entity @s[scores={MaxHealth=100}] run function luigis_mansion:ent
 
 execute if data entity @s data.reviver run function luigis_mansion:entities/luigi/revive
 
+execute if entity @s[nbt=!{data:{animation:{}}},tag=!creative] run function luigis_mansion:entities/luigi/fall
 execute if entity @s[tag=!death_animation,tag=!revived_animation,tag=!revived_by_polterpup] run function luigis_mansion:entities/luigi/idle
 execute if entity @s[nbt={data:{animation:{}}},tag=idle] unless entity @s[tag=!walking,tag=!running,tag=!sneak_pos] run function luigis_mansion:entities/luigi/animation/set/none
 execute if entity @s[nbt={data:{animation:{}}},tag=!idle,tag=!animation_may_move,tag=!already_froze_player] run function luigis_mansion:entities/luigi/animation/shared/freeze_player {rotated:"~ ~"}

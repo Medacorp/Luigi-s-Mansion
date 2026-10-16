@@ -2,10 +2,13 @@ execute unless entity @s[tag=!pulled_left,tag=!pulled_right] run scoreboard play
 execute unless entity @s[tag=!pulled_front,tag=!pulled_back] run scoreboard players remove @s[scores={FurnitureSizeForward=3..}] FurnitureSizeForward 2
 execute unless entity @s[tag=!pulled_left,tag=!pulled_right] store result score #temp Time run data get entity @s data.default_transformation[0] 10
 execute unless entity @s[tag=!pulled_front,tag=!pulled_back] store result score #temp Time run data get entity @s data.default_transformation[10] 10
-execute unless entity @s[tag=!pulled_left,tag=!pulled_right] if score #temp Time matches 2.. store result entity @s data.default_transformation[0] float 0.1 run scoreboard players remove #temp Time 2
-execute unless entity @s[tag=!pulled_left,tag=!pulled_right] if score #temp Time matches ..-2 store result entity @s data.default_transformation[0] float 0.1 run scoreboard players add #temp Time 2
-execute unless entity @s[tag=!pulled_front,tag=!pulled_back] if score #temp Time matches 2.. store result entity @s data.default_transformation[10] float 0.1 run scoreboard players remove #temp Time 2
-execute unless entity @s[tag=!pulled_front,tag=!pulled_back] if score #temp Time matches ..-2 store result entity @s data.default_transformation[10] float 0.1 run scoreboard players add #temp Time 2
+execute unless entity @s[tag=!pulled_left,tag=!pulled_right] run scoreboard players operation #temp2 Time = @s FurnitureSizeLeft
+execute unless entity @s[tag=!pulled_front,tag=!pulled_back] run scoreboard players operation #temp2 Time = @s FurnitureSizeForward
+execute if score #temp Time matches ..-2 run scoreboard players operation #temp2 Time = #-1 Constants
+execute unless entity @s[tag=!pulled_left,tag=!pulled_right] if score #temp Time matches 2.. store result entity @s data.default_transformation[0] float 0.1 run scoreboard players remove #temp2 Time 2
+execute unless entity @s[tag=!pulled_left,tag=!pulled_right] if score #temp Time matches ..-2 store result entity @s data.default_transformation[0] float 0.1 run scoreboard players add #temp2 Time 2
+execute unless entity @s[tag=!pulled_front,tag=!pulled_back] if score #temp Time matches 2.. store result entity @s data.default_transformation[10] float 0.1 run scoreboard players remove #temp2 Time 2
+execute unless entity @s[tag=!pulled_front,tag=!pulled_back] if score #temp Time matches ..-2 store result entity @s data.default_transformation[10] float 0.1 run scoreboard players add #temp2 Time 2
 execute rotated ~ 0 run teleport @s[tag=pulled_left] ^0.1 ^ ^
 execute rotated ~ 0 run teleport @s[tag=pulled_right] ^-0.1 ^ ^
 execute rotated ~ 0 run teleport @s[tag=pulled_front] ^ ^ ^0.1
@@ -18,3 +21,4 @@ $execute if score #temp Time matches -1..1 as @e[nbt={UUID:$(blocked_furniture)}
 $execute if score #temp Time matches -1..1 at @e[tag=vacuuming_me,scores={ID=$(puller)},limit=1] run function luigis_mansion:spawn_entities/vacuumed_cloth
 execute if score #temp Time matches -1..1 run function luigis_mansion:entities/furniture/search/generic
 scoreboard players reset #temp Time
+scoreboard players reset #temp2 Time

@@ -1389,6 +1389,7 @@
     "luigis_mansion:furniture.painting": "Maleri",
     "luigis_mansion:furniture.particle_spawner": "Particle Spawner",
     "luigis_mansion:furniture.pc": "PC",
+    "luigis_mansion:furniture.perfume": "Perfume",
     "luigis_mansion:furniture.piano": "Piano",
     "luigis_mansion:furniture.pink_flowers_portrait": "Pink Flowers Portrait",
     "luigis_mansion:furniture.pink_padded_stool": "Pink Padded Stool",
@@ -1664,6 +1665,7 @@
     "luigis_mansion:item.menu.exit": "Exit",
     "luigis_mansion:item.menu.extra_gallery_door.nowhere": "Stay Here",
     "luigis_mansion:item.menu.game_boy_horror.back_to_title": "Are you sure? Any unsaved changes will be lost.",
+    "luigis_mansion:item.menu.game_boy_horror.back_to_title.yes": "Yes",
     "luigis_mansion:item.menu.game_boy_horror.jukebox": "Jukebox",
     "luigis_mansion:item.menu.game_boy_horror.jukebox.stop": "Stop Playing",
     "luigis_mansion:item.menu.game_boy_horror.jukebox.track": "Vanilla Track",
@@ -2448,8 +2450,9 @@
     "luigis_mansion:message.underboo.3": "I'm creepin'...",
     "luigis_mansion:message.underboo.4": "I'm behind you!",
     "luigis_mansion:message.underboo.4.more": "I'm behind you!",
-    "luigis_mansion:message.use_game_boy_horror_during_credits": "Opening the Game Boy Horror is disabled while credits are showing, please wait for them to finish first.",
+    "luigis_mansion:message.use_game_boy_horror_during_credits": "The Game Boy Horror menu is disabled while credits are showing, please wait for them to finish first.",
     "luigis_mansion:message.use_interact_during_credits": "Interact usage is disabled while credits are showing, please wait for them to finish first.",
+    "luigis_mansion:message.use_title_menu_during_credits": "Title menu usage is disabled while credits are showing, please wait for them to finish first.",
     "luigis_mansion:message.vincent_van_gore.scan": "(Now does he grasp zee power of my creations?)",
     "luigis_mansion:message.vincent_van_gore.scan.more": "(Now do you grasp zee power of my creations?)",
     "luigis_mansion:message.warn.poltergust_range": "The poltergust has a limited range, get too far from a ghost and it escapes.",
@@ -3013,6 +3016,5 @@
     "luigis_mansion:subtitles.item.silver_diamond.spawn": "Sølv Diamant fremkaldes",
     "luigis_mansion:subtitles.item.small_pearl.bounce": "Lille Perle hopper",
     "luigis_mansion:subtitles.item.small_pearl.obtain": "Player obtains Small Pearl",
-    "luigis_mansion:subtitles.item.small_pearl.spawn": "Lille Perle fremkaldes",
-    "luigis_mansion:furniture.perfume": "Perfume"
+    "luigis_mansion:subtitles.item.small_pearl.spawn": "Lille Perle fremkaldes"
 }

@@ -1,3 +1,39 @@
+v3.9.2:
+* Added camera movement to the underground lab dialogs
+** (3DS Remake) Since the future E. Gadd call uses the game boy horror instead of the monitor, it won't move beyond the initial angle yet
+* Added animations:
+** Flip gravity (existed before, but wasn't actually animated)
+** Land (triggers upon falling for 5 ticks, without another animation, and then hitting ground)
+* Added (3DS Remake) trophy tasks option to the game boy horror
+* Added (3DS Remake) dialog "upgrade trophy"
+** Completing a task collection now requires going to the trophy's room in order to unlock the reward (and further tasks)
+** A collection that does have all its tasks done will not be checked in the selection menus until respawning the trophy
+* Fixed doors were ever so slightly offset from their frame
+* Fixed rolling furniture barely rolled
+* Fixed master bedroom key didn't properly focus the map
+* Fixed chauncey's rocking horses barely rocked
+* Fixed chauncey didn't launch rocking horses at players in the back of the arena
+* Fixed chauncey's balls bouncing against each other could cause them to get stuck in walls or the floor, or even shoot off into the distance
+* Fixed cloths slowly got pulled to the inside, most notable with large cloths
+* Fixed gravity flip animation didn't properly limit player movement to x and z axis only
+* Fixed opening a metal chest with a ghost spawned the ghost too high
+* Fixed leaving the lab in multiplayer only brought one player to the mansion
+* Fixed (3DS Remake) entering a save that didn't have the 3DS Remake installed before didn't warp you
+* Fixed (3DS Remake) searching furniture dust sound didn't play
+* Fixed (3DS Remake) meet E. Gadd dialog is created 1400 times
+* Fixed (3DS Remake) fake game boy horror selection menus (used the the 3ds_remake:gallery/found dialog) were outdated, missing options avaiable in actual menu
+* Fixed (3DS Remake) going back to the original menu in game boy horror during the credits was allowed
+* Fixed (3DS Remake) leaving the mansion warped you into the ground, instead of the lab (I swear it worked when I tested it...)
+* Fixed (3DS Remake) front door dialog only worked with pulling doors
+* Fixed (3DS Remake) front door dialog paused for the door animation, rather than running simultaniously
+* Fixed (3DS Remake) trophies' gold ghost and blue twirler were incorrectly displayed
+* Fixed (3DS Remake) total ghosts and money tasts colored part of the number
+* Fixed (3DS Remake) small ghosts portrait colored the number of caught ghosts
+* Fixed (3DS Remake) "Shiny, Squeaky!" had its translation keys typo'd in the cleared task message
+* Fixed (3DS Remake) change amiibo menu was missing a translation string
+* Fixed (3DS Remake) change amiibo dialog gets stuck if selecting the exit option
+* Fixed (3DS Remake) joining in multiplayer didn't warp you
+
 v3.9.1:
 * Changed Meet E. Gadd dialog to be global, all players see it now
 * Changed enthusiastic animation to move faster

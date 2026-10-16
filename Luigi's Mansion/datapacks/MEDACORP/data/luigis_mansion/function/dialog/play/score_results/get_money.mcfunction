@@ -1,3 +1,4 @@
+scoreboard players set #temp Money 0
 $function luigis_mansion:items/money/get_count/select {namespace:"$(namespace)",id:"$(id)"}
 $execute store result score #temp Time run function $(namespace):items/money/get_value/$(id)
 scoreboard players operation #temp2 Money = #temp Money

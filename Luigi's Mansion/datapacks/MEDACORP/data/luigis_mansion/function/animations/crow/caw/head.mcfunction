@@ -8,4 +8,6 @@ scoreboard players add @s[scores={AnimationProgress=46..50}] AnimationRotationY 
 scoreboard players remove @s[scores={AnimationProgress=51..55}] AnimationRotationY 20
 scoreboard players add @s[scores={AnimationProgress=21..25}] AnimationRotationZ 10
 scoreboard players remove @s[scores={AnimationProgress=46..50}] AnimationRotationZ 10
-scoreboard players set @s[scores={AnimationProgress=80}] AnimationProgress 0
+scoreboard players add @s[scores={AnimationProgress=81..86}] AnimationRotationX 2
+scoreboard players remove @s[scores={AnimationProgress=87..92}] AnimationRotationX 2
+scoreboard players set @s[scores={AnimationProgress=92}] AnimationProgress 80

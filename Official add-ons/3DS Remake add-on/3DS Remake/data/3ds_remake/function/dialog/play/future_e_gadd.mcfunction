@@ -12,9 +12,9 @@ execute if score #dialog Dialog matches 2499.. as @a[tag=same_room,tag=dialog_me
 
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
-tag @e[tag=e_gadd,tag=same_room,limit=1] remove freeze_animation
 tag @e[tag=gooigi,tag=same_room,limit=1] remove no_ai
-tag @e[tag=gooigi,tag=same_room,limit=1] remove freeze_animation
+tag @e[tag=!furniture,tag=same_room] remove freeze_animation
+execute if score #dialog Dialog matches 1.. as @a[tag=same_room] at @e[tag=same_room,tag=camera_position,tag=!zoomed_in,limit=1] run function luigis_mansion:entities/player/camera/execute {execute:"positioned ~ ~ ~",teleport:"^ ^0.5 ^-1 ~ ~22.5"}
 execute if score #dialog Dialog matches 1..22 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 1 if score #players Totals matches 1 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"3ds_remake:dialog.future_e_gadd.1",with:[{type:"selector",selector:"@a[tag=!spectator]"}]}]}
 execute if score #dialog Dialog matches 1 if score #players Totals matches 2.. run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.e_gadd",color:"green"},{type:"translatable",translate:"3ds_remake:dialog.future_e_gadd.1.more"}]}
@@ -110,4 +110,5 @@ execute if score #dialog Dialog matches 2499 run data remove entity @e[tag=e_gad
 execute if score #dialog Dialog matches 2499 run stopsound @a[tag=same_room] neutral luigis_mansion:entity.e_gadd.talk.oui_oydohroh_tahmentahkeh
 execute if score #dialog Dialog matches 2499 run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"underground_lab"},room:-1,progress:0}
 execute if score #dialog Dialog matches 2499 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
+execute if score #dialog Dialog matches 2499 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
 execute if score #dialog Dialog matches 2499 run scoreboard players set #dialog Dialog -1

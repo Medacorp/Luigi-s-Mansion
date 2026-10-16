@@ -37,7 +37,7 @@ execute if score #temp Time matches 1 if data storage luigis_mansion:data my_mem
 data remove storage luigis_mansion:data temp
 scoreboard players reset #temp Time
 tag @s remove fetch_option_result
-
+item replace entity @s player.cursor with minecraft:air
 execute if data storage luigis_mansion:data selected_option{id:"next_page"} run function luigis_mansion:entities/player/selection_menu/next_page
 execute if data storage luigis_mansion:data selected_option{id:"previous_page"} run function luigis_mansion:entities/player/selection_menu/previous_page
 execute if data storage luigis_mansion:data selected_option{id:"reload"} run function luigis_mansion:entities/player/selection_menu/reload

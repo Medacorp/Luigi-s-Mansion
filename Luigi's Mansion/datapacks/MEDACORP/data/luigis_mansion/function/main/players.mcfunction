@@ -28,6 +28,7 @@ execute unless score @s PreviousRoom = @s Room if score #debug_messages Selected
 scoreboard players operation @s PreviousRoom = @s Room
 execute unless entity @s[scores={Room=1..}] run scoreboard players set @s LastFloor -2
 
+tag @s remove falling
 scoreboard players add @s[scores={SneakTime=1..}] SneakTime 1
 scoreboard players set @s[scores={Sneaking=1},tag=!was_sneaking] SneakTime 1
 tag @s[scores={Sneaking=1}] add was_sneaking
@@ -38,8 +39,7 @@ tag @s[tag=walking] remove walking
 tag @s[scores={Walk=1..}] add walking
 tag @s[scores={WalkOnWater=1..}] add walking
 tag @s[scores={WalkUnderWater=1..}] add walking
-execute if entity @s[nbt={OnGround:0b},tag=!flipped_gravity,tag=!looking_at_map] if block ~ ~-0.01 ~ #luigis_mansion:all_ignore run tag @s add walking
-execute if entity @s[nbt={OnGround:0b},tag=flipped_gravity,tag=!looking_at_map] run function luigis_mansion:entities/player/flipped_walking
+execute if entity @s[tag=flipped_gravity,tag=!looking_at_map] run function luigis_mansion:entities/player/flipped_walking
 scoreboard players set @s[scores={Walk=1..}] Walk 0
 scoreboard players set @s[scores={WalkOnWater=1..}] WalkOnWater 0
 scoreboard players set @s[scores={WalkUnderWater=1..}] WalkUnderWater 0

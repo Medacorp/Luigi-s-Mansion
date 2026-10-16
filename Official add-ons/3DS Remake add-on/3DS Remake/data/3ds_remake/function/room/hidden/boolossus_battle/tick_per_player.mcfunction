@@ -8,4 +8,3 @@ execute if data storage luigis_mansion:data current_state.luigis_mansion.current
 execute unless entity @s[tag=!wall_warp,tag=!spectator] if entity @s[tag=!already_ticked] run function 3ds_remake:room/hidden/boolossus_battle/wall_warp
 
 tag @s add already_ticked
-execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data.rooms.balcony_2{cleared:1b} run function 3ds_remake:room/hidden/boolossus_battle/clear_balcony_2

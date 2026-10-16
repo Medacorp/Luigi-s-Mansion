@@ -15,7 +15,6 @@ function #luigis_mansion:items/reset_disabled
 function luigis_mansion:entities/luigi/sync_inventory
 execute if entity @s[scores={Shrunk=1}] run function luigis_mansion:items/poison_mushroom/wear_off
 scoreboard players remove @s[scores={Shrunk=1..}] Shrunk 1
-execute if entity @s[tag=!death_animation,tag=!revived_animation,tag=!revived_by_polterpup] unless entity @s[nbt={data:{animation:{}}},tag=!idle] run function luigis_mansion:blocks/gravity_swap
 execute if entity @s[tag=riding_poltergust] run function luigis_mansion:entities/luigi/riding_poltergust
 
 execute unless entity @s[nbt={data:{animation:{}}},tag=!idle,tag=!animation_may_move] run function luigis_mansion:entities/luigi/spawn_ghosts
@@ -34,6 +33,7 @@ execute unless entity @s[tag=!walking,tag=!running,tag=!riding_poltergust] if en
 execute unless entity @s[tag=!walking,tag=!running,tag=!riding_poltergust] if entity @s[scores={Sound=0,Shrunk=1..}] run playsound 3ds_remake:entity.gooigi.walk player @a[tag=same_room] ~ ~ ~ 0.5 2
 execute unless entity @s[tag=!walking,tag=!running,tag=!riding_poltergust] run scoreboard players set @s[scores={Sound=0}] Sound 5
 
+execute if entity @s[nbt=!{data:{animation:{}}},tag=!creative] run function luigis_mansion:entities/luigi/fall
 execute if entity @s[tag=!death_animation,tag=!spawn_animation] run function 3ds_remake:entities/gooigi/idle
 execute if entity @s[nbt={data:{animation:{}}},tag=idle] unless entity @s[tag=!walking,tag=!running,tag=!sneak_pos] run function luigis_mansion:entities/luigi/animation/set/none
 execute if entity @s[nbt={data:{animation:{}}},tag=!idle,tag=!animation_may_move,tag=!already_froze_player] run function luigis_mansion:entities/luigi/animation/shared/freeze_player {rotated:"~ ~"}

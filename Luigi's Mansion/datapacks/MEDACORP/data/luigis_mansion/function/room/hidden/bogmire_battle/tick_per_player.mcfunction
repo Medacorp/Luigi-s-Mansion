@@ -8,4 +8,3 @@ execute if data storage luigis_mansion:data current_state.luigis_mansion.current
 execute unless entity @s[tag=!wall_warp,tag=!spectator] if entity @s[tag=!already_ticked] run function luigis_mansion:room/hidden/bogmire_battle/wall_warp
 
 tag @s add already_ticked
-execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data.rooms.graveyard{cleared:1b} run function luigis_mansion:room/hidden/bogmire_battle/clear_graveyard

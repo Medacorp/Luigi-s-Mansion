@@ -1389,6 +1389,7 @@
     "luigis_mansion:furniture.painting": "画作",
     "luigis_mansion:furniture.particle_spawner": "粒子生成器",
     "luigis_mansion:furniture.pc": "PC",
+    "luigis_mansion:furniture.perfume": "Perfume",
     "luigis_mansion:furniture.piano": "Piano",
     "luigis_mansion:furniture.pink_flowers_portrait": "粉色花朵肖像画",
     "luigis_mansion:furniture.pink_padded_stool": "Pink Padded Stool",
@@ -1664,6 +1665,7 @@
     "luigis_mansion:item.menu.exit": "退出",
     "luigis_mansion:item.menu.extra_gallery_door.nowhere": "留在这里",
     "luigis_mansion:item.menu.game_boy_horror.back_to_title": "确定要返回吗？任何未保存的更改都将丢失。",
+    "luigis_mansion:item.menu.game_boy_horror.back_to_title.yes": "Yes",
     "luigis_mansion:item.menu.game_boy_horror.jukebox": "点唱机",
     "luigis_mansion:item.menu.game_boy_horror.jukebox.stop": "停止播放",
     "luigis_mansion:item.menu.game_boy_horror.jukebox.track": "原版曲目",
@@ -2448,8 +2450,9 @@
     "luigis_mansion:message.underboo.3": "我正在悄悄靠近……",
     "luigis_mansion:message.underboo.4": "我就在你身后！",
     "luigis_mansion:message.underboo.4.more": "我就在你们身后！",
-    "luigis_mansion:message.use_game_boy_horror_during_credits": "播放制作人员名单时无法打开Game Boy Horror，请先等待名单播放完毕。",
+    "luigis_mansion:message.use_game_boy_horror_during_credits": "The Game Boy Horror menu is disabled while credits are showing, please wait for them to finish first.",
     "luigis_mansion:message.use_interact_during_credits": "播放制作人员名单时无法进行互动，请先等待名单播放完毕。",
+    "luigis_mansion:message.use_title_menu_during_credits": "Title menu usage is disabled while credits are showing, please wait for them to finish first.",
     "luigis_mansion:message.vincent_van_gore.scan": "（现在他明白我这些作品的力量了吗？）",
     "luigis_mansion:message.vincent_van_gore.scan.more": "（现在你明白我这些作品的力量了吗？）",
     "luigis_mansion:message.warn.poltergust_range": "The poltergust has a limited range, get too far from a ghost and it escapes.",
@@ -3013,6 +3016,5 @@
     "luigis_mansion:subtitles.item.silver_diamond.spawn": "银钻石出现",
     "luigis_mansion:subtitles.item.small_pearl.bounce": "小珍珠弹跳",
     "luigis_mansion:subtitles.item.small_pearl.obtain": "玩家获得小珍珠",
-    "luigis_mansion:subtitles.item.small_pearl.spawn": "小珍珠出现",
-    "luigis_mansion:furniture.perfume": "Perfume"
+    "luigis_mansion:subtitles.item.small_pearl.spawn": "小珍珠出现"
 }
