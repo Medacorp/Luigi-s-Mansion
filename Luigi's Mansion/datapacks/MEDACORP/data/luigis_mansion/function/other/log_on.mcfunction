@@ -16,7 +16,8 @@ execute if score #money_screen Selected matches 1 run tag @s add update_money_sc
 execute unless entity @s[scores={FlashlightType=0..2}] run scoreboard players set @s FlashlightType 0
 function luigis_mansion:entities/player/clear_animation
 execute if data storage luigis_mansion:data current_state.luigis_mansion run function luigis_mansion:selection_menu/title_menu/join_save with entity @s
-execute if entity @s[tag=!dead_player] run function luigis_mansion:entities/player/camera/reset
+execute unless data storage luigis_mansion:data current_state.luigis_mansion run function luigis_mansion:room/exterior/warp with storage luigis_mansion:data loaded_exterior
+function luigis_mansion:entities/player/camera/reset
 tag @s remove loaded_chunks
 tag @s remove seen_room_name
 tag @s remove got_selection_menu_how_to

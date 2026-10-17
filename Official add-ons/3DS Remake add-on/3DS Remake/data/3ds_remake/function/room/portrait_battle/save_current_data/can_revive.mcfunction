@@ -1,1 +1,0 @@
-execute store result storage luigis_mansion:data current_state.3ds_remake.loaded_mansion.settings.can_revive int 1 run scoreboard players get #can_revive Selected

@@ -1,3 +1,32 @@
+v3.9.3:
+* Added cold storage noise in the hallway
+* Added "Good night" title to the death animation
+* Changed mr. bones' bone to fly faster, resembling the original closer
+* Changed ice spikes to fall faster, resembling the original closer
+* Changed death and revive animations to move the camera a bit back so you can see yourself faint
+* Changed luigis that are in the exact same spot to move a bit to the side, even if the camera is separated
+* Changed all mansions to always allow reviving dead players
+* Changed dead players that log back in to warp to the default location in the loaded mansion, rather than the lab (where they couldn't get revived)
+* Changed (3DS Remake) gooigi can no longer revive players
+* Fixed falling chandeliers were harmless
+* Fixed leaving and re-entering rooms made ghosts hiding in furniture able to spawn by just looking away
+* Fixed release boos dialog had a camera movement off by 1 block, causing a small jump in the camera position
+* Fixed boos warping to rooms with a player already in them made them uninteractable
+* Fixed boos didn't face you when entering the room (before the camera focus)
+* Fixed laundry room basket (planks) cannot be searched manually
+* Fixed shivers could be repeatedly lit on fire
+* Fixed using a wind warp once broke future wind warps
+* Fixed boo bomb spawning didn't prevent boo ball from spawning
+* Fixed spooky bit too high
+* Fixed spooky bone flew into the ground
+* Fixed spooky's recover animation got interrupted if it bit you while the mr. bones was getting captured
+* Fixed wandering ghosts (such as mr. bones) had difficulty getting out of a corner
+* Fixed spectators couldn't hear mr. luggs eating in the hallway
+* Fixed spectators couldn't hear melody pianissima play in the hallway
+* Fixed several issues around death and revival
+* Fixed opening, first entrance and leaving lab cutscenes don't act properly in multiplayer
+* Removed mansion reset selection menu, just opening and closing the world brought back to the title screen, and reviving is now always enabled
+
 v3.9.2:
 * Added camera movement to the underground lab dialogs
 ** (3DS Remake) Since the future E. Gadd call uses the game boy horror instead of the monitor, it won't move beyond the initial angle yet

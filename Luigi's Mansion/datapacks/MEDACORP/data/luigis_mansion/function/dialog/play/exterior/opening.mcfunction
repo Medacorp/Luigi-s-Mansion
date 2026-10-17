@@ -5,11 +5,11 @@ execute store result score #temp ID run data get storage luigis_mansion:data dia
 execute as @e[tag=player,tag=same_room] if score @s ID = #temp ID run tag @s add this_player
 scoreboard players reset #temp ID
 
-execute if data storage luigis_mansion:data current_state run tag @a[tag=!this_player,tag=!spectator,limit=1] remove same_room
+execute if data storage luigis_mansion:data current_state run tag @e[tag=player,tag=!this_player,tag=!spectator] remove same_room
 
 execute unless entity @e[tag=this_player,limit=1] run scoreboard players set #dialog Dialog 979
 execute if entity @a[tag=this_player,limit=1] run scoreboard players add #dialog Dialog 1
-execute if entity @a[tag=this_player,limit=1,tag=skip_dialog] run scoreboard players set #dialog Dialog 979
+execute if entity @a[tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 979
 execute if score #dialog Dialog matches ..978 as @a[tag=same_room,tag=!spectator,tag=!dialog_menu,tag=!using_selection_menu] run function luigis_mansion:selection_menu/dialog/original_menu_skip_only
 execute if score #dialog Dialog matches 979 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 
@@ -64,8 +64,8 @@ execute if score #dialog Dialog matches 669 as @e[tag=luigi,tag=this_player,limi
 execute if score #dialog Dialog matches 689 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"~ ~0.5 ~"}
 execute if score #dialog Dialog matches 663 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"742.0 97.5 7.3 65 -38"}
 execute if score #dialog Dialog matches 663..732 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"~-0.058 ~0.033 ~0.011 ~0.266 ~0.383"}
-execute if score #dialog Dialog matches 730 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"727 101 8.0 90 0"}
-execute if score #dialog Dialog matches 733 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"728.2 102.3 7.0 75 -33"}
+execute if score #dialog Dialog matches 733 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"727 101 8.0 90 0"}
+execute if score #dialog Dialog matches 733 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"728.2 102.31 7.0 75 -33"}
 execute if score #dialog Dialog matches 733..833 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"~-0.05 ~-0.003 ~0.01 ~0.15 ~0.28"}
 execute if score #dialog Dialog matches 834..843 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"~-0.05 ~ ~ ~ ~0.5"}
 execute if score #dialog Dialog matches 844 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"721 102 8 135 0"}

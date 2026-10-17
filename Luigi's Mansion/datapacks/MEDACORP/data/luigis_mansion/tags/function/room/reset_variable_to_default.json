@@ -1,6 +1,5 @@
 {
     "values": [
-        "luigis_mansion:room/reset_variable_to_default/can_revive",
         "luigis_mansion:room/reset_variable_to_default/can_warp",
         "luigis_mansion:room/reset_variable_to_default/changing_max_health",
         "luigis_mansion:room/reset_variable_to_default/gbh_clock",

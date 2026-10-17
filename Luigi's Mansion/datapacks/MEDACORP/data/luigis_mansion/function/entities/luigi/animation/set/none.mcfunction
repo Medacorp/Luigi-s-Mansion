@@ -12,6 +12,8 @@ tag @s remove animation_no_poltergust
 tag @s remove animation_may_move
 tag @s remove animation_free_rotation
 tag @s remove tick_down_invulnerability
+tag @s remove wind_warping
+tag @s remove wind_warped
 scoreboard players operation #temp ID = @s ID
 execute as @e[tag=knockback_model] if score #temp ID = @s ID run tag @s add dead
 scoreboard players reset #temp ID

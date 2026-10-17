@@ -21,4 +21,7 @@ $execute if entity @s[tag=teleport_now,tag=!animation_free_rotation] run functio
 execute if entity @s[tag=teleport_now,tag=animation_free_rotation] run function luigis_mansion:entities/luigi/move/execute {execute:"at @e[tag=home,limit=1]",teleport:"~ ~ ~"}
 tag @s remove teleport_now
 tag @s add already_froze_player
+tag @s remove walking
+tag @s remove running
+tag @s remove sneaking
 kill @e[tag=home,limit=1]

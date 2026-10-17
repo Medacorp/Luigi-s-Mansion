@@ -1,1 +1,0 @@
-execute if entity @s[tag=mansion_reset_menu] run function luigis_mansion:selection_menu/mansion_reset/tick_process

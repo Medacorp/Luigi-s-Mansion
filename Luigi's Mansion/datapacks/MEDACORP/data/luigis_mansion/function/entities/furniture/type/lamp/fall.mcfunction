@@ -26,16 +26,16 @@ execute if entity @s[scores={ActionTime=71,Sound=0}] run playsound luigis_mansio
 scoreboard players set @s[scores={ActionTime=71,Sound=0}] Sound 10
 #todelete room models: 10 ticks for 7.5 blocks = -0.75
 execute at @s[scores={ActionTime=71}] run teleport @s ~ ~-1.4 ~
-execute at @s[scores={ActionTime=21..71}] if entity @e[tag=luigi,distance=..2,scores={Invulnerable=0}] run tag @s add hit
+execute if entity @s[scores={ActionTime=21..71}] store result score #temp Time run data get entity @s Pos[1] 10
+execute if entity @s[scores={ActionTime=21..71,FurnitureChandelier=1..}] store result entity @s Pos[1] double 0.1 run scoreboard players operation #temp Time -= @s FurnitureChandelier
+execute at @s[scores={ActionTime=21..72}] if entity @e[tag=luigi,distance=..2,scores={Invulnerable=0}] run tag @s add hit
 execute at @s[scores={ActionTime=21..72}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"chandelier"},amount:10,animation:{namespace:"luigis_mansion",id:"knockback/large"},no_delete:1b}
 execute at @s[scores={ActionTime=21..72}] as @e[tag=luigi,distance=..2] run function luigis_mansion:entities/luigi/damage
 execute at @s[scores={ActionTime=21..72}] run data remove storage luigis_mansion:data damage
-execute if entity @s[scores={ActionTime=71}] store result score #temp Time run data get entity @s Pos[1] 10
-execute if entity @s[scores={ActionTime=71,FurnitureChandelier=1..}] store result entity @s Pos[1] double 0.1 run scoreboard players operation #temp Time -= @s FurnitureChandelier
 execute at @s[scores={ActionTime=71}] unless block ~ ~ ~ #luigis_mansion:flashlight_path run scoreboard players add @s ActionTime 1
 execute at @s[scores={ActionTime=72}] run function luigis_mansion:entities/furniture/type/lamp/fall_hit
-execute if entity @s[scores={ActionTime=71..72}] store result score #temp Time run data get entity @s Pos[1] 10
-execute if entity @s[scores={ActionTime=71..72,FurnitureChandelier=1..}] store result entity @s Pos[1] double 0.1 run scoreboard players operation #temp Time += @s FurnitureChandelier
+execute if entity @s[scores={ActionTime=21..72}] store result score #temp Time run data get entity @s Pos[1] 10
+execute if entity @s[scores={ActionTime=21..72,FurnitureChandelier=1..}] store result entity @s Pos[1] double 0.1 run scoreboard players operation #temp Time += @s FurnitureChandelier
 execute if entity @s[scores={ActionTime=72}] run playsound luigis_mansion:furniture.chandelier.land hostile @a[tag=same_room] ~ ~ ~ 5
 execute if entity @s[scores={ActionTime=92},tag=hit] run playsound luigis_mansion:entity.ghost.laugh hostile @a[tag=same_room] ~ ~ ~ 5
 execute if entity @s[scores={ActionTime=92},tag=!hit] run playsound luigis_mansion:entity.ghost.complain hostile @a[tag=same_room] ~ ~ ~ 5

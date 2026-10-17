@@ -8,3 +8,6 @@ execute if data storage luigis_mansion:data current_state.luigis_mansion.current
 execute unless entity @s[tag=!wall_warp,tag=!spectator] if entity @s[tag=!already_ticked] run function luigis_mansion:room/hidden/hallway_20/wall_warp
 
 tag @s add already_ticked
+
+execute unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.rooms.cold_storage{cleared:1b} if data storage luigis_mansion:data current_state.luigis_mansion.current_data{blackout:0b} run function luigis_mansion:entities/player/run_command_at_model {command:'execute unless entity @e[tag=this_luigi,limit=1,x=699,y=1,z=29,dx=13,dy=7,dz=8] run function luigis_mansion:room/hidden/hallway_20/cold_storage_noise'}
+execute unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.rooms.cold_storage{cleared:1b} if data storage luigis_mansion:data current_state.luigis_mansion.current_data{blackout:0b} if entity @s[gamemode=spectator] unless entity @s[x=699,y=1,z=29,dx=13,dy=7,dz=8] run function luigis_mansion:room/hidden/hallway_20/cold_storage_noise

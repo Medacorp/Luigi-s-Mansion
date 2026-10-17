@@ -317,7 +317,6 @@ bossbar set luigis_mansion:boo_counter color white
 execute unless score #money_screen Selected matches 0..1 run scoreboard players set #money_screen Selected 0
 execute unless score #mirrored Selected matches 0..1 run scoreboard players set #mirrored Selected 0
 execute unless score #can_warp Selected matches 0..1 run scoreboard players set #can_warp Selected 1
-execute unless score #can_revive Selected matches 0..1 run scoreboard players set #can_revive Selected 0
 execute unless score #multiply_hurt Selected matches 0.. run scoreboard players set #multiply_hurt Selected 100
 execute unless score #multiply_damage Selected matches 0.. run scoreboard players set #multiply_damage Selected 100
 execute unless score #changing_max_health Selected matches 0..1 run scoreboard players set #changing_max_health Selected 0

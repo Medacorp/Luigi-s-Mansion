@@ -17,19 +17,20 @@ execute if entity @s[scores={Dialog=40}] run playsound luigis_mansion:entity.spo
 execute if entity @s[scores={Dialog=40}] if score #boneyard Wave matches 1..4 run scoreboard players add #boneyard Wave 1
 execute if entity @s[scores={Dialog=60}] run playsound luigis_mansion:entity.spooky.bark hostile @a[tag=same_room] ~ ~ ~ 1
 data modify entity @s[scores={Dialog=80},tag=!attack] data.animation set value {namespace:"luigis_mansion",id:"move"}
-execute if entity @e[tag=spooky_bone,limit=1] run scoreboard players set @s[scores={Dialog=80}] Dialog 163
 scoreboard players set @s[scores={Dialog=80},tag=!attack] TargetTask 1
 execute at @s[scores={Dialog=80},tag=!attack] positioned ^ ^ ^2 at @e[tag=same_room,tag=luigi,distance=..0.7,limit=1] run function luigis_mansion:entities/ghost/set_target_to_attack
 execute if entity @s[tag=attack] run function luigis_mansion:entities/spooky/ai/mansion/normal/attack
 scoreboard players set @s[scores={Dialog=80},tag=!attack,nbt={data:{animation:{namespace:"luigis_mansion",id:"breathe"}}}] Dialog 20
 scoreboard players add @s[scores={Dialog=80},tag=!attack,nbt={data:{animation:{namespace:"luigis_mansion",id:"wake_up"}}}] Dialog 1
+execute if entity @e[tag=spooky_bone,limit=1] run scoreboard players set @s[scores={Dialog=80},tag=!attack] Dialog 163
 execute if entity @s[scores={Dialog=82}] run playsound luigis_mansion:entity.spooky.pant hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=102}] run playsound luigis_mansion:entity.spooky.pant hostile @a[tag=same_room] ~ ~ ~ 1
-execute at @s[scores={Dialog=122..161},tag=!attack] facing entity @e[tag=same_room,tag=target,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute at @s[scores={Dialog=122..161}] facing entity @e[tag=same_room,tag=target,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 data modify entity @s[scores={Dialog=122}] data.animation set value {namespace:"luigis_mansion",id:"bark"}
 execute if entity @s[scores={Dialog=122}] run playsound luigis_mansion:entity.spooky.bark hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=142}] run playsound luigis_mansion:entity.spooky.bark hostile @a[tag=same_room] ~ ~ ~ 1
 data modify entity @s[scores={Dialog=162}] data.animation set value {namespace:"luigis_mansion",id:"move"}
+execute if entity @e[tag=spooky_bone,limit=1] run scoreboard players set @s[scores={Dialog=162}] Dialog 163
 data modify entity @s[scores={Dialog=162}] data.target_pos set value [0.0d,0.0d,0.0d]
 execute if entity @s[scores={Dialog=162}] store result entity @s data.target_pos[0] double 0.01 run scoreboard players get @s HomeX
 execute if entity @s[scores={Dialog=162}] store result entity @s data.target_pos[1] double 0.01 run scoreboard players get @s HomeY

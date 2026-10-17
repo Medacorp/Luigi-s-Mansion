@@ -1,1 +1,0 @@
-$execute if entity @s[tag=mansion_reset_menu] run function $(namespace):selection_menu/mansion_reset/$(action)

@@ -35,7 +35,6 @@ scoreboard players set @e[tag=this_entity,limit=1] PoltergustSound 0
 execute if entity @s[tag=flipped_gravity] run tag @e[tag=this_entity,limit=1] add flipped_gravity
 execute if entity @s[tag=flashlight] run tag @e[tag=this_entity,limit=1] add had_flashlight_on
 execute if entity @s[tag=dead_player] run tag @e[tag=this_entity,limit=1] add death_animation
-execute if entity @s[tag=dead_player] run scoreboard players set @e[tag=this_entity,limit=1] DeathTime 120
 scoreboard players operation @e[tag=this_entity,limit=1] AnimationProgress = @s AnimationProgress
 scoreboard players operation @e[tag=this_entity,limit=1] ElementMeter = @s ElementMeter
 scoreboard players operation @e[tag=this_entity,limit=1] Room = @s Room

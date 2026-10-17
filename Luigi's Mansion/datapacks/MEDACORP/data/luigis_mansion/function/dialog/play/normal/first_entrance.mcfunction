@@ -2,7 +2,7 @@ execute store result score #temp ID run data get storage luigis_mansion:data dia
 execute as @e[tag=player,tag=same_room] if score @s ID = #temp ID run tag @s add this_player
 scoreboard players reset #temp ID
 
-tag @a[tag=!this_player] remove same_room
+tag @e[tag=!this_player] remove same_room
 tag @a[tag=this_player] add prevent_item_lock
 scoreboard players add #dialog Dialog 1
 
@@ -11,7 +11,7 @@ execute as @a[tag=this_player,limit=1,tag=game_boy_horror_menu] run function lui
 tag @e[tag=same_room] remove no_ai
 tag @e[tag=same_room] remove freeze_animation
 
-execute if score #dialog Dialog matches 1..49 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"754 11 9.0 90 0"}
+execute if score #dialog Dialog matches 1 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"754 11 9.0 90 0"}
 execute if score #dialog Dialog matches 1 as @a[tag=this_player,limit=1] run function luigis_mansion:entities/player/camera/teleport {teleport:"750 10 9.0 -90 0"}
 execute if score #dialog Dialog matches 1..69 as @a[tag=this_player,limit=1] run function luigis_mansion:entities/player/camera/teleport {teleport:"~-0.085 ~0.007 9.0 -90 ~-0.214"}
 execute if score #dialog Dialog matches 1.. run tag @e[tag=luigi,tag=this_player,limit=1] add reset_rotation

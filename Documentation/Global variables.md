@@ -1,16 +1,16 @@
 When loading a mansion, a bunch of variables get set, all of which use the `Selected` score:
 
-* `#mirrored` (bool): Whether ghosts, furniture and players mirror all their animations.
-* `#can_revive` (bool): Whether dead players can be revived by other players.
-* `#can_warp` (bool): Whether the Game Boy Horror can warp players by scanning mirrors.
-* `#multiply_hurt` (int): Multiplies base damage TAKEN by this value where 100 = 100%. Does not affect non-mansion rooms (there value is always treated as 100).
-* `#multiply_damage` (int): Multiplies base damage DEALT by this value where 100 = 100%. Does not affect non-mansion rooms (there value is always treated as 100).
-* `#changing_max_health` (bool): Whether players' max health is displayed ("<Health>/<MAX> Health").
-* `#heart_money_count` (int): The amount of a particular item needed for small hearts to change from healing 10 HP to 20 HP. Does not affect non-mansion rooms (there values is always treated as 0). Item needed is controlled by loaded mansion.
-* `#radar_type` (int): Defines what type of radar the Game Boy Horror uses.
-* `#gbh_clock` (int): The current time shown by the Game Boy Horror.
-* `#gbh_clock_increase` (int): The `#gbh_clock` value increases by this value every tick, as long as the `in_mansion_time` value also increases. Value is equal to IRL 20th of seconds (clock only shows minutes and hours). (When 0 the clock is not shown.)
-* `#poltergust_500` (bool): E3 DEMO EXCLUSIVE: Whetheer the poltergust is the overheating, water spraying poltergust, rather than the elemental one.
+* `#mirrored` (bool: false): Whether ghosts, furniture and players mirror all their animations.
+* `#can_warp` (bool: false): Whether the Game Boy Horror can warp players by scanning mirrors.
+* `#multiply_hurt` (int: 100): Multiplies base damage TAKEN by this value where 100 = 100%. Does not affect non-mansion rooms (there value is always treated as 100).
+* `#multiply_damage` (int: 100): Multiplies base damage DEALT by this value where 100 = 100%. Does not affect non-mansion rooms (there value is always treated as 100).
+* `#changing_max_health` (bool: false): Whether players' max health is displayed ("<Health>/<MAX> Health").
+* `#heart_money_count` (int: 0): The amount of a particular item needed for small hearts to change from healing 10 HP to 20 HP. Does not affect non-mansion rooms (there values is always treated as 0). Item needed is controlled by loaded mansion.
+* `#money_screen` (bool: false): Whether the Game Boy Horror should display money totals. Ignored if #gbh_clock_increase is set to a non-0 value, as it then displays the clock. Also ignored if 3DS Remake add-on is installed.
+* `#radar_type` (int: 0): Defines what type of radar the Game Boy Horror uses.
+* `#gbh_clock` (int: 0): The current time shown by the Game Boy Horror.
+* `#gbh_clock_increase` (int: 0): The `#gbh_clock` value increases by this value every tick, as long as the `in_mansion_time` value also increases. Value is equal to IRL 20th of seconds (clock only shows minutes and hours). (When 0 the clock is not shown.)
+* `#poltergust_500` (bool: false): E3 DEMO EXCLUSIVE: Whether the poltergust is the overheating, water spraying poltergust, rather than the elemental one.
 
 There are also global variables not set by the mansion, but other instances, all of which use the `Selected` score:
 

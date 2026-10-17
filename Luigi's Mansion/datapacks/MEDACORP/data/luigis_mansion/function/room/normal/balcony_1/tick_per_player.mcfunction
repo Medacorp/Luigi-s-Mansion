@@ -1,5 +1,5 @@
 function luigis_mansion:other/music/set/exterior
-title @s[tag=!seen_room_name,tag=!fully_separated_camera] title {type:"translatable",translate:"luigis_mansion:location.balcony_1"}
+execute unless entity @s[tag=fully_separated_camera,tag=!dead_player] run title @s[tag=!seen_room_name] title {type:"translatable",translate:"luigis_mansion:location.balcony_1"}
 tag @s add seen_room_name
 
 execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data.rooms.balcony_1{seen:0b} if entity @s[tag=!spectator,tag=!fully_separated_camera] run function luigis_mansion:room/normal/balcony_1/set_seen

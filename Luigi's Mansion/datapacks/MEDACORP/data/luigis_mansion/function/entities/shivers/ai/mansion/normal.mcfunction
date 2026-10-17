@@ -7,7 +7,7 @@ scoreboard players set @s[x=737,y=8,z=53,dx=14,dy=9,dz=20] Room 23
 execute if entity @s[tag=!visible,nbt=!{data:{path:{}}},tag=!reached_target] run function luigis_mansion:entities/ghost/set_specific_path {index:0}
 execute if entity @s[tag=visible,nbt=!{data:{path:{}}},tag=!reached_target] unless entity @s[scores={ActionTime=1..}] run function luigis_mansion:entities/ghost/set_specific_path {index:2}
 scoreboard players add @s[scores={ActionTime=1..}] ActionTime 1
-execute unless entity @s[scores={ActionTime=1..}] run scoreboard players set @s[tag=in_fire] ActionTime 1
+scoreboard players set @s[tag=in_fire,tag=!burning] ActionTime 1
 tag @s[scores={ActionTime=1}] add visible
 scoreboard players set @s[scores={ActionTime=1}] TargetTask 0
 execute if entity @s[scores={ActionTime=1}] as @a[tag=same_room] run function luigis_mansion:other/music/set/secret_revealed

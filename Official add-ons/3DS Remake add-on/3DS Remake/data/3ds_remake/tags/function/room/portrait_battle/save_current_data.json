@@ -1,6 +1,5 @@
 {
     "values": [
-        "3ds_remake:room/portrait_battle/save_current_data/can_revive",
         "3ds_remake:room/portrait_battle/save_current_data/can_warp",
         "3ds_remake:room/portrait_battle/save_current_data/changing_max_health",
         "3ds_remake:room/portrait_battle/save_current_data/gbh_clock",

@@ -9,8 +9,8 @@ tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"king_boo"}}},tag=same_r
 execute if score #dialog Dialog matches 1 as @e[tag=luigi,tag=same_room] at @s facing 685 11 61 rotated ~ 0 run function luigis_mansion:entities/luigi/move/teleport {teleport:"~ ~ ~ ~ ~"}
 execute if score #dialog Dialog matches 2..98 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/high_health_idle_no_sound
 execute if score #dialog Dialog matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"685 11 66.0 -180 0"}
-execute if score #dialog Dialog matches 1..40 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"685 11 ~-0.0125 -180 0"}
-execute if score #dialog Dialog matches 41..80 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"685 11 ~-0.025 -180 ~0.625"}
+execute if score #dialog Dialog matches 1..40 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"685 11 ~-0.025 -180 0"}
+execute if score #dialog Dialog matches 41..80 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"685 11 ~-0.0375 -180 ~0.625"}
 execute if score #dialog Dialog matches 81..100 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"685 11 63 -180 25"}
 execute if score #dialog Dialog matches 101..120 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"685 11 ~0.075 -180 ~-1.75"}
 execute if score #dialog Dialog matches 121..160 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"685 11 66.0 -180 -10"}

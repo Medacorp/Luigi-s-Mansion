@@ -9,6 +9,7 @@ execute as @s[tag=same_room,scores={Room=1..}] at @s run function luigis_mansion
 execute as @s[tag=same_room,scores={Room=..-1}] at @s run function luigis_mansion:room/exterior/warp with storage luigis_mansion:data loaded_exterior
 tag @a[tag=same_room] add camera
 clear @a[tag=same_room,tag=!using_selection_menu]
+scoreboard players set @a[tag=same_room,tag=!spectator] Room 0
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=title_menu] run function luigis_mansion:selection_menu/title_menu/exit
 execute as @a[tag=same_room,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit

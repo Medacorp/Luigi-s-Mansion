@@ -18,7 +18,7 @@ execute at @s[scores={ActionTime=30}] positioned ^ ^ ^0.3 run scoreboard players
 execute at @s[scores={ActionTime=30}] positioned ^ ^ ^0.3 run tag @e[tag=luigi,scores={Invulnerable=0},distance=..0.7,tag=!grabbed,limit=1] add grabbed
 execute if entity @s[scores={GrabbedID=-2147483648..}] run scoreboard players operation #temp ID = @s GrabbedID
 execute if entity @s[scores={GrabbedID=-2147483648..}] as @e[tag=luigi,tag=grabbed] if score @s ID = #temp ID run tag @s add still_grabbed
-execute if entity @s[scores={GrabbedID=-2147483648..}] if entity @e[tag=still_grabbed,limit=1] as @e[tag=chest] if score @s ID = #temp ID run tag @s add grabbed_model
+execute if entity @s[scores={GrabbedID=-2147483648..}] if entity @e[tag=still_grabbed,limit=1] as @e[tag=luigi] if score @s ID = #temp ID run tag @s add grabbed_luigi
 execute if entity @s[scores={ActionTime=30}] run data modify storage luigis_mansion:data damage set value {method:{namespace:"luigis_mansion",id:"bite"},amount:0,animation:{namespace:"luigis_mansion",id:"knockback/bite"}}
 execute if entity @s[scores={ActionTime=30}] run data modify storage luigis_mansion:data damage.amount set from entity @s data.damage.attack
 execute if entity @s[scores={ActionTime=30}] run data modify storage luigis_mansion:data damage.attacker set from entity @s UUID
@@ -26,11 +26,11 @@ execute if entity @s[scores={ActionTime=30}] as @e[tag=still_grabbed,limit=1] ru
 execute if entity @s[scores={ActionTime=30..51,Sound=0}] run playsound luigis_mansion:entity.spooky.attack hostile @a[tag=same_room] ~ ~ ~ 1 1
 execute if entity @s[scores={ActionTime=30..51,Sound=0}] run scoreboard players set @s Sound 20
 execute if entity @s[scores={ActionTime=30..51}] unless entity @e[tag=still_grabbed,limit=1] run scoreboard players set @s ActionTime 53
-execute if entity @s[scores={ActionTime=30..51}] unless score #mirrored Selected matches 1 at @e[tag=grabbed_model,limit=1] run teleport @s ^0.8 ^ ^ ~30 ~
-execute if entity @s[scores={ActionTime=30..51}] if score #mirrored Selected matches 1 at @e[tag=grabbed_model,limit=1] run teleport @s ^-0.8 ^ ^ ~-30 ~
+execute if entity @s[scores={ActionTime=30..51}] unless score #mirrored Selected matches 1 at @e[tag=grabbed_luigi,limit=1] run teleport @s ^0.8 ^ ^ ~30 ~
+execute if entity @s[scores={ActionTime=30..51}] if score #mirrored Selected matches 1 at @e[tag=grabbed_luigi,limit=1] run teleport @s ^-0.8 ^ ^ ~-30 ~
 execute if entity @s[scores={ActionTime=51}] run scoreboard players add @e[tag=still_grabbed,limit=1] GrabbedShake 1
 tag @e[tag=still_grabbed,limit=1] remove still_grabbed
-tag @e[tag=grabbed_model,limit=1] remove grabbed_model
+tag @e[tag=grabbed_luigi,limit=1] remove grabbed_luigi
 scoreboard players reset #temp ID
 scoreboard players set @s[scores={ActionTime=53}] AnimationProgress 0
 scoreboard players reset @s[scores={ActionTime=53}] GrabbedID

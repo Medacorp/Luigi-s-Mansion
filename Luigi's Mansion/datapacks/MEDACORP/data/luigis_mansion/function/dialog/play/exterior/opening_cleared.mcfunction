@@ -5,11 +5,11 @@ execute store result score #temp ID run data get storage luigis_mansion:data dia
 execute as @e[tag=player,tag=same_room] if score @s ID = #temp ID run tag @s add this_player
 scoreboard players reset #temp ID
 
-execute if data storage luigis_mansion:data current_state run tag @a[tag=!this_player,tag=!spectator,limit=1] remove same_room
+execute if data storage luigis_mansion:data current_state run tag @e[tag=player,tag=!this_player,tag=!spectator] remove same_room
 
 execute unless entity @e[tag=this_player,limit=1] run scoreboard players set #dialog Dialog 604
 execute if entity @a[tag=this_player,limit=1] run scoreboard players add #dialog Dialog 1
-execute if entity @a[tag=this_player,limit=1,tag=skip_dialog] run scoreboard players set #dialog Dialog 604
+execute if entity @a[tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 604
 execute if score #dialog Dialog matches ..604 as @a[tag=same_room,tag=!spectator,tag=!dialog_menu,tag=!using_selection_menu] run function luigis_mansion:selection_menu/dialog/original_menu_skip_only
 execute if score #dialog Dialog matches 605 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 
