@@ -10,21 +10,51 @@ v3.9.3:
 * Changed (3DS Remake) gooigi can no longer revive players
 * Fixed falling chandeliers were harmless
 * Fixed leaving and re-entering rooms made ghosts hiding in furniture able to spawn by just looking away
+* Fixed big balls got stuck in the ground if not aimed high enough
 * Fixed release boos dialog had a camera movement off by 1 block, causing a small jump in the camera position
 * Fixed boos warping to rooms with a player already in them made them uninteractable
 * Fixed boos didn't face you when entering the room (before the camera focus)
-* Fixed laundry room basket (planks) cannot be searched manually
-* Fixed shivers could be repeatedly lit on fire
+* Fixed boos that had a player in their room that left never did anything other than laugh and taunt
+* Fixed laundry room basket (planks) couldn't be searched manually
+* Fixed shivers could be repeatedly lit on fire, causing his pathing to restart
 * Fixed using a wind warp once broke future wind warps
 * Fixed boo bomb spawning didn't prevent boo ball from spawning
-* Fixed spooky bit too high
-* Fixed spooky bone flew into the ground
-* Fixed spooky's recover animation got interrupted if it bit you while the mr. bones was getting captured
+* Fixed waiters always placed food, even if the plate was empty
+* Fixed mr luggs, nana and miss petunia had terrible aim
+* Fixed spooky was biting too high
 * Fixed wandering ghosts (such as mr. bones) had difficulty getting out of a corner
+* Fixed spooky's recover animation got interrupted if it bit you while the mr. bones was getting captured
+* Fixed spooky bone flew into the ground
+* Fixed shadow balls shrunk when hitting bogmire
+* Fixed portrificationizing spooky softlocked the map
+* Fixed climbing ladders counted as falling
+* Fixed mario's portrait dialog put quotes around the player name
+* Fixed sparks couldn't move at all
+* Fixed observe moon dialog didn't play "an unexpected outcome"
+* Fixed slim bankshot spawned a white billiards ball even if there already was one from an interrupted shoot attempt
+* Fixed projector ambience was missing subtitle translation key
+* Fixed rank reveal's painting was empty
 * Fixed spectators couldn't hear mr. luggs eating in the hallway
 * Fixed spectators couldn't hear melody pianissima play in the hallway
+* Fixed game boy horror clock didn't work
 * Fixed several issues around death and revival
-* Fixed opening, first entrance and leaving lab cutscenes don't act properly in multiplayer
+* Fixed opening, first entrance and leaving the lab dialogs didn't act properly in multiplayer
+* Fixed (3DS Remake) 3DS exclusive scan messages didn't show scanning game boy horror screen
+* Fixed (3DS Remake) hidden mansion unlocked after clearing an area
+* Fixed (3DS Remake) fire element call didn't play "advice from the professor" music
+* Fixed (3DS Remake) furniture with elemental sources that required opening first spawned particles before being open
+* Fixed (3DS Remake) wind warp sparkles and its dialog didn't trigger
+* Fixed (3DS Remake) deer heads didn't show blue eyes
+* Fixed (3DS Remake) mysterious power didn't spawn
+* Fixed (3DS Remake) after mansion rank dialog, the map got stuck
+* Fixed (E3 Demo) meet e. gadd's first ghost didn't go to the haunt animation
+* Fixed (E3 Demo) ghost coins had no blinking animation
+* Fixed (E3 Demo) room clear chests had a black line
+* Fixed (E3 Demo) room clear chests didn't open correctly
+* Fixed (E3 Demo) room clear chests didn't have keys
+* Fixed (E3 Demo) spooky didn't turn invisible when looked at
+* Fixed (E3 Demo) call dialog didn't progress
+* Fixed (3DS Remake + E3 Demo) coin counter in trophy colored the number
 * Removed mansion reset selection menu, just opening and closing the world brought back to the title screen, and reviving is now always enabled
 
 v3.9.2:

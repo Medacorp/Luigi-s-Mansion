@@ -1,5 +1,5 @@
-execute if score #dialog Dialog matches ..209 run scoreboard players add #dialog Dialog 1
-execute if score #dialog Dialog matches ..209 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 276
+execute if score #dialog Dialog matches ..275 run scoreboard players add #dialog Dialog 1
+execute if score #dialog Dialog matches ..275 if entity @a[tag=same_room,tag=skip_dialog,limit=1] run scoreboard players set #dialog Dialog 276
 
 tag @e[tag=ghost,tag=!hidden,tag=!normal_death,tag=!element_death,tag=same_room] add vanish
 tag @e[tag=ghost,tag=!hidden,tag=!normal_death,tag=!element_death,tag=same_room] remove no_ai

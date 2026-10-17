@@ -31,7 +31,7 @@ execute if score #dialog Dialog matches 90 as @e[tag=luigi,tag=walking_player,li
 execute if score #dialog Dialog matches 90 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"selector",selector:"@a[tag=walking_player,limit=1]",color:"green"},{type:"translatable",translate:"e3_demo:dialog.meet_e_gadd.1"}]}
 execute if score #dialog Dialog matches 90 as @e[tag=luigi,tag=walking_player,limit=1] at @e[tag=ghost,tag=same_room,limit=1] run function luigis_mansion:entities/luigi/animation/set/scare/bash_no_move
 execute if score #dialog Dialog matches 90..190 run scoreboard players set @e[tag=luigi,tag=walking_player,limit=1,scores={AnimationProgress=30..}] AnimationProgress 29
-execute if score #dialog Dialog matches 100 run data modify entity @e[tag=ghost,tag=walking_player,limit=1] data.animation set value {namespace:"luigis_mansion",id:"haunt"}
+execute if score #dialog Dialog matches 100 run data modify entity @e[tag=ghost,tag=same_room,limit=1] data.animation set value {namespace:"luigis_mansion",id:"haunt"}
 execute if score #dialog Dialog matches 106 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"726.8 19.4 26.8 12 -12"}
 execute if score #dialog Dialog matches 106..150 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"~0.0066 19.4 ~-0.0266 ~-0.188 ~0.222"}
 execute if score #dialog Dialog matches 151..160 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"727.1 19.4 25.6 3.5 -2"}

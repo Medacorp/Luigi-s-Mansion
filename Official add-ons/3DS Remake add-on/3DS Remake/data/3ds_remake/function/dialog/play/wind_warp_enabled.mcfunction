@@ -8,9 +8,9 @@ tag @e[tag=same_room,tag=no_ai_dialog] remove no_ai_dialog
 tag @e[tag=same_room,tag=freeze_animation_dialog] remove freeze_animation
 tag @e[tag=same_room,tag=freeze_animation_dialog] remove freeze_animation_dialog
 tag @e[tag=same_room,tag=applied_dialog_effects] remove applied_dialog_effects
-tag @e[tag=same_room,tag=!player,nbt=!{data:{particles:"wind_warp_sparkles",scan_area:{cleared_only:1b}}}] remove same_room
+tag @e[tag=same_room,tag=!player,nbt=!{data:{particles:"wind_warp_sparkles",scan_result:{cleared_only:1b}}}] remove same_room
 
-execute unless entity @e[nbt={data:{particles:"wind_warp_sparkles",scan_area:{cleared_only:1b}}},tag=same_room,limit=1] run scoreboard players set #dialog Dialog 100
+execute unless entity @e[nbt={data:{particles:"wind_warp_sparkles",scan_result:{cleared_only:1b}}},tag=same_room,limit=1] run scoreboard players set #dialog Dialog 100
 
 execute if score #dialog Dialog matches 1..99 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle
 execute if score #dialog Dialog matches 1 unless score #mirrored Selected matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @e[tag=same_room,tag=furniture,sort=nearest,limit=1]",teleport:"^-2.5 ^ ^5 ~-135 0"}

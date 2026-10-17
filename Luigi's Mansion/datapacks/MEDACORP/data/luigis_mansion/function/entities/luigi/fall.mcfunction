@@ -3,7 +3,7 @@ execute if entity @s[scores={Shrunk=0},tag=!flipped_gravity] if block ~0.4 ~-0.1
 execute if entity @s[scores={Shrunk=1..},tag=!flipped_gravity] if block ~0.2 ~-0.1 ~0.2 #luigis_mansion:all_ignore if block ~-0.2 ~-0.1 ~0.2 #luigis_mansion:all_ignore if block ~0.2 ~-0.1 ~-0.2 #luigis_mansion:all_ignore if block ~-0.2 ~-0.1 ~-0.2 #luigis_mansion:all_ignore run scoreboard players add @s FallTime 1
 execute if entity @s[scores={Shrunk=0},tag=flipped_gravity] if block ~0.4 ~1.8 ~0.4 #luigis_mansion:all_ignore if block ~-0.4 ~1.8 ~0.4 #luigis_mansion:all_ignore if block ~0.4 ~1.8 ~-0.4 #luigis_mansion:all_ignore if block ~-0.4 ~1.8 ~-0.4 #luigis_mansion:all_ignore run scoreboard players add @s FallTime 1
 execute if entity @s[scores={Shrunk=1..},tag=flipped_gravity] if block ~0.2 ~0.9 ~0.2 #luigis_mansion:all_ignore if block ~-0.2 ~0.9 ~0.2 #luigis_mansion:all_ignore if block ~0.2 ~0.9 ~-0.2 #luigis_mansion:all_ignore if block ~-0.2 ~0.9 ~-0.2 #luigis_mansion:all_ignore run scoreboard players add @s FallTime 1
-execute if block ~ ~ ~ #minecraft:climbable run scoreboard players add @s FallTime 0
+execute if block ~ ~ ~ #minecraft:climbable run scoreboard players set @s FallTime 0
 execute if score @s OtherY = #temp OtherY if entity @s[scores={FallTime=1..},tag=!small_second_run] run function luigis_mansion:entities/luigi/land
 scoreboard players reset #temp OtherY
 execute if entity @s[scores={FallTime=6..}] run function luigis_mansion:entities/luigi/animation/shared/falling {rotated:"~ ~"}

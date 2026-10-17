@@ -1,1 +1,1 @@
-{"model":{"type":"minecraft:model","model":"e3_demo:entity/ghost_coin"}}
+{"model":{"type":"minecraft:condition","property":"minecraft:custom_model_data","index":0,"on_false":{"type":"minecraft:model","model":"e3_demo:entity/ghost_coin"},"on_true":{"type":"minecraft:empty"}}}

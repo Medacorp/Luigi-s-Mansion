@@ -30,6 +30,7 @@ execute if score #dialog Dialog matches 22..299 as @a[tag=same_room] run functio
 execute if score #dialog Dialog matches 22..299 as @a[tag=same_room] at @s run particle minecraft:end_rod ~ ~ ~ 5 5 5 0 5 force @s
 execute if score #dialog Dialog matches 300 run tag @e[tag=same_room,tag=observatory_facing,limit=1] add remove_from_existence
 execute if score #dialog Dialog matches 300 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
+execute if score #dialog Dialog matches 300 as @a[tag=same_room] run function luigis_mansion:other/music/set/force/silence
 execute if score #dialog Dialog matches 300 as @a[tag=same_room] run function luigis_mansion:other/music/set/secret_revealed
 execute if score #dialog Dialog matches 340 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 340 run scoreboard players add #observatory Wave 1

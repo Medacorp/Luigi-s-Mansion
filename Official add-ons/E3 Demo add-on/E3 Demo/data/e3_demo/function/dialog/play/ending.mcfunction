@@ -3,6 +3,6 @@ execute as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
 execute as @a[tag=same_room] run function luigis_mansion:room/exterior/warp with storage luigis_mansion:data loaded_exterior
 tag @e[tag=e_gadd,tag=same_room,limit=1] remove cannot_be_removed
 tag @e[tag=luigi,tag=same_room] add dead
-data modify storage luigis_mansion:data dialogs[0] set value {name:{namespace:"luigis_mansion",id:"credits"},progress:0,room:0}
+data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"credits"},progress:0,room:0}
 execute if data storage luigis_mansion:data dialogs[0].save run data modify storage luigis_mansion:data dialogs[-1].save set value 1b
 scoreboard players set #dialog Dialog -1

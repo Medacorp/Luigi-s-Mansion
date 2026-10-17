@@ -40,7 +40,7 @@ execute if score #dialog Dialog matches 640 run function luigis_mansion:dialog/p
 execute if score #dialog Dialog matches ..870 run scoreboard players set @a[tag=same_room,scores={Jukebox=0,Music=1..10}] Music 10
 execute if score #dialog Dialog matches 880 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
 execute if score #dialog Dialog matches 880 run tag @e[tag=mansion_rank_end,limit=1] add dead
-execute if score #dialog Dialog matches 880 as @a[tag=same_room] run function luigis_mansion:room/underground_lab/warp_to
+execute if score #dialog Dialog matches 880 as @a[tag=same_room] run function luigis_mansion:room/exterior/enter_lab
 execute if score #dialog Dialog matches 880 run data modify storage luigis_mansion:data dialogs[0].room set value -1
 execute if score #dialog Dialog matches 881 run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"3ds_remake",id:"gooigi_results"},progress:0,room:-1}
 execute if score #dialog Dialog matches 881 if data storage luigis_mansion:data dialogs[0].save run data modify storage luigis_mansion:data dialogs[-1].save set value 1b

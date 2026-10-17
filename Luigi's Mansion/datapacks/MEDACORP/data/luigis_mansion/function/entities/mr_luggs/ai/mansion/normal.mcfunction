@@ -64,7 +64,7 @@ execute if entity @s[scores={Dialog=100..}] run tag @e[tag=same_room,tag=waiter,
 data modify entity @s[scores={Dialog=101}] data.animation set value {namespace:"luigis_mansion",id:"complain"}
 execute if entity @s[scores={Dialog=101}] run playsound luigis_mansion:entity.mr_luggs.complain hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=141..}] as @a[tag=same_room] run function luigis_mansion:other/music/set/danger
-execute if entity @s[scores={Dialog=141..160}] positioned ~ ~1 ~ facing entity @e[tag=same_room,tag=luigi,sort=nearest,limit=1] feet positioned ~ ~-1 ~ run teleport @s ~ ~ ~ ~ ~
+execute if entity @s[scores={Dialog=141..160}] facing entity @e[tag=same_room,tag=luigi,sort=nearest,limit=1] feet run teleport @s ~ ~ ~ ~ 0
 data modify entity @s[scores={Dialog=161}] data.animation set value {namespace:"luigis_mansion",id:"sigh"}
 execute if entity @s[scores={Dialog=161}] run playsound luigis_mansion:entity.mr_luggs.sigh hostile @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=161}] run scoreboard players set @s VulnerableTime 80
