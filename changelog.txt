@@ -8,8 +8,11 @@ v3.9.3:
 * Changed all mansions to always allow reviving dead players
 * Changed dead players that log back in to warp to the default location in the loaded mansion, rather than the lab (where they couldn't get revived)
 * Changed (3DS Remake) gooigi can no longer revive players
+* Fixed gate remained shut when leaving the lab
 * Fixed falling chandeliers were harmless
+* Fixed room clear chests are tilted forward slightly after opening
 * Fixed leaving and re-entering rooms made ghosts hiding in furniture able to spawn by just looking away
+* Fixed big pearls assigned rank improperly, causing the score results dialog to show empty portraits
 * Fixed big balls got stuck in the ground if not aimed high enough
 * Fixed release boos dialog had a camera movement off by 1 block, causing a small jump in the camera position
 * Fixed boos warping to rooms with a player already in them made them uninteractable
@@ -19,6 +22,8 @@ v3.9.3:
 * Fixed shivers could be repeatedly lit on fire, causing his pathing to restart
 * Fixed using a wind warp once broke future wind warps
 * Fixed boo bomb spawning didn't prevent boo ball from spawning
+* Fixed mystifying table hitbox was not tall enough
+* Fixed madame clairvoya's power animation moved incorrectly
 * Fixed waiters always placed food, even if the plate was empty
 * Fixed mr luggs, nana and miss petunia had terrible aim
 * Fixed spooky was biting too high
@@ -29,13 +34,24 @@ v3.9.3:
 * Fixed portrificationizing spooky softlocked the map
 * Fixed climbing ladders counted as falling
 * Fixed mario's portrait dialog put quotes around the player name
+* Fixed biff atlas recovering made the first frame and sound of the ko animation again
 * Fixed sparks couldn't move at all
 * Fixed observe moon dialog didn't play "an unexpected outcome"
 * Fixed slim bankshot spawned a white billiards ball even if there already was one from an interrupted shoot attempt
 * Fixed projector ambience was missing subtitle translation key
+* Fixed blacking out lights could barely be heard
+* Fixed king boo warp brought you to the hallway before it
+* Fixed guest room flips dialog spammed the sound
+* Fixed there were remnant barrier blocks near sir weston
+* Fixed portrificationizing clockwork soldiers didn't transform them into a painting
+* Fixed players didn't warp to the mario back to normal dialog
+* Fixed mario's unportrificationizing animations were broken
+* Fixed mario didn't spawn the particles at the portrificationizer's slot
+* Fixed rank reveal's title and description only showed if you got H rank
 * Fixed rank reveal's painting was empty
 * Fixed spectators couldn't hear mr. luggs eating in the hallway
 * Fixed spectators couldn't hear melody pianissima play in the hallway
+* Fixed spectators in a room with non-hidden invisible ghosts had their particles offset
 * Fixed game boy horror clock didn't work
 * Fixed several issues around death and revival
 * Fixed opening, first entrance and leaving the lab dialogs didn't act properly in multiplayer
@@ -46,6 +62,8 @@ v3.9.3:
 * Fixed (3DS Remake) wind warp sparkles and its dialog didn't trigger
 * Fixed (3DS Remake) deer heads didn't show blue eyes
 * Fixed (3DS Remake) mysterious power didn't spawn
+* Fixed (3DS Remake) telephones didn't finish ringing animation before getting picked up
+* Fixed (3DS Remake) sitting room wouldn't spawn ghosts
 * Fixed (3DS Remake) after mansion rank dialog, the map got stuck
 * Fixed (E3 Demo) meet e. gadd's first ghost didn't go to the haunt animation
 * Fixed (E3 Demo) ghost coins had no blinking animation

@@ -8945,8 +8945,7 @@
         "sounds": [
             {
                 "name": "luigis_mansion:furniture/blackout_lights",
-                "stream": false,
-				"volume": 0.5
+                "stream": false
             }
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.blackout_lights"

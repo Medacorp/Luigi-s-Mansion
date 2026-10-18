@@ -11,6 +11,7 @@ tag @e[tag=e_gadd,tag=same_room,limit=1] remove no_ai
 tag @e[tag=mario,tag=same_room,limit=1] remove freeze_animation
 tag @e[tag=mario,tag=portrificationizing,tag=same_room,limit=1] remove no_ai
 execute if score #dialog Dialog matches 1..1103 as @e[tag=e_gadd,tag=same_room,limit=1] at @s facing entity @e[tag=same_room,tag=mario,limit=1] feet run teleport @s ~ ~ ~ ~ ~
+execute if score #dialog Dialog matches 1 as @e[tag=luigi,tag=same_room,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"774 77 -11 90 0"}
 execute if score #dialog Dialog matches 1 run teleport @e[tag=e_gadd,tag=same_room,limit=1] 774 77 -12 90 0
 execute if score #dialog Dialog matches 1 run summon minecraft:item_display 771.01 77.92 -12 {Rotation:[-90.0f,0.0f],Tags:["mario","same_room","portrificationizing","cannot_be_removed"],data:{entity:{namespace:"luigis_mansion",id:"mario"}},item_display:"head",item:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:furniture/marios_portrait","minecraft:custom_model_data":{flags:[1b,1b]}}}}
 execute if score #dialog Dialog matches 1 store result score @e[tag=same_room,tag=mario] Room run data get storage luigis_mansion:data dialogs[0].room
@@ -25,9 +26,9 @@ execute if score #dialog Dialog matches 803 as @a[tag=same_room] run function lu
 execute if score #dialog Dialog matches 803 as @a[tag=same_room] run function luigis_mansion:other/music/set/saved_mario
 execute if score #dialog Dialog matches 1363 run tag @e[tag=mario,tag=same_room,limit=1] remove cannot_be_removed
 execute if score #dialog Dialog matches 1363 run tag @e[tag=e_gadd,tag=same_room,limit=1] remove cannot_be_removed
+execute if score #dialog Dialog matches 1363 run tag @e[tag=luigi,tag=same_room] add dead
 execute if score #dialog Dialog matches 1363 as @a[tag=same_room] run function luigis_mansion:room/exterior/warp with storage luigis_mansion:data loaded_exterior
 execute if score #dialog Dialog matches 1363 run data modify storage luigis_mansion:data dialogs[0].room set value 0
-execute if score #dialog Dialog matches 1363 run tag @e[tag=luigi,tag=same_room] add dead
 execute if score #dialog Dialog matches 1364 run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"credits"},progress:0,room:0}
 execute if score #dialog Dialog matches 1364 if data storage luigis_mansion:data dialogs[0].save run data modify storage luigis_mansion:data dialogs[-1].save set value 1b
 execute if score #dialog Dialog matches 1364 run scoreboard players set #dialog Dialog -1

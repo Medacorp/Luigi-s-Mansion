@@ -1,5 +1,4 @@
 execute if score #dialog Dialog matches 250..251 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
-execute if score #dialog Dialog matches 251 if data storage luigis_mansion:data dialogs[0].ending run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 148..249 run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 232..249 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players set #dialog Dialog 250
 execute if score #dialog Dialog matches 192..229 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players set #dialog Dialog 230
@@ -139,6 +138,7 @@ execute if score #dialog Dialog matches 249 as @a[tag=same_room] at @s run plays
 execute as @e[type=minecraft:text_display,scores={Room=-3}] run function luigis_mansion:dialog/play/score_results/text_fade
 scoreboard players reset #temp Time
 #250..251
+execute if score #dialog Dialog matches 252 run tag @e[type=minecraft:text_display,scores={Room=-3}] add remove_from_existence
 execute if score #dialog Dialog matches 252 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
 execute if score #dialog Dialog matches 252 unless data storage luigis_mansion:data dialogs[0].ending run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"underground_lab"},room:-1,progress:-1}
 execute if score #dialog Dialog matches 252 unless data storage luigis_mansion:data dialogs[0].ending as @a[tag=same_room] run function luigis_mansion:other/music/set/silence

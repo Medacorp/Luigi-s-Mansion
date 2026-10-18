@@ -5,4 +5,4 @@ execute store result storage luigis_mansion:data macro.forward float 0.1 run sco
 execute if entity @s[scores={FurnitureSizeRadius=1..}] store result storage luigis_mansion:data macro.forward float 0.1 run scoreboard players get @s FurnitureSizeRadius
 scoreboard players reset #temp Time
 execute if data entity @s data.approachable_animation run data modify entity @s data.animation set from entity @s data.approachable_animation
-execute if entity @s[tag=approach_triggered] positioned ^ ^ ^0.5 run function luigis_mansion:entities/furniture/type/approach/detect with storage luigis_mansion:data macro
+execute if entity @s[scores={AnimationProgress=0},tag=approach_triggered] positioned ^ ^ ^0.5 run function luigis_mansion:entities/furniture/type/approach/detect with storage luigis_mansion:data macro

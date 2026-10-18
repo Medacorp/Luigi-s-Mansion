@@ -76,7 +76,7 @@ execute if entity @s[scores={Dialog=120}] run setblock 770 81 -7 minecraft:green
 execute if entity @s[scores={Dialog=120}] run setblock 770 79 -7 minecraft:air
 execute if entity @s[scores={Dialog=110}] run playsound luigis_mansion:entity.mario.owch neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=110}] run data modify entity @s transformation.left_rotation set value [0.0f,0.0f,0.0f,1.0f]
-execute if entity @s[scores={Dialog=110}] run data modify entity @s transformation.scale set value [1.0f,1.0f,0.01f]
+execute if entity @s[scores={Dialog=110}] run data modify entity @s transformation.scale set value [1.0f,0.01f,1.0f]
 data modify entity @s[scores={Dialog=110}] item merge value {id:"minecraft:diamond_pickaxe",components:{"minecraft:item_model":"luigis_mansion:entity/portrificationizing_mario","minecraft:unbreakable":{},"minecraft:custom_model_data":{floats:[80f]}}}
 execute if entity @s[scores={Dialog=120}] run teleport @s 770 79.45 -6 -180 0
 execute if entity @s[scores={Dialog=125}] run teleport @s 770 79.45 -5
@@ -149,7 +149,7 @@ scoreboard players reset #temp Time
 teleport @s[scores={Dialog=530}] 770 82.45 15
 execute if entity @s[scores={Dialog=620}] run playsound luigis_mansion:entity.mario.wohh_hoo_hoo neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=660}] run playsound luigis_mansion:entity.mario.oof neutral @a[tag=same_room] ~ ~ ~ 1
-execute if entity @s[scores={Dialog=660}] run particle minecraft:cloud 774 7.5 19.8 0.2 0.2 0 0 10
+execute if entity @s[scores={Dialog=660}] run particle minecraft:cloud 774 78.5 19.8 0.2 0.2 0 0 10 normal @a[tag=same_room]
 tag @s[scores={Dialog=720}] remove cannot_be_removed
 tag @s[scores={Dialog=720}] add remove_from_existence
 execute at @s run teleport @s ~ ~-0.4 ~

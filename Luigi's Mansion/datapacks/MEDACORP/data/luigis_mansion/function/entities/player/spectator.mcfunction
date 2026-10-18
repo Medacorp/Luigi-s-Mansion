@@ -17,7 +17,7 @@ execute if entity @s[tag=fully_separated_camera,scores={TeleportDelayTimer=0}] r
 scoreboard players set @s[tag=dead_player] Health 0
 
 execute at @e[tag=ghost,tag=same_room,tag=!vacuumable,tag=!visible,tag=hidden] run particle minecraft:dust{color:11730866,scale:1f} ~ ~0.6 ~ 0.3 0.3 0.3 0 5 normal @s
-execute at @e[tag=ghost,tag=same_room,tag=!vacuumable,tag=!visible,tag=!vanish,tag=!hidden] run particle minecraft:dust{color:16711680,scale:1f} ~ ~1.6 ~ 0.3 0.3 0.3 0 5 normal @s
+execute at @e[tag=ghost,tag=same_room,tag=!vacuumable,tag=!visible,tag=!vanish,tag=!hidden] run particle minecraft:dust{color:16711680,scale:1f} ~ ~0.6 ~ 0.3 0.3 0.3 0 5 normal @s
 tag @s add me
 execute at @a[tag=same_room,tag=dead_player,tag=!me] run particle minecraft:dust{color:3407667,scale:1f} ~ ~1.6 ~ 0.3 0.3 0.3 0 5 normal @s
 tag @s remove me

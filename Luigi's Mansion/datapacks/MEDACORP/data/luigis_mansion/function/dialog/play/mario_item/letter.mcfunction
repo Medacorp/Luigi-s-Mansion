@@ -29,7 +29,7 @@ execute if score #dialog Dialog matches 24 if score #players Totals matches 2.. 
 execute if score #dialog Dialog matches 25 if score #players Totals matches 1 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.madame_clairvoya",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.madame_clairvoya.letter.3"}]}
 execute if score #dialog Dialog matches 25 if score #players Totals matches 2.. if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.madame_clairvoya",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.madame_clairvoya.letter.3.more"}]}
 
-execute if score #dialog Dialog matches 24 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
+execute if score #dialog Dialog matches 26 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
 execute if score #dialog Dialog matches 26 run data remove entity @e[tag=same_room,nbt={data:{entity:{namespace:"luigis_mansion",id:"madame_clairvoya"}}},limit=1] data.animation
 execute if score #dialog Dialog matches 26 run data modify storage luigis_mansion:data current_state.luigis_mansion.current_data.technical_data merge value {shown_marios_letter:1b}
 execute if score #dialog Dialog matches 26 store result score #temp Time run data get storage luigis_mansion:data dialogs[0].variant

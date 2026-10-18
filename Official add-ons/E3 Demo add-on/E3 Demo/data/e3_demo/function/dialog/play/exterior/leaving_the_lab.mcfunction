@@ -28,7 +28,6 @@ execute if score #dialog Dialog matches 1 as @e[tag=luigi,tag=this_player,limit=
 execute if score #dialog Dialog matches 1 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 2 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/animation/set/leaving_the_lab
 execute if score #dialog Dialog matches 1 as @a[tag=same_room] run function luigis_mansion:other/music/set/leaving_the_lab
-execute if score #dialog Dialog matches 1 run function luigis_mansion:room/exterior/open_gate
 execute if score #dialog Dialog matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"826 90 9.0 90 0"}
 execute if score #dialog Dialog matches 1..16 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @s rotated 90 0",teleport:"^ ^ ^0.05 ~ ~"}
 execute if score #dialog Dialog matches 1..16 as @a[tag=same_room] at @s run particle minecraft:block{block_state:{id:"oak_leaves"}} ^ ^1.4 ^0.75 0.2 0.2 0.2 0 30 normal @s
@@ -38,6 +37,7 @@ execute if score #dialog Dialog matches 81..125 as @a[tag=same_room] run functio
 execute if score #dialog Dialog matches 25 run summon minecraft:lightning_bolt 690 100 76
 execute if score #dialog Dialog matches 54 run summon minecraft:lightning_bolt 694 100 -65
 execute if score #dialog Dialog matches 1..125 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"^ ^ ^0.05"}
+execute if score #dialog Dialog matches 125 run function luigis_mansion:room/exterior/open_gate
 execute if score #dialog Dialog matches 126 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"741 94 8.0 90 0"}
 execute if score #dialog Dialog matches 126..165 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"positioned 765.0 93.3 21.5 facing entity @e[tag=luigi,tag=this_player,limit=1] feet rotated ~ ~-10",teleport:"~ ~ ~ ~ ~"}
 execute if score #dialog Dialog matches 126..165 as @e[tag=luigi,tag=this_player,limit=1] run function luigis_mansion:entities/luigi/move/teleport {teleport:"^ ^ ^0.05"}

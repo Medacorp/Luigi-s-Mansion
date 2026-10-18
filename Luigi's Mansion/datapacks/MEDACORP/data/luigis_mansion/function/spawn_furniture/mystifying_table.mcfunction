@@ -4,7 +4,7 @@ function luigis_mansion:spawn_furniture/setup/candle_flame/get_angles
 execute rotated as @e[tag=forward_angle,tag=candle_angle,limit=1] positioned ^ ^ ^-0.06 rotated as @e[tag=up_angle,tag=candle_angle,limit=1] positioned ^ ^ ^1.625 rotated as @e[tag=left_angle,tag=candle_angle,limit=1] positioned ^ ^ ^-0.815 rotated as @e[tag=this_entity,limit=1] run function luigis_mansion:spawn_furniture/setup/candle_flame
 execute rotated as @e[tag=forward_angle,tag=candle_angle,limit=1] positioned ^ ^ ^-0.06 rotated as @e[tag=up_angle,tag=candle_angle,limit=1] positioned ^ ^ ^1.625 rotated as @e[tag=left_angle,tag=candle_angle,limit=1] positioned ^ ^ ^0.815 rotated as @e[tag=this_entity,limit=1] run function luigis_mansion:spawn_furniture/setup/candle_flame
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeLeft 30
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeUp 10
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeUp 13
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeForward 10
 function luigis_mansion:spawn_furniture/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity

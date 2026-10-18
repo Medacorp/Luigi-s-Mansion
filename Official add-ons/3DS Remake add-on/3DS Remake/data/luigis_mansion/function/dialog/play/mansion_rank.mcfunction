@@ -17,25 +17,35 @@ execute if score #dialog Dialog matches 1..259 run scoreboard players set @a[tag
 execute if score #dialog Dialog matches 1 at @a[tag=same_room,limit=1] run summon minecraft:text_display ~ ~ ~ {Tags:["mansion_rank_header"],text:{type:"translatable",translate:"luigis_mansion:dialog.mansion_rank.header"},billboard:"center",line_width:173,background:0,alignment:"left",brightness:{block:15,sky:0},text_opacity:25b}
 execute if score #dialog Dialog matches 1 if score #players Totals matches 2.. run data modify entity @e[tag=mansion_rank_header,limit=1] text set value {type:"translatable",translate:"luigis_mansion:dialog.mansion_rank.header.more"}
 execute if score #dialog Dialog matches 1..40 store result score #temp Time run data get entity @e[tag=mansion_rank_header,limit=1] text_opacity
-execute if score #dialog Dialog matches 1..40 store result entity @e[tag=mansion_rank_header,limit=1] text_opacity byte 1 run scoreboard players add #temp Time 5
+execute if score #dialog Dialog matches 1..40 run scoreboard players add #temp Time 5
+execute if score #dialog Dialog matches 1..40 if score #temp Time matches 128.. run scoreboard players remove #temp Time 255
+execute if score #dialog Dialog matches 1..40 store result entity @e[tag=mansion_rank_header,limit=1] text_opacity byte 1 run scoreboard players get #temp Time
 execute if score #dialog Dialog matches 1..240 at @a[tag=same_room,limit=1] run teleport @e[tag=mansion_rank_header,limit=1] ^ ^0.75 ^3.5
 execute if score #dialog Dialog matches 240 run tag @e[tag=mansion_rank_header,limit=1] add dead
 execute if score #dialog Dialog matches 240 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
 execute if score #dialog Dialog matches 240 run function luigis_mansion:dialog/play/mansion_rank/select
-execute if score #dialog Dialog matches 241 run function luigis_mansion:dialog/play/mansion_rank/description
+execute if score #dialog Dialog matches 242 run function luigis_mansion:dialog/play/mansion_rank/description
 execute if score #dialog Dialog matches 280 run function luigis_mansion:dialog/play/mansion_rank/music
 execute if score #dialog Dialog matches 300 run function luigis_mansion:dialog/play/mansion_rank/title
 execute if score #dialog Dialog matches 301..400 store result score #temp Time run data get entity @e[tag=mansion_rank_title,limit=1] text_opacity
-execute if score #dialog Dialog matches 301..340 store result entity @e[tag=mansion_rank_title,limit=1] text_opacity byte 1 run scoreboard players add #temp Time 5
-execute if score #dialog Dialog matches 361..400 store result entity @e[tag=mansion_rank_title,limit=1] text_opacity byte 1 run scoreboard players remove #temp Time 5
+execute if score #dialog Dialog matches 301..340 run scoreboard players add #temp Time 5
+execute if score #dialog Dialog matches 361..400 run scoreboard players remove #temp Time 5
+execute if score #dialog Dialog matches 301..400 if score #temp Time matches 128.. run scoreboard players remove #temp Time 255
+execute if score #dialog Dialog matches 301..400 if score #temp Time matches ..-129 run scoreboard players add #temp Time 255
+execute if score #dialog Dialog matches 301..400 store result entity @e[tag=mansion_rank_title,limit=1] text_opacity byte 1 run scoreboard players get #temp Time
 execute if score #dialog Dialog matches 361..400 store result score #temp Time run data get entity @e[tag=mansion_rank_description,limit=1] text_opacity
-execute if score #dialog Dialog matches 361..400 store result entity @e[tag=mansion_rank_description,limit=1] text_opacity byte 1 run scoreboard players remove #temp Time 5
+execute if score #dialog Dialog matches 361..400 run scoreboard players remove #temp Time 5
+execute if score #dialog Dialog matches 361..400 if score #temp Time matches ..-129 run scoreboard players add #temp Time 255
+execute if score #dialog Dialog matches 361..400 store result entity @e[tag=mansion_rank_description,limit=1] text_opacity byte 1 run scoreboard players get #temp Time
 execute if score #dialog Dialog matches 400 run tag @e[tag=mansion_rank_title,limit=1] add dead
 execute if score #dialog Dialog matches 400 run tag @e[tag=mansion_rank_description,limit=1] add dead
 execute if score #dialog Dialog matches 450 at @a[tag=same_room,limit=1] run summon minecraft:text_display 786.1 73.3 1.7 {Tags:["mansion_rank_end"],text:{type:"translatable",translate:"luigis_mansion:dialog.mansion_rank.the_end",color:"red"},billboard:"center",line_width:400,background:0,alignment:"right",brightness:{block:15,sky:0},transformation:[0.75f,0f,0f,0f,0f,0.75f,0f,0f,0f,0f,0.75f,0f,0f,0f,0f,1f],text_opacity:-1b}
 execute if score #dialog Dialog matches 601..680 store result score #temp Time run data get entity @e[tag=mansion_rank_end,limit=1] text_opacity
-execute if score #dialog Dialog matches 601..640 store result entity @e[tag=mansion_rank_end,limit=1] text_opacity byte 1 run scoreboard players remove #temp Time 5
-execute if score #dialog Dialog matches 641..680 store result entity @e[tag=mansion_rank_end,limit=1] text_opacity byte 1 run scoreboard players add #temp Time 5
+execute if score #dialog Dialog matches 601..640 run scoreboard players remove #temp Time 5
+execute if score #dialog Dialog matches 641..680 run scoreboard players add #temp Time 5
+execute if score #dialog Dialog matches 601..680 if score #temp Time matches 128.. run scoreboard players remove #temp Time 255
+execute if score #dialog Dialog matches 601..680 if score #temp Time matches ..-129 run scoreboard players add #temp Time 255
+execute if score #dialog Dialog matches 601..680 store result entity @e[tag=mansion_rank_end,limit=1] text_opacity byte 1 run scoreboard players get #temp Time
 execute if score #dialog Dialog matches 640 run function luigis_mansion:dialog/play/mansion_rank/total
 execute if score #dialog Dialog matches ..870 run scoreboard players set @a[tag=same_room,scores={Jukebox=0,Music=1..10}] Music 10
 execute if score #dialog Dialog matches 880 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset

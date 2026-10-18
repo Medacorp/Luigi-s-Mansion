@@ -1,5 +1,4 @@
 execute if score #dialog Dialog matches 331..332 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
-execute if score #dialog Dialog matches 332 if data storage luigis_mansion:data dialogs[0].ending run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 229..330 run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 313..330 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players set #dialog Dialog 331
 execute if score #dialog Dialog matches 273..310 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players set #dialog Dialog 311
@@ -215,11 +214,12 @@ scoreboard players reset #temp Time
 scoreboard players reset #arena Time
 scoreboard players reset #arenas Time
 #331..332
+execute if score #dialog Dialog matches 333 run tag @e[type=minecraft:text_display,scores={Room=-3}] add remove_from_existence
 execute if score #dialog Dialog matches 333 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
 execute if score #dialog Dialog matches 333 unless data storage luigis_mansion:data dialogs[0].ending run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"underground_lab"},room:-1,progress:-1}
 execute if score #dialog Dialog matches 333 unless data storage luigis_mansion:data dialogs[0].ending as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
 execute if score #dialog Dialog matches 333 unless data storage luigis_mansion:data dialogs[0].ending as @a[tag=same_room] run function luigis_mansion:room/underground_lab/warp_to
 execute if score #dialog Dialog matches 333 if data storage luigis_mansion:data dialogs[0].ending run data modify storage luigis_mansion:data dialogs append value {name:{},room:-3,progress:0}
 execute if score #dialog Dialog matches 333 if data storage luigis_mansion:data dialogs[0].ending run data modify storage luigis_mansion:data dialogs[-1].name set from storage luigis_mansion:data dialogs[0].ending
-execute if score #dialog Dialog matches 252 if data storage luigis_mansion:data dialogs[0].ending if data storage luigis_mansion:data dialogs[0].save run data modify storage luigis_mansion:data dialogs[-1].save set value 1b
+execute if score #dialog Dialog matches 333 if data storage luigis_mansion:data dialogs[0].ending if data storage luigis_mansion:data dialogs[0].save run data modify storage luigis_mansion:data dialogs[-1].save set value 1b
 execute if score #dialog Dialog matches 333 run scoreboard players set #dialog Dialog -1

@@ -38,6 +38,7 @@ data modify entity @s[scores={Dialog=242}] data.animation set value {namespace:"
 execute if entity @s[scores={Dialog=242..261}] run teleport @s ^ ^ ^0.1
 scoreboard players set @s[scores={Dialog=282}] VulnerableTime 80
 scoreboard players set @s[scores={Dialog=371}] Dialog 240
+data remove entity @s[scores={Dialog=240},tag=!attack,tag=!laugh] data.animation
 tag @s remove hit_by_swinging_furniture
 execute store result entity @s Pos[1] double 0.01 run scoreboard players get @s HomeY
 
