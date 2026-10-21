@@ -19,10 +19,11 @@ execute if entity @s[scores={AnimationProgress=50..52}] run scoreboard players r
 execute if entity @s[scores={AnimationProgress=53..55}] run scoreboard players remove @s AnimationRotationX 200
 execute if entity @s[scores={AnimationProgress=56..}] run scoreboard players add @s AnimationRotationX 300
 scoreboard players operation #head Time = @s AnimationRotationX
-execute store result entity @s Rotation[1] float 0.1 run scoreboard players remove #head Time 2700
+execute store result entity @s Rotation[1] float 0.1 run scoreboard players remove #head Time 1800
 scoreboard players reset #head Time
 execute at @s[tag=!shrunk,tag=held_item,tag=!flipped_gravity] positioned ^ ^-0.5 ^ run teleport @s ~ ~ ~ ~ ~
 execute at @s[tag=shrunk,tag=held_item,tag=!flipped_gravity] positioned ^ ^-0.25 ^ run teleport @s ~ ~ ~ ~ ~
 execute at @s[tag=!shrunk,tag=held_item,tag=flipped_gravity] positioned ^ ^0.5 ^ run teleport @s ~ ~ ~ ~ ~
 execute at @s[tag=shrunk,tag=held_item,tag=flipped_gravity] positioned ^ ^0.25 ^ run teleport @s ~ ~ ~ ~ ~
+execute positioned as @s run teleport @s ~ ~ ~ ~ ~
 scoreboard players set @s[scores={AnimationProgress=60..}] AnimationProgress 0

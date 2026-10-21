@@ -1,3 +1,13 @@
+3.9.4:
+* Added bent luigi arm and leg models (not applied to animations yet)
+* Added wind warp animation
+* Changed melody pianissima dialogs to make players face her
+* Changed being vacuumed by bowser to now use the wind warp animation
+* Changed being vacuumed by bowser to now focus your camera on bowser, so you understand better what happens
+* Fixed player 1 is blue
+* Fixed mansion rank dialog became non-functional; no clue how this happened
+* Removed bowser's interior faces as the players camera no longer ends up inside him
+
 v3.9.3:
 * Added cold storage noise in the hallway
 * Added "Good night" title to the death animation

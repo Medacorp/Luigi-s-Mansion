@@ -23,6 +23,7 @@ execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run functio
 tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"melody_pianissima"}}},tag=same_room,limit=1] remove freeze_animation
 tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"melody_pianissima"}}},tag=same_room,limit=1] add visible
 execute if score #dialog Dialog matches 1..79 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
+execute if score #dialog Dialog matches 1 as @e[tag=same_room,tag=luigi] run function luigis_mansion:entities/luigi/move/execute {execute:"at @s facing entity @e[nbt={data:{entity:{namespace:'luigis_mansion',id:'melody_pianissima'}}},tag=same_room,limit=1] feet",teleport:"~ ~ ~ ~ 0"}
 execute if score #dialog Dialog matches 80 if data storage luigis_mansion:data current_state.luigis_mansion.current_data.technical_data{melody_pianissima_spoke:1b} run tag @a[tag=same_room,limit=1] add next_dialog_line
 execute if score #dialog Dialog matches 80 if data storage luigis_mansion:data current_state.luigis_mansion.current_data.technical_data{melody_pianissima_spoke:1b} run scoreboard players set #dialog Dialog 83
 execute if score #dialog Dialog matches 80..83 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/high_health_idle_no_sound

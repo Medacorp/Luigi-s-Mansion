@@ -1,0 +1,3 @@
+scoreboard players add @s AnimationProgress 1
+execute if entity @s[scores={AnimationProgress=1}] run function luigis_mansion:entities/luigi/make_sound/force {high:"luigis_mansion:entity.player.show_item.high_health",medium:"luigis_mansion:entity.player.show_item.high_health",low:"luigis_mansion:entity.player.show_item.low_health",duration:80}
+execute if entity @s[scores={AnimationProgress=80}] run function luigis_mansion:entities/luigi/animation/set/none

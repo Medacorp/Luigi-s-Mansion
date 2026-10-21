@@ -42,7 +42,7 @@ execute if score #dialog Dialog matches 381..420 store result entity @e[tag=mans
 execute if score #dialog Dialog matches 430 run tag @e[tag=mansion_rank_title,limit=1] add dead
 execute if score #dialog Dialog matches 430 run tag @e[tag=mansion_rank_description,limit=1] add dead
 execute if score #dialog Dialog matches 480 at @a[tag=same_room,limit=1] run summon minecraft:text_display 786.1 73.6 2.175 {Tags:["mansion_rank_end"],text:{type:"translatable",translate:"luigis_mansion:dialog.mansion_rank.the_end",color:"red"},billboard:"center",line_width:400,background:0,alignment:"right",brightness:{block:15,sky:0},transformation:[0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,1f],text_opacity:25b}
-execute if score #dialog Dialog matches 481..700 ,limit=1] text_opacity
+execute if score #dialog Dialog matches 481..700 store result score #temp Time run data get entity @e[tag=mansion_rank_end,limit=1] text_opacity
 execute if score #dialog Dialog matches 481..520 run scoreboard players add #temp Time 5
 execute if score #dialog Dialog matches 581..620 run scoreboard players remove #temp Time 5
 execute if score #dialog Dialog matches 661..700 run scoreboard players add #temp Time 5
