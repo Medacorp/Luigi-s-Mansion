@@ -1,4 +1,12 @@
-3.9.4:
+???:
+* Added ambient sounds for dripping water, unlike flame particles, these play regardless of being an elemental source
+* Added pipe room noise in the hallway
+* Added the following furniture models:
+** Valves (approach type)
+** Waterfalls (unique type)
+* Changed door locked and door unlock animations to shrink non-arm model pieces, rather than move them backward
+
+v3.9.4:
 * Added bent luigi arm and leg models (not applied to animations yet)
 * Added wind warp animation
 * Changed melody pianissima dialogs to make players face her

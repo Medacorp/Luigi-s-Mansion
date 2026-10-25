@@ -3,6 +3,7 @@ teleport @e[tag=this_entity,limit=1] ~ ~ ~ ~ ~
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeRadius 1
 function luigis_mansion:spawn_furniture/setup/particles
 function luigis_mansion:spawn_furniture/setup/room
+function luigis_mansion:spawn_furniture/setup/sound
 function luigis_mansion:spawn_furniture/setup/tags
 function luigis_mansion:spawn_furniture/setup/position
 execute unless data storage luigis_mansion:data furniture.particles run tag @e[tag=this_entity,limit=1] add remove_from_existence

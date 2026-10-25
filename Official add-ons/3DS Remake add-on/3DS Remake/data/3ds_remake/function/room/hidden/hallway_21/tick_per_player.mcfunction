@@ -8,3 +8,10 @@ execute if data storage luigis_mansion:data current_state.luigis_mansion.current
 execute unless entity @s[tag=!wall_warp,tag=!spectator] if entity @s[tag=!already_ticked] run function 3ds_remake:room/hidden/hallway_21/wall_warp
 
 tag @s add already_ticked
+
+execute unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.technical_data{closed_pipe:1b} run function luigis_mansion:entities/player/run_command_at_model {command:'execute if entity @e[tag=this_luigi,limit=1,x=699,y=1,z=-22,dx=13,dy=7,dz=8] run playsound luigis_mansion:furniture.water.fall block @s[scores={RoomNoise=0}] 706 2 -15 1'}
+execute unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.technical_data{closed_pipe:1b} run function luigis_mansion:entities/player/run_command_at_model {command:'execute if entity @e[tag=this_luigi,limit=1,x=699,y=1,z=-22,dx=13,dy=7,dz=8] run scoreboard players set @s[scores={RoomNoise=0}] 50'}
+function luigis_mansion:entities/player/run_command_at_model {command:'execute unless entity @e[tag=this_luigi,limit=1,x=699,y=1,z=-22,dx=13,dy=7,dz=8] run stopsound @s block luigis_mansion:furniture.water.fall'}
+execute unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.technical_data{closed_pipe:1b} if entity @s[gamemode=spectator,x=699,y=1,z=-22,dx=13,dy=7,dz=8] run playsound luigis_mansion:furniture.water.fall block @s[scores={RoomNoise=0}] 706 2 -15 1
+execute unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.technical_data{closed_pipe:1b} if entity @s[gamemode=spectator,x=699,y=1,z=-22,dx=13,dy=7,dz=8] run scoreboard players set @s[scores={RoomNoise=0}] RoomNoise 50
+execute unless entity @s[x=699,y=1,z=-22,dx=13,dy=7,dz=8] run stopsound @s[gamemode=spectator] block luigis_mansion:furniture.water.fall

@@ -23,7 +23,7 @@ luigis_mansion:chauncey_lets_play                     | Yes         |           
 luigis_mansion:chauncey_opening                       | Yes         |                                                 | Chauncey boss opening                       | 
 luigis_mansion:chauncey_rocking_horse                 | No          |                                                 | Spawn rocking horse                         | Spawns an attacking opening rocking horse
 luigis_mansion:chaunceys_door                         | Yes         | Entity chaunceys_door                           | Camera focus on door with cries             | Technical flag chauncey_cried set
-luigis_mansion:close_pipe                             | Yes         | Room Clear Chest                                | Camera focus on the water flow              | 
+luigis_mansion:close_pipe                             | Yes         | Waterfall                                       | Camera focus on the waterfall               | Technical flag closed_pipe set
 luigis_mansion:collect_item_freeze                    | Yes         | Field collecting_player                         | Freeze game during collect item             | 
 luigis_mansion:collect_item_freeze/not_frozen_item    | No          | Macros namespace and id                         | Unfreeze some items                         | Prevents items in the no_collect_animation from being frozen
 luigis_mansion:credits                                | Yes         | Loaded exterior                                 | Game credits                                | luigis_mansion:mansion_rank

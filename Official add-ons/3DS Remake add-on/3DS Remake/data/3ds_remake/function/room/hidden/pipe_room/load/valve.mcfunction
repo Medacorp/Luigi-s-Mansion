@@ -1,0 +1,4 @@
+data modify storage luigis_mansion:data furniture set value {room:67,shake_animation:["interact"],no_dust:1b,no_long_shake:1b,no_visual_shake:1b,sound:{namespace:"luigis_mansion",id:"metal"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/108"},search_command:'data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"close_pipe"},room:67}'}
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data.technical_data{closed_pipe:1b} run data modify storage luigis_mansion:data furniture merge value {searched:1b,no_search_animation:1b}
+execute unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.technical_data{closed_pipe:1b} run data modify storage luigis_mansion:data furniture.tags set value ["can_approach"]
+execute positioned 688.91 3 10.09 rotated -135 0 run function luigis_mansion:spawn_furniture/valve

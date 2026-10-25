@@ -9827,6 +9827,24 @@
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.search.open"
     },
+    "furniture.valve.close": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/valve/close",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search.open"
+    },
+    "furniture.valve.turn": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/valve/turn",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.search.open"
+    },
     "furniture.washing_machine": {
         "sounds": [
             {
@@ -9835,6 +9853,40 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.search.open"
+    },
+    "furniture.water.fall": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/waterfall",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.water.fall"
+    },
+    "furniture.water.land": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:item/poltergust_3000/expelling/water_land1",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:item/poltergust_3000/expelling/water_land2",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:item/poltergust_3000/expelling/water_land3",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:item/poltergust_3000/expelling/water_land4",
+                "stream": false
+            },
+            {
+                "name": "luigis_mansion:item/poltergust_3000/expelling/water_land5",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.water.land"
     },
     "furniture.weights.drop": {
         "sounds": [

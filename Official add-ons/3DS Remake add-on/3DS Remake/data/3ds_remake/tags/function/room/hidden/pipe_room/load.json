@@ -21,8 +21,9 @@
         "3ds_remake:room/hidden/pipe_room/load/hallway_21_door",
         "3ds_remake:room/hidden/pipe_room/load/frozen_oil_drum",
         "3ds_remake:room/hidden/pipe_room/load/metal_bucket",
-        "3ds_remake:room/hidden/pipe_room/load/pipe",
         "3ds_remake:room/hidden/pipe_room/load/room_clear_chest",
-        "3ds_remake:room/hidden/pipe_room/load/sewage"
+        "3ds_remake:room/hidden/pipe_room/load/sewage",
+        "3ds_remake:room/hidden/pipe_room/load/valve",
+        "3ds_remake:room/hidden/pipe_room/load/waterfall"
     ]
 }

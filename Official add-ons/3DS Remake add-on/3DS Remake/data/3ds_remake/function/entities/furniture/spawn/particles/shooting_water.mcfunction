@@ -7,3 +7,5 @@ execute rotated as @s as @e[tag=temp,limit=1] positioned as @s run teleport @s ~
 execute if entity @s[tag=moist] as @e[tag=temp,limit=1] at @s run function luigis_mansion:entities/furniture/spawn/particles/direct_water {power:0.8f}
 execute if entity @s[tag=moist,scores={MirrorX=-2147483648..}] as @e[tag=temp,limit=1] run function luigis_mansion:entities/furniture/spawn/particles/mirror_x
 execute if entity @s[tag=moist,scores={MirrorZ=-2147483648..}] as @e[tag=temp,limit=1] run function luigis_mansion:entities/furniture/spawn/particles/mirror_z
+execute if entity @s[tag=moist,scores={RoomNoise=0}] run playsound luigis_mansion:furniture.water.land block @a[tag=same_room] ~ ~ ~ 1
+scoreboard players set @s[tag=moist,scores={RoomNoise=0}] RoomNoise 7
