@@ -1,4 +1,4 @@
-data modify storage luigis_mansion:data furniture set value {room:70,roll:50,no_ai:1b,animation:{frozen:1b},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/7"}}
+data modify storage luigis_mansion:data furniture set value {room:70,roll:50,no_ai:1b,animation:{frozen:1b},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/picture_wouldnt_call_art"}}
 execute unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.rooms.guest_room{cleared:1b} run data modify storage luigis_mansion:data furniture.roll set value 1750
 execute unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.rooms.guest_room{cleared:1b} run scoreboard players add #mirrored Selected 1
 execute positioned 746.93 23.5 -52 rotated 90 0 run function luigis_mansion:spawn_furniture/roses_portrait/square

@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {room:8,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/35"}}
+data modify storage luigis_mansion:data furniture set value {room:8,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/who_is_this_supposed_to_be"}}
 execute positioned 711 22.5 -45.93 rotated 0 0 run function luigis_mansion:spawn_furniture/neville_portrait/small

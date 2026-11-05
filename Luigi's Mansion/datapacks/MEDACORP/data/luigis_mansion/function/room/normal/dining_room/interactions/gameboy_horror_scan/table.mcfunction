@@ -1,1 +1,1 @@
-execute if entity @s[x=703.0,y=11,z=33.0,dx=2,dy=0,dz=20] run function luigis_mansion:selection_menu/game_boy_horror/scan/dialog {namespace:"luigis_mansion",id:"scan/scanner/89"}
+execute if entity @s[x=703.0,y=11,z=33.0,dx=2,dy=0,dz=20] run function luigis_mansion:selection_menu/game_boy_horror/scan/dialog {namespace:"luigis_mansion",id:"scan/scanner/candle_on_table_is_weird"}

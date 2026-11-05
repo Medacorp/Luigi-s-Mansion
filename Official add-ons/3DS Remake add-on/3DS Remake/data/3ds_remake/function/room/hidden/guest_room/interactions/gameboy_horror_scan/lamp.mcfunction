@@ -1,2 +1,2 @@
-execute if block 742 21 -52 minecraft:redstone_lamp if entity @s[x=742.0,y=21,z=-52.0,distance=..2] run function luigis_mansion:selection_menu/game_boy_horror/scan/dialog {namespace:"luigis_mansion",id:"scan/scanner/19"}
-execute unless block 742 21 -52 minecraft:redstone_lamp if entity @s[x=742.0,y=26,z=-52.0,distance=..2] run function luigis_mansion:selection_menu/game_boy_horror/scan/dialog {namespace:"luigis_mansion",id:"scan/scanner/19"}
+execute if block 742 21 -52 minecraft:redstone_lamp if entity @s[x=742.0,y=21,z=-52.0,distance=..2] run function luigis_mansion:selection_menu/game_boy_horror/scan/dialog {namespace:"luigis_mansion",id:"scan/scanner/wonder_how_old_this_is"}
+execute unless block 742 21 -52 minecraft:redstone_lamp if entity @s[x=742.0,y=26,z=-52.0,distance=..2] run function luigis_mansion:selection_menu/game_boy_horror/scan/dialog {namespace:"luigis_mansion",id:"scan/scanner/wonder_how_old_this_is"}

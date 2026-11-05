@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {room:13,shake_animation:["interact","vacuum"],no_dust:1b,sound:{namespace:"luigis_mansion",id:"stone"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/80"}}
+data modify storage luigis_mansion:data furniture set value {room:13,shake_animation:["interact","vacuum"],no_dust:1b,sound:{namespace:"luigis_mansion",id:"stone"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/do_boos_wash_their_faces"}}
 execute positioned 662.6 11 40 rotated -90 0 run function luigis_mansion:spawn_furniture/legged_sink

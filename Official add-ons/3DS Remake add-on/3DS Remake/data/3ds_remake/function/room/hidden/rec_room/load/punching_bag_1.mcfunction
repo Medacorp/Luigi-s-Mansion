@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {room:32,searchable:["interact","vacuum","dust","fire","water","ice"],interact_animation:{namespace:"luigis_mansion",id:"enthusiastic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/40"}}
+data modify storage luigis_mansion:data furniture set value {room:32,searchable:["interact","vacuum","dust","fire","water","ice"],interact_animation:{namespace:"luigis_mansion",id:"enthusiastic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/throw_a_few_quick_jabs"}}
 execute positioned 644 18 -47 run function luigis_mansion:spawn_furniture/punching_bag

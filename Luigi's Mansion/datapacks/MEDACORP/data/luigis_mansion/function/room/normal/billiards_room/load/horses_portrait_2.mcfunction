@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {room:47,no_ai:1b,animation:{frozen:1b},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/15"}}
+data modify storage luigis_mansion:data furniture set value {room:47,no_ai:1b,animation:{frozen:1b},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/never_pass_the_white_glove"}}
 execute positioned 686.93 13.5 83.0 rotated 90 0 run function luigis_mansion:spawn_furniture/horses_portrait

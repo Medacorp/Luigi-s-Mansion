@@ -1,1 +1,1 @@
-execute if entity @s[x=756.0,y=29,z=-58.0,dx=2,dy=3,dz=2] unless block ~ ~ ~ minecraft:barrier run function luigis_mansion:selection_menu/game_boy_horror/scan/dialog {namespace:"luigis_mansion",id:"scan/scanner/67"}
+execute if entity @s[x=756.0,y=29,z=-58.0,dx=2,dy=3,dz=2] unless block ~ ~ ~ minecraft:barrier run function luigis_mansion:selection_menu/game_boy_horror/scan/dialog {namespace:"luigis_mansion",id:"scan/scanner/looks_comfortable"}

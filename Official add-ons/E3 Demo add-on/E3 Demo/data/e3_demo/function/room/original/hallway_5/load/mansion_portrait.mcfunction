@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {room:10,roll:50,shake_animation:["interact","vacuum"],no_dust:1b,sound:{namespace:"luigis_mansion",id:"generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/5"}}
+data modify storage luigis_mansion:data furniture set value {room:10,roll:50,shake_animation:["interact","vacuum"],no_dust:1b,sound:{namespace:"luigis_mansion",id:"generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/just_not_my_style"}}
 execute positioned 680.07 14.5 -19 rotated -90 0 run function luigis_mansion:spawn_furniture/mansion_portrait/dark

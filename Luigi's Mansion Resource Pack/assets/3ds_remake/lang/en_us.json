@@ -582,7 +582,7 @@
 "3ds_remake:message.debug.gallery_portrait": "A Gallery Portrait was attempted to be spawned, but it's post-portrait battle position data was missing. The Gallery Portrait is unable to provide portrait battles as a result.",
 "3ds_remake:message.debug.gooigi_fake_door": "Gooigi triggered fake door knockback, this should not be possible!",
 "3ds_remake:message.debug.loot_spawn_fail.game_boy_horror_part": "Spawning of Game Boy Horror part failed: Game Boy Horror part already obtained or exists in the world.",
-"3ds_remake:message.floating_whirlindas.scan.1": "(Let us show this fellow how we dance!)",
+"3ds_remake:message.floating_whirlindas.scan.1": "(Let us show him how we dance!)",
 "3ds_remake:message.floating_whirlindas.scan.1.more": "(Let us show them how we dance!)",
 "3ds_remake:message.gallery.boos": "List of Boos",
 "3ds_remake:message.gallery.portrait_battle.be_in_gallery": "Not all alive players are in the gallery, this is needed to start the battle.",

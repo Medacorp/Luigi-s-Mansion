@@ -5,6 +5,11 @@
 ** Valves (approach type)
 ** Waterfalls (unique type)
 * Changed door locked and door unlock animations to shrink non-arm model pieces, rather than move them backward
+* Changed scan/scanner/* IDs to not use numbers, so it's easier to find what dialog you're looking for
+* Changed scan/entity/e_gadd to scan/scanner/got_the_hang_of_that_thing, so it gets overwritten by Gooigi scans in the 3DS Remake
+* Changed scan/entity/e_gadd (now scan/scanner/got_the_hang_of_that_thing), was said by E. Gadd, rather than the player
+* Fixed gallery angel statue searching requirement also triggered for vacuum searching
+* Fixed (3DS Remake) hallway 3 door scan message was incorrect during area 1
 
 v3.9.4:
 * Added bent luigi arm and leg models (not applied to animations yet)

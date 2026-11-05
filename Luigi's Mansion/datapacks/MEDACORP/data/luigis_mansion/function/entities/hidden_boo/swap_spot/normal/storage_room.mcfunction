@@ -1,4 +1,4 @@
-#Crate 1 (There's supposed to be 7 total, not 8)
+#Crate 1 (There's supposed to be 7 total spots, not 8; crate is far corner isn't hideable)
 summon minecraft:marker 681 11 -66 {Tags:["choice","hide_option"]}
 #Crate 2
 summon minecraft:marker 682 11 -67 {Tags:["choice","hide_option"]}

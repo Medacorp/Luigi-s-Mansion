@@ -1,1 +1,1 @@
-execute if entity @s[x=744.0,y=22,z=-26.0,dx=0,dy=1,dz=2] run function luigis_mansion:selection_menu/game_boy_horror/scan/dialog {namespace:"3ds_remake",id:"scan/scanner/6"}
+execute if entity @s[x=744.0,y=22,z=-26.0,dx=0,dy=1,dz=2] run function luigis_mansion:selection_menu/game_boy_horror/scan/dialog {namespace:"3ds_remake",id:"scan/scanner/air_flow"}

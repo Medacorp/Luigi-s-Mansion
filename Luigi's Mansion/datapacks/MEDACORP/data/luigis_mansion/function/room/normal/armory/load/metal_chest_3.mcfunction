@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {room:64,loot_chance:{namespace:"luigis_mansion",id:"health_dependent_1"},sound:{namespace:"luigis_mansion",id:"heavy_generic"},searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],scan_result:{namespace:"luigis_mansion",id:"scan/scanner/11"}}
+data modify storage luigis_mansion:data furniture set value {room:64,loot_chance:{namespace:"luigis_mansion",id:"health_dependent_1"},sound:{namespace:"luigis_mansion",id:"heavy_generic"},searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],scan_result:{namespace:"luigis_mansion",id:"scan/scanner/not_open_without_asking"}}
 execute positioned 747.7 29 71.0 rotated -100 0 run function luigis_mansion:spawn_furniture/metal_chest

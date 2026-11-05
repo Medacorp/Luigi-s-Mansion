@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {room:14,shake_animation:["interact","vacuum"],no_dust:1b,sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/44"}}
+data modify storage luigis_mansion:data furniture set value {room:14,shake_animation:["interact","vacuum"],no_dust:1b,sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/old_but_still_nice_tone"}}
 execute positioned 699.8 11 30.8 rotated -45 0 run function e3_demo:spawn_furniture/grandfather_clock

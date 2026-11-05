@@ -1,1 +1,1 @@
-execute if entity @s[x=645.5,y=25,z=93.5,distance=..1.5] if block 645 24 93 minecraft:redstone_lamp run function luigis_mansion:selection_menu/game_boy_horror/scan/dialog {namespace:"luigis_mansion",id:"scan/scanner/69"}
+execute if entity @s[x=645.5,y=25,z=93.5,distance=..1.5] if block 645 24 93 minecraft:redstone_lamp run function luigis_mansion:selection_menu/game_boy_horror/scan/dialog {namespace:"luigis_mansion",id:"scan/scanner/thats_interior_decorating"}

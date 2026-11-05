@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {room:9,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/5"}}
+data modify storage luigis_mansion:data furniture set value {room:9,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/just_not_my_style"}}
 execute positioned 695 114.0 -39.93 rotated 0 0 run function luigis_mansion:spawn_furniture/roses_portrait/mixed

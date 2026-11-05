@@ -1,4 +1,4 @@
-data modify storage luigis_mansion:data furniture set value {room:71,shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"concrete"},no_dust:1b,scan_result:{namespace:"luigis_mansion",id:"scan/scanner/25"}}
+data modify storage luigis_mansion:data furniture set value {room:71,shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"concrete"},no_dust:1b,scan_result:{namespace:"luigis_mansion",id:"scan/scanner/hmm_weird"}}
 execute unless data storage luigis_mansion:data current_state.luigis_mansion.current_data{obtained_keys:["secret_altar"]} run data modify storage luigis_mansion:data furniture.loot set value {contents:[{name:{namespace:"luigis_mansion",id:"item/spade_key {door:'secret_altar'}"},variables:{rotation:[0.0f,0.0f]}}]}
 execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data.rooms.the_artists_studio{cleared:1b} run data modify storage luigis_mansion:data furniture merge value {searched:1b,no_search_animation:1b}
 execute if data storage luigis_mansion:data furniture{searched:1b,loot:{}} run data modify storage luigis_mansion:data furniture.tags set value ["full_search"]

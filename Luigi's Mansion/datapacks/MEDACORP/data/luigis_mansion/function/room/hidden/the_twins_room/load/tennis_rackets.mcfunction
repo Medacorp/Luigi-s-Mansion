@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {room:49,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/55"}}
+data modify storage luigis_mansion:data furniture set value {room:49,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/looks_too_ordinary"}}
 execute positioned 748 20 -32.4 rotated -90 -5 run function luigis_mansion:spawn_furniture/tennis_rackets/right_front

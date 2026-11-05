@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data furniture set value {room:25,searchable:["interact"],shake_animation:["interact"],sound:{namespace:"luigis_mansion",id:"drum"},can_hide_boo:1b,scan_result:{namespace:"luigis_mansion",id:"scan/scanner/44"},instrument:{track:"drum_1"}}
+data modify storage luigis_mansion:data furniture set value {room:25,searchable:["interact"],shake_animation:["interact"],sound:{namespace:"luigis_mansion",id:"drum"},can_hide_boo:1b,scan_result:{namespace:"luigis_mansion",id:"scan/scanner/old_but_still_nice_tone"},instrument:{track:"drum_1"}}
 execute positioned 656 11 -13 rotated -67.5 0 run function luigis_mansion:spawn_furniture/drum
