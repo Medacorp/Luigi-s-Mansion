@@ -1,0 +1,2 @@
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/luigi/put_poltergust_away_stylishly/normal/head
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/luigi/put_poltergust_away_stylishly/mirrored/head

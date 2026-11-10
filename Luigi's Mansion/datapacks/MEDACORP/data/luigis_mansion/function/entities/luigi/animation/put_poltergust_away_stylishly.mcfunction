@@ -3,4 +3,5 @@ execute if entity @s[scores={AnimationProgress=1}] run function luigis_mansion:e
 execute if entity @s[scores={AnimationProgress=21}] run function luigis_mansion:entities/luigi/make_sound/simple {sound:"luigis_mansion:entity.player.put_poltergust_away"}
 tag @s[scores={AnimationProgress=26..30}] remove new_poltergust_grabbed
 tag @s[scores={AnimationProgress=26..30}] remove poltergust_grabbed
+tag @s[scores={AnimationProgress=1..25}] add keep_poltergust_grabbed
 execute if entity @s[scores={AnimationProgress=30}] run function luigis_mansion:entities/luigi/animation/set/none

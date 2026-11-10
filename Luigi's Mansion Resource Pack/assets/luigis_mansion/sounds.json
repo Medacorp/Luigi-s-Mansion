@@ -9755,6 +9755,15 @@
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.search"
     },
+    "furniture.sewer": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/sewer",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.sewer"
+    },
     "furniture.stove": {
         "sounds": [
             {

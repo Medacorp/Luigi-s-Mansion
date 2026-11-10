@@ -18,10 +18,10 @@ execute if score #dialog Dialog matches ..147 store result score #temp Time run 
 
 execute if score #dialog Dialog matches 1 run function luigis_mansion:dialog/play/score_results/get_data with storage luigis_mansion:data current_state.luigis_mansion.current_data.mansion_id
 execute if score #dialog Dialog matches 1..22 as @a[tag=same_room] run function luigis_mansion:other/music/set/non_overwritten_silence
-execute if score #dialog Dialog matches 1 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/make_sound/force {high:"luigis_mansion:entity.player.show_item.high_health",medium:"luigis_mansion:entity.player.show_item.high_health",low:"luigis_mansion:entity.player.show_item.low_health",duration:20}
+execute if score #dialog Dialog matches 1.. as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/check_results
 execute if score #dialog Dialog matches 1 as @a[tag=same_room] run playsound luigis_mansion:ambience.spotlight ambient @s ~ ~ ~ 1
-execute if score #dialog Dialog matches 23 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/move/teleport {teleport:"757 77 -7 170 0"}
-execute if score #dialog Dialog matches 23..251 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"762 78.5 -10 90 0"}
+execute if score #dialog Dialog matches 41 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/move/teleport {teleport:"757 77 -7 170 0"}
+execute if score #dialog Dialog matches 41..251 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"762 78.5 -10 90 0"}
 execute if score #dialog Dialog matches 23 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
 execute if score #dialog Dialog matches 23..1338 as @a[tag=same_room] run function luigis_mansion:other/music/set/portraits
 execute if score #dialog Dialog matches 23 run fill 754 77 -13 754 82 -10 minecraft:brown_mushroom_block[north=false,east=false,south=false,west=false,up=false,down=false]
@@ -139,6 +139,7 @@ execute as @e[type=minecraft:text_display,scores={Room=-3}] run function luigis_
 scoreboard players reset #temp Time
 #250..251
 execute if score #dialog Dialog matches 252 run tag @e[type=minecraft:text_display,scores={Room=-3}] add remove_from_existence
+execute if score #dialog Dialog matches 252 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 252 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
 execute if score #dialog Dialog matches 252 unless data storage luigis_mansion:data dialogs[0].ending run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"underground_lab"},room:-1,progress:-1}
 execute if score #dialog Dialog matches 252 unless data storage luigis_mansion:data dialogs[0].ending as @a[tag=same_room] run function luigis_mansion:other/music/set/silence

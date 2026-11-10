@@ -23,6 +23,8 @@ execute if score #dialog Dialog matches 20 if data storage luigis_mansion:data d
 execute if score #dialog Dialog matches 20 if data storage luigis_mansion:data dialogs[0].3ds_remake run data remove storage luigis_mansion:data furniture
 execute if score #dialog Dialog matches 21..60 if data storage luigis_mansion:data current_state.3ds_remake.trophy.master{done:0b} at @e[tag=trophy_base,limit=1] run particle minecraft:wax_off ~ ~2 ~ 2 2 2 0 5 normal @a[tag=same_room]
 execute if score #dialog Dialog matches 21..60 if data storage luigis_mansion:data current_state.3ds_remake.trophy.master{done:1b} at @e[tag=trophy_base,limit=1] run particle minecraft:wax_on ~ ~2 ~ 2 2 2 0 5 normal @a[tag=same_room]
-execute if score #dialog Dialog matches 60 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 60 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/reset
+execute if score #dialog Dialog matches 61 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"^ ^0.25 ^3 ~-180 5"}
+execute if score #dialog Dialog matches 61..129 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/celebrate
+execute if score #dialog Dialog matches 130 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/none
 execute if score #dialog Dialog matches 60 run scoreboard players set #dialog Dialog -1

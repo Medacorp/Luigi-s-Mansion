@@ -1,14 +1,31 @@
 ???:
 * Added ambient sounds for dripping water, unlike flame particles, these play regardless of being an elemental source
 * Added pipe room noise in the hallway
+* Added animations:
+** Celebrate (3DS Remake overwrites to non-looping)
+** Check results
+** Put poltergust away stylishly
+** Turn valve
 * Added the following furniture models:
 ** Valves (approach type)
+** Sewers (unique type)
+** (E3 Demo) Table mounted tea set and candelabras (unused; see in prerelease sitting room screenshot, only difference with final is the candle)
 ** Waterfalls (unique type)
 * Changed door locked and door unlock animations to shrink non-arm model pieces, rather than move them backward
 * Changed scan/scanner/* IDs to not use numbers, so it's easier to find what dialog you're looking for
 * Changed scan/entity/e_gadd to scan/scanner/got_the_hang_of_that_thing, so it gets overwritten by Gooigi scans in the 3DS Remake
 * Changed scan/entity/e_gadd (now scan/scanner/got_the_hang_of_that_thing), was said by E. Gadd, rather than the player
+* Changed credits, mansion rank and (3DS Remake) Gooigi results dialogs to despawn Luigi, like the title screen
+* Fixed search/knock animation didn't tilt the poltergust body like the chest
 * Fixed gallery angel statue searching requirement also triggered for vacuum searching
+* Fixed chauncey's intro briefly put the camera inside a block
+* Fixed chauncey's intro rocking horses overstayed their welcome
+* Fixed chauncey's first two rocking horses might not attack depending on timing
+* Fixed wooden cabinet mounted wooden colorful candelabra had 2 minor modeling mistakes
+* Fixed standing on frozen sewer didn't make Luigi use cold room idle animation
+* Fixed close pipe dialog didn't put Luigi in the high health idle animation for a bit
+* Fixed wide yellow portrait frame was slightly offset from the image
+* Fixed king boo portrait's plaque was misrotated
 * Fixed (3DS Remake) hallway 3 door scan message was incorrect during area 1
 
 v3.9.4:

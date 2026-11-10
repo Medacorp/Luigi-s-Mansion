@@ -6,11 +6,7 @@ execute unless score #dialog Dialog matches 880 unless score #exterior Ticking m
 execute unless score #dialog Dialog matches 880 unless score #exterior Ticking matches 1 run return 0
 
 scoreboard players add #dialog Dialog 1
-tag @e[tag=same_room,tag=player,type=!minecraft:player] add no_ai
-tag @e[tag=same_room,tag=player,type=!minecraft:player] add no_ai_dialog
-tag @e[tag=same_room,tag=player,type=!minecraft:player] add freeze_animation
-tag @e[tag=same_room,tag=player,type=!minecraft:player] add freeze_animation_dialog
-tag @e[tag=same_room,tag=player,type=!minecraft:player] add applied_dialog_effects
+tag @a[tag=same_room] add camera
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 execute if score #dialog Dialog matches 1..259 run scoreboard players set @a[tag=same_room,scores={Jukebox=0}] Music 10000

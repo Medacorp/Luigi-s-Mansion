@@ -1,0 +1,2 @@
+execute if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/luigi/turn_valve/normal/poltergust_body
+execute if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/luigi/turn_valve/normal_flipped/poltergust_body

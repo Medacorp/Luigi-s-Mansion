@@ -6,11 +6,7 @@ execute unless score #exterior Ticking matches 1 run tag @e[tag=same_room] add a
 execute unless score #exterior Ticking matches 1 run return 0
 
 scoreboard players add #dialog Dialog 1
-tag @e[tag=same_room,tag=player,type=!minecraft:player] add no_ai
-tag @e[tag=same_room,tag=player,type=!minecraft:player] add no_ai_dialog
-tag @e[tag=same_room,tag=player,type=!minecraft:player] add freeze_animation
-tag @e[tag=same_room,tag=player,type=!minecraft:player] add freeze_animation_dialog
-tag @e[tag=same_room,tag=player,type=!minecraft:player] add applied_dialog_effects
+tag @a[tag=same_room] add camera
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 execute if score #dialog Dialog matches 1..259 run scoreboard players set @a[tag=same_room,scores={Jukebox=0}] Music 10000
@@ -56,7 +52,8 @@ execute if score #dialog Dialog matches 860 run tag @e[tag=mansion_rank_end,limi
 execute if score #dialog Dialog matches 860 run function luigis_mansion:dialog/play/mansion_rank/clear_mansion
 execute if score #dialog Dialog matches 860 if data storage luigis_mansion:data dialogs[0].save run function #luigis_mansion:save_data with storage luigis_mansion:data current_state
 execute if score #dialog Dialog matches 860 run function luigis_mansion:room/load_exterior {namespace:"luigis_mansion",id:"mansion"}
-execute if score #dialog Dialog matches 860 run tag @a add show_credits
+execute if score #dialog Dialog matches 860 run tag @a[tag=same_room] remove camera
+execute if score #dialog Dialog matches 860 run tag @a[tag=same_room] add show_credits
 execute if score #dialog Dialog matches 860 run function luigis_mansion:data/back_to_title
 execute if score #dialog Dialog matches 860 run scoreboard players set #dialog Dialog -1
 scoreboard players reset #temp Time

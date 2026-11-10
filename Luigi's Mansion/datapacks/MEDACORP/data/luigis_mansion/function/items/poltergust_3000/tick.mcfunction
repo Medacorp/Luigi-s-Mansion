@@ -12,6 +12,9 @@ tag @s[tag=capturing_ghost] add poltergust_selected
 tag @s[tag=capturing_ghost] remove expelling
 tag @s remove exploding_poltergust_effect
 tag @s remove is_pulling
+tag @s[tag=caught_portrait_ghost_2] remove caught_portrait_ghost
+tag @s[tag=caught_portrait_ghost_2] remove caught_portrait_ghost_2
+tag @s[tag=caught_portrait_ghost] add caught_portrait_ghost_2
 tag @s remove catch_portrait_ghost
 tag @s remove catch_ghost
 execute if entity @s[tag=poltergust_floor_sound] run function luigis_mansion:entities/luigi/make_sound/simple {sound:"luigis_mansion:item.poltergust_3000.hit_floor"}

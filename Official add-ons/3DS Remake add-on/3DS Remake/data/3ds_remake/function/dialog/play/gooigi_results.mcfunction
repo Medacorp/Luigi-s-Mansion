@@ -12,8 +12,7 @@ execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run functio
 tag @e[tag=e_gadd,tag=same_room,limit=1] remove freeze_animation
 tag @e[tag=gooigi,tag=same_room,limit=1] remove no_ai
 tag @e[tag=gooigi,tag=same_room,limit=1] remove freeze_animation
-tag @e[tag=luigi,tag=same_room] remove no_ai
-tag @e[tag=luigi,tag=same_room] remove freeze_animation
+tag @a[tag=same_room] add camera
 execute if score #dialog Dialog matches 1..5 as @e[tag=luigi,tag=same_room] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[5f,0f,0f,0f],tracker:[]}
 execute if score #dialog Dialog matches 6.. as @e[tag=luigi,tag=same_room] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[0f,0f,0f,0f],tracker:[]}
 execute if score #dialog Dialog matches 1..10 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/game_boy_horror
@@ -55,6 +54,7 @@ execute if score #dialog Dialog matches 10 if entity @a[tag=same_room,tag=next_d
 execute if score #dialog Dialog matches 11..12 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 11 run function luigis_mansion:dialog/play/mansion_rank/clear_mansion
 execute if score #dialog Dialog matches 12 if data storage luigis_mansion:data dialogs[0].save run function #luigis_mansion:save_data with storage luigis_mansion:data current_state
-execute if score #dialog Dialog matches 12 run tag @a add show_credits
+execute if score #dialog Dialog matches 12 run tag @a[tag=same_room] remove camera
+execute if score #dialog Dialog matches 12 run tag @a[tag=same_room] add show_credits
 execute if score #dialog Dialog matches 12 run function luigis_mansion:data/back_to_title
 execute if score #dialog Dialog matches 12 run scoreboard players set #dialog Dialog -1

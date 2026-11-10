@@ -25,6 +25,7 @@ execute if entity @a[tag=gooigi] if entity @a[tag=gooigi,distance=0.1..,limit=1]
 title @s[tag=!looking_at_map] times 40 40 40
 title @s[tag=looking_at_map] times 0 40 40
 tag @s add warn_for_add_ons
+tag @s remove camera
 
 function #luigis_mansion:login_data_sync
 function #luigis_mansion:upgrade_path

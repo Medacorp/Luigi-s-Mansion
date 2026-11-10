@@ -2,11 +2,7 @@ execute unless score #exterior Ticking matches 1 run tag @e[tag=same_room] add a
 execute unless score #exterior Ticking matches 1 run return 0
 
 scoreboard players add #dialog Dialog 1
-tag @e[tag=same_room,tag=player,type=!minecraft:player] add no_ai
-tag @e[tag=same_room,tag=player,type=!minecraft:player] add no_ai_dialog
-tag @e[tag=same_room,tag=player,type=!minecraft:player] add freeze_animation
-tag @e[tag=same_room,tag=player,type=!minecraft:player] add freeze_animation_dialog
-tag @e[tag=same_room,tag=player,type=!minecraft:player] add applied_dialog_effects
+tag @a[tag=same_room] add camera
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 execute if score #dialog Dialog matches 1.. as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"795.0 75 2.0 90 0"}

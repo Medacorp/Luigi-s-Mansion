@@ -5,4 +5,5 @@ execute if data storage luigis_mansion:data current_state.luigis_mansion.current
 execute store result score #temp Boos run data get storage luigis_mansion:data current_state.luigis_mansion.current_data.boo_counter
 execute store result storage luigis_mansion:data current_state.luigis_mansion.current_data.boo_counter int 1 run scoreboard players add #temp Boos 1
 scoreboard players reset #temp Boos
-execute if entity @s[nbt=!{data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"caught_boo"},progress:0}
+execute if entity @s[nbt=!{data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}}] run data modify storage luigis_mansion:data dialogs append value {name:{namespace:"luigis_mansion",id:"caught_boo"},progress:0,player:0}
+execute if entity @s[nbt=!{data:{entity:{namespace:"luigis_mansion",id:"boolossus"}}}] store result storage luigis_mansion:data dialogs[-1].player int 1 run scoreboard players get @e[tag=luigi,tag=killer,limit=1] ID

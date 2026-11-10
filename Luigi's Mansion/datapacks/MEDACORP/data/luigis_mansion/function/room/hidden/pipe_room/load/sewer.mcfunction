@@ -1,0 +1,4 @@
+data modify storage luigis_mansion:data furniture set value {room:67,searchable:["ice"],cannot_search_when_open:1b,no_dust:1b}
+execute unless data storage luigis_mansion:data current_state.luigis_mansion.current_data.technical_data{froze_sewage:1b} run data modify storage luigis_mansion:data furniture.search_command set value "data modify storage luigis_mansion:data current_state.luigis_mansion.current_data.technical_data.froze_sewage set value 1b"
+execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data.technical_data{froze_sewage:1b} run data modify storage luigis_mansion:data furniture merge value {searched:1b,no_search_animation:1b}
+execute positioned 691 2.5 8 rotated -90 0 run function luigis_mansion:spawn_furniture/sewer/left_corner

@@ -5,3 +5,4 @@ tag @s remove captured
 tag @s add dead
 tag @e[tag=me,limit=1] add capturing_ghost
 execute if entity @s[tag=ghost,tag=!vacuumable] as @e[tag=me,limit=1] run function luigis_mansion:entities/luigi/make_sound/force {high:"luigis_mansion:entity.player.capture.high_health",medium:"luigis_mansion:entity.player.capture.high_health",low:"luigis_mansion:entity.player.capture.low_health",duration:20}
+execute if entity @s[tag=portrait_ghost_pop] run tag @e[tag=me,limit=1] add caught_portrait_ghost

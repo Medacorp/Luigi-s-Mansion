@@ -9,6 +9,7 @@ scoreboard players reset @s[tag=capturing_ghost] PoltergustEscapes
 scoreboard players set @s[tag=capturing_ghost] Invulnerable 2
 tag @s[tag=capturing_ghost] remove grabbed
 tag @s remove capturing_ghost
+tag @s remove capturing_ghost
 execute store result storage luigis_mansion:data macro.id int 1 run scoreboard players get #temp ID
 function e3_demo:items/poltergust_500/attacking_ghost with storage luigis_mansion:data macro
 execute if score #temp GhostCount > @s GhostCount run scoreboard players operation @s GhostCount = #temp GhostCount

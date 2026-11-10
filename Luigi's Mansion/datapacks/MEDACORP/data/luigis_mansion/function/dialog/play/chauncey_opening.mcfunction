@@ -8,8 +8,8 @@ execute if score #dialog Dialog matches 1..139 as @e[tag=luigi,tag=same_room] ru
 execute if score #dialog Dialog matches 1 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @e[tag=ghost,tag=same_room,limit=1] rotated ~ 0",teleport:"^ ^6.75 ^11 ~ -45"}
 execute if score #dialog Dialog matches 1..20 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @s rotated ~ 0 positioned ^ ^-0.0125 ^-0.0125 rotated as @s",teleport:"^ ^ ^ ~ ~2.25"}
 execute if score #dialog Dialog matches 21..40 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @s rotated ~ 0 positioned ^ ^ ^-0.2 rotated as @s",teleport:"^ ^ ^ ~ ~"}
-execute if score #dialog Dialog matches 41..60 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @s rotated ~ 0 positioned ^ ^-0.025 ^-0.2 rotated as @s",teleport:"^ ^ ^ ~ ~-1"}
-execute if score #dialog Dialog matches 61..90 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @s rotated ~ 0 positioned ^ ^0.025 ^0.2 rotated as @s",teleport:"^ ^ ^ ~ ~0.5"}
+execute if score #dialog Dialog matches 41..60 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @s rotated ~ 0 positioned ^ ^-0.025 ^-0.1 rotated as @s",teleport:"^ ^ ^ ~ ~-1"}
+execute if score #dialog Dialog matches 61..90 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @s rotated ~ 0 positioned ^ ^0.025 ^0.1333 rotated as @s",teleport:"^ ^ ^ ~ ~0.5"}
 execute if score #dialog Dialog matches 91..120 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/teleport {teleport:"^ ^ ^ ~ ~"}
 execute if score #dialog Dialog matches 121 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @e[tag=ghost,tag=same_room,limit=1] rotated ~ 0",teleport:"^ ^12 ^6 ~ 45"}
 execute if score #dialog Dialog matches 121..140 as @a[tag=same_room] run function luigis_mansion:entities/player/camera/execute {execute:"at @s rotated ~ 0 positioned ^ ^-0.1 ^0.04 rotated as @s",teleport:"^ ^ ^ ~ ~-0.9"}
@@ -58,6 +58,7 @@ execute if score #dialog Dialog matches 179 as @e[tag=luigi,tag=same_room] run f
 execute if score #dialog Dialog matches 180 as @e[tag=luigi,tag=same_room] at @e[tag=ghost,tag=same_room,limit=1] run function luigis_mansion:entities/luigi/animation/set/scare/bash_no_move
 execute if score #dialog Dialog matches 180..669 run scoreboard players set @e[tag=luigi,tag=same_room,scores={AnimationProgress=30..}] AnimationProgress 29
 execute if score #dialog Dialog matches 340 run tag @e[tag=ghost,tag=same_room,limit=1] add visible
+execute if score #dialog Dialog matches 359 run tag @e[tag=rocking_horse,tag=same_room] add dead
 execute if score #dialog Dialog matches 341..440 as @e[tag=ghost,tag=same_room,limit=1] at @s run teleport @s ^ ^0.1 ^
 execute if score #dialog Dialog matches 441..470 as @e[tag=ghost,tag=same_room,limit=1] at @s run teleport @s ^ ^ ^0.1
 execute if score #dialog Dialog matches 471..480 as @e[tag=ghost,tag=same_room,limit=1] at @s run teleport @s ^ ^-0.1 ^0.1

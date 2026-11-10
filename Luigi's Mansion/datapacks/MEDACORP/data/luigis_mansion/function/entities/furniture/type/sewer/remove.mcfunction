@@ -1,0 +1,110 @@
+execute if entity @s[tag=!left_corner] positioned ^-3 ^1 ^3 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^-3 ^1 ^2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^-3 ^1 ^1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^-2 ^1 ^3 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^-2 ^1 ^2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^-2 ^1 ^1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^-1 ^1 ^3 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^-1 ^1 ^2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^-1 ^1 ^1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^3 ^1 ^3 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^3 ^1 ^2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^3 ^1 ^1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^2 ^1 ^3 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^2 ^1 ^2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^2 ^1 ^1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^1 ^1 ^3 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^1 ^1 ^2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^1 ^1 ^1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute positioned ^ ^1 ^3 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute positioned ^ ^1 ^2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute positioned ^ ^1 ^1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute positioned ^ ^1 ^ if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^1 ^1 ^2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^1 ^1 ^1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^2 ^1 ^2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^2 ^1 ^1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^3 ^1 ^ if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^2 ^1 ^ if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^1 ^1 ^ if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^3 ^1 ^-1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^2 ^1 ^-1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^1 ^1 ^-1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^3 ^1 ^-2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^2 ^1 ^-2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^1 ^1 ^-2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^3 ^1 ^-3 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^2 ^1 ^-3 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^1 ^1 ^-3 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^-1 ^1 ^2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^-1 ^1 ^1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^-2 ^1 ^2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^-2 ^1 ^1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^-3 ^1 ^ if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^-2 ^1 ^ if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^-1 ^1 ^ if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^-3 ^1 ^-1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^-2 ^1 ^-1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^-1 ^1 ^-1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^-3 ^1 ^-2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^-2 ^1 ^-2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^-1 ^1 ^-2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^-3 ^1 ^-3 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^-2 ^1 ^-3 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^-1 ^1 ^-3 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+
+execute if entity @s[tag=!left_corner] positioned ^-3 ^2 ^3 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^-3 ^2 ^2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^-3 ^2 ^1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^-2 ^2 ^3 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^-2 ^2 ^2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^-2 ^2 ^1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^-1 ^2 ^3 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^-1 ^2 ^2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^-1 ^2 ^1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^3 ^2 ^3 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^3 ^2 ^2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^3 ^2 ^1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^2 ^2 ^3 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^2 ^2 ^2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^2 ^2 ^1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^1 ^2 ^3 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^1 ^2 ^2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^1 ^2 ^1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute positioned ^ ^2 ^3 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute positioned ^ ^2 ^2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute positioned ^ ^2 ^1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute positioned ^ ^2 ^ if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^1 ^2 ^2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^1 ^2 ^1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^2 ^2 ^2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^2 ^2 ^1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^3 ^2 ^ if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^2 ^2 ^ if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^1 ^2 ^ if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^3 ^2 ^-1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^2 ^2 ^-1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^1 ^2 ^-1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^3 ^2 ^-2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^2 ^2 ^-2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^1 ^2 ^-2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^3 ^2 ^-3 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^2 ^2 ^-3 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=!left_corner] positioned ^1 ^2 ^-3 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^-1 ^2 ^2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^-1 ^2 ^1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^-2 ^2 ^2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^-2 ^2 ^1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^-3 ^2 ^ if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^-2 ^2 ^ if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^-1 ^2 ^ if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^-3 ^2 ^-1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^-2 ^2 ^-1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^-1 ^2 ^-1 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^-3 ^2 ^-2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^-2 ^2 ^-2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^-1 ^2 ^-2 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^-3 ^2 ^-3 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^-2 ^2 ^-3 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+execute if entity @s[tag=left_corner] positioned ^-1 ^2 ^-3 if block ~ ~ ~ minecraft:barrier run setblock ~ ~ ~ minecraft:air
+tag @s remove placed_barriers

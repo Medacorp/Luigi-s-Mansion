@@ -1,1 +1,0 @@
-execute if data storage luigis_mansion:data current_state.luigis_mansion.current_data.technical_data{froze_sewage:1b} run function 3ds_remake:room/hidden/pipe_room/freeze_sewage

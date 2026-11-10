@@ -1,3 +1,7 @@
+execute store result score #temp ID run data get storage luigis_mansion:data dialogs[0].player
+execute as @e[tag=luigi,tag=same_room] if score @s ID = #temp ID run tag @s add boss_catching_player
+scoreboard players reset #temp ID
+
 execute if score #dialog Dialog matches 132 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 131 if entity @a[tag=same_room,tag=!using_selection_menu,limit=1] run scoreboard players add #dialog Dialog 1
 execute if score #dialog Dialog matches 130 if entity @a[tag=same_room,tag=gallery_portrait_menu,limit=1] run scoreboard players add #dialog Dialog 1
@@ -11,7 +15,9 @@ execute if score #dialog Dialog matches 133.. as @a[tag=same_room,tag=dialog_men
 scoreboard players reset @a[tag=same_room,tag=!spectator] WarpTime
 execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run function luigis_mansion:selection_menu/game_boy_horror/exit
 
-execute if score #dialog Dialog matches 1..132 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
+execute if score #dialog Dialog matches 1..30 as @e[tag=boss_catching_player,limit=1] run function luigis_mansion:entities/luigi/animation/set/put_poltergust_away_stylishly
+execute if score #dialog Dialog matches 31..99 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/celebrate
+execute if score #dialog Dialog matches 101..132 as @e[tag=luigi,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 1..132 as @a[tag=same_room] run function luigis_mansion:other/music/set/area_clear
 execute if score #dialog Dialog matches 70 run title @a[tag=same_room] title {type:"translatable",translate:"3ds_remake:message.gallery.portrait_battle.clear"}
 execute if score #dialog Dialog matches 130..132 as @a[tag=same_room] run function luigis_mansion:other/music/set/portraits
@@ -20,3 +26,4 @@ execute if score #dialog Dialog matches 133 as @e[tag=luigi,tag=same_room] run f
 execute if score #dialog Dialog matches 133 as @a[tag=same_room] run function luigis_mansion:other/music/set/silence
 execute if score #dialog Dialog matches 133 run function 3ds_remake:selection_menu/gallery_portrait/end_portrait_battle with storage luigis_mansion:data current_state.luigis_mansion.current_data.portrait_battle.position
 execute if score #dialog Dialog matches 133 run scoreboard players set #dialog Dialog -1
+tag @e[tag=boss_catching_player,limit=1] remove boss_catching_player
