@@ -4,7 +4,6 @@ execute if entity @s[scores={Room=8}] run function luigis_mansion:entities/hidde
 execute if entity @s[scores={Room=9}] run function luigis_mansion:entities/hidden_boo/swap_spot/normal/master_bedroom
 execute if entity @s[scores={Room=10}] run function luigis_mansion:entities/hidden_boo/swap_spot/normal/nursery
 execute if entity @s[scores={Room=17}] run function luigis_mansion:entities/hidden_boo/swap_spot/normal/ball_room
-execute if entity @s[scores={Room=18}] run function luigis_mansion:entities/hidden_boo/swap_spot/normal/storage_room
 execute if entity @s[scores={Room=20}] run function luigis_mansion:entities/hidden_boo/swap_spot/normal/fortune_tellers_room
 execute if entity @s[scores={Room=21}] run function luigis_mansion:entities/hidden_boo/swap_spot/normal/mirror_room
 execute if entity @s[scores={Room=22}] run function luigis_mansion:entities/hidden_boo/swap_spot/normal/laundry_room
@@ -27,7 +26,6 @@ execute if entity @s[scores={Room=57}] run function luigis_mansion:entities/hidd
 execute if entity @s[scores={Room=58}] run function luigis_mansion:entities/hidden_boo/swap_spot/normal/cellar
 execute if entity @s[scores={Room=62}] run function luigis_mansion:entities/hidden_boo/swap_spot/normal/clockwork_room
 execute if entity @s[scores={Room=64}] run function luigis_mansion:entities/hidden_boo/swap_spot/normal/armory
-execute if entity @s[scores={Room=67}] run function luigis_mansion:entities/hidden_boo/swap_spot/normal/pipe_room
 execute if entity @s[scores={Room=68}] run function luigis_mansion:entities/hidden_boo/swap_spot/normal/cold_storage
 execute if entity @s[scores={Room=69}] run function luigis_mansion:entities/hidden_boo/swap_spot/normal/sitting_room
 execute if entity @s[scores={Room=70}] run function luigis_mansion:entities/hidden_boo/swap_spot/normal/guest_room

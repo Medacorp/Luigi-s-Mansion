@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:50,no_ai:1b,animation:{frozen:1b}}
+execute positioned 734.8 29 70.9 rotated -80 0 run function 3ds_remake:spawn_furniture/crate/reinforced

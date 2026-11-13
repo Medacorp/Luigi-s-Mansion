@@ -2,8 +2,6 @@
     "values": [
         "luigis_mansion:room/normal/cellar/reset/unload",
         "#luigis_mansion:room/normal/cellar/turn_lights/off",
-        "luigis_mansion:room/normal/cellar/reset/box_1",
-        "luigis_mansion:room/normal/cellar/reset/box_2",
         "luigis_mansion:room/normal/cellar/reset/room_clear_chest",
         "luigis_mansion:room/normal/cellar/reset/lamp",
         "luigis_mansion:room/normal/cellar/reset/shelf_1",

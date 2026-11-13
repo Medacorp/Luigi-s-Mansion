@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:50,no_ai:1b,animation:{frozen:1b}}
+execute positioned 734.8 29 -54.9 rotated -100 0 run function luigis_mansion:spawn_furniture/crate/slash

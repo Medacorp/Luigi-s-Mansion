@@ -2,8 +2,6 @@ summon minecraft:item_display ~ ~ ~ {CustomName:{type:"translatable",translate:"
 teleport @e[tag=this_entity,limit=1] ~ ~ ~ ~ ~
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeWidth 6
 scoreboard players set @e[tag=this_entity,limit=1] FurnitureSizeHeight 6
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureXOrigin 0
-scoreboard players set @e[tag=this_entity,limit=1] FurnitureZOrigin 0
 function luigis_mansion:spawn_furniture/setup/default
 tag @e[tag=this_entity,limit=1] remove this_entity
 data remove storage luigis_mansion:data furniture

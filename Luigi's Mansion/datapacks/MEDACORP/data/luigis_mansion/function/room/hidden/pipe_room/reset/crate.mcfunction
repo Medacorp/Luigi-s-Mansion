@@ -1,1 +1,0 @@
-scoreboard players reset #pipe_room_crate

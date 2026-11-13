@@ -1,8 +1,6 @@
 {
     "values": [
         "luigis_mansion:room/hidden/pipe_room/reset/unload",
-        "#luigis_mansion:room/hidden/pipe_room/turn_lights/off",
-        "luigis_mansion:room/hidden/pipe_room/reset/crate",
         "luigis_mansion:room/hidden/pipe_room/reset/room_clear_chest"
     ]
 }

@@ -1,8 +1,6 @@
 {
     "values": [
         "3ds_remake:room/hidden/cold_storage/reset/unload",
-        "3ds_remake:room/hidden/cold_storage/reset/crate_1",
-        "3ds_remake:room/hidden/cold_storage/reset/crate_2",
         "3ds_remake:room/hidden/cold_storage/reset/junk",
         "3ds_remake:room/hidden/cold_storage/reset/room_clear_chest",
         "3ds_remake:room/hidden/cold_storage/reset/shelf_1",

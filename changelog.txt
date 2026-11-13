@@ -7,6 +7,15 @@
 ** Put poltergust away stylishly
 ** Turn valve
 * Added the following furniture models:
+** Bags
+** Crates
+** (3DS Remake) Crate mounted bag and buckets
+** Crate mounted bags
+** Crate mounted gas powered lanterns
+** Frozen crates
+** Gas powered lanterns
+** (3DS Remake) Metal buckets
+** (3DS Remake) Present wrapped crates
 ** Valves (approach type)
 ** Sewers (unique type)
 ** (E3 Demo) Table mounted tea set and candelabras (unused; see in prerelease sitting room screenshot, only difference with final is the candle)
@@ -27,6 +36,8 @@
 * Fixed wide yellow portrait frame was slightly offset from the image
 * Fixed king boo portrait's plaque was misrotated
 * Fixed (3DS Remake) hallway 3 door scan message was incorrect during area 1
+* Fixed (3DS Remake) active buttons didn't glow
+* Fixed (E3 Demo) bad installation doesn't stop the original mansion from being selectable
 
 v3.9.4:
 * Added bent luigi arm and leg models (not applied to animations yet)

@@ -1,4 +1,4 @@
 data modify storage luigis_mansion:data furniture set value {room:18,loot_chance:{namespace:"3ds_remake",id:"health_dependent_1"},searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"metal"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/handy_in_case_of_fire"}}
 execute unless data storage luigis_mansion:data current_state.luigis_mansion.current_data{money_spawned:["storage_room_metal_bucket"]} run data modify storage luigis_mansion:data furniture.loot set value {name:"storage_room_metal_bucket"}
 execute unless data storage luigis_mansion:data current_state.luigis_mansion.current_data{money_spawned:["storage_room_metal_bucket"]} run data modify storage luigis_mansion:data furniture.loot.contents set from storage luigis_mansion:data current_state.luigis_mansion.current_data.loot_collections.furniture.5_gold_coins
-execute positioned 681 11 -55 rotated -135 0 run function luigis_mansion:spawn_furniture/metal_bucket
+execute positioned 681 11 -55 rotated -135 0 run function 3ds_remake:spawn_furniture/metal_bucket/right_cloth

@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:58,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/never_pass_the_white_glove"}}
+execute positioned 738.0 2 60.0 rotated 0 0 run function luigis_mansion:spawn_furniture/crate/mounted_bags/back_right

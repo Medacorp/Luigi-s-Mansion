@@ -1,0 +1,1 @@
+{"model":{"type":"minecraft:condition","property":"minecraft:custom_model_data","index":0,"on_false":{"type":"minecraft:model","model":"3ds_remake:furniture/crate/present_wrapped_right_tilt"},"on_true":{"type":"minecraft:model","model":"3ds_remake:furniture/crate/present_wrapped_left_tilt"}}}

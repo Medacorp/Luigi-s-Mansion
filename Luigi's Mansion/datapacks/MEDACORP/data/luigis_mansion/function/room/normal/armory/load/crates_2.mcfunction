@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:64,sound:{namespace:"luigis_mansion",id:"heavy_generic"},searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],scan_result:{namespace:"luigis_mansion",id:"scan/scanner/nothing_unusual_boring"}}
+execute positioned 749 29 75.7 rotated -180 0 run function luigis_mansion:spawn_furniture/crate/three/line_slash

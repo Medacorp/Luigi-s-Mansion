@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:50,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],no_visual_shake:1b,sound:{namespace:"luigis_mansion",id:"heavy_generic"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/looks_too_ordinary"}}
+execute positioned 736.2 30.37 -54.3 rotated -90 0 run function 3ds_remake:spawn_furniture/crate/reinforced

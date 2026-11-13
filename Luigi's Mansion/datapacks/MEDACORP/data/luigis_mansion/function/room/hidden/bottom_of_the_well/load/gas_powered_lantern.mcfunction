@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:31,searchable:["interact","vacuum"],shake_animation:["interact","vacuum"],sound:{namespace:"luigis_mansion",id:"metal"},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/wonder_how_old_this_is"}}
+execute positioned 649 93 17 rotated 0 0 run function luigis_mansion:spawn_furniture/gas_powered_lantern/right_handed

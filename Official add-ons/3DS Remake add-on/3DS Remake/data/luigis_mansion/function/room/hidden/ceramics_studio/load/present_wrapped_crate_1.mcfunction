@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:65,no_ai:1b,animation:{frozen:1b}}
+execute positioned 705.7 29 -61.2 rotated -10 0 run function 3ds_remake:spawn_furniture/crate/present_wrapped/right_tilt
