@@ -1,10 +1,10 @@
 {
-    "3ds_remake:advancements.3ds_remake.amiibo.boo": "Boo",
-    "3ds_remake:advancements.3ds_remake.amiibo.luigi": "Luigi",
-    "3ds_remake:advancements.3ds_remake.amiibo.mario": "Mario",
+    "3ds_remake:advancements.3ds_remake.amiibo.boo": "害羞幽靈",
+    "3ds_remake:advancements.3ds_remake.amiibo.luigi": "路易吉",
+    "3ds_remake:advancements.3ds_remake.amiibo.mario": "瑪利歐",
     "3ds_remake:advancements.3ds_remake.amiibo": "Amiibo",
     "3ds_remake:advancements.3ds_remake.amiibo.description": "Amiibo aid in your journey, you can turn them on and off in the lab",
-    "3ds_remake:advancements.3ds_remake.amiibo.toad": "Toad",
+    "3ds_remake:advancements.3ds_remake.amiibo.toad": "奇諾比奧",
     "3ds_remake:advancements.3ds_remake.clear_hidden_mansion.description": "Save Mario from the hidden mansion",
     "3ds_remake:advancements.3ds_remake.hard_labor": "Hard Labor!",
     "3ds_remake:advancements.3ds_remake.hard_labor.description": "Clear all portrait battles on hard difficulty",
@@ -294,7 +294,6 @@
     "3ds_remake:furniture.pans": "Pans",
     "3ds_remake:furniture.pixelator_monitor": "Pixelator Monitor",
     "3ds_remake:furniture.potted_dying_pink_flowers": "Potted Dying Pink Flowers",
-    "3ds_remake:furniture.preset_wrapped_crate": "Present Wrapped Crate",
     "3ds_remake:furniture.protected_lamp": "Protected Lamp",
     "3ds_remake:furniture.red_stool_mounted_tools": "Red Stool Mounted Tools",
     "3ds_remake:furniture.regulator": "Regulator",
@@ -632,5 +631,6 @@
     "3ds_remake:subtitles.item.game_boy_horror_part.spawn": "Game Boy Horror Part spawns",
     "3ds_remake:subtitles.item.super_mushroom.bounce": "Super Mushroom bounces",
     "3ds_remake:subtitles.item.super_mushroom.obtain": "Player obtains Super Mushroom",
-    "3ds_remake:subtitles.item.super_mushroom.spawn": "Super Mushroom spawns"
+    "3ds_remake:subtitles.item.super_mushroom.spawn": "Super Mushroom spawns",
+    "3ds_remake:furniture.present_wrapped_crate": "Present Wrapped Crate"
 }

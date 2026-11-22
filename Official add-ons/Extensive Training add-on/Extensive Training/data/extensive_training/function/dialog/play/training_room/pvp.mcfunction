@@ -29,8 +29,8 @@ execute if score #dialog Dialog matches 150 as @a[tag=same_room,tag=dialog_menu]
 execute if score #dialog Dialog matches 154 as @a[tag=same_room,tag=dialog_menu] run function luigis_mansion:selection_menu/dialog/exit
 
 tag @a[tag=same_room] add prevent_item_lock
-tag @e[tag=same_room] remove freeze_animation
-tag @e[tag=same_room] remove no_ai
+tag @e[tag=same_room,tag=freeze_animation_dialog] remove freeze_animation
+tag @e[tag=same_room,tag=no_ai_dialog] remove no_ai
 execute unless score #dialog Dialog matches 9..133 as @e[tag=luigi,tag=same_room] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[0f,0f,0f,0f],tracker:[]}
 execute if score #dialog Dialog matches 9..10 as @e[tag=luigi,tag=same_room] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[1f,0f,0f,0f],tracker:[]}
 execute if score #dialog Dialog matches 11..133 as @e[tag=luigi,tag=same_room] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"call",flags:[],floats:[6f,0f,0f,0f],tracker:[]}

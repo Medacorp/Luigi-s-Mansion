@@ -1,6 +1,20 @@
 {
     "values": [
         "luigis_mansion:room/training_room/load/set_loaded",
+        "luigis_mansion:room/training_room/load/ghost_platform_1",
+        "luigis_mansion:room/training_room/load/ghost_platform_2",
+        "luigis_mansion:room/training_room/load/ghost_platform_3",
+        "luigis_mansion:room/training_room/load/ghost_platform_4",
+        "luigis_mansion:room/training_room/load/ghost_platform_5",
+        "luigis_mansion:room/training_room/load/ghost_platform_6",
+        "luigis_mansion:room/training_room/load/ghost_platform_7",
+        "luigis_mansion:room/training_room/load/ghost_platform_8",
+        "luigis_mansion:room/training_room/load/ghost_platform_9",
+        "luigis_mansion:room/training_room/load/ghost_platform_10",
+        "luigis_mansion:room/training_room/load/ghost_platform_11",
+        "luigis_mansion:room/training_room/load/ghost_platform_12",
+        "luigis_mansion:room/training_room/load/ghost_platform_13",
+        "luigis_mansion:room/training_room/load/ghost_platform_14",
         "luigis_mansion:room/training_room/load/underground_lab_door"
     ]
 }

@@ -1,6 +1,14 @@
-scoreboard players add #training_room Wave 1
-execute positioned 795.0 77 -1.0 run function extensive_training:room/training_room/spawn_wave/endless/select
-execute positioned 787.0 77 -1.0 run function extensive_training:room/training_room/spawn_wave/endless/select
-execute positioned 787.0 77 -8.0 run function extensive_training:room/training_room/spawn_wave/endless/select
-execute positioned 787.0 77 -15.0 run function extensive_training:room/training_room/spawn_wave/endless/select
-execute positioned 795.0 77 -15.0 run function extensive_training:room/training_room/spawn_wave/endless/select
+execute unless entity @e[tag=ghost,tag=same_room,tag=platform_1,limit=1] positioned 795.0 77 -1.0 run function extensive_training:room/training_room/spawn_wave/endless/select {platform:1}
+execute unless entity @e[tag=ghost,tag=same_room,tag=platform_2,limit=1] positioned 787.0 77 -1.0 run function extensive_training:room/training_room/spawn_wave/endless/select {platform:2}
+execute unless entity @e[tag=ghost,tag=same_room,tag=platform_3,limit=1] positioned 787.0 77 -8.0 run function extensive_training:room/training_room/spawn_wave/endless/select {platform:3}
+execute unless entity @e[tag=ghost,tag=same_room,tag=platform_4,limit=1] positioned 787.0 77 -15.0 run function extensive_training:room/training_room/spawn_wave/endless/select {platform:4}
+execute unless entity @e[tag=ghost,tag=same_room,tag=platform_5,limit=1] positioned 795.0 77 -15.0 run function extensive_training:room/training_room/spawn_wave/endless/select {platform:5}
+execute if score #training_room Wave matches 200.. unless entity @e[tag=ghost,tag=same_room,tag=platform_6,limit=1] positioned 783.0 80.0 -5.0 run function extensive_training:room/training_room/spawn_wave/endless/select_wall {platform:6}
+execute if score #training_room Wave matches 200.. unless entity @e[tag=ghost,tag=same_room,tag=platform_7,limit=1] positioned 783.0 80.0 -11.0 run function extensive_training:room/training_room/spawn_wave/endless/select_wall {platform:7}
+execute if score #training_room Wave matches 300.. unless entity @e[tag=ghost,tag=same_room,tag=platform_8,limit=1] positioned 796.0 80.0 4.0 run function extensive_training:room/training_room/spawn_wave/endless/select_wall {platform:8}
+execute if score #training_room Wave matches 300.. unless entity @e[tag=ghost,tag=same_room,tag=platform_9,limit=1] positioned 796.0 80.0 -20.0 run function extensive_training:room/training_room/spawn_wave/endless/select_wall {platform:9}
+execute if score #training_room Wave matches 350.. unless entity @e[tag=ghost,tag=same_room,tag=platform_10,limit=1] positioned 786.0 80.0 4.0 run function extensive_training:room/training_room/spawn_wave/endless/select_wall {platform:10}
+execute if score #training_room Wave matches 350.. unless entity @e[tag=ghost,tag=same_room,tag=platform_11,limit=1] positioned 786.0 80.0 -20.0 run function extensive_training:room/training_room/spawn_wave/endless/select_wall {platform:11}
+execute if score #training_room Wave matches 400.. unless entity @e[tag=ghost,tag=same_room,tag=platform_12,limit=1] positioned 783.0 80.0 1.0 run function extensive_training:room/training_room/spawn_wave/endless/select_wall {platform:12}
+execute if score #training_room Wave matches 400.. unless entity @e[tag=ghost,tag=same_room,tag=platform_13,limit=1] positioned 783.0 80.0 -17.0 run function extensive_training:room/training_room/spawn_wave/endless/select_wall {platform:13}
+execute if score #training_room Wave matches 400.. unless entity @e[tag=ghost,tag=same_room,tag=platform_14,limit=1] positioned 791.0 80.0 -20.0 run function extensive_training:room/training_room/spawn_wave/endless/select_wall {platform:14}

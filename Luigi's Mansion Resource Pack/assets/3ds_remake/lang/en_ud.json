@@ -294,7 +294,6 @@
     "3ds_remake:furniture.pans": "suɐԀ",
     "3ds_remake:furniture.pixelator_monitor": "ɹoʇᴉuoW ɹǝʇɟᴉɥsꞁǝxᴉԀ",
     "3ds_remake:furniture.potted_dying_pink_flowers": "sɹǝʍoꞁℲ ʞuᴉԀ ᵷuᴉʎᗡ pǝʇʇoԀ",
-    "3ds_remake:furniture.preset_wrapped_crate": "ǝʇɐɹƆ pǝddɐɹM ʇuǝsǝɹԀ",
     "3ds_remake:furniture.protected_lamp": "dɯɐꞀ pǝʇɔǝʇoɹԀ",
     "3ds_remake:furniture.red_stool_mounted_tools": "sꞁoo⟘ pǝʇunoW ꞁooʇS pǝᴚ",
     "3ds_remake:furniture.regulator": "ɹoʇɐꞁnᵷǝᴚ",
@@ -632,5 +631,6 @@
     "3ds_remake:subtitles.item.game_boy_horror_part.spawn": "suʍɐds ʇɹɐԀ ɹoɹɹoH ʎoᗺ ǝɯɐ⅁",
     "3ds_remake:subtitles.item.super_mushroom.bounce": "sǝɔunoq ɯooɹɥsnW ɹǝdnS",
     "3ds_remake:subtitles.item.super_mushroom.obtain": "pǝuᴉɐʇqo ɯooɹɥsnW ɹǝdnS",
-    "3ds_remake:subtitles.item.super_mushroom.spawn": "suʍɐds ɯooɹɥsnW ɹǝdnS"
+    "3ds_remake:subtitles.item.super_mushroom.spawn": "suʍɐds ɯooɹɥsnW ɹǝdnS",
+    "3ds_remake:furniture.present_wrapped_crate": "ǝʇɐɹƆ pǝddɐɹM ʇuǝsǝɹԀ"
 }

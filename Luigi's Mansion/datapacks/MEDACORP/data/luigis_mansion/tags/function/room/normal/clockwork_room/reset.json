@@ -9,12 +9,6 @@
         "luigis_mansion:room/normal/clockwork_room/reset/lamp_1",
         "luigis_mansion:room/normal/clockwork_room/reset/lamp_2",
         "luigis_mansion:room/normal/clockwork_room/reset/puppet_1",
-        "luigis_mansion:room/normal/clockwork_room/reset/puppet_2",
-        "luigis_mansion:room/normal/clockwork_room/reset/small_door_1",
-        "luigis_mansion:room/normal/clockwork_room/reset/small_door_2",
-        "luigis_mansion:room/normal/clockwork_room/reset/small_door_3",
-        "luigis_mansion:room/normal/clockwork_room/reset/small_door_4",
-        "luigis_mansion:room/normal/clockwork_room/reset/small_door_5",
-        "luigis_mansion:room/normal/clockwork_room/reset/small_door_6"
+        "luigis_mansion:room/normal/clockwork_room/reset/puppet_2"
     ]
 }

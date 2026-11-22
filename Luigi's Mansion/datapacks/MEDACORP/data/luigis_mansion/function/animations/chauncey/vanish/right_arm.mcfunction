@@ -1,4 +1,8 @@
-execute unless score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/chauncey/vanish/normal/right_arm
-execute unless score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/chauncey/vanish/normal_flipped/right_arm
-execute if score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/chauncey/vanish/mirrored/right_arm
-execute if score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/chauncey/vanish/mirrored_flipped/right_arm
+execute unless data storage luigis_mansion:data ghost{tags:["big"]} unless score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/chauncey/vanish/normal/right_arm
+execute unless data storage luigis_mansion:data ghost{tags:["big"]} unless score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/chauncey/vanish/normal_flipped/right_arm
+execute if data storage luigis_mansion:data ghost{tags:["big"]} unless score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/chauncey/vanish/normal_big/right_arm
+execute if data storage luigis_mansion:data ghost{tags:["big"]} unless score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/chauncey/vanish/normal_flipped_big/right_arm
+execute unless data storage luigis_mansion:data ghost{tags:["big"]} if score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/chauncey/vanish/mirrored/right_arm
+execute unless data storage luigis_mansion:data ghost{tags:["big"]} if score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/chauncey/vanish/mirrored_flipped/right_arm
+execute if data storage luigis_mansion:data ghost{tags:["big"]} if score #mirrored Selected matches 1 if entity @s[tag=!flipped_gravity] run function luigis_mansion:animations/chauncey/vanish/mirrored_big/right_arm
+execute if data storage luigis_mansion:data ghost{tags:["big"]} if score #mirrored Selected matches 1 if entity @s[tag=flipped_gravity] run function luigis_mansion:animations/chauncey/vanish/mirrored_flipped_big/right_arm

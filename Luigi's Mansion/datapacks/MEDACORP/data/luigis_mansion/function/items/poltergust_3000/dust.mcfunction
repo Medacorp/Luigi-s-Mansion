@@ -1,8 +1,8 @@
-function #luigis_mansion:items/poltergust_3000/effect_on_block/dust
-execute positioned ^ ^0.5 ^ run function #luigis_mansion:items/poltergust_3000/effect_on_block/dust
-execute positioned ^ ^-0.5 ^ run function #luigis_mansion:items/poltergust_3000/effect_on_block/dust
-execute positioned ^0.5 ^ ^ run function #luigis_mansion:items/poltergust_3000/effect_on_block/dust
-execute positioned ^-0.5 ^ ^ run function #luigis_mansion:items/poltergust_3000/effect_on_block/dust
+function luigis_mansion:items/poltergust_3000/effect_on_block/dust
+execute positioned ^ ^0.5 ^ run function luigis_mansion:items/poltergust_3000/effect_on_block/dust
+execute positioned ^ ^-0.5 ^ run function luigis_mansion:items/poltergust_3000/effect_on_block/dust
+execute positioned ^0.5 ^ ^ run function luigis_mansion:items/poltergust_3000/effect_on_block/dust
+execute positioned ^-0.5 ^ ^ run function luigis_mansion:items/poltergust_3000/effect_on_block/dust
 teleport @e[tag=interact,limit=1] ~ ~ ~ ~ ~
 execute store result score #interact PositionX run data get entity @e[tag=interact,limit=1] Pos[0] 10
 execute store result score #interact PositionY run data get entity @e[tag=interact,limit=1] Pos[1] 10

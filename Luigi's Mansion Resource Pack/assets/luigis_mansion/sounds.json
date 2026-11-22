@@ -7826,6 +7826,15 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.purple_mouse.ambient"
     },
+    "entity.purple_mouse.ambient_stop": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/mouse/ambient_stop",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.purple_mouse.ambient"
+    },
     "entity.purple_puncher.ambient": {
         "sounds": [
             {

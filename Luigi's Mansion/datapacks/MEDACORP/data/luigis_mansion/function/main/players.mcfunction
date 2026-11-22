@@ -21,6 +21,8 @@ scoreboard players operation #temp Room = @s Room
 execute as @e[tag=!model_piece,tag=!reflection] run function luigis_mansion:main/get_same_room
 scoreboard players reset #temp Room
 
+tag @s add affected_by_dialogs
+execute unless score @s PreviousRoom = @s Room run tag @s remove affected_by_dialogs
 execute unless score @s PreviousRoom = @s Room run tag @s remove seen_room_name
 execute unless score @s PreviousRoom = @s Room run stopsound @s[scores={RoomNoise=1..}] ambient
 execute unless score @s PreviousRoom = @s Room run scoreboard players set @s RoomNoise 0

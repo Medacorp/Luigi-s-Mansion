@@ -7,8 +7,7 @@ execute if entity @s[scores={AnimationProgress=15}] run function luigis_mansion:
 function luigis_mansion:entities/luigi/animation/shared/freeze_player {rotated:"~ ~"}
 execute if entity @s[scores={AnimationProgress=5..24}] run function luigis_mansion:entities/luigi/move/execute {execute:"at @s rotated ~9 0",teleport:"^ ^ ^-0.07 ~ ~"}
 execute if entity @s[scores={AnimationProgress=25}] run function luigis_mansion:entities/luigi/make_sound/force {high:"luigis_mansion:entity.player.hurt_little",medium:"luigis_mansion:entity.player.hurt_little",low:"luigis_mansion:entity.player.hurt_little",duration:95}
-execute if entity @s[scores={AnimationProgress=60..80}] run function luigis_mansion:entities/luigi/move/execute {execute:"at @s rotated ~ 0",teleport:"^ ^ ^0.05"}
-execute if entity @s[scores={AnimationProgress=60..80}] run function luigis_mansion:entities/luigi/move/teleport {teleport:"^ ^ ^ ~ ~3"}
+execute if entity @s[scores={AnimationProgress=61..80}] run function luigis_mansion:entities/luigi/move/execute {execute:"at @s rotated ~ 0 positioned ^ ^ ^0.05 rotated as @s",teleport:"^ ^ ^ ~ ~4.5"}
 execute if entity @s[scores={AnimationProgress=121..130}] run function luigis_mansion:entities/luigi/move/teleport {teleport:"^ ^ ^ ~ ~-9"}
 execute if entity @s[scores={AnimationProgress=120}] run function luigis_mansion:entities/luigi/make_sound/force {high:"luigis_mansion:entity.player.sigh.high_health",medium:"luigis_mansion:entity.player.sigh.high_health",low:"luigis_mansion:entity.player.sigh.low_health",duration:20}
 tag @s add door_animation

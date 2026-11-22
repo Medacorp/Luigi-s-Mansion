@@ -22,7 +22,6 @@ execute if score #temp Room matches 27 run function #3ds_remake:room/hidden/kitc
 execute if score #temp Room matches 28 run function #3ds_remake:room/hidden/boneyard/interactions/gameboy_horror_scan
 execute if score #temp Room matches 29 run function #3ds_remake:room/hidden/graveyard/interactions/gameboy_horror_scan
 execute if score #temp Room matches 30 run function #3ds_remake:room/hidden/courtyard/interactions/gameboy_horror_scan
-execute if score #temp Room matches 31 run function #3ds_remake:room/hidden/bottom_of_the_well/interactions/gameboy_horror_scan
 execute if score #temp Room matches 32 run function #3ds_remake:room/hidden/rec_room/interactions/gameboy_horror_scan
 execute if score #temp Room matches 33 run function #3ds_remake:room/hidden/hallway_8/interactions/gameboy_horror_scan
 execute if score #temp Room matches 34 run function #3ds_remake:room/hidden/tea_room/interactions/gameboy_horror_scan
@@ -45,7 +44,6 @@ execute if score #temp Room matches 63 run function #3ds_remake:room/hidden/roof
 execute if score #temp Room matches 64 run function #3ds_remake:room/hidden/armory/interactions/gameboy_horror_scan
 execute if score #temp Room matches 65 run function #3ds_remake:room/hidden/ceramics_studio/interactions/gameboy_horror_scan
 execute if score #temp Room matches 66 run function #3ds_remake:room/hidden/sealed_room/interactions/gameboy_horror_scan
-execute if score #temp Room matches 67 run function #3ds_remake:room/hidden/pipe_room/interactions/gameboy_horror_scan
 execute if score #temp Room matches 68 run function #3ds_remake:room/hidden/cold_storage/interactions/gameboy_horror_scan
 execute if score #temp Room matches 69 run function #3ds_remake:room/hidden/sitting_room/interactions/gameboy_horror_scan
 execute if score #temp Room matches 70 run function #3ds_remake:room/hidden/guest_room/interactions/gameboy_horror_scan

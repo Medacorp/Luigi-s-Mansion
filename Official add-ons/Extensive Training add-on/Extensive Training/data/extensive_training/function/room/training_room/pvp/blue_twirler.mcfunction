@@ -1,2 +1,2 @@
-execute if entity @e[type=minecraft:marker,tag=selected,nbt={data:{namespace:"luigis_mansion",id:"blue_twirler"}},limit=1] run function extensive_training:room/training_room/spawn/blue_twirler
+execute if entity @e[type=minecraft:marker,tag=selected,nbt={data:{namespace:"luigis_mansion",id:"blue_twirler"}},limit=1] run function extensive_training:room/training_room/spawn/blue_twirler {platform:0}
 execute unless entity @e[type=minecraft:marker,tag=selected,limit=1] run summon minecraft:marker ~ ~ ~ {Tags:["select_ghost"],data:{namespace:"luigis_mansion",id:"blue_twirler"}}

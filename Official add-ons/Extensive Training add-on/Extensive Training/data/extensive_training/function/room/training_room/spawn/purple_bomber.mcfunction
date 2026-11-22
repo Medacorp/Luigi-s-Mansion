@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data entity set value {room:-2,spawn:1b,disappear_on_vanish:"",pull:{strength:0,angle:0},flee_task:"random",health:1,speed:0,flee_speed:0,vanish_time:-1,loot:{spawn_attack:{contents:[{name:{namespace:"luigis_mansion",id:"bomb"}}]}},damage:{collision:5,attack:10},training_room_score:1}
-execute positioned ~ ~3 ~ run function luigis_mansion:spawn_entities/ghost/purple_bomber
+$data modify storage luigis_mansion:data entity set value {room:-2,tags:["platform_$(platform)"],spawn:3b,disappear_on_vanish:"",pull:{strength:0,angle:0},flee_task:"random",health:1,speed:1,flee_speed:0,vanish_time:-1,loot:{attack:{works_in_lab:1b,contents:[{name:{namespace:"luigis_mansion",id:"bomb"},variables:{damage:{attack:10}}}]}},damage:{collision:5},training_room_score:1}
+function luigis_mansion:spawn_entities/ghost/purple_bomber

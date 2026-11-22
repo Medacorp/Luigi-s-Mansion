@@ -1,2 +1,2 @@
-execute if entity @e[type=minecraft:marker,tag=selected,nbt={data:{namespace:"luigis_mansion",id:"bowling_ghost"}},limit=1] run function extensive_training:room/training_room/spawn/bowling_ghost
-execute unless entity @e[type=minecraft:marker,tag=selected,limit=1] if score #training_room Wave matches 15.. run summon minecraft:marker ~ ~ ~ {Tags:["select_ghost"],data:{namespace:"luigis_mansion",id:"bowling_ghost"}}
+$execute if entity @e[type=minecraft:marker,tag=selected,nbt={data:{namespace:"luigis_mansion",id:"bowling_ghost"}},limit=1] run function extensive_training:room/training_room/spawn/bowling_ghost {platform:$(platform)}
+execute unless entity @e[type=minecraft:marker,tag=selected,limit=1] if score #training_room Wave matches 75.. run summon minecraft:marker ~ ~ ~ {Tags:["select_ghost","no_wall"],data:{namespace:"luigis_mansion",id:"bowling_ghost"}}

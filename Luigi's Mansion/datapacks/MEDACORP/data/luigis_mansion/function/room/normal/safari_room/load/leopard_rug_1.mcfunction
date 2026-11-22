@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:50,no_ai:1b,animation:{frozen:1b},scan_result:{namespace:"luigis_mansion",id:"scan/scanner/animal_hide"}}
+execute positioned 739 29 -41 rotated -90 0 run function luigis_mansion:spawn_furniture/leopard_rug/right_tilt

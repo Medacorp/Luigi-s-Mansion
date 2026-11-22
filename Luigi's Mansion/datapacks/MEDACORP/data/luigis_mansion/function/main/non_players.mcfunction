@@ -4,3 +4,4 @@ execute if entity @s[tag=reflection] run function luigis_mansion:main/reflection
 execute if entity @s[tag=model_piece] run function luigis_mansion:main/model_pieces
 execute if entity @s[tag=map_entity] run function luigis_mansion:main/map_entity
 execute if entity @s[tag=solid_furniture_collision] run function luigis_mansion:main/solid_furniture_collision
+tag @s add affected_by_dialogs

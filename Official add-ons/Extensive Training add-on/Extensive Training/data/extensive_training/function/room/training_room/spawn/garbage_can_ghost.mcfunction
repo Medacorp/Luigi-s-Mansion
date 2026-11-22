@@ -1,2 +1,2 @@
-data modify storage luigis_mansion:data entity set value {room:-2,spawn:1b,disappear_on_vanish:"",pull:{strength:60,angle:120},flee_task:"random",health:4000,speed:0,flee_speed:20,vanish_time:-1,loot:{},damage:{collision:5,attack:10},training_room_score:9}
+$data modify storage luigis_mansion:data entity set value {room:-2,tags:["platform_$(platform)"],spawn:3b,disappear_on_vanish:"",pull:{strength:60,angle:120},flee_task:"random",health:4000,speed:0,flee_speed:20,vanish_time:-1,loot:{attack:{works_in_lab:1b,contents:[{name:{namespace:"luigis_mansion",id:"banana_peel"},variables:{tags:["thrown"],damage:{attack:5}}}]}},damage:{collision:5},training_room_score:9}
 function luigis_mansion:spawn_entities/ghost/garbage_can_ghost

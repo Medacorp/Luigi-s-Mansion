@@ -51,7 +51,7 @@
     "extensive_training:dialog.pvp.no.1": "Très bien.",
     "extensive_training:dialog.pvp.no_multiplayer.1": "Sorry to say this, but this program requires several people in the training room.",
     "extensive_training:dialog.pvp.no_multiplayer.2": "Reviens quand tu auras des amis, %s.",
-    "extensive_training:dialog.pvp.tie.it": "Attrapez ce fantôme et vous gagnez !",
+    "extensive_training:dialog.pvp.tie.it": "Attrapez ce fantôme et tu gagnes !",
     "extensive_training:dialog.pvp.tie.not_it": "Sorry to say, this tiebreaker is not for you.",
     "extensive_training:dialog.pvp.yes.1": "D'accord, préparez-vous !",
     "extensive_training:dialog.speedrun.1": "Catch all the ghosts as quickly as you can, %s!",

@@ -1,14 +1,16 @@
 execute if data storage luigis_mansion:data furniture.type{value:"delayed"} run tag @e[tag=this_entity,limit=1] add overwrite_allowed
 execute if data storage luigis_mansion:data furniture.type{value:"fan"} run tag @e[tag=this_entity,limit=1] add overwrite_allowed
 execute if data storage luigis_mansion:data furniture.type{value:"generic"} run tag @e[tag=this_entity,limit=1] add overwrite_allowed
+execute if data storage luigis_mansion:data furniture.type{value:"keep_progress"} run tag @e[tag=this_entity,limit=1] add overwrite_allowed
 execute if data storage luigis_mansion:data furniture.type{value:"rolling"} run tag @e[tag=this_entity,limit=1] add overwrite_allowed
 execute if data storage luigis_mansion:data furniture.type{value:"swinging"} run tag @e[tag=this_entity,limit=1] add overwrite_allowed
 execute if data storage luigis_mansion:data furniture.type{value:"swirling"} run tag @e[tag=this_entity,limit=1] add overwrite_allowed
-tag @e[tag=this_entity,nbt=!{data:{furniture_type:"delayed"}},nbt=!{data:{furniture_type:"fan"}},nbt=!{data:{furniture_type:"generic"}},nbt=!{data:{furniture_type:"rolling"}},nbt=!{data:{furniture_type:"swinging"}},nbt=!{data:{furniture_type:"swirling"}},limit=1] remove overwrite_allowed
+tag @e[tag=this_entity,nbt=!{data:{furniture_type:"delayed"}},nbt=!{data:{furniture_type:"fan"}},nbt=!{data:{furniture_type:"generic"}},nbt=!{data:{furniture_type:"keep_progress"}},nbt=!{data:{furniture_type:"rolling"}},nbt=!{data:{furniture_type:"swinging"}},nbt=!{data:{furniture_type:"swirling"}},limit=1] remove overwrite_allowed
 execute as @e[tag=this_entity,tag=overwrite_allowed,limit=1] run data modify entity @s data.furniture_type set from storage luigis_mansion:data furniture.type.value
 execute as @e[tag=this_entity,nbt={data:{furniture_type:"delayed"}},limit=1] unless entity @s[scores={FurnitureSearch=1..}] run scoreboard players set @s FurnitureSearch 20
 execute as @e[tag=this_entity,nbt={data:{furniture_type:"fan"}},limit=1] unless entity @s[scores={FurnitureSearch=1..}] run scoreboard players set @s FurnitureSearch 1000
 execute as @e[tag=this_entity,nbt={data:{furniture_type:"generic"}},limit=1] unless entity @s[scores={FurnitureSearch=1..}] run scoreboard players set @s FurnitureSearch 20
+execute as @e[tag=this_entity,nbt={data:{furniture_type:"keep_progress"}},limit=1] unless entity @s[scores={FurnitureSearch=1..}] run scoreboard players set @s FurnitureSearch 20
 execute as @e[tag=this_entity,nbt={data:{furniture_type:"rolling"}},limit=1] unless entity @s[scores={FurnitureSearch=1..}] run scoreboard players set @s FurnitureSearch 20
 execute as @e[tag=this_entity,nbt={data:{furniture_type:"swinging"}},limit=1] unless entity @s[scores={FurnitureSearch=1..}] run scoreboard players set @s FurnitureSearch 100
 execute as @e[tag=this_entity,nbt={data:{furniture_type:"swirling"}},limit=1] unless entity @s[scores={FurnitureSearch=1..}] run scoreboard players set @s FurnitureSearch 5

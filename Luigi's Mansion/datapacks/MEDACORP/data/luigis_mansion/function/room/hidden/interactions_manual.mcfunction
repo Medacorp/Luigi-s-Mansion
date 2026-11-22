@@ -22,7 +22,6 @@ execute if score #temp Room matches 27 run function #luigis_mansion:room/hidden/
 execute if score #temp Room matches 28 run function #luigis_mansion:room/hidden/boneyard/interactions/manual
 execute if score #temp Room matches 29 run function #luigis_mansion:room/hidden/graveyard/interactions/manual
 execute if score #temp Room matches 30 run function #luigis_mansion:room/hidden/courtyard/interactions/manual
-execute if score #temp Room matches 31 run function #luigis_mansion:room/hidden/bottom_of_the_well/interactions/manual
 execute if score #temp Room matches 32 run function #luigis_mansion:room/hidden/rec_room/interactions/manual
 execute if score #temp Room matches 33 run function #luigis_mansion:room/hidden/hallway_8/interactions/manual
 execute if score #temp Room matches 34 run function #luigis_mansion:room/hidden/tea_room/interactions/manual
@@ -45,7 +44,6 @@ execute if score #temp Room matches 63 run function #luigis_mansion:room/hidden/
 execute if score #temp Room matches 64 run function #luigis_mansion:room/hidden/armory/interactions/manual
 execute if score #temp Room matches 65 run function #luigis_mansion:room/hidden/ceramics_studio/interactions/manual
 execute if score #temp Room matches 66 run function #luigis_mansion:room/hidden/sealed_room/interactions/manual
-execute if score #temp Room matches 67 run function #luigis_mansion:room/hidden/pipe_room/interactions/manual
 execute if score #temp Room matches 68 run function #luigis_mansion:room/hidden/cold_storage/interactions/manual
 execute if score #temp Room matches 69 run function #luigis_mansion:room/hidden/sitting_room/interactions/manual
 execute if score #temp Room matches 70 run function #luigis_mansion:room/hidden/guest_room/interactions/manual

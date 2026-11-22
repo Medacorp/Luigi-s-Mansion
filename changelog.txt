@@ -1,7 +1,7 @@
-???:
+v3.10:
 * Added ambient sounds for dripping water, unlike flame particles, these play regardless of being an elemental source
 * Added pipe room noise in the hallway
-* Added animations:
+* Added Luigi animations:
 ** Celebrate (3DS Remake overwrites to non-looping)
 ** Check results
 ** Put poltergust away stylishly
@@ -14,30 +14,53 @@
 ** Crate mounted gas powered lanterns
 ** Frozen crates
 ** Gas powered lanterns
+** Ghost platforms (unique type "ghost platform")
+** Leopard rugs
 ** (3DS Remake) Metal buckets
 ** (3DS Remake) Present wrapped crates
-** Valves (approach type)
-** Sewers (unique type)
+** (3DS Remake) Roses portrait (mixed, different image)
+** Sewers (unique type "sewer")
+** (3DS Remake) Table mounted clocks (small, different table texture)
+** (3DS Remake) Table mounted puppet heads (different table texture)
+** Tiny doors (unique type "keep progress")
+** Valves (type "approach")
 ** (E3 Demo) Table mounted tea set and candelabras (unused; see in prerelease sitting room screenshot, only difference with final is the candle)
-** Waterfalls (unique type)
-* Changed door locked and door unlock animations to shrink non-arm model pieces, rather than move them backward
-* Changed scan/scanner/* IDs to not use numbers, so it's easier to find what dialog you're looking for
-* Changed scan/entity/e_gadd to scan/scanner/got_the_hang_of_that_thing, so it gets overwritten by Gooigi scans in the 3DS Remake
-* Changed scan/entity/e_gadd (now scan/scanner/got_the_hang_of_that_thing), was said by E. Gadd, rather than the player
+** Waterfalls (unique type "waterfall")
+* Changed Luigi's door locked and door unlock animations to shrink non-arm model pieces, rather than move them backward
 * Changed credits, mansion rank and (3DS Remake) Gooigi results dialogs to despawn Luigi, like the title screen
+* Changed punching bag model to reflect original better
+* Changed barrel model to reflect original better
+* Changed scan/entity/e_gadd to scan/scanner/got_the_hang_of_that_thing, so it gets overwritten by Gooigi scans in the 3DS Remake
+* Changed scan/scanner/* IDs to not use numbers, so it's easier to find what dialog you're looking for
+* Changed (Extensive Training) endless program to spawn a new ghost the moment one is gone, rather than waiting for all ghosts to be gone
+* Changed (Extensive Training) endless program to spawn ghosts from the walls after 200 have been spawned
 * Fixed search/knock animation didn't tilt the poltergust body like the chest
+* Fixed entities frozen by dialogs on their first tick didn't show correctly; first tick now forces no dialog freeze
+* Fixed poltergust particles didn't show depending on blocks
 * Fixed gallery angel statue searching requirement also triggered for vacuum searching
-* Fixed chauncey's intro briefly put the camera inside a block
-* Fixed chauncey's intro rocking horses overstayed their welcome
-* Fixed chauncey's first two rocking horses might not attack depending on timing
+* Fixed poltergust would cut off the path if it merely hit the edge of a block, it now cuts of if both current and next step are in blocks instead
+* Fixed scan/entity/e_gadd (now scan/scanner/got_the_hang_of_that_thing), was said by E. Gadd, rather than the player
+* Fixed fake door knockback didn't change viewing direction correctly
+* Fixed mice didn't squeek based on yaw (should've been pitch)
+* Fixed Chauncey's intro briefly put the camera inside a block
+* Fixed Chauncey's vanish, punch and fake punch animaions didn't take big versions offsets into account
+* Fixed Chauncey's intro rocking horses overstayed their welcome
+* Fixed Chauncey's first two rocking horses did not attack depending on timing
 * Fixed wooden cabinet mounted wooden colorful candelabra had 2 minor modeling mistakes
 * Fixed standing on frozen sewer didn't make Luigi use cold room idle animation
 * Fixed close pipe dialog didn't put Luigi in the high health idle animation for a bit
 * Fixed wide yellow portrait frame was slightly offset from the image
+* Fixed ghost art didn't detect ghosts in them
 * Fixed king boo portrait's plaque was misrotated
 * Fixed (3DS Remake) hallway 3 door scan message was incorrect during area 1
 * Fixed (3DS Remake) active buttons didn't glow
+* Fixed (3DS Remake) Neville portrait battle didn't turn off the fireplace
 * Fixed (E3 Demo) bad installation doesn't stop the original mansion from being selectable
+* Fixed (E3 Demo) dead players could influence the amount of coins spawned from chests
+* Fixed (Extensive Training) message about previous endless record didn't get the value
+* Fixed (Extensive Training) ghosts that spawned loot for attacks failed to do so
+* Removed "big" models of Chauncey and Uncle Grimmly, they now scale in the animations instead
+* Removed "squished" models of Luigi, they now scale in the animations instead
 
 v3.9.4:
 * Added bent luigi arm and leg models (not applied to animations yet)

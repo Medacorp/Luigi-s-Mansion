@@ -294,7 +294,6 @@
     "3ds_remake:furniture.pans": "Pans",
     "3ds_remake:furniture.pixelator_monitor": "Pixelator Monitor",
     "3ds_remake:furniture.potted_dying_pink_flowers": "Potted Dying Pink Flowers",
-    "3ds_remake:furniture.preset_wrapped_crate": "Present Wrapped Crate",
     "3ds_remake:furniture.protected_lamp": "Protected Lamp",
     "3ds_remake:furniture.red_stool_mounted_tools": "Red Stool Mounted Tools",
     "3ds_remake:furniture.regulator": "Regulator",
@@ -632,5 +631,6 @@
     "3ds_remake:subtitles.item.game_boy_horror_part.spawn": "Game Boy Horror Part spawns",
     "3ds_remake:subtitles.item.super_mushroom.bounce": "Super Mushroom bounces",
     "3ds_remake:subtitles.item.super_mushroom.obtain": "Player obtains Super Mushroom",
-    "3ds_remake:subtitles.item.super_mushroom.spawn": "Super Mushroom spawns"
+    "3ds_remake:subtitles.item.super_mushroom.spawn": "Super Mushroom spawns",
+    "3ds_remake:furniture.present_wrapped_crate": "Present Wrapped Crate"
 }

@@ -22,7 +22,6 @@ execute if score #temp Room matches 27 run function #luigis_mansion:room/normal/
 execute if score #temp Room matches 28 run function #luigis_mansion:room/normal/boneyard/interactions/gameboy_horror_scan
 execute if score #temp Room matches 29 run function #luigis_mansion:room/normal/graveyard/interactions/gameboy_horror_scan
 execute if score #temp Room matches 30 run function #luigis_mansion:room/normal/courtyard/interactions/gameboy_horror_scan
-execute if score #temp Room matches 31 run function #luigis_mansion:room/normal/bottom_of_the_well/interactions/gameboy_horror_scan
 execute if score #temp Room matches 32 run function #luigis_mansion:room/normal/rec_room/interactions/gameboy_horror_scan
 execute if score #temp Room matches 33 run function #luigis_mansion:room/normal/hallway_8/interactions/gameboy_horror_scan
 execute if score #temp Room matches 34 run function #luigis_mansion:room/normal/tea_room/interactions/gameboy_horror_scan
@@ -45,7 +44,6 @@ execute if score #temp Room matches 63 run function #luigis_mansion:room/normal/
 execute if score #temp Room matches 64 run function #luigis_mansion:room/normal/armory/interactions/gameboy_horror_scan
 execute if score #temp Room matches 65 run function #luigis_mansion:room/normal/ceramics_studio/interactions/gameboy_horror_scan
 execute if score #temp Room matches 66 run function #luigis_mansion:room/normal/sealed_room/interactions/gameboy_horror_scan
-execute if score #temp Room matches 67 run function #luigis_mansion:room/normal/pipe_room/interactions/gameboy_horror_scan
 execute if score #temp Room matches 68 run function #luigis_mansion:room/normal/cold_storage/interactions/gameboy_horror_scan
 execute if score #temp Room matches 69 run function #luigis_mansion:room/normal/sitting_room/interactions/gameboy_horror_scan
 execute if score #temp Room matches 70 run function #luigis_mansion:room/normal/guest_room/interactions/gameboy_horror_scan

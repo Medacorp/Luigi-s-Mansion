@@ -24,3 +24,9 @@ execute if data storage luigis_mansion:data furniture{searchable:["ice"]} run ta
 execute if data storage luigis_mansion:data furniture{searchable:["ice"]} run tag @e[tag=this_entity,limit=1] add affected_by_ice
 execute if data storage luigis_mansion:data furniture{shake_animation:["ice"]} run tag @e[tag=this_entity,limit=1] add affected_by_ice
 execute if data storage luigis_mansion:data furniture{shake_animation:["ice"]} run tag @e[tag=this_entity,limit=1] add shaken_by_ice
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureVacuum 0
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureDust 0
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureFire 0
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureWater 0
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureIce 0
+scoreboard players set @e[tag=this_entity,limit=1] FurnitureTime 0

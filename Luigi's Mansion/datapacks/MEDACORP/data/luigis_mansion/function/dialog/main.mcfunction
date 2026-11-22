@@ -1,9 +1,9 @@
 execute store result score #dialog Dialog run data get storage luigis_mansion:data dialogs[0].progress
 execute if data storage luigis_mansion:data dialogs[0].room store result score #temp Room run data get storage luigis_mansion:data dialogs[0].room
-execute if data storage luigis_mansion:data dialogs[0].room if data storage luigis_mansion:data dialogs[0].door as @e[tag=!model_piece,tag=!reflection,tag=!in_dialog] run function luigis_mansion:main/get_same_room
-execute unless data storage luigis_mansion:data dialogs[0].room if data storage luigis_mansion:data dialogs[0].door run tag @e[tag=!model_piece,tag=!reflection,tag=!in_dialog] add same_room
-execute if data storage luigis_mansion:data dialogs[0].room unless data storage luigis_mansion:data dialogs[0].door as @e[tag=!model_piece,tag=!reflection,tag=!in_dialog,tag=!door_animation] run function luigis_mansion:main/get_same_room
-execute unless data storage luigis_mansion:data dialogs[0].room unless data storage luigis_mansion:data dialogs[0].door run tag @e[tag=!model_piece,tag=!reflection,tag=!in_dialog,tag=!door_animation] add same_room
+execute if data storage luigis_mansion:data dialogs[0].room if data storage luigis_mansion:data dialogs[0].door as @e[tag=!model_piece,tag=!reflection,tag=!in_dialog,tag=affected_by_dialogs] run function luigis_mansion:main/get_same_room
+execute unless data storage luigis_mansion:data dialogs[0].room if data storage luigis_mansion:data dialogs[0].door run tag @e[tag=!model_piece,tag=!reflection,tag=!in_dialog,tag=affected_by_dialogs] add same_room
+execute if data storage luigis_mansion:data dialogs[0].room unless data storage luigis_mansion:data dialogs[0].door as @e[tag=!model_piece,tag=!reflection,tag=!in_dialog,tag=!door_animation,tag=affected_by_dialogs] run function luigis_mansion:main/get_same_room
+execute unless data storage luigis_mansion:data dialogs[0].room unless data storage luigis_mansion:data dialogs[0].door run tag @e[tag=!model_piece,tag=!reflection,tag=!in_dialog,tag=!door_animation,tag=affected_by_dialogs] add same_room
 scoreboard players reset #temp Room
 execute as @a[tag=same_room] run function luigis_mansion:dialog/players_pre_tick
 execute if entity @a[tag=same_room,limit=1] as @e[type=!minecraft:player,tag=same_room] run function luigis_mansion:dialog/entities_pre_tick

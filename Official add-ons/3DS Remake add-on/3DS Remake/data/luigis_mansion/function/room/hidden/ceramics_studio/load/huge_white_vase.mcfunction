@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:65,no_ai:1b,animation:{frozen:1b}}
+execute positioned 701.6 29 -61.1 rotated -110 0 run function 3ds_remake:spawn_furniture/huge_white_vase

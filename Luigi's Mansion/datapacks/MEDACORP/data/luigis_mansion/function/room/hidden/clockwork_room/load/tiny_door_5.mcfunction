@@ -1,0 +1,2 @@
+data modify storage luigis_mansion:data furniture set value {room:62,searchable:["vacuum"],shake_animation:["vacuum"],no_dust:1b,sound:{namespace:"luigis_mansion",id:"heavy_generic"}}
+execute positioned 686.0 120 15 rotated -90 0 run function luigis_mansion:spawn_furniture/tiny_door/small_right_hinge

@@ -1,0 +1,2 @@
+$data modify storage luigis_mansion:data entity set value {room:-2,tags:["platform_$(platform)"],spawn:3b,appear_type:"none",disappear_on_vanish:"",pull:{strength:100,angle:60},flee_task:"random",health:3000,speed:5,flee_speed:20,vanish_time:-1,loot:{},damage:{collision:5,attack:10},training_room_score:7}
+function luigis_mansion:spawn_entities/ghost/blue_twirler

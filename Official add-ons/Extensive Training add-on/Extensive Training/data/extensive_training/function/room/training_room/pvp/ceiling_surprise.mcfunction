@@ -1,2 +1,2 @@
-execute if entity @e[type=minecraft:marker,tag=selected,nbt={data:{namespace:"luigis_mansion",id:"ceiling_surprise"}},limit=1] run function extensive_training:room/training_room/spawn/ceiling_surprise
+execute if entity @e[type=minecraft:marker,tag=selected,nbt={data:{namespace:"luigis_mansion",id:"ceiling_surprise"}},limit=1] run function extensive_training:room/training_room/spawn/ceiling_surprise {platform:0}
 execute unless entity @e[type=minecraft:marker,tag=selected,limit=1] run summon minecraft:marker ~ ~ ~ {Tags:["select_ghost"],data:{namespace:"luigis_mansion",id:"ceiling_surprise"}}

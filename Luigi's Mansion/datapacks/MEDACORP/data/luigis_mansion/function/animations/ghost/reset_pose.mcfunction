@@ -10,4 +10,3 @@ tag @s[tag=flipped_gravity] add was_flipped
 tag @s remove 2d
 data modify entity @s transformation set value {translation:[0.0f,0.0f,0.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[1.0f,1.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}
 data modify entity @s item merge from entity @s item.components."minecraft:custom_data".model_data.default
-execute if data storage luigis_mansion:data ghost{tags:["big"]} run data modify entity @s item merge from entity @s item.components."minecraft:custom_data".model_data.big

@@ -1,8 +1,8 @@
-function #luigis_mansion:items/poltergust_3000/effect_on_block/vacuum
-execute positioned ^ ^0.5 ^ run function #luigis_mansion:items/poltergust_3000/effect_on_block/vacuum
-execute positioned ^ ^-0.5 ^ run function #luigis_mansion:items/poltergust_3000/effect_on_block/vacuum
-execute positioned ^0.5 ^ ^ run function #luigis_mansion:items/poltergust_3000/effect_on_block/vacuum
-execute positioned ^-0.5 ^ ^ run function #luigis_mansion:items/poltergust_3000/effect_on_block/vacuum
+function luigis_mansion:items/poltergust_3000/effect_on_block/vacuum
+execute positioned ^ ^0.5 ^ run function luigis_mansion:items/poltergust_3000/effect_on_block/vacuum
+execute positioned ^ ^-0.5 ^ run function luigis_mansion:items/poltergust_3000/effect_on_block/vacuum
+execute positioned ^0.5 ^ ^ run function luigis_mansion:items/poltergust_3000/effect_on_block/vacuum
+execute positioned ^-0.5 ^ ^ run function luigis_mansion:items/poltergust_3000/effect_on_block/vacuum
 teleport @e[tag=interact,limit=1] ~ ~ ~ ~-180 ~
 execute as @e[tag=interact,limit=1] store result entity @s Rotation[1] float -1 run data get entity @s Rotation[1]
 execute store result score #interact PositionX run data get entity @e[tag=interact,limit=1] Pos[0] 10
