@@ -32,7 +32,7 @@ execute if score #dialog Dialog matches 124 if score #players Totals matches 2..
 
 execute if score #dialog Dialog matches 125..127 run tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"chauncey"}}},tag=same_room,limit=1] add laugh
 execute if score #dialog Dialog matches 126..127 run scoreboard players set @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"chauncey"}}},tag=same_room,limit=1] ActionTime 1
-execute if score #dialog Dialog matches 125 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.chauncey",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.chauncey.4"}]}
+execute if score #dialog Dialog matches 125 run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.chauncey",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.chauncey.4",with:[{type:"translatable",translate:"luigis_mansion:dialog.chauncey.4.colored",color:"green"}]}]}
 
 execute if score #dialog Dialog matches 127 if entity @a[tag=same_room,tag=next_dialog_line,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"translatable",translate:"luigis_mansion:entity.chauncey",color:"green"},{type:"translatable",translate:"luigis_mansion:dialog.chauncey.5"}]}
 

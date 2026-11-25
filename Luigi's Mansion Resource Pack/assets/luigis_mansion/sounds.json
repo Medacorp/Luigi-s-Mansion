@@ -3595,6 +3595,24 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.henry.spawn"
     },
+    "entity.ice.form": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/ice/form",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.ice.form"
+    },
+    "entity.ice.shatter": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/ice/shatter",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.ice.shatter"
+    },
     "entity.ice_elemental_ghost.bounce": {
         "sounds": [
             {
@@ -3634,6 +3652,15 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.entity.ice_spike.fall"
+    },
+    "entity.ice_spike.rise": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/ice_spike/rise",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.ice_spike.rise"
     },
     "entity.ice_spike.shatter": {
         "sounds": [
@@ -4729,6 +4756,15 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.player.answer_phone"
     },
+    "entity.player.burn": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/player/burn",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.player.burn"
+    },
     "entity.player.capture.high_health": {
         "sounds": [
             {
@@ -4812,6 +4848,33 @@
         ],
         "subtitle": "subtitles.entity.player.hurt"
     },
+    "entity.player.flattened": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/player/flattened",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.player.flattened"
+    },
+    "entity.player.flattened_move": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/player/scare/bashed_move",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.player.slip"
+    },
+    "entity.player.flattened_recover": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/player/flattened_recover",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.player.recover"
+    },
     "entity.player.flee.high_health": {
         "sounds": [
             {
@@ -4829,6 +4892,15 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.entity.player.flee"
+    },
+    "entity.player.flip_gravity": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/player/flip_gravity",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.player.flip_gravity"
     },
     "entity.player.ghost_escape.high_health": {
         "sounds": [
@@ -6399,6 +6471,33 @@
         ],
         "subtitle": "subtitles.entity.player.hurt"
     },
+    "entity.player.hurt.large": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/player/hurt/large",
+                "stream": false
+            }
+        ],
+        "subtitle": "subtitles.entity.player.hurt"
+    },
+    "entity.player.hurt.medium": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/player/hurt/medium",
+                "stream": false
+            }
+        ],
+        "subtitle": "subtitles.entity.player.hurt"
+    },
+    "entity.player.hurt.small": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/player/hurt/small",
+                "stream": false
+            }
+        ],
+        "subtitle": "subtitles.entity.player.hurt"
+    },
     "entity.player.hurt_bitten.high_health": {
         "sounds": [
             {
@@ -6628,6 +6727,24 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.player.inspect"
     },
+    "entity.player.jump": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/player/jump",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.player.jump"
+    },
+    "entity.player.kick": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/player/kick",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.player.kick"
+    },
     "entity.player.latch_onto_ghost.high_health": {
         "sounds": [
             {
@@ -6774,6 +6891,15 @@
         "sounds": [
             {
                 "name": "luigis_mansion:entity/player/put_poltergust_away",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.player.put_poltergust_away"
+    },
+    "entity.player.put_poltergust_away_stylishly": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/player/put_poltergust_away_stylishly",
                 "stream": false
             }
         ],
@@ -7034,6 +7160,15 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.entity.player.cry"
+    },
+    "entity.player.think": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:entity/player/think",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.entity.player.think"
     },
     "entity.player.whistle.1": {
         "sounds": [
@@ -8222,15 +8357,6 @@
         ],
         "subtitle": "luigis_mansion:subtitles.entity.sir_weston.hurt"
     },
-    "entity.sir_weston.shatter": {
-        "sounds": [
-            {
-                "name": "luigis_mansion:entity/sir_weston/shatter",
-                "stream": false
-            }
-        ],
-        "subtitle": "luigis_mansion:subtitles.entity.sir_weston.shatter"
-    },
     "entity.sir_weston.talk": {
         "sounds": [
             {
@@ -9243,6 +9369,15 @@
         ],
         "subtitle": "luigis_mansion:subtitles.furniture.door.open"
     },
+    "furniture.door.fake_slam": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:furniture/door/fake_slam",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.furniture.door.slam"
+    },
     "furniture.door.grab_knob": {
         "sounds": [
             {
@@ -10066,6 +10201,15 @@
             }
         ],
         "subtitle": "luigis_mansion:subtitles.item.flashlight.off"
+    },
+    "item.game_boy_horror.click": {
+        "sounds": [
+            {
+                "name": "luigis_mansion:item/game_boy_horror/click",
+                "stream": false
+            }
+        ],
+        "subtitle": "luigis_mansion:subtitles.item.game_boy_horror.click"
     },
     "item.game_boy_horror.map.close": {
         "sounds": [

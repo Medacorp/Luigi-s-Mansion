@@ -16,7 +16,6 @@ execute if score #conservatory Ticking matches 1 run function #luigis_mansion:ro
 execute if score #dining_room Ticking matches 1 run function #luigis_mansion:room/normal/dining_room/turn_lights/off
 execute if score #kitchen Ticking matches 1 run function #luigis_mansion:room/normal/kitchen/turn_lights/off
 execute if score #courtyard Ticking matches 1 run function #luigis_mansion:room/normal/courtyard/turn_lights/off
-execute if score #bottom_of_the_well Ticking matches 1 run function #luigis_mansion:room/normal/bottom_of_the_well/turn_lights/off
 execute if score #rec_room Ticking matches 1 run function #luigis_mansion:room/normal/rec_room/turn_lights/off
 execute if score #hallway_8 Ticking matches 1 run function #luigis_mansion:room/normal/hallway_8/turn_lights/off
 execute if score #tea_room Ticking matches 1 run function #luigis_mansion:room/normal/tea_room/turn_lights/off
@@ -46,8 +45,6 @@ execute if score #roof Ticking matches 1 run function #luigis_mansion:room/norma
 execute if score #armory Ticking matches 1 run function #luigis_mansion:room/normal/armory/turn_lights/off
 execute if score #ceramics_studio Ticking matches 1 run function #luigis_mansion:room/normal/ceramics_studio/turn_lights/off
 execute if score #sealed_room Ticking matches 1 run function #luigis_mansion:room/normal/sealed_room/turn_lights/off
-execute if score #pipe_room Ticking matches 1 run function #luigis_mansion:room/normal/pipe_room/turn_lights/off
-execute if score #cold_storage Ticking matches 1 run function #luigis_mansion:room/normal/cold_storage/turn_lights/off
 execute if score #sitting_room Ticking matches 1 run function #luigis_mansion:room/normal/sitting_room/turn_lights/off
 execute if score #guest_room Ticking matches 1 run function #luigis_mansion:room/normal/guest_room/turn_lights/off
 execute if score #the_artists_studio Ticking matches 1 run function #luigis_mansion:room/normal/the_artists_studio/turn_lights/off

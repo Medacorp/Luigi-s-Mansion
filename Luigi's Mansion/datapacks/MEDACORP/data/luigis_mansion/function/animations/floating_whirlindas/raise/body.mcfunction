@@ -1,2 +1,2 @@
-scoreboard players add @s AnimationProgress 1
-scoreboard players set @s[scores={AnimationProgress=120..}] AnimationProgress 0
+execute unless score #mirrored Selected matches 1 run function luigis_mansion:animations/floating_whirlindas/raise/normal/body
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/floating_whirlindas/raise/mirrored/body

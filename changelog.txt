@@ -1,3 +1,12 @@
+???:
+* Added some missing Luigi sounds
+* Added remaining Poltergust sounds
+* Added Sir Weston's ice sounds
+* Changed text to color words like the original
+* Changed some dialog lines slightly
+* Changed Floating Whirlindas, they should now behave more accurately to the original game
+* Fixed (3DS Remake) 2 Boo caught messages didn't trigger
+
 v3.10:
 * Added ambient sounds for dripping water, unlike flame particles, these play regardless of being an elemental source
 * Added pipe room noise in the hallway

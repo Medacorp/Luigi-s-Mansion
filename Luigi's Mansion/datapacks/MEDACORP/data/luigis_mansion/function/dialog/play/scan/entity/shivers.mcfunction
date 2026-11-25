@@ -15,7 +15,7 @@ execute as @a[tag=same_room,tag=!spectator,tag=game_boy_horror_menu] run functio
 execute if score #dialog Dialog matches 1..2 as @e[tag=luigi,tag=!scanning_player,tag=same_room] run function luigis_mansion:entities/luigi/animation/set/idle_no_poltergust
 execute if score #dialog Dialog matches 1..2 as @e[tag=luigi,tag=scanning_player,limit=1] run function luigis_mansion:entities/luigi/animation/set/scanning
 execute as @e[tag=luigi,tag=scanning_player,limit=1] run function luigis_mansion:items/game_boy_horror/turn_screen_to_forced_value {value:"scanning",flags:[1b,0b],floats:[],tracker:[]}
-execute if score #dialog Dialog matches 1 as @e[tag=scanned_entity,tag=!burning,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"selector",selector:"@s",color:"green"},{type:"translatable",translate:"luigis_mansion:message.shivers.scan.1"}]}
+execute if score #dialog Dialog matches 1 as @e[tag=scanned_entity,tag=!burning,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"selector",selector:"@s",color:"green"},{type:"translatable",translate:"luigis_mansion:message.shivers.scan.1",with:[{type:"translatable",translate:"luigis_mansion:message.shivers.scan.1.colored",color:"gold"}]}]}
 execute if score #dialog Dialog matches 1 as @e[tag=scanned_entity,tag=burning,limit=1] run tellraw @a[tag=same_room] {type:"translatable",translate:"chat.type.text",with:[{type:"selector",selector:"@s",color:"green"},{type:"translatable",translate:"luigis_mansion:message.shivers.scan.2"}]}
 
 execute if score #dialog Dialog matches 3 run scoreboard players set #dialog Dialog -1

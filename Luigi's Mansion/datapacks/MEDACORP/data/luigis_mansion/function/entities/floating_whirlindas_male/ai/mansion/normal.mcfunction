@@ -1,8 +1,10 @@
 execute if entity @s[nbt=!{data:{path:{}}}] run function luigis_mansion:entities/ghost/set_specific_path {index:0}
 
-tag @s[scores={Dialog=..300}] add visible
-execute if entity @s[scores={Dialog=..300}] at @e[tag=luigi,tag=same_room] unless entity @e[tag=ball_floor,distance=..4.999999,limit=1] run tag @s remove visible
-tag @s[scores={Dialog=..300},tag=portrait_ghost_hide] remove visible
+tag @s[nbt=!{data:{animation:{namespace:"luigis_mansion",id:"bow"}}}] add visible
+tag @s[nbt=!{data:{animation:{namespace:"luigis_mansion",id:"bow"}}}] add can_be_vulnerable
+execute if entity @s[nbt=!{data:{animation:{namespace:"luigis_mansion",id:"bow"}}}] at @e[tag=luigi,tag=same_room] unless entity @e[tag=ball_floor,distance=..4.999999,limit=1] run tag @s remove visible
+execute if entity @s[nbt=!{data:{animation:{namespace:"luigis_mansion",id:"bow"}}}] at @e[tag=luigi,tag=same_room] unless entity @e[tag=ball_floor,distance=..4.999999,limit=1] run tag @s remove can_be_vulnerable
+tag @s[nbt=!{data:{animation:{namespace:"luigis_mansion",id:"bow"}}},tag=portrait_ghost_hide] remove visible
 tag @e[nbt={data:{entity:{namespace:"luigis_mansion",id:"floating_whirlindas_female"}}},tag=!hurt,tag=!vanish,limit=1] add partner
 execute unless entity @e[tag=partner,limit=1] run summon minecraft:marker ^ ^ ^1.4 {Tags:["remove_from_existence","partner"]}
 execute at @s facing entity @e[tag=partner,limit=1] feet rotated ~ 0 positioned ^ ^ ^0.7 run function luigis_mansion:entities/floating_whirlindas_male/lead

@@ -1,6 +1,7 @@
 scoreboard players add @s AnimationProgress 1
 execute at @s[scores={AnimationProgress=1}] anchored eyes run summon minecraft:item_display ^ ^1.45 ^ {CustomName:{type:"translatable",translate:"luigis_mansion:entity.luigi"},Tags:["luigi_ice","knockback_model"],item_display:"head",item:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:item_model":"luigis_mansion:entity/ice"}}}
 execute at @s[scores={AnimationProgress=1}] anchored eyes positioned ^ ^1.45 ^ run scoreboard players operation @e[tag=knockback_model,limit=1,distance=..0.1] ID = @s ID
+execute at @s[scores={AnimationProgress=1}] run playsound luigis_mansion:entity.ice.form neutral @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={AnimationProgress=1}] run function luigis_mansion:entities/luigi/make_sound/simple {sound:"luigis_mansion:entity.player.hurt_freeze"}
 scoreboard players set @s[scores={AnimationProgress=..70,Sound=0}] Sound 2
 #freeze_player insert
@@ -29,6 +30,7 @@ tag @s remove teleport_now
 tag @s add already_froze_player
 kill @e[tag=home,limit=1]
 #/freeze_player insert
+execute at @s[scores={AnimationProgress=70..72}] anchored eyes positioned ^ ^1.45 ^ if entity @e[tag=luigi_ice,distance=..0.2,limit=1] at @s run playsound luigis_mansion:entity.ice.shatter neutral @a[tag=same_room] ~ ~ ~ 1
 execute at @s[scores={AnimationProgress=70..}] anchored eyes positioned ^ ^1.45 ^ run tag @e[tag=luigi_ice,distance=..0.2,limit=1] add remove_from_existence
 execute at @s[scores={AnimationProgress=70..72}] anchored eyes run particle minecraft:item{item:{id:"minecraft:diamond_pickaxe",components:{"minecraft:item_model":"luigis_mansion:entity/ice"}}} ^ ^ ^ 0.3 0.3 0.3 0 50 force @a[tag=same_room]
 scoreboard players set @s[scores={AnimationProgress=..70,Invulnerable=6..}] Invulnerable 5
